@@ -6,6 +6,41 @@ agent's readings, and records the readings applied where an answer leaves a deta
 entry of the same date logs each section. Decisions made before this file existed are in that file's XonForge entries
 of 2026-09-25 for steps 0, 1 and 2.
 
+## 2026-09-26 — Step 8 readings (implementing agent)
+
+The user said to proceed with step 8 only: the v1 plant types, the traps, the v1.1 catalog and the fact audit
+(`XONFORGE_SPEC.md` §5.2–§5.5, §5.3b, §7.4b, §14). These are readings of details the spec leaves open. No threshold
+was changed. Domain families in §5.3b stay at step 11a. The dashboard (step 9) and the first corpus (step 10) were
+not started. The fact audit was not called against a live model.
+
+1. **`coreference_trap` and `same_name`.** The planted `coreference_trap` is a real contradiction that holds only when
+   two same-named people are identified (`role` `conflate`). `same_name` is the trap: `role` `distinct` in place of
+   `conflate`, the solver finds no contradiction, and the naive reading conflates them. Display names may repeat;
+   entity ids stay unique.
+2. **`greater` on a location** means "is inside". A containment cycle uses the ordinal cycle check.
+3. **`depends`.** A constraint fires only when every fact it depends on is present, so each plant fact is essential.
+4. **Judged plants** (`causal_inconsistency`, `commonsense_impossibility`, `implicature_tension`) are satisfiable.
+   `ground` is `judged`, implicature is `soft`, and the tension is labeled rather than solved. Every such base goes
+   to the judged split and is not mixed into the 50 / 15 / 35 proportions. A pipeline test refuses one.
+5. **Commonsense impossibility** is two tension facts ("swam the lake" and "found the lake frozen"), so a level-3
+   distractor can still mention enough entities outside the plant.
+6. **The overnight twin** states the end as 26:00, so the raw sum holds without a midnight fact. A clock is `HH:MM`.
+   A duration or offset whose unit is hours is multiplied by 60. Midnight uses modulo 1440. An offset's hours are
+   subtracted (the destination lags).
+7. **Units.** 10 km is 6.21371192 miles (`0.621371192` miles per kilometre). An exact pair may differ by at most
+   0.05 miles; a tolerance fact widens that. The default plant is 10 km against 8 miles. `unit_equivalence` is 10 km
+   against 6 miles, resolved by a tolerance of 0.5 miles; the twin is 6.2 miles.
+8. **v1 distractors** stay on the other attributes. The same-attribute knob is recorded and does not add filler on
+   the planted attribute. `skeletons --type all` still builds only the four v0 types.
+9. **One v1 trap per base.** Requesting the trap replaces the default scenario with that trap's story. `arity_control`
+   stays on the v0 path. Traps are partners of a host plant, not separate plant types.
+10. **Role `record`.** Where a twin would otherwise state one value in two identical sentences, one fact has role
+    `record`. It is still an assertion. The plain wording inserts ", on the record," so each fact has its own sentence.
+11. **Quotation marks** are allowed only on a `quoted_speech` trap variant, and then in the whole document.
+12. **The fact audit** (`xonforge/verify/audit.py`) marks each fact stated, implied, absent or contradicted. A span
+    agrees with stated or implied; no span agrees only with absent. The auditor's model must differ from the
+    renderer's. It is not called from `pipeline.execute`; the sample still skips it. No live audit call was made.
+
 ## 2026-09-25 — Answers on v0's open questions
 
 Ian's answers to the open questions of steps 3 to 6, which he confirmed as written ("I'm Ian. Those decisions are

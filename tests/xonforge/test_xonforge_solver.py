@@ -136,12 +136,11 @@ def test_a_negated_value_on_an_attribute_whose_number_of_values_is_stated_is_ref
 
 
 @pytest.mark.parametrize("attribute, fact, why", [
-    (Attribute(key="team", kind="categorical"), Fact(id="1", kind="event", subject="a", attribute="team"), "v1"),
-    (Attribute(key="team", kind="categorical"), val("1", "a", "red").model_copy(update={"time": "March"}), "v1"),
-    (Attribute(key="team", kind="quantity"), val("1", "a", 3), "ordinal and categorical"),
+    (Attribute(key="team", kind="categorical"), Fact(id="1", kind="event", subject="a", attribute="team"), "role"),
+    (Attribute(key="team", kind="categorical"), val("1", "a", "red").model_copy(update={"time": "March"}), "role"),
     (Attribute(key="team", kind="ordinal"), val("1", "a", "red"), "categorical attributes only"),
 ])
-def test_what_v0_cannot_judge_is_refused_not_guessed(attribute, fact, why):
+def test_what_the_solver_still_refuses_is_refused_not_guessed(attribute, fact, why):
     with pytest.raises(Unsupported, match=why):
         satisfiable([fact], {"team": attribute})
 
@@ -280,15 +279,15 @@ def test_a_trap_variant_differs_from_its_planted_variant_only_in_the_arity_fact(
         Base(base_id="b", consistent=twin, planted=(planted,), trap_only=(wider,))
 
 
-def test_the_other_traps_wait_for_v1():
+def test_an_unknown_trap_is_refused_and_a_trap_belongs_on_a_trap_only_variant():
     trap_only = Skeleton(base_id="b", variant="trap_only", genre="g", entities=ENTITIES,
                          attributes=tuple(ATTRIBUTES.values()), facts=tuple(CYCLE[:2]),
-                         traps=(Trap(type="quoted_speech", facts=("1",)),), seed=1)
-    with pytest.raises(Unsupported, match="v1"):
+                         traps=(Trap(type="not_a_trap", facts=("1",)),), seed=1)
+    with pytest.raises(Unsupported, match="not_a_trap"):
         check_skeleton(trap_only)
     in_planted = skeleton(CYCLE, plant=["1", "2", "3"]).model_copy(
         update={"traps": (Trap(type="arity_control", facts=("1",)),)})
-    with pytest.raises(Unsupported, match="v1"):
+    with pytest.raises(Unsupported, match="trap-only"):
         check_skeleton(in_planted)
 
 

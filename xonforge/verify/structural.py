@@ -202,7 +202,10 @@ def forbidden_problems(skeleton: Skeleton, rendering: Rendering) -> list[str]:
     return problems
 
 
-def quotation_problems(text: str) -> list[str]:
+def quotation_problems(text: str, *, quoted: bool = False) -> list[str]:
+    """Quotation marks are refused, except in a ``quoted_speech`` trap (§5.4)."""
+    if quoted:
+        return []
     marks = [c for c in QUOTE_CHARS if c in text]
     return [f"the text uses quotation marks ({' '.join(marks)}); use none"] if marks else []
 
@@ -263,7 +266,8 @@ def spread_problems(skeleton: Skeleton, rendering: Rendering, rules: RenderRules
 def structural(skeleton: Skeleton, rendering: Rendering, rules: RenderRules) -> list[str]:
     """Every structural problem with the rendering; empty when it passes."""
     return (span_problems(skeleton, rendering) + content_problems(skeleton, rendering)
-            + forbidden_problems(skeleton, rendering) + quotation_problems(rendering.text)
+            + forbidden_problems(skeleton, rendering) + quotation_problems(
+                rendering.text, quoted=any(t.type == "quoted_speech" for t in skeleton.traps))
             + length_problems(rendering.text, rules) + spacing_problems(skeleton, rendering, rules)
             + spread_problems(skeleton, rendering, rules))
 

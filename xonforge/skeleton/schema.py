@@ -3,7 +3,9 @@
 Two fields are added to §5.1's Fact (CHANGELOG_EXPERIMENTS.md, XonForge step 2): ``relation`` names what a relation
 fact states, which §5.1 leaves implicit (``greater``: the subject is above the object on an ordinal attribute;
 ``same`` or ``different``: the two have equal or unequal values), and ``negated`` marks a value fact stated as false,
-which ``direct_negation`` needs.
+which ``direct_negation`` needs. Step 8 adds ``role`` (what a v1 fact is doing: a ledger line, a quotation, a
+belief), ``depends`` (the other facts a constraint needs before it applies) and ``unit``. An event may name an
+``object`` (who was spoken to, who was given the jars) without being a relation.
 
 A premise without a subject states its categorical attribute's number of values (its ``value``), and the attribute's
 ``arity`` repeats it. Two fields are added to §5.1's Skeleton for the user's step 2 decisions: ``arity_fact`` names
@@ -15,9 +17,11 @@ fact id for a fact and its counterpart, so a planted variant and its consistent 
 
 For the user's decisions of 2026-09-25 (xonforge/docs/decisions.md): a consistent twin records ``twin_facts``, its
 counterparts of the plant's facts (item 2), which its checks treat as planted; a trap records ``naive``, what a naive
-reading would wrongly conclude (§5.5), which the solver fills and checks. v0's one trap is ``arity_control`` (item
+reading would wrongly conclude (§5.5), which the solver fills and checks, and ``resolving``, the facts a correct
+reading uses and a naive reading drops or rewrites. v0's one trap is ``arity_control`` (item
 20): binary parity's planted facts with a fact stating three values instead of two, so its variant's planted attribute
 has arity 3 where the base's other variants have 2, the only way a trap variant's attributes may differ from theirs.
+Entity ids are unique. Display names may repeat: ``coreference_trap`` and ``same_name`` are two people with one name.
 """
 from __future__ import annotations
 
@@ -58,11 +62,17 @@ class Fact(_Frozen):
     value: str | int | float | None = None
     negated: bool = False
     time: str | None = None
+    role: str | None = None
+    depends: tuple[str, ...] = ()       # other facts; a constraint applies only when every one of them is present
+    scope: tuple[str, ...] = ()         # the entities a roster or a quantifier lists
+    unit: str | None = None
 
     @model_validator(mode="after")
     def _shape(self) -> Fact:
         relational = self.relation is not None
-        if relational != (self.object is not None):
+        if relational and self.object is None:
+            raise ValueError(f"fact {self.id}: a relation needs an object")
+        if self.object is not None and not relational and self.kind != "event":
             raise ValueError(f"fact {self.id}: a relation needs an object, and only a relation has one")
         if self.kind == "relation" and not relational:
             raise ValueError(f"fact {self.id}: a relation fact names its relation")
@@ -78,6 +88,8 @@ class Fact(_Frozen):
                                          and self.value >= 2):
             raise ValueError(f"fact {self.id}: only a premise stating its attribute's number of values, a whole "
                              "number of at least 2, has no subject")
+        if len(set(self.depends)) != len(self.depends) or self.id in self.depends:
+            raise ValueError(f"fact {self.id}: depends lists other facts, each once")
         return self
 
     @property
@@ -96,6 +108,7 @@ class Trap(_Frozen):
     type: str
     facts: tuple[str, ...]
     naive: dict = {}         # what a naive reading concludes: "reading", and "contradiction", the facts it would flag
+    resolving: tuple[str, ...] = ()   # facts a correct reading uses and a naive reading drops or rewrites
 
 
 class Skeleton(_Frozen):
@@ -118,7 +131,7 @@ class Skeleton(_Frozen):
         entities = [e.id for e in self.entities]
         attributes = {a.key: a for a in self.attributes}
         facts = [f.id for f in self.facts]
-        for what, ids in (("entity ids", entities), ("entity names", [e.name for e in self.entities]),
+        for what, ids in (("entity ids", entities),
                           ("attribute keys", [a.key for a in self.attributes]), ("fact ids", facts)):
             if len(set(ids)) != len(ids):
                 raise ValueError(f"{self.base_id}: {what} are unique")
@@ -128,8 +141,12 @@ class Skeleton(_Frozen):
                 raise ValueError(f"{self.base_id}: fact {f.id} names an entity the skeleton lacks")
             if f.attribute not in attributes:
                 raise ValueError(f"{self.base_id}: fact {f.id} names an attribute the skeleton lacks")
-            if f.relation == "greater" and attributes[f.attribute].kind != "ordinal":
+            if f.relation == "greater" and attributes[f.attribute].kind not in ("ordinal", "location"):
                 raise ValueError(f"{self.base_id}: fact {f.id} orders a non-ordinal attribute")
+            if not set(f.depends) <= set(facts):
+                raise ValueError(f"{self.base_id}: fact {f.id} depends on a fact the skeleton lacks")
+            if not set(f.scope) <= set(entities):
+                raise ValueError(f"{self.base_id}: fact {f.id} lists an entity the skeleton lacks")
             if f.states_arity:
                 if attributes[f.attribute].kind != "categorical" or attributes[f.attribute].arity != f.value:
                     raise ValueError(f"{self.base_id}: fact {f.id} states the number of values of a categorical "
@@ -152,6 +169,9 @@ class Skeleton(_Frozen):
         for group in ([self.plant] if self.plant else []) + list(self.traps):
             if not group.facts or len(set(group.facts)) != len(group.facts) or not set(group.facts) <= set(facts):
                 raise ValueError(f"{self.base_id}: a plant or trap lists distinct facts of the skeleton, at least one")
+        for trap in self.traps:
+            if len(set(trap.resolving)) != len(trap.resolving) or not set(trap.resolving) <= set(facts):
+                raise ValueError(f"{self.base_id}: a trap's resolving facts are distinct facts of the skeleton")
         if self.twin_facts and self.variant != "consistent":
             raise ValueError(f"{self.base_id}: only a consistent twin has twin_facts")
         if len(set(self.twin_facts)) != len(self.twin_facts) or not set(self.twin_facts) <= set(facts):

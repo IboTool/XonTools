@@ -18,17 +18,25 @@ A **skeleton** is one variant:
 | `variant` | `consistent`, `planted` or `trap_only` |
 | `entities` | `id`, `name`, `pronoun`, `aliases` |
 | `attributes` | `key`, `kind` (`ordinal`, `categorical`, `quantity`, `time` or `location`), `arity` (the number of values, when a fact states it), `unit` |
-| `facts` | `id`, `kind` (`relation`, `value`, `event` or `premise`), `subject`, `attribute`, `relation`, `object`, `value`, `negated`, `time` |
+| `facts` | `id`, `kind` (`relation`, `value`, `event` or `premise`), `subject`, `attribute`, `relation`, `object`, `value`, `negated`, `time`, `role`, `depends`, `scope`, `unit` |
 | `plant` | `type`, `facts` (its ids) and `params`; only in a planted variant |
-| `traps` | `type` and `facts`; none in v0 |
+| `traps` | `type`, `facts`, `naive` (the reading and the facts it would flag) and `resolving` (facts a correct reading uses); only on a trap-only variant |
 | `difficulty` | the knobs the skeleton sets: `cycle_length`, `entities`, `attributes`, `distractor_density`, `same_attribute_distractors` |
 | `arity_fact` | the id of the fact stating the planted attribute's number of values (`binary_parity`), or none |
 | `premise_status` | `premise` or `not_premise` (`direct_negation`), or none |
 
 `relation` and `negated` are added to §5.1's fact. A relation fact names its `relation`: `greater` (the subject is
-above the object on an ordinal attribute), `same` or `different`. A value fact names its `value`, and `negated` marks
-one stated as false. A premise without a subject states its categorical attribute's number of values, a whole number
-of at least 2, in `value`; at most one fact states it per attribute, and the attribute's `arity` repeats it.
+above the object on an ordinal attribute, or inside the object when the attribute is a location), `same` or
+`different`. A value fact names its `value`, and `negated` marks one stated as false. A premise without a subject
+states its categorical attribute's number of values, a whole number of at least 2, in `value`; at most one fact
+states it per attribute, and the attribute's `arity` repeats it.
+
+Step 8 adds `role`, `depends`, `scope` and `unit` to a fact. `role` says what a v1 fact is doing (a clock, a
+quotation, a belief, a roster). `depends` lists other fact ids; a constraint applies only when every one of them is
+present. `scope` lists the entities a roster names. `unit` is `km`, `miles` or `hours` when the number needs one. An
+event may name an `object` without being a relation. Entity ids stay unique; display names may repeat, for
+`coreference_trap` and `same_name`. A trap's `resolving` facts are skeleton facts. A trap is recorded only on a
+trap-only variant.
 
 `arity_fact` and `premise_status` are added to §5.1's skeleton, for the user's step 2 decisions. The arity fact is
 recorded apart from the plant's facts and is in both variants; the solver requires it in the planted variant's only

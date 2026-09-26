@@ -162,7 +162,7 @@ def test_acceptance_runs_the_solver_and_the_checks_again_rather_than_reading_the
     loose = sk.model_copy(update={"plant": sk.plant.model_copy(update={"facts": sk.plant.facts[:-1]})})
     assert reasons(accept(loose, doc, **kw), "the solver: the plant's facts can all be true")
     trapped = sk.model_copy(update={"traps": (Trap(type="coreference_trap", facts=(sk.facts[0].id,)),)})
-    assert reasons(accept(trapped, doc, **kw), "the solver: traps in consistent or planted variants come with v1")
+    assert reasons(accept(trapped, doc, **kw), "the solver: a trap is recorded on a trap-only variant")
 
 
 def test_a_failed_rendering_too_many_attempts_or_a_queued_document_no_human_accepted_is_refused(tmp_path):

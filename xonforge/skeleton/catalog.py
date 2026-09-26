@@ -18,3 +18,13 @@ VALUES = {
     "table": ("one", "two", "three", "four"),
     "cabin": ("north", "south", "east", "west"),
 }
+
+# v1 (§14 step 8). Judged plants are labeled by review and routed to the judged split (§5.3b, §9).
+JUDGED_PLANTS = ("causal_inconsistency", "commonsense_impossibility", "implicature_tension")
+V1_PLANT_TYPES = ("temporal_arithmetic", "quantity_arithmetic", "spatial_containment", "coreference_trap",
+                  "negation_scope", "quantifier_violation", "uniqueness_violation", "colocation_conflict",
+                  "calendar_age", "cardinality_mismatch", "unit_conversion", "knowledge_perspective",
+                  *JUDGED_PLANTS)
+TRAPS = ("arity_control", "quoted_speech", "hypothetical", "legitimate_correction", "state_change",
+         "reported_belief", "time_zone", "unit_equivalence", "overnight_span", "same_name", "role_handover",
+         "approximation", "perspective_error")

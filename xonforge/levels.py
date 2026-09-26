@@ -20,7 +20,7 @@ import random
 from dataclasses import dataclass
 
 from .render.schema import RenderRules
-from .skeleton.generators import PLANTS, Knobs, feasible
+from .skeleton.generators import Knobs, _spec, feasible
 
 
 @dataclass(frozen=True)
@@ -51,10 +51,12 @@ def combinations(level: int, plant_type: str) -> list[Knobs]:
     """The level's skeleton knobs that the generator can build for the plant type."""
     if level not in LEVELS:
         raise ValueError(f"the difficulty levels are {', '.join(map(str, LEVELS))}, not {level!r}")
-    if plant_type not in PLANTS:
-        raise ValueError(f"not a plant type: {plant_type!r}")
+    try:
+        size = _spec(plant_type)[1]
+    except ValueError:
+        raise ValueError(f"not a plant type: {plant_type!r}") from None
     lv = LEVELS[level]
-    cycles = _span(lv.cycle_length) if PLANTS[plant_type][1] is None else (lv.cycle_length[0],)
+    cycles = _span(lv.cycle_length) if size is None else (lv.cycle_length[0],)
     out = []
     for k, n, a, d in itertools.product(cycles, _span(lv.entities), _span(lv.attributes), _span(lv.distractors)):
         try:

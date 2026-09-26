@@ -20,6 +20,33 @@ has its own, newer entries.
 
 ---
 
+## 2026-09-26 — XonForge — step 8: v1 plant types, traps and the fact audit
+
+The user said to proceed with step 8 only (`XONFORGE_SPEC.md` §14). No threshold was changed. The 20-document sample
+was not re-run, nothing was exported or sealed, and no live fact-audit call was made. The dashboard (step 9), the
+first corpus (step 10) and the domain families (step 11a) were not started. The readings are in
+`xonforge/docs/decisions.md` (2026-09-26) and `xonforge/docs/plant_catalog.md`.
+
+1. **Catalog.** Twelve solver plant types and three judged types (`causal_inconsistency`,
+   `commonsense_impossibility`, `implicature_tension`), plus every trap in §5.3 and §5.3b. `PLANT_TYPES` stays the
+   four v0 types, so `skeletons --type all` is unchanged. v1 types are named explicitly. A judged base goes entirely
+   to the judged split. A pipeline test refuses it.
+2. **Solver.** A v1 constraint applies only when every fact it `depends` on is present. `greater` on a location means
+   inside. Judged plants are satisfiable and labeled (`ground` `judged`; implicature `soft`). Naive readings are
+   recorded per trap. 10 km converts at 0.621371192 miles per kilometre; an exact pair may differ by 0.05 miles.
+   Offset hours are subtracted. Midnight is modulo 1440. The overnight twin ends at 26:00. Commonsense impossibility
+   is two tension facts.
+3. **`coreference_trap` and `same_name`.** The plant identifies two people who share a display name and then
+   contradicts; the trap keeps them distinct. Entity ids stay unique.
+4. **Wording.** Role `record` keeps two assertions of one value from being the same sentence. Quotation marks are
+   allowed only in a `quoted_speech` trap variant. v1 same-attribute distractors are not generated; the knob is
+   recorded.
+5. **Fact audit.** `xonforge/verify/audit.py` compares an auditor's stated / implied / absent / contradicted marks
+   with the fact→span map. The auditor must be a different model from the renderer. The sample pipeline does not
+   call it.
+
+---
+
 ## 2026-09-26 — XonForge — the 20-document sample run
 
 The user said to run the sample, with the Anthropic key set as a cloud secret. The run orchestrator of step 7 was not

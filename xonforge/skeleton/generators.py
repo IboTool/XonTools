@@ -43,7 +43,21 @@ from .catalog import CATEGORICAL, NAMES, ORDINAL, PRONOUNS, VALUES
 from .schema import Attribute, Base, Entity, Fact, Plant, Skeleton, Trap
 
 PLANT_TYPES = ("order_cycle", "equality_break", "binary_parity", "direct_negation")
-TRAP_PLANTS = {"arity_control": ("binary_parity",)}      # v0's one trap, and the plant types it partners
+TRAP_PLANTS = {
+    "arity_control": ("binary_parity",),
+    "quoted_speech": ("direct_negation",),
+    "hypothetical": ("direct_negation",),
+    "legitimate_correction": ("direct_negation",),
+    "reported_belief": ("direct_negation",),
+    "state_change": ("uniqueness_violation",),
+    "role_handover": ("uniqueness_violation",),
+    "time_zone": ("temporal_arithmetic",),
+    "overnight_span": ("temporal_arithmetic",),
+    "unit_equivalence": ("unit_conversion",),
+    "approximation": ("quantity_arithmetic",),
+    "same_name": ("coreference_trap",),
+    "perspective_error": ("knowledge_perspective",),
+}
 TRAP_VALUES = 3                                          # the number of values an arity_control trap states
 LEVELS = (1, 2, 3)                                       # the difficulty levels (xonforge/levels.py)
 
@@ -207,16 +221,34 @@ def _distractors(rng: random.Random, entities: list[str], attributes: list[Attri
     return facts
 
 
+def _spec(plant_type: str):
+    if plant_type in PLANTS:
+        return PLANTS[plant_type]
+    from .v1 import PLANTS as more
+    if plant_type not in more:
+        raise ValueError(f"not a plant type: {plant_type!r}")
+    return more[plant_type]
+
+
 def feasible(plant_type: str, knobs: Knobs) -> bool:
     """Whether ``generate`` can build a base of the plant type with the knobs: whether its distractors can mention
-    every entity outside the plant, on pairs of entities that its attributes offer."""
-    _, size, _ = PLANTS[plant_type]
+    every entity outside the plant, on pairs of entities that its attributes offer. v1 plants do not put distractors
+    on the planted attribute, so that bonus is counted only for v0's types."""
+    _, size, _ = _spec(plant_type)
     k = size or knobs.cycle_length
     n = knobs.entities or k
-    planted = 2 if plant_type == "direct_negation" else k
+    if n < k:
+        return False
+    if plant_type == "direct_negation":
+        planted = 2
+    elif plant_type in PLANTS:
+        planted = k
+    else:
+        from .v1 import PLANT_FACTS
+        planted = PLANT_FACTS.get(plant_type, k)
     outside = n - k
-    free = (knobs.attributes - 1) * math.comb(n, 2) + (math.comb(outside, 2) if knobs.same_attribute_distractors
-                                                       else 0)
+    bonus = math.comb(outside, 2) if knobs.same_attribute_distractors and plant_type in PLANTS else 0
+    free = (knobs.attributes - 1) * math.comb(n, 2) + bonus
     return -(-outside // 2) <= knobs.distractors * planted <= free
 
 
@@ -230,21 +262,24 @@ def generate(plant_type: str, *, seed: int, genre: str, knobs: Knobs = Knobs(), 
     the negated claim is a premise; when it is None, a draw from the base's seed makes it one with probability
     ``premise_share`` (defaults.yaml, skeletons.negation_premise_share). ``traps``: the trap-only variants to add;
     ``level``: the difficulty level the knobs were drawn for, recorded in the difficulty."""
-    if plant_type not in PLANTS:
-        raise ValueError(f"v0's plant types are {', '.join(PLANT_TYPES)}, not {plant_type!r}")
+    from .v1 import V1_PLANT_TYPES
+    if plant_type not in PLANTS and plant_type not in V1_PLANT_TYPES:
+        raise ValueError(f"v0's plant types are {', '.join(PLANT_TYPES)}, and v1 adds "
+                         f"{', '.join(V1_PLANT_TYPES)}, not {plant_type!r}")
     if not genre:
         raise ValueError("a skeleton records its genre (XONFORGE_SPEC.md §5.1)")
     traps = tuple(traps)
     for t in traps:
         if t not in TRAP_PLANTS:
-            raise ValueError(f"v0's one trap is arity_control, and {t!r} comes with v1")
+            raise ValueError(f"the traps are {', '.join(TRAP_PLANTS)}, not {t!r}")
         if plant_type not in TRAP_PLANTS[t]:
             raise ValueError(f"the {t} trap is {' and '.join(TRAP_PLANTS[t])}'s partner, not {plant_type}'s")
     if len(set(traps)) != len(traps):
         raise ValueError("each trap is asked for once")
     if level is not None and (isinstance(level, bool) or level not in LEVELS):
         raise ValueError(f"the difficulty levels are 1, 2 and 3, not {level!r}")
-    if plant_type == "direct_negation" and premise is None:
+    v1_trap = any(t != "arity_control" for t in traps)
+    if plant_type == "direct_negation" and premise is None and not v1_trap:
         if isinstance(premise_share, bool) or not isinstance(premise_share, (int, float)) \
                 or not 0 <= premise_share <= 1:
             raise ValueError(f"direct_negation needs premise, or premise_share from 0 to 1, not {premise_share!r}")
@@ -253,6 +288,9 @@ def generate(plant_type: str, *, seed: int, genre: str, knobs: Knobs = Knobs(), 
         raise ValueError(f"only direct_negation's claim can be a premise, not {plant_type}'s")
     if premise is not None and not isinstance(premise, bool):
         raise ValueError(f"premise is True or False, not {premise!r}")
+    if plant_type in V1_PLANT_TYPES or any(t != "arity_control" for t in traps):
+        from .v1 import build as build_v1
+        return build_v1(plant_type, seed=seed, genre=genre, knobs=knobs, traps=traps, level=level)
     kinds, size, build = PLANTS[plant_type]
     rng = random.Random(f"xonforge:{plant_type}:{seed}")
     twin_seed = _subseed(plant_type, seed, "twin")

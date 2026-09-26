@@ -3,8 +3,9 @@
 Bases, each with all its variants, are stratified by plant type × difficulty level. Within each stratum they are
 sorted by id, shuffled with the seed, and divided by the proportions (50 / 15 / 35 for development, calibration and
 test by default, configurable) with largest-remainder rounding, ties broken by the same seed, which is logged before
-generation (the decision log's split seed, decisions.py). v0 has no judged plant type, so the judged split is empty. A
-pipeline test's bases go only to development and calibration, in proportions its run gives (xonforge/modes.py).
+generation (the decision log's split seed, decisions.py). A judged plant type (§5.3b) goes entirely to the judged
+split and is not mixed into the 50 / 15 / 35 proportions; a pipeline test refuses it. A pipeline test's other bases
+go only to development and calibration, in proportions its run gives (xonforge/modes.py).
 """
 from __future__ import annotations
 
@@ -13,6 +14,7 @@ from fractions import Fraction
 from typing import Mapping, Sequence
 
 from xonforge import modes
+from xonforge.skeleton.catalog import JUDGED_PLANTS
 from xonforge.skeleton.schema import Base
 
 from .export import OUT_OF_BOUNDS, SPLITS
@@ -44,6 +46,14 @@ def assign(strata: Mapping[str, tuple], seed: int, *, mode: str,
     out: dict[str, str] = {}
     for key in sorted({s for s in strata.values()}, key=repr):
         ids = sorted(b for b, s in strata.items() if s == key)
+        plant = key[0] if isinstance(key, tuple) else None
+        if plant in JUDGED_PLANTS:
+            if mode == modes.PIPELINE_TEST:
+                raise ValueError("a judged plant goes to the judged split, and a pipeline-test document never "
+                                 "enters it")
+            for b in ids:
+                out[b] = "judged"
+            continue
         random.Random(f"xonforge:splits:{seed}:{key!r}").shuffle(ids)
         counts = largest_remainder(len(ids), dict(proportions), seed)
         start = 0

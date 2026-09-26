@@ -21,6 +21,7 @@ from . import locations, pipeline, registry, runs
 from .corpus import leak
 from .review import blind
 from .skeleton.generators import LEVELS, PLANT_TYPES, Knobs, generate
+from .skeleton.v1 import V1_PLANT_TYPES
 from .solver import check_base
 
 
@@ -41,7 +42,7 @@ def build_parser() -> argparse.ArgumentParser:
                    help="check it for a dry run, which only replays the response cache and needs no key or SDK")
     s = sub.add_parser("skeletons", help="generate seeded bases of skeletons and check each with the solver; "
                                          "offline, and nothing is written")
-    s.add_argument("--type", dest="plant_type", choices=["all", *PLANT_TYPES], default="all")
+    s.add_argument("--type", dest="plant_type", choices=["all", *PLANT_TYPES, *V1_PLANT_TYPES], default="all")
     s.add_argument("--genre", required=True, help="the genre each skeleton records")
     s.add_argument("--count", type=int, default=5, help="bases per plant type (default 5)")
     s.add_argument("--seed", type=int, default=1, help="the first base's seed; each further base adds 1")
@@ -213,9 +214,10 @@ def composition(specs: list[str], seed: int, trap: bool) -> list[estimates.BaseS
     bases = []
     for spec in specs:
         parts = spec.split(":")
-        if len(parts) != 3 or parts[0] not in PLANT_TYPES or not parts[1].isdigit() or not parts[2].isdigit():
+        known = (*PLANT_TYPES, *V1_PLANT_TYPES)
+        if len(parts) != 3 or parts[0] not in known or not parts[1].isdigit() or not parts[2].isdigit():
             raise ValueError(f"a composition's bases are TYPE:LEVEL:COUNT, with a plant type of "
-                             f"{', '.join(PLANT_TYPES)}, not {spec!r}")
+                             f"{', '.join(known)}, not {spec!r}")
         if int(parts[1]) not in LEVELS:
             raise ValueError(f"the difficulty levels are {', '.join(map(str, LEVELS))}, not {parts[1]}")
         bases += [(parts[0], int(parts[1]))] * int(parts[2])

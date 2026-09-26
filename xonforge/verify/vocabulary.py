@@ -23,6 +23,17 @@ ATTRIBUTE_WORDS = {
     "department": r"departments?|dept",
     "table": r"tables?",
     "cabin": r"cabins?|cabinmates?",
+    "place": r"inside|place|places|location|located|contains|contained",
+    "clock": r"clocks?|hours?|minutes?|landed|lands|flight|left|departed|arrived|finished",
+    "stock": r"jars?|stock",
+    "status": r"arrived|arrival|guest|guests|left|stayed",
+    "office": r"captain|treasurer|office|offices|appointed",
+    "day": r"monday|tuesday|meeting|meetings|day|days",
+    "distance": r"kilometres?|kilometers?|miles?|ran|run",
+    "headcount": r"people|person|attended|attend|headcount",
+    "news": r"code|prize|announced|announcement|surprised|surprise",
+    "badge": r"key|keys|pass|badge|unlocked",
+    "finish": r"first|second|finish|finished|place",
 }
 
 _NEGATION = r"\b(?:not|never|no longer|neither|nor)\b|n['\u2019]t\b"
