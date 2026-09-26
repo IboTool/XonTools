@@ -88,8 +88,10 @@ def positions(rendering: Rendering, ids) -> dict[str, int]:
 
 
 def whole(skeleton: Skeleton, rendering: Rendering) -> bool:
-    """Whether every sentence forbidden content exempts is a whole sentence of the text, found once."""
-    ids = exempt_ids(skeleton)
+    """Whether every sentence forbidden content exempts is a whole sentence of the text, found once. An inferred
+    fact has no sentence of its own."""
+    derived = {f.id for f in skeleton.facts if f.derivation}
+    ids = [f for f in exempt_ids(skeleton) if f not in derived]
     spans = rendering.span_map()
     return (len(positions(rendering, ids)) == len(ids)
             and all(occurrences(rendering.text, spans[f]) == 1 for f in ids))
@@ -97,10 +99,13 @@ def whole(skeleton: Skeleton, rendering: Rendering) -> bool:
 
 # ------------------------------------------------------------------------------------------ spans
 def span_problems(skeleton: Skeleton, rendering: Rendering) -> list[str]:
-    text, ids = rendering.text, [f.id for f in skeleton.facts]
+    """One span per fact that is stated. A fact with a derivation is inferred: it has no sentence of its own."""
+    text = rendering.text
+    inferred = {f.id for f in skeleton.facts if f.derivation}
+    ids = [f.id for f in skeleton.facts if f.id not in inferred]
     counts = Counter(s.fact for s in rendering.spans)
     problems = []
-    unknown = sorted(set(counts) - set(ids))
+    unknown = sorted(set(counts) - {f.id for f in skeleton.facts})
     if unknown:
         problems.append(f"spans were given for {listed(unknown)}, which "
                         + ("is not a listed fact" if len(unknown) == 1 else "are not listed facts"))
@@ -202,7 +207,10 @@ def forbidden_problems(skeleton: Skeleton, rendering: Rendering) -> list[str]:
     return problems
 
 
-def quotation_problems(text: str) -> list[str]:
+def quotation_problems(text: str, skeleton: Skeleton | None = None) -> list[str]:
+    """Quotation marks are refused, except in a quoted_speech trap, which is the one place the text may quote."""
+    if skeleton is not None and any(t.type == "quoted_speech" for t in skeleton.traps):
+        return []
     marks = [c for c in QUOTE_CHARS if c in text]
     return [f"the text uses quotation marks ({' '.join(marks)}); use none"] if marks else []
 
@@ -263,7 +271,7 @@ def spread_problems(skeleton: Skeleton, rendering: Rendering, rules: RenderRules
 def structural(skeleton: Skeleton, rendering: Rendering, rules: RenderRules) -> list[str]:
     """Every structural problem with the rendering; empty when it passes."""
     return (span_problems(skeleton, rendering) + content_problems(skeleton, rendering)
-            + forbidden_problems(skeleton, rendering) + quotation_problems(rendering.text)
+            + forbidden_problems(skeleton, rendering) + quotation_problems(rendering.text, skeleton)
             + length_problems(rendering.text, rules) + spacing_problems(skeleton, rendering, rules)
             + spread_problems(skeleton, rendering, rules))
 

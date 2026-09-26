@@ -17,6 +17,15 @@ class SealedPathRefused(RuntimeError):
     """A document the diagnostic must not screen."""
 
 
+def _within(path: Path, root: Path) -> bool:
+    """Whether ``path`` is the root or inside it. Compared again with case folded, so a sealed path is still sealed
+    when only its letter case differs."""
+    if path == root or root in path.parents:
+        return True
+    folded, base = path.as_posix().casefold(), root.as_posix().casefold().rstrip("/")
+    return folded == base or folded.startswith(base + "/")
+
+
 def check_path(path: str | Path) -> Path:
     """The document's resolved path, if it is outside the sealed and judged splits; otherwise SealedPathRefused."""
     p = Path(path).resolve()
@@ -25,7 +34,7 @@ def check_path(path: str | Path) -> Path:
             root = location()
         except LocationRefused as exc:
             raise SealedPathRefused(f"{p} cannot be checked against the {what}: {exc}") from None
-        if p == root or root in p.parents:
+        if _within(p, root):
             raise SealedPathRefused(f"{p} is in the {what} ({root}); the engine never screens its own test corpus.")
     return p
 

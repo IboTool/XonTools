@@ -128,6 +128,8 @@ class Document(_Frozen):
     status: Literal["rendered", "failed"]
     text: str | None = None          # the last readable reply's document, if any reply was readable
     spans: dict[str, str] = {}
+    # Inferred facts (§5.4, item 3): arithmetic, time and location conclusions, keyed by fact id. v0 leaves this empty.
+    inferred: dict[str, InferredSpan] = {}
     attempts: tuple[Attempt, ...]
     flags: tuple[str, ...] = ()
     review_problems: tuple[ReviewProblem, ...] = ()

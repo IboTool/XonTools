@@ -3,8 +3,9 @@
 Bases, each with all its variants, are stratified by plant type × difficulty level. Within each stratum they are
 sorted by id, shuffled with the seed, and divided by the proportions (50 / 15 / 35 for development, calibration and
 test by default, configurable) with largest-remainder rounding, ties broken by the same seed, which is logged before
-generation (the decision log's split seed, decisions.py). v0 has no judged plant type, so the judged split is empty. A
-pipeline test's bases go only to development and calibration, in proportions its run gives (xonforge/modes.py).
+generation (the decision log's split seed, decisions.py). A judged plant (causal, commonsense, implicature) goes only
+to the judged split, and only in a corpus of record. A pipeline test's bases go only to development and calibration,
+in proportions its run gives (xonforge/modes.py).
 """
 from __future__ import annotations
 
@@ -14,6 +15,7 @@ from typing import Mapping, Sequence
 
 from xonforge import modes
 from xonforge.skeleton.schema import Base
+from xonforge.solver.solver import JUDGED
 
 from .export import OUT_OF_BOUNDS, SPLITS
 from .quotas import largest_remainder
@@ -56,4 +58,12 @@ def assign(strata: Mapping[str, tuple], seed: int, *, mode: str,
 
 def assign_bases(bases: Sequence[Base], seed: int, *, mode: str,
                  proportions: Mapping[str, Fraction] | None = None) -> dict[str, str]:
-    return assign({b.base_id: stratum(b) for b in bases}, seed, mode=mode, proportions=proportions)
+    """Each base's split. A judged plant is the judged split in a corpus of record, and is refused in a pipeline test."""
+    judged = [b.base_id for b in bases if b.planted[0].plant.type in JUDGED]
+    if judged and mode != modes.RECORD:
+        raise ValueError("a judged plant goes only to the judged split, and a pipeline test has none")
+    ordinary = [b for b in bases if b.base_id not in set(judged)]
+    out = assign({b.base_id: stratum(b) for b in ordinary}, seed, mode=mode, proportions=proportions)
+    for base_id in judged:
+        out[base_id] = "judged"
+    return out

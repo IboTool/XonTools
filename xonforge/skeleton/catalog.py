@@ -11,6 +11,11 @@ NAMES = ("Ada", "Amir", "Ana", "Arjun", "Ben", "Bo", "Cleo", "Dara", "Dev", "Eli
 PRONOUNS = ("she", "he", "they")
 ORDINAL = ("age", "height", "arrival", "score", "speed")
 CATEGORICAL = ("team", "club", "department", "table", "cabin")
+# v1 attributes. Kept out of CATEGORICAL and ORDINAL so v0's generators never plant on them.
+QUANTITY = ("jars", "years", "distance")
+TIME = ("schedule",)
+LOCATION = ("place", "containment")
+V1_CATEGORICAL = ("identity", "attendance", "presence", "duty")
 VALUES = {
     "team": ("red", "blue", "green", "gold"),
     "club": ("chess", "drama", "choir", "robotics"),

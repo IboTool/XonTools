@@ -37,12 +37,14 @@ def patterns(scan: str) -> list[str]:
     """The scan's patterns for XonForge's attributes, by key: a superlative's attribute and pole ("score:highest"),
     an order phrase ("arrived later than"), or the attribute a same-attribute scan has cues for ("club")."""
     ours = set(ORDINAL) | set(CATEGORICAL)
+    # same-attribute also covers a location a plant can put three entities on. Superlatives and order stay ordinal.
+    same = ours | {"containment"}
     if scan == "superlative_collisions":
         return [f"{a}:{pole}" for a, pole, _ in SUPERLATIVE_CUES if a in ours]
     if scan == "order_cycles":
         return [phrase for a, phrase, _ in ORDER_PATTERNS if _XONFORGE.get(a, a) in ours]
     if scan == "same_attribute":
-        return [_XONFORGE.get(a, a) for a in ATTRIBUTE_CUES if _XONFORGE.get(a, a) in ours]
+        return [_XONFORGE.get(a, a) for a in ATTRIBUTE_CUES if _XONFORGE.get(a, a) in same]
     raise ValueError(f"no scan is called {scan!r}")
 
 

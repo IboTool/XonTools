@@ -27,7 +27,10 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, model_validator
 
-RELATIONS = ("greater", "same", "different")
+RELATIONS = ("greater", "same", "different", "contains")
+READINGS = ("assertion", "quote", "hypothetical", "belief", "corrected")
+# A premise with no subject may state a universal ("everyone" / "not_everyone") as well as a number of values.
+UNIVERSALS = ("everyone", "not_everyone")
 
 
 class _Frozen(BaseModel):
@@ -53,11 +56,17 @@ class Fact(_Frozen):
     kind: Literal["relation", "value", "event", "premise"]
     subject: str | None                       # None only when the fact states its attribute's number of values
     attribute: str
-    relation: Literal["greater", "same", "different"] | None = None
+    relation: Literal["greater", "same", "different", "contains"] | None = None
     object: str | None = None
     value: str | int | float | None = None
     negated: bool = False
     time: str | None = None
+    # v1 (§5.2, §5.3, §5.3b). Defaults keep every v0 fact what it was.
+    reading: Literal["assertion", "quote", "hypothetical", "belief", "corrected"] = "assertion"
+    role: str | None = None          # how the solver reads the fact: departure, duration, opening, ...
+    unit: str | None = None          # a measure's unit, when the attribute's own unit is not enough
+    support: tuple[str, ...] = ()    # fact ids an inferred fact follows from
+    derivation: str | None = None    # the solver's rule, e.g. "15:00 + 2 h = 17:00"
 
     @model_validator(mode="after")
     def _shape(self) -> Fact:
@@ -74,16 +83,21 @@ class Fact(_Frozen):
             raise ValueError(f"fact {self.id}: a value fact names its value")
         if relational and self.object == self.subject:
             raise ValueError(f"fact {self.id}: a relation joins two different entities")
-        if self.subject is None and not (self.kind == "premise" and not self.negated and type(self.value) is int
-                                         and self.value >= 2):
+        universal = self.kind == "premise" and not self.negated and self.value in UNIVERSALS
+        arity = self.kind == "premise" and not self.negated and type(self.value) is int and self.value >= 2
+        # A role marks a v1 premise the solver reads (a universal value, a year, a count), which has no subject.
+        annotated = self.kind == "premise" and not self.negated and self.role is not None
+        if self.subject is None and not (arity or universal or annotated):
             raise ValueError(f"fact {self.id}: only a premise stating its attribute's number of values, a whole "
-                             "number of at least 2, has no subject")
+                             "number of at least 2, a universal, or a premise with a role, has no subject")
         return self
 
     @property
     def states_arity(self) -> bool:
-        """Whether the fact states its attribute's number of values."""
-        return self.subject is None
+        """Whether the fact states its attribute's number of values. A v1 premise with a role (a year, a count, a
+        universal) has no subject too, and is not an arity."""
+        return (self.subject is None and self.role is None and self.kind == "premise" and type(self.value) is int
+                and not isinstance(self.value, bool))
 
 
 class Plant(_Frozen):
@@ -130,6 +144,8 @@ class Skeleton(_Frozen):
                 raise ValueError(f"{self.base_id}: fact {f.id} names an attribute the skeleton lacks")
             if f.relation == "greater" and attributes[f.attribute].kind != "ordinal":
                 raise ValueError(f"{self.base_id}: fact {f.id} orders a non-ordinal attribute")
+            if f.relation == "contains" and attributes[f.attribute].kind != "location":
+                raise ValueError(f"{self.base_id}: fact {f.id} states containment of something other than a location")
             if f.states_arity:
                 if attributes[f.attribute].kind != "categorical" or attributes[f.attribute].arity != f.value:
                     raise ValueError(f"{self.base_id}: fact {f.id} states the number of values of a categorical "

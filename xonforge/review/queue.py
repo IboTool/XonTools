@@ -36,23 +36,25 @@ class QueueItem(BaseModel):
     reasons: tuple[str, ...]
 
 
-def reasons(document: Document, reviewer_flags: Sequence[str] = ()) -> list[str]:
+def reasons(document: Document, reviewer_flags: Sequence[str] = (), audit_flags: Sequence[str] = ()) -> list[str]:
     """Why a document goes to a human: its rendering flags (every attempt used, checks still failing), a scan's hits,
-    and the reviewers' flags."""
+    the reviewers' flags, and a fact audit that disagrees with the fact-to-span map."""
     out = list(document.flags)
     out += [f"the {r.scan} scan found hits" for r in document.scans if r.result == "hits"]
     out += [f"a reviewer flagged: {f}" for f in reviewer_flags]
+    out += [f"the fact audit disagrees: {f}" for f in audit_flags]
     return out
 
 
 def flagged(run: str, documents: Sequence[Document],
-            reviewer_flags: Mapping[str, Sequence[str]] | None = None) -> list[QueueItem]:
-    reviewer_flags = reviewer_flags or {}
-    unknown = sorted(set(reviewer_flags) - {d.doc_id for d in documents})
+            reviewer_flags: Mapping[str, Sequence[str]] | None = None,
+            audit_flags: Mapping[str, Sequence[str]] | None = None) -> list[QueueItem]:
+    reviewer_flags, audit_flags = reviewer_flags or {}, audit_flags or {}
+    unknown = sorted((set(reviewer_flags) | set(audit_flags)) - {d.doc_id for d in documents})
     if unknown:
         raise ValueError(f"reviewer flags for documents not given: {', '.join(unknown)}")
-    items = [QueueItem(run=run, doc_id=d.doc_id, reasons=tuple(reasons(d, reviewer_flags.get(d.doc_id, ()))))
-             for d in documents]
+    items = [QueueItem(run=run, doc_id=d.doc_id, reasons=tuple(reasons(
+        d, reviewer_flags.get(d.doc_id, ()), audit_flags.get(d.doc_id, ())))) for d in documents]
     return [i for i in items if i.reasons]
 
 
@@ -64,13 +66,13 @@ def random_share(unflagged: Sequence[str], seed: int, *, sample: bool = False) -
 
 
 def queue(run: str, documents: Sequence[Document], reviewer_flags: Mapping[str, Sequence[str]], log: DecisionLog,
-          *, sample: bool = False) -> list[QueueItem]:
+          *, sample: bool = False, audit_flags: Mapping[str, Sequence[str]] | None = None) -> list[QueueItem]:
     """The run's queue: its flagged documents, then its random share of the unflagged ones, drawn with the seed the
-    decision log holds for the run."""
+    decision log holds for the run. ``audit_flags``: a fact audit's disagreements, by document."""
     seed = log.seed(run)
     if seed is None:
         raise ValueError(f"run {run} has no sample seed in the decision log; it is logged before any review")
-    items = flagged(run, documents, reviewer_flags)
+    items = flagged(run, documents, reviewer_flags, audit_flags)
     chosen = random_share([d.doc_id for d in documents if d.doc_id not in {i.doc_id for i in items}], seed,
                           sample=sample)
     return items + [QueueItem(run=run, doc_id=d, reasons=(

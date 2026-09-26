@@ -20,6 +20,40 @@ has its own, newer entries.
 
 ---
 
+## 2026-09-26 — XonForge — v1 step 8: plants, traps, the fact audit, and `python -m xonforge run`
+
+Built offline. No API call was made, no token cap was set, and `defaults.yaml` was not written. The readings that
+fill gaps in §5.2, §5.3, §5.3b, §5.4 and §7.4b are in `xonforge/docs/decisions.md` (2026-09-26, step 8). With this
+step's tests and the rest of `tests/xonforge`, apart from the dashboard test the next entry commits, 532 tests are
+collected; run together with that test, 533 passed, with A1's key and every `XONFORGE_*` variable unset.
+
+1. **Plants and traps.** v0's four types and `arity_control` stay. Added, each with a consistent twin and a solver
+   test that every generated base passes `check_base`:
+   - plants: `temporal_arithmetic`, `quantity_arithmetic`, `spatial_containment`, `coreference_trap`,
+     `negation_scope`;
+   - traps: `quoted_speech`, `hypothetical`, `conditional`, `legitimate_correction`, `state_change`,
+     `reported_belief`, each satisfiable when read correctly, with the naive reading recorded the way
+     `arity_control` is;
+   - solver plants: `quantifier_violation`, `uniqueness_violation`, `colocation_conflict`, `calendar_age`,
+     `cardinality_mismatch`, `unit_conversion`, `knowledge_perspective`;
+   - judged plants: `causal_inconsistency`, `commonsense_impossibility`, `implicature_tension`, satisfiable either
+     way, labeled for the judged split, and refused in a pipeline test;
+   - resolvable traps: `time_zone`, `unit_equivalence`, `overnight_span`, `same_name`, `role_handover`,
+     `approximation`, `perspective_error`, each storing its resolving fact.
+   `PLANT_TYPES` stays the four. Events, times, and quantity, time and location attributes are judged; a kind still
+   outside that list is refused. The catalog is updated in `xonforge/docs/plant_catalog.md`.
+2. **Inferred facts.** Arithmetic, time and location conclusions carry a derivation and are recorded with
+   `InferredSpan` (`mode: inferred`, support spans, derivation). v0 facts stay stated or paraphrased. Quotation
+   marks stay refused unless the skeleton has a `quoted_speech` trap.
+3. **Scans.** `containment` is a same-attribute pattern, with cues and the synthetic canary `same-containment`.
+   Scans stay fail-closed: an attribute is not accepted until it has a pattern and a canary.
+4. **Fact audit** (`xonforge/verify/audit.py`, prompt `fact-audit-v1`). The reply is stated, implied, absent or
+   contradicted. The auditor is not the renderer. A disagreement with the fact-to-span map is a queue reason. Tests
+   use a fake client. The audit runs only with `--audit`.
+5. **`python -m xonforge run NAME`.** It refuses unless `run-check` passes, supports `--dry-run` (the cache only),
+   and resumes a stored document. It does not split or seal. A path that differs from a sealed or judged path only
+   in letter case is still refused.
+
 ## 2026-09-26 — Repository — the fresh-clone check: the install fixed, exact versions in `constraints.txt`
 
 After the third reset's push, `main` (`bbf05d9a`) was cloned from GitHub into a temporary folder outside the

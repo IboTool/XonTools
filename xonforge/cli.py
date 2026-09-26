@@ -8,6 +8,7 @@ prints its help.
   python -m xonforge run-check NAME         whether a run configuration may start, and why not; no call is made
   python -m xonforge skeletons --genre G    seeded bases of each plant type, checked by the solver; offline
   python -m xonforge estimate NAME --bases T:L:N   a run's cost estimate for a composition; offline
+  python -m xonforge run NAME --bases T:L:N --dry-run  render from the cache only; refuses unless run-check passes
   python -m xonforge leak-check             sealed documents in any worktree; --commits R: also those commits
   python -m xonforge leak-audit             sealed documents in any worktree or anywhere in the history
 """
@@ -16,10 +17,10 @@ from __future__ import annotations
 import argparse
 
 from . import estimate as estimates
-from . import registry, runs
+from . import pipeline, registry, runs
 from .corpus import leak
 from .review import blind
-from .skeleton.generators import LEVELS, PLANT_TYPES, Knobs, generate
+from .skeleton.generators import ALL_PLANT_TYPES, LEVELS, PLANT_TYPES, Knobs, generate
 from .solver import check_base
 
 
@@ -40,7 +41,7 @@ def build_parser() -> argparse.ArgumentParser:
                    help="check it for a dry run, which only replays the response cache and needs no key or SDK")
     s = sub.add_parser("skeletons", help="generate seeded bases of skeletons and check each with the solver; "
                                          "offline, and nothing is written")
-    s.add_argument("--type", dest="plant_type", choices=["all", *PLANT_TYPES], default="all")
+    s.add_argument("--type", dest="plant_type", choices=["all", *ALL_PLANT_TYPES], default="all")
     s.add_argument("--genre", required=True, help="the genre each skeleton records")
     s.add_argument("--count", type=int, default=5, help="bases per plant type (default 5)")
     s.add_argument("--seed", type=int, default=1, help="the first base's seed; each further base adds 1")
@@ -64,6 +65,18 @@ def build_parser() -> argparse.ArgumentParser:
     e.add_argument("--prompts", nargs="+", choices=list(blind.PROMPTS), default=list(blind.PROMPTS),
                    help="the review prompts each reviewer runs (default: both)")
     e.add_argument("--genre", default="office memo", help="the genre the skeletons record")
+    u = sub.add_parser("run", help="generate, render, check, queue and accept one run; refuses unless run-check "
+                                   "passes. --dry-run replays the response cache and sends no call")
+    u.add_argument("name", help="the run configuration's name, e.g. sample")
+    u.add_argument("--bases", action="append", required=True, metavar="TYPE:LEVEL:COUNT",
+                   help="COUNT bases of plant type TYPE at difficulty level LEVEL; repeat for more")
+    u.add_argument("--seed", type=int, default=1, help="the first base's seed; each further base adds 1")
+    u.add_argument("--arity-control", action="store_true", help="give each binary_parity base its trap variant")
+    u.add_argument("--genre", default="office memo", help="the genre the skeletons record")
+    u.add_argument("--dry-run", action="store_true",
+                   help="replay the response cache only; a call that is not cached is not sent")
+    u.add_argument("--audit", action="store_true",
+                   help="also run the fact audit, with a reviewer rather than the renderer")
     for name, text in (("leak-check", "search every worktree for sealed documents, from the committed fingerprint "
                                       "manifests; read only"),
                        ("leak-audit", "search every worktree and every commit in the history; read only")):
@@ -167,7 +180,7 @@ def skeletons(args) -> int:
     except ValueError as exc:
         print(f"error: {exc}")
         return 2
-    types = PLANT_TYPES if args.plant_type == "all" else (args.plant_type,)
+    types = ALL_PLANT_TYPES if args.plant_type == "all" else (args.plant_type,)
     rows, summary, failed = [], [], False
     for t in types:
         kept = made = 0
@@ -252,6 +265,49 @@ def format_estimate(config: runs.RunConfig, entries: dict, settings: dict, first
     return "\n".join(out)
 
 
+def _format_run(report: dict) -> str:
+    rows = [[d.doc_id, d.status, str(len(d.flags))] for d in report["documents"]]
+    queued = {i.doc_id for i in report["queue"]}
+    out = [f"XonForge run {report['run']} ({report['mode']}).", ""]
+    if rows:
+        out += _table(["document", "status", "flags"], rows) + [""]
+    out.append(f"{len(report['documents'])} documents, {len(queued)} queued, "
+               f"{sum(v.accepted for v in report['verdicts'])} accepted.")
+    return "\n".join(out)
+
+
+def run(args) -> int:
+    from xon_common.providers.base import DryRunMissing
+
+    defaults = registry.load_defaults()
+    entries = {e.name: e for e in registry.load_entries()}
+    try:
+        config = runs.load(args.name, defaults, entries)
+        specs = composition(args.bases, args.seed, args.arity_control)
+        share = defaults["skeletons"]["negation_premise_share"]
+    except ValueError as exc:
+        print(f"error: {exc}")
+        return 2
+    found = runs.problems(config, entries, registry.adapters(list(entries.values()), defaults),
+                          k=int(defaults["review"]["k"]), dry_run=args.dry_run)
+    if found:
+        print(format_run_check(config, entries, found, dry_run=args.dry_run))
+        return 1
+    try:
+        session = registry.Session(args.name, run_config=args.name, dry_run=args.dry_run)
+        report = pipeline.execute(session, specs, genre=args.genre, seed=args.seed, premise_share=float(share),
+                                  audit_facts=args.audit)
+    except DryRunMissing as exc:
+        print(str(exc))
+        print("A dry run only replays the response cache. Nothing was sent.")
+        return 1
+    except runs.RunRefused as exc:
+        print(f"error: {exc}")
+        return 1
+    print(_format_run(report))
+    return 0
+
+
 def estimate(args) -> int:
     defaults = registry.load_defaults()
     entries = {e.name: e for e in registry.load_entries()}
@@ -300,6 +356,8 @@ def main(argv: list[str] | None = None) -> int:
         return skeletons(args)
     if args.command == "estimate":
         return estimate(args)
+    if args.command == "run":
+        return run(args)
     if args.command in ("leak-check", "leak-audit"):
         return leak_check(args, audit=args.command == "leak-audit")
     ap.print_help()

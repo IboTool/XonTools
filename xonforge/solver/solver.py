@@ -12,13 +12,16 @@ Facts about different attributes never interact. On one attribute:
 - ``premise`` facts are otherwise facts like any other: the kind matters to rendering, not to truth.
 
 A trap (§5.5) must hold when read correctly, and the solver records what a naive reading would wrongly conclude. v0's
-one trap, ``arity_control`` (the user's item 20), is binary parity's planted facts with a fact stating three values:
+trap, ``arity_control`` (the user's item 20), is binary parity's planted facts with a fact stating three values:
 read correctly, an odd cycle of differences fits three values; read naively, as if the attribute had two, it cannot,
-and the planted facts are that reading's only contradiction.
+and the planted facts are that reading's only contradiction. v1's traps (§5.3) hold the same way: a quote, a
+hypothesis, a belief or a corrected claim is not an assertion; a value at one time is not a value at every time; a
+clock offset, an overnight span, a unit tolerance, or two people who share a name is what a naive reading drops.
 
-Refused (``Unsupported``): events, facts with a time, other attribute kinds, and the other traps, which come with v1
-(§14, step 8); and a negated value on an attribute whose number of values is stated, since whether the negation names
-one of the stated values is not decided (v0 never generates it).
+Refused (``Unsupported``): an attribute kind other than ordinal, categorical, quantity, time or location; a value
+fact on an ordinal attribute; a trap the solver does not list; a trap sitting inside a consistent or planted variant;
+and a negated value on an attribute whose number of values is stated, since whether the negation names one of the
+stated values is not decided (v0 never generates it).
 """
 from __future__ import annotations
 
@@ -27,9 +30,30 @@ from typing import Iterable, Mapping
 
 from xonforge.skeleton.schema import Attribute, Base, Fact, Skeleton, Trap
 
-TRAPS = ("arity_control",)
+from . import v1 as v1solver
+
+TRAPS = ("arity_control", "quoted_speech", "hypothetical", "conditional", "legitimate_correction",
+         "state_change", "reported_belief", "time_zone", "unit_equivalence", "overnight_span", "same_name",
+         "role_handover", "approximation", "perspective_error")
+JUDGED = frozenset({"causal_inconsistency", "commonsense_impossibility", "implicature_tension"})
 NAIVE_VALUES = 2         # arity_control's naive reading: the attribute has two values
 NAIVE_READING = "the attribute has two values"
+NAIVE_OF = {
+    "arity_control": NAIVE_READING,
+    "quoted_speech": "a quotation is an assertion",
+    "hypothetical": "a hypothesis is an assertion",
+    "conditional": "a hypothesis is an assertion",
+    "legitimate_correction": "a corrected claim still stands",
+    "state_change": "a value holds at every time",
+    "reported_belief": "a belief is an assertion",
+    "perspective_error": "a belief is an assertion",
+    "time_zone": "clocks in two places are the same clock",
+    "unit_equivalence": "two units are the same unit",
+    "overnight_span": "a span cannot cross midnight",
+    "same_name": "one name is one person",
+    "role_handover": "a value holds at every time",
+    "approximation": "a round number is exact",
+}
 
 
 class Unsupported(ValueError):
@@ -37,11 +61,11 @@ class Unsupported(ValueError):
 
 
 def _check_supported(attribute: Attribute, fact: Fact) -> None:
-    if attribute.kind not in ("ordinal", "categorical"):
-        raise Unsupported(f"attribute {attribute.key!r} is {attribute.kind}; v0 handles ordinal and categorical ones")
-    if fact.kind == "event" or fact.time is not None:
-        raise Unsupported(f"fact {fact.id}: events and facts with a time come with v1's plant types")
-    if fact.relation is None and attribute.kind != "categorical":
+    if attribute.kind not in ("ordinal", "categorical", "quantity", "time", "location"):
+        raise Unsupported(f"attribute {attribute.key!r} is {attribute.kind}; the solver handles ordinal, "
+                          "categorical, quantity, time and location")
+    if (fact.role is None and fact.relation != "contains" and fact.kind != "event" and fact.time is None
+            and fact.relation is None and attribute.kind not in ("categorical", "quantity", "time", "location")):
         raise Unsupported(f"fact {fact.id}: value facts and stated numbers of values are handled on categorical "
                           "attributes only")
 
@@ -160,16 +184,34 @@ def _consistent(facts: list[Fact]) -> bool:
     return True
 
 
+def _classical(facts: list[Fact], attributes: Mapping[str, Attribute]) -> bool:
+    """v0's reading of the facts that carry no v1 role: assertions, grouped so each time is judged on its own."""
+    active = [f for f in facts if f.reading == "assertion" and f.role is None and f.relation != "contains"]
+    timeless = [f for f in active if f.time is None]
+    times = sorted({f.time for f in active if f.time is not None})
+    groups = [timeless + [f for f in active if f.time == t] for t in times] or [timeless]
+    by_groups = []
+    for group in groups:
+        plain = [f.model_copy(update={"time": None}) if f.time else f for f in group]
+        by_attribute: dict[str, list[Fact]] = defaultdict(list)
+        for f in plain:
+            by_attribute[f.attribute].append(f)
+        by_groups.append(by_attribute)
+    for by_attribute in by_groups:
+        for key, fs in by_attribute.items():
+            if any(f.states_arity for f in fs) and any(f.negated for f in fs):
+                raise Unsupported(f"attribute {key!r}: a negated value on an attribute whose number of values is "
+                                  "stated; whether the negation names one of the stated values is not decided")
+        if not all(_consistent(fs) for _, fs in sorted(by_attribute.items())):
+            return False
+    return True
+
+
 def satisfiable(facts: Iterable[Fact], attributes: Mapping[str, Attribute]) -> bool:
-    by_attribute: dict[str, list[Fact]] = defaultdict(list)
+    facts = list(facts)
     for f in facts:
         _check_supported(attributes[f.attribute], f)
-        by_attribute[f.attribute].append(f)
-    for key, fs in by_attribute.items():
-        if any(f.states_arity for f in fs) and any(f.negated for f in fs):
-            raise Unsupported(f"attribute {key!r}: a negated value on an attribute whose number of values is stated; "
-                              "whether the negation names one of the stated values is not decided")
-    return all(_consistent(fs) for _, fs in sorted(by_attribute.items()))
+    return _classical(facts, attributes) and v1solver.holds(facts, attributes)
 
 
 def minimal_contradiction(facts: Iterable[Fact], attributes: Mapping[str, Attribute]) -> tuple[str, ...] | None:
@@ -188,11 +230,41 @@ def minimal_contradiction(facts: Iterable[Fact], attributes: Mapping[str, Attrib
 def _naive_facts(skeleton: Skeleton, trap: Trap) -> list[Fact]:
     """The skeleton's facts as a naive reading of the trap takes them."""
     if trap.type not in TRAPS:
-        raise Unsupported(f"the {trap.type} trap comes with v1 (XONFORGE_SPEC.md §5.3, §14 step 8)")
-    if skeleton.arity_fact is None or skeleton.arity_fact not in trap.facts:
-        raise Unsupported("an arity_control trap lists the arity fact that resolves it")
-    return [Fact(**{**f.model_dump(), "value": NAIVE_VALUES}) if f.id == skeleton.arity_fact else f
-            for f in skeleton.facts]
+        raise Unsupported(f"the {trap.type} trap is not one the solver judges (XONFORGE_SPEC.md §5.3)")
+    if trap.type == "arity_control":
+        if skeleton.arity_fact is None or skeleton.arity_fact not in trap.facts:
+            raise Unsupported("an arity_control trap lists the arity fact that resolves it")
+        return [Fact(**{**f.model_dump(), "value": NAIVE_VALUES}) if f.id == skeleton.arity_fact else f
+                for f in skeleton.facts]
+    reading = {"quoted_speech": "quote", "hypothetical": "hypothetical", "conditional": "hypothetical",
+               "legitimate_correction": "corrected", "reported_belief": "belief",
+               "perspective_error": "belief"}.get(trap.type)
+    if reading:
+        return [f.model_copy(update={"reading": "assertion"}) if f.reading == reading else f for f in skeleton.facts]
+    if trap.type in ("state_change", "role_handover"):
+        return [f.model_copy(update={"time": None}) if f.time else f for f in skeleton.facts]
+    if trap.type == "time_zone":
+        return [f for f in skeleton.facts if f.role != "offset"]
+    if trap.type == "overnight_span":
+        return [f for f in skeleton.facts if f.role != "overnight"]
+    if trap.type in ("unit_equivalence", "approximation"):
+        return [f for f in skeleton.facts if f.role != "tolerance"]
+    # same_name: one name is read as one person, so "different" between two who share a name is read as "same".
+    shared: set[frozenset[str]] = set()
+    by_name: dict[str, list[str]] = {}
+    for e in skeleton.entities:
+        for n in (e.name, *e.aliases):
+            by_name.setdefault(n.casefold(), []).append(e.id)
+    for ids in by_name.values():
+        if len(ids) > 1:
+            shared.add(frozenset(ids))
+
+    def conflated(fact: Fact) -> Fact:
+        if fact.relation == "different" and frozenset((fact.subject, fact.object)) in shared:
+            return fact.model_copy(update={"relation": "same"})
+        return fact
+
+    return [conflated(f) for f in skeleton.facts if f.role != "distinct"]
 
 
 def naive_contradiction(skeleton: Skeleton, trap: Trap) -> tuple[str, ...] | None:
@@ -229,6 +301,12 @@ def check_skeleton(skeleton: Skeleton) -> list[str]:
     if skeleton.variant == "consistent":
         core = minimal_contradiction(skeleton.facts, attributes)
         return [] if core is None else [f"the consistent variant's facts {', '.join(core)} cannot all be true"]
+    if skeleton.variant == "planted" and skeleton.plant.type in JUDGED:
+        if skeleton.plant.params.get("ground_truth") != "judged":
+            return ["a judged plant records ground_truth judged, and goes only to the judged split"]
+        core = minimal_contradiction(skeleton.facts, attributes)
+        return [] if core is None else [
+            f"a judged plant must itself be satisfiable; the facts {', '.join(core)} cannot all be true"]
     if skeleton.variant == "planted":
         required = list(skeleton.plant.facts) + ([skeleton.arity_fact] if skeleton.arity_fact else [])
         return _only_contradiction(list(skeleton.facts), required, attributes, skeleton.arity_fact,
@@ -241,9 +319,9 @@ def check_skeleton(skeleton: Skeleton) -> list[str]:
         recorded = tuple(trap.naive.get("contradiction", ()))
         if naive is None:
             problems.append(f"the {trap.type} trap: a naive reading finds no contradiction")
-        elif set(naive) != set(recorded) or trap.naive.get("reading") != NAIVE_READING:
-            problems.append(f"the {trap.type} trap: the naive reading ({NAIVE_READING}) flags {', '.join(naive)}, "
-                            f"and the trap records {', '.join(recorded) or 'nothing'}")
+        elif set(naive) != set(recorded) or trap.naive.get("reading") != NAIVE_OF[trap.type]:
+            problems.append(f"the {trap.type} trap: the naive reading ({NAIVE_OF[trap.type]}) flags "
+                            f"{', '.join(naive)}, and the trap records {', '.join(recorded) or 'nothing'}")
         problems += [f"the {trap.type} trap's naive reading: {p}" for p in _only_contradiction(
             _naive_facts(skeleton, trap), list(trap.facts), attributes, skeleton.arity_fact, "the trap's facts")]
     return problems
@@ -273,13 +351,20 @@ def check_base(base: Base) -> list[str]:
     for i, skeleton in enumerate(base.trap_only, 1):
         problems += [f"trap variant {i}: {p}" for p in check_skeleton(skeleton)]
         for trap in skeleton.traps:
-            used = set(trap.facts) - {skeleton.arity_fact}
+            if trap.type == "arity_control":
+                used = set(trap.facts) - {skeleton.arity_fact}
+                allowed = [skeleton.arity_fact]
+                where = "the arity fact"
+            else:
+                used = set(trap.facts)
+                allowed = list(set(trap.facts) | set(trap.naive.get("resolves") or ()))
+                where = "its trap's facts and the fact that resolves it"
             match = [s for s in base.planted if set(s.plant.facts) == used]
             if not match:
                 problems.append(f"trap variant {i}: the {trap.type} trap's facts are no planted variant's plant")
                 continue
-            outside = _differing(match[0], skeleton, [skeleton.arity_fact])
+            outside = _differing(match[0], skeleton, allowed)
             if outside:
-                problems.append(f"trap variant {i}: differs from its planted variant outside the arity fact, in facts "
+                problems.append(f"trap variant {i}: differs from its planted variant outside {where}, in facts "
                                 f"{', '.join(outside)}")
     return problems
