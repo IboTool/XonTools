@@ -1,0 +1,25 @@
+{
+ "request": "2f0273d6d5148dd34772ffe7bbe4cfc32866c2f39dd3514a43e33a52f18b651a",
+ "tag": "text-4175f2115188-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Mina is on the same team as Eli.",
+     "Eli is on the same team as Zeno.",
+     "Mina is not on the same team as Zeno."
+    ],
+    "explanation": "If Mina is on the same team as Eli, and Eli is on the same team as Zeno, then Mina must be on the same team as Zeno, contradicting the statement that she is not."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1100,
+  "output_tokens": 130,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

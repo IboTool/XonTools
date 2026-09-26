@@ -1,0 +1,102 @@
+{
+ "request": "86c2f8cea85c4c31ecd61f15c3c1ea2429b05dfd0e8aae7ec6a9520bd3ecddbd",
+ "tag": "text-48964093854e-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla",
+     "she"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "isla",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "isla",
+    "b": "nell",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "cy",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "cy",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "nell",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2147,
+  "output_tokens": 399,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

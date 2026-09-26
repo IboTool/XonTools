@@ -1,0 +1,184 @@
+{
+ "request": "5a593e37067d1bc5895d9e982f4193c2d301c7f55bc1ca18c548396a1cf97721",
+ "tag": "text-33810c949db0-v22-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpecV22",
+ "output": {
+  "entities": [
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   },
+   {
+    "id": "volunteers",
+    "mentions": [
+     "Volunteers",
+     "the volunteers",
+     "everyone",
+     "the group"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "team",
+    "arity": "multi",
+    "arity_span": "There were three teams.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 13,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "cleo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "team",
+    "kind": "different",
+    "a": "cleo",
+    "b": "yara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 23,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "yara",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_order",
+    "subject": "vik",
+    "comparative": "after",
+    "object": "dara",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_order",
+    "subject": "yara",
+    "comparative": "later than",
+    "object": "volunteers",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 19,
+    "attribute": "age",
+    "subject": "vik",
+    "comparative": "younger",
+    "object": "dara",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_order",
+    "entity": "dara",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "entity": "cleo",
+    "comparative": "tallest",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "later than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "height",
+    "comparative": "tallest",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "usage": {
+  "input_tokens": 3847,
+  "output_tokens": 870,
+  "thinking_tokens": 0,
+  "cache_write_tokens": 0,
+  "cache_read_tokens": 3270
+ },
+ "stop_reason": "end_turn"
+}

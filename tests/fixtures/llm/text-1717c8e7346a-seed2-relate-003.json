@@ -1,0 +1,59 @@
+{
+ "request": "c5be01d348edb104ff87553d5ac331e9e6787312bd4bac310296a3d27805637b",
+ "tag": "text-1717c8e7346a-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 19,
+    "b": 25,
+    "rationale": "Setting up watering cans has no bearing on how many teams there are.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "The break around ten provides the occasion during which coffee and pastries were shared, making B more likely.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 20,
+    "b": 24,
+    "rationale": "A short break around ten is a distinct, calmer moment that doesn't directly imply or negate the bustling midmorning activity described in B, though both could coexist temporally.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   },
+   {
+    "a": 22,
+    "b": 25,
+    "rationale": "Dara and Yara being on different teams implies at least two teams exist, which is consistent with but doesn't specifically confirm three teams.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   },
+   {
+    "a": 23,
+    "b": 24,
+    "rationale": "Finn not being team captain has no logical connection to the garden's midmorning activity level.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 24,
+    "b": 26,
+    "rationale": "The buzzing activity and progress described in A supports the later scene of the group pausing to admire progress, as both describe a productive, active work session.",
+    "relation": "supports",
+    "confidence": 0.75
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1041,
+  "output_tokens": 432,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

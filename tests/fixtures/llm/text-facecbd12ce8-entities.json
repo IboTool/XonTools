@@ -1,0 +1,119 @@
+{
+ "request": "4686c8c5b080e5754c3f7ab2d747075296a84540b0f5eeedac679ea71f0521f6",
+ "tag": "text-facecbd12ce8-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina"
+    ]
+   },
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia"
+    ]
+   },
+   {
+    "id": "wren",
+    "mentions": [
+     "Wren"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "mina",
+    "b": "milo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gia",
+    "b": "mina",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 3,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "uma",
+    "b": "gia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "uma",
+    "b": "milo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "milo",
+    "b": "gia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "rank",
+    "kind": "greater",
+    "a": "mina",
+    "b": "wren",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1819,
+  "output_tokens": 487,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

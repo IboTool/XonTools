@@ -1,0 +1,1043 @@
+{
+ "label": "b24-direct",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-006276844b0b",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The community center on Fifth Street hosts a pottery class every Tuesday evening.",
+   "span": "The community center on Fifth Street hosts a pottery class every Tuesday evening",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Alma is the treasurer.",
+   "span": "Assume that Alma is the treasurer.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Alma is not the treasurer.",
+   "span": "Alma is not the treasurer.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Noor usually arrives first, setting out the aprons and wedging boards before anyone else shows up.",
+   "span": "Noor usually arrives first, setting out the aprons and wedging boards before anyone else shows up",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Ben tends to wander in a few minutes late most weeks.",
+   "span": "Ben tends to wander in a few minutes late, still shaking rain off his jacket most weeks",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Ben is still shaking rain off his jacket most weeks.",
+   "span": "still shaking rain off his jacket most weeks",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Milo took the photographs.",
+   "span": "Milo took the photographs.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Fay likes to sit near the window where the afternoon light falls across the worktable.",
+   "span": "Fay likes to sit near the window where the afternoon light falls across the worktable",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Noor is older than Fay.",
+   "span": "Noor is older than Fay.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "The instructor is a soft spoken woman named Delia.",
+   "span": "The instructor, a soft spoken woman named Delia, walks around checking everyone's centering technique",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Delia walks around checking everyone's centering technique.",
+   "span": "walks around checking everyone's centering technique",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Ben struggles at first to keep his clay steady on the wheel.",
+   "span": "Ben struggles at first to keep his clay steady on the wheel",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Ben improves with practice each session.",
+   "span": "though he improves with practice each session",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Fay is older than Ben.",
+   "span": "Fay is older than Ben.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Alma brings her own set of carving tools wrapped in a cloth bag.",
+   "span": "Alma brings her own set of carving tools wrapped in a cloth bag",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Alma is always willing to lend her carving tools out.",
+   "span": "she is always willing to lend them out",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Noor stands a head taller than most of the others in the room.",
+   "span": "Noor stands a head taller than most of the others in the room",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "It is easy to spot Noor across the crowded tables.",
+   "span": "which makes it easy to spot her across the crowded tables",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Noor is older than Ben.",
+   "span": "Noor is older than Ben.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Milo tends to finish his pieces faster than anyone.",
+   "span": "Milo tends to finish his pieces faster than anyone",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Milo moves on to trimming while others are still shaping.",
+   "span": "moving on to trimming while others are still shaping",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "The group often shares a pot of tea during the break.",
+   "span": "The group often shares a pot of tea during the break",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Ben's apartment is closest to the studio.",
+   "span": "his apartment is closest to the studio",
+   "kind": "quoted"
+  },
+  {
+   "id": 23,
+   "text": "Ben's apartment is just a short walk down the block from the studio.",
+   "span": "just a short walk down the block",
+   "kind": "quoted"
+  },
+  {
+   "id": 24,
+   "text": "Fay keeps a small notebook where she sketches ideas for glazes before each class begins.",
+   "span": "Fay keeps a small notebook where she sketches ideas for glazes before each class begins",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "By the end of the term, the shelves are lined with mugs, bowls, and small vases waiting to be fired in the kiln.",
+   "span": "By the end of the term, the shelves are lined with mugs, bowls, and small vases waiting to be fired in the kiln",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "The pottery class schedule has no bearing on Ben's ability to control a wheel.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "If Alma is the treasurer, then it is false that she is not the treasurer.",
+   "relation": "contradicts",
+   "confidence": 0.99
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Alma's role as treasurer has nothing to do with Ben's punctuality.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Alma being treasurer is unrelated to Fay's seating preference.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Alma's treasurer role has no connection to Delia checking centering technique.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Alma being treasurer does not relate to Milo's trimming pace.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Alma's financial role is unrelated to the group's tea break habit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Alma not being treasurer has no bearing on Noor's arrival habits.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Alma's non-treasurer status is unrelated to Delia's identity as instructor.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Alma's treasurer status is unrelated to the relative ages of Noor and Ben.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Alma not being treasurer has no connection to Ben's apartment location.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Noor arriving early is a separate fact from Ben's tendency to arrive late, though both describe timing they don't causally connect.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Noor's early arrival habit has no bearing on the distance of Ben's apartment from the studio.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Ben arriving late most weeks supports the idea that he's still dealing with rain gear upon arrival, consistent with a delayed entrance.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Ben's lateness is unrelated to his skill at keeping clay steady on the wheel.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Ben's punctuality habits don't inform whether he improves with practice.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Ben's rain-soaked arrival is unrelated to Alma's carving tools.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 24,
+   "rationale": "Ben's jacket-shaking habit has no connection to Fay's glaze notebook.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 25,
+   "rationale": "Milo taking photographs is unrelated to the shelves being lined with pottery pieces.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Fay's seating preference near the window is unrelated to Alma's willingness to lend tools.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Fay's seating preference has no bearing on Noor's height relative to others.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Noor being older than Fay says nothing directly about Fay's age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Noor's age relative to Fay is unrelated to Noor's height relative to others.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Age comparison between Noor and Fay does not affect visibility of Noor in a crowd.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Noor being older than Fay does not establish or contradict Noor being older than Ben.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Noor's age relative to Fay has no connection to Ben's apartment location.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Describing Delia as the soft spoken instructor supports the idea that she would be the one checking everyone's technique.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Delia checking centering technique is unrelated to Milo's independent progress to trimming.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 25,
+   "rationale": "Delia's checking behavior during sessions doesn't directly relate to the end-of-term shelf display.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Struggling at first is consistent with and supports the idea of subsequent improvement with practice.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Ben's initial struggle with the wheel has no bearing on the age comparison between Noor and Ben.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Ben's skill struggles are unrelated to the location of his apartment.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Ben's improvement with practice has no connection to Alma's willingness to lend tools.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Ben's skill improvement is unrelated to the age comparison between Noor and Ben.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Ben's improvement in pottery skill has no bearing on the distance of his apartment from the studio.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Fay being older than Ben has no connection to how easily Noor can be spotted in a crowd.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Fay being older than Ben is consistent with Noor also being older than Ben, but doesn't establish it directly since Fay and Noor's relative ages aren't compared here.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Fay's age relative to Ben has no bearing on the group's tea-sharing habit.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Alma bringing her own tools is consistent with and supports the claim that she is willing to lend them out.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Alma bringing her own carving tools has no bearing on the location of Ben's apartment.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Alma's willingness to lend tools has no bearing on the group sharing tea during breaks.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "Alma lending carving tools is unrelated to Fay's habit of sketching glaze ideas in a notebook.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Being noticeably taller than most others directly makes it easier to spot someone in a crowd.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 25,
+   "rationale": "Noor's height has no connection to the shelves being lined with pottery awaiting firing.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 24,
+   "rationale": "Spotting Noor easily across the room is unrelated to Fay's notebook sketching habit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Milo finishing pieces faster than anyone else explains why he moves on to trimming while others are still shaping.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 25,
+   "rationale": "Milo finishing quickly contributes to more finished pieces accumulating, supporting the shelves being filled by term's end.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Milo moving on to trimming while others shape has no clear connection to the group sharing tea during breaks.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 25,
+   "rationale": "Milo progressing faster to trimming suggests more completed work accumulating, supporting the shelves being full by term's end.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Ben's apartment being closest to the studio is consistent with and supports it being just a short walk down the block.",
+   "relation": "supports",
+   "confidence": 0.85
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma",
+     "her"
+    ]
+   },
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben",
+     "his"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo",
+     "his"
+    ]
+   },
+   {
+    "id": "delia",
+    "mentions": [
+     "Delia",
+     "the instructor"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "treasurer_role",
+    "arity": "binary",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "finish_speed",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "proximity_to_studio",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 2,
+    "attribute": "treasurer_role",
+    "kind": "different",
+    "a": "alma",
+    "b": "treasurer",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 8,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "fay",
+    "b": "noor",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "ben",
+    "b": "fay",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "ben",
+    "b": "noor",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "finish_speed",
+    "kind": "greater",
+    "a": "milo",
+    "b": "others",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 19,
+  "blind": [
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    1,
+    20
+   ],
+   [
+    1,
+    21
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    2,
+    18
+   ],
+   [
+    2,
+    22
+   ],
+   [
+    3,
+    23
+   ],
+   [
+    5,
+    14
+   ],
+   [
+    5,
+    24
+   ],
+   [
+    7,
+    15
+   ],
+   [
+    7,
+    16
+   ],
+   [
+    8,
+    22
+   ],
+   [
+    10,
+    20
+   ],
+   [
+    10,
+    25
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    11,
+    22
+   ],
+   [
+    12,
+    15
+   ],
+   [
+    12,
+    18
+   ],
+   [
+    12,
+    23
+   ],
+   [
+    13,
+    17
+   ],
+   [
+    13,
+    21
+   ],
+   [
+    14,
+    22
+   ],
+   [
+    15,
+    21
+   ],
+   [
+    15,
+    24
+   ],
+   [
+    16,
+    25
+   ],
+   [
+    17,
+    24
+   ],
+   [
+    20,
+    21
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 26,
+  "pairs_requested": 50,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 31,
+  "blind_pairs_related": 0,
+  "entity_relations": 5,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 26,
+  "n_edges": 10,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 0.9758383954742142,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    22,
+    23
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   0.005025125628140708,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   0.7071067811865475,
+   0.7071067811865475,
+   1.0,
+   1.0000000000000002
+  ],
+  "claim_residuals": [
+   0.0,
+   0.9999747481124212,
+   1.9899497487437183,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.232595164407831e-32,
+   1.232595164407831e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 2,
+    "residual": 0.9999747481124212
+   },
+   {
+    "a": 4,
+    "b": 5,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 19,
+    "b": 25,
+    "residual": 0.0
+   },
+   {
+    "a": 20,
+    "b": 25,
+    "residual": 0.0
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   2,
+   1
+  ],
+  "culprits": [
+   {
+    "claim": 2,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.02416160452578575
+   },
+   {
+    "claim": 1,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.02416160452578575
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 1263,
+   "api_calls": 0,
+   "cache_hits": 1263,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18
+   ],
+   [
+    19,
+    20,
+    25
+   ],
+   [
+    21
+   ],
+   [
+    22,
+    23
+   ],
+   [
+    24
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false,
+   "15": false,
+   "16": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    1,
+    2
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": []
+ }
+}

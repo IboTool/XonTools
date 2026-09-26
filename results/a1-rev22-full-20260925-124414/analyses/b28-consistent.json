@@ -1,0 +1,2501 @@
+{
+ "label": "b28-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-a14a753f66f7",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Jun is the event organizer.",
+   "span": "Assume that Jun is the event organizer.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Gia arrived early, stretching near the boathouse while the sun climbed higher.",
+   "span": "Gia arrived early, stretching near the boathouse while the sun climbed higher.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Gus arrived a few minutes after Gia.",
+   "span": "Gus checked his watch and noted that he had arrived a few minutes after Gia.",
+   "kind": "quoted"
+  },
+  {
+   "id": 3,
+   "text": "Zeno drove the minibus.",
+   "span": "Zeno drove the minibus.",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Alma had traveled separately.",
+   "span": "Alma had traveled separately, arriving just as the announcer called the first heat to the starting line.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Alma arrived just as the announcer called the first heat to the starting line.",
+   "span": "arriving just as the announcer called the first heat to the starting line",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Jun stood taller than most of the rowers.",
+   "span": "Jun stood taller than most of the rowers, easily spotted from across the water.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Jun was easily spotted from across the water.",
+   "span": "easily spotted from across the water",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Gia is on the same team as Gus.",
+   "span": "Gia is on the same team as Gus.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "The wind picked up slightly, rippling the surface of the river.",
+   "span": "The wind picked up slightly, rippling the surface of the river and making the flags along the shore snap crisply.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "The flags along the shore snapped crisply.",
+   "span": "making the flags along the shore snap crisply",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Gus is not on the same team as Alma.",
+   "span": "Gus is not on the same team as Alma.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Volunteers moved along the dock, handing out schedules and numbered bibs to each competitor.",
+   "span": "Volunteers moved along the dock, handing out schedules and numbered bibs to each competitor.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Zeno smelled faintly of gasoline from the drive.",
+   "span": "Zeno, still smelling faintly of gasoline from the drive, laughed with the other rowers as they waited for their turn.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Zeno laughed with the other rowers as they waited for their turn.",
+   "span": "laughed with the other rowers as they waited for their turn",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Gia is not on the same team as Alma.",
+   "span": "Gia is not on the same team as Alma.",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Spectators gathered along the bank, some with binoculars, watching the boats glide into position.",
+   "span": "Spectators gathered along the bank, some with binoculars, watching the boats glide into position.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Alma was ranked slightly higher than Jun in the previous season standings.",
+   "span": "Alma was ranked slightly higher than Jun in the previous season standings, though both seemed relaxed before the race.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Both Alma and Jun seemed relaxed before the race.",
+   "span": "though both seemed relaxed before the race",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Gus was younger than Zeno by about two years.",
+   "span": "Gus mentioned that he was younger than Zeno by about two years.",
+   "kind": "quoted"
+  },
+  {
+   "id": 20,
+   "text": "As the starting horn sounded, the crews pushed off.",
+   "span": "As the starting horn sounded, the crews pushed off, oars slicing through the calm water in unison, and the crowd cheered as the boats streaked toward the first bend of the river.",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "The oars sliced through the calm water in unison.",
+   "span": "oars slicing through the calm water in unison",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "The crowd cheered as the boats streaked toward the first bend of the river.",
+   "span": "the crowd cheered as the boats streaked toward the first bend of the river",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Jun being the event organizer has no logical bearing on Gia's arrival time or actions near the boathouse; these describe unrelated people and events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Claim A states Jun's role as event organizer, while claim B describes arrival timing between Gus and Gia. These involve different subjects and facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "The claims concern different people and different roles with no stated connection between organizing an event and driving a minibus.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Jun's role as event organizer has no bearing on how Alma traveled to the event or elsewhere; the two claims concern unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Claim A identifies Jun's role as event organizer, while claim B describes Alma's arrival timing at a race event; these involve different people and unrelated details with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Being the event organizer says nothing about Jun's height relative to rowers; the two facts concern unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Being the event organizer says nothing directly about being easily spotted from across water; no logical or causal connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A states Jun's role as event organizer, while claim B describes a team relationship between Gia and Gus; these involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Claim A concerns Jun's role as event organizer, while claim B describes a weather/environmental observation about wind and a river. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Jun's role as event organizer has no bearing on weather or flag conditions along a shoreline; the two claims concern unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Claim A states Jun's role as event organizer, which has no bearing on team composition or the relationship between Gus and Alma.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Jun being the event organizer neither confirms nor denies that volunteers were distributing schedules and bibs; these could easily coexist as part of the same event without direct dependency.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Jun's role as event organizer has no bearing on Zeno smelling of gasoline from a drive; these involve different people and unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A concerns Jun's role as event organizer, while claim B describes Zeno's interaction with rowers waiting for a turn; they involve different people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Claim A concerns Jun's role as event organizer, while claim B concerns team membership of Gia and Alma; these describe unrelated aspects of the scenario with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Claim A identifies Jun's role as event organizer, while claim B describes spectators watching boats at what appears to be a race or event; there's no direct logical connection stated between them, though they may be part of the same broader scenario.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Being the event organizer is a role about running the event, while being ranked in previous season standings pertains to being a competitor; these are independent facts and one does not imply anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Being the event organizer does not preclude also seeming relaxed before the race; the claims describe different attributes and can coexist, though an organizer might typically be busy.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Claim A concerns Jun's role as event organizer, while claim B concerns a relative age comparison between Gus and Zeno. These involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Jun being the event organizer has no direct bearing on whether crews pushed off when a starting horn sounded; these describe unrelated aspects of an event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "The claim about Jun being an event organizer has no logical or thematic connection to a description of oars moving through water; they involve entirely unrelated subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Jun's role as event organizer has no logical bearing on whether a crowd cheered during a boat race, though they could both be part of the same scene.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "A says Gia arrived early; B states Gus arrived shortly after Gia, which is consistent with and mildly supported by A's timeline of Gia's early arrival.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "The two claims describe unrelated events involving different people and activities, with no logical connection between Gia stretching near the boathouse and Zeno driving a minibus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A describes Gia's arrival and actions, while claim B concerns Alma's separate travel; the two statements involve different subjects and provide no information about each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Both describe different people arriving at what seems to be a race event, but at different times (early vs. just before the first heat). These are compatible, independent occurrences with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A describes Gia's arrival and stretching near the boathouse, while claim B describes Jun's height relative to other rowers. These involve different subjects and unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "A describes Gia's arrival and stretching near the boathouse, but says nothing about Jun's visibility from across the water. These involve different subjects and there's no clear causal or logical link between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A describes Gia's arrival and warm-up routine, which has no bearing on team membership or Gus's affiliation.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A describes Gia arriving early near the boathouse, while claim B describes changing wind and river conditions; these are independent circumstances that neither support nor contradict each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A describes Gia's early arrival and stretching, while claim B describes flags snapping in the wind; these are independent details about the scene with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A describes Gia's early arrival and stretching, which has no connection to Gus's team membership relative to Alma.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "A describes Gia arriving early and stretching near the boathouse, setting a scene consistent with a race-day morning; B describes volunteers preparing competitors nearby, which fits the same event context but neither confirms nor requires the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "A describes Gia's arrival and activity near the boathouse, while B describes an unrelated detail about Zeno's smell from driving; neither claim bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Both describe people near a boathouse/rowing context around the same general timeframe, but A is about Gia's early arrival and B about Zeno and other rowers waiting; nothing links or conflicts between them directly.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A describes Gia's arrival and warm-up activity but says nothing about team membership or her relation to Alma, so it has no bearing on claim B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Both describe a plausible boating/regatta scene happening around the same time and place; A does not entail B but is consistent with and mildly supportive of the same event setting occurring.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Claim A describes Gia's early arrival and stretching activity, while claim B concerns Alma and Jun's prior season rankings. The two claims involve different people and unrelated subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A describes Gia's activity near the boathouse and says nothing about Alma or Jun's emotional state before the race, so it neither confirms nor conflicts with claim B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A describes Gia's arrival and stretching near a boathouse, while claim B concerns an age comparison between Gus and Zeno. The two involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Gia arriving early and stretching while waiting is a natural prelude to a race starting later with a horn and crews pushing off; the claims describe a plausible sequence of events at the same event.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "A describes Gia arriving early and stretching before rowing, while B describes oars moving in the water; these could be sequential moments in the same rowing outing, but A doesn't establish that rowing has begun yet.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "A shows Gia arriving early to stretch near the boathouse, before the sun rose higher; B describes a later event of boats racing to the first bend with crowd cheering. These depict different, sequential moments of what seems like the same race day, and are compatible rather than conflicting.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A concerns the arrival timing of Gus relative to Gia, while claim B concerns who drove a minibus. These deal with entirely different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A describes the arrival order of Gus and Gia, while claim B concerns Alma traveling separately; the two involve different people and separate facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A describes the arrival timing of Gus relative to Gia, while claim B describes Alma's arrival relative to an announcer's call. They involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A concerns arrival order between Gus and Gia, while claim B concerns Jun's height relative to rowers; they involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Claim A concerns the relative arrival times of Gus and Gia, while claim B concerns Jun's visibility from a distance. These involve different people and unrelated topics, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "A describes only the relative arrival time of Gus and Gia, which has no bearing on whether they belong to the same team.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A concerns the timing of two people's arrival, while claim B describes a weather/environmental detail about wind and a river. Neither has any bearing on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "The timing of Gus's arrival relative to Gia has no bearing on the condition of flags along a shore; the claims describe unrelated events with no shared context indicated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Claim A is about arrival order between Gus and Gia, while claim B concerns team membership between Gus and Alma; they share no common subject matter that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A concerns the relative arrival order of two individuals, while claim B describes volunteers distributing materials to competitors; neither statement informs or constrains the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A concerns the arrival order of Gus and Gia, while claim B concerns Zeno's smell after a drive; they involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim A concerns the arrival order of Gus and Gia, while claim B describes Zeno laughing with rowers waiting for their turn; there is no shared subject or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A describes arrival timing between Gus and Gia, while claim B describes team membership between Gia and Alma; the two facts concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A concerns the relative arrival timing of two individuals, while claim B describes a general crowd scene at a boating event; neither statement provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Claim A concerns arrival timing between Gus and Gia, while claim B concerns ranking between Alma and Jun in a previous season; they involve different people and different domains with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A concerns the arrival order and timing of Gus and Gia, while claim B concerns the emotional states of Alma and Jun before a race. These involve different people and different events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Claim A concerns arrival order/timing between Gus and Gia, while claim B concerns a relative age comparison between Gus and Zeno; the two involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Claim A describes Gus and Gia's relative arrival times, while claim B describes crews pushing off at a starting horn; these appear to be unrelated events with no shared context given.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Claim A concerns the timing of Gus and Gia's arrival, while claim B describes oars moving through water; they share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "The two claims describe unrelated events with no shared subjects or context linking arrival timing of Gus and Gia to a boat race scene.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "A states Zeno drove the minibus, implying at least some group traveled together in it. This makes it plausible, though not certain, that others like Alma traveled separately, or it could simply be unrelated to Alma's travel arrangements. There's no direct logical connection or conflict between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A concerns Zeno driving a minibus, while claim B concerns Alma's arrival timing at some event. There is no stated connection between the two claims, no shared subject or implied causal link.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A concerns who drove the minibus, while claim B concerns Jun's height relative to rowers; these describe unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A is about Zeno driving a minibus, while claim B concerns Jun's visibility from across water; they involve different subjects and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A concerns who drove the minibus, while claim B concerns team membership of different people; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Zeno driving a minibus has no bearing on wind conditions or the river's surface; these describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Zeno driving a minibus has no bearing on flags along a shore snapping in the wind; these describe unrelated scenes with no shared elements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "The claim about Zeno driving the minibus has no logical or contextual connection to team membership involving Gus and Alma.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Zeno driving the minibus is a separate activity from volunteers handing out schedules and bibs on the dock; neither statement implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "If Zeno drove the minibus, it is plausible that handling fuel or being near the vehicle's engine could leave a faint gasoline smell on him, so A makes B more likely.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A says Zeno drove a minibus, while B places him waiting with rowers for their turn, presumably at a rowing event. These could both be true if he drove the minibus to get there and then joined the rowers, so there's no direct contradiction, but the two scenarios sit somewhat awkwardly together as separate activities.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A concerns Zeno driving a minibus, while claim B concerns team membership between Gia and Alma; there is no logical or contextual connection between these statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "There is no stated connection between Zeno driving a minibus and spectators watching boats from a riverbank; the two describe unrelated scenes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Claim A concerns who drove a minibus, while claim B concerns a ranking comparison between two other people in past standings. These involve entirely different people, subjects, and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Claim A concerns who drove the minibus, while claim B concerns the emotional state of Alma and Jun before a race. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Driving a minibus has no bearing on relative ages between Gus and Zeno; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "The claims describe unrelated events (driving a minibus vs. crews starting a race) with no shared context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Driving a minibus is unrelated to rowing oars through water; the claims describe different activities and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Driving a minibus and boats racing on a river describe unrelated events with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Traveling separately is consistent with arriving at a particular time; it does not directly indicate whether she arrived early, late, or just in time, though it may explain why her arrival timing differed from others.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A concerns Alma traveling separately and has no logical or contextual connection to Jun's height relative to rowers.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A concerns Alma's travel arrangements while claim B concerns Jun's visibility from across water; the two involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Claim A concerns Alma's travel arrangements, while claim B concerns team membership of Gia and Gus; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Claim A concerns Alma's separate travel while claim B describes weather conditions affecting a river; the two describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Claim A concerns Alma's travel arrangements while claim B describes weather conditions and flags at a shore; they share no common subject, causal link, or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Traveling separately does not necessarily mean being on different teams; teammates could travel separately for scheduling or logistical reasons. The claims address different aspects (travel arrangements vs team membership) with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Alma traveling separately is unrelated to volunteers distributing schedules and bibs on the dock; no logical connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "A states Alma traveled separately, which is about Alma's travel arrangement and says nothing about Zeno's mode of travel or scent; the two claims concern different people and different details.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Claim A concerns Alma traveling separately, which has no logical or contextual connection to Zeno laughing with other rowers while waiting their turn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "A merely states Alma traveled separately from others, which has no logical bearing on team membership or whether Gia shares a team with Alma.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A concerns Alma's travel arrangements, while claim B describes spectators watching boats at a bank; there is no logical or contextual connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Traveling separately is a logistical detail unrelated to competitive rankings from a previous season; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Traveling separately from Jun does not indicate anything about Alma's emotional state or Jun's, so knowing about the separate travel neither supports nor contradicts them appearing relaxed before the race.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Claim A concerns Alma's separate travel arrangements, while claim B concerns the relative ages of Gus and Zeno. These involve entirely different subjects and facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Alma traveling separately is unrelated to the description of crews starting a race at the horn; no shared subject or logical connection is evident.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Claim A concerns Alma's separate travel arrangements, while claim B describes oars rowing in unison on calm water; these describe unrelated situations with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Alma traveling separately has no logical bearing on a crowd cheering at a boat race; the two claims describe unrelated events with no shared subject or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "A describes Alma's arrival timing at an event, while B describes Jun's height relative to rowers; these concern different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A concerns Alma's arrival timing relative to a race announcement, while claim B concerns Jun's visibility across water; they share no common subject, location, or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A describes Alma's arrival timing at a race event, while claim B describes a team relationship between Gia and Gus; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A concerns Alma's arrival at a race event, while claim B describes a minor weather detail about wind and a river. Neither statement affects the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "A describes Alma's arrival timing at a race event; B describes windy weather conditions at a shoreline. There is no logical connection between Alma's arrival timing and the state of the flags, though both could plausibly occur at the same outdoor event.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A describes Alma's arrival timing at an event but says nothing about team composition or Gus's relationship to her, so it has no bearing on whether Gus shares her team.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Both claims depict plausible simultaneous scenes at what appears to be a racing event's start, but they describe unrelated actions happening in the same setting without one implying or affecting the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A concerns Alma's arrival timing at a race event, while claim B concerns Zeno's scent from driving; these involve different people and circumstances with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "A places Alma arriving at a race event as the first heat is called, while B describes Zeno waiting with rowers; these could easily be the same event at different moments or unrelated events entirely, with no direct logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "A describes Alma's timing arriving at a race event, which has no bearing on team composition or relationships between Alma and Gia mentioned in B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Both describe the same race event starting, with spectators watching boats line up as the first heat is called to start; these details are consistent and complementary aspects of the same scene.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A describes Alma's arrival timing at an event, while claim B concerns her historical ranking relative to Jun; these facts are independent and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Arriving just as the race is being called suggests a rushed, last-minute arrival, which is in tension with appearing relaxed beforehand; both could be true but it's a bit surprising together.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Claim A describes Alma's arrival timing at an event, while claim B states an age relationship between Gus and Zeno. These involve different people and different facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "A places Alma's arrival at the call for the first heat to line up, while B describes the horn sounding and crews starting; these depict sequential moments in the same race event and are compatible, but neither directly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "A places Alma at a race that is just about to start (a rowing heat), while B describes oars already moving through water in unison, implying the race is underway. These depict different moments; if B refers to a later heat or the actual race after the start rather than the exact instant Alma arrives, both can be true, but there's mild tension since A suggests the race hasn't begun yet.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "A places Alma arriving right as the first heat is called to the start, implying the race has not yet begun. B describes boats already racing toward the first bend, a later stage of the race. These are compatible if some time has passed, but juxtaposed at similar narrative moments they create mild tension about timing rather than outright contradiction.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Being noticeably taller than most rowers would make Jun stand out visually, making it more plausible he could be easily spotted from a distance across the water.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Claim A concerns Jun's height relative to rowers, while claim B concerns Gia and Gus's team membership; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Jun's height relative to rowers has no bearing on the wind conditions or river surface described in B; these are independent facts about different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Jun's height relative to other rowers has no bearing on flags snapping in the wind along the shore; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A concerns Jun's height relative to rowers, while claim B concerns team membership of Gus and Alma; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A describes Jun's height relative to rowers, while claim B describes volunteers distributing items to competitors; these facts do not bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A concerns Jun's height relative to rowers, while claim B concerns Zeno's scent from a drive; these involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Both claims mention rowers but refer to different individuals (Jun and Zeno) and different actions with no clear logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A concerns Jun's height relative to rowers, while claim B concerns team membership of Gia and Alma; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A describes Jun's height relative to rowers, while claim B describes spectators watching boats; the two claims concern different subjects and have no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A concerns Jun's physical height relative to rowers, while claim B concerns competitive ranking in a previous season. These are different attributes (physical stature vs. performance ranking) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "A's claim about Jun's height relative to other rowers has no bearing on Alma and Jun's emotional state before the race; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Claim A concerns Jun's height relative to rowers, while claim B concerns Gus's age relative to Zeno. They share no common subject or attribute, so truth of one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Claim A describes Jun's height relative to rowers, while claim B describes the start of a race; the two statements concern unrelated aspects of the scene with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "A describes Jun's height relative to other rowers, while B describes the oars moving in unison through calm water; neither claim informs the other.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Claim A describes Jun's height relative to rowers, while B describes a crowd cheering at a race; they concern unrelated aspects of the scene with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A concerns Jun's visibility from across water, while claim B concerns team membership of Gia and Gus; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Both claims describe a scene near water, but one being spotted easily has no direct bearing on wind picking up or rippling the river surface; they could co-occur or not without affecting each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Both claims could reflect windy conditions, but the flags snapping is a background detail about wind and doesn't directly relate to Jun's visibility, which is about color, size, or contrast rather than wind.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A concerns Jun's visibility from across water, while claim B concerns team membership relations between Gus and Alma. These involve different people and unrelated subject matters with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "A tells us Jun was easily visible from across the water, suggesting a setting like a swim event with spectators or observers at a distance. B describes volunteers organizing an event with bibs and schedules, consistent with such a race setting, but the two claims don't directly entail or conflict with each other.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A describes Jun's visibility from a distance while claim B describes an unrelated sensory detail about Zeno; they involve different people and different senses with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Both claims could describe the same scene (a rowing event) without conflicting, but they concern different people and neither statement's truth affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A concerns Jun's visibility from across water, while claim B concerns team membership relations between Gia and Alma; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "A suggests Jun was visible from a distance across water, and B describes spectators watching boats from a bank, consistent with a boat race or similar water event where someone could be spotted from afar; the scenarios are compatible and mildly supportive of the same setting.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Claim A concerns Jun's visibility from a distance, while claim B concerns a competitive ranking in a previous season; neither fact bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Being easily spotted from across the water (e.g., due to bright clothing or gear) is largely independent of whether Jun appeared relaxed before a race; these describe different aspects with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A concerns Jun's visibility from a distance, while claim B concerns the age difference between two different people, Gus and Zeno. There is no logical or contextual connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Both could describe the same rowing/racing scene, but they describe different aspects (visibility of a person vs. start of a race) with no direct logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Both claims could describe the same rowing scene, but they don't directly bear on each other's truth; one is about visibility of a person, the other about the motion of oars.",
+   "relation": "unrelated",
+   "confidence": 0.72
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "A places Jun near water where he could be seen from a distance, and B describes boats racing on a river; both could plausibly be part of the same scene (e.g., Jun in a boat race) but neither entails the other, and there's no direct logical connection between Jun's visibility and the crowd's reaction to boats.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Team membership between Gia and Gus has no bearing on weather or river conditions; these describe entirely separate matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A concerns team membership of two people, while claim B describes weather-related visual detail about flags at a shore. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "A only tells us Gia and Gus share a team; it says nothing about Alma's team membership relative to Gus, so B's truth is neither made more nor less likely by A.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Claim A is about team membership between two individuals, while claim B describes volunteers distributing items at a dock; they share no common subject or context that would connect them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "The two claims concern entirely different subjects (team membership vs. a smell from a drive) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Claim A concerns Gia and Gus being teammates, while claim B describes Zeno laughing with rowers; there is no shared subject or context connecting them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "A only states Gia's team relation to Gus, and says nothing about Alma or Gus's relation to Alma, so it doesn't determine whether Gia and Alma share a team.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Claim A concerns team membership of two individuals, while claim B describes spectators watching boats; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Claim A concerns team membership of Gia and Gus, while claim B concerns a ranking comparison between Alma and Jun in a previous season. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Claim A concerns team membership of Gia and Gus, while claim B concerns the emotional state of Alma and Jun before a race. They involve different people and unrelated subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Team membership of Gia and Gus has no bearing on the relative ages of Gus and Zeno; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Claim A establishes a team relationship between Gia and Gus, while claim B describes a race start with crews pushing off; neither statement provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Claim A concerns team membership of two people, while claim B describes rowing oars moving through water; the two statements share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "The claims describe entirely different subjects (team membership vs. a boat race scene) with no shared context or entities linking them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "A describes only a slight increase in wind, which would typically cause gentle rippling rather than flags snapping crisply, which suggests a stronger gust; both could occur but the intensity mismatch is a bit surprising.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Claim A describes a weather/river condition with no connection to team membership of Gus and Alma; the two statements share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "The wind and river surface conditions are a background weather detail unrelated to volunteers distributing schedules and bibs to competitors on the dock; neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "The wind and river ripples are unrelated to Zeno's smell of gasoline from driving; they describe different environmental and personal details with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "The wind and river ripple are ambient environmental details that neither support nor conflict with Zeno laughing with fellow rowers; the two events can coexist without meaningfully affecting each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Claim A describes weather and river conditions, while claim B describes a team assignment relationship between two people; they share no connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "A describes a slight environmental change (wind rippling the water), which does not directly bear on whether spectators gathered to watch boats; the two events could easily co-occur without conflict or notable dependency.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Claim A describes a weather event on a river, while claim B concerns competitive rankings between two people; they share no subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "The claims describe unrelated aspects of the scene: weather conditions versus the emotional states of two people; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "The wind and river description has no bearing on the relative ages of Gus and Zeno; these are unrelated facts about different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "The wind rippling the river is a background environmental detail that neither confirms nor conflicts with the crews starting a race; they can coexist without any meaningful causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "A states wind rippled the river's surface, while B describes the water as calm; a rippled surface is in some tension with 'calm water,' though both could loosely coexist if the ripples were minor.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Both describe conditions at a river scene, but a gentle rippling wind has little bearing on whether boats race and a crowd cheers; they can easily coexist without one affecting the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "The flags snapping crisply describes weather conditions and has no logical or thematic connection to team membership between Gus and Alma.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "A describes windy weather at the shore, while B describes an organizational activity at the dock; the two events could occur simultaneously without one affecting the other in any meaningful way.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "A describes windy conditions at the shore while B describes Zeno's scent from driving; these details are unconnected and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "A describes windy weather conditions along the shore, while B describes rowers laughing while waiting. These are largely independent details that don't logically bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "The flags snapping in the wind describes weather conditions and has no bearing on team membership of Gia and Alma.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "A describes windy conditions at the shore, while B describes spectators gathered at the bank watching boats; both can easily co-occur during an outdoor event like a regatta, so A neither strongly supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "The state of flags in the wind has no bearing on prior season rankings between Alma and Jun; the two claims share no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Crisply snapping flags indicate strong wind, which could create challenging racing conditions, but this doesn't directly bear on whether the competitors appeared relaxed beforehand. The two claims describe different aspects of the scene with no strong logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "The flags snapping in wind describes weather conditions, which has no bearing on the relative ages of Gus and Zeno.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Both describe conditions at what seems to be a boat race, but crisp flag-snapping (windy conditions) has no direct bearing on whether the crews pushed off at the horn.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Crisply snapping flags suggest a brisk wind, which is in tension with the water being calm; both could occur but they sit awkwardly together.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "A describes windy conditions, which is plausible alongside a boat race scene, but the claims describe different elements of the setting without directly implying each other.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A concerns team assignments for Gus and Alma, while claim B describes volunteers distributing materials to competitors at a dock; these describe unrelated aspects of an event with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A concerns team membership between Gus and Alma, while claim B concerns Zeno's smell from a drive. These involve different people and unrelated topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A concerns team membership of Gus and Alma, while claim B describes Zeno's interaction with unspecified rowers; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Both claims describe different people's team relationship to Alma; knowing Gus is not on Alma's team gives no information about Gia's team membership relative to Alma.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A is about team membership of Gus and Alma, while claim B describes spectators watching boats; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A concerns team membership between Gus and Alma, while claim B concerns a ranking comparison between Alma and Jun. These involve different relationships and different people (Gus vs Jun), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Team membership of Gus relative to Alma has no bearing on how relaxed Alma and Jun seemed before a race.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Team membership and relative age are independent facts with no logical connection implied by either claim.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Claim A concerns team membership of individuals while claim B describes a race start event; they share no common subject matter that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Claim A concerns team membership between two people, while claim B describes oars moving through water; the two share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "The two claims concern entirely different subjects (team membership vs. a boat race scene) with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A describes volunteers distributing materials to competitors on a dock, while claim B describes an unrelated sensory detail about Zeno's smell from driving; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A describes a general event setup (volunteers distributing bibs/schedules to competitors) which is consistent with and mildly supports the scene in B where rowers, including Zeno, are waiting their turn at what appears to be the same event.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A describes volunteers distributing schedules and bibs at a dock, which has no bearing on whether Gia and Alma are on the same team.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Both describe complementary elements of the same rowing/boating event scene\\u2014volunteers preparing competitors while spectators watch from the bank\\u2014making B more plausible if A is true, though neither strictly entails the other.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Claim A describes volunteers distributing schedules and bibs at a dock, which has no bearing on a claim about historical season rankings between two individuals.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "A describes pre-race logistics (volunteers distributing bibs and schedules) while B describes the emotional states of two specific competitors; the two claims concern different aspects of the scene and neither implies or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A describes volunteers distributing race materials at a dock, while claim B states a relative age difference between two individuals. There is no shared subject or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Claim A describes pre-race preparation (distributing schedules and bibs) while claim B describes the race start; both fit naturally as sequential parts of the same event, with A's activity plausibly setting up for B's start.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "A describes pre-race preparations on the dock (bibs and schedules), while B describes rowers already racing in unison on the water. These could occur at different times in the same event, but A doesn't directly cause or evidence B occurring.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "A depicts pre-race preparation on the dock, while B depicts the race already underway on the river; both could be true as part of the same event's timeline, but they describe different, sequential phases rather than directly bearing on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Smelling of gasoline from a drive doesn't preclude Zeno later laughing with rowers; the two describe different aspects of the scene and are compatible.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "The two claims concern unrelated subjects: one is about Zeno's scent from driving, the other about team membership between Gia and Alma. Neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A concerns Zeno's personal scent from a drive and claim B describes spectators watching boats at a bank; they involve different subjects and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Zeno's gasoline smell from driving has no logical or topical connection to Alma and Jun's ranking in previous season standings.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Claim A describes Zeno's scent from driving, while claim B describes Alma and Jun's emotional state before a race; these involve different people and unrelated aspects, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "A's claim about Zeno smelling of gasoline from a drive has no bearing on B's claim about the age difference between Gus and Zeno; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "A concerns Zeno's residual gasoline smell from driving, while B describes crews pushing off at a race start; the two involve different subjects and events with no clear logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "A is about Zeno smelling of gasoline from a car drive, which doesn't logically bear on B's description of oars moving through water; they involve different modes of transport and no shared context is established.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "A describes Zeno's personal scent from a car drive, while B describes a crowd watching boats race on a river; the two scenarios involve different contexts with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Claim A describes Zeno and rowers waiting for their turn, while claim B is about team membership involving Gia and Alma, who are not mentioned in A. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Both describe elements of the same rowing event scene—rowers waiting and spectators watching—which are naturally consistent and mutually reinforcing details of a shared setting.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Claim A concerns Zeno and rowers laughing while waiting, while claim B concerns a ranking comparison between Alma and Jun in a prior season. The two involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Zeno laughing with fellow rowers while waiting suggests a relaxed, lighthearted atmosphere before the race, which makes it more plausible that other participants like Alma and Jun also seemed relaxed.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "A describes Zeno's activity and social context among rowers, while B states a fact about relative ages between Gus and Zeno; the two claims concern unrelated aspects and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "A depicts Zeno and other rowers waiting for their turn and laughing beforehand, while B describes crews starting to row when the horn sounds; these can be sequential moments in the same event (waiting then starting), so they are compatible but only loosely connected.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "A depicts rowers waiting their turn (not currently rowing), while B describes oars actively rowing in unison; these seem to describe different moments, though both could occur in the same scene at different times.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Both describe elements of what could be the same rowing race event (rowers waiting their turn, boats racing), but A depicts Zeno's boat waiting while B depicts boats already racing, which is plausible if they are different heats or moments and not strictly contradictory.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Claim A is about team assignments for Gia and Alma, while claim B describes spectators watching boats at some event. There's no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Claim A concerns team membership between Gia and Alma, while claim B concerns a ranking comparison between Alma and Jun in past standings. These involve different relationships and different people, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Claim A concerns team membership of Gia and Alma, while claim B concerns the emotional state of Alma and Jun before a race. These pertain to different aspects of the situation with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "The claims concern unrelated subjects: team membership of Gia and Alma versus a relative age comparison between Gus and Zeno. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Claim A concerns team membership relationships between two individuals, while claim B describes a general event (crews starting a race). There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Claim A concerns team membership of Gia and Alma, while claim B describes rowing action with oars; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Claim A concerns team membership between Gia and Alma, while claim B describes a crowd cheering at a boat race; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Claim A describes spectators watching boats, while claim B is about a ranking between two people in past standings; they share no common subject matter or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "A describes spectators watching boats position for a race, providing context but no direct information about the emotional states of Alma and Jun before the race.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Claim A describes spectators watching boats, while claim B states an age relationship between two people; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "A describes spectators watching boats getting into position before a race, which fits naturally with B describing the race starting shortly after via a horn signal; A sets up the scene that B continues.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "A establishes a boat race/regatta setting with spectators watching boats position themselves, which supports the plausibility of B describing coordinated rowing, a natural continuation of the same scene.",
+   "relation": "supports",
+   "confidence": 0.72
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "A establishes spectators gathering to watch boats getting into position, which naturally leads into B's continuation of the crowd reacting as the race begins and boats move toward the bend.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "The ranking history has no bearing on how relaxed either competitor appeared before a race; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Claim A concerns relative ranking of Alma and Jun in season standings, while claim B concerns relative age between Gus and Zeno. There is no shared subject or logical link between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Claim A concerns relative ranking of Alma and Jun in a prior season, while claim B describes crews pushing off at a race start. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Claim A concerns competitive rankings between Alma and Jun, while claim B describes a physical rowing scene with oars and water; they share no common subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "The claims concern entirely different subjects (season rankings vs. a boat race scene) with no logical or contextual connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Claim A discusses the emotional states of Alma and Jun before a race, while claim B discusses an age difference between Gus and Zeno. The two claims involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "A describes the emotional state of Alma and Jun before the race, while B describes the start of the race itself; they concern different aspects and neither implies or blocks the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "A describes the emotional state of the rowers before the race, while B describes the physical action of rowing during the race; they concern different aspects/times and neither strongly implies the other, though both suggest a smooth, well-coordinated scene.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Claim A describes a pre-race state of Alma and Jun, while claim B describes crowd reaction during the race itself; they involve different times and different subjects with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Claim A concerns the relative ages of Gus and Zeno, while claim B describes an unrelated event about crews starting a race; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "The relative ages of Gus and Zeno have no bearing on the description of oars moving through water; the two claims involve unrelated subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Claim A concerns the age difference between two people, while claim B describes a crowd watching boats race on a river. There is no shared subject, context, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "A establishes that the race began and crews pushed off; B describes a plausible immediate continuation of the crews rowing in unison, which is a natural consequence and thus made more likely by A.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "A describes the crews starting the race, which naturally leads into the boats racing down the river as described in B; the events are sequential and consistent parts of a boat race narrative.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "A describes synchronized, effective rowing suggesting a race in progress; B describes spectators reacting to boats speeding along a river, which fits naturally as part of the same rowing race scene.",
+   "relation": "supports",
+   "confidence": 0.72
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun"
+    ]
+   },
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia"
+    ]
+   },
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno"
+    ]
+   },
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "other",
+    "other_greater_means": "higher ranked"
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 8,
+    "attribute": "team",
+    "kind": "same",
+    "a": "gia",
+    "b": "gus",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 11,
+    "attribute": "team",
+    "kind": "different",
+    "a": "gus",
+    "b": "alma",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 15,
+    "attribute": "team",
+    "kind": "different",
+    "a": "gia",
+    "b": "alma",
+    "confidence": 0.98
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "subject": "gus",
+    "comparative": "after",
+    "object": "gia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "subject": "jun",
+    "comparative": "taller than",
+    "object": "most of the rowers",
+    "confidence": 0.75
+   },
+   {
+    "claim_id": 17,
+    "attribute": "rank",
+    "subject": "alma",
+    "comparative": "ranked slightly higher than",
+    "object": "jun",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "age",
+    "subject": "gus",
+    "comparative": "younger than",
+    "object": "zeno",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "rank",
+    "comparative": "ranked slightly higher than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger than",
+    "greater_side": "object"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 23,
+  "pairs_requested": 253,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 7,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    5,
+    18
+   ],
+   [
+    5,
+    21
+   ],
+   [
+    5,
+    22
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    21
+   ],
+   [
+    10,
+    21
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "team": null,
+    "arrival_time": "sequence",
+    "height": "magnitude",
+    "rank": "other",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 23,
+  "n_edges": 16,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    19
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   0.9999999999999998
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   3.2047474274603606e-32,
+   4.930380657631324e-32,
+   1.5777218104420237e-31,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   2.7117093616972283e-32,
+   0.0,
+   6.286235338479937e-32,
+   0.0,
+   2.419584307732572e-31,
+   0.0,
+   1.910522504832138e-32,
+   0.0,
+   3.944304526105059e-32,
+   8.024194520294979e-32,
+   9.40470110443175e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 2,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 16,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 7,
+    "b": 16,
+    "residual": 1.0846837446788913e-31
+   },
+   {
+    "a": 12,
+    "b": 14,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 12,
+    "b": 16,
+    "residual": 8.011868568650901e-33
+   },
+   {
+    "a": 12,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 18,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 16,
+    "b": 20,
+    "residual": 8.628166150854816e-33
+   },
+   {
+    "a": 16,
+    "b": 21,
+    "residual": 3.549874073494553e-32
+   },
+   {
+    "a": 16,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "residual": 9.244463733058732e-33
+   },
+   {
+    "a": 20,
+    "b": 22,
+    "residual": 9.244463733058732e-33
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 3.549874073494553e-32
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 10621,
+   "api_calls": 0,
+   "cache_hits": 10621,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    3,
+    13
+   ],
+   [
+    4
+   ],
+   [
+    5,
+    6,
+    7,
+    12,
+    14,
+    16,
+    18,
+    20,
+    21,
+    22
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    10
+   ],
+   [
+    11
+   ],
+   [
+    15
+   ],
+   [
+    17
+   ],
+   [
+    19
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 5,
+    "b": 18,
+    "rationale": "Arriving just as the race is being called suggests a rushed, last-minute arrival, which is in tension with appearing relaxed beforehand; both could be true but it's a bit surprising together.",
+    "confidence": 0.6
+   },
+   {
+    "a": 5,
+    "b": 21,
+    "rationale": "A places Alma at a race that is just about to start (a rowing heat), while B describes oars already moving through water in unison, implying the race is underway. These depict different moments; if B refers to a later heat or the actual race after the start rather than the exact instant Alma arrives, both can be true, but there's mild tension since A suggests the race hasn't begun yet.",
+    "confidence": 0.55
+   },
+   {
+    "a": 5,
+    "b": 22,
+    "rationale": "A places Alma arriving right as the first heat is called to the start, implying the race has not yet begun. B describes boats already racing toward the first bend, a later stage of the race. These are compatible if some time has passed, but juxtaposed at similar narrative moments they create mild tension about timing rather than outright contradiction.",
+    "confidence": 0.55
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "rationale": "A describes only a slight increase in wind, which would typically cause gentle rippling rather than flags snapping crisply, which suggests a stronger gust; both could occur but the intensity mismatch is a bit surprising.",
+    "confidence": 0.6
+   },
+   {
+    "a": 9,
+    "b": 21,
+    "rationale": "A states wind rippled the river's surface, while B describes the water as calm; a rippled surface is in some tension with 'calm water,' though both could loosely coexist if the ripples were minor.",
+    "confidence": 0.65
+   },
+   {
+    "a": 10,
+    "b": 21,
+    "rationale": "Crisply snapping flags suggest a brisk wind, which is in tension with the water being calm; both could occur but they sit awkwardly together.",
+    "confidence": 0.65
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 8,
+   "attribute": "team",
+   "kind": "same",
+   "a": "gia",
+   "b": "gus",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "team",
+   "kind": "different",
+   "a": "gus",
+   "b": "alma",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "team",
+   "kind": "different",
+   "a": "gia",
+   "b": "alma",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "gus",
+   "b": "gia",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 6,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "jun",
+   "b": "most_of_the_rowers",
+   "confidence": 0.75,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 17,
+   "attribute": "rank",
+   "kind": "greater",
+   "a": "alma",
+   "b": "jun",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 19,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "zeno",
+   "b": "gus",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

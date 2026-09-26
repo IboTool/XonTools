@@ -1,0 +1,2628 @@
+{
+ "label": "b36-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-74826b43fa0f",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The farmers market committee gathered early on Saturday morning to set up the stalls before the crowds arrived.",
+   "span": "The farmers market committee gathered early on Saturday morning to set up the stalls before the crowds arrived.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Jun is the treasurer.",
+   "span": "Assume that Jun is the treasurer.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Jun is not the treasurer.",
+   "span": "Jun is not the treasurer.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Quinn arrived first, carrying crates of fresh vegetables from the truck.",
+   "span": "Quinn arrived first, carrying crates of fresh vegetables from the truck",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "The others followed shortly after with folding tables and canopies.",
+   "span": "the others followed shortly after with folding tables and canopies",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Kira and Dara worked together to arrange the flower stand near the entrance.",
+   "span": "Kira and Dara worked together to arrange the flower stand near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Kira and Dara chatted about the weather and the turnout expected that day.",
+   "span": "chatting about the weather and the turnout expected that day",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Ben booked the hall.",
+   "span": "Ben booked the hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Dara had brought along a small radio to play music.",
+   "span": "Dara had brought along a small radio to play music",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Jun helped string up the banners along the fence.",
+   "span": "Jun helped string up the banners along the fence",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Quinn is older than Kira.",
+   "span": "Quinn is older than Kira.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "The vendors began setting out their goods.",
+   "span": "The vendors began setting out their goods",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Ben walked around checking that each booth had enough space and proper signage.",
+   "span": "Ben walked around checking that each booth had enough space and proper signage",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Kira is older than Dara.",
+   "span": "Kira is older than Dara.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "A light breeze picked up, scattering a few leaves across the gravel path.",
+   "span": "A light breeze picked up, scattering a few leaves across the gravel path",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Someone laughed about needing extra clothespins for the tablecloths.",
+   "span": "someone laughed about needing extra clothespins for the tablecloths",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Quinn is older than Dara.",
+   "span": "Quinn is older than Dara.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Jun offered to grab coffee for everyone before the gates opened to the public.",
+   "span": "Jun offered to grab coffee for everyone before the gates opened to the public",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Dara volunteered to keep track of the cash box for the bakery stand.",
+   "span": "Dara volunteered to keep track of the cash box for the bakery stand",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "By mid-morning, the market was bustling with customers sampling honey, cheese, and homemade jams.",
+   "span": "By mid-morning, the market was bustling with customers sampling honey, cheese, and homemade jams",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Ben and Kira discussed how many chairs to bring out for the elderly visitors who liked to sit and chat.",
+   "span": "Ben and Kira discussed how many chairs to bring out for the elderly visitors who liked to sit and chat",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Quinn helped a new vendor unload boxes of apples.",
+   "span": "Quinn helped a new vendor unload boxes of apples",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Everyone paused for a quick group photo near the fountain before the real rush began.",
+   "span": "everyone paused for a quick group photo near the fountain before the real rush began",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "The day ended with laughter, tired feet, and plans already forming for the next weekend market.",
+   "span": "The day ended with laughter, tired feet, and plans already forming for the next weekend market.",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Claim A describes committee members setting up stalls but says nothing about the committee's roles or membership, so it has no bearing on whether Jun holds the treasurer position.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Claim A describes a farmers market committee setting up stalls, while claim B is about whether a specific person, Jun, holds the role of treasurer. These claims share no common subject matter or entities that would allow one to affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "B describes an individual (Quinn) arriving first with crates of vegetables, which fits naturally as part of the committee's early Saturday setup described in A.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "A establishes an early setup event by the committee, and B naturally continues that scene with other participants arriving shortly after to bring tables and canopies for the same setup.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "B could describe a specific instance of committee members setting up part of the market described in A, so A creates a plausible context for B without strictly implying it.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "A establishes an early Saturday market setup context in which committee members preparing for the event could plausibly chat about weather and expected turnout; the claims are compatible but not directly evidential of one another since Kira and Dara are not confirmed to be part of the committee.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Claim A describes the farmers market committee setting up stalls, while claim B mentions Ben booking a hall; there's no stated connection between the two events or entities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A describes the committee setting up stalls early Saturday, while claim B mentions Dara bringing a radio; there's no explicit connection between the two, though B could plausibly occur during the same event.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "The committee's early setup activity is a plausible context in which someone like Jun would help hang banners, but it's not established that Jun is part of the committee or that this occurred during that setup, so the connection is only loosely supportive.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A concerns a farmers market committee setting up stalls, while claim B concerns the relative ages of two individuals. There is no shared content connecting these claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "A describes the committee setting up stalls early, which naturally precedes and enables vendors setting out their goods, so A supports B's likelihood.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "A describes the committee setting up stalls early Saturday morning; B describes Ben checking booth spacing and signage, which is plausibly part of that same setup process, so A makes B more plausible as a related activity.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "The farmers market setup claim has no connection to the relative ages of Kira and Dara; they involve entirely different subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "B describes ambient weather conditions independent of the committee's setup activity; neither claim implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Setting up market stalls plausibly involves securing tablecloths with clothespins, so the committee's early setup activity creates a fitting context for someone joking about needing extra clothespins.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "The farmers market setup event has no bearing on the relative ages of Quinn and Dara; no shared entities or logical connection exists.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "B describes Jun offering coffee before the market opened to the public, which fits naturally within the scenario of the committee setting up early on Saturday morning before crowds arrived; the two events are compatible and B plausibly occurs during the same setup period described in A.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "A establishes a farmers market setup event but says nothing about who managed the bakery stand's cash box; B introduces a new specific detail not implied or excluded by A.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "A establishes that the market was being prepared early Saturday morning before crowds came, which naturally leads to the market being active with customers by mid-morning as described in B.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "A establishes the committee was setting up the market early Saturday, which plausibly includes planning logistics like seating, but B doesn't necessarily follow from A and could be an unrelated separate conversation.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "B describes an activity consistent with early Saturday market setup, and if Quinn was part of the committee gathering early, helping a vendor unload fits naturally, though B doesn't specify Quinn as a committee member or the exact timing.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "B describes a lull before a rush, which fits naturally with A's setup-before-crowds scenario as the same or adjacent occasion; A makes B more plausible by establishing the early, quiet setup period.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "A describes the early setup for the Saturday market, and B describes the same event's conclusion later that day, both being consistent parts of a single market-day narrative.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Claim A directly asserts Jun is the treasurer while claim B asserts the opposite; these are direct negations of each other with no ordinary reading allowing both to be true simultaneously.",
+   "relation": "contradicts",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Jun's role as treasurer has no logical bearing on Quinn's arrival order or what they carried; the two claims involve different people and unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A states a role for Jun, while claim B describes others arriving with equipment; the two share no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A concerns Jun's role as treasurer, while claim B describes an unrelated activity involving Kira and Dara arranging flowers. There is no logical or factual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Jun's role as treasurer has no bearing on an unrelated conversation between Kira and Dara about weather and turnout.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A states Jun's role as treasurer, while claim B describes an unrelated action by a different person, Ben, booking a hall. There is no logical or causal connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Jun's role as treasurer has no logical or causal connection to Dara bringing a radio for music.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Being treasurer is an organizational role and does not preclude helping with physical setup tasks like hanging banners; the two claims describe unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "The identity of the treasurer has no bearing on the relative ages of two unrelated individuals; nothing in A informs B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Jun's role as treasurer has no logical or contextual connection to vendors setting out their goods; the claims concern unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Jun's role as treasurer and Ben's activity of checking booths are about different people and unrelated tasks, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns a role/position assignment (treasurer), while claim B concerns relative ages of two different people not mentioned in A. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "The two claims describe entirely different subjects (an organizational role versus weather conditions) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A about Jun being treasurer has no logical or thematic connection to someone laughing about clothespins for tablecloths; they concern entirely different topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "The claims concern unrelated matters: one is about an organizational role and the other about relative age between different people. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Being treasurer is an organizational role and doesn't inherently relate to a casual social gesture like offering to get coffee; the two claims describe unrelated aspects of Jun.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Jun being treasurer is a general organizational role, while Dara volunteering to watch a cash box for a specific bakery stand could be a separate, minor task unrelated to the treasurer position; both can be true simultaneously.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A concerns a role (treasurer) held by Jun, while claim B describes an unrelated scene at a market with customers and food items. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Claim A concerns Jun's role as treasurer, while claim B concerns Ben and Kira arranging chairs for elderly visitors. There is no shared subject, event, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Jun's role as treasurer has no logical or thematic connection to Quinn helping a vendor unload apples; these involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Jun's role as treasurer has no logical bearing on whether a group photo was taken near a fountain; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Claim A states a role assignment for Jun, while claim B describes a general emotional and social outcome of a day, likely at a market event. There is no logical connection between Jun's treasurer role and the described end-of-day atmosphere.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "The two claims concern entirely different people and topics (Jun's role vs. Quinn's arrival and actions), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A states a fact about Jun's role, while claim B describes people bringing equipment; they concern entirely different subjects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A concerns Jun's role and claim B concerns Kira and Dara arranging flowers; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A concerns Jun's role, while claim B describes an unrelated conversation between Kira and Dara about weather and turnout; neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "The two claims concern different people and unrelated facts; Jun's role as treasurer has no bearing on who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Claim A concerns Jun's role as treasurer, while claim B concerns Dara bringing a radio; these involve different subjects and matters with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Being treasurer or not has no logical bearing on whether Jun helped hang banners; the two facts concern unrelated roles and activities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "The two claims concern entirely different subjects (role of treasurer vs. relative ages) with no logical or contextual connection given.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "The two claims describe unrelated matters: one concerns someone's organizational role, the other concerns vendors setting up goods, with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "The two claims concern entirely different people and topics (Jun's role as treasurer vs. Ben's booth-checking activity), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "The claim about Jun's role as treasurer has no logical or contextual connection to the claim about relative ages of Kira and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "The claim about Jun's role has no topical or logical connection to a description of weather and leaves on a path.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "The claims concern entirely different subjects (Jun's role vs. laughter about clothespins) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "The two claims concern unrelated subjects (a treasury role assignment versus relative ages), and knowing one gives no information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Jun's non-treasurer status has no logical bearing on whether Jun offered to grab coffee before public gates opened; these describe unrelated aspects of Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "A states who is not the treasurer (Jun), while B describes Dara volunteering to manage a cash box for a specific bakery stand. Managing a cash box for one event does not necessarily equate to being the treasurer, and the claims involve different people and roles without clear overlap.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "The two claims concern entirely different topics\n\nJun's role as treasurer and the state of a market\n\nwith no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "The two claims concern entirely different people and topics with no logical or contextual overlap.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "The claims concern unrelated people and events; knowing Jun's role as treasurer has no bearing on whether Quinn helped a vendor unload apples.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "The two claims concern entirely different matters\n\"Jun's role as treasurer versus a group photo event\nwith no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Claim A is about Jun's role as treasurer, while claim B describes an unrelated end-of-day social scene with no mention of Jun or the treasurer role.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "A establishes Quinn arrived first with vegetables, which naturally fits a scenario where other people follow with additional setup materials, consistent with a market or event being set up.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Both describe different people doing different tasks; nothing in A implies or conflicts with B's claim about Kira and Dara arranging flowers.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "A describes Quinn's arrival with vegetables, while B describes an unrelated conversation between two different people; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "These claims describe different people and different unrelated actions with no shared context indicating either affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "These describe two different people bringing different items; nothing about Quinn arriving first with vegetables bears on whether Dara brought a radio.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "A describes Quinn arriving first with vegetables, while B describes Jun stringing banners; these involve different people and actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Claim A describes Quinn's arrival and role carrying crates, which has no bearing on relative ages of Quinn and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Quinn arriving first with crates of vegetables suggests preparations for a market are underway, making it more plausible that vendors would begin setting out their goods.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Both describe plausible activities at what seems like a market setup, but neither entails or conflicts with the other; they involve different people doing unrelated tasks.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns Quinn's arrival order and cargo, while claim B concerns the relative ages of Kira and Dara. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Quinn's arrival and manner of arrival has no bearing on weather conditions like a breeze scattering leaves; these are independent occurrences.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Both could occur at the same event (a market or outdoor setup), but Quinn arriving first with vegetables has no bearing on someone else's remark about clothespins for tablecloths.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Arriving first with vegetable crates has no bearing on relative age between Quinn and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Both describe events that could happen around the same setup period, but neither claim's truth directly implies or conflicts with the other since they involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Claim A describes Quinn arriving first with vegetables, while claim B describes Dara volunteering for cash box duties at a bakery stand; these involve different people and tasks with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "A establishes Quinn arriving early with vegetables, setting a market scene; B describes the market later being busy with customers sampling other goods. These are compatible sequential events at the same market, with A providing an earlier moment and B a later one.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Claim A concerns Quinn arriving with vegetable crates, while claim B concerns Ben and Kira arranging chairs for elderly visitors; they involve different people and activities with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "A says Quinn was carrying vegetable crates from a truck, while B says Quinn helped unload apple boxes for a new vendor; these could be sequential or overlapping activities during arrival and setup, so both can plausibly be true.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "A describes Quinn arriving first with crates, while B describes a later, seemingly unrelated event about a group photo near a fountain; neither confirms nor denies the other, and they could both fit into a broader timeline without direct connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Both claims plausibly describe parts of the same day at a market, with A being the beginning and B the end, but A doesn't specifically imply the outcomes described in B.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A describes other people arriving with tables and canopies shortly after some initial event, while B describes Kira and Dara setting up a flower stand; these could easily be part of the same event setup happening concurrently or in sequence, with no conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "A describes others arriving with equipment while B shows Kira and Dara having a separate conversation; these could occur around the same event without conflict, but they are largely independent details.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A describes people setting up tables and canopies, likely for an outdoor event, while claim B describes booking an indoor hall; the two scenarios don't clearly relate or reinforce each other based on content alone.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Both describe people arriving with items for what seems to be the same outdoor gathering or event, but neither claim implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Both describe people setting up for an event; the others bringing tables and canopies is consistent with and mildly supportive of Jun also helping with setup tasks like banners, though not directly entailed.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Claim A describes people arriving with equipment for some event, while claim B states a relative age comparison between two individuals; there is no logical or contextual connection between these statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "If others followed with folding tables and canopies, this suggests preparation for setting up a market or stall area, making it likely that vendors would proceed to set out their goods.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Others setting up tables and canopies is consistent with Ben later inspecting booths for space and signage, as both describe stages of the same event setup; A does not directly cause or prevent B but fits a plausible sequence.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A describes people arriving with tables and canopies, which has no bearing on the relative ages of Kira and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Claim A describes people arriving with equipment while claim B describes a weather detail; neither influences the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "A establishes that folding tables and canopies were being set up, which naturally leads to needing tablecloths and clothespins to secure them; B is a plausible follow-on event consistent with this setup scenario.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A describes people arriving with tables and canopies, which has no bearing on the relative ages of Quinn and Dara mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Both describe activities during setup before opening, but neither event implies or precludes the other; they are simply parallel occurrences.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "A describes people arriving with equipment for setting up stands, which is a plausible precursor to someone managing a cash box at one of those stands, but the claims don't specifically connect Dara to this group or the bakery stand.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "A describes vendors setting up their stalls with tables and canopies, which is a natural precursor to the market opening and becoming busy with customers as described in B; the setup implies preparation for the bustling market activity.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Claim A describes others bringing tables and canopies, while claim B describes a separate discussion about chairs for elderly visitors; both could occur as part of the same setup event without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "A establishes that a group arrived with market setup equipment shortly after some initial event, suggesting a market or event being set up; B describes Quinn helping a vendor unload produce, which fits plausibly within the same market-setup scenario but is not directly implied or entailed by A.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "A describes others arriving with equipment to set up, while B describes a pause for a group photo before the real rush; these could occur in sequence but are not directly implied by one another.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "A describes early setup activity while B describes the end of the day; both can easily be part of the same event's timeline, with A being a precursor to the events summarized in B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Working together on a task naturally allows for casual conversation at the same time; the two claims describe compatible, plausibly simultaneous activities.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "These claims describe unrelated tasks by different people with no logical connection between arranging flowers and booking a hall.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Both claims describe details of the same event (arranging the flower stand), and B adds a plausible complementary detail about Dara bringing a radio for music while working. There's no logical connection making one more or less likely due to the other beyond general scene-setting.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Both describe different people doing separate setup tasks for what seems like the same event, but neither statement implies anything about the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A describes a collaborative activity between Kira and Dara, which has no bearing on Kira's relative age compared to Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Arranging a flower stand near the entrance suggests preparations for a market or event, which is consistent with vendors beginning to set out their goods, but the claims don't directly establish a causal or temporal link.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Both describe activities that could occur during setup of some event, but neither claim's truth affects the likelihood of the other; they involve different people and tasks with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Working together to arrange a flower stand says nothing about the relative ages of Kira and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A concerns two people arranging a flower stand while claim B describes weather and leaves on a path; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Claim A describes Kira and Dara arranging a flower stand, while claim B describes an unrelated event about someone laughing over clothespins for tablecloths. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A describes a collaborative task between Kira and Dara, while claim B is about a relative age comparison between Quinn and Dara. Neither claim provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "The two claims describe different people doing unrelated tasks around the same event with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "A says Dara helped arrange the flower stand while B says Dara volunteered for the bakery cash box; these could both be true if Dara took on multiple roles at different times or stands, though it's a bit surprising she'd be involved with both stands.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Both describe activities consistent with a market setting; A's flower stand arrangement plausibly sets up for the bustling market described in B, but they are largely independent details that don't directly support or contradict each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Both claims describe Kira participating in different collaborative tasks with different partners; nothing in A bears on the likelihood or truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Both describe cooperative market-related activities involving different people and tasks, but neither entails or affects the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "A describes Kira and Dara arranging a flower stand near the entrance, while B describes a group photo near a fountain before a rush; these involve different locations and activities with no clear logical connection, so they neither support nor conflict with each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Both claims plausibly describe parts of the same event (a market day), with A describing setup and B describing the end of the day; A's collaborative, positive activity is consistent with and mildly supports the upbeat, satisfied tone described in B.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "The two claims concern different people and different actions with no stated connection between the chat about weather/turnout and Ben's booking of the hall.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Both claims describe things that could happen at the same event; chatting about weather doesn't preclude bringing a radio, so there's no logical connection either way.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Both describe unrelated activities that could occur simultaneously at the same event without any bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "A describes a casual conversation between Kira and Dara about unrelated topics, which has no bearing on the relative ages of Quinn and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Kira and Dara discussing the day's expected turnout suggests some event or market was starting, which is consistent with vendors setting up their goods, but the claims describe different, only loosely connected activities.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Both claims describe different people engaged in unrelated activities, likely at the same event, but neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Chatting about weather and turnout has no bearing on the relative ages of the two speakers.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "A conversation about weather doesn't establish or preclude actual weather conditions like a breeze; the claims are largely independent, though B could loosely relate to the topic discussed in A.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Both claims describe casual conversational moments that could plausibly occur around the same event, but A doesn't specifically support or contradict B's content about clothespins.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A describes a conversation about weather and turnout, while claim B is about relative ages of Quinn and Dara. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Both claims describe casual pre-event social interactions among people, but they involve different participants and actions with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "A describes a casual conversation about weather and turnout, which doesn't preclude Dara later volunteering for a task; there's no direct causal or logical link, but they could plausibly occur in the same setting.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "A shows Kira and Dara discussing expected turnout for the day, which sets up an expectation that plausibly leads to a busy market later, making B more likely though not certain.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Both claims describe separate conversations Kira had, one with Dara about weather/turnout and another with Ben about chairs; these can easily both occur on the same day without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "The two claims describe different people engaged in unrelated activities with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Both describe casual, unrelated moments plausibly occurring before a busier event; A's chat and B's photo pause can coexist as separate incidents in the same lead-up period without conflict or notable reinforcement.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Both claims describe elements of the same day at what appears to be a market event; the casual chat about weather and turnout is consistent with a day that later ends in laughter and plans for future markets, but neither directly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Booking a hall is unrelated to Dara bringing a radio; the two events involve different people and actions with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Both claims describe different, plausibly unrelated preparation tasks for what might be an event; booking a hall does not inherently affect whether Jun helped string up banners.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Booking a hall has no bearing on the relative ages of Quinn and Kira; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Booking a hall could plausibly precede vendors setting up if it's a market or event, but there's no explicit causal or temporal link stated between the two claims as written.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Booking the hall is consistent with Ben later inspecting booths within it, as an organizer might do both tasks; A makes B plausible but doesn't strongly entail it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Booking a hall has no logical or causal connection to the relative ages of Kira and Dara; these are entirely separate facts about different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Booking a hall has no bearing on outdoor weather conditions like a breeze or leaves on a path; the two events are unconnected in content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Booking a hall has no clear logical connection to someone joking about clothespins for tablecloths; they concern different, unrelated aspects of event planning.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "The two claims concern entirely different subjects (booking a hall vs. relative ages of two people) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Booking a hall and offering to get coffee before public gates open concern different, unrelated events with no logical connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Booking a hall and volunteering for a bake sale cash box are unrelated activities with no logical connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Ben booking the hall has no logical or topical connection to a market being busy with customers sampling goods; they describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Booking the hall is a separate act from discussing chair arrangements; both could plausibly occur as part of organizing an event, but neither implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Booking a hall and helping a vendor unload apples describe unrelated events with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "Ben booking a hall has no bearing on whether a group photo happened near a fountain; these describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Booking a hall is a logistical event that neither entails nor conflicts with a day ending in laughter and plans for a future market; the two describe unrelated aspects with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "These describe different people doing different unrelated activities at what seems to be an event; A's content about a radio has no bearing on B's claim about banners.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A concerns Dara bringing a radio for music, while claim B concerns the relative ages of Quinn and Kira. They share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Dara bringing a radio to play music is a separate event from vendors setting out their goods; there's no logical or causal connection stated between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "The two claims describe unrelated actions by different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Bringing a radio to play music has no bearing on the relative ages of Kira and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "The presence of a radio brought for music has no bearing on the weather or leaves being scattered by wind; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "The two claims describe unrelated details of what appears to be a gathering or outdoor event; bringing a radio for music has no bearing on a comment about clothespins for tablecloths.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "A describes an unrelated action by Dara (bringing a radio), which has no bearing on the relative ages of Quinn and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "These claims describe different, unrelated actions by different people with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Bringing a radio for music is unrelated to volunteering to manage a cash box at a bakery stand; the two activities don't bear on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "A describes Dara bringing a radio for music, which is unrelated to the market's morning business with customers sampling foods; neither claim affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "A concerns Dara bringing a radio for music, while B concerns Ben and Kira discussing chair arrangements for elderly visitors; these describe different people and different preparations with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "The claims describe unrelated events involving different people and actions with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Bringing a radio to play music is a separate activity from pausing for a group photo near a fountain; neither claim implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Bringing a radio for music is consistent with a pleasant day ending in laughter and plans for next time, but the claims don't directly reference each other or necessarily imply one another.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A concerns Jun helping with banners while claim B concerns relative ages of Quinn and Kira; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Both describe plausible concurrent activities during event setup, but A's content about banners doesn't causally or logically influence whether vendors set out goods.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Both describe different people doing separate setup tasks at what seems to be the same event; neither statement affects the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "The claim about Jun helping string banners has no logical or thematic connection to the claim about relative ages of Kira and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Both describe scene details that could occur at the same event but have no logical or causal connection to each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Both claims describe minor, plausibly simultaneous activities at what seems to be the same outdoor event setup (banners and tablecloths), but neither implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A describes an unrelated event about banner-stringing, while claim B is about relative ages of two different people; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Both describe Jun engaging helpfully with event preparations; they are compatible and mildly mutually reinforcing of Jun being a helpful, active participant, but neither directly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Both describe different people doing separate volunteer tasks at what seems to be the same event; there is no logical connection between stringing banners and managing a cash box.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Both describe preparations or scenes at what appears to be the same market event, but stringing banners doesn't directly cause or prevent a bustling mid-morning market; they are plausibly parts of the same setting without a direct logical link.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Both claims appear to describe separate preparation tasks for what seems to be the same event, but knowing Jun helped with banners has no bearing on whether Ben and Kira discussed chair logistics.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Both describe different people performing different helpful tasks, likely at the same event (e.g., a market or fair), but neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Both describe plausible activities during event preparations, but neither implies the other; they could occur independently at different times or locations.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "A describes Jun participating in event setup, which is consistent with and mildly supportive of a day that leads to a fulfilling ending like B describes, though they are largely independent events on the same occasion.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns vendors setting out goods; there is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A concerns relative ages of Quinn and Kira, while claim B concerns Ben inspecting booths for space and signage. These involve entirely different people, subjects, and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Claim A establishes Quinn's age relative to Kira, but says nothing about Dara, so it has no bearing on whether Kira is older than Dara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A concerns a relative age comparison between two people, while claim B describes an unrelated weather/environmental event. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "The claims describe unrelated matters (relative ages of two people versus someone laughing about clothespins); neither bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Both claims are about Quinn's age relative to different people (Kira and Dara), so knowing Quinn is older than Kira gives no direct information about Quinn's age relative to Dara.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A concerns relative ages of Quinn and Kira, while claim B concerns Jun offering coffee before gates opened; they share no common subject or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Claim A concerns relative ages of Quinn and Kira, while claim B concerns Dara volunteering for a bakery stand cash box; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "The claims describe entirely unrelated matters: one is about relative ages of two people, the other about market activity. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Claim A concerns relative age between Quinn and Kira, while claim B describes an unrelated activity involving Ben and Kira about chairs for elderly visitors; neither bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Claim A is about relative age between Quinn and Kira, while claim B describes an unrelated action Quinn performed helping a vendor. There is no logical or evidential connection between age comparison and this activity.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Claim A concerns relative ages of two people, while claim B describes a group photo event; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Claim A is about relative ages of two people, while claim B describes the mood and events at the end of a day; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Vendors setting out goods is consistent with an organizer like Ben checking booths for space and signage; these describe complementary activities at the same event setup.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "The vendors setting out their goods has no logical or contextual connection to the relative ages of Kira and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Both describe separate concurrent scene details with no causal or logical connection between vendors arranging goods and a breeze moving leaves.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "A describes vendors starting to set up, which plausibly involves arranging tablecloths on stalls; B's clothespin remark fits naturally as part of that setup activity, making it more plausible in context, though not strictly required.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "The vendors setting out their goods has no logical or thematic connection to the relative ages of Quinn and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "A describes vendors preparing to sell, which suggests an event or market is about to start, loosely consistent with gates opening to the public soon. However, there's no direct causal or evidential link between vendors setting out goods and Jun's offer to get coffee.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Vendors setting out goods suggests a market is beginning, which is consistent with someone volunteering to manage cash for a bakery stand, but there's no direct causal or logical link established between the two events beyond a shared market context.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "The vendors setting out their goods is a natural precursor to a bustling market later that morning, so A makes B more plausible as a plausible sequence of events.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Both suggest preparations for some event or market opening, but the claims describe different, unrelated activities (vendors setting up goods vs. Ben and Kira arranging seating) with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "If vendors began setting out their goods, it is plausible that a new vendor was unloading boxes as part of that process, and Quinn helping fits naturally into that scene.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Both events could occur around the same time in a market scene; vendors starting to set up doesn't preclude others pausing for a photo nearby, and 'before the real rush began' even suggests a natural sequence. There's no direct logical connection, just plausible co-occurrence.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "A describes the beginning of the market day, while B describes its end; both can be true as part of the same continuous event timeline.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A concerns Ben inspecting booths for space and signage, while claim B concerns a relative age comparison between Kira and Dara. These involve entirely different people, subjects, and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "B describes an ambient weather event unrelated to Ben's task of checking booth spacing and signage; neither claim affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Both describe plausible minor events at what seems to be the same event setup, but Ben checking booths doesn't imply or affect someone laughing about clothespins.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A concerns Ben inspecting booths for space and signage, while claim B concerns the relative ages of Quinn and Dara. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Both describe plausible pre-event preparation activities by different people, but neither claim's truth affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Both claims describe different people performing different, unrelated tasks at what seems to be an event with booths; nothing in A bears on the likelihood or truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "A shows Ben preparing booths, likely before opening, while B describes a bustling market with customers later that morning; these depict different but compatible stages of the same event and A's setup activity plausibly supports the market later running smoothly and attracting customers.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Both claims describe Ben engaged in event-preparation tasks; checking booths does not directly affect or imply the chair discussion, but both fit a common context of organizing an event for visitors.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Both describe different people performing separate, compatible tasks at what seems to be the same event (a market or fair). Nothing in A bears on the likelihood or truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Both describe plausible moments in an event's setup, but they are largely independent activities that could occur in any order or overlap without one affecting the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "A describes Ben's earlier setup activities at the market, while B describes the overall positive outcome and mood at the end of the day. Both can plausibly be true as part of the same event narrative, with A contributing to the successful atmosphere described in B.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim B describes an unrelated environmental event with no connection to the relative ages of Kira and Dara mentioned in claim A.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "A is about relative ages of two people, while B describes an unrelated event about clothespins and tablecloths; there is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "A states a comparison between Kira and Dara, which says nothing about Quinn's age relative to Dara.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns the relative ages of Kira and Dara, while claim B concerns Jun offering to get coffee before gates opened; they share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Age comparison between Kira and Dara has no bearing on whether Dara volunteered to manage the cash box at a bakery stand.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A concerns the relative ages of Kira and Dara, while claim B describes a bustling market scene with no mention of these people or any connection to age. The two claims share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Claim A concerns relative age of Kira and Dara, while claim B concerns a discussion about chairs for elderly visitors involving Ben and Kira. There is no logical or factual overlap between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Claim A concerns relative ages of Kira and Dara, while claim B describes an unrelated event about Quinn helping a vendor unload apples. There is no logical or content connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Claim A concerns relative ages of Kira and Dara, while claim B describes an unrelated event about a group photo near a fountain; neither has bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Claim A concerns relative ages of two people, while claim B describes the ending mood and events of a day with no mention of age or these individuals' relationship to it. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "A light breeze picked up could explain why tablecloths need extra clothespins, but the claims describe unrelated events with no direct logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "The weather event described in A has no bearing on the relative ages of Quinn and Dara stated in B; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "The breeze and scattered leaves describe ambient weather conditions, which have no bearing on Jun's offer to get coffee before the gates opened. These are independent events without causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "The breeze and scattering leaves describe an ambient weather detail with no logical or causal connection to Dara volunteering to manage the cash box at a bakery stand.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "A light breeze scattering leaves has no bearing on a market becoming bustling with customers; they describe separate, unconnected scenes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "A describes weather and leaves on a path; B describes a conversation about chairs for visitors. Neither event bears causally or logically on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "The breeze and leaf scattering describe an ambient weather event that has no logical bearing on Quinn helping a vendor unload apples; they could co-occur or not without affecting each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "A describes a minor weather event while B describes an unrelated social action near a fountain; neither implies or affects the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "A describes a minor weather detail with no bearing on how the day concluded socially or emotionally; the two claims describe different, independent aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "The claim about clothespins and tablecloths has no logical or thematic connection to a claim about relative ages of Quinn and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "The two claims describe unrelated events (a joke about clothespins for tablecloths versus Jun offering to fetch coffee) with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "The two claims describe unrelated events at what seems like an outdoor event or market: one about clothespins for tablecloths, the other about Dara managing a cash box. There's no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Both claims seem to describe a lively outdoor market scene, likely at overlapping times, but A about clothespins for tablecloths doesn't directly affect the likelihood of B's description of bustling customers sampling goods.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Both claims describe minor logistical preparations at what seems like the same event, but they concern different tasks (clothespins vs chairs) and involve possibly different people, so one doesn't bear on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Both describe minor, unrelated events at what could be the same setting (e.g., a market), but there's no logical or causal connection between someone joking about clothespins and Quinn helping a vendor unload apples.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Both describe minor, light-hearted moments possibly at the same event, but neither implies or affects the likelihood of the other; they concern unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "The laughter about clothespins is a specific instance consistent with a day generally characterized by laughter, tiredness, and future plans; A provides mild supporting detail for B's general description.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "The two claims concern entirely different subjects (relative age of Quinn and Dara vs. Jun's coffee offer) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Quinn's age relative to Dara has no bearing on whether Dara volunteered to manage the cash box; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "The claim about Quinn and Dara's relative ages has no logical or contextual connection to the description of the market scene.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Claim A is about relative ages of Quinn and Dara, while claim B concerns Ben and Kira arranging chairs for elderly visitors; there is no overlap in people or subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Quinn's relative age compared to Dara has no bearing on whether Quinn helped a vendor unload apples; these describe unrelated facts about Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Claim A concerns relative ages of Quinn and Dara, while claim B describes a group activity involving a photo near a fountain; neither statement's content bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Claim A is a statement about relative ages of two people, while claim B describes the mood and events at the end of a day, with no shared subject or connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Both describe different people volunteering for different tasks before an event; nothing about one bears on the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "A describes an early, quiet moment before the market opened, while B describes the market busy with customers by mid-morning; these are compatible sequential events in the same setting with no conflicting details.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Both claims describe unrelated preparatory tasks before the venue opens; Jun's coffee offer has no bearing on Ben and Kira's chair discussion.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "The two claims describe unrelated actions by different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Both describe casual pre-opening activities that could easily occur together in sequence; A does not particularly increase or decrease the likelihood of B, they're just two separate events in a similar timeframe.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "A describes an early, minor gesture before opening, while B describes the closing mood and future plans; they concern different times and neither confirms nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "B describes the general market atmosphere and customer activity, which is largely independent of who is managing the bakery stand's cash box.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "These two claims describe separate, unconnected activities at what may be the same event, but neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Both describe different people performing separate tasks at what appears to be the same market/event, but neither claim implies anything about the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Dara volunteering to manage the cash box and the group pausing for a photo near the fountain describe unrelated events with no logical bearing on each other; both could easily coexist without tension.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Claim A describes a specific role Dara took on at the bakery stand, while claim B describes a general upbeat conclusion to the day; neither confirms nor denies the other, and they could easily coexist without direct bearing.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Both describe activity at what appears to be the same market scene, but A's bustling crowd doesn't directly imply or deny B's specific detail about chairs for elderly visitors; they are largely independent details from the same setting.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "A establishes a busy market scene with vendors and customers; B describes an unrelated specific action by Quinn helping a vendor unload apples, which is plausible in the same setting but not implied by A.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "B refers to a lull before the real rush began, whereas A describes the market already bustling with customers by mid-morning. If the bustling rush had already started, a pause 'before the real rush' occurring afterward is temporally awkward, though both could fit if the photo happened early and A refers to a later point.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "A describes a lively, well-attended market in the morning, which supports the idea that the day was enjoyable and successful, making a positive, memorable ending with laughter and plans for future markets more plausible.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "The two claims describe separate, unconnected events involving different people and activities with no causal or logical link between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Both describe separate preparatory or incidental events without any indication of causal or temporal conflict; they can easily coexist in the same event's timeline.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Both claims seem to describe parts of the same event (organizing a market with visitors), and A's preparation detail supports the plausibility of B's depiction of a successful, tiring day, but they are largely independent details from different points in the day.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Both describe plausible scene-setting activities that could occur around the same event, but neither implies the other; helping unload boxes doesn't bear on whether a group photo happened.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "A describes a specific helpful action during the day, which plausibly contributes to a positive, communal end-of-day atmosphere described in B, but there is no strong logical link between the two.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "A describes a lighthearted moment early in the event, and B describes a positive, tiring end to the day; both fit a coherent narrative of an enjoyable market day, so A mildly supports the overall positive tone in B.",
+   "relation": "supports",
+   "confidence": 0.55
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "treasurer_role",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 10,
+    "attribute": "age",
+    "subject": "quinn",
+    "comparative": "older than",
+    "object": "kira",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 13,
+    "attribute": "age",
+    "subject": "kira",
+    "comparative": "older than",
+    "object": "dara",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 16,
+    "attribute": "age",
+    "subject": "quinn",
+    "comparative": "older than",
+    "object": "dara",
+    "confidence": 0.98
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_order",
+    "entity": "quinn",
+    "comparative": "first",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 3,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    5,
+    18
+   ],
+   [
+    19,
+    22
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "treasurer_role": null,
+    "arrival_order": "sequence",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 3,
+     "attribute": "arrival_order",
+     "entity": "quinn",
+     "extreme": "min",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 31,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 0.9862437605628267,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0000000000000002,
+   1.0,
+   0.01010101010101011,
+   1.0000000000000004,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000004,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002
+  ],
+  "claim_residuals": [
+   2.415886522239349e-31,
+   0.9998979695949395,
+   1.97979797979798,
+   3.968956429393215e-31,
+   3.8950007195287455e-31,
+   7.888609052210118e-32,
+   5.916456789157588e-32,
+   4.930380657631324e-32,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   6.015064402310215e-31,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   1.0600318413907348e-31,
+   0.0,
+   2.958228394578794e-32,
+   0.0,
+   1.7995889400354331e-31,
+   0.0,
+   1.5530699071538672e-31,
+   5.669937756276022e-32,
+   1.0600318413907348e-31
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 3,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 0,
+    "b": 4,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 0,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 11,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 0,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 17,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 0,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 21,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 0,
+    "b": 22,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 0,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "residual": 0.9998979695949395
+   },
+   {
+    "a": 3,
+    "b": 4,
+    "residual": 1.3805065841367706e-31
+   },
+   {
+    "a": 3,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 19,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 4,
+    "b": 11,
+    "residual": 1.4791141972893971e-31
+   },
+   {
+    "a": 4,
+    "b": 15,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 4,
+    "b": 19,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 5,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 19,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 7,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 15,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 11,
+    "b": 19,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 11,
+    "b": 21,
+    "residual": 1.2818989709841442e-31
+   },
+   {
+    "a": 11,
+    "b": 23,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 12,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 19,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "residual": 2.7117093616972283e-32
+   }
+  ],
+  "residual_ranking": [
+   2,
+   1
+  ],
+  "culprits": [
+   {
+    "claim": 2,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.013756239437173301
+   },
+   {
+    "claim": 1,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.013756239437173301
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 1982906,
+   "output_tokens": 180869,
+   "thinking_tokens": 0,
+   "calls": 14822,
+   "api_calls": 1883,
+   "cache_hits": 12939,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 5.699619000000004,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 42510,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 2163775,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    11,
+    12,
+    15,
+    17,
+    19,
+    21,
+    22,
+    23
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    8
+   ],
+   [
+    10
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    16
+   ],
+   [
+    18
+   ],
+   [
+    20
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    1,
+    2
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 5,
+    "b": 18,
+    "rationale": "A says Dara helped arrange the flower stand while B says Dara volunteered for the bakery cash box; these could both be true if Dara took on multiple roles at different times or stands, though it's a bit surprising she'd be involved with both stands.",
+    "confidence": 0.55
+   },
+   {
+    "a": 19,
+    "b": 22,
+    "rationale": "B refers to a lull before the real rush began, whereas A describes the market already bustling with customers by mid-morning. If the bustling rush had already started, a pause 'before the real rush' occurring afterward is temporally awkward, though both could fit if the photo happened early and A refers to a later point.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 10,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "quinn",
+   "b": "kira",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "kira",
+   "b": "dara",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "quinn",
+   "b": "dara",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

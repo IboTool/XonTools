@@ -1,0 +1,104 @@
+{
+ "request": "70b15558af98fa721516b5592f8f4690f3807ee64f0acf02ff8ee75bdcbacfda",
+ "tag": "text-f0b4afd3858c-var1-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "treasurer_status",
+    "arity": "binary",
+    "arity_span": "Uma is not the treasurer."
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "treasurer_status",
+    "kind": "same",
+    "a": "uma",
+    "b": "treasurer",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 8,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "isla",
+    "b": "kai",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 12,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "kai",
+    "b": "cy",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "isla",
+    "b": "cy",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 21,
+    "attribute": "treasurer_status",
+    "kind": "different",
+    "a": "uma",
+    "b": "treasurer",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2213,
+  "output_tokens": 408,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b00-direct",
+ "repetition": 1,
+ "call": 55
+}

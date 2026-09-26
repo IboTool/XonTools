@@ -1,0 +1,135 @@
+{
+ "request": "5430f5120e4333148138e80981a2f1f2292307b92f34a1c3e3c420be3974fce3",
+ "tag": "text-596f88b52b3a-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "judges",
+    "mentions": [
+     "The judges"
+    ]
+   },
+   {
+    "id": "five_friends",
+    "mentions": [
+     "The five friends",
+     "Each of the five friends"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "club_secretary",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "club_secretary",
+    "kind": "different",
+    "a": "ivo",
+    "b": "club_secretary",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 4,
+    "attribute": "club_secretary",
+    "kind": "same",
+    "a": "ivo",
+    "b": "club_secretary",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "cy",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "cy",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "isla",
+    "b": "nell",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "isla",
+    "confidence": 0.3
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2180,
+  "output_tokens": 574,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

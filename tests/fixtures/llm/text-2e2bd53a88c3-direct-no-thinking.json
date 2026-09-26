@@ -1,0 +1,25 @@
+{
+ "request": "f50392c5a2170bd6ebaf6d42d02076e5556e5b2a39f3d69fc89ebae51296a0de",
+ "tag": "text-2e2bd53a88c3-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Rosa is in the same class as Finn.",
+     "Finn is in the same class as Jun.",
+     "Rosa is not in the same class as Jun."
+    ],
+    "explanation": "If Rosa is in the same class as Finn and Finn is in the same class as Jun, then Rosa must be in the same class as Jun, contradicting the statement that she is not."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1077,
+  "output_tokens": 129,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

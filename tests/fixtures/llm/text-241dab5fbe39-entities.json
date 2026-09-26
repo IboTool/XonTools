@@ -1,0 +1,175 @@
+{
+ "request": "9f92ae79a0186834856d9d7560088c7a5470a96653d276d17ad5deb491c7cb50",
+ "tag": "text-241dab5fbe39-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira"
+    ]
+   },
+   {
+    "id": "eli",
+    "mentions": [
+     "Eli"
+    ]
+   },
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "eli",
+    "b": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "eli",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "nell",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "eli",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "nell",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 12,
+    "attribute": "class",
+    "kind": "same",
+    "a": "yara",
+    "b": "eli",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "kira",
+    "b": "nell",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "kira",
+    "b": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "class",
+    "kind": "different",
+    "a": "eli",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 20,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "eli",
+    "b": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "noor",
+    "b": "yara",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 23,
+    "attribute": "class",
+    "kind": "different",
+    "a": "yara",
+    "b": "nell",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2122,
+  "output_tokens": 802,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

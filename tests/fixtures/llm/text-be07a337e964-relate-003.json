@@ -1,0 +1,80 @@
+{
+ "request": "b04f2168192d4a609a2037e32bc40d7fc25622a38f223458a389f951bb33a01d",
+ "tag": "text-be07a337e964-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 20,
+    "b": 28,
+    "rationale": "Sami's chess ranking has no bearing on Xavi's promise about static grass.",
+    "relation": "unrelated",
+    "confidence": 0.98
+   },
+   {
+    "a": 21,
+    "b": 28,
+    "rationale": "Newcomers' surprise about Sami's ranking is unrelated to Xavi's scenery promise.",
+    "relation": "unrelated",
+    "confidence": 0.98
+   },
+   {
+    "a": 22,
+    "b": 25,
+    "rationale": "Sami and Dev being in different houses implies there are at least two houses, which is consistent with but does not confirm exactly three houses.",
+    "relation": "supports",
+    "confidence": 0.4
+   },
+   {
+    "a": 23,
+    "b": 24,
+    "rationale": "The exhibition date approaching fast supports the urgency of finishing the layout within three weeks.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 23,
+    "b": 25,
+    "rationale": "The exhibition timeline has no bearing on the number of houses in the school.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "The layout deadline is unrelated to the number of school houses.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 24,
+    "b": 27,
+    "rationale": "The layout needing completion in three weeks supports the relevance and urgency of Xavi's promise to bring materials, but doesn't directly confirm it.",
+    "relation": "supports",
+    "confidence": 0.4
+   },
+   {
+    "a": 24,
+    "b": 28,
+    "rationale": "The layout deadline supports the need for Xavi's promised static grass to be delivered soon, but doesn't directly confirm the claim.",
+    "relation": "supports",
+    "confidence": 0.4
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "rationale": "Both are separate promises made by Xavi for the same event, so one being true makes the other plausible but not guaranteed.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1040,
+  "output_tokens": 618,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,140 @@
+{
+ "request": "82af97f407a1c0ffeaf9735c4b689cd5bddea0281ae86a74f2c4b9bcabad1bea",
+ "tag": "text-89bf85968bfc-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "first_aid_kit_bringer",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 4,
+    "attribute": "first_aid_kit_bringer",
+    "kind": "same",
+    "a": "yara",
+    "b": "first_aid_kit",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 7,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "hana",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "team",
+    "kind": "same",
+    "a": "finn",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "finn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "team",
+    "kind": "different",
+    "a": "rosa",
+    "b": "hana",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "alma",
+    "b": "yara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "team",
+    "kind": "different",
+    "a": "finn",
+    "b": "hana",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "hana",
+    "b": "rosa",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2173,
+  "output_tokens": 613,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

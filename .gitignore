@@ -1,0 +1,44 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode and caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Package metadata written by `pip install -e .`
+*.egg-info/
+
+# Secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# IDE and editor files (Cursor's project rules stay tracked)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/*
+!.cursor/rules/
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Personal documents, kept outside the repository
+PROJECT_JOURNAL*
+pdfs/
+
+# Git archives and history bundles, kept in the private folder outside the repository
+git-archive-*.zip
+*.git-archive*
+XON-history-*.zip
+*.bundle

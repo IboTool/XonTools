@@ -1,0 +1,25 @@
+{
+ "request": "b909ea1a6f9493586680351d85c00cbd59ac7a8aff4da348e6cfe1c95979719a",
+ "tag": "text-5210aa6ccb1e-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Yara is in the same class as Milo.",
+     "Milo is in the same class as Zeno.",
+     "Yara is not in the same class as Zeno."
+    ],
+    "explanation": "If Yara is in the same class as Milo and Milo is in the same class as Zeno, then by transitivity Yara must be in the same class as Zeno, contradicting the statement that she is not."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1085,
+  "output_tokens": 262,
+  "thinking_tokens": 129
+ },
+ "stop_reason": "end_turn"
+}

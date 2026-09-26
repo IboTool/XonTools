@@ -1,0 +1,94 @@
+{
+ "request": "9fb2a17bbd0f963d9175ff5f17d2d5e0de1c8a515d3b66246c682ec6679d6c46",
+ "tag": "text-080df8d0296a-seed1-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 19,
+    "b": 23,
+    "rationale": "Isla sitting beside Nell has no bearing on Ivo's promise about an announcement.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 20,
+    "b": 22,
+    "rationale": "Isla and Nell discussing prize winners is unrelated to Cy asking Ivo about the ceremony schedule.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 20,
+    "b": 23,
+    "rationale": "Discussing which entries might win doesn't affect whether Ivo promised an announcement.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 20,
+    "b": 26,
+    "rationale": "Isla and Nell discussing potential winners suggests they have favorites, supporting that friends hoped their favorite entry would be recognized.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "rationale": "Nell's height relative to Isla has no connection to Ivo's promise of an announcement.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 21,
+    "b": 25,
+    "rationale": "Height comparison between Nell and Isla is unrelated to the group exchanging glances.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "Cy asking about the ceremony schedule directly prompts Ivo's response promising an announcement soon.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 22,
+    "b": 24,
+    "rationale": "Cy asking about the schedule is unrelated to the lights dimming for the presentation.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 24,
+    "b": 26,
+    "rationale": "The lights dimming for the presentation is a general event unrelated to each friend's specific hope for their favorite entry.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 24,
+    "b": 29,
+    "rationale": "The lights dimming for the presentation supports the evening continuing with quiet anticipation.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "The friends exchanging glances suggests shared anticipation, supporting that each hoped their favorite entry would be recognized.",
+    "relation": "supports",
+    "confidence": 0.65
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1072,
+  "output_tokens": 749,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

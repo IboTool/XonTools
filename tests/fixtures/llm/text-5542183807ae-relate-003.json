@@ -1,0 +1,157 @@
+{
+ "request": "afc08d885d79185ff34a45291cf8ac34867f8f41a9ad7e04eaa878e733593c92",
+ "tag": "text-5542183807ae-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 15,
+    "b": 22,
+    "rationale": "Stopping for lunch is a distinct event from taking breaks for water; the two neither confirm nor deny each other.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 15,
+    "b": 26,
+    "rationale": "Stopping to eat lunch could plausibly involve sharing tea, but this is not stated or implied.",
+    "relation": "unrelated",
+    "confidence": 0.65
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "rationale": "Esme's mention of a steep climb is followed by everyone nodding, suggesting agreement with her statement, so A supports B as a natural response.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 16,
+    "b": 24,
+    "rationale": "A steep climb ahead is consistent with eventually reaching a summit, making it more plausible.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 16,
+    "b": 28,
+    "rationale": "Mentioning a steep climb ahead does not bear on the later careful descent along a rocky path.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   },
+   {
+    "a": 18,
+    "b": 23,
+    "rationale": "Kai being taller than Leo says nothing about Leo's height relative to Pia.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 18,
+    "b": 27,
+    "rationale": "Relative heights of Kai and Leo have no bearing on when the group starts descending.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "rationale": "Hana pointing out the bird nest directly explains why the group paused to admire it.",
+    "relation": "supports",
+    "confidence": 0.9
+   },
+   {
+    "a": 20,
+    "b": 25,
+    "rationale": "Pausing to admire a bird nest is unrelated to Leo taking photographs later.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 20,
+    "b": 27,
+    "rationale": "An earlier brief pause to admire a nest has no bearing on the later descent as the sky darkens.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "rationale": "A warm afternoon sun would plausibly increase the need for breaks to rest and rehydrate.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 21,
+    "b": 24,
+    "rationale": "The sun growing warm in the afternoon is consistent with reaching the summit by late afternoon, but doesn't specifically support it.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   },
+   {
+    "a": 21,
+    "b": 25,
+    "rationale": "Warm afternoon sun has no clear connection to Leo taking photographs.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "Taking breaks to refill water bottles has no bearing on Leo's height relative to Pia.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 22,
+    "b": 29,
+    "rationale": "Frequent rest breaks contribute to a full, satisfying day of hiking, supporting the overall satisfaction claim.",
+    "relation": "supports",
+    "confidence": 0.55
+   },
+   {
+    "a": 23,
+    "b": 26,
+    "rationale": "Leo's height relative to Pia has no connection to Kai sharing tea.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "Reaching the summit with a scenic valley view provides a natural occasion for Leo to take photographs.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 24,
+    "b": 27,
+    "rationale": "Reaching the summit in late afternoon logically precedes and supports the later descent as sky darkens.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 24,
+    "b": 29,
+    "rationale": "Reaching the summit with a beautiful view contributes to overall satisfaction with the hike.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 25,
+    "b": 27,
+    "rationale": "Leo taking photographs is unrelated to the timing or occurrence of the group's descent.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1284,
+  "output_tokens": 1329,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

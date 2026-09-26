@@ -1,0 +1,45 @@
+{
+ "request": "c51294dc1ddcdb35319dfbb0dd8447f036487111a85f869a6300a69264c693a5",
+ "tag": "text-cefd56fe36c2-seed1-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 20,
+    "b": 23,
+    "rationale": "Mina's relative age has no bearing on players comparing standings on a chalkboard.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 20,
+    "b": 25,
+    "rationale": "Mina's relative age has no bearing on the group's post-meeting cleanup activities.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 22,
+    "b": 24,
+    "rationale": "Mina and Jude being in different houses does not indicate how many houses the school has in total.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 23,
+    "b": 25,
+    "rationale": "Comparing standings near the end of the session and helping stack chairs afterward both describe sequential wind-down activities, making the first plausibly precede and support the occurrence of the second.",
+    "relation": "supports",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 959,
+  "output_tokens": 285,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

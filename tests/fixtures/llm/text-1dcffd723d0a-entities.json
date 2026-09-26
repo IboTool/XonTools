@@ -1,0 +1,174 @@
+{
+ "request": "a54380346807f0ede294e8d29284030f534e73f3155861c746328aadb9fdb3a9",
+ "tag": "text-1dcffd723d0a-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo",
+     "he"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina",
+     "she"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay",
+     "her"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "she"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "instructor",
+    "mentions": [
+     "The instructor"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "seat",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "fay",
+    "b": "milo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "fay",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "milo",
+    "b": "fay",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "nell",
+    "b": "mina",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "fay",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "milo",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "seat",
+    "kind": "same",
+    "a": "fay",
+    "b": "mina",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "milo",
+    "b": "mina",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "milo",
+    "b": "fay",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "milo",
+    "b": "nell",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "milo",
+    "b": "esme",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2127,
+  "output_tokens": 758,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,181 @@
+{
+ "request": "b5d983ee1172a781c6282f393a36ab4f174d29c79ad0c75f6beabec5f2bd0467",
+ "tag": "text-7bc867ef4850-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto"
+    ]
+   },
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira",
+     "she"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme",
+     "her"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo",
+     "his"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "kira",
+    "b": "otto",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "cleo",
+    "b": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "otto",
+    "b": "cleo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "kira",
+    "b": "otto",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "esme",
+    "b": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "otto",
+    "b": "esme",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "kira",
+    "b": "esme",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "cleo",
+    "b": "esme",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "leo",
+    "b": "esme",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 19,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "esme",
+    "b": "otto",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "leo",
+    "b": "otto",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 22,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "leo",
+    "b": "kira",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 22,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "leo",
+    "b": "cleo",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 22,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "leo",
+    "b": "esme",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2142,
+  "output_tokens": 831,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

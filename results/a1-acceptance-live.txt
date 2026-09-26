@@ -1,0 +1,71 @@
+# XON_A1_CONSISTENCY.md §9, the checks with a key set (claude-sonnet-5, world knowledge off)
+
+## Order cycle
+Ana is older than Ben. Ben is older than Cy. Cy is older than Ana.
+claims:
+  0 (asserted): Ana is older than Ben.
+  1 (asserted): Ben is older than Cy.
+  2 (asserted): Cy is older than Ana.
+relations:
+  0-1: unrelated 0.6 | Ana being older than Ben says nothing directly about Ben's age relative to Cy.
+  0-2: unrelated 0.55 | If Ana is older than Ben, and assuming typical transitive age chains, this contradicts Cy being older than Ana since combined with claim 1 it would create a cycle, but taken alone Ana>Ben says nothing about Cy directly.
+  1-2: unrelated 0.6 | Ben being older than Cy says nothing directly about Cy's age relative to Ana.
+attributes: age (unknown; None)
+entity relations:
+  claim 0: age greater(ana, ben) 0.98
+  claim 1: age greater(ben, cy) 0.98
+  claim 2: age greater(cy, ana) 0.98
+verdict_inconsistent: True; clauses: ['entity']
+entity contradictions in the verdict: order_cycle on age over ['ana', 'ben', 'cy'], claims [0, 1, 2], min confidence 0.98
+pairwise baseline: nothing reported
+
+## Three teams
+There were three teams. Ana and Ben were on different teams, Ben and Cy were on different teams, and Ana and Cy were on different teams.
+claims:
+  0 (asserted): There were three teams.
+  1 (asserted): Ana and Ben were on different teams.
+  2 (asserted): Ben and Cy were on different teams.
+  3 (asserted): Ana and Cy were on different teams.
+relations:
+  0-1: unrelated 0.85 | Knowing there are three teams doesn't determine whether Ana and Ben are on different teams.
+  0-2: unrelated 0.85 | The number of teams alone doesn't imply anything about Ben and Cy's specific team assignments.
+  0-3: unrelated 0.85 | The number of teams alone doesn't imply anything about Ana and Cy's specific team assignments.
+  1-2: unrelated 0.8 | Ana and Ben being on different teams says nothing about whether Ben and Cy are on different teams.
+  1-3: unrelated 0.8 | Ana and Ben being on different teams says nothing about whether Ana and Cy are on different teams.
+  2-3: unrelated 0.8 | Ben and Cy being on different teams says nothing about whether Ana and Cy are on different teams.
+attributes: team (multi; 'There were three teams.')
+entity relations:
+  claim 1: team different(ana, ben) 0.98
+  claim 2: team different(ben, cy) 0.98
+  claim 3: team different(ana, cy) 0.98
+verdict_inconsistent: False; clauses: []
+entity contradictions in the verdict: none
+pairwise baseline: nothing reported
+
+## Two teams
+There were two teams. Ana and Ben were on different teams, Ben and Cy were on different teams, and Ana and Cy were on different teams.
+claims:
+  0 (asserted): There were two teams.
+  1 (asserted): Ana and Ben were on different teams.
+  2 (asserted): Ben and Cy were on different teams.
+  3 (asserted): Ana and Cy were on different teams.
+relations:
+  0-1: unrelated 0.7 | Knowing there are two teams sets the context but doesn't determine whether Ana and Ben are on different teams.
+  0-2: unrelated 0.7 | Knowing there are two teams doesn't determine whether Ben and Cy are on different teams.
+  0-3: unrelated 0.7 | Knowing there are two teams doesn't determine whether Ana and Cy are on different teams.
+  1-2: unrelated 0.55 | If Ana and Ben are on different teams, with only two teams total, Ben and Cy being on different teams would put Cy with Ana, which is independent of this direct claim about Ben and Cy; but with two teams, if Ana and Ben differ, and Ben and Cy also differ, Cy must equal Ana's team, which is logically consistent but not forced by A alone.
+  1-3: unrelated 0.6 | Ana and Ben being on different teams doesn't by itself determine whether Ana and Cy are on different teams.
+  2-3: unrelated 0.6 | Ben and Cy being on different teams doesn't by itself determine whether Ana and Cy are on different teams.
+attributes: team (binary; 'There were two teams.')
+entity relations:
+  claim 1: team different(ana, ben) 0.98
+  claim 2: team different(ben, cy) 0.98
+  claim 3: team different(ana, cy) 0.98
+verdict_inconsistent: True; clauses: ['entity']
+entity contradictions in the verdict: binary_parity on team over ['ana', 'ben', 'cy'], claims [1, 2, 3], min confidence 0.98
+pairwise baseline: nothing reported
+
+Item 2 (order cycle: inconsistent, clause entity, an order cycle naming all three claims, pairwise reports nothing): met
+Item 3 (three teams not flagged, two teams flagged): met
+
+API calls 9, cache hits 0; 10,535 input and 2,423 output tokens; about $0.0453

@@ -1,0 +1,26 @@
+{
+ "request": "25ee110657b2696e79df5cda671fc00c5a2a24e7fbdd781ca82ecafc324f7010",
+ "tag": "text-ae4bf9ecd828-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Leo and Ivo were on different teams.",
+     "Ivo and Rosa were on different teams.",
+     "Leo and Rosa were on different teams.",
+     "There were two teams."
+    ],
+    "explanation": "With only two teams, it is impossible for Leo, Ivo, and Rosa to all be pairwise on different teams, since that would require three distinct teams."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1092,
+  "output_tokens": 131,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

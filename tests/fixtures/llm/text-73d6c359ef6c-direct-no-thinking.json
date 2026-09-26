@@ -1,0 +1,25 @@
+{
+ "request": "624dc5be09666141d960e6906d05c8408096a6c98a665dc21d3b80a5826a7558",
+ "tag": "text-73d6c359ef6c-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Dara arrived before Leo.",
+     "Leo arrived before Wren.",
+     "Wren arrived before Dara."
+    ],
+    "explanation": "These three arrival orderings form a cycle (Dara before Leo, Leo before Wren, Wren before Dara), which is impossible."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1042,
+  "output_tokens": 108,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

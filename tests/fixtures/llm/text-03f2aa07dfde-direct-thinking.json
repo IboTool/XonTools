@@ -1,0 +1,24 @@
+{
+ "request": "a4186343432ef16178966cd569d44946b6a842e3bbced55d28467ded6e976572",
+ "tag": "text-03f2aa07dfde-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Assume that Esme is the head judge.",
+     "Esme is not the head judge."
+    ],
+    "explanation": "The text both assumes Esme is the head judge and directly states that she is not, which cannot both be true."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1058,
+  "output_tokens": 346,
+  "thinking_tokens": 264
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,51 @@
+{
+ "model": "claude-sonnet-5",
+ "plans": 4,
+ "regenerated": 4,
+ "failed": {},
+ "attempts": {
+  "0": 1,
+  "1": 1,
+  "2": 1,
+  "3": 1
+ },
+ "flagged": [],
+ "usage": {
+  "input_tokens": 2206,
+  "output_tokens": 489,
+  "thinking_tokens": 0,
+  "calls": 2,
+  "api_calls": 2,
+  "cache_hits": 0,
+  "fixture_hits": 0,
+  "stale_fixtures": 0,
+  "estimated_cost_usd": 0.009302000000000001,
+  "spent_tokens": 2695,
+  "budget_tokens": 50000
+ },
+ "leak_flags": {
+  "0": [
+   {
+    "sentence": "Uma stood a head taller than Cy, which made it easy for her to reach the higher shelf where the extra gloves were kept.",
+    "reason": "Describes Uma being physically taller than Cy, which implies or hints at an age/size comparison paralleling the planted age-order facts."
+   }
+  ]
+ },
+ "fact_overrides": {
+  "2": "swapped from 'won the raffle' to 'brought the first-aid kit': kept leaking through narrative tone (excitement/luck), survived one regeneration; see CHANGELOG"
+ },
+ "confirmed_false_positives": {
+  "0_height": {
+   "n": 1,
+   "base": 0,
+   "sentence": "Uma stood a head taller than Cy, which made it easy for her to reach the higher shelf where the extra gloves were kept.",
+   "note": "height comparison (Uma/Cy) flagged as implying the planted age order (Isla/Kai/Cy); different attribute, Uma outside the trio"
+  },
+  "0_ranking": {
+   "n": 3,
+   "base": 0,
+   "sentence": "Kai mentioned that he had ranked highest in last year's tomato-growing contest, though Isla laughed and said she still remembered his crooked rows.",
+   "note": "contest ranking / skill callback between Isla and Kai, not age; no inferential path to the planted age order; same cross-attribute pattern as #1 (height) and the independent-review flags on base 1"
+  }
+ }
+}

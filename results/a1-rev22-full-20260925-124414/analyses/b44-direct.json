@@ -1,0 +1,2240 @@
+{
+ "label": "b44-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-89cd5d0b6565",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Kai is the head judge.",
+   "span": "Assume that Kai is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Kai arrived earlier than Cy.",
+   "span": "Kai arrived earlier than Cy",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Cy came in just before the first round began.",
+   "span": "who came in just before the first round began",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Uma showed up a bit later than Cy.",
+   "span": "Uma showed up a bit later",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Uma was carrying a stack of ballots for the registration table.",
+   "span": "carrying a stack of ballots for the registration table",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Noor took the photographs.",
+   "span": "Noor took the photographs.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Fay was the last of the group to arrive.",
+   "span": "Fay was the last of the group to arrive",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Fay slipped into the venue moments before opening remarks.",
+   "span": "slipping into the venue moments before opening remarks",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Cy and Uma worked different shifts.",
+   "span": "Cy and Uma worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Uma and Fay worked different shifts.",
+   "span": "Uma and Fay worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Kai is not the head judge.",
+   "span": "Kai is not the head judge.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Kai is taller than Cy.",
+   "span": "Kai is taller than Cy",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Fay stands taller than both Kai and Cy.",
+   "span": "Fay stands taller than both of them",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Cy and Fay worked different shifts.",
+   "span": "Cy and Fay worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Noor is younger than Uma.",
+   "span": "Noor is younger than Uma",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Noor is older than Kai.",
+   "span": "but older than Kai",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Noor and Kai often compared notes on timing during breaks.",
+   "span": "the two of them often compared notes on timing during breaks",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "The shop ran three shifts.",
+   "span": "The shop ran three shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Rankings after the preliminary rounds placed Uma above Cy.",
+   "span": "Rankings after the preliminary rounds placed Uma above Cy",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Fay trailed just behind Noor in the standings.",
+   "span": "Fay trailed just behind Noor in the standings",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Kai reviewed the final tally sheets once the last debate concluded.",
+   "span": "Kai reviewed the final tally sheets once the last debate concluded",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Being the head judge does not inherently indicate anything about arrival order relative to Cy; the claims address different aspects (role vs timing) with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Kai being the head judge has no bearing on when Cy arrived before the first round began; these describe unrelated facts about different people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Claim A concerns Kai's role as head judge, while claim B concerns the relative arrival times of Uma and Cy. These involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "A states Kai's role as head judge, while B describes Uma carrying ballots for registration; the two claims involve different people and different activities with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Being the head judge and taking photographs are different, unrelated roles with no logical connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Kai's role as head judge has no bearing on the order in which Fay or others arrived; the two claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "The identity of the head judge has no bearing on whether Fay arrived just before opening remarks; the two claims concern unrelated people and events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A identifies Kai's role as head judge, which has no bearing on whether Cy and Uma worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Kai's role as head judge has no bearing on whether Uma and Fay worked different shifts; the claims involve different people and different topics.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A directly asserts Kai holds the position, while claim B directly denies it; these are strict negations of each other with no reading under which both are true.",
+   "relation": "contradicts",
+   "confidence": 0.99
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Being the head judge is a role/position claim with no bearing on physical height relative to another person; the two facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A establishes Kai's role as head judge, which has no bearing on relative physical heights of Fay, Kai, and Cy.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Claim A concerns Kai's role as head judge, which has no bearing on whether Cy and Fay worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A concerns Kai's role as head judge, while claim B concerns a relative age comparison between Noor and Uma. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Being the head judge is a role and says nothing about relative age, so knowing Kai's position gives no information about whether Noor is older than Kai.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Kai being head judge is consistent with Kai having conversations with Noor about timing during breaks; the role doesn't conflict with such interactions and could even explain why timing discussions occur.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "The claim about Kai being a head judge has no logical or topical connection to a shop running three shifts; they concern entirely different contexts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Kai being the head judge does not inherently bear on how Uma and Cy were ranked after preliminary rounds; no logical connection is stated between the judge's identity and the specific ranking outcome.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Claim A concerns Kai's role as head judge, while claim B concerns Fay's ranking relative to Noor in some standings. These involve different people and different subject matter with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "As head judge, Kai would plausibly be responsible for reviewing final tally sheets after debates conclude, so A makes B more plausible.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "If Kai arrived earlier than Cy, Cy was not the earliest arriver, but Cy could still have arrived just before the first round began if Kai also arrived shortly before that, so both can hold under an ordinary reading.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A establishes Kai arrived before Cy, while claim B states Uma arrived after Cy; these involve different people (Kai vs Uma) and are independent orderings that can both hold simultaneously without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A is about the relative arrival times of Kai and Cy, while claim B describes Uma carrying ballots; they involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "The order in which Kai and Cy arrived has no bearing on who took the photographs; the two claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "A only tells us about the relative order of Kai and Cy, giving no information about Fay's arrival time relative to the others, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A concerns the relative arrival order of Kai and Cy, while claim B concerns Fay's arrival timing relative to opening remarks. They involve different people and no shared reference point, so one does not bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Kai's arrival time relative to Cy has no bearing on whether Cy and Uma worked different shifts, as these involve different people and different aspects (arrival order vs. shift assignment).",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A concerns the arrival order of Kai and Cy, while claim B concerns whether Uma and Fay worked different shifts. These involve entirely different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Arrival order relative to Cy has no bearing on who holds the head judge position; these describe unrelated aspects of Kai.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Arrival order and relative height are independent attributes with no logical or causal connection implied by the claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A concerns arrival order between Kai and Cy, while claim B concerns relative height involving Fay. These are unrelated attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "A concerns the relative arrival time of Kai and Cy, while B concerns whether Cy and Fay worked different shifts. These involve different people/relations and no logical connection exists between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "The arrival order of Kai and Cy has no bearing on the relative ages of Noor and Uma; these involve different people and different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns arrival order between Kai and Cy, while claim B concerns age comparison between Noor and Kai; these involve different subjects and dimensions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "A states a fact about arrival order between Kai and Cy, while B describes a habitual social interaction between Noor and Kai about timing; the two involve different subjects and contexts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Claim A concerns the relative arrival times of Kai and Cy, while claim B concerns the number of shifts a shop ran; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A concerns arrival order between Kai and Cy, while claim B concerns preliminary round rankings involving Uma and Cy. These involve different metrics (arrival time vs. ranking) and different people (Kai vs. Uma), so one does not bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A concerns the arrival order of Kai and Cy, while claim B concerns the standings position of Fay relative to Noor. These involve different people and different contexts (arrival time vs. standings), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "A states an arrival order between Kai and Cy, which has no clear bearing on whether Kai reviewed tally sheets after a debate concluded; the two events are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "A establishes Cy's arrival time as just before the first round began, giving a reference point. B states Uma arrived a bit later than Cy, which is consistent with and slightly reinforced by A's timing detail, but doesn't logically depend on it.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A describes Cy's arrival timing before the first round, while claim B describes Uma carrying ballots; these involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A concerns Cy's arrival timing before a round started, while claim B concerns who took photographs; these describe unrelated facts with no logical or contextual connection given.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "A says Cy arrived shortly before the first round started, but does not specify how Cy's arrival compares to others in the group; B claims Fay arrived last, which could still be true if Cy arrived even earlier despite being close to the round's start.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Both claims describe someone arriving right before an event started, but they refer to different people (Cy vs Fay) and different events (first round vs opening remarks), so there's no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Claim A describes Cy's arrival timing relative to a round starting, which has no clear bearing on whether Cy and Uma worked different shifts; these concern separate aspects of schedule/work arrangement.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A concerns Cy's arrival time relative to the first round, while claim B concerns Uma and Fay's work shifts. They involve different people and different subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A describes Cy's arrival timing relative to the first round, which has no bearing on Kai's role as head judge or lack thereof.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Claim A concerns the timing of Cy's arrival relative to the first round, while claim B concerns a physical height comparison between Kai and Cy. These pertain to entirely different attributes and have no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "A describes the timing of Cy's arrival before the first round, while B compares heights among Fay, Kai, and Cy. These claims concern unrelated aspects of Cy with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A concerns Cy's arrival time relative to a round starting, while claim B concerns a shift assignment relationship between Cy and Fay. There is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim A is about Cy's arrival time relative to a round starting, while claim B is about a relative age comparison between two different people. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A concerns Cy's arrival timing relative to a round starting, while Claim B concerns a comparison of ages between two unrelated people. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A describes Cy's arrival time before the first round, which has no bearing on whether Noor and Kai discussed timing during breaks; they involve different people and different topics.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Claim A concerns Cy's arrival time relative to a first round, while claim B concerns a shop's shift structure; they share no common subject or context that would let one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "A merely states Cy's arrival time relative to the first round starting; it says nothing about performance or ranking outcomes, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Claim A concerns Cy's arrival time relative to the first round, while claim B concerns Fay's standing relative to Noor. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "A concerns Cy's arrival timing before round one, while B concerns Kai's review of tally sheets after the final debate; they involve different people, different actions, and different time points with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A concerns Uma's arrival time relative to Cy, while claim B concerns what she was carrying. Neither fact bears on the other in any direct way.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A concerns the relative arrival times of Uma and Cy, while claim B concerns who took the photographs. These describe unrelated aspects of the situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "A tells us only that Uma arrived after Cy, giving no information about Fay's arrival time relative to the group. The two claims concern different people's arrival order and don't clearly bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A concerns the relative arrival times of Uma and Cy, while claim B concerns Fay's arrival relative to opening remarks; there is no shared subject or timeframe linking them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "A states Uma arrived slightly after Cy, implying they were present at overlapping or nearby times, which is more consistent with sharing the same shift than working different shifts; this makes B somewhat less likely but not impossible (e.g., overlapping shift handoff).",
+   "relation": "tension",
+   "confidence": 0.5
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "A discusses Uma's arrival time relative to Cy, which has no bearing on whether Uma and Fay worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Claim A concerns the relative arrival times of Uma and Cy, while claim B concerns Kai's role as judge. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Claim A concerns relative arrival timing between Uma and Cy, while claim B concerns relative height between Kai and Cy. These involve different people and unrelated attributes, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A concerns arrival timing between Uma and Cy, while claim B concerns relative height among Fay, Kai, and Cy. These are unrelated attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "A concerns the relative arrival times of Uma and Cy, while B concerns whether Cy and Fay worked different shifts; these involve different people and different aspects of scheduling with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "A concerns relative arrival time between Uma and Cy, while B concerns relative age between Noor and Uma. These are unrelated attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A concerns arrival timing between Uma and Cy, while claim B concerns relative age between Noor and Kai. The two involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A concerns the relative arrival times of Uma and Cy, while claim B concerns Noor and Kai comparing notes during breaks. There is no shared subject, context, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Claim A concerns the relative arrival times of two individuals, while claim B concerns the number of shifts a shop operates. These are about different subjects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Arriving later than someone is about timing, not performance ranking, so the claims address different dimensions and neither implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Claim A concerns the relative arrival times of Uma and Cy, while claim B concerns Fay's and Noor's standings; they involve entirely different people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Claim A concerns arrival times of Uma and Cy, while claim B concerns Kai reviewing tally sheets after a debate; these involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "The two claims describe different people engaged in unrelated activities at what may be the same event, with no logical or causal connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A concerns Uma carrying ballots, which has no bearing on Fay's arrival order relative to the group.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "The two claims describe different people doing unrelated actions at what appears to be an event; there is no logical or causal connection between Uma carrying ballots and Fay slipping in before opening remarks.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "A places Uma at the registration table carrying ballots, but this doesn't indicate anything about whether Cy and Uma worked the same or different shifts; the claims concern different aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "A places Uma at the registration table carrying ballots, which says nothing about whether Uma and Fay worked the same or different shifts; the claims concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Uma carrying ballots to a registration table has no bearing on whether Kai holds the position of head judge; the two claims concern unrelated people and roles.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Claim A concerns Uma carrying ballots at a registration table, while claim B concerns relative heights of Kai and Cy. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "The claim about Uma carrying ballots has no bearing on relative heights of Fay, Kai, and Cy; they involve entirely different people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A concerns Uma carrying ballots to a registration table, while claim B concerns Cy and Fay's work shifts; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "A describes Uma's activity at a registration event, which has no bearing on relative ages of Uma and Noor.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "The two claims describe unrelated matters: one is about carrying ballots at a registration table, the other about relative ages of two different people. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A concerns Uma carrying ballots to a registration table, while claim B concerns Noor and Kai comparing notes during breaks. These involve different people and activities with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "The claim about Uma carrying ballots for a registration table has no logical or topical connection to a shop running three shifts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "A describes Uma performing an administrative task at a registration table, while B describes competitive rankings from preliminary rounds; these concern different contexts and events with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Claim A concerns Uma carrying ballots at a registration table, while claim B concerns Fay's position relative to Noor in some standings. These involve different people and unrelated contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Uma carrying ballots to a registration table and Kai reviewing tally sheets after a debate concern different, unrelated activities and roles with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "The two claims describe unrelated facts about different people (who took photos vs. who arrived last), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A concerns who took the photographs, while claim B concerns Fay's arrival timing at a venue; they involve different subjects and actions with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A concerns who took the photographs, while claim B concerns Cy and Uma's work shifts; there is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A concerns who took the photographs, while claim B concerns the shift schedules of two other people. There is no logical or contextual link between these statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A states who took the photographs, which has no logical or contextual bearing on who holds the position of head judge.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A concerns who took photographs, while claim B concerns relative heights of two different people; there is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A concerns who took the photographs, while claim B concerns relative heights of Fay, Kai, and Cy. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A concerns who took photographs, while claim B concerns two other people's work shifts; there is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Taking photographs has no logical bearing on relative age comparisons between Noor and Uma; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Taking photographs has no bearing on relative age; the two claims concern unrelated aspects of Noor's life.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "A states Noor took photographs, which does not directly bear on whether Noor and Kai often compared notes on timing during breaks; the two describe different activities without clear causal or evidential link.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A concerns who took photographs, while claim B concerns a shop's shift schedule; there is no logical or contextual connection between the two statements as given.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Claim A concerns who took photographs, which has no logical or causal bearing on how competitors ranked after preliminary rounds.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Claim A is about Noor taking photographs, while claim B is about Fay's position relative to Noor in some standings; these concern unrelated aspects of Noor's activities and have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "These claims describe unrelated events involving different people and activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Being the last of the group to arrive fits naturally with slipping in just before the event began, suggesting a tight, last-minute arrival; both describe the same late arrival scenario.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Claim A concerns Fay's arrival order relative to a group, while claim B concerns Cy and Uma's work shifts. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Fay's arrival order relative to a group has no bearing on whether Uma and Fay worked different shifts; the two claims concern unrelated aspects of their situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A concerns Fay's arrival order within a group, while claim B concerns Kai's role as judge; these involve different people and different subject matters with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "The order in which Fay arrived relative to the group has no bearing on relative heights of Kai and Cy; the claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Arriving last relates to timing, while height is a physical attribute; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Fay's arrival order relative to a group is unrelated to whether she and Cy work different shifts; these concern different activities and timeframes.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A concerns arrival order among a group, while claim B concerns relative ages of two individuals; there is no logical connection between arrival timing and age comparison.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Fay's arrival order relative to a group has no bearing on the relative ages of Noor and Kai; these concern unrelated people and unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A concerns Fay's arrival order within the group, while claim B concerns Noor and Kai comparing timing notes during breaks. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A is about Fay's arrival order within a group, while claim B concerns a shop's shift schedule. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Claim A is about arrival order of a group including Fay, while claim B concerns competition rankings between Uma and Cy after preliminary rounds. These involve different people and different domains (arrival timing vs. competitive ranking), so there is no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Being the last to arrive at some event is unrelated to trailing behind Noor in a standings ranking, as these describe different domains (arrival order vs. competitive standings) with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Claim A concerns Fay's arrival order within some group, while claim B concerns Kai reviewing tally sheets after a debate. There is no shared subject, event, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A concerns Fay's arrival timing at a venue, while claim B concerns Cy and Uma's work shifts. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "A describes a specific event about Fay arriving at a venue, while B describes a general fact about Fay and Uma's work schedules. Neither statement provides information bearing on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A describes Fay's arrival timing at an event, while claim B concerns Kai's role as head judge. Nothing in A bears on who is or isn't the head judge.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A concerns Fay's arrival timing at a venue, while claim B concerns a height comparison between two unrelated individuals (Kai and Cy). There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "A concerns Fay's timing of arrival at an event, while B concerns Fay's relative height compared to two other people. These are unrelated facts about Fay with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Fay's arrival timing at a venue for opening remarks has no bearing on whether Cy and Fay worked different shifts elsewhere; these describe unrelated aspects of their situations.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Claim A describes Fay's timing arriving at a venue, while claim B compares the ages of Noor and Uma. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A concerns Fay's arrival timing at an event, while claim B concerns a comparative age relationship between two unrelated individuals, Noor and Kai. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A concerns Fay's arrival timing at a venue, while claim B concerns Noor and Kai's habit of discussing timing during breaks. They involve different people and different contexts with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Claim A concerns Fay arriving at a venue before opening remarks, while claim B concerns a shop's shift structure. There is no shared subject, location, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Claim A describes Fay's arrival at a venue before opening remarks, which has no logical or topical connection to a ranking of Uma and Cy after preliminary rounds.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A describes Fay's timely arrival at an event, while claim B describes her ranking relative to Noor in some standings; these concern different domains and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Claim A describes Fay arriving just before opening remarks at some event, while claim B describes Kai reviewing tally sheets after a debate ended. These involve different people and different actions with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Knowing Cy and Uma had different shifts tells us nothing about the relationship between Uma's shift and Fay's shift, since Fay is not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A concerns Cy and Uma's work shifts, while claim B concerns Kai's judging role; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Working different shifts has no bearing on relative heights; these claims concern unrelated aspects of the people involved.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Claim A concerns work shifts of Cy and Uma, while claim B concerns relative height among Fay, Kai, and Cy. These involve different attributes and no shared logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Claim A concerns the relationship between Cy and Uma's shifts, while claim B concerns Cy and Fay's shifts. Knowing Cy differs from Uma tells us nothing about whether Cy differs from Fay.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Claim A concerns work schedules of Cy and Uma, while claim B concerns a relative age comparison between Noor and Uma; there is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Claim A concerns work shifts of Cy and Uma, while claim B concerns relative ages of Noor and Kai. They share no common subjects or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Claim A concerns Cy and Uma's shift schedules, while claim B concerns Noor and Kai's break-time habits; the two involve entirely different people and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "That Cy and Uma worked different shifts is consistent with a shop running three shifts, and having multiple shifts available makes it plausible for two employees to work different ones, but the claims don't strongly entail each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Working different shifts and being ranked relative to each other after preliminary rounds concern unrelated aspects of their situation; there's no logical connection between shift schedules and competition rankings.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Claim A concerns work shifts of Cy and Uma, while claim B concerns standings positions of Fay and Noor. They share no common subjects or context, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Claim A concerns Cy and Uma's work shifts, while claim B concerns Kai reviewing tally sheets after a debate. These involve different people and different events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A concerns Uma and Fay's shifts, while claim B concerns Kai's role as head judge; these involve different people and topics with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Claim A concerns work shifts of Uma and Fay, while claim B concerns relative heights of Kai and Cy; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "A concerns work schedules while B concerns relative height comparisons; the two claims share Fay but address unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A only states that Uma and Fay worked different shifts; it says nothing about Cy's shift relative to Fay's, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "The claim about Uma and Fay's shifts is unrelated to Noor's age relative to Uma; they concern different topics entirely.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Claim A concerns Uma and Fay's work shifts, while claim B concerns Noor and Kai's relative ages. They involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A concerns Uma and Fay's shift schedules, while claim B concerns Noor and Kai's break-time conversations; the two involve different people and no shared subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "That Uma and Fay worked different shifts is consistent with and mildly supports the existence of multiple shifts, though it doesn't specifically imply three shifts as opposed to two.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Working different shifts than Fay says nothing about Uma's ranking relative to Cy in preliminary rounds; the two claims concern unrelated aspects of the scenario.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Claim A concerns work shifts of Uma and Fay, while claim B concerns Fay's standing relative to Noor; these are unrelated topics with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Claim A concerns Uma and Fay's work shifts, while claim B concerns Kai reviewing tally sheets after a debate. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A concerns Kai's role as judge, while claim B concerns Kai's height relative to Cy. These pertain to entirely different attributes and have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A states Kai's role status while claim B concerns relative heights; these are independent facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Claim A concerns Kai's judging role while claim B concerns Cy and Fay's work shifts; the two involve entirely different people and topics with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "The claims concern unrelated topics (a judging role assignment versus relative ages of two people) with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Kai's judging role has no bearing on relative ages between Noor and Kai; the two claims concern unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Kai not being the head judge doesn't preclude Kai from being some other judge or participant who discusses timing with Noor; the claims address different, unrelated aspects.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "The claims concern unrelated topics: one is about Kai's role as a judge, the other about a shop's shift schedule. Neither bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Claim A states who is not the head judge, which has no bearing on the preliminary round rankings between Uma and Cy.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Claim A concerns Kai's role as judge, while claim B concerns Fay and Noor's standings in a competition. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Reviewing tally sheets could plausibly be done by someone other than the head judge (e.g., a scorekeeper or assistant judge), so A does not directly contradict or strongly support B; the claims address different aspects with only a loose connection.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "A establishes a height ordering between Kai and Cy but says nothing about Fay's height relative to either, so B is neither made more nor less likely by A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "The height comparison between Kai and Cy has no bearing on whether Cy and Fay worked different shifts; these are unrelated facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "The two claims involve different people and different attributes (height vs. age) with no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns relative height between Kai and Cy, while claim B concerns relative age between Noor and Kai. Neither height nor age comparisons imply anything about the other, so they are unrelated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "A is about relative height between Kai and Cy, while B concerns Kai and Noor discussing timing during breaks. These involve different people and different subject matter, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "The claims describe entirely different subjects (relative height of two people vs. a shop's shift schedule) with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A concerns physical height comparison between Kai and Cy, while claim B concerns a ranking position after preliminary rounds between Uma and Cy. These involve different people and different types of comparison (height vs. competitive ranking), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Claim A concerns height comparison between Kai and Cy, while claim B concerns standings position between Fay and Noor; they involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Kai's height relative to Cy has no bearing on whether Kai reviewed tally sheets after a debate; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "A is about relative heights, B is about work schedules; knowing one gives no information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A concerns relative heights of Fay, Kai, and Cy, while claim B concerns relative ages of Noor and Uma. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A concerns relative height among Fay, Kai, and Cy, while claim B concerns relative age between Noor and Kai. These involve different attributes and different people (Fay, Cy vs Noor), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A concerns relative heights among Fay, Kai, and Cy, while claim B concerns Noor and Kai comparing notes on timing. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "The claim about relative heights of Fay, Kai, and Cy has no bearing on the number of shifts a shop ran; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Claim A concerns relative height among Fay, Kai, and Cy, while claim B concerns a ranking (likely competitive performance) between Uma and Cy. These involve different people and different attributes (height vs. ranking), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A concerns physical height comparisons with Kai and Cy, while claim B concerns relative ranking in some standings against Noor. These involve different people and different dimensions of comparison, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "A is a statement about relative heights of Fay, Kai, and Cy, while B concerns Kai's actions reviewing tally sheets after a debate. These describe unrelated aspects of Kai with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "The claims concern entirely different subjects (work shifts vs. relative ages) with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "The two claims concern entirely different people and topics (work shifts vs. relative age), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A concerns Cy and Fay's shift schedules, while claim B concerns Noor and Kai's break-time habits; the two involve different people and different subject matter with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "That Cy and Fay worked different shifts is consistent with the shop running three shifts, but it doesn't establish or require that number of shifts; the claims are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "A concerns work shifts of Cy and Fay, while B concerns ranking placement of Uma and Cy in preliminary rounds; these deal with unrelated aspects of Cy's life.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "A concerns work shifts of Cy and Fay, while B concerns Fay's ranking relative to Noor; these are unrelated topics with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Claim A concerns Cy and Fay's work shifts, while claim B concerns Kai reviewing tally sheets after a debate. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Both claims describe Noor's relative age compared to different people (Uma and Kai), so they can easily both be true simultaneously without contradiction.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "A states a relative age fact between Noor and Uma, while B describes an unrelated social interaction between Noor and Kai about timing during breaks. There's no logical connection between age comparison and note-comparing behavior.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Claim A concerns the relative ages of Noor and Uma, while claim B concerns the number of shifts a shop ran. These two claims share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A concerns relative ages of Noor and Uma, while claim B concerns a ranking of Uma and Cy after preliminary rounds; these involve different attributes (age vs. competitive ranking) and different sets of people with only Uma in common, so one gives no information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Claim A concerns relative age between Noor and Uma, while claim B concerns standings position between Fay and Noor; these are different dimensions (age vs. ranking) with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Claim A concerns the relative ages of Noor and Uma, while claim B concerns Kai reviewing tally sheets after a debate. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Age difference between Noor and Kai has no logical bearing on whether they compared notes on timing during breaks; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns a shop's staffing schedule; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Claim A concerns relative ages of Noor and Kai, while claim B concerns rankings of Uma and Cy in preliminary rounds; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Claim A concerns relative ages of Noor and Kai, while claim B concerns standings position between Fay and Noor. These involve different attributes and different people/relations, so one does not bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Claim A concerns a relative age comparison between Noor and Kai, while claim B describes an action Kai took regarding tally sheets after a debate. Neither claim's content bears on the other; age difference has no logical connection to reviewing tally sheets.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "A describes two people discussing timing during breaks, which doesn't inform whether the shop operates in three shifts; the claims address different, unconnected aspects of the workplace.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Claim A discusses Noor and Kai comparing timing notes during breaks, which has no bearing on the preliminary round rankings placing Uma above Cy; these involve different people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "A describes Noor and Kai discussing timing during breaks, which has no clear bearing on Fay's position in the standings relative to Noor.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "A establishes a collaborative relationship between Noor and Kai around timing during breaks, which is loosely related to Kai's later involvement in reviewing tally sheets, but neither confirms nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "The claim about the shop's shifts concerns a workplace schedule, while the claim about rankings concerns competition results; these two topics have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "The shop's shift schedule has no logical or causal bearing on Fay's ranking relative to Noor in some standings; they concern unrelated domains.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "The two claims describe unrelated activities (a shop's shift schedule vs. reviewing tally sheets after a debate) with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Claim A concerns the relative ranking of Uma and Cy, while claim B concerns Fay and Noor. They involve different people and there's no stated connection between the two rankings.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Claim A concerns preliminary round rankings between Uma and Cy, while claim B concerns Kai reviewing tally sheets after the final debate. They involve different subjects, events, and stages of a competition with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Claim A concerns the relative standings of Fay and Noor, while claim B concerns Kai reviewing tally sheets after a debate; neither statement implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "shift",
+    "arity": "multi",
+    "arity_span": "The shop ran three shifts.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "other",
+    "other_greater_means": "placed higher in standings"
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 8,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "cy",
+    "b": "uma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "uma",
+    "b": "fay",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "cy",
+    "b": "fay",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "subject": "kai",
+    "comparative": "earlier than",
+    "object": "cy",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "subject": "uma",
+    "comparative": "later than",
+    "object": "cy",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "subject": "kai",
+    "comparative": "taller than",
+    "object": "cy",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "rank",
+    "subject": "uma",
+    "comparative": "above",
+    "object": "cy",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "rank",
+    "subject": "fay",
+    "comparative": "trailed just behind",
+    "object": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "subject": "noor",
+    "comparative": "younger than",
+    "object": "uma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "subject": "noor",
+    "comparative": "older than",
+    "object": "kai",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "entity": "fay",
+    "comparative": "last",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "earlier than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "later than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "last",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "rank",
+    "comparative": "above",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "rank",
+    "comparative": "trailed just behind",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 21,
+  "pairs_requested": 210,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 13,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    1,
+    2
+   ],
+   [
+    3,
+    8
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "shift": null,
+    "height": "magnitude",
+    "age": "magnitude",
+    "rank": "other"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 6,
+     "attribute": "arrival_time",
+     "entity": "fay",
+     "extreme": "max",
+     "edges": 3
+    }
+   ],
+   "extreme_edges": 3,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 21,
+  "n_edges": 5,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9567025729168034,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.005025125628140708,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.9999747481124212,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.9899497487437183,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 10,
+    "residual": 0.9999747481124212
+   },
+   {
+    "a": 0,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 17,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   10,
+   0
+  ],
+  "culprits": [
+   {
+    "claim": 10,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.043297427083196616
+   },
+   {
+    "claim": 0,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.043297427083196616
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 4862465,
+   "output_tokens": 449567,
+   "thinking_tokens": 0,
+   "calls": 18188,
+   "api_calls": 4607,
+   "cache_hits": 13581,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 14.004453000000062,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 120990,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 5312032,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    10,
+    20
+   ],
+   [
+    1
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9,
+    17
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    15
+   ],
+   [
+    16
+   ],
+   [
+    18
+   ],
+   [
+    19
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false,
+   "15": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    0,
+    10
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 1,
+    "b": 2,
+    "rationale": "If Kai arrived earlier than Cy, Cy was not the earliest arriver, but Cy could still have arrived just before the first round began if Kai also arrived shortly before that, so both can hold under an ordinary reading.",
+    "confidence": 0.6
+   },
+   {
+    "a": 3,
+    "b": 8,
+    "rationale": "A states Uma arrived slightly after Cy, implying they were present at overlapping or nearby times, which is more consistent with sharing the same shift than working different shifts; this makes B somewhat less likely but not impossible (e.g., overlapping shift handoff).",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 8,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "cy",
+   "b": "uma",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 9,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "uma",
+   "b": "fay",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "cy",
+   "b": "fay",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "cy",
+   "b": "kai",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "uma",
+   "b": "cy",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "kai",
+   "b": "cy",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 18,
+   "attribute": "rank",
+   "kind": "greater",
+   "a": "uma",
+   "b": "cy",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 19,
+   "attribute": "rank",
+   "kind": "greater",
+   "a": "noor",
+   "b": "fay",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "uma",
+   "b": "noor",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "noor",
+   "b": "kai",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 6,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "fay",
+   "b": "cy",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 6,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "fay",
+   "b": "kai",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 6,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "fay",
+   "b": "uma",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

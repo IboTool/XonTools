@@ -1,0 +1,25 @@
+{
+ "request": "0f552efaa911980bedbcb50b967f774ae26f6b5cea36230ac8d4fc65195ece00",
+ "tag": "text-8c7edd23c013-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Kai is in the same class as Noor.",
+     "Noor is in the same class as Hugo.",
+     "Kai is not in the same class as Hugo."
+    ],
+    "explanation": "If Kai is in the same class as Noor and Noor is in the same class as Hugo, then Kai must be in the same class as Hugo, contradicting the statement that Kai is not in the same class as Hugo."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1050,
+  "output_tokens": 140,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

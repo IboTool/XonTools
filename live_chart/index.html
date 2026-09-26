@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; padding: 0; overflow: hidden; background: transparent; }
+</style>
+<script src="plotly.min.js"></script>
+</head>
+<body>
+<div id="chart"></div>
+<script>
+// Streamlit component (API v1): one Plotly chart that stays mounted; each render updates it in place with
+// Plotly.react. Renders that arrive while a draw is in progress collapse into the newest one.
+(() => {
+  const div = document.getElementById("chart");
+  let latest = null;
+  let busy = false;
+  let height = 0;
+  let listening = false;
+
+  const send = (type, data) => window.parent.postMessage({isStreamlitMessage: true, type, ...data}, "*");
+
+  // hidden documents get no animation frames; draw anyway so the chart is current when shown
+  const schedule = () => (document.hidden ? setTimeout(draw, 0) : requestAnimationFrame(draw));
+
+  function styledLayout(layout, theme) {
+    if (theme) {
+      layout.font = {family: theme.font, color: theme.textColor, ...(layout.font || {})};
+      layout.paper_bgcolor = layout.paper_bgcolor || theme.backgroundColor;
+    }
+    const title = layout.title;
+    if (title && typeof title.text === "string" && title.text && !title.text.startsWith("<b>")) {
+      layout.title = {...title, text: `<b>${title.text}</b>`};
+    }
+    return layout;
+  }
+
+  async function draw() {
+    if (busy || latest === null) return;
+    busy = true;
+    const {args, theme} = latest;
+    latest = null;
+    try {
+      const fig = JSON.parse(args.spec);
+      if (args.height !== height) {
+        height = args.height;
+        send("streamlit:setFrameHeight", {height});
+      }
+      const layout = styledLayout(fig.layout || {}, theme);
+      layout.height = height;
+      layout.autosize = true;
+      delete layout.width;
+      const config = {responsive: true, displaylogo: false, ...(args.config || {})};
+      await Plotly.react(div, fig.data || [], layout, config);
+      if (!listening) {
+        listening = true;
+        div.on("plotly_click", (ev) => {
+          const p = (ev && ev.points || []).find((q) => q.customdata !== undefined && q.customdata !== null);
+          if (p) {
+            send("streamlit:setComponentValue", {value: {customdata: p.customdata, t: Date.now()}, dataType: "json"});
+          }
+        });
+      }
+    } catch (err) {
+      console.error("live_chart:", err);
+    } finally {
+      busy = false;
+      if (latest !== null) schedule();
+    }
+  }
+
+  window.addEventListener("message", (ev) => {
+    if (ev.data && ev.data.type === "streamlit:render") {
+      latest = {args: ev.data.args, theme: ev.data.theme};
+      schedule();
+    }
+  });
+  send("streamlit:componentReady", {apiVersion: 1});
+})();
+</script>
+</body>
+</html>

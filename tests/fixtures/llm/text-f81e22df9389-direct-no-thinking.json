@@ -1,0 +1,25 @@
+{
+ "request": "01a42df0b0821ae3e31af8baea8a6aee1f6e1d37ebe9bdf0c34a17270e3dfe66",
+ "tag": "text-f81e22df9389-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Bo is in the same study group as Rosa.",
+     "Rosa is in the same study group as Vik.",
+     "Bo is not in the same study group as Vik."
+    ],
+    "explanation": "If Bo is in the same group as Rosa, and Rosa is in the same group as Vik, then Bo must be in the same group as Vik, contradicting the claim that Bo is not."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1107,
+  "output_tokens": 135,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

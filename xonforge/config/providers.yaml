@@ -1,0 +1,119 @@
+# XonForge's provider registry (XONFORGE_SPEC.md §4.1).
+#
+# Which providers and models XonForge uses is the user's decision (xonforge/docs/decisions.md). Only Anthropic is
+# available for now. Its three entries are the pipeline-test sample's models, checked in Anthropic's models overview on
+# 2026-09-25 (https://docs.claude.com/en/docs/about-claude/models/overview): the model ids, and that none of the three
+# accepts sampling parameters, that all three think adaptively, and that only Sonnet 5 can turn thinking off.
+# Structured output is configured as A1's client uses it with every Claude model, and was not among the facts checked.
+# The other entries are unverified candidates (verified: false): check each against the provider's current
+# documentation, then set verified: true and give the date and source.
+#
+# key_env: the environment variable the key is read from, only in the entry's provider module. Each is XonForge's own,
+# one per provider; the registry refuses any other, so XonForge never reads A1's key or an SDK's default variable.
+#
+# capabilities (configured, not detected):
+#   structured_output: json_schema (the API enforces the schema), json_object (the API returns JSON; the schema is in
+#     the prompt) or prompt (the schema is only in the prompt)
+#   sampling: whether temperature and the like are accepted; they are sent only then
+#   context_tokens: the context limit, null if unknown
+#   reasoning_default: off, on or adaptive, when the request says nothing about reasoning
+#   reasoning_off: the request fields that turn reasoning off, null if it cannot be turned off
+
+- name: claude-sonnet
+  provider: anthropic
+  model: claude-sonnet-5
+  key_env: XONFORGE_ANTHROPIC_KEY
+  roles: [render, review, audit]
+  capabilities:
+    structured_output: json_schema
+    sampling: false
+    context_tokens: null
+    reasoning_default: adaptive
+    reasoning_off: {thinking: {type: disabled}}
+  verified: true
+  source: Anthropic's models overview, checked 2026-09-25; the sample's renderer
+
+- name: claude-opus
+  provider: anthropic
+  model: claude-opus-5-5
+  key_env: XONFORGE_ANTHROPIC_KEY
+  roles: [render, review, audit]
+  capabilities:
+    structured_output: json_schema
+    sampling: false
+    context_tokens: null
+    reasoning_default: adaptive
+    reasoning_off: null
+  verified: true
+  source: Anthropic's models overview, checked 2026-09-25; a reviewer of the sample
+
+- name: claude-fable
+  provider: anthropic
+  model: claude-fable-5-1
+  key_env: XONFORGE_ANTHROPIC_KEY
+  roles: [render, review, audit]
+  capabilities:
+    structured_output: json_schema
+    sampling: false
+    context_tokens: null
+    reasoning_default: adaptive
+    reasoning_off: null
+  verified: true
+  source: Anthropic's models overview, checked 2026-09-25; a reviewer of the sample
+
+- name: gpt
+  provider: openai
+  model: gpt-5
+  key_env: XONFORGE_OPENAI_KEY
+  roles: [render, review, audit]
+  capabilities:
+    structured_output: json_schema
+    sampling: false
+    context_tokens: 400000
+    reasoning_default: "on"
+    reasoning_off: null
+  verified: false
+  source: placeholder from the implementing agent's training data, from before 2026
+
+- name: gemini
+  provider: google
+  model: gemini-2.5-pro
+  key_env: XONFORGE_GEMINI_KEY
+  roles: [render, review, audit]
+  capabilities:
+    structured_output: json_schema
+    sampling: true
+    context_tokens: 1048576
+    reasoning_default: "on"
+    reasoning_off: null
+  verified: false
+  source: placeholder from the implementing agent's training data, from before 2026
+
+- name: grok
+  provider: xai
+  model: grok-4
+  key_env: XONFORGE_XAI_KEY
+  roles: [render, review, audit]
+  capabilities:
+    structured_output: json_schema
+    sampling: true
+    context_tokens: 256000
+    reasoning_default: "on"
+    reasoning_off: null
+  verified: false
+  source: placeholder from the implementing agent's training data, from before 2026
+
+- name: local
+  provider: openai_compatible
+  base_url: http://localhost:11434/v1
+  model: llama3.3
+  key_env: null
+  roles: [review]
+  capabilities:
+    structured_output: prompt
+    sampling: true
+    context_tokens: null
+    reasoning_default: "off"
+    reasoning_off: null
+  verified: false
+  source: placeholder (an Ollama model tag at Ollama's default address)

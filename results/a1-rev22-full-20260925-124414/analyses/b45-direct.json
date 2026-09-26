@@ -1,0 +1,2625 @@
+{
+ "label": "b45-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-390bbee46910",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Alma is the head judge.",
+   "span": "Assume that Alma is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Vik had arrived early.",
+   "span": "Vik had arrived early, carrying a canvas bag slung over one shoulder",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Vik was carrying a canvas bag slung over one shoulder.",
+   "span": "carrying a canvas bag slung over one shoulder",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Vik chatted quietly with Nell about the migratory patterns of warblers.",
+   "span": "he chatted quietly with Nell about the migratory patterns of warblers",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Vik brought the first-aid kit.",
+   "span": "Vik brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Leo had joined the walk for the first time.",
+   "span": "Leo, who had joined the walk for the first time",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Leo seemed a little unsure of the route markers.",
+   "span": "seemed a little unsure of the route markers",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Alma pointed out the trail signs to help Leo along.",
+   "span": "Alma pointed out the trail signs to help him along",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "The group paused at a clearing where a heron stood motionless in the shallow water.",
+   "span": "The group paused at a clearing where a heron stood motionless in the shallow water",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Everyone lifted their binoculars at once.",
+   "span": "everyone lifted their binoculars at once",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Hana finished ahead of Nell.",
+   "span": "Hana finished ahead of Nell.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Nell had seen a similar heron the previous spring, near a different pond entirely.",
+   "span": "Nell mentioned that she had seen a similar heron the previous spring, near a different pond entirely",
+   "kind": "quoted"
+  },
+  {
+   "id": 12,
+   "text": "Vik pointed out a woodpecker tapping steadily against a dead trunk.",
+   "span": "Vik pointed out a woodpecker tapping steadily against a dead trunk",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Alma noted the woodpecker's rhythm in a small notebook.",
+   "span": "Alma noted its rhythm in a small notebook",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Nell finished ahead of Leo.",
+   "span": "Nell finished ahead of Leo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Hana walked with a steady pace.",
+   "span": "Hana walked with a steady pace",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Hana paused now and then to sketch a quick outline of a sparrow perched on a fence post.",
+   "span": "pausing now and then to sketch a quick outline of a sparrow perched on a fence post",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Leo carried a thermos of tea that he shared with the others once they reached the overlook.",
+   "span": "Leo carried a thermos of tea that he shared with the others once they reached the overlook",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "The valley spread out in soft shades of green and gold at the overlook.",
+   "span": "where the valley spread out in soft shades of green and gold",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Hana finished ahead of Leo.",
+   "span": "Hana finished ahead of Leo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Vik did not bring the first-aid kit.",
+   "span": "Vik did not bring the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "By midday, the group had counted over twenty species.",
+   "span": "By midday, the group had counted over twenty species",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Alma read the tally aloud while the others rested on a fallen log.",
+   "span": "Alma read the tally aloud while the others rested on a fallen log",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Vik suggested they return the following weekend.",
+   "span": "Vik suggested they return the following weekend",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "The claims describe unrelated facts about different people with no logical or causal connection between judging status and arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Alma's role as head judge has no bearing on what bag Vik was carrying; the two claims concern unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "There is no content overlap between Alma's role as head judge and Vik's conversation with Nell about warblers; nothing in A bears on the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "The claims concern different people and unrelated facts; knowing who the head judge is has no bearing on who brought the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Claim A concerns Alma's role as head judge, while claim B concerns Leo's participation in a walk for the first time; they involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A states Alma's role as head judge, which has no logical bearing on Leo's uncertainty about route markers; the two describe unrelated people and situations.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Being the head judge is compatible with also helping guide someone along a trail; the two roles do not conflict and could easily co-occur, though they are not directly linked.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "The claim about Alma being head judge has no topical connection to a group pausing at a clearing to observe a heron; they appear to belong to unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Being the head judge has no direct bearing on whether everyone lifted their binoculars at once; the claims describe unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Alma's role as head judge has no bearing on the relative finishing positions of Hana and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "The claim about Alma being head judge has no topical connection to Nell's past sighting of a heron near another pond.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "The two claims describe unrelated situations (a judging role versus a bird-watching observation) with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Being head judge doesn't preclude Alma from also noting a woodpecker's rhythm in a notebook; these describe unrelated activities/roles that can coexist.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "The claim about who holds the head judge role has no bearing on the relative finishing order of two other individuals; they concern unrelated aspects of the scenario.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "The claim about Alma being head judge has no bearing on Hana's walking pace; they involve different people and unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "The two claims describe unrelated people and activities with no logical connection between Alma's role as head judge and Hana's sketching activity.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Alma being the head judge has no bearing on whether Leo carried and shared a thermos of tea; these describe unrelated people and activities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "The identity and role of Alma as head judge has no bearing on a description of a valley landscape at an overlook; they concern entirely unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Claim A concerns who the head judge is, while claim B concerns the relative finishing order of two competitors named Hana and Leo. These facts do not bear on each other in any evident way.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "The claim about Alma being head judge has no evident bearing on whether Vik brought a first-aid kit; they concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "There is no stated connection between Alma being the head judge and the group's species count observation; they concern different subjects entirely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Being the head judge is consistent with reading the tally aloud while others rested, since a head judge would plausibly handle such duties; A makes B somewhat more plausible.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "The two claims describe unrelated facts about different people and events with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Arriving early says nothing about what Vik was carrying, and carrying a bag is unrelated to timing of arrival.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Arriving early plausibly gave Vik time to chat with Nell, making the chat somewhat more likely, but the specific topic (warblers) is not directly implied by arriving early.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Arriving early doesn't inherently indicate what items someone brought; there's no stated link between timing of arrival and bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A concerns Vik's early arrival, while claim B concerns Leo joining a walk for the first time; the two describe unrelated facts about different people with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A concerns Vik's arrival time and claim B concerns Leo's uncertainty about route markers; they involve different people and unrelated matters with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A concerns Vik's arrival time, while claim B concerns Alma helping Leo with trail signs. There is no shared subject, timeframe, or logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "A concerns Vik's early arrival, while B describes an unrelated scene of the group pausing at a clearing to observe a heron. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Vik arriving early says nothing about a collective group action involving binoculars; no logical or causal link is stated between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A concerns Vik's arrival time, while claim B concerns a finishing order between Hana and Nell. There is no shared subject or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A concerns Vik's arrival time, while claim B concerns Nell's past sighting of a heron at another location; they involve different people, events, and times with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Arriving early does not directly affect whether Vik later noticed and pointed out a woodpecker; the two events are only loosely connected by sequence, with no strong causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns Vik's arrival time, while claim B concerns Alma observing a woodpecker; they involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Claim A concerns Vik's early arrival, while claim B concerns the relative finishing order of Nell and Leo. There is no shared subject, timeframe, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns Vik's arrival time, while claim B concerns Hana's walking pace; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Claim A concerns Vik's arrival time while claim B describes Hana's sketching activity; they involve different people and unrelated actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "A describes Vik's early arrival, while B describes Leo sharing tea at the overlook; these involve different people and events with no clear logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A describes Vik's arrival time while claim B describes a scenic view at an overlook; there is no logical or causal connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A concerns Vik's early arrival while claim B concerns the relative finishing order of Hana and Leo; they involve different people and different events (arrival vs. finishing) with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Arriving early is unrelated to whether Vik brought a first-aid kit; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Vik arriving early has no stated connection to the group's species count activity or its result; no shared context is given linking the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Claim A concerns Vik's early arrival, while claim B describes Alma reading a tally aloud to resting companions on a log; there is no stated connection between these events, people, or contexts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Arriving early on one occasion has no clear logical bearing on a later suggestion to return the following weekend; the two events are not connected in content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Carrying a bag has no bearing on the content or occurrence of a conversation about warblers; the two actions can easily coexist without one affecting the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Carrying a canvas bag doesn't specify its contents, but it leaves open (and mildly supports) the possibility that the first-aid kit was inside it, since bags are common ways to transport items like a kit.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A describes Vik's bag while claim B describes Leo joining a walk; they concern different people and unrelated facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A describes Vik's bag and claim B describes Leo's uncertainty about route markers; they concern different people and unrelated topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Claim A describes Vik carrying a bag, while claim B describes a separate action by Alma helping Leo; they involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Vik carrying a bag has no bearing on the group pausing at a clearing with a heron; these are independent details.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Carrying a bag slung over one shoulder doesn't preclude also lifting binoculars, and the claims describe different, compatible actions; there's no clear logical or causal link between them.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A describes Vik carrying a bag, which has no logical or causal connection to the outcome of a race or competition between Hana and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Claim A describes Vik's bag while claim B is about Nell's past sighting of a heron elsewhere; they involve different people, objects, and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Carrying a bag over one shoulder does not preclude pointing out a woodpecker; the two actions can easily co-occur, e.g., during a walk. No support or conflict is implied.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A describes Vik's bag, while claim B describes Alma's unrelated action of noting a woodpecker's rhythm; neither claim's content bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim A describes Vik's bag and clothing, while claim B describes a race or competition result between Nell and Leo. The two claims share no common subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A describes Vik's bag while claim B describes Hana's walking pace; they concern different people and unrelated details.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A describes Vik carrying a bag, while claim B describes a separate person, Hana, sketching a bird. The two claims involve different subjects and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "A describes Vik carrying a bag while B describes Leo carrying a thermos; these involve different people and items with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A describes what Vik was carrying, while claim B describes a scenic view at an overlook; neither has any bearing on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Claim A describes Vik's bag and posture, while claim B is about a race or competition result between Hana and Leo. The two statements involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Carrying a canvas bag doesn't specify its contents, so it neither confirms nor rules out whether the first-aid kit was brought.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Carrying a canvas bag over one shoulder has no logical or causal bearing on the group's species count by midday; the two claims describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Claim A describes Vik's bag while claim B describes Alma reading a tally to resting others; they involve different subjects and actions with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Carrying a bag over one shoulder has no logical bearing on suggesting a future return visit; the two claims describe unrelated aspects of Vik's actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "The two claims describe unrelated activities (a conversation topic and bringing an item) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A describes an unrelated activity between different people (Vik and Nell) during what seems to be some group walk, while claim B describes Leo's status as a first-time participant. Neither statement provides information that makes the other more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A describes Vik and Nell discussing warblers, which has no bearing on Leo's confidence about route markers; different subjects and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "The claims describe different people engaged in unrelated activities, with no shared context or causal link stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "A describes a conversation about birds; B describes an unrelated pause at a clearing with a heron. They may occur during the same outing but neither claim implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "A depicts a quiet side conversation about birds, while B describes a synchronized group action, which is plausible in a birdwatching context but sits awkwardly with someone being absorbed in quiet chat instead of also lifting binoculars.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Claim A describes a quiet conversation between Vik and Nell about warblers, which has no logical bearing on a race or competition outcome between Hana and Nell mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "A describes Vik and Nell chatting about warblers, while B mentions Nell having seen a heron near a different pond previously; these are different birds and events without a direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Both claims describe Vik engaged in bird-related activity, plausibly during the same outing; noticing a woodpecker while chatting about warblers is a natural extension rather than a contradiction, though the two acts are somewhat distinct.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Both describe people making bird-related observations, but they involve different people, different birds, and different activities with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A describes a quiet conversation between Vik and Nell about birds, while claim B describes a competitive outcome involving Nell and Leo. These involve different activities and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A describes Vik and Nell chatting about warblers, while claim B describes Hana walking with a steady pace; these involve different people and unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Both describe separate activities involving birds by different people, but there is no logical connection between Vik and Nell's conversation and Hana's sketching activity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Both claims could describe different moments or aspects of the same group outing, with no direct logical connection between chatting about warblers and Leo sharing tea; they are independent events that could co-occur without conflict or reinforcement.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Claim A describes a conversation between two people while claim B describes a landscape view; they refer to different subjects with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Claim A describes a quiet conversation about bird migration, while claim B describes the outcome of some competition between different people. There is no shared subject, context, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "The two claims describe unrelated matters: a quiet conversation topic versus whether Vik brought an item. Neither bears logically on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "A suggests a birdwatching context with discussion about bird species, which is consistent with a group counting species; A doesn't directly cause or confirm B's specific count, but the settings are compatible and thematically related.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Both describe simultaneous but separate group activities involving different people; there's no logical connection or conflict between Vik and Nell chatting and Alma reading aloud while others rest.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "A shows Vik and Nell engaged in a calm conversation about birds, which is a plausible context for Vik to suggest a return trip (perhaps for birdwatching), but the claims are not directly connected as written.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Vik bringing a first-aid kit has no logical bearing on whether Leo was joining the walk for the first time; the two facts concern different people and unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Vik bringing the first-aid kit is about a different person and matter entirely from Leo's uncertainty about route markers; neither event bears on the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A concerns Vik bringing a first-aid kit, while claim B concerns Alma helping Leo with trail signs; these describe different people and actions with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Vik bringing a first-aid kit has no logical or thematic connection to the group pausing at a clearing to observe a heron; they describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Bringing a first-aid kit has no logical or causal bearing on whether everyone lifted their binoculars simultaneously; the two events are independent actions by different (or overlapping) people with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Claim A concerns Vik bringing a first-aid kit, while claim B concerns a race or competition finishing order between Hana and Nell. There is no logical or causal connection between the two events as stated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Vik bringing a first-aid kit has no bearing on Nell's prior sighting of a heron at another pond; they concern unrelated events and people.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Both describe actions Vik could have taken during the same outing, but bringing a first-aid kit has no bearing on whether he spotted a woodpecker.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "The two claims describe unrelated actions by different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Claim A concerns Vik bringing a first-aid kit, while claim B concerns the finishing order of Nell and Leo in some race or competition. There is no logical or causal connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Vik bringing a first-aid kit has no logical or causal bearing on Hana's manner of walking; the two claims concern unrelated people and actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Vik bringing a first-aid kit has no bearing on Hana pausing to sketch a sparrow; the two events involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "The two claims describe different people bringing different items on what may be the same trip; nothing about Vik bringing a first-aid kit bears on whether Leo carried and shared tea.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Vik bringing a first-aid kit has no bearing on the appearance of the valley from an overlook; the two claims describe unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "These claims involve different people and different types of events (bringing an item vs finishing a race), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "B is the direct negation of A; if Vik brought the kit, it cannot be true that Vik did not bring it, under the same occasion.",
+   "relation": "contradicts",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Bringing a first-aid kit has no logical bearing on counting species during the day; they concern unrelated activities and outcomes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Vik bringing a first-aid kit has no bearing on whether Alma read a tally aloud while others rested; they describe unrelated actions by different people with no shared context implied.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Bringing a first-aid kit shows preparedness or caution but has no direct logical bearing on whether Vik later suggested a return trip; the two claims describe unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "If Leo joined the walk for the first time, he would plausibly be unfamiliar with the route markers, making his uncertainty about them more likely.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "If Leo was new to the walk, he would likely be unfamiliar with the trail, making it plausible that Alma would help him by pointing out trail signs. This makes B more likely given A.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Leo joining the walk for the first time says nothing about whether the group encountered a heron at a clearing; the two events are independent details of the same event but unconnected in content.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "A describes Leo's participation history in the walk, while B describes a synchronized group action; the two events are largely independent of each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A concerns Leo's first-time participation in a walk, while claim B concerns the relative finishing order of Hana and Nell. They involve different people and no shared context connects them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A concerns Leo's first time joining the walk, while claim B concerns Nell's separate past experience with a heron near a different pond. They involve different people and different events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Leo joining the walk for the first time has no bearing on whether Vik spotted a woodpecker; these are independent events happening during what seems to be the same walk.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Leo joining the walk for the first time and Alma noting a woodpecker's rhythm in her notebook concern different people and actions with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "A states Leo was new to the walk, but says nothing about race performance or relative finishing positions, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Claim A describes Leo joining the walk for the first time, which has no bearing on Hana's pace or walking style; the two claims concern different people and unrelated aspects of the walk.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "A is about Leo's first participation in the walk, while B describes Hana's sketching behavior during what may be the same walk. These involve different people and different actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Being a first-time participant in the walk doesn't preclude bringing and sharing a thermos of tea; the two facts are independent aspects of his participation.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Leo joining the walk for the first time has no bearing on the description of the valley's colors at the overlook; these are independent facts about different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "A says Leo was new to the walk, which is unrelated to how the finishing order between Hana and Leo turned out; joining for the first time doesn't inherently predict relative finishing position.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Claim A concerns Leo's participation history in the walk, while claim B concerns whether Vik brought a first-aid kit; the two describe unrelated facts about different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "A introduces Leo as a new participant on the walk, which has no direct bearing on how many species the group counted by midday; the two facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "A states a fact about Leo's participation history, while B describes an unrelated scene of Alma reading a tally during a rest stop; neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Leo joining the walk for the first time doesn't directly bear on whether Vik suggests returning the following weekend; these describe different people and events without a clear causal or logical link established.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Leo's uncertainty about route markers provides a plausible reason for Alma to help by pointing out trail signs, so A makes B more likely and coherent.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Leo's uncertainty about route markers could plausibly lead to a pause in the group's movement, but the claim about the heron sighting is a separate observational detail unconnected to navigation confidence.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Leo's uncertainty about route markers has no apparent bearing on a group action of lifting binoculars; the claims describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Leo's uncertainty about route markers concerns his own performance and has no stated connection to the relative finishing order of Hana and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A concerns Leo's uncertainty about route markers, while claim B concerns Nell's past observation of a heron at a different pond. These involve different people, subjects, and contexts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Leo's uncertainty about route markers and Vik noticing a woodpecker are separate events involving different people and topics with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "The two claims describe unrelated actions by different people with no shared subject matter, so A has no bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Leo being unsure of route markers could plausibly slow him down or cause navigation errors, making it somewhat more likely he finished behind others, but this is only weak circumstantial support rather than a direct link.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A concerns Leo's uncertainty about route markers, while claim B concerns Hana's walking pace; they describe different people and different aspects, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A concerns Leo's uncertainty about route markers, while claim B describes Hana's separate activity of sketching a bird. The two involve different people and different actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Leo's uncertainty about route markers is a minor detail about navigation and doesn't bear on whether he carried and shared tea at the overlook; both can easily be true simultaneously.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Leo's uncertainty about route markers has no logical bearing on the scenery visible at an overlook; the two describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Leo's uncertainty about route markers could plausibly lead to a slower time or wrong turns, making it somewhat more likely he finished behind Hana, but this is not a direct logical link since the claims concern different aspects (navigation confidence vs. finishing order).",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Leo's uncertainty about route markers has no logical or thematic connection to whether Vik brought a first-aid kit; they involve different people and different topics entirely.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Leo's uncertainty about route markers is a personal, situational detail unrelated to the group's activity of counting species observed during the outing.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Claim A concerns Leo's uncertainty about route markers, while claim B describes Alma reading a tally during a rest stop; the two events involve different people and activities with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Leo's uncertainty about route markers has no direct bearing on Vik's suggestion to return the following weekend; the two statements concern different people and different topics without a clear causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A describes Alma helping Leo with trail signs while claim B describes the group pausing at a clearing to observe a heron; these are different, independent events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A describes Alma pointing out trail signs to Leo, which is unrelated to everyone lifting binoculars simultaneously; the two actions describe different activities with no clear causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A concerns Alma helping Leo with trail signs, while claim B concerns the relative finishing order of Hana and Nell. These involve different people and no shared context is given, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A concerns Alma helping Leo with trail signs, while claim B concerns Nell's prior sighting of a heron near a different pond. They involve different people, events, and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Both describe someone pointing something out during what seems like a walk, but they involve different people and different objects with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Both describe Alma's actions but concern unrelated activities (helping Leo navigate vs. recording bird observations), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "A describes Alma assisting Leo with trail navigation, which has no clear bearing on the relative finishing positions of Nell and Leo in what appears to be a race or hike.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A concerns Alma helping Leo on a trail, while claim B concerns Hana's walking pace; they involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "These claims describe different people doing unrelated activities during what may be the same outing, with no logical connection between Alma's helping Leo and Hana's sketching a bird.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "A describes Alma helping Leo navigate a trail, while B describes Leo carrying and sharing tea at an overlook; these are compatible but independent details about a shared trip with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "A describes Alma helping Leo navigate a trail, while B describes a scenic view at an overlook. There's no direct logical connection; they could both occur during the same hike but neither implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "A describes Alma helping Leo navigate a trail, which is unrelated to whether Hana finished ahead of Leo in some race or competition; no shared context connects them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Claim A concerns Alma helping Leo with trail signs, which has no logical or causal connection to whether Vik brought a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "A describes Alma helping Leo navigate via trail signs, while B describes the group's activity of counting species; these are largely independent activities that could occur during the same outing without one affecting the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "These describe different activities (pointing out trail signs vs. reading a tally) that could occur at different moments during a hike; nothing in A implies or precludes B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "A describes Alma helping Leo during a hike with trail signs, while B describes Vik suggesting a return trip; these involve different people and actions with no clear logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "A heron sighting during a pause naturally explains why the group would raise their binoculars to observe it, so A supports B by providing a plausible trigger for the action.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A describes the group pausing at a clearing to observe a heron, while claim B concerns a race or ranking outcome between Hana and Nell. There is no logical or contextual connection between the two events as stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "A describes a present sighting of a heron by the group; B recalls a similar but distinct past sighting by Nell at a different location. These are compatible and B's recollection is plausibly triggered by A's event, though not strictly implied.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Both describe wildlife observations during what seems to be the same nature outing, but they involve different birds and moments; nothing in A precludes B from also occurring.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "A describes the group pausing to observe a heron, while B describes Alma noting a woodpecker's rhythm; these could occur during the same outing but concern different birds and actions, with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Claim A describes a group pausing to observe a heron, while claim B describes a competitive finishing order between Nell and Leo; nothing in A bears on the content of B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "A describes the group pausing at a clearing, which implies a temporary halt in movement, while B states Hana walked with a steady pace. These could both be true at different moments of a journey, but the pause creates mild tension with the idea of steady continuous walking.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "A describes the group pausing at a clearing to observe a heron, while B describes Hana separately pausing to sketch a sparrow on a fence post; these could be different moments or activities during the same outing, not mutually exclusive.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Both describe events during what seems to be the same hike or outing, but a pause at a clearing with a heron doesn't imply or preclude Leo sharing tea at an overlook; they are simply separate moments in the trip.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Both describe scenes possibly encountered on the same walk or excursion, but neither entails or conflicts with the other; they could be separate moments in the same outing or unrelated events entirely.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Claim A describes a scene with a group and a heron, while claim B is about a race or competition result between Hana and Leo; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Claim A describes an observation during a hike, while claim B concerns whether Vik brought a first-aid kit; the two statements have no logical or causal bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "A describes one sighting during the group's outing (a heron), which is consistent with and could contribute to an ongoing tally of species; it neither confirms nor undermines the total count by midday.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Both describe the same pause during the group's outing, with the clearing/heron sighting providing a plausible setting where the group could rest on a log and Alma read a tally; A makes B more plausible as part of the same rest stop.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Pausing to observe a heron and finding the spot memorable could plausibly prompt someone to want to return, but the claims are only loosely connected and neither entails the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "A describes a group of people raising binoculars simultaneously, while B describes a race outcome between two individuals; these events are unconnected in content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "A describes a group action in the present moment, while B recalls a separate past event involving Nell alone at a different location; they concern different times and contexts with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "If everyone lifted their binoculars at once, it is plausible this happened because Vik pointed out the woodpecker, making B a likely cause or accompaniment of A rather than something contradicted by it.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "A describes a group action with binoculars, while B describes Alma writing notes about a woodpecker; A neither confirms nor precludes Alma also taking notes, and there's no direct logical connection between the two actions.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "The two claims describe unrelated events with no logical or causal connection between a group raising binoculars and the outcome of a race or contest between Nell and Leo.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "A describes a group's synchronized action with binoculars, which has no clear bearing on Hana's walking pace; they appear to be unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "If everyone lifted their binoculars at once, Hana would also be raising binoculars rather than pausing to sketch, making it awkward for her to be sketching at that same moment; though these could be different times, taken together they create surprising tension.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Both describe a group outing where people had binoculars and shared tea; there's no conflict, but they are largely independent details about the same scene with no strong logical link.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Everyone raising binoculars at once suggests they are viewing a scenic landscape, which fits with a valley view at an overlook, but the claims describe different things (an action versus a scenic description) without directly confirming each other.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Claim A describes a group action with binoculars, which has no logical or causal bearing on the outcome of a race or competition between Hana and Leo described in B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "A concerns people using binoculars simultaneously, while B concerns whether Vik brought a first-aid kit; the two describe unrelated facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "A shows the group actively birdwatching together, which plausibly leads to accumulating a substantial species count by midday, so A makes B more likely though it does not guarantee it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "A states everyone raised binoculars simultaneously, implying active observation, while B depicts the group resting on a log with Alma reading a tally aloud, a fairly different activity and posture. These could occur at different moments, but placed together they create an odd, hard-to-reconcile scene of simultaneous universal action versus restful passivity.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "A describes a shared moment of excitement or interest during an outing, which could plausibly lead someone to want to repeat the experience, but the connection is not direct or necessary.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A concerns finishing order between Hana and Nell, while claim B concerns Nell's past observation of a heron at a different pond. These describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A concerns the relative finishing order of Hana and Nell, while claim B describes an unrelated observation about a woodpecker. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "The two claims describe unrelated events with no shared subjects or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "A states Hana finished ahead of Nell but says nothing about Nell's position relative to Leo, so B's claim about Nell and Leo is neither confirmed nor denied by A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Finishing ahead of someone in a race doesn't inherently indicate anything about Hana's walking pace consistency; these describe different aspects of her performance.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Finishing ahead of Nell says nothing about whether Hana stopped to sketch along the way; the two claims concern different aspects (race outcome vs. behavior during the activity) with no clear link.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A concerns the relative finishing positions of Hana and Nell, while claim B describes Leo's thermos of tea shared at an overlook. These involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Claim A concerns the relative finishing order of Hana and Nell in some competition, while claim B describes a scenic view from an overlook. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Both claims describe Hana finishing ahead of different people (Nell and Leo), so knowing Hana beat Nell says nothing directly about her relative position to Leo.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Claim A concerns finishing order between Hana and Nell, while claim B concerns whether Vik brought a first-aid kit. These describe unrelated events with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "The two claims concern unrelated events: one is about a race or competition finishing order between Hana and Nell, the other about a group's species count by midday. There is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Claim A is about race results between Hana and Nell, while claim B describes an unrelated scene of Alma reading a tally aloud during a rest. There's no direct logical connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Claim A concerns the finishing order of Hana and Nell in some event, while claim B concerns Vik's suggestion about returning the next weekend. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A describes Nell's past experience with a heron at a different pond, while claim B describes a separate present event involving Vik and a woodpecker. Neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A concerns Nell seeing a heron at a different pond in a prior season, while claim B concerns Alma recording a woodpecker's rhythm; the two involve different people, birds, and events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A concerns Nell's past sighting of a heron at a different pond, which has no bearing on a race or competition outcome involving Leo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns Nell's past sighting of a heron near a different pond, while claim B concerns Hana's walking pace; they share no common subject, event, or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A concerns Nell's past sighting of a heron at a different pond, while claim B concerns Hana sketching a sparrow. These involve different people, subjects, and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A concerns Nell's past sighting of a heron at a different pond, while claim B concerns Leo sharing tea at an overlook; the two describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A discusses Nell's past observation of a heron near another pond, while claim B describes a valley view at an overlook; neither shares a subject, location, or time that would connect them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Claim A concerns Nell's past sighting of a heron near a different pond, while claim B concerns the outcome of a race or competition between Hana and Leo. These share no common subject, entities, or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Claim A concerns Nell's prior observation of a heron near another pond, while claim B concerns whether Vik brought a first-aid kit. The two describe unrelated events and people with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "A is an unrelated background fact about Nell's past sighting of a heron elsewhere, while B describes a group's species count during a current outing; neither statement bears on the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "The two claims describe unrelated events involving different people, locations, and activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "A is about a past sighting at a different pond and gives no information about future plans; B is a proposal to return, which is not affected by A.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "A establishes the woodpecker tapping was observed, which provides an opportunity for Alma to notice and record its rhythm; the claims are compatible and A slightly supports B by setting up the scene.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A describes a nature observation while claim B describes the outcome of some competition or race; they involve different people, actions, and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Both mention a similar 'steady' quality, but they describe unrelated subjects (a woodpecker's tapping vs Hana's walking pace) with no causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Both describe simultaneous but distinct birdwatching-related activities by different people focused on different birds; A neither confirms nor undermines B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "The two claims describe unrelated events involving different people and actions with no logical or causal connection between spotting a woodpecker and sharing tea at an overlook.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Both describe elements of a nature scene, but neither claim's truth affects the likelihood of the other; they could occur together or separately without conflict or reinforcement.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "These claims describe entirely unrelated events with no shared subject, context, or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Claim A describes Vik noticing a woodpecker, which has no logical or causal bearing on whether Vik brought a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "A describes a single birding observation that plausibly contributes to a cumulative species count during a group outing; it makes B more plausible as part of the same activity, though it doesn't guarantee the total.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Both describe activities that could occur during the same outing (spotting a woodpecker, resting on a log), but neither claim provides information that makes the other more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Observing a woodpecker could plausibly lead someone to want to return, but the claims are not directly logically connected; B could easily happen independent of A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A concerns Alma recording a woodpecker's rhythm, while claim B concerns a race or competition result between Nell and Leo. The two describe entirely unrelated events with no shared subjects or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "The claims describe different people engaged in unrelated activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Both describe separate people independently recording observations of birds, but neither claim's truth affects the other's likelihood or truth value.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "These two claims describe unrelated activities by different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "These claims describe different subjects and settings with no logical connection between Alma's notebook activity and the valley's appearance; nothing in A bears on the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "The two claims describe unrelated events involving different people and activities with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "The two claims describe unrelated events involving different people and actions with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Alma noting a woodpecker's rhythm is consistent with a group birdwatching activity that could result in counting many species, but it doesn't directly establish or strengthen the claim about the count total.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "A shows Alma keeping written notes on the woodpecker's rhythm, which is consistent with her later reading a tally aloud from those notes; the claims plausibly describe sequential parts of the same activity.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Both claims describe separate actions by different people during what may be the same outing, but noting a rhythm in a notebook has no direct bearing on whether Vik proposes returning next weekend.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Claim A concerns the relative finishing order of Nell and Leo, while claim B concerns Hana's walking pace; they involve different people and different aspects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Claim A concerns a race or competitive finishing order between Nell and Leo, while claim B describes Hana sketching a sparrow. The two involve different people and unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "A states a finishing order between Nell and Leo, while B describes Leo carrying and sharing tea at an overlook; these concern different aspects of the event and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A concerns a race or competition outcome between Nell and Leo, while claim B describes a scenic landscape view from an overlook. They share no common subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "A states Nell's finishing position relative to Leo, but says nothing about Hana's position relative to Leo, so the two claims are independent.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Claim A concerns the relative finishing order of Nell and Leo in some race or competition, while claim B concerns whether Vik brought a first-aid kit. These involve different people and different subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "The claim about Nell finishing ahead of Leo, likely from a race or competition, has no logical or contextual connection to a group counting species by midday.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Claim A is about race results while claim B describes a separate scene of reading a tally aloud; nothing in A implies or conflicts with B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "The claim about Nell finishing ahead of Leo concerns a race or competition outcome, while the claim about Vik suggesting a return trip is unrelated in subject matter; neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "A steady walking pace implies continuous, unbroken motion, while B describes Hana stopping repeatedly to sketch, which involves interruptions to that pace. Both could be loosely true if 'steady' refers to overall speed between pauses, but as written they sit awkwardly together.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Claim A describes Hana's walking pace, while claim B describes Leo's thermos and sharing tea at the overlook; they involve different people and details with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Hana's steady pace during a walk has no logical or causal bearing on the visual description of the valley's colors at the overlook; they are independent observations.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "A steady walking pace could support consistent performance, but it doesn't specify speed relative to Leo, so it only weakly suggests she might finish ahead; there's no direct logical link.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Hana's steady pace has no logical or contextual connection to whether Vik brought a first-aid kit; they concern different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Hana's steady pace is a personal detail that doesn't directly bear on the group's species count; no causal or logical link is stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "The claims describe unrelated actions by different people in likely different moments; nothing about Hana's steady pace bears on Alma reading a tally while others rest.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Claim A describes Hana's walking pace, while claim B describes Vik suggesting a future return visit. There is no logical or contextual connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "The claims describe different people doing unrelated activities during what seems to be a shared outing, with no causal or logical connection between sketching birds and carrying tea.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Claim A describes Hana sketching a sparrow on a fence post, while claim B describes a valley view at an overlook. These are different scenes with no stated connection, so neither supports, contradicts, nor creates tension with the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Pausing to sketch suggests Hana spent extra time, which could make finishing ahead of Leo less likely, but there's no direct logical connection given as written.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Claim A describes Hana sketching birds, which has no logical or thematic connection to whether Vik brought a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Hana pausing to sketch birds suggests an active birdwatching outing, which supports the plausibility that the group was tallying multiple species during the day.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "The two claims describe different people engaged in different activities with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "A describes Hana sketching sparrows during an outing, while B is about Vik suggesting a return trip; there's no stated causal or logical link between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "A describes an activity Leo did once the group reached the overlook, while B describes the scenery visible at that same overlook; both can easily be true simultaneously with no conflict, but they don't particularly increase or decrease each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "A establishes Leo carried tea and shared it at the overlook, implying he reached the overlook and stayed to share; this makes no direct claim about race order relative to Hana, though it slightly suggests Leo wasn't rushing to finish first.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Leo bringing tea and sharing it at the overlook has no logical bearing on whether Vik brought a first-aid kit; these concern different people and different items.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Sharing tea at an overlook and counting species by midday concern different activities and timeframes; neither confirms nor undermines the other, though both could occur during the same outing.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Both describe activities of a group resting at a stopping point, but there's no direct logical connection between sharing tea at an overlook and reading a tally on a fallen log; they could be different moments or unrelated details of the same trip.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Sharing tea at the overlook suggests a pleasant, successful outing, which makes it somewhat more plausible that a participant like Vik would want to return, but the claims are largely independent otherwise.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "The valley's appearance at the overlook has no logical or thematic connection to the outcome of a race or competition between Hana and Leo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Claim A describes the visual scenery at the overlook, while claim B concerns whether Vik packed a first-aid kit; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "A describes the visual appearance of the valley from an overlook, while B describes a species count made by a group over time; neither statement provides information bearing on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Both claims describe elements of a scene (a landscape view and a group resting) but they share no logical or causal connection; A does not make B more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "A describes the scenic beauty of the valley view, which could plausibly motivate someone to want to return, but there's no explicit causal link stated between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "The two claims concern unrelated matters: race finishing order versus who brought a first-aid kit. Knowing A gives no information about B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "The claims describe unrelated events (a race or competition finish order versus a wildlife counting activity) with no shared context or causal link stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Claim A concerns the relative finishing order of Hana and Leo, while claim B describes an unrelated scene of Alma reading a tally while others rest. There is no logical or contextual connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Claim A concerns the relative finishing order of Hana and Leo, while claim B concerns Vik's suggestion about returning another weekend. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Whether Vik brought a first-aid kit has no logical or causal bearing on the group's species count during the day.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Claim A concerns whether Vik brought a first-aid kit, while claim B describes Alma reading a tally while others rested; the two events involve different people and actions with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Not bringing a first-aid kit is unrelated to whether Vik suggested returning the following weekend; no logical or causal connection is stated between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "A establishes that a tally of species existed by midday, which supports the idea that this tally could then be read aloud, as B describes; the two events fit naturally into a sequence.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "A successful and enjoyable day of birdwatching (implied by counting over twenty species) plausibly motivates a suggestion to return, but A does not directly entail or require B.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "A describes a resting moment where a tally was read aloud, which could plausibly set up or precede Vik's suggestion, but there is no direct logical link between the two events as stated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "finish_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "first_aid_kit_possession",
+    "arity": "binary",
+    "arity_span": "Vik did not bring the first-aid kit.",
+    "order_kind": null,
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 20,
+    "attribute": "first_aid_kit_possession",
+    "kind": "different",
+    "a": "vik",
+    "b": "vik",
+    "confidence": 0.3
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 10,
+    "attribute": "finish_order",
+    "subject": "hana",
+    "comparative": "ahead of",
+    "object": "nell",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 14,
+    "attribute": "finish_order",
+    "subject": "nell",
+    "comparative": "ahead of",
+    "object": "leo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 19,
+    "attribute": "finish_order",
+    "subject": "hana",
+    "comparative": "ahead of",
+    "object": "leo",
+    "confidence": 0.98
+   }
+  ],
+  "extremes": [],
+  "senses": [
+   {
+    "attribute": "finish_order",
+    "comparative": "ahead of",
+    "greater_side": "subject"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 4,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    3,
+    9
+   ],
+   [
+    8,
+    15
+   ],
+   [
+    9,
+    16
+   ],
+   [
+    9,
+    22
+   ],
+   [
+    15,
+    16
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "finish_order": "sequence",
+    "first_aid_kit_possession": null
+   },
+   "sense_overrides": [
+    {
+     "claim_id": 10,
+     "attribute": "finish_order",
+     "comparative": "ahead of",
+     "model": "subject",
+     "lexicon": "object"
+    },
+    {
+     "claim_id": 14,
+     "attribute": "finish_order",
+     "comparative": "ahead of",
+     "model": "subject",
+     "lexicon": "object"
+    },
+    {
+     "claim_id": 19,
+     "attribute": "finish_order",
+     "comparative": "ahead of",
+     "model": "subject",
+     "lexicon": "object"
+    }
+   ],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 19,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9883749620406924,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "first_aid_kit_possession",
+    "entities": [
+     "vik"
+    ],
+    "relations": [
+     0
+    ],
+    "claim_ids": [
+     20
+    ],
+    "min_confidence": 0.3
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.33783783783783783,
+   1.0000000000000004,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   0.33783783783783783,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002
+  ],
+  "claim_residuals": [
+   2.7117093616972283e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.8858655953250547,
+   2.7363612649853846e-31,
+   1.0846837446788913e-31,
+   8.628166150854817e-32,
+   8.628166150854817e-32,
+   6.409494854920721e-32,
+   0.0,
+   0.0,
+   2.7117093616972283e-32,
+   2.7117093616972283e-32,
+   4.930380657631324e-32,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   1.9721522630525296e-32,
+   0.8858655953250547,
+   1.035379938102578e-31,
+   1.035379938102578e-31,
+   4.930380657631324e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 22,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 20,
+    "residual": 0.4474068663257852
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "residual": 3.944304526105059e-32
+   },
+   {
+    "a": 5,
+    "b": 7,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 19,
+    "residual": 1.9721522630525296e-32
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 8,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 21,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 12,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 21,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 13,
+    "b": 22,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 16,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   4,
+   20
+  ],
+  "culprits": [
+   {
+    "claim": 4,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.011625037959307583
+   },
+   {
+    "claim": 20,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.011625037959307583
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 5506915,
+   "output_tokens": 507745,
+   "thinking_tokens": 0,
+   "calls": 18891,
+   "api_calls": 5223,
+   "cache_hits": 13668,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 15.857475000000052,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 130800,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 6014660,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    8,
+    9,
+    11,
+    12,
+    13,
+    16,
+    21,
+    22,
+    23
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    2
+   ],
+   [
+    4,
+    20
+   ],
+   [
+    5,
+    6,
+    7,
+    14,
+    19
+   ],
+   [
+    10
+   ],
+   [
+    15
+   ],
+   [
+    17
+   ],
+   [
+    18
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    4,
+    20
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 3,
+    "b": 9,
+    "rationale": "A depicts a quiet side conversation about birds, while B describes a synchronized group action, which is plausible in a birdwatching context but sits awkwardly with someone being absorbed in quiet chat instead of also lifting binoculars.",
+    "confidence": 0.55
+   },
+   {
+    "a": 8,
+    "b": 15,
+    "rationale": "A describes the group pausing at a clearing, which implies a temporary halt in movement, while B states Hana walked with a steady pace. These could both be true at different moments of a journey, but the pause creates mild tension with the idea of steady continuous walking.",
+    "confidence": 0.55
+   },
+   {
+    "a": 9,
+    "b": 16,
+    "rationale": "If everyone lifted their binoculars at once, Hana would also be raising binoculars rather than pausing to sketch, making it awkward for her to be sketching at that same moment; though these could be different times, taken together they create surprising tension.",
+    "confidence": 0.55
+   },
+   {
+    "a": 9,
+    "b": 22,
+    "rationale": "A states everyone raised binoculars simultaneously, implying active observation, while B depicts the group resting on a log with Alma reading a tally aloud, a fairly different activity and posture. These could occur at different moments, but placed together they create an odd, hard-to-reconcile scene of simultaneous universal action versus restful passivity.",
+    "confidence": 0.6
+   },
+   {
+    "a": 15,
+    "b": 16,
+    "rationale": "A steady walking pace implies continuous, unbroken motion, while B describes Hana stopping repeatedly to sketch, which involves interruptions to that pace. Both could be loosely true if 'steady' refers to overall speed between pauses, but as written they sit awkwardly together.",
+    "confidence": 0.65
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 20,
+   "attribute": "first_aid_kit_possession",
+   "kind": "different",
+   "a": "vik",
+   "b": "vik",
+   "confidence": 0.3,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 10,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "nell",
+   "b": "hana",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "leo",
+   "b": "nell",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 19,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "leo",
+   "b": "hana",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

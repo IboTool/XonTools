@@ -1,0 +1,153 @@
+{
+ "request": "a978139f8ec0c468353e4d9ff3b948b98828e7193f8d3be56637f2d84b1859ff",
+ "tag": "text-e7e3acebedbe-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun"
+    ]
+   },
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia"
+    ]
+   },
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno"
+    ]
+   },
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "event_organizer",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "event_organizer",
+    "kind": "same",
+    "a": "jun",
+    "b": "event_organizer",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 2,
+    "attribute": "event_organizer",
+    "kind": "different",
+    "a": "jun",
+    "b": "event_organizer",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "gia",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "jun",
+    "b": "rowers",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 7,
+    "attribute": "team",
+    "kind": "same",
+    "a": "gia",
+    "b": "gus",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 8,
+    "attribute": "team",
+    "kind": "different",
+    "a": "gus",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "team",
+    "kind": "different",
+    "a": "gia",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "rank",
+    "kind": "greater",
+    "a": "alma",
+    "b": "jun",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 12,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "gus",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1894,
+  "output_tokens": 672,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,157 @@
+{
+ "request": "db34c5209dd4917babd876a04af46763e80fe5a4bbb63b2885f01066d64d5b0b",
+ "tag": "text-90f946567041-relate-014",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 18,
+    "b": 20,
+    "rationale": "Reminding about a concert date is unrelated to Leo's joke about leaving last.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 18,
+    "b": 21,
+    "rationale": "The reminder about the concert is unrelated to Nell packing up her music stand.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 18,
+    "b": 22,
+    "rationale": "The reminder about attendance has no bearing on how many houses the school has.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 18,
+    "b": 23,
+    "rationale": "The reminder about the concert is unrelated to Cy offering to carry chairs.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 18,
+    "b": 24,
+    "rationale": "The reminder about attendance is unrelated to Pia staying to stack sheet music.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "rationale": "Nell and Pia being in different houses is unrelated to Leo's joke about leaving last.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 19,
+    "b": 21,
+    "rationale": "Nell and Pia being in different houses is unrelated to Nell packing up her music stand.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 19,
+    "b": 22,
+    "rationale": "If Nell and Pia are in different houses, this supports the existence of at least two houses.",
+    "relation": "supports",
+    "confidence": 0.8
+   },
+   {
+    "a": 19,
+    "b": 23,
+    "rationale": "Nell and Pia being in different houses is unrelated to Cy offering to help carry chairs.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 19,
+    "b": 24,
+    "rationale": "Nell and Pia being in different houses is unrelated to Pia staying to stack sheet music.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "Leo's joke about being last to leave is unrelated to Nell packing up her stand.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 20,
+    "b": 22,
+    "rationale": "Leo's joke about leaving last has no bearing on the number of houses in the school.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 20,
+    "b": 23,
+    "rationale": "Leo's joke about leaving last is unrelated to Cy offering to help with chairs.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 20,
+    "b": 24,
+    "rationale": "Leo's joke about being last to leave supports the idea that Pia stayed behind, as it implies people linger after practice.",
+    "relation": "supports",
+    "confidence": 0.4
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "rationale": "Nell packing up her music stand is unrelated to the number of houses in the school.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "rationale": "Nell packing her stand is unrelated to Cy offering to carry chairs, as they are separate independent actions.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 21,
+    "b": 24,
+    "rationale": "Nell laughing and packing up suggests she is leaving, which is consistent with Pia staying behind instead, but this is only a mild contextual link, not a logical requirement.",
+    "relation": "supports",
+    "confidence": 0.3
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "The number of houses in the school is unrelated to Cy offering to help with chairs.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 22,
+    "b": 24,
+    "rationale": "The number of houses in the school is unrelated to Pia staying to stack sheet music.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 23,
+    "b": 24,
+    "rationale": "Cy offering to help carry chairs and Pia staying to stack music are both about people staying to help after rehearsal, so one supports the plausibility of the other happening together.",
+    "relation": "supports",
+    "confidence": 0.35
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1107,
+  "output_tokens": 1319,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

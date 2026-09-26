@@ -1,0 +1,26 @@
+{
+ "request": "8746e640893be85b35467829086d19b581eda431c493bcda31ce75dce9b6faff",
+ "tag": "text-2ad526cb6694-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Milo and Hana were in different houses.",
+     "Hana and Dev were in different houses.",
+     "Milo and Dev were in different houses.",
+     "The school had two houses."
+    ],
+    "explanation": "With only two houses, if Milo and Hana differ, and Hana and Dev differ, then Dev must be in the same house as Milo, contradicting the claim that Milo and Dev were in different houses."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1028,
+  "output_tokens": 143,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

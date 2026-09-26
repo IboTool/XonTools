@@ -1,0 +1,59 @@
+{
+ "request": "19f4b992e789b87677fcb8e784905ae4d407b22d8a3086111bf5dc2c8b59d12f",
+ "tag": "text-d7531d42eb05-seed1-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 20,
+    "b": 26,
+    "rationale": "The smell described in claim 20 is the same warm smell that draws villagers in claim 26, so it supports it.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 20,
+    "b": 27,
+    "rationale": "The cinnamon and toasted nuts smell suggests active baking, consistent with the bakery buzzing with activity, though it doesn't directly imply duration past noon.",
+    "relation": "supports",
+    "confidence": 0.55
+   },
+   {
+    "a": 21,
+    "b": 26,
+    "rationale": "Children lining up for samples indicates activity and interest in the bakery, consistent with villagers being drawn in by the smell.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "Fay laughing while balancing two trays suggests a lively, possibly less controlled movement, which could make spilling more likely, contradicting her being careful not to spill.",
+    "relation": "contradicts",
+    "confidence": 0.4
+   },
+   {
+    "a": 22,
+    "b": 26,
+    "rationale": "Fay balancing trays inside the bakery is a separate detail from villagers being drawn in by the smell outside, with no direct causal or logical link.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 26,
+    "b": 27,
+    "rationale": "Villagers being drawn in by the smell as the sun rises supports the idea that the bakery remained busy and cheerful until well past noon.",
+    "relation": "supports",
+    "confidence": 0.75
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1007,
+  "output_tokens": 483,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

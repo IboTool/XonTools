@@ -1,0 +1,156 @@
+{
+ "request": "22aa2c8c4192c444e3e4143d598de3d85b637ffb5189993bca7dcc44eca75f7c",
+ "tag": "text-91dd17f4bcbe-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "shift",
+    "arity": "multi",
+    "arity_span": "The shop ran three shifts."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "first_aid_kit_bringer",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "gus",
+    "b": "quinn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "gus",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "quinn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "ben",
+    "b": "rosa",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "rosa",
+    "b": "quinn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "gus",
+    "b": "uma",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "uma",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "ben",
+    "b": "quinn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 24,
+    "attribute": "first_aid_kit_bringer",
+    "kind": "different",
+    "a": "uma",
+    "b": "first_aid_kit",
+    "confidence": 0.3
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2204,
+  "output_tokens": 722,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

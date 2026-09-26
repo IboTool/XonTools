@@ -1,0 +1,142 @@
+{
+ "request": "46c4a67856d2a0032cec6e63212641f526be8a659831f58b39a82ca834da1377",
+ "tag": "text-7d27a94edad3-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn",
+     "his"
+    ]
+   },
+   {
+    "id": "bo",
+    "mentions": [
+     "Bo"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "she"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "competition_rank",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 5,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "bo",
+    "b": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "nell",
+    "b": "bo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "nell",
+    "b": "hugo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "bo",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 14,
+    "attribute": "class",
+    "kind": "same",
+    "a": "finn",
+    "b": "bo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "class",
+    "kind": "different",
+    "a": "bo",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 22,
+    "attribute": "competition_rank",
+    "kind": "greater",
+    "a": "nell",
+    "b": "finn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 24,
+    "attribute": "class",
+    "kind": "different",
+    "a": "finn",
+    "b": "nell",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2306,
+  "output_tokens": 601,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

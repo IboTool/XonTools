@@ -1,0 +1,102 @@
+{
+ "request": "a96de3bf10ed2839488924a83369cd105e2db6cbae6ec9f33029c945ade68e15",
+ "tag": "text-88291ab6fa5d-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia",
+     "she"
+    ]
+   },
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana"
+    ]
+   },
+   {
+    "id": "bo",
+    "mentions": [
+     "Bo"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "bo",
+    "b": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "dara",
+    "b": "bo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dara",
+    "b": "bo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "bo",
+    "b": "pia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 20,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dara",
+    "b": "pia",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2151,
+  "output_tokens": 395,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

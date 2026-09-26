@@ -1,0 +1,1105 @@
+{
+ "label": "b08-cycle",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-f143de671b5a",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Flour dust had been settling on every surface at the village bakery since dawn.",
+   "span": "The village bakery had been busy since dawn, with flour dust settling on every surface long before the ovens cooled.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Esme is the head judge.",
+   "span": "Assume that Esme is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Hugo arrived at the bakery a little earlier than Nell.",
+   "span": "Hugo arrived at the bakery a little earlier than Nell, both eager to see the fresh batches lined up on the counter.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Hugo and Nell were both eager to see the fresh batches lined up on the counter.",
+   "span": "both eager to see the fresh batches lined up on the counter",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Jun drove the minibus.",
+   "span": "Jun drove the minibus.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Leo was the tallest among the staff gathered that morning.",
+   "span": "Esme mentioned that Leo was the tallest among the staff gathered that morning, though nobody paid it much mind.",
+   "kind": "quoted"
+  },
+  {
+   "id": 6,
+   "text": "The bread trays were stacked according to size.",
+   "span": "The bread trays were stacked according to size, with the largest loaves reserved for the market stall outside.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "The largest loaves were reserved for the market stall outside.",
+   "span": "with the largest loaves reserved for the market stall outside",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Hugo and Nell worked different shifts.",
+   "span": "Hugo and Nell worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Jun had recently turned thirty.",
+   "span": "Jun had recently turned thirty, a fact he shared while sampling a warm slice of rye.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Jun shared that he had recently turned thirty while sampling a warm slice of rye.",
+   "span": "a fact he shared while sampling a warm slice of rye",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Nell was the quickest at kneading dough.",
+   "span": "Leo often joked that Nell was the quickest at kneading dough, a skill that came from years of practice.",
+   "kind": "quoted"
+  },
+  {
+   "id": 12,
+   "text": "Nell's quickness at kneading dough came from years of practice.",
+   "span": "a skill that came from years of practice",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Nell and Leo worked different shifts.",
+   "span": "Nell and Leo worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "The bakery windows fogged up whenever the ovens reached full heat.",
+   "span": "The bakery windows fogged up whenever the ovens reached full heat, blurring the view of the courtyard.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "The fogged windows blurred the view of the courtyard.",
+   "span": "blurring the view of the courtyard",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Esme ranked highest among the staff in seniority.",
+   "span": "Esme ranked highest among the staff in seniority, having worked there the longest of anyone present.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Esme had worked there the longest of anyone present.",
+   "span": "having worked there the longest of anyone present",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Hugo and Leo worked different shifts.",
+   "span": "Hugo and Leo worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Jun was younger than Hugo by a couple of years.",
+   "span": "Jun was younger than Hugo by a couple of years, though both handled the delivery routes with equal care.",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Hugo and Jun both handled the delivery routes with equal care.",
+   "span": "though both handled the delivery routes with equal care",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "The smell of cinnamon rolls drifted through the open door.",
+   "span": "The smell of cinnamon rolls drifted through the open door, drawing in customers from the lane.",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "The smell of cinnamon rolls drew in customers from the lane.",
+   "span": "drawing in customers from the lane",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "The shop ran two shifts.",
+   "span": "The shop ran two shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "By afternoon, the trays were empty.",
+   "span": "By afternoon, the trays were empty, and the whole team gathered outside to enjoy the last of the sunlight before locking up for the day.",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "The whole team gathered outside to enjoy the last of the sunlight before locking up for the day.",
+   "span": "the whole team gathered outside to enjoy the last of the sunlight before locking up for the day",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Flour dust settling since dawn does not indicate anything about arrival times of Hugo and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Flour dust accumulation is unrelated to how bread trays were stacked.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "Flour dust settling since dawn does not imply anything about trays being empty by afternoon.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Being head judge does not by itself imply highest seniority among bakery staff, as these are different roles/contexts.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Being head judge does not indicate how long Esme worked at the bakery.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Esme being head judge has no bearing on Jun's age relative to Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Hugo arriving earlier than Nell doesn't affect whether both were eager to see the fresh batches.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Arrival order of Hugo and Nell has no connection to how bread trays were stacked.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Arriving at slightly different times could suggest different shifts, providing weak supporting evidence.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Hugo's arrival time relative to Nell says nothing about Hugo and Leo's shifts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Eagerness to see fresh batches doesn't relate to which loaves were reserved for the market stall.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Hugo and Nell's eagerness about batches is unrelated to Jun's age reveal while sampling rye.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Their shared eagerness doesn't indicate anything about Nell and Leo's shift schedules.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 25,
+   "rationale": "Their eagerness in the morning is unrelated to the team gathering outside later in the day.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Jun driving the minibus has no connection to which loaves were reserved for the market stall.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Jun driving the minibus doesn't relate to Hugo and Leo's shift arrangement.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Jun driving the minibus is consistent with and could support the claim that he handled delivery routes carefully alongside Hugo.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 4,
+   "b": 24,
+   "rationale": "Jun driving the minibus has no bearing on whether trays were empty by afternoon.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Leo's height has no connection to whether Hugo and Nell worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Leo being the tallest staff member is unrelated to the windows being fogged.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Stacking trays by size is unrelated to which loaves are reserved for a market stall.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Tray stacking by size has no bearing on which shifts Hugo and Leo work.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 24,
+   "rationale": "Stacking trays by size does not imply anything about trays being empty by afternoon.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Reserving large loaves for the market stall has no connection to Jun's age announcement while eating rye bread.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Loaf reservation for the market stall is unrelated to the source of Nell's kneading skill.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Hugo and Nell working different shifts doesn't determine whether Nell and Leo work different shifts, since shift assignments could vary independently.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Hugo and Nell working different shifts doesn't determine whether Hugo and Leo work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Hugo and Nell working different shifts supports the idea that the shop runs multiple shifts, consistent with two shifts.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Jun having recently turned thirty directly supports the claim that he shared this fact while eating rye bread.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Jun recently turning thirty is consistent with and supports him being a couple years younger than Hugo.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Jun sharing he turned thirty while eating rye doesn't specifically address his age relative to Hugo, though it implies his age which is loosely consistent.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Jun eating rye bread and sharing his age is unrelated to cinnamon rolls drawing in customers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Nell being quickest at kneading supports the claim that this skill came from years of practice, as it explains the cause.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Nell's kneading speed is unrelated to the fogged windows blurring the courtyard view.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Nell's kneading skill has no bearing on Hugo and Leo's shift schedules.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Nell's kneading skill coming from years of practice is unrelated to Esme's tenure being the longest.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Nell and Leo working different shifts doesn't determine whether Hugo and Leo work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Nell and Leo working different shifts supports the existence of multiple shifts, consistent with two shifts.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Windows fogging when ovens reach full heat directly supports the claim that fogged windows blurred the courtyard view.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Window fogging from oven heat is unrelated to how carefully Hugo and Jun handle delivery routes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Fogged windows from oven heat is unrelated to the smell of cinnamon rolls drawing customers.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Ranking highest in seniority directly supports having worked there the longest.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 25,
+   "rationale": "Esme's seniority rank has no bearing on the team gathering outside for sunlight.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Esme's tenure length is unrelated to the smell drawing in customers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Different shifts for Hugo and Leo has no connection to the smell drifting through the door.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Shift differences between Hugo and Leo don't relate to customers being drawn in by smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Hugo and Leo working different shifts supports the shop running two shifts.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Jun being younger than Hugo doesn't affect how carefully they handle delivery routes.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Age difference between Jun and Hugo is unrelated to the smell drifting through the door.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Age difference between Jun and Hugo has no bearing on customers being drawn by smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Handling delivery routes carefully is unrelated to the smell drawing customers.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "The smell drifting through the door supports it drawing in customers from the lane.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 22,
+   "b": 25,
+   "rationale": "Customers being drawn in by smell is unrelated to the team gathering outside for sunlight.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 24,
+   "b": 25,
+   "rationale": "Empty trays by afternoon suggest the day's work was done, consistent with the team relaxing outside before locking up.",
+   "relation": "supports",
+   "confidence": 0.55
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun",
+     "he"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "shift",
+    "arity": "binary",
+    "arity_span": "The shop ran two shifts."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "kneading_speed",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "seniority",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "delivery_care",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "hugo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "hugo",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "nell",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "hugo",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "hugo",
+    "b": "jun",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 20,
+    "attribute": "delivery_care",
+    "kind": "same",
+    "a": "hugo",
+    "b": "jun",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 23,
+  "blind": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    1,
+    19
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    2,
+    18
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    13
+   ],
+   [
+    3,
+    25
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    4,
+    18
+   ],
+   [
+    4,
+    24
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    15
+   ],
+   [
+    6,
+    18
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    7,
+    12
+   ],
+   [
+    10,
+    22
+   ],
+   [
+    11,
+    15
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    14,
+    20
+   ],
+   [
+    14,
+    22
+   ],
+   [
+    16,
+    25
+   ],
+   [
+    17,
+    22
+   ],
+   [
+    18,
+    21
+   ],
+   [
+    18,
+    22
+   ],
+   [
+    19,
+    21
+   ],
+   [
+    19,
+    22
+   ],
+   [
+    20,
+    22
+   ],
+   [
+    22,
+    25
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 26,
+  "pairs_requested": 54,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 31,
+  "blind_pairs_related": 0,
+  "entity_relations": 6,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 26,
+  "n_edges": 13,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    5
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "shift",
+    "entities": [
+     "hugo",
+     "leo",
+     "nell"
+    ],
+    "relations": [
+     3,
+     2,
+     1
+    ],
+    "claim_ids": [
+     8,
+     13,
+     18
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0000000000000002,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   0.9999999999999998,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   2.958228394578794e-32,
+   2.7117093616972283e-32,
+   2.465190328815662e-32,
+   0.0,
+   0.0,
+   1.9721522630525296e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   2.1570415377137042e-32,
+   1.0107280348144213e-31,
+   0.0,
+   1.232595164407831e-32,
+   1.232595164407831e-32,
+   9.55261252416069e-32,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 2,
+    "b": 8,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 23,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 19,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 10,
+    "b": 19,
+    "residual": 2.465190328815662e-32
+   },
+   {
+    "a": 11,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 23,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 14,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 23,
+    "residual": 9.244463733058732e-33
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 456,
+   "api_calls": 0,
+   "cache_hits": 456,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 7548523
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2,
+    8,
+    13,
+    18,
+    23
+   ],
+   [
+    3
+   ],
+   [
+    4,
+    20
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    9,
+    10,
+    19
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    21,
+    22
+   ],
+   [
+    24,
+    25
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "shift",
+    "entities": [
+     "hugo",
+     "leo",
+     "nell"
+    ],
+    "relations": [
+     3,
+     2,
+     1
+    ],
+    "claim_ids": [
+     8,
+     13,
+     18
+    ],
+    "min_confidence": 0.95
+   }
+  ]
+ }
+}

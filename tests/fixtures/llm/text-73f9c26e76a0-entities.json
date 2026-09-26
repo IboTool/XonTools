@@ -1,0 +1,182 @@
+{
+ "request": "61f0c201f2ed3b26228148432f78089e844ab1f3fc249a4761f09cf52a56e193",
+ "tag": "text-73f9c26e76a0-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana",
+     "she"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme",
+     "she"
+    ]
+   },
+   {
+    "id": "lena",
+    "mentions": [
+     "Lena"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "walking_speed",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "esme",
+    "b": "ana",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "lena",
+    "b": "esme",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "lena",
+    "b": "vik",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 11,
+    "attribute": "class",
+    "kind": "same",
+    "a": "ana",
+    "b": "esme",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "finn",
+    "b": "vik",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "walking_speed",
+    "kind": "greater",
+    "a": "vik",
+    "b": "finn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "class",
+    "kind": "same",
+    "a": "esme",
+    "b": "lena",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "class",
+    "kind": "different",
+    "a": "ana",
+    "b": "lena",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "vik",
+    "b": "esme",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 18,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "finn",
+    "b": "lena",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 18,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "ana",
+    "b": "lena",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 18,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "vik",
+    "b": "lena",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 18,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "esme",
+    "b": "lena",
+    "confidence": 0.4
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1946,
+  "output_tokens": 824,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

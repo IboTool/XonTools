@@ -1,0 +1,120 @@
+{
+ "request": "a2adf9a4b1899a5eaab5765a68d9833890bdb21a508faf596200deedebaefe63",
+ "tag": "text-1d01fbaae539-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus",
+     "the head judge",
+     "his"
+    ]
+   },
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "her"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "finish_order",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "sami",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "sami",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "sami",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "xavi",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 10,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "sami",
+    "b": "xavi",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "nell",
+    "b": "sami",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2002,
+  "output_tokens": 517,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,112 @@
+{
+ "request": "2320fa368701f5d8f519f60eb5ad859f472382400b472af8ca0f7f949030a6ca",
+ "tag": "text-390bbee46910-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   },
+   {
+    "id": "heron",
+    "mentions": [
+     "a heron",
+     "a similar heron"
+    ]
+   },
+   {
+    "id": "woodpecker",
+    "mentions": [
+     "a woodpecker"
+    ]
+   },
+   {
+    "id": "first_aid_kit",
+    "mentions": [
+     "the first-aid kit"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "finish_order",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "first_aid_kit_possession",
+    "arity": "binary",
+    "arity_span": "Vik did not bring the first-aid kit."
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 10,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "nell",
+    "b": "hana",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "leo",
+    "b": "nell",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "leo",
+    "b": "hana",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 20,
+    "attribute": "first_aid_kit_possession",
+    "kind": "different",
+    "a": "vik",
+    "b": "first_aid_kit",
+    "confidence": 0.4
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2149,
+  "output_tokens": 463,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

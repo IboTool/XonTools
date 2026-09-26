@@ -1,0 +1,1000 @@
+{
+ "label": "b28-direct",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-e7e3acebedbe",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Jun is the event organizer.",
+   "span": "Assume that Jun is the event organizer.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Gia arrived early, stretching near the boathouse while the sun climbed higher.",
+   "span": "Gia arrived early, stretching near the boathouse while the sun climbed higher.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Jun is not the event organizer.",
+   "span": "Jun is not the event organizer.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Gus arrived a few minutes after Gia.",
+   "span": "Gus checked his watch and noted that he had arrived a few minutes after Gia.",
+   "kind": "quoted"
+  },
+  {
+   "id": 4,
+   "text": "Zeno drove the minibus.",
+   "span": "Zeno drove the minibus.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Alma had traveled separately, arriving just as the announcer called the first heat to the starting line.",
+   "span": "Alma had traveled separately, arriving just as the announcer called the first heat to the starting line.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Jun stood taller than most of the rowers.",
+   "span": "Jun stood taller than most of the rowers, easily spotted from across the water.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Gia is on the same team as Gus.",
+   "span": "Gia is on the same team as Gus.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Gus is not on the same team as Alma.",
+   "span": "Gus is not on the same team as Alma.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Zeno smelled faintly of gasoline from the drive.",
+   "span": "Zeno, still smelling faintly of gasoline from the drive, laughed with the other rowers as they waited for their turn.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Gia is not on the same team as Alma.",
+   "span": "Gia is not on the same team as Alma.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Alma was ranked slightly higher than Jun in the previous season standings.",
+   "span": "Alma was ranked slightly higher than Jun in the previous season standings, though both seemed relaxed before the race.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Gus was younger than Zeno by about two years.",
+   "span": "Gus mentioned that he was younger than Zeno by about two years.",
+   "kind": "quoted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Jun's role as organizer has no bearing on Gia's arrival time or actions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Claim 2 directly negates claim 0, so if A is true, B is false, making it impossible.",
+   "relation": "contradicts",
+   "confidence": 0.99
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Jun's organizer status is unrelated to Gus's arrival timing relative to Gia.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Jun being the organizer has no connection to who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Jun's organizer role is unrelated to Alma's separate arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Being the organizer does not imply or preclude physical height relative to rowers.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Jun's organizer status has no bearing on team membership of Gia and Gus.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Jun being organizer is unrelated to whether Gus and Alma share a team.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Jun's role as organizer has nothing to do with Zeno smelling of gasoline.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Jun's organizer status does not relate to Gia and Alma's team membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Being the organizer is unrelated to past season ranking comparisons between Alma and Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Jun's organizer role has no connection to the age difference between Gus and Zeno.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Gia's early arrival and stretching has no bearing on whether Jun is the organizer.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Gia arriving early is consistent with and supports the idea that Gus arrived a few minutes after her.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Gia's arrival and stretching is unrelated to who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Gia's early arrival does not directly determine or contradict Alma's separate late arrival at the first heat.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Gia's arrival time and stretching habits are unrelated to Jun's height compared to rowers.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Gia's arrival behavior is unrelated to her team membership with Gus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Gia's early arrival has no bearing on whether Gus and Alma share a team.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Gia's arrival and stretching near the boathouse is unrelated to Zeno smelling of gasoline.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Gia's early arrival timing has no bearing on team membership with Alma.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Gia's arrival time is unrelated to season standings comparing Alma and Jun.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Gia's arrival time has nothing to do with Gus's age relative to Zeno.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Jun's organizer status is unrelated to Gus's arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Jun not being organizer has no connection to who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Jun's organizer status is unrelated to Alma's arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Jun's role as organizer or not doesn't affect his height compared to rowers.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Jun's organizer status is unrelated to team membership of Gia and Gus.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Jun's organizer status has no bearing on Gus and Alma's team relation.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Jun's organizer status is unrelated to Zeno smelling of gasoline.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Jun's organizer status doesn't affect Gia and Alma's team relation.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Jun not being organizer doesn't relate to ranking standings between Alma and Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Jun's organizer status is unrelated to Gus's age relative to Zeno.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Gus's arrival timing is unrelated to who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Gus arriving after Gia is unrelated to Alma's separate arrival timing directly, as these are independent events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Gus's arrival timing has no bearing on Jun's height.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Gus's arrival timing doesn't directly establish team membership with Gia.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Gus's arrival timing is unrelated to his team relation with Alma.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Gus's arrival timing is unrelated to Zeno's gasoline smell.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Gus arriving after Gia has no bearing on Gia's team relation with Alma.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Gus's arrival time relative to Gia has no bearing on Alma's ranking relative to Jun.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Gus arriving after Gia is unrelated to Gus's age relative to Zeno.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Zeno driving the minibus does not affect Alma's separate travel and arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Zeno driving the minibus has no connection to Jun's height among rowers.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Zeno's driving role is unrelated to whether Gia and Gus share a team.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Zeno driving the minibus has no bearing on Gus's team relative to Alma's.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Driving the minibus plausibly explains why Zeno smelled of gasoline, supporting that claim.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Zeno's driving role is unrelated to Gia and Alma's team membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Zeno driving the minibus is unrelated to Alma's ranking versus Jun.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Zeno driving the minibus has no logical connection to the age difference between Gus and Zeno.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Alma's separate travel and arrival timing is unrelated to Jun's height among rowers.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Alma's travel arrangements are unrelated to whether Gia and Gus are on the same team.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Alma traveling separately suggests she may not be with the same group/team as others like Gus, weakly supporting that Gus is not on her team.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Alma's separate arrival timing is unrelated to Zeno smelling of gasoline.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Alma traveling separately suggests possible separation from others' team, weakly supporting that Gia is not on her team.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Alma's arrival timing is unrelated to her previous season ranking relative to Jun.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Alma's travel details are unrelated to the age gap between Gus and Zeno.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Jun's height among rowers is unrelated to whether Gia and Gus share a team.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Jun's height is unrelated to Gus's team relationship with Alma.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Jun's height among rowers has no connection to Zeno smelling of gasoline.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Jun's height has no bearing on team membership of Gia and Alma.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Height and ranking are unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Jun's height has nothing to do with Gus and Zeno's age difference.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "If Gia is on the same team as Gus, and Gus is not on the same team as Alma, this is consistent but doesn't directly establish causation; A does not affect B's truth value.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Team membership has no relation to smelling of gasoline.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "If Gia is on the same team as Gus, and Gus is not on the same team as Alma (per claim 8), this implies Gia is not on the same team as Alma, supporting claim 10.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Team membership is unrelated to previous season ranking.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Team membership is unrelated to age difference.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Team membership is unrelated to smelling of gasoline.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Gus not being on Alma's team doesn't directly imply anything about Gia and Alma's team status without knowing Gia-Gus relation.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Team membership is unrelated to ranking.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Team membership is unrelated to age difference.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Smelling of gasoline is unrelated to team membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Smelling of gasoline is unrelated to ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Smelling of gasoline is unrelated to age difference.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Team membership is unrelated to ranking.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Team membership is unrelated to age difference.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Ranking is unrelated to age difference.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun"
+    ]
+   },
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia"
+    ]
+   },
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno"
+    ]
+   },
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "event_organizer",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "event_organizer",
+    "kind": "same",
+    "a": "jun",
+    "b": "event_organizer",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 2,
+    "attribute": "event_organizer",
+    "kind": "different",
+    "a": "jun",
+    "b": "event_organizer",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "gia",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "jun",
+    "b": "rowers",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 7,
+    "attribute": "team",
+    "kind": "same",
+    "a": "gia",
+    "b": "gus",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 8,
+    "attribute": "team",
+    "kind": "different",
+    "a": "gus",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "team",
+    "kind": "different",
+    "a": "gia",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "rank",
+    "kind": "greater",
+    "a": "alma",
+    "b": "jun",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 12,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "gus",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 13,
+  "pairs_requested": 78,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 9,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 13,
+  "n_edges": 6,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct",
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9595209571044809,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    12
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "event_organizer",
+    "entities": [
+     "jun",
+     "event_organizer"
+    ],
+    "relations": [
+     0,
+     1
+    ],
+    "claim_ids": [
+     0,
+     2
+    ],
+    "min_confidence": 0.6
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0000000000000002,
+   0.005025125628140708,
+   1.0000000000000002,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000004,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.9999747481124212,
+   4.930380657631324e-32,
+   1.9899497487437183,
+   0.0,
+   1.232595164407831e-32,
+   7.888609052210118e-32,
+   0.0,
+   0.0,
+   2.761013168273541e-31,
+   1.232595164407831e-32,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 2,
+    "residual": 0.9999747481124212
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 8,
+    "residual": 7.888609052210118e-32
+   },
+   {
+    "a": 5,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 7,
+    "b": 10,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   2,
+   0
+  ],
+  "culprits": [
+   {
+    "claim": 2,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.04047904289551907
+   },
+   {
+    "claim": 0,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.04047904289551907
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 1439,
+   "api_calls": 0,
+   "cache_hits": 1439,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    7,
+    8,
+    10
+   ],
+   [
+    6
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    0,
+    2
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "event_organizer",
+    "entities": [
+     "jun",
+     "event_organizer"
+    ],
+    "relations": [
+     0,
+     1
+    ],
+    "claim_ids": [
+     0,
+     2
+    ],
+    "min_confidence": 0.6
+   }
+  ]
+ }
+}

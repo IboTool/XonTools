@@ -1,0 +1,25 @@
+{
+ "request": "5833aa23df837242c642a81450e0913c21ed3c8a92d588bf64b5afc651a316d9",
+ "tag": "text-878df6990d3e-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Gia is on the same team as Gus.",
+     "Gus is on the same team as Alma.",
+     "Gia is not on the same team as Alma."
+    ],
+    "explanation": "If Gia and Gus are on the same team, and Gus and Alma are on the same team, then Gia and Alma must be on the same team, contradicting the claim that they are not."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1064,
+  "output_tokens": 126,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

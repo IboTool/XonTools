@@ -1,0 +1,176 @@
+{
+ "request": "95cd5d62122a4df6f164da25d410e558637ca6feb5274f36f6dcc2ccfcea181a",
+ "tag": "text-5b01ecbfe746-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina",
+     "her",
+     "Mina"
+    ]
+   },
+   {
+    "id": "jude",
+    "mentions": [
+     "Jude"
+    ]
+   },
+   {
+    "id": "wren",
+    "mentions": [
+     "Wren"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay",
+     "her"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi"
+    ]
+   },
+   {
+    "id": "school",
+    "mentions": [
+     "The school"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "house",
+    "arity": "binary",
+    "arity_span": "The school had two houses."
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "jude",
+    "b": "mina",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 7,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "fay",
+    "b": "mina",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 7,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "fay",
+    "b": "jude",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 13,
+    "attribute": "house",
+    "kind": "different",
+    "a": "mina",
+    "b": "fay",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "wren",
+    "b": "jude",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "wren",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "jude",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 18,
+    "attribute": "house",
+    "kind": "different",
+    "a": "fay",
+    "b": "jude",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "same",
+    "a": "xavi",
+    "b": "mina",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 22,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "fay",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "mina",
+    "b": "fay",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 24,
+    "attribute": "house",
+    "kind": "different",
+    "a": "mina",
+    "b": "jude",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2210,
+  "output_tokens": 782,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

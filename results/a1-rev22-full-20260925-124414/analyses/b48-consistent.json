@@ -1,0 +1,2658 @@
+{
+ "label": "b48-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-88291ab6fa5d",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Pia arrived first.",
+   "span": "Pia arrived first",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Pia was humming a tune from the second act while she taped marks on the stage floor.",
+   "span": "humming a tune from the second act while she taped marks on the stage floor",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Ana is the treasurer.",
+   "span": "Assume that Ana is the treasurer",
+   "kind": "premise"
+  },
+  {
+   "id": 3,
+   "text": "Bo came in shortly after Pia.",
+   "span": "Bo came in shortly after",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Bo was carrying a bag of props that clinked softly with every step.",
+   "span": "carrying a bag of props that clinked softly with every step",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Dara appeared a few minutes after Bo.",
+   "span": "Dara appeared a few minutes later",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Dara was still shaking off the cold from outside.",
+   "span": "still shaking off the cold from outside",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Dara nodded a greeting to the stage manager near the wings.",
+   "span": "nodded a greeting to the stage manager near the wings",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Gia drove the minibus.",
+   "span": "Gia drove the minibus",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "The director called for a quick warm up before diving into the first scene.",
+   "span": "The director called for a quick warm up before diving into the first scene",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "The cast spread out across the stage to stretch.",
+   "span": "the cast spread out across the stage to stretch",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Ana stood near the lighting board, reviewing notes from the previous run.",
+   "span": "Ana stood near the lighting board, reviewing notes from the previous run",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Ana occasionally glanced at the clock on the wall.",
+   "span": "occasionally glancing at the clock on the wall",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Dara is older than Bo.",
+   "span": "Dara is older than Bo",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "The rehearsal moved briskly through the opening scenes.",
+   "span": "The rehearsal moved briskly through the opening scenes",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "The actors traded lines and adjusted their blocking as the director offered corrections.",
+   "span": "the actors trading lines and adjusting their blocking as the director offered corrections",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Bo is older than Pia.",
+   "span": "Bo is older than Pia",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "During a short break, Pia practiced a tricky bit of choreography in the corner.",
+   "span": "Pia practiced a tricky bit of choreography in the corner",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Gia checked the sound levels for the next segment.",
+   "span": "Gia checked the sound levels for the next segment",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "The energy in the room stayed high, fueled by laughter between takes and the occasional dropped line that everyone found amusing.",
+   "span": "The energy in the room stayed high, fueled by laughter between takes and the occasional dropped line that everyone found amusing",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Dara is older than Pia.",
+   "span": "Dara is older than Pia",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "By the time the rehearsal wrapped up, the group had run through nearly every scene twice.",
+   "span": "the group had run through nearly every scene twice",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "The director seemed pleased with the progress.",
+   "span": "the director seemed pleased with the progress",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Everyone gathered their things, exchanging plans for the next session before heading out into the night air.",
+   "span": "Everyone gathered their things, exchanging plans for the next session before heading out into the night air",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "A states Pia arrived first, which is unrelated to whether she was humming and taping marks on the stage floor; the details of her actions once present are not implied or precluded by her arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Pia arriving first has no bearing on who holds the treasurer position; these describe unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "A states Pia arrived first, which is consistent with and supports B's claim that Bo arrived shortly after Pia, implying Pia was ahead of Bo.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A concerns the order of arrival among people, while claim B describes an unrelated detail about Bo's bag of props. Neither statement affects the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Claim A concerns Pia's arrival order relative to others, while claim B concerns the timing of Dara's arrival relative to Bo, with no shared reference point stated. These could both be true (e.g., Pia first, then Bo, then Dara) or unrelated depending on unstated details, but nothing in A bears on B's truth.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A states Pia arrived first, which says nothing about Dara's condition upon arrival or afterward. There's no direct logical connection between the order of arrival and someone shaking off cold weather.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "The two claims describe unrelated events involving different people; Pia arriving first has no bearing on Dara's greeting near the wings.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Arriving first and driving a minibus are unrelated facts about different aspects of the situation; nothing about who arrived first implies anything about who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Pia arriving first says nothing about whether a director called for a warm up before the first scene; the claims concern different aspects of the event with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "There is no stated connection between Pia arriving first and the cast stretching on stage; they could be unrelated events or occasions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "A states who arrived first among some group, while B describes Ana's activity near a lighting board; these events involve different people and contexts with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Pia arriving first says nothing about Ana's habit of glancing at a clock; the two describe unrelated events with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Claim A concerns arrival order among people, while claim B concerns relative ages of different individuals. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "There is no stated connection between who arrived first and how briskly the rehearsal proceeded; these describe unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Claim A concerns arrival order of a person named Pia, while claim B describes actors rehearsing under a director's direction. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Arrival order and relative age are independent facts; knowing Pia arrived first tells us nothing about who is older.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Arriving first is consistent with, and plausibly enables, having time during a break to practice choreography in the corner; there's no conflict, just a loose plausible connection.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Pia arriving first says nothing about Gia's actions or checking sound levels; the two claims concern unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "A's claim about Pia arriving first has no logical bearing on the described mood or energy of the room during takes; they concern unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Arriving first refers to order of arrival at some event, which has no logical bearing on relative ages of Pia and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Pia arriving first concerns the start of the event, while B describes an outcome from the rehearsal's progress; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Pia arriving first has no stated connection to the director's feelings about progress; no causal or logical link is given.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "A describes an early arrival while B describes people leaving afterward; both can be true as they refer to different points in the same event's timeline.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Claim A describes Pia's activity on stage and has no bearing on who holds the treasurer role for Ana.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A establishes Pia was present doing an activity; claim B about Bo arriving shortly after her is consistent and plausible but not directly implied or contradicted by A.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Both claims describe different people doing independent activities in what seems to be a theater setting; nothing in A affects the likelihood or truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A describes Pia's activity on stage, while claim B describes Dara's arrival relative to Bo. They involve different people and events with no overlap in content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A describes Pia's activity on stage and has no connection to Dara or the temperature/weather situation described in B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "The two claims describe different people doing unrelated actions in possibly the same general setting (a theater stage), but neither entails or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A describes Pia's activity backstage while claim B describes Gia driving a minibus; the two involve different people and unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Both describe pre-rehearsal or rehearsal activity, but A implies work already at the second act's material while B implies the session is just starting with the first scene; they can coexist if the humming is incidental, so no real tension is strong.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Both describe activity on the stage but involve different people and actions with no clear temporal or causal link stated; they could easily co-occur or happen separately without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Both describe different people doing separate preparatory tasks, possibly at the same time backstage, but neither claim affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "A describes Pia humming and taping marks on stage; B describes Ana glancing at a clock. The two claims involve different people and unrelated activities with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns Pia humming while taping marks on a stage floor, which has no connection to the relative ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Pia humming casually while taping marks suggests a relaxed, unhurried atmosphere during preparation, which sits somewhat awkwardly with the rehearsal proceeding briskly, though both could occur if her task was separate from the scene pacing.",
+   "relation": "tension",
+   "confidence": 0.35
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "A describes Pia preparing the stage by taping marks, which is consistent with a rehearsal where actors are also working on blocking under a director's guidance; both could be happening in the same rehearsal session.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Claim A describes Pia's activity and has no bearing on relative ages of Bo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Both describe Pia engaged in ordinary rehearsal-related activities that could plausibly occur at different moments during the same rehearsal session; neither excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Both describe different people doing unrelated preparation tasks, possibly in the same setting, but neither claim implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "A describes Pia humming while taping marks, a calm and mundane activity, while B describes a generally high-energy, laughter-filled room; these could coexist as different moments or aspects of the same session but A doesn't strongly support or contradict B.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Claim A describes Pia's activity and mood while working on stage, which has no bearing on relative ages of Dara and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "A describes Pia preparing the stage before or during rehearsal, which is consistent with a rehearsal that later covers most scenes twice; the two describe different moments of what could be the same event without conflict.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Pia's cheerful humming while working on stage marks suggests a positive, productive rehearsal atmosphere, which makes it somewhat more plausible the director would be pleased, though the two facts are only loosely connected.",
+   "relation": "supports",
+   "confidence": 0.35
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "A describes Pia preparing the stage (taping marks) while humming, an activity typically done before or during a session, while B describes people leaving after a session ends. Both could occur on the same occasion at different times, but A being mid-preparation sits a bit oddly with B's wrap-up scene without more context.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A concerns Ana's role as treasurer while claim B concerns the order in which Bo and Pia arrived; the two statements share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Ana's role as treasurer has no logical or evidential bearing on Bo carrying a bag of clinking props; the two claims concern different people and unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A concerns Ana's role as treasurer, while claim B concerns the timing of Dara's and Bo's arrival. These claims involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "The claim about Ana's role as treasurer has no logical or thematic connection to Dara's physical state after being outside; they involve different people and unrelated subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "The claim about Ana being treasurer concerns an organizational role, while the claim about Dara nodding to the stage manager describes an unrelated social interaction; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "These claims describe unrelated facts about different people and different roles/activities, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Ana's role as treasurer has no logical or thematic connection to a director calling for a warm up before a rehearsal scene.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "The claims describe unrelated situations involving different roles and activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Being treasurer says nothing about Ana's location or activity during a rehearsal; the two claims describe unrelated aspects of her role and actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Being treasurer is an organizational role and has no bearing on whether Ana glanced at a clock; the two claims describe unrelated aspects of Ana.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "The claim that Ana is treasurer concerns an organizational role and has no bearing on relative ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Ana's role as treasurer has no bearing on how a rehearsal proceeded through its scenes; these describe unrelated domains.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Ana being treasurer has no connection to actors, lines, or a director's blocking corrections; the two claims concern entirely different contexts and people.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Ana's role as treasurer has no logical or topical connection to the relative ages of Bo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Ana's role as treasurer has no bearing on Pia practicing choreography during a break; the two claims involve different people and unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Ana being treasurer and Gia checking sound levels involve unrelated people and activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Claim A concerns Ana's organizational role while claim B describes the atmosphere during some recording or filming session; the two share no common subject matter or implied causal link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "The claim about Ana being treasurer concerns an organizational role, while the claim about Dara and Pia concerns relative age; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Ana's role as treasurer has no logical or topical connection to how many times a group rehearsed scenes; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Ana's role as treasurer has no stated connection to the director's reaction to progress; nothing links the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Claim A states a role for Ana, while claim B describes a general group departure scene; neither has bearing on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A concerns the timing of Bo's arrival relative to Pia, while claim B describes what Bo was carrying. Neither statement bears on the truth or likelihood of the other; they simply describe different aspects of the same event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "A establishes Bo's arrival relative to Pia, but says nothing about Dara's arrival relative to Bo, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A concerns the order and timing of Bo and Pia arriving, while claim B concerns Dara's physical state; they involve different people and no shared detail links them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A concerns the timing of Bo's arrival relative to Pia, while claim B describes an unrelated action by Dara near the stage wings. There is no shared subject, timing dependency, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A concerns the arrival order of Bo and Pia, while claim B concerns who drove the minibus. These involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A describes arrival order of two people while claim B describes a director's instruction about warm-up before rehearsal; they concern different events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Claim A concerns Bo and Pia's arrival order, while claim B describes cast members stretching on stage; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Claim A describes Bo's arrival relative to Pia, while claim B describes Ana's independent activity near the lighting board. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A concerns the timing of Bo's arrival relative to Pia, while claim B describes Ana's habit of glancing at a clock. There is no logical or contextual connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns the order in which Bo and Pia arrived somewhere, while claim B concerns relative ages between Dara and Bo. These are different dimensions (arrival order vs. age) with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "A describes the order of two people's arrivals, which has no logical or causal bearing on the pace of a rehearsal's opening scenes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A describes Bo and Pia's arrival order, which has no bearing on the actors and director rehearsing scene, unrelated subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A describes the order of arrival, while claim B describes a comparison of ages. These are independent facts with no logical connection between temporal arrival order and relative age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "A states an arrival order/timing for Bo relative to Pia, while B describes an unrelated activity Pia did during a break; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Claim A concerns the arrival order of Bo and Pia, while claim B concerns Gia checking sound levels; they share no common subject or event, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Claim A describes an unrelated fact about arrival order, while claim B describes the general atmosphere and mood of a room; neither implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Claim A concerns the order in which Bo and Pia arrived, while claim B concerns the relative ages of Dara and Pia. These involve different people and different attributes (arrival timing vs. age), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Claim A describes an arrival order of two people, while claim B describes the outcome of a rehearsal process; neither implies anything about the other's content or timing in a meaningful way.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "The order in which Bo and Pia arrived has no bearing on the director's assessment of progress; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Claim A describes an arrival event while claim B describes a later departure scene; they could both occur on the same occasion in sequence, so A neither strongly supports nor contradicts B, and there's no notable tension between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A describes a detail about Bo's props while B concerns Dara's arrival timing relative to Bo; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A describes Bo's bag of props while claim B describes Dara's reaction to cold weather; the two statements concern different people and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A describes Bo carrying props, while claim B describes Dara greeting a stage manager; the two events involve different people and actions with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Claim A describes Bo carrying a bag of props, while claim B describes Gia driving a minibus; these involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Both describe plausible preparations before a performance, but carrying props and calling for a warm-up are independent actions with no causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "A describes Bo carrying a prop bag while walking, but says nothing about the cast's stretching activity on stage; the two events are not clearly connected in time or causally.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "A describes Bo's action and props, while B describes Ana's separate activity near the lighting board; they involve different people and actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "The two claims describe unrelated actions by different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A describes Bo carrying noisy props, which has no bearing on relative ages of Dara and Bo; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Carrying a clinking bag of props is a minor detail about Bo's movement and doesn't inform the pace at which the rehearsal proceeded through its scenes.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "A describes Bo carrying a prop bag, while B describes a rehearsal scene with actors and a director; the two describe different aspects of what seems like a related setting (a theater production) but neither confirms nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.72
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Carrying props that clink has no bearing on Bo's relative age to Pia; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "A describes Bo carrying props while B describes Pia practicing dance moves during a break; these involve different people and activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Both claims describe unrelated activities happening possibly at the same event, but there's no direct causal or logical connection between Bo's bag of clinking props and Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Claim A describes Bo carrying a bag of clinking props, which is unrelated to the described energy, laughter, and dropped lines in the room described in claim B; no causal or logical connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Claim A concerns Bo carrying a bag of props, while claim B concerns the relative ages of Dara and Pia. There is no logical or contextual connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Bo carrying a clinking prop bag is a minor detail unrelated to whether the rehearsal group ran through scenes twice; no logical or causal connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Carrying a clinking bag of props has no logical bearing on whether the director was pleased with progress; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "A describes Bo carrying a clinking bag of props, which is consistent with everyone gathering their things and leaving; B doesn't confirm or deny anything about A specifically, and the two describe compatible but largely independent details of the same scene.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "A merely states Dara's arrival time relative to Bo, which neither confirms nor denies whether Dara was still cold from outside; the two describe unrelated aspects of Dara's arrival.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "A places Dara's arrival relative to Bo but says nothing about Dara's subsequent actions or interactions with a stage manager; the two claims describe different aspects of the scene and don't clearly reinforce or conflict.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A concerns the timing of Dara's arrival relative to Bo, while claim B concerns who drove the minibus. These involve different people and different subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A describes the relative arrival order of Dara and Bo, while claim B describes an unrelated action by the director about a warm up. Neither statement bears logically on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A describes the order and timing of Dara's and Bo's appearance, while claim B describes the cast stretching across the stage; neither event informs or depends on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A describes the timing of Dara's arrival relative to Bo, while claim B describes Ana's location and activity. They involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A concerns the timing of Dara's arrival relative to Bo, while claim B concerns Ana's habit of glancing at a clock. There is no logical or causal connection between these two statements as written.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Appearing after Bo in some sequence of events is about timing of arrival, not age; there's no logical connection between order of appearance and relative age.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "A describes when Dara arrived relative to Bo, which has no bearing on the pace of the rehearsal's opening scenes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Claim A describes a timing relationship between Dara and Bo's arrivals, while claim B describes an unrelated scene about actors rehearsing with a director. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A concerns the timing of Dara's arrival relative to Bo, while claim B concerns the relative ages of Bo and Pia; these involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A concerns the timing of Dara's arrival relative to Bo, while claim B describes Pia practicing choreography during a break; they involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Claim A concerns the timing of Dara's arrival relative to Bo, while claim B concerns Gia checking sound levels for a segment; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Claim A describes the timing of Dara's arrival relative to Bo, while claim B describes the general mood and energy in the room. These concern different aspects of the scene with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "A concerns the timing of Dara's appearance relative to Bo, while B concerns Dara's age relative to Pia. These involve different people and different dimensions (arrival order vs. age), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Claim A concerns the order and timing of Dara's and Bo's arrival, while claim B concerns the progress made during a rehearsal. There is no shared subject matter or implied causal link between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Claim A concerns arrival timing of Dara relative to Bo, while claim B concerns the director's emotional reaction to progress; they involve unrelated subjects and content.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Claim A describes an arrival sequence near the start of a gathering, while claim B describes the end of the gathering as people leave; they concern different points in time and are not directly connected by content.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Being cold and greeting someone are independent actions; Dara could easily do both nearly simultaneously without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Claim A describes Dara's physical state after being outside, while claim B is about Gia driving a minibus. There is no logical or causal connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Dara feeling cold and shaky fits naturally with the director calling for a warm-up before the scene, as a warm-up would help address that cold; the claims are plausibly connected in the same scenario.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A describes Dara's physical state after coming in from the cold, while claim B describes the cast's general stretching activity on stage; neither statement implies or excludes the other since they concern different subjects and actions.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A describes Dara's physical state after coming in from the cold, while claim B describes an unrelated action by a different person (Ana) at the lighting board. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A describes Dara's physical state after coming in from the cold, while claim B describes an unrelated action by a different person (Ana) involving a clock. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "A describes Dara's physical state after being outside in the cold, which has no bearing on relative ages between Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "A describes Dara's physical state (cold from outside), while B describes the general pace of the rehearsal as a whole; these concern different subjects and don't directly bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A describes Dara's physical state after being outside, while claim B describes actors and a director rehearsing a scene; nothing in A bears on the events or truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A concerns Dara's physical state after being outside in the cold, while claim B concerns a relative age comparison between two unrelated individuals, Bo and Pia. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A describes Dara's physical state after coming in from cold weather, while claim B describes Pia practicing choreography during a break; the two involve different people and unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Claim A describes Dara's physical state after being outside, while claim B describes an unrelated action by a different person (Gia) regarding sound levels. There is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Dara's lingering cold is a minor personal detail that doesn't inherently affect the overall energy of the room described in B; they concern different aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Claim A describes Dara's physical state after being outside in the cold, which has no bearing on a relative age comparison between Dara and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Claim A describes Dara's physical state from being outside, while claim B describes the overall progress of a rehearsal. There's no clear logical connection between Dara shaking off cold and the group's rehearsal coverage.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Claim A describes Dara's physical state after being outside, while claim B describes the director's reaction to progress; the two involve different subjects and unrelated matters with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "A shows Dara was recently outside in cold weather, while B describes a group heading outside into 'the night air' after a session. These could be consistent if Dara was already present indoors and the group is now leaving into similar cold conditions, but the claims don't clearly establish the same timeframe or event, so they are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "The two claims describe unrelated actions involving different people, one about a greeting near a stage and the other about driving a vehicle, with no shared context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Both describe activity backstage/onstage before a rehearsal begins, but A's nod to the stage manager doesn't causally or logically bear on the director's decision to call for a warm up.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "A describes Dara greeting the stage manager near the wings, while B describes the cast stretching across the stage; these are minor, compatible backstage activities with no direct logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Both claims describe different people in different locations doing unrelated actions; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "The two claims describe different people performing unrelated actions with no indication of shared context or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A describes a specific action Dara performed near the stage wings, while claim B is an unrelated fact about relative age between Dara and Bo. Neither claim provides evidence bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "A describes a brief personal interaction near the wings, which has no clear bearing on the pace or content of the rehearsal's opening scenes described in B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Both plausibly occur in a theatre rehearsal setting, but A's mention of Dara greeting a stage manager does not logically bear on whether actors elsewhere are rehearsing lines under a director's guidance.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A describes a small social interaction near a stage, while claim B is an unrelated statement about relative ages of two different people not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Both claims describe minor backstage activities that could plausibly occur in the same setting or timeframe, but neither entails or conflicts with the other; they concern different people and actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "These describe different people doing unrelated actions in what may be the same general setting (a stage/theater), but neither claim's truth affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "A describes a small local interaction backstage, while B describes the general mood of the room; neither implies nor conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Claim A describes a brief backstage social action, which has no bearing on relative ages of Dara and Pia; no shared content links them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "A merely places Dara greeting the stage manager near the wings, which is consistent with a rehearsal taking place, but it neither confirms nor implies how thoroughly the scenes were rehearsed. The two claims describe different, largely independent events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "A describes a small interpersonal action backstage, while B describes the director's emotional reaction to progress; neither event implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Both describe plausible moments possibly from the same event, but neither entails or conflicts with the other; A is a small isolated gesture while B describes a group dispersing afterward.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Driving a minibus and calling for a warm up before a scene appear to be unrelated events involving possibly different people and contexts; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Driving a minibus and a cast stretching on stage describe unrelated events with no shared entities or logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "The two claims describe different people doing unrelated activities in what appear to be separate contexts (driving a minibus vs. standing near a lighting board), with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "There is no stated connection between who drove the minibus and Ana's glancing at a clock; they appear to be independent facts about different people and actions.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "The two claims involve unrelated subjects and topics; who drove the minibus has no bearing on relative ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Gia driving a minibus has no apparent bearing on how a rehearsal proceeded through its opening scenes; the two describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "The two claims describe unrelated activities involving different subjects (Gia driving a minibus vs actors rehearsing under a director) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "The claims involve entirely different subjects (driving a minibus vs. relative ages of two people) with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "The two claims describe unrelated activities by different people with no shared context or dependency mentioned.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Driving a minibus and checking sound levels are different activities that could plausibly happen at different times without conflict; neither strongly implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Claim A concerns Gia driving a minibus, while claim B describes energy and mood during some filming or recording session with takes and lines. These describe unrelated contexts with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "The claim about Gia driving the minibus has no bearing on relative ages of Dara and Pia; they involve different people and unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Gia driving the minibus is unrelated to the details of how the rehearsal proceeded or what was accomplished during it; no logical or causal connection is stated or implied.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Gia driving the minibus has no apparent connection to the director's feelings about progress; these describe unrelated events without shared context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "A states who drove the minibus, while B describes a group gathering belongings and making plans before leaving; neither statement implies or conflicts with the other, though both could plausibly be part of the same scene.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "A warm-up call before starting a scene naturally leads the cast to stretch and spread out to prepare, making B a plausible and expected consequence of A.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "A describes the director initiating a warm-up before filming, while B describes Ana's independent activity near the lighting board; they can easily co-occur during the same pre-scene period without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "A describes the director's action before filming begins, while B describes Ana glancing at a clock; these events are independent and neither makes the other more or less likely based solely on their content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns a director calling for a warm up before filming a scene, while claim B concerns a comparison of ages between two people. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "A quick warm up before starting suggests the director wanted an efficient session, making a brisk pace through the opening scenes plausible and consistent.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "A describes a brief warm-up before the first scene begins, while B describes actors rehearsing and receiving corrections during a scene, suggesting a natural progression from warm-up into active rehearsal work.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "The director's warm-up call before filming has no bearing on the relative ages of Bo and Pia; these are entirely separate topics with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "A warm up before rehearsal could plausibly involve or coincide with a break during which someone practices a tricky move, but the claims describe different, only loosely connected moments (warm up vs. a break), so there's no strong logical link.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Both describe routine preparatory activities that could plausibly happen around the same time on a set or production, but neither claim provides information that affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "A warm-up called by the director could plausibly set a relaxed, energetic tone that continues into the shoot, but this is a loose causal inference rather than direct support or contradiction.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "The director's instructions about a warm-up before filming has no logical or thematic connection to a claim about relative ages between two people.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "A describes a warm-up before starting scene work, which is consistent with a productive rehearsal covering many scenes twice by the end; A sets up the beginning of the rehearsal while B describes its outcome, and they fit together naturally.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "A quick, orderly start to the shoot suggests things went smoothly, which makes it somewhat more plausible the director was later pleased with progress, though the two events are only loosely connected.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "A describes the start of a session (warming up before the first scene), while B describes the end of a session (packing up and leaving). Both can be true of the same overall event but at different times, so they don't contradict; they're largely unrelated in content though loosely consistent with a single rehearsal day.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "A describes the cast stretching on stage while B describes Ana at the lighting board reviewing notes; Ana could be a separate crew member not stretching with the cast, so both can hold simultaneously without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "The cast stretching across the stage is unrelated to Ana's habit of glancing at the clock; neither statement implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "The claim about the cast spreading out to stretch on stage has no connection to the relative ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Stretching before rehearsal is a warm-up activity that doesn't directly indicate the pace of the rehearsal itself; the two events are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "A describes actors spread out stretching, which is different from actively rehearsing lines with the director; both could occur at different points during rehearsal, but doing them simultaneously is awkward.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "The claim about the cast stretching across the stage has no bearing on the relative ages of Bo and Pia; these are unconnected facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Both describe plausible activities during a break in rehearsal; spreading out to stretch and Pia practicing choreography in the corner can easily occur at the same time without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Both describe activities that could occur simultaneously during a rehearsal or show preparation, but neither implies the other; they concern different people and tasks.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A describes a stretching break spreading across the stage, while B describes ongoing high energy with laughter and takes; these could easily coexist as part of the same rehearsal or shoot session, with stretching being a brief part of a lively atmosphere.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "The two claims describe entirely unrelated situations: one is about a cast stretching on stage, the other about a relative age comparison between two people. There is no logical or thematic connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "A describes a stretching warm-up before rehearsal, while B describes the outcome after rehearsal wrapped up; both can easily be part of the same rehearsal session with no conflict.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "The cast stretching is a routine activity that neither supports nor contradicts the director's apparent satisfaction with progress; the two describe unrelated aspects of a rehearsal scene.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "A describes the cast beginning a warm-up or activity spread across the stage, while B describes them wrapping up and leaving; these seem to depict different points in time (before vs. after a session), so both could be true sequentially without contradiction, though they suggest slightly different moments in the same event.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Standing near the lighting board and reviewing notes is compatible with occasionally glancing at a wall clock; the two activities can easily co-occur without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A describes Ana's location and activity during a rehearsal, while claim B is an unrelated statement about the relative ages of two different people not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Ana reviewing notes from a previous run suggests preparation for the current rehearsal, which could plausibly correlate with a smoother, brisker run-through, but the two claims describe different aspects (her location/activity vs. the pace of the rehearsal) without a direct logical link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Both claims describe plausible simultaneous parts of a rehearsal scene, but A's content about Ana reviewing notes near the lighting board doesn't specifically bear on whether actors were rehearsing lines with director corrections.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A describes Ana's location and activity backstage, while claim B compares the ages of Bo and Pia. There is no shared subject or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Both describe simultaneous but independent activities during what seems to be a rehearsal break; A's content doesn't bear on B's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Both claims describe different people performing separate technical tasks, possibly around the same event, but neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Both describe the same rehearsal/production setting but focus on different aspects (Ana's individual activity vs. overall room atmosphere); they are compatible but neither implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Claim A describes Ana's location and activity during a rehearsal, while claim B compares the ages of two unrelated people, Dara and Pia. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "A places Ana reviewing notes near the lighting board during what seems to be a rehearsal context, while B describes the overall outcome of that rehearsal. They are compatible and loosely related through the shared rehearsal setting, but A does not specifically support or contradict the claim about scenes being run twice.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "A describes Ana's location and activity but says nothing about the director's mood or how progress is going, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "A shows Ana focused on notes near the lighting board, while B describes people wrapping up and leaving; both could occur at slightly different moments in the same rehearsal wrap-up, so they are compatible rather than contradictory, though A doesn't particularly support or contradict B.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A describes Ana's behavior with a clock, while claim B compares ages between Dara and Bo. These involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Ana glancing at the clock occasionally could suggest mild impatience or time-checking, which sits a bit awkwardly with the rehearsal being brisk, but both can easily be true together without real contradiction.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A describes Ana glancing at a clock, while claim B describes actors rehearsing under a director's guidance. Neither statement provides information that affects the likelihood of the other; they appear to be unrelated observations from possibly different scenes or contexts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A describes Ana's behavior with a clock, while claim B is an unrelated statement about relative ages of Bo and Pia. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "A describes Ana's behavior of glancing at a clock, while B describes Pia practicing choreography during a break; these involve different people and actions with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "These describe two different people doing unrelated actions with no stated connection between the clock-glancing and the sound-level checking.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Ana glancing at the clock occasionally suggests she may be growing bored or watching the time, which sits somewhat awkwardly with a claim that the whole room's energy stayed uniformly high, though both could still be true.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Claim A describes Ana's behavior regarding a clock, while claim B is about relative ages of Dara and Pia. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Ana glancing occasionally at the clock could suggest impatience or time awareness during a long session, which is loosely consistent with a thorough, lengthy rehearsal, but the two claims describe different aspects (her behavior vs. the rehearsal's outcome) without direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Ana glancing at the clock is about her own behavior and has no bearing on the director's mood or perception of progress; the two events are independent.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Ana glancing at the clock could suggest time-awareness that fits with a session ending, offering weak contextual support, but the claims describe different actions and are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "The claims concern entirely different subjects (relative ages of two people vs. the pace of a rehearsal) with no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A concerns relative ages of Dara and Bo, while claim B describes actors and a director rehearsing; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A only relates Dara's age to Bo's; it says nothing about Pia, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns the relative ages of Dara and Bo, while claim B describes Pia practicing choreography during a break. The two claims involve different people and unrelated topics, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "The two claims concern entirely different subjects (relative ages of Dara and Bo versus Gia's sound-check activity) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A concerns relative ages of two people, while claim B describes the atmosphere and mood during some filming session. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Knowing Dara is older than Bo tells us nothing about Dara's age relative to Pia, since Bo and Pia are different people with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Claim A concerns relative ages of two people, while claim B describes rehearsal progress on scenes; there is no shared content connecting them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns a director's reaction to progress on some unspecified matter; there is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Claim A is a simple age comparison between two individuals, while claim B describes an unrelated group event about ending a session and leaving. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "B describes typical rehearsal activity (line delivery, blocking adjustments, director feedback) that is consistent with and plausibly part of a rehearsal moving briskly through opening scenes; it elaborates on how that brisk progress occurred.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "The pace of a rehearsal has no bearing on the relative ages of two people; there's no logical or contextual connection given.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "A brisk rehearsal implies limited breaks, but a short break during it is plausible and doesn't conflict with overall pace; the two can coexist without tension, though they are largely independent details.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "A brisk rehearsal pace could plausibly prompt someone to prepare for the upcoming segment, but the claims describe largely independent activities without a direct causal or logical link stated.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "A brisk-moving rehearsal is consistent with and plausibly contributes to a high-energy, lighthearted atmosphere described in B; the two naturally reinforce each other.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "The rehearsal's pacing has no logical or causal connection to the relative ages of Dara and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "A brisk pace through the opening scenes makes it plausible that the group covered a lot of ground, supporting the idea that they got through nearly every scene twice by the end.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "A brisk, smooth rehearsal of the opening scenes suggests good progress, which plausibly makes the director's apparent pleasure more likely, though it's not guaranteed.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "A brisk rehearsal of opening scenes suggests things went smoothly, which is compatible with an orderly wrap-up where people pack up and discuss next steps; there's no direct causal or logical link, but the smooth pacing plausibly supports a calm, timely conclusion described in B.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Claim A describes a scene of actors rehearsing with a director, while claim B is an unrelated statement about relative ages of two people not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Both describe activities that plausibly occur during rehearsal, but A depicts active directing while B occurs during a break, and there's no explicit link between the two events; they could simply be separate moments in the same rehearsal session.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Both describe activities that could occur during the same production or rehearsal session, but neither entails or affects the other; they appear to be independent, concurrent tasks.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Both describe a lively, collaborative rehearsal or filming atmosphere; A's ongoing director corrections plausibly coexist with B's high-energy, laughter-filled mood, and neither contradicts the other.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Claim A describes an unrelated scene about actors, directing, and blocking, while claim B is a comparative age statement about two unrelated individuals. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "A describes ongoing rehearsal activity (actors performing, director correcting), which is consistent with and supports the idea that a rehearsal was taking place and progressing through scenes, as described in B.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "A depicts the director actively giving corrections during rehearsal, which is consistent with normal directorial engagement and doesn't strongly indicate satisfaction or dissatisfaction; offering corrections could accompany either pleasure or displeasure with progress.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "A describes an active rehearsal in progress while B describes the session wrapping up and people leaving; B plausibly follows A as the next stage of the same event, so A mildly supports the plausibility of B as a subsequent scene rather than conflicting with it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "A states a purely relative age fact about Bo and Pia, which has no bearing on whether Pia practiced choreography during a break; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Claim A concerns the relative ages of Bo and Pia, while claim B concerns Gia checking sound levels; the two share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Claim A concerns relative ages of Bo and Pia, while claim B describes the atmosphere during some filming session; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Both claims independently compare different people's ages to Pia's age. Bo being older than Pia says nothing about Dara's age relative to Pia, so there is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns a rehearsal covering scenes twice. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Claim A concerns relative ages of Bo and Pia, while claim B concerns a director's reaction to progress. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Claim A is about relative ages of two people, while claim B describes a group finishing a session and leaving; they share no common subject matter or implication.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "These describe two different people doing unrelated tasks during what seems to be the same break; neither action bears on the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Pia practicing choreography during a break is a separate, small activity that neither confirms nor denies the general high-energy, laughter-filled atmosphere described in B; they can coexist without one affecting the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "A describes Pia practicing choreography during a break, which has no bearing on the relative ages of Dara and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Pia practicing a tricky bit during a break is a minor event that neither confirms nor conflicts with the overall progress made by the group during the rehearsal.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Pia's diligent practice of a tricky choreography section could plausibly contribute to visible progress that pleases the director, but the claims describe different people and events without a direct stated link.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "A describes Pia using a break to practice, while B describes an ending scene where people leave for the night; these could occur in sequence within the same rehearsal session without conflict, though A implies mid-session activity and B implies the session's end, making them loosely related but not directly supportive or contradictory.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "A describes a technical task Gia performed, while B describes the general mood in the room; neither directly implies or conflicts with the other, though both could plausibly occur in the same scene.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Checking sound levels for a segment has no logical or topical connection to a claim about relative ages of Dara and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Checking sound levels for a segment is a routine production task that neither confirms nor conflicts with how many times scenes were rehearsed; they occur in the same general setting but have no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Gia checking sound levels suggests the production is proceeding smoothly, which could plausibly contribute to the director being pleased, but the two events involve different people and are not directly tied to each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "A implies preparation for a continuing/upcoming segment while B describes people wrapping up and leaving for the night; both could occur if A happens before B in a different phase, but they sit awkwardly together since A suggests continuation and B suggests ending.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Claim A describes the atmosphere and mood during filming, while claim B is an unrelated statement about relative ages of two people not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "High energy and frequent laughter could plausibly support sustained productivity, but it could also suggest the group was distracted and less efficient; the connection is not strong enough to be direct support, though it leans mildly positive.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "A high-energy, good-humored atmosphere with productive takes plausibly reflects positively on the shoot's progress, making the director's satisfaction more likely, though A does not directly describe the director's reaction.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "A describes sustained high energy and camaraderie during the session, while B describes an orderly wrap-up afterward; both can be true as the session ends and people part on good terms, though the shift from energetic laughter to quiet dispersal is a mild contrast.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Claim A is about relative ages of two people, while claim B describes a rehearsal covering scenes. They share no subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "These claims involve entirely different subjects (relative ages of Dara and Pia versus a director's emotional reaction to progress) with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Claim A concerns relative ages of two individuals, while claim B describes a group ending a gathering; neither content bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Successfully rehearsing nearly every scene twice suggests good progress, which makes the director's satisfaction more plausible, though it doesn't guarantee it.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "A describes the rehearsal ending after thorough run-throughs, which naturally sets up the wrap-up actions described in B, such as packing up and leaving; the two events fit a plausible sequential narrative.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "A describes the director's positive reaction to progress, while B describes people wrapping up and leaving with plans for next time; both plausibly occur at the end of the same meeting or rehearsal without conflict, though A doesn't directly cause or predict B.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia",
+     "she"
+    ]
+   },
+   {
+    "id": "bo",
+    "mentions": [
+     "Bo"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana"
+    ]
+   },
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia"
+    ]
+   },
+   {
+    "id": "director",
+    "mentions": [
+     "The director"
+    ]
+   },
+   {
+    "id": "stage_manager",
+    "mentions": [
+     "the stage manager"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "subject": "bo",
+    "comparative": "after",
+    "object": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "subject": "dara",
+    "comparative": "after",
+    "object": "bo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "age",
+    "subject": "dara",
+    "comparative": "older than",
+    "object": "bo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "age",
+    "subject": "bo",
+    "comparative": "older than",
+    "object": "pia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 20,
+    "attribute": "age",
+    "subject": "dara",
+    "comparative": "older than",
+    "object": "pia",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 0,
+    "attribute": "arrival_time",
+    "entity": "pia",
+    "comparative": "first",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 7,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    1,
+    14
+   ],
+   [
+    10,
+    15
+   ],
+   [
+    12,
+    19
+   ],
+   [
+    18,
+    23
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 0,
+     "attribute": "arrival_time",
+     "entity": "pia",
+     "extreme": "min",
+     "edges": 2
+    }
+   ],
+   "extreme_edges": 2,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 20,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   2
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   6.656013887802288e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   8.38164711797325e-32,
+   8.628166150854817e-32,
+   0.0,
+   0.0,
+   0.0,
+   6.409494854920721e-32,
+   6.162975822039155e-32,
+   0.0,
+   0.0,
+   0.0,
+   1.8488927466117464e-31,
+   0.0,
+   2.0707598762051556e-31,
+   7.642090019328551e-32,
+   6.162975822039155e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 22,
+    "residual": 1.7256332301709632e-32
+   },
+   {
+    "a": 6,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 9,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 19,
+    "residual": 1.9721522630525296e-32
+   },
+   {
+    "a": 9,
+    "b": 21,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 14,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 19,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 14,
+    "b": 21,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 14,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 19,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 15,
+    "b": 21,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 19,
+    "b": 22,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 19,
+    "b": 23,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "residual": 3.4512664603419264e-32
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 6582950,
+   "output_tokens": 606942,
+   "thinking_tokens": 0,
+   "calls": 20082,
+   "api_calls": 6245,
+   "cache_hits": 13837,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 18.954427000000056,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 156960,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 7189892,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    6,
+    9,
+    10,
+    14,
+    15,
+    19,
+    21,
+    22,
+    23
+   ],
+   [
+    2
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ],
+   [
+    18
+   ],
+   [
+    20
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 1,
+    "b": 14,
+    "rationale": "Pia humming casually while taping marks suggests a relaxed, unhurried atmosphere during preparation, which sits somewhat awkwardly with the rehearsal proceeding briskly, though both could occur if her task was separate from the scene pacing.",
+    "confidence": 0.35
+   },
+   {
+    "a": 10,
+    "b": 15,
+    "rationale": "A describes actors spread out stretching, which is different from actively rehearsing lines with the director; both could occur at different points during rehearsal, but doing them simultaneously is awkward.",
+    "confidence": 0.55
+   },
+   {
+    "a": 12,
+    "b": 19,
+    "rationale": "Ana glancing at the clock occasionally suggests she may be growing bored or watching the time, which sits somewhat awkwardly with a claim that the whole room's energy stayed uniformly high, though both could still be true.",
+    "confidence": 0.45
+   },
+   {
+    "a": 18,
+    "b": 23,
+    "rationale": "A implies preparation for a continuing/upcoming segment while B describes people wrapping up and leaving for the night; both could occur if A happens before B in a different phase, but they sit awkwardly together since A suggests continuation and B suggests ending.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 3,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "bo",
+   "b": "pia",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 5,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "dara",
+   "b": "bo",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "dara",
+   "b": "bo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "bo",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 20,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "dara",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 0,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "bo",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 0,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "dara",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  }
+ ]
+}

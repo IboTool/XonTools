@@ -1,0 +1,26 @@
+{
+ "request": "607544c53adf808aff896724ff30c6d10605d8905d48e13b58f5157cb7390d01",
+ "tag": "text-4044d0c885f3-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Nell and Zeno worked different shifts.",
+     "Zeno and Alma worked different shifts.",
+     "Nell and Alma worked different shifts.",
+     "The shop ran two shifts."
+    ],
+    "explanation": "With only two shifts, if Nell and Zeno differ and Zeno and Alma differ, then Nell and Alma must be on the same shift, contradicting the statement that Nell and Alma worked different shifts."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1114,
+  "output_tokens": 155,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,180 @@
+{
+ "request": "1a8ac436f939a58d2b4bf882c3c6ea98ab0646e4d317d0130e62f409edf417c8",
+ "tag": "text-290dea09a96f-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "lena",
+    "mentions": [
+     "Lena",
+     "the team captain",
+     "her"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "pianist",
+    "mentions": [
+     "The pianist"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team_captain",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses."
+   },
+   {
+    "key": "stage_presence_rank",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "pia",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 4,
+    "attribute": "team_captain",
+    "kind": "same",
+    "a": "lena",
+    "b": "team_captain",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "pia",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 9,
+    "attribute": "team_captain",
+    "kind": "different",
+    "a": "lena",
+    "b": "team_captain",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "lena",
+    "b": "pia",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "finn",
+    "b": "lena",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 14,
+    "attribute": "house",
+    "kind": "different",
+    "a": "pia",
+    "b": "vik",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "arrival_time",
+    "kind": "same",
+    "a": "dev",
+    "b": "scheduled_time",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 19,
+    "attribute": "house",
+    "kind": "different",
+    "a": "vik",
+    "b": "finn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 23,
+    "attribute": "house",
+    "kind": "different",
+    "a": "pia",
+    "b": "finn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 26,
+    "attribute": "stage_presence_rank",
+    "kind": "greater",
+    "a": "finn",
+    "b": "vik",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 27,
+    "attribute": "stage_presence_rank",
+    "kind": "greater",
+    "a": "finn",
+    "b": "vik",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2247,
+  "output_tokens": 837,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

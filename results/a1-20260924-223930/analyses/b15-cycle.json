@@ -1,0 +1,673 @@
+{
+ "label": "b15-cycle",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-facecbd12ce8",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Uma is the team captain.",
+   "span": "Assume that Uma is the team captain.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Milo arrived before Mina.",
+   "span": "Milo arrived before Mina.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Mina arrived before Gia.",
+   "span": "Mina arrived before Gia.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Gia is younger than Uma by almost a full year.",
+   "span": "Gia is younger than Uma by almost a full year",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Gia and Uma worked on a shared display about renewable energy sources for part of the semester.",
+   "span": "the two of them worked on a shared display about renewable energy sources for part of the semester",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Wren brought the first-aid kit.",
+   "span": "Wren brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Uma stands slightly taller than Milo.",
+   "span": "Uma stands slightly taller than Milo",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Uma hung the banner above their group table without needing a stool.",
+   "span": "which made it easier for her to hang the banner above their group table without needing a stool",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Gia arrived before Milo.",
+   "span": "Gia arrived before Milo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Mina ranked higher than Wren in last years regional competition.",
+   "span": "Mina ranked higher than Wren in last years regional competition",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Uma being team captain has no bearing on arrival order of Milo and Mina.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Team captaincy is unrelated to Mina and Gia's arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Being team captain doesn't relate to relative ages of Gia and Uma.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Uma being captain doesn't establish or preclude a shared display project with Gia.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Uma's captaincy has no connection to Wren bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Being captain doesn't imply anything about height compared to Milo.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Uma being captain could plausibly support taking initiative like hanging a banner, but it's not a strong logical link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Team captaincy is unrelated to Gia and Milo's arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Uma being captain has no bearing on Mina's competition ranking versus Wren.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Milo arriving before Mina, combined with Mina before Gia, is consistent but A alone doesn't determine B; however A supports the possibility of the full order without contradicting B.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Arrival order of Milo and Mina has no bearing on age difference between Gia and Uma.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Arrival timing of Milo and Mina doesn't relate to Gia and Uma's shared project.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Milo arriving before Mina has no connection to Wren bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Arrival order has no bearing on height comparison between Uma and Milo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Milo and Mina's arrival order doesn't relate to Uma hanging a banner.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Milo arriving before Mina doesn't determine or contradict Gia arriving before Milo, since they involve different orderings that could coexist.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Arrival order of Milo and Mina is unrelated to Mina's competition ranking versus Wren.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Mina arriving before Gia has no bearing on the age difference between Gia and Uma.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Arrival order of Mina and Gia doesn't relate to Gia and Uma's shared display project.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Mina arriving before Gia has no connection to Wren bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Arrival order has no bearing on relative height.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Arrival order of Mina and Gia doesn't affect Uma's banner-hanging ability.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Mina arriving before Gia says nothing about Gia's arrival relative to Milo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Arrival order and competition ranking are unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Age difference between Gia and Uma has no bearing on whether they worked on a shared display.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Gia and Uma's age difference has nothing to do with who brought the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Age difference does not imply anything about height comparison.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Age difference between Gia and Uma is unrelated to Uma's ability to hang a banner.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Age comparison between Gia and Uma has no connection to arrival order between Gia and Milo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Age difference between Gia and Uma is unrelated to Mina's competition ranking against Wren.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Working on a shared display is unrelated to who brought the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Collaborating on a project doesn't indicate relative height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Gia and Uma's shared work doesn't directly indicate whether Uma needed a stool to hang a banner, though it's plausible context, not evidence.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Working together on a display is unrelated to arrival order with Milo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Gia and Uma's shared project has no bearing on Mina's ranking versus Wren.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Bringing a first-aid kit is unrelated to height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Wren bringing a first-aid kit has no bearing on Uma hanging a banner.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Wren's first-aid kit has nothing to do with Gia and Milo's arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Bringing a first-aid kit doesn't relate to competition ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Uma being taller than Milo supports the plausibility of her reaching high enough to hang a banner without a stool.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Uma's height relative to Milo has no bearing on the order of Gia and Milo's arrival.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Uma's height relative to Milo has no connection to Mina and Wren's competition ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Uma hanging a banner without a stool has no logical connection to arrival order of Gia and Milo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Uma's ability to hang a banner has no relation to a separate competition ranking between Mina and Wren.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Gia arriving before Milo has no bearing on Mina and Wren's competition standings.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina"
+    ]
+   },
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia"
+    ]
+   },
+   {
+    "id": "wren",
+    "mentions": [
+     "Wren"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "mina",
+    "b": "milo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gia",
+    "b": "mina",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 3,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "uma",
+    "b": "gia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "uma",
+    "b": "milo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "milo",
+    "b": "gia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "rank",
+    "kind": "greater",
+    "a": "mina",
+    "b": "wren",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 10,
+  "pairs_requested": 45,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 6,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 10,
+  "n_edges": 1,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "arrival_time",
+    "entities": [
+     "mina",
+     "milo",
+     "gia"
+    ],
+    "relations": [
+     0,
+     4,
+     1
+    ],
+    "claim_ids": [
+     1,
+     2,
+     8
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 803,
+   "api_calls": 0,
+   "cache_hits": 803,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 7548523
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "arrival_time",
+    "entities": [
+     "mina",
+     "milo",
+     "gia"
+    ],
+    "relations": [
+     0,
+     4,
+     1
+    ],
+    "claim_ids": [
+     1,
+     2,
+     8
+    ],
+    "min_confidence": 0.95
+   }
+  ]
+ }
+}

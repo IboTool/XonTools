@@ -1,0 +1,1924 @@
+{
+ "label": "b11-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-20ee47b83a16",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Ben is the lead volunteer.",
+   "span": "Assume that Ben is the lead volunteer.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Kai booked the hall.",
+   "span": "Kai booked the hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Ben arrived earlier than Kai.",
+   "span": "Ben arrived earlier than Kai",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Ben and Kai were already chatting near the finish line when Rosa pulled up on her bike.",
+   "span": "both were already chatting near the finish line when Rosa pulled up on her bike",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Leo and Ivo were on different teams.",
+   "span": "Leo and Ivo were on different teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Ivo had traveled the farthest that morning.",
+   "span": "Ivo had traveled the farthest that morning",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Ivo arrived just minutes before the opening announcement.",
+   "span": "arriving just minutes before the opening announcement",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Leo had been there since dawn helping set up the course markers.",
+   "span": "Leo had been there since dawn helping set up the course markers",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Ivo and Rosa were on different teams.",
+   "span": "Ivo and Rosa were on different teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Rosa stood a bit taller than Kai.",
+   "span": "Rosa, who stood a bit taller than Kai",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Rosa adjusted her helmet strap and joked with Ben about the chilly wind.",
+   "span": "adjusted her helmet strap and joked with Ben about the chilly wind",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Leo and Rosa were on different teams.",
+   "span": "Leo and Rosa were on different teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Kai ranked highest among the group in the previous season's standings.",
+   "span": "Kai, who ranked highest among the group in the previous season's standings",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Kai greeted Leo warmly near the refreshment table.",
+   "span": "greeted Leo warmly near the refreshment table",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "There were three teams.",
+   "span": "There were three teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Ben was slightly older than Ivo.",
+   "span": "Ben, who was slightly older than Ivo",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Kai did not book the hall.",
+   "span": "Kai did not book the hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "By midday, the leaders had already passed the halfway marker.",
+   "span": "By midday, the leaders had already passed the halfway marker",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Rosa was holding a steady pace just behind the front group.",
+   "span": "Rosa holding a steady pace just behind the front group",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "The claims concern different people and different actions with no stated connection between Ben's leadership role and Kai's booking of the hall.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Being the lead volunteer does not inherently determine arrival order relative to Kai; the two facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Being the lead volunteer says nothing about whether Ben was chatting with Kai near the finish line before Rosa arrived; these describe different aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A identifies Ben's role as lead volunteer, which has no bearing on whether Leo and Ivo were assigned to the same or different teams.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "The two claims concern different attributes (a role vs. a travel fact) about apparently different people, with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A identifies Ben's role, which has no logical bearing on Ivo's arrival time before the opening announcement.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Ben being the lead volunteer says nothing about Leo's actions or arrival time; the two claims concern different people and different facts with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A identifies Ben's role as lead volunteer, which has no bearing on whether Ivo and Rosa were assigned to the same or different teams.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Claim A is about Ben's volunteer role, while claim B concerns a physical height comparison between Rosa and Kai. The two statements share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Ben being the lead volunteer is unrelated to a casual interaction where Rosa jokes with him about the weather; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Claim A states Ben's role as lead volunteer, which has no bearing on whether Leo and Rosa were assigned to the same or different teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Being the lead volunteer is unrelated to standings rankings from a previous season; the claims concern different domains with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Ben's role as lead volunteer has no bearing on whether Kai greeted Leo near the refreshment table; the two claims involve different people and unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A concerns Ben's role as lead volunteer, while claim B concerns the number of teams; neither statement implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Being the lead volunteer has no bearing on relative age compared to Ivo; these are independent facts about Ben.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Being the lead volunteer for some activity does not indicate anything about who booked the hall or whether Kai was involved; the claims concern different roles and actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Claim A identifies Ben's role as lead volunteer, but gives no information about any race, timing, or halfway marker referenced in claim B; the two describe unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Claim A states Ben's role as lead volunteer, which has no logical or contextual connection to Rosa's pace during what appears to be a race or event.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Booking the hall says nothing about the relative arrival times of Kai and Ben; the two claims concern independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Booking a hall is unrelated to a scene where Kai is chatting near a finish line as Rosa arrives; neither event implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Kai booking a hall has no bearing on whether Leo and Ivo were on different teams; these are unrelated events involving different people and circumstances.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Booking a hall has no bearing on who traveled the farthest that morning; these describe unrelated events with different subjects and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Booking the hall is unrelated to when Ivo arrived at the event; no causal or logical connection is stated between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Booking a hall and setting up course markers describe unrelated activities and locations with no logical connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Booking a hall has no logical bearing on whether Ivo and Rosa were on different teams; the two claims involve unrelated subjects and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Booking a hall has no bearing on relative heights between Rosa and Kai; these facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "The two claims involve different people and unrelated activities (booking a hall vs. adjusting a helmet and chatting about weather), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "The claims concern unrelated subjects and events: one is about booking a hall, the other about team assignments. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Booking a hall is an unrelated administrative action and has no bearing on Kai's ranking in prior season standings.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Booking a hall is a logistical act unrelated to how Kai later greets Leo at an event; no causal or logical connection is implied.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Booking a hall has no logical bearing on how many teams there were; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns Kai booking a hall, while claim B concerns the relative ages of Ben and Ivo. There is no logical or factual connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "B is the direct negation of A; if A is true as stated, B must be false, with no ordinary reading allowing both to hold simultaneously.",
+   "relation": "contradicts",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Claim A concerns booking a hall, which has no logical or contextual connection to leaders passing a halfway marker in what appears to be a race or event.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "These claims involve unrelated events with no shared subject, context, or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "If Ben arrived earlier than Kai, it does not preclude both being present and chatting together by the time Rosa arrives, since Kai could have arrived before Rosa too. The claims are compatible and A doesn't strongly affect the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A concerns arrival order between Ben and Kai, while claim B concerns team membership of Leo and Ivo. These involve different people and different subject matters, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A concerns the relative arrival order of Ben and Kai, while claim B concerns who traveled the farthest distance that morning. These are unrelated dimensions (time of arrival vs. distance traveled) with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A concerns the relative arrival order of Ben and Kai, while claim B concerns Ivo's arrival time relative to an announcement. They involve different people and different reference points, with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "A states a relative arrival order between Ben and Kai, while B concerns Leo's presence since dawn; they involve different people and no overlap in reference, so one does not bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Claim A concerns arrival order between Ben and Kai, while claim B concerns team assignments for different people (Ivo and Rosa). There is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A concerns arrival timing between Ben and Kai, while claim B concerns relative height between Rosa and Kai. These involve different attributes and different people, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A concerns the relative arrival order of Ben and Kai, while claim B describes an unrelated interaction between Rosa and Ben about weather and gear. There is no logical connection between arrival timing and this social exchange.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "The arrival order of Ben and Kai has no bearing on whether Leo and Rosa were on the same or different teams; these involve unrelated people and facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Arrival order and prior-season ranking are independent facts; knowing Ben arrived before Kai gives no information about Kai's past ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "A only states Ben's relative arrival time compared to Kai; it says nothing about Kai's interactions with Leo or events near the refreshment table. There is no logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim A concerns the relative arrival times of Ben and Kai, while claim B concerns the number of teams. These topics are independent and neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A concerns arrival order between Ben and Kai, while claim B concerns relative age between Ben and Ivo. These involve different people and different attributes, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Ben arriving earlier than Kai says nothing about who booked the hall; these are independent facts about timing versus responsibility for booking.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Claim A establishes a relative arrival order between Ben and Kai but gives no information about timing relative to midday or about a halfway marker in some event, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A concerns the relative arrival order of Ben and Kai, while claim B concerns Rosa's pacing position relative to a front group. There is no shared subject or logical connection between the two statements as written.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A describes Ben, Kai, and Rosa near a finish line, while claim B concerns Leo and Ivo's team membership; they involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A concerns Ben, Kai, and Rosa's activities near a finish line, while claim B concerns Ivo's travel distance; they share no common subject or context that would let one bear on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A concerns Ben, Kai, and Rosa near a finish line, while claim B concerns Ivo arriving before an opening announcement; they involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A describes Ben, Kai, and Rosa near the finish line, while claim B describes Leo's earlier activity setting up course markers. These involve different people and events that can both be true simultaneously without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A concerns Ben, Kai, and Rosa's arrival by bike near the finish line, while claim B concerns team membership of Ivo and Rosa. Neither statement provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A establishes a scene with Ben, Kai, and Rosa near the finish line, but says nothing about relative heights, so it neither supports nor contradicts a height comparison.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "A establishes that Rosa arrived by bike near Ben and Kai, setting up an opportunity for Rosa and Ben to interact afterward, which is consistent with B's depiction of Rosa joking with Ben.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Claim A concerns Ben, Kai, and Rosa's arrival at a finish line, with no mention of Leo or team affiliations, so it provides no information bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A describes a spatial/temporal scene about Ben, Kai, and Rosa near a finish line, while claim B concerns Kai's ranking in prior season standings. These are about different matters and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "A places Kai near the finish line chatting with Ben, while B places Kai near the refreshment table greeting Leo; these could occur at different moments or the locations could be near each other, so both can plausibly be true without direct contradiction, though the scenario details are largely unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A describes people near a finish line, which could relate to a race with teams, but it gives no information about the number of teams involved.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A concerns Ben, Kai, and Rosa near a finish line, while claim B concerns Ben's age relative to Ivo. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A concerns Ben, Kai, and Rosa near a finish line, while claim B concerns Kai not booking a hall; the two describe unrelated situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Claim A describes people chatting near a finish line as a cyclist arrives, while claim B describes race leaders passing a halfway marker by midday; these could plausibly be part of the same race event at different points, but there's no direct logical connection given, only loose thematic overlap.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "A places Rosa arriving at the finish line on her bike, implying she completed or reached the end of the ride, while B describes her mid-race position behind the front group; these depict different moments in a race timeline and are not inherently conflicting, though they sit oddly together if meant simultaneously.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Being on different teams from Leo has no bearing on how far Ivo traveled that morning; the two facts concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Being on a different team from Leo has no bearing on when Ivo arrived at the event.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Being on a different team from Ivo has no bearing on whether Leo arrived early to help set up course markers; these are independent facts about Leo.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Knowing Leo and Ivo are on different teams tells us nothing about Rosa's team assignment relative to Ivo, since Rosa isn't mentioned in claim A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "The two claims concern entirely different sets of people and unrelated facts (team membership vs. relative height), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Claim A concerns Leo and Ivo's team assignments, while claim B describes Rosa and Ben in an unrelated interaction about weather and equipment. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Knowing Leo and Ivo are on different teams tells us nothing about Leo's relationship to Rosa's team, since Ivo and Rosa could be on the same or different teams.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A concerns team assignments of Leo and Ivo, while claim B concerns Kai's ranking in prior standings; these involve different people and different subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Being on different teams from Ivo has no logical bearing on whether Kai greeted Leo warmly near refreshments; these are independent facts about different people and events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "A states Leo and Ivo were on different teams, which is consistent with there being any number of teams two or more, including three. It neither confirms nor rules out the specific count of three teams.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Claim A concerns team membership of Leo and Ivo, while claim B concerns relative ages of Ben and Ivo. These are independent facts about different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A concerns team membership of Leo and Ivo, while claim B concerns whether Kai booked a hall; they involve different subjects and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Claim A concerns team membership of Leo and Ivo, while claim B concerns the timing of leaders passing a halfway marker; these describe unrelated aspects of the situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Claim A concerns team assignments of Leo and Ivo, while claim B describes Rosa's pace and position in a race. They involve different people and different aspects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Traveling the farthest doesn't determine arrival timing relative to others; Ivo could have left earlier or traveled faster, so arriving just minutes before the opening is plausible but somewhat surprising given the greater distance.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Both claims describe different people and different aspects (travel distance vs. early arrival for setup); neither statement bears logically on the other, though both could be true simultaneously.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Ivo's travel distance that morning is unrelated to which team he and Rosa were assigned to; the two facts concern different domains with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Ivo's travel distance has no bearing on Rosa's and Kai's relative heights; the two claims concern entirely different subjects and facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A concerns Ivo's travel distance that morning, while claim B describes an unrelated social interaction between Rosa and Ben about the wind and helmet gear; neither has bearing on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A concerns Ivo's travel distance that morning, while claim B concerns team assignments for Leo and Rosa; the two topics share no common elements or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A concerns travel distance in the morning, while claim B concerns ranking in a previous season's standings; these describe unrelated facts about different people and domains.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A concerns Ivo's travel distance while claim B describes an unrelated social interaction between Kai and Leo; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A concerns Ivo's travel distance and claim B concerns the number of teams; neither fact bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Traveling distance and relative age are independent attributes; knowing Ivo traveled farthest that morning gives no information about his age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A concerns who traveled farthest, while claim B concerns who booked the hall; there is no logical or causal connection between the two stated facts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "A concerns Ivo's relative travel distance among individuals that morning, while B concerns the position of 'leaders' (likely a group in a race or journey) by midday. These refer to different subjects, times, and metrics, with no clear logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Both claims can be true simultaneously: Ivo having traveled farthest doesn't preclude Rosa maintaining a steady pace near the front group; they concern different people and aspects of the journey.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "The two claims describe different people's arrival times and actions; both can easily be true simultaneously as Ivo and Leo could have had different roles and schedules for the event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Ivo's arrival time relates to punctuality and events at the venue, but says nothing about team assignments, so it has no bearing on whether Ivo and Rosa were on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Claim A concerns Ivo's arrival timing, while claim B concerns Rosa's height relative to Kai; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A describes Ivo's timing before an announcement, while claim B describes an unrelated interaction between Rosa and Ben about weather and equipment; they share no common subject or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A concerns Ivo's arrival timing, while claim B concerns Leo and Rosa's team assignments. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A concerns Ivo's arrival timing while claim B concerns Kai's past ranking; they involve different people and unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A concerns Ivo's arrival timing, while claim B describes an unrelated interaction between Kai and Leo at a different location; there is no mentioned connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A concerns Ivo's arrival time relative to an announcement, while claim B states a fact about the number of teams; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A concerns Ivo's arrival timing relative to an event, while claim B concerns a relative age comparison between Ben and Ivo; these are independent facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A concerns Ivo's arrival time before an announcement, while claim B concerns whether Kai booked a hall. These involve different people and different events with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "A places Ivo's arrival near the start of an event (an opening announcement), which is consistent with an event that later has leaders passing a halfway marker by midday; the two describe different stages of what could be the same timeline, but A does not really inform B's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Claim A concerns Ivo's arrival timing before an opening announcement, while claim B concerns Rosa's pace position relative to a front group in what seems to be a race or event; these describe different people and different aspects of the event with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A describes Leo's early morning activity setting up course markers, which has no bearing on whether Ivo and Rosa were on the same or different teams.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A describes Leo's morning activity setting up course markers, while claim B compares heights of Rosa and Kai. These involve different people and unrelated subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A concerns Leo's activity since dawn, while claim B describes Rosa's unrelated action with Ben; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Setting up course markers since dawn doesn't indicate anything about team assignments or Leo's relationship to Rosa specifically.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Claim A concerns Leo's early arrival to help set up course markers, while claim B concerns Kai's ranking in prior season standings. These involve different people and different facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "A places Leo at the event since dawn helping with setup, which is consistent with him later being near the refreshment table when Kai greets him; the claims don't conflict and offer only weak circumstantial connection.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Claim A describes Leo's early involvement in setting up an event, while claim B states a fact about the number of teams; neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A concerns Leo's activity setting up course markers since dawn, while claim B concerns a relative age comparison between Ben and Ivo. The two claims share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A is about Leo helping set up course markers at dawn, while claim B is about Kai not booking a hall. These involve different people and different actions with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Leo helping set up markers since dawn establishes an early race day with organized course logistics, which is broadly consistent with leaders progressing to the halfway point by midday, though the claims are largely independent details.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Claim A is about Leo's early morning setup activities and claim B is about Rosa's race pace; they concern different people and different events with no logical connection given.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Claim A concerns team assignments between Ivo and Rosa, while claim B concerns relative height between Rosa and Kai. These involve different attributes and different people, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A concerns team assignments while claim B describes an unrelated social interaction about weather and equipment; knowing Ivo and Rosa were on different teams has no bearing on whether Rosa adjusted her helmet or joked with Ben.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Knowing Ivo and Rosa are on different teams says nothing about Leo's team assignment relative to Rosa, since there's no stated connection between Ivo and Leo's team placements.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Claim A concerns team membership of Ivo and Rosa, while claim B concerns Kai's ranking in prior standings; these involve different people and different facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "The claims involve entirely different people and events with no logical or causal connection between team assignments and a greeting near a refreshment table.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "A only states that Ivo and Rosa were on different teams, which is consistent with there being two, three, or more teams; it neither confirms nor rules out a specific team count of three.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Claim A concerns team membership of Ivo and Rosa, while claim B concerns relative age of Ben and Ivo. These are independent facts about different attributes and people, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Claim A concerns team assignments of Ivo and Rosa, while claim B concerns whether Kai booked the hall; these involve different people and different subject matters with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Claim A concerns team membership of two individuals, while claim B concerns the timing of leaders passing a halfway marker; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "A states Ivo and Rosa were on different teams, which says nothing about Rosa's pace or position in a race, so the two claims don't bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A is about relative height between Rosa and Kai, while claim B describes an unrelated action of Rosa adjusting her helmet and joking with Ben; neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Claim A is about relative height between Rosa and Kai, while claim B is about team assignments involving Leo and Rosa. These concern entirely different attributes and people, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Claim A concerns relative physical height between Rosa and Kai, while claim B concerns Kai's ranking in prior season standings, an unrelated dimension of comparison.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "A is about relative height between Rosa and Kai, while B describes Kai's action toward Leo at the refreshment table; these concern unrelated aspects with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "The relative heights of Rosa and Kai have no bearing on how many teams existed.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "The two claims describe unrelated people and unrelated attributes (height vs. age) with no overlap between the individuals mentioned, so truth of one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "A is about relative height while B is about who booked the hall; there is no logical or contextual connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Claim A concerns relative heights of Rosa and Kai, while claim B concerns the progress of race leaders at midday; the two describe unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "A describes a height comparison between Rosa and Kai, while B describes Rosa's pace and position in a race or run. These claims concern unrelated attributes and have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A describes Rosa interacting with Ben and does not mention Leo or any team affiliations, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A describes an unrelated casual moment between Rosa and Ben about weather and equipment, while claim B concerns Kai's past ranking. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "These two claims describe different people and events with no apparent connection between them; nothing about Rosa and Ben's exchange bears on Kai and Leo's greeting.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A describes a small interpersonal moment between Rosa and Ben, while claim B states a fact about the number of teams present. Neither statement provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Claim A describes an interaction between Rosa and Ben but provides no information about Ben's age relative to Ivo, so it has no bearing on claim B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Claim A describes Rosa and Ben in an unrelated context about a helmet and wind, with no mention of Kai or a hall booking, so it has no bearing on claim B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "A shows Rosa in a calm, early-stage moment (adjusting helmet, joking) which is plausible before or during a race, but says nothing about timing or race progress relative to B's midday leader position, so it neither confirms nor conflicts with B.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Adjusting a helmet strap and joking about the wind suggests a relaxed, casual moment, which could plausibly occur while riding at a steady pace, but it sits a bit oddly with actively maintaining position just behind the front group, which usually demands focus and effort.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A concerns team membership of Leo and Rosa, while claim B concerns Kai's ranking in a prior season's standings. These involve different people and different facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Being on different teams from Rosa has no bearing on whether Kai greeted Leo warmly near refreshments; the claims concern unrelated facts about different people and events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "A states Leo and Rosa belonged to different teams, which is compatible with there being two, three, or more teams; it doesn't specify the total number of teams, so it neither supports nor contradicts B's claim of three teams.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns team assignments for Leo and Rosa, while claim B concerns relative ages of Ben and Ivo. They share no common subjects or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A concerns Leo and Rosa's team assignments, while claim B concerns whether Kai booked a hall. These involve different people and different subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A concerns team assignment of two individuals, while claim B concerns the progress of race leaders by midday. There is no stated connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A states Leo and Rosa were on different teams, which says nothing about Rosa's pace or position relative to the front group. The two claims concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "A concerns Kai's standing ranking from a previous season, while B describes a social interaction near refreshments; these are independent facts about Kai with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A refers to individual standings and ranking of a group's members, while claim B states a fact about the number of teams. These concern different aspects and don't inform each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A concerns rankings in a competition standings, while claim B concerns relative ages of two different people not mentioned in A. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Ranking highest in previous standings is unrelated to whether Kai booked a hall; no logical or causal connection between these two facts is stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Claim A concerns Kai's ranking in a previous season's standings, while claim B describes a current event's timing of passing a halfway marker. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Claim A concerns Kai's standing in a previous season, while claim B describes Rosa's current pace relative to the front group; these involve different people, different events, and different times, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A describes a social interaction near refreshments, while claim B states a fact about team count; neither informs the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "The claims involve entirely different people and situations with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Greeting someone warmly near refreshments has no bearing on who booked the hall; these describe unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "The two claims describe unrelated events involving different subjects and contexts; there's no logical or causal connection between a social greeting near refreshments and race leaders passing a marker.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Claim A describes a social interaction near refreshments, while claim B describes Rosa's position and pace in what seems to be a race context; they involve different people and settings with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "The number of teams has no bearing on the relative ages of Ben and Ivo; the claims concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "The number of teams involved has no logical bearing on whether Kai booked the hall; these describe unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Claim A establishes there were three teams in what appears to be a race or competition, while claim B describes race progress at midday. These are largely independent facts \"",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "A states there were three teams, which provides context but does not directly bear on Rosa's pacing or position behind the front group in a race.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Claim A concerns relative ages of Ben and Ivo, while claim B concerns whether Kai booked a hall. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns the progress of race leaders at midday; these topics share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Claim A concerns the relative ages of Ben and Ivo, while claim B concerns Rosa's position and pace, presumably in a race. There is no overlap in subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Claim A concerns whether Kai booked a hall, while claim B concerns leaders passing a halfway marker by midday; these describe entirely unrelated situations with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Claim A concerns whether Kai booked a hall, while claim B concerns Rosa's pace in some race or run; the two describe unrelated people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "A establishes that the race leaders had reached the halfway point by midday; B describes Rosa maintaining a steady pace near the front group, which is plausible and consistent with A's timeline but not directly implied by it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "role",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "booked_hall",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "team",
+    "arity": "multi",
+    "arity_span": "There were three teams.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "distance_traveled",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "other",
+    "other_greater_means": "higher standing/rank"
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 4,
+    "attribute": "team",
+    "kind": "different",
+    "a": "leo",
+    "b": "ivo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 8,
+    "attribute": "team",
+    "kind": "different",
+    "a": "ivo",
+    "b": "rosa",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 11,
+    "attribute": "team",
+    "kind": "different",
+    "a": "leo",
+    "b": "rosa",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "same",
+    "a": "ben",
+    "b": "kai",
+    "confidence": 0.55
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "subject": "ben",
+    "comparative": "earlier than",
+    "object": "kai",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "subject": "rosa",
+    "comparative": "taller than",
+    "object": "kai",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "subject": "ben",
+    "comparative": "older than",
+    "object": "ivo",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 5,
+    "attribute": "distance_traveled",
+    "entity": "ivo",
+    "comparative": "farthest",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "rank",
+    "entity": "kai",
+    "comparative": "ranked highest",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "earlier than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "distance_traveled",
+    "comparative": "farthest",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "rank",
+    "comparative": "ranked highest",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 19,
+  "pairs_requested": 171,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 7,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    3,
+    18
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    10,
+    18
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "role": null,
+    "booked_hall": null,
+    "arrival_time": "sequence",
+    "team": null,
+    "distance_traveled": "magnitude",
+    "height": "magnitude",
+    "rank": "other",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 5,
+     "attribute": "distance_traveled",
+     "entity": "ivo",
+     "extreme": "max",
+     "edges": 0
+    },
+    {
+     "claim_id": 12,
+     "attribute": "rank",
+     "entity": "kai",
+     "extreme": "max",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 19,
+  "n_edges": 2,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct",
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9406664729245374,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "arrival_time",
+    "entities": [
+     "kai",
+     "ben"
+    ],
+    "relations": [
+     4,
+     3
+    ],
+    "claim_ids": [
+     2,
+     3
+    ],
+    "min_confidence": 0.55
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   0.33783783783783783,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.33783783783783783,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.8858655953250547,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.8858655953250547,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 16,
+    "residual": 0.4474068663257852
+   },
+   {
+    "a": 3,
+    "b": 10,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   1,
+   16
+  ],
+  "culprits": [
+   {
+    "claim": 1,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.05933352707546258
+   },
+   {
+    "claim": 16,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.05933352707546258
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 3800,
+   "api_calls": 0,
+   "cache_hits": 3800,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    16
+   ],
+   [
+    2
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    15
+   ],
+   [
+    17
+   ],
+   [
+    18
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false,
+   "15": false,
+   "16": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    1,
+    16
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "arrival_time",
+    "entities": [
+     "kai",
+     "ben"
+    ],
+    "relations": [
+     4,
+     3
+    ],
+    "claim_ids": [
+     2,
+     3
+    ],
+    "min_confidence": 0.55
+   }
+  ],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 3,
+    "b": 18,
+    "rationale": "A places Rosa arriving at the finish line on her bike, implying she completed or reached the end of the ride, while B describes her mid-race position behind the front group; these depict different moments in a race timeline and are not inherently conflicting, though they sit oddly together if meant simultaneously.",
+    "confidence": 0.55
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "rationale": "Traveling the farthest doesn't determine arrival timing relative to others; Ivo could have left earlier or traveled faster, so arriving just minutes before the opening is plausible but somewhat surprising given the greater distance.",
+    "confidence": 0.6
+   },
+   {
+    "a": 10,
+    "b": 18,
+    "rationale": "Adjusting a helmet strap and joking about the wind suggests a relaxed, casual moment, which could plausibly occur while riding at a steady pace, but it sits a bit oddly with actively maintaining position just behind the front group, which usually demands focus and effort.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 4,
+   "attribute": "team",
+   "kind": "different",
+   "a": "leo",
+   "b": "ivo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 8,
+   "attribute": "team",
+   "kind": "different",
+   "a": "ivo",
+   "b": "rosa",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "team",
+   "kind": "different",
+   "a": "leo",
+   "b": "rosa",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_time",
+   "kind": "same",
+   "a": "ben",
+   "b": "kai",
+   "confidence": 0.55,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "kai",
+   "b": "ben",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 9,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "rosa",
+   "b": "kai",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "ben",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

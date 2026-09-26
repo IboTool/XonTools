@@ -1,0 +1,1202 @@
+{
+ "label": "b09-consistent",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-3c552ba53ae4",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Alma is the head judge.",
+   "span": "Assume that Alma is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Vik arrived at the starting line wearing a bright yellow jersey.",
+   "span": "Vik arrived at the starting line wearing a bright yellow jersey that made him easy to spot among the other cyclists.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Vik's bright yellow jersey made him easy to spot among the other cyclists.",
+   "span": "a bright yellow jersey that made him easy to spot among the other cyclists",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Pia had traveled the farthest distance to compete.",
+   "span": "Pia had traveled the farthest distance to compete",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Pia had driven in from a neighboring province the night before.",
+   "span": "having driven in from a neighboring province the night before",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Tess took the photographs.",
+   "span": "Tess took the photographs.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Zeno is the tallest of the group.",
+   "span": "Zeno, who is the tallest of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Zeno spent the warm-up period stretching near the registration tent.",
+   "span": "spent the warm-up period stretching near the registration tent",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "The course wound through several small villages before looping back toward the finish line.",
+   "span": "The course wound through several small villages before looping back toward the finish line",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Spectators lined the roads with flags and snacks.",
+   "span": "spectators lined the roads with flags and snacks",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Pia finished ahead of Zeno.",
+   "span": "Pia finished ahead of Zeno.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Alma had arrived earliest of everyone that morning.",
+   "span": "Alma had arrived earliest of everyone that morning",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Alma arrived long before the sun fully rose over the hills.",
+   "span": "long before the sun fully rose over the hills",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Vik is younger than Tess.",
+   "span": "Vik is younger than both Tess and Alma",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Vik is younger than Alma.",
+   "span": "Vik is younger than both Tess and Alma",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Vik trains just as rigorously as Tess and Alma.",
+   "span": "though he trains just as rigorously",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Zeno finished ahead of Vik.",
+   "span": "Zeno finished ahead of Vik.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "The weather stayed clear throughout the event.",
+   "span": "The weather stayed clear throughout the event",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Organizers considered the clear weather a stroke of luck given the forecast from earlier in the week.",
+   "span": "which organizers considered a stroke of luck given the forecast from earlier in the week",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Tess is shorter than Pia.",
+   "span": "Tess is shorter than Pia",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Tess has a longer reach on the bike than Pia.",
+   "span": "but has a longer reach on the bike",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Pia finished ahead of Vik.",
+   "span": "Pia finished ahead of Vik.",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Riders gathered near the refreshment stand to compare times and swap stories about the toughest climbs after the race concluded.",
+   "span": "riders gathered near the refreshment stand to compare times and swap stories about the toughest climbs",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "The final descent had been trickier than expected.",
+   "span": "Vik mentioned that the final descent had been trickier than expected",
+   "kind": "quoted"
+  },
+  {
+   "id": 24,
+   "text": "Zeno nodded in agreement.",
+   "span": "while Zeno nodded in agreement",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "Alma stayed near the finish for a while, chatting with volunteers before heading home.",
+   "span": "Alma stayed near the finish for a while, chatting with volunteers before heading home.",
+   "kind": "asserted"
+  },
+  {
+   "id": 26,
+   "text": "Pia and Tess left together.",
+   "span": "Pia and Tess left together",
+   "kind": "asserted"
+  },
+  {
+   "id": 27,
+   "text": "Pia and Tess discussed plans for the next regional event already scheduled for the following month.",
+   "span": "discussing plans for the next regional event already scheduled for the following month",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Being head judge doesn't imply anything about arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Being head judge has no bearing on race finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Wearing a bright yellow jersey directly supports the claim that it made him easy to spot.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Vik's jersey color is unrelated to who took photographs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Vik's jersey color has no relation to Tess's bike reach compared to Pia's.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Vik being easy to spot is unrelated to who took the photographs.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Vik's visibility has nothing to do with his age relative to Alma.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Having traveled the farthest is consistent with and supports having driven from a neighboring province the night before.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Traveling the farthest doesn't imply anything about race finishing position relative to Zeno.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Traveling farthest doesn't imply arriving earliest; in fact it might suggest arriving later, but not clearly contradicting either.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Distance traveled has no bearing on relative height.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Distance traveled doesn't affect race finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Traveling far has no bearing on the difficulty of the final descent.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Driving in from a neighboring province is unrelated to who took the photographs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Pia's travel origin has no bearing on the course layout through villages.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Where Pia traveled from has no bearing on her race finish relative to Zeno.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Pia's travel origin doesn't affect her finishing position relative to Vik.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Zeno's height has no bearing on the course's layout through villages.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Zeno being tallest is unrelated to Vik's training rigor compared to Tess and Alma.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Zeno's height has no logical bearing on his race finish relative to Vik.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Zeno being tallest of the group implies Tess is not taller than Pia, weakly supporting Tess being shorter than Pia.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Zeno stretching during warm-up says nothing about when Alma arrived.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Zeno's stretching location during warm-up has no bearing on his finishing order relative to Vik.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "The course layout has no bearing on relative ages of Vik and Tess.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "The course winding through villages is unrelated to whether the final descent was trickier than expected.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Spectators lining the road has no bearing on who finished ahead of whom.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Spectators with flags and snacks doesn't determine weather conditions, though it may suggest pleasant conditions.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Spectators lining roads has no bearing on bike reach measurements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Spectators along the route don't affect race finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Pia finishing ahead of Zeno has no bearing on the relative ages of Vik and Tess.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Pia finishing ahead of Zeno doesn't determine Zeno's finish relative to Vik.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Pia finishing ahead of Zeno doesn't logically determine her finish relative to Vik.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 10,
+   "b": 26,
+   "rationale": "Pia's finishing position relative to Zeno has no bearing on whether she and Tess left together afterward.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 27,
+   "rationale": "Pia's race finish relative to Zeno doesn't relate to her post-race conversation plans with Tess.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Alma arriving earliest of everyone supports the idea she arrived before sunrise, consistent with arriving very early.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Alma's early arrival time has no bearing on organizers' views about weather luck.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Alma's early arrival doesn't relate to riders gathering post-race to swap stories.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 25,
+   "rationale": "Alma arriving earliest is consistent with and supports her staying around after the race chatting, showing dedication to the event.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Alma arriving before sunrise has no bearing on riders gathering at the refreshment stand after the race.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Vik being younger than Tess doesn't determine his age relative to Alma, a separate comparison.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Vik's age relative to Tess doesn't imply anything about training rigor.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Vik's age relative to Tess has no bearing on finishing position relative to Pia.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Vik's age relative to Alma is unrelated to Tess's height relative to Pia.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Training rigor equality doesn't determine finishing order between Zeno and Vik.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Training rigor is unrelated to weather perceptions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Equal training rigor doesn't determine who finished ahead.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "Training rigor claim has no connection to Zeno's nodding.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 26,
+   "rationale": "Training rigor is unrelated to Pia and Tess leaving together.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Zeno finishing ahead of Vik doesn't determine Pia's position relative to Vik.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Zeno finishing ahead of Vik is unrelated to descent difficulty.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Clear weather throughout supports the idea that organizers saw it as lucky given a possibly poor forecast.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Clear weather doesn't imply anything about the descent's difficulty.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Tess being shorter than Pia doesn't determine reach on the bike, as height and reach aren't strictly correlated in this context.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "Pia finishing ahead of Vik has no bearing on Zeno's nodding.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Riders discussing toughest climbs is unrelated to a specific claim about the descent's difficulty.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "Gathering to swap stories is unrelated to Zeno's nodding specifically.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 22,
+   "b": 25,
+   "rationale": "Riders gathering near refreshments doesn't relate to Alma staying near the finish chatting with volunteers.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 22,
+   "b": 26,
+   "rationale": "Riders gathering to swap stories doesn't imply anything about Pia and Tess leaving together.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 22,
+   "b": 27,
+   "rationale": "Riders gathering to discuss races supports the idea that Pia and Tess also discussed future events, as it's part of the same general context.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 23,
+   "b": 26,
+   "rationale": "The descent's difficulty has no bearing on whether Pia and Tess left together.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 26,
+   "b": 27,
+   "rationale": "Leaving together suggests they were together and could have talked, making it somewhat more plausible they discussed plans, but it doesn't establish the content of their conversation.",
+   "relation": "supports",
+   "confidence": 0.3
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik",
+     "him"
+    ]
+   },
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "tess",
+    "mentions": [
+     "Tess"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "finish_position",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "distance_traveled",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "training_intensity",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "reach",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 10,
+    "attribute": "finish_position",
+    "kind": "greater",
+    "a": "pia",
+    "b": "zeno",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "alma",
+    "b": "vik",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "alma",
+    "b": "pia",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "alma",
+    "b": "tess",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "alma",
+    "b": "zeno",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 13,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "tess",
+    "b": "vik",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "alma",
+    "b": "vik",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "training_intensity",
+    "kind": "same",
+    "a": "vik",
+    "b": "tess",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 15,
+    "attribute": "training_intensity",
+    "kind": "same",
+    "a": "vik",
+    "b": "alma",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 16,
+    "attribute": "finish_position",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "vik",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "pia",
+    "b": "tess",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 20,
+    "attribute": "reach",
+    "kind": "greater",
+    "a": "tess",
+    "b": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 21,
+    "attribute": "finish_position",
+    "kind": "greater",
+    "a": "pia",
+    "b": "vik",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 25,
+  "blind": [
+   [
+    0,
+    21
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    20
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    2,
+    14
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    19
+   ],
+   [
+    3,
+    23
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    6,
+    8
+   ],
+   [
+    6,
+    15
+   ],
+   [
+    7,
+    11
+   ],
+   [
+    8,
+    13
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    17
+   ],
+   [
+    9,
+    20
+   ],
+   [
+    9,
+    21
+   ],
+   [
+    10,
+    13
+   ],
+   [
+    10,
+    26
+   ],
+   [
+    10,
+    27
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    11,
+    22
+   ],
+   [
+    12,
+    22
+   ],
+   [
+    13,
+    21
+   ],
+   [
+    14,
+    19
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    15,
+    18
+   ],
+   [
+    15,
+    21
+   ],
+   [
+    15,
+    24
+   ],
+   [
+    15,
+    26
+   ],
+   [
+    16,
+    23
+   ],
+   [
+    17,
+    23
+   ],
+   [
+    21,
+    24
+   ],
+   [
+    22,
+    25
+   ],
+   [
+    23,
+    26
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 28,
+  "pairs_requested": 61,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 36,
+  "blind_pairs_related": 0,
+  "entity_relations": 13,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 28,
+  "n_edges": 7,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    23
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0,
+   "17": 0.0,
+   "18": 0.0,
+   "19": 0.0,
+   "20": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   0.9999999999999999
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   6.162975822039155e-33,
+   0.0,
+   0.0,
+   0.0,
+   5.300159206953673e-32,
+   2.2186712959340958e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 2,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 4,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 22,
+    "b": 27,
+    "residual": 6.162975822039155e-33
+   },
+   {
+    "a": 26,
+    "b": 27,
+    "residual": 3.697785493223493e-33
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 473,
+   "api_calls": 0,
+   "cache_hits": 473,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 7548523
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    19
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    10
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    15
+   ],
+   [
+    16
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    20
+   ],
+   [
+    21
+   ],
+   [
+    22,
+    26,
+    27
+   ],
+   [
+    23
+   ],
+   [
+    24
+   ],
+   [
+    25
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false,
+   "15": false,
+   "16": false,
+   "17": false,
+   "18": false,
+   "19": false,
+   "20": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": []
+ }
+}

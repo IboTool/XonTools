@@ -1,0 +1,38 @@
+{
+ "request": "6b4b0987212431e448072f22413f640530b3d2bda0871ba8d21610e72ac92cd5",
+ "tag": "text-be2015c73a39-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "Nell finishing setup before Dev arrived establishes both were present in the room, making a quick wave exchange plausible.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 22,
+    "b": 24,
+    "rationale": "Setup being completed before Dev arrived is a separate earlier event and doesn't bear on the later afternoon crowd activity.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   },
+   {
+    "a": 24,
+    "b": 26,
+    "rationale": "A bustling, exciting fair in the afternoon is consistent with it eventually winding down and being packed away afterward.",
+    "relation": "supports",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 954,
+  "output_tokens": 226,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,195 @@
+{
+ "request": "e23dbca84e6f728253497505364c4166816010a7ef6e4f68cacee912e52ec0ca",
+ "tag": "text-be07a337e964-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "eli",
+    "mentions": [
+     "Eli",
+     "he"
+    ]
+   },
+   {
+    "id": "lena",
+    "mentions": [
+     "Lena"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev",
+     "he"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi"
+    ]
+   },
+   {
+    "id": "club",
+    "mentions": [
+     "The model railway club"
+    ]
+   },
+   {
+    "id": "exhibition",
+    "mentions": [
+     "the autumn exhibition",
+     "the exhibition"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses."
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "chess_rank",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "eli",
+    "b": "sami",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "dev",
+    "b": "eli",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "dev",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 15,
+    "attribute": "house",
+    "kind": "different",
+    "a": "sami",
+    "b": "eli",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "dev",
+    "b": "eli",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 17,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "dev",
+    "b": "sami",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 17,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "dev",
+    "b": "xavi",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 19,
+    "attribute": "house",
+    "kind": "different",
+    "a": "eli",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 22,
+    "attribute": "house",
+    "kind": "different",
+    "a": "sami",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 26,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "sami",
+    "b": "xavi",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 26,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "eli",
+    "b": "xavi",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 26,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dev",
+    "b": "xavi",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 26,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "lena",
+    "b": "xavi",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2221,
+  "output_tokens": 886,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

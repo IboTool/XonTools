@@ -1,0 +1,3002 @@
+{
+ "label": "b22-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-0743dcabde96",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Kira is the lead volunteer.",
+   "span": "Assume that Kira is the lead volunteer.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Kira arrived earliest, well before the others.",
+   "span": "Kira arrived earliest, well before the others,",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Kira was carrying a stack of scoresheets under one arm.",
+   "span": "carrying a stack of scoresheets under one arm",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Eli showed up next after Kira.",
+   "span": "Eli showed up next",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Eli was chatting cheerfully with the organizers about the difficulty of last month's rounds.",
+   "span": "chatting cheerfully with the organizers about the difficulty of last month's rounds",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Noor brought the first-aid kit.",
+   "span": "Noor brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Nell strolled in shortly after Noor.",
+   "span": "Nell strolled in shortly after",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Nell was laughing at a joke someone made near the entrance.",
+   "span": "laughing at a joke someone made near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Nell set her bag down at the long table by the window.",
+   "span": "set her bag down at the long table by the window",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Yara arrived last of the group.",
+   "span": "Yara arrived last of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Yara was slightly out of breath from parking her bike.",
+   "span": "slightly out of breath from parking her bike",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Yara was grinning at the prospect of a good contest.",
+   "span": "grinning at the prospect of a good contest",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Yara is in the same class as Eli.",
+   "span": "Yara is in the same class as Eli.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Yara and Eli exchanged a quick fist bump before settling into their seats.",
+   "span": "The two of them exchanged a quick fist bump before settling into their seats",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Yara and Eli are clearly comfortable working together.",
+   "span": "clearly comfortable working together",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Kira is not the lead volunteer.",
+   "span": "Kira is not the lead volunteer.",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Kira is taller than both Nell and Noor.",
+   "span": "Kira, taller than both Nell and Noor",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Kira helped rearrange chairs so everyone could see the quiz board clearly.",
+   "span": "helped rearrange chairs so everyone could see the quiz board clearly",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Eli is not in the same class as Nell.",
+   "span": "Eli is not in the same class as Nell.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Nell sat quietly reviewing trivia cards.",
+   "span": "Nell, meanwhile, sat quietly reviewing trivia cards",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Nell occasionally glanced at Kira for guidance on the evening's schedule.",
+   "span": "occasionally glancing at Kira for guidance on the evening's schedule",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Noor is younger than Eli.",
+   "span": "Noor, who is younger than Eli",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Noor is older than Yara.",
+   "span": "but older than Yara",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Noor chatted with Nell about favorite quiz categories.",
+   "span": "chatted with Nell about favorite quiz categories",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Yara is not in the same class as Nell.",
+   "span": "Yara is not in the same class as Nell.",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Being the lead volunteer plausibly correlates with responsibility and dedication, making early arrival somewhat more likely, but it doesn't directly imply arrival time.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Being the lead volunteer plausibly explains why Kira would be handling scoresheets, but the claims describe different aspects (role vs. a physical action) and neither entails or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Claim A establishes Kira's role as lead volunteer but says nothing about arrival order or who came after her; the two claims concern different aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A concerns Kira's role as lead volunteer, while claim B describes Eli's separate conversational behavior with organizers; there's no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "The claim about Kira's role as lead volunteer has no logical bearing on whether Noor brought a first-aid kit; these describe unrelated facts about different people.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A is about Kira's role as lead volunteer, while claim B describes Nell's arrival relative to Noor. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Claim A concerns Kira's role as lead volunteer, while claim B describes Nell's independent action near the entrance; neither statement implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A describes Kira's role while claim B describes Nell's action at a table; there is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Claim A identifies Kira's role as lead volunteer, while claim B describes Yara's arrival order relative to a group. These concern different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A identifies Kira's role, while claim B describes an unrelated physical state of a different person, Yara. There is no logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Claim A states a role for Kira, while claim B describes Yara's emotional state about a contest; neither statement bears logically on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A concerns Kira's volunteer role, while claim B concerns Yara and Eli's class membership; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Claim A states a role for Kira, while claim B describes an unrelated interaction between two other people, Yara and Eli. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "The claim about Kira being the lead volunteer has no bearing on the relationship or comfort level between Yara and Eli, who are different people entirely.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "B is the direct negation of A, so they cannot both be true under any ordinary reading.",
+   "relation": "contradicts",
+   "confidence": 0.99
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Being the lead volunteer is a role/status claim unrelated to physical height comparisons; knowing A doesn't change the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Being the lead volunteer makes it plausible that Kira would take an active organizing role, such as helping arrange chairs; the claims fit together naturally though not strictly entailed.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Claim A is about Kira's role as lead volunteer, while claim B concerns Eli and Nell's class assignments; the two describe unrelated people and facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Claim A states a role for Kira, while claim B describes an unrelated action by a different person (Nell). There's no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "If Kira is the lead volunteer, it is natural for others like Nell to look to her for guidance on the schedule, which supports B's plausibility.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Claim A concerns Kira's role as lead volunteer, while claim B concerns a relative age comparison between Noor and Eli. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Claim A concerns Kira's volunteer role, while claim B concerns a relative age comparison between Noor and Yara; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "Claim A discusses Kira's role as lead volunteer, while claim B describes an unrelated conversation between Noor and Nell about quiz categories. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "Claim A concerns Kira's volunteer role, while claim B concerns Yara and Nell's class membership; these involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Arriving early and carrying scoresheets are independent facts about Kira; the timing of arrival doesn't affect what she was carrying.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "A establishes Kira as the first to arrive; B states Eli arrived second, right after Kira, which is consistent with and builds on A's timeline.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Kira arriving earliest before others doesn't preclude Eli also being present chatting with organizers at some point; the claims concern different people and don't directly interact.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Kira's arrival time bears on order of arrival, but says nothing about who brought a first-aid kit; the two facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A says Kira was first to arrive, while B describes the relative order of Nell and Noor's arrivals without specifying their position relative to Kira. Both can be true if Kira arrived before both Noor and Nell, with Nell following Noor.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A concerns Kira's arrival time relative to others, while claim B describes Nell laughing at a joke near the entrance; they involve different people and events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A concerns Kira's arrival time relative to others, while claim B describes Nell placing her bag at a table; they involve different people and unrelated actions with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "A establishes Kira as the earliest arriver but says nothing about the order of the remaining people, so Yara arriving last is entirely compatible with Kira arriving first.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "A describes Kira's early arrival relative to others, while B describes Yara's physical state from biking; these concern different people and independent facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "A concerns Kira's arrival time relative to others, while B concerns Yara's emotional state about an upcoming contest. These describe unrelated aspects of the scenario with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Kira's arrival time relative to others has no bearing on whether Yara and Eli share a class.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Kira arriving earliest doesn't preclude Yara and Eli from arriving together and greeting each other before sitting down; the two claims describe different people and events that can coexist without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Kira's arrival time relative to the others has no bearing on whether Yara and Eli work well together.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Arriving earliest is unrelated to being the lead volunteer role; no logical connection between arrival order and the leadership designation is stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Arrival order and time have no bearing on relative height; these are independent attributes of Kira.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Arriving earliest gives Kira extra time and opportunity to help set up the room, such as rearranging chairs before others arrived, making B more plausible.",
+   "relation": "supports",
+   "confidence": 0.62
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A concerns arrival order among people, while claim B concerns class membership of different individuals; they share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A concerns Kira's arrival time relative to others, while claim B describes Nell's independent activity; neither statement implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Arriving earliest could plausibly give Kira more knowledge of the schedule, making it slightly more plausible others would look to her for guidance, but this is a weak indirect connection rather than direct support or contradiction.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Claim A concerns arrival order among people, while claim B concerns relative ages of two different people; neither fact bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Claim A concerns arrival order among people at some event, while claim B concerns relative ages of different people (Noor and Yara). There's no logical connection between arrival timing and age comparison.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Claim A concerns Kira's arrival time relative to others, while claim B describes an unrelated conversation between Noor and Nell about quiz categories. There is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 24,
+   "rationale": "Claim A concerns arrival order among people, while claim B concerns class membership of different people; they share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A describes what Kira was carrying, while claim B describes the order of arrival relative to Kira. These concern different aspects of the scene and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A describes Kira's action while claim B describes Eli's separate action; they involve different people and activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "These describe two different people carrying two different, unrelated items with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A describes Kira's physical state while claim B describes the timing of Nell's arrival relative to Noor. They involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "The two claims describe different people doing unrelated actions with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Claim A concerns Kira carrying scoresheets, while claim B concerns Nell setting down her bag at a table; they involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A describes Kira carrying scoresheets, which has no bearing on Yara's arrival time relative to the group.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A describes Kira's physical state carrying scoresheets, while claim B describes a different person, Yara, being out of breath from biking. These involve different people and unrelated circumstances.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "A describes Kira's physical action with scoresheets, while B describes Yara's emotional state about a contest; the two involve different people and unrelated details with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A describes Kira carrying scoresheets, which has no bearing on the class membership relationship between Yara and Eli mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A describes Kira carrying scoresheets, while claim B describes an unrelated interaction between two different people, Yara and Eli. There is no logical or causal connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Carrying scoresheets says nothing about Yara and Eli's working relationship; the claims involve different people and unrelated content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Carrying scoresheets suggests Kira has some volunteer role but says nothing about whether she is the lead volunteer or not, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Carrying scoresheets under one arm has no bearing on Kira's height relative to Nell and Noor; these are unrelated aspects of Kira.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Carrying scoresheets under one arm doesn't prevent Kira from also rearranging chairs, though it might make it slightly awkward; the two activities can easily occur at different moments or she could set the sheets down.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A concerns Kira carrying scoresheets, while claim B concerns Eli and Nell's class membership. There is no logical or contextual connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "The claims describe two different people engaged in separate, unrelated activities with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Kira carrying scoresheets suggests she has an organizational role, which is consistent with Nell looking to her for guidance on the schedule, but the two claims describe largely independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Claim A describes Kira carrying scoresheets, while claim B compares the ages of Noor and Eli. The two claims involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Claim A describes Kira physically carrying scoresheets, which has no bearing on the relative ages of Noor and Yara mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.99
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Kira carrying scoresheets and Noor chatting with Nell about quiz categories describe different people and unrelated actions with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 24,
+   "rationale": "Claim A describes Kira carrying scoresheets, which has no bearing on whether Yara and Nell share a class.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "A only describes the order in which Eli arrived relative to Kira and says nothing about his mood or actions afterward, so it neither supports nor conflicts with B's description of his cheerful chatting.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A concerns the order in which Eli and Kira showed up, while claim B concerns who brought a first-aid kit; these describe unrelated aspects of the situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Both claims describe separate sequences of arrival involving different people (Eli/Kira vs Nell/Noor), with no overlap or shared context to link them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A concerns the order in which Eli and Kira arrived, while claim B describes Nell laughing at a joke near the entrance; they involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A concerns the order in which Eli and Kira arrived, while claim B describes Nell placing her bag at a table; the two involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "A states Eli arrived right after Kira, establishing part of the arrival order, but says nothing about Yara's position relative to others, so it neither confirms nor denies that Yara was last.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Claim A concerns the order in which Eli and Kira arrived, while claim B describes Yara's physical state after parking her bike. These involve different people and unrelated facts, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Claim A describes arrival order between Eli and Kira, while claim B describes Yara's emotional state about a contest; these involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A concerns the order in which people showed up relative to Kira, while claim B concerns class membership; these are unrelated dimensions with no logical connection given.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns the order in which Eli arrived relative to Kira, while claim B describes a social interaction between Yara and Eli before sitting down. These describe different aspects of the scene without directly bearing on each other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A describes arrival order relative to Kira, which has no bearing on Eli's working relationship or comfort level with Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A describes arrival order between Eli and Kira, while claim B concerns Kira's role as lead volunteer or not. These pertain to unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "The order in which Eli showed up relative to Kira has no bearing on Kira's height compared to Nell and Noor; these describe unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "A states an arrival order involving Kira and Eli, while B describes an action Kira took (rearranging chairs) unrelated to the sequence of arrivals; neither statement bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Claim A concerns arrival order relative to Kira, while claim B concerns class membership relative to Nell. These involve different people and different attributes with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Claim A describes the order of arrivals involving Eli and Kira, while claim B describes an unrelated activity by Nell. There is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Claim A concerns arrival order relative to Kira, while claim B concerns Nell's behavior of glancing at Kira for guidance; these describe unrelated aspects of the scenario with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Claim A concerns the order in which people showed up, while claim B concerns relative ages; these are independent attributes with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Claim A concerns the order in which Eli and Kira showed up, while claim B concerns the relative ages of Noor and Yara. There is no shared subject or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Claim A concerns the order in which Eli and Kira arrived, while claim B describes a conversation between Noor and Nell about quiz categories. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 24,
+   "rationale": "Claim A concerns the order in which Eli and Kira showed up, while claim B concerns class membership of Yara and Nell. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Claim A describes Eli's social behavior with organizers, while claim B describes an unrelated action by a different person (Noor) involving a first-aid kit. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A describes Eli's conversation with organizers, while claim B describes Nell's arrival relative to Noor; they involve different subjects and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Both describe different people engaged in unrelated social interactions at possibly the same event; neither claim's truth affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "These describe two different people doing unrelated actions with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Claim A describes Eli's demeanor and conversation topic, which has no bearing on when Yara arrived relative to the group.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Claim A concerns Eli's demeanor and conversation, while claim B concerns Yara's physical state after biking; they involve different people and unrelated events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "A describes Eli's cheerful chat with organizers, which says nothing about Yara's mood or expectations regarding the contest; the two describe different people and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A describes Eli's behavior and conversation topic, which has no bearing on whether Yara shares a class with Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Both describe Eli in a social, friendly mood around an event, and the chat with organizers could plausibly happen before settling into seats with a fist bump to Yara; they are compatible everyday occurrences with no direct link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "A shows Eli being sociable and cheerful with organizers, which is weak evidence he is generally comfortable in social/work interactions, but it says nothing specific about his rapport with Yara, so it only mildly supports B.",
+   "relation": "supports",
+   "confidence": 0.35
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Claim A concerns Eli chatting with organizers about past rounds, while claim B concerns Kira's role status; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A discusses Eli's chatting behavior about competition difficulty, while claim B concerns Kira's relative height to Nell and Noor. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Claim A describes Eli's chatting with organizers, while claim B describes a separate action by a different person (Kira) rearranging chairs. Neither claim provides evidence about the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Claim A describes Eli's social behavior with organizers, which has no bearing on classroom or class assignment relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "A describes Eli's cheerful chatting with organizers, while B describes Nell quietly reviewing cards; these involve different people and activities with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Claim A concerns Eli's conversation with organizers, while claim B concerns Nell glancing at Kira for schedule guidance; they involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Claim A describes Eli's behavior and conversation topic, which has no bearing on relative ages of Noor and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Claim A concerns Eli's demeanor and conversation topic, while claim B is an unrelated age comparison between two different people (Noor and Yara). Nothing in A bears on B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Both describe separate chatting events involving different people and topics with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 24,
+   "rationale": "Claim A is about Eli's conversation with organizers, while claim B concerns Yara and Nell's class placement; the two involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "A tells us about Noor bringing a first-aid kit, while B concerns Nell's arrival timing relative to Noor. These claims involve different subjects and different types of events with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Noor bringing a first-aid kit has no bearing on whether Nell was laughing at a joke near the entrance; the two events involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "The two claims describe unrelated actions by different people with no logical connection; bringing a first-aid kit does not bear on where a bag was set down.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "The claims describe different people and unrelated actions; bringing a first-aid kit has no bearing on who arrived last.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "These describe unrelated facts about different people and events; nothing about who brought the first-aid kit bears on whether Yara was out of breath from biking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A describes Noor's action of bringing a first-aid kit, while claim B describes Yara's emotional state about a contest; they involve different people and unrelated matters with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "The claim about Noor bringing a first-aid kit has no logical or factual bearing on whether Yara and Eli share a class.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Noor bringing a first-aid kit has no logical bearing on whether Yara and Eli exchanged a fist bump before sitting down; the two events involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Noor bringing a first-aid kit has no bearing on whether Yara and Eli work well together; the claims concern different people and unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Noor bringing the first-aid kit says nothing about who is or isn't the lead volunteer; the two claims concern different people and different facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Bringing a first-aid kit has no bearing on relative height comparisons between Kira, Nell, and Noor.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "These describe two different people doing unrelated preparation tasks; A's content about Noor bringing a first-aid kit has no bearing on whether Kira rearranged chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Claim A concerns who brought a first-aid kit while claim B concerns class assignments of two different people; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Noor bringing a first-aid kit and Nell reviewing trivia cards involve different people and unrelated activities, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Noor bringing a first-aid kit has no bearing on Nell glancing at Kira for guidance about the schedule; they involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Bringing a first-aid kit says nothing about relative age; the two claims concern unrelated facts about Noor.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Bringing a first-aid kit has no bearing on relative ages of Noor and Yara; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Bringing a first-aid kit and chatting about quiz categories are independent actions with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 24,
+   "rationale": "Claim A concerns who brought a first-aid kit, while claim B concerns class placement of two unrelated individuals. There is no logical or contextual link between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "A places Nell arriving shortly after Noor, which is compatible with her laughing at a joke near the entrance around that time; A neither confirms nor precludes B, but they fit together plausibly.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "A establishes Nell arrived shortly after Noor, but says nothing about what she did after arriving; B describes a subsequent action that is entirely consistent with A.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Claim A only establishes the relative order of Nell and Noor's arrival, saying nothing about Yara's position in the group, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A concerns Nell's arrival timing relative to Noor, while claim B concerns Yara's physical state after biking; they involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A describes Nell arriving shortly after Noor, while claim B describes Yara's emotional state about a contest; they involve different people and unrelated content with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A concerns Nell and Noor's arrival timing, while claim B concerns Yara and Eli's class membership; the two involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A describes Nell and Noor's arrival timing, while claim B describes an unrelated interaction between different people (Yara and Eli). There is no logical connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A describes Nell and Noor's arrival timing, while claim B describes Yara and Eli's working relationship. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A concerns the timing of Nell's arrival relative to Noor, while claim B concerns Kira's role status. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A concerns arrival order of Nell and Noor, while claim B concerns relative height involving Kira; the two describe unrelated aspects of the people involved.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A describes Nell and Noor's arrival timing, while claim B describes Kira's action of rearranging chairs; the two involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Claim A describes a timing relationship between Nell and Noor's arrival, while claim B concerns class membership between Eli and Nell. These pertain to entirely different aspects of the situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Arriving shortly after Noor doesn't preclude Nell then sitting quietly to review trivia cards; the claims describe sequential actions that are compatible.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "A describes Nell's arrival time relative to Noor, which has no bearing on whether Nell later looked to Kira for schedule guidance.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Claim A concerns the order in which Nell and Noor arrived somewhere, while claim B concerns a relative age comparison between Noor and Eli. These deal with entirely different attributes and people, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Claim A concerns arrival timing between Nell and Noor, while claim B concerns relative ages between Noor and Yara. These involve different people relationships and different attributes (timing vs age), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "A establishes that Nell and Noor were both present around the same time, which makes it plausible and unsurprising that they chatted together, but it doesn't directly imply the content of their conversation.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 24,
+   "rationale": "Claim A describes a timing relationship between Nell and Noor's arrival, which has no bearing on class membership between Yara and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Both claims could describe Nell at different moments or locations in sequence; laughing near the entrance doesn't preclude later setting her bag down at the window table.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A describes Nell laughing near an entrance, which has no clear bearing on when Yara arrived relative to the rest of the group.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "The two claims describe different people and different, unrelated activities with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "The two claims describe different people, different emotional expressions, and different causes, with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Claim A describes Nell's reaction to a joke near an entrance, while claim B is about Yara and Eli's class membership. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "The two claims describe different people and different actions with no stated connection between them; nothing about Nell laughing near the entrance bears on whether Yara and Eli fist-bumped before sitting.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Claim A describes Nell laughing at a joke near the entrance, which involves different people and context than Yara and Eli's working relationship in claim B. There is no logical connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A describes Nell's behavior near an entrance and has no bearing on Kira's role as lead volunteer; the two statements share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A describes Nell's activity and location, while claim B is a comparison of heights among Kira, Nell, and Noor. These concern unrelated attributes of the people involved.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Both claims describe different people doing unrelated actions in what seems like the same general setting, but neither entails, supports, or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Claim A describes Nell laughing near an entrance, which has no bearing on whether Eli shares a class with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "A depicts Nell actively laughing and socializing near an entrance, while B depicts her sitting quietly focused on trivia cards; these describe incompatible simultaneous states, though they could occur at different times or moments.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "A places Nell laughing at a joke near the entrance, which is a specific momentary activity, while B describes an occasional recurring behavior of glancing at Kira for schedule guidance; these could easily occur at different moments during the same evening without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.72
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Claim A concerns Nell laughing at a joke near an entrance, while claim B concerns the relative ages of Noor and Eli. There is no shared subject, context, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "Claim A describes Nell laughing at a joke near an entrance, while claim B compares the ages of Noor and Yara. The two claims involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "A places Nell laughing at a joke near the entrance, while B describes Nell chatting with Noor about quiz categories; these could occur at different moments or even overlap loosely, so there's no inherent conflict, just no direct connection either.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 24,
+   "rationale": "Claim A describes Nell's activity near an entrance, which has no bearing on whether Yara shares a class with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Claim A describes Nell placing her bag at a table, which has no bearing on when Yara arrived relative to the group.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A describes Nell's action at a table, while claim B describes Yara's physical state after parking a bike; they involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Claim A describes Nell placing her bag at a table, while claim B describes Yara's emotional state about a contest; they involve different people and unrelated events with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Claim A describes Nell placing her bag at a table, which has no logical or contextual connection to Yara and Eli being classmates.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Both describe actions that could occur in the same setting (e.g., people arriving and settling at a table), but neither event implies or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "A describes Nell placing her bag at a table, which has no bearing on whether Yara and Eli are comfortable working together.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Claim A describes Nell placing her bag at a table, which has no bearing on Kira's role as lead volunteer or lack thereof.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Claim A describes Nell's action with her bag at a table, while claim B compares heights among Kira, Nell, and Noor. These concern unrelated aspects of the scene with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Both describe plausible independent actions in what seems like the same setting, but neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Claim A describes Nell's action at a table, which has no bearing on whether Eli shares a class with her.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Setting a bag down at a table is a natural prelude to sitting there and reviewing cards, so A makes B more plausible without conflicting.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Setting a bag down at a table is a location/action detail that neither supports nor conflicts with later glancing at someone for guidance; they concern different, unconnected actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Claim A describes Nell placing her bag at a table, while claim B compares the ages of Noor and Eli. These involve different people and unrelated subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Claim A describes Nell placing a bag at a table, while claim B is an unrelated statement about the relative ages of two different people. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "A places Nell at a table by the window, which is compatible with her later chatting with Noor there; A doesn't establish anything that would prevent B from occurring.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 24,
+   "rationale": "Claim A describes Nell's physical action of placing a bag on a table, which has no bearing on Yara's class enrollment relative to Nell's.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Yara arriving last is consistent with and could plausibly be explained by her being out of breath from biking, suggesting she rushed or exerted effort; the claims fit together without conflict.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Arriving last doesn't inherently affect Yara's mood or anticipation about a contest; these describe unrelated aspects of the scenario.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Arrival order relative to a group has no bearing on class membership or relationships with Eli; these are independent facts about Yara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Arriving last does not prevent Yara from greeting Eli with a fist bump before they sit down; the two claims describe compatible sequential events.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Arriving last relates to timing, not to how comfortable Yara and Eli are working together; the two claims address unrelated aspects of Yara's situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Yara arriving last relates to arrival order, while Kira's role as lead volunteer is about organizational status; the two claims concern unrelated aspects of the scenario with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Arrival order and relative height comparisons involve different people and different attributes, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Yara's arrival order and Kira's chair-rearranging activity concern different people and unrelated events, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Claim A concerns arrival order among a group, while claim B concerns class membership between two individuals; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Yara's arrival order and Nell's quiet review of trivia cards involve different people and unrelated actions with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Yara's late arrival relative to the group has no bearing on Nell glancing at Kira for guidance about the schedule; the two claims concern different people and unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Arrival order among a group has no bearing on relative ages of different individuals; the claims share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Arriving last is about timing of arrival and bears no logical relation to relative ages of Yara and Noor.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Yara's arrival order is unrelated to Noor and Nell's conversation topic; the two claims involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 24,
+   "rationale": "Claim A describes Yara's arrival order relative to a group, while claim B concerns class membership relative to Nell. These are unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Being out of breath from parking a bike is a physical state that has no bearing on Yara's emotional anticipation of a contest; both can easily coexist without one affecting the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Being out of breath from biking has no bearing on classmate relationships or class enrollment; the two claims concern unrelated aspects of Yara's situation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Being slightly out of breath from biking is a minor physical state that doesn't meaningfully affect whether she greeted Eli with a fist bump before sitting down.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Being out of breath from biking is a physical detail unrelated to the interpersonal dynamic or comfort level between Yara and Eli while working together.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Claim A describes Yara's physical state from biking, which has no logical or topical connection to whether Kira holds the lead volunteer position.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Claim A concerns Yara's physical state after parking her bike, while claim B concerns relative heights of Kira, Nell, and Noor. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A describes Yara's physical state after biking, while claim B describes Kira's action of rearranging chairs; they involve different people and unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Claim A describes Yara's physical state after biking, while claim B concerns Eli and Nell's class placement; the two share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A describes Yara's physical state after biking, while B describes Nell's separate, unrelated activity; neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Claim A describes Yara's physical state after biking, while claim B describes Nell's behavior regarding schedule guidance; these involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Claim A concerns Yara's physical state after biking, while claim B concerns a relative age comparison between two unrelated individuals (Noor and Eli). There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Being out of breath from parking a bike has no bearing on relative ages of Yara and Noor.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Claim A describes Yara's physical state after biking, while claim B describes an unrelated conversation between different people (Noor and Nell) about quiz categories. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 24,
+   "rationale": "Being out of breath from biking has no logical bearing on class assignment or relationship to Nell; these are unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "A describes Yara's emotional state about an upcoming contest, while B states a fact about her classroom assignment relative to Eli; neither has bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Grinning at the prospect of a good contest suggests eager, friendly anticipation, which fits naturally with a friendly gesture like a fist bump before the contest begins.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "A shows Yara's enthusiasm for competition, which doesn't directly indicate anything about her comfort or working relationship with Eli specifically.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns Yara's emotional state about a contest, while claim B is about Kira's volunteer status; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A concerns Yara's emotional state about a contest, while claim B concerns relative heights of Kira, Nell, and Noor. They share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Yara's excitement about the contest and Kira's helping to set up chairs for a quiz are about different people and actions, with no logical connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A describes Yara's emotional state about a contest, while claim B is about class membership relations between Eli and Nell; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Both describe different people preparing for what seems like a trivia contest in their own ways; A's excitement doesn't affect the likelihood of B's calm preparation.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "The two claims describe different people's unrelated actions and states with no logical or causal connection between Yara's anticipation of a contest and Nell's glancing at Kira for scheduling guidance.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Claim A concerns Yara's emotional state about a contest, while claim B is an unrelated statement about relative ages of Noor and Eli; there is no logical or content connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "A describes Yara's emotional state about a contest, while B is an unrelated claim about relative ages between Noor and Yara. Neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "Both claims describe different people engaged in seemingly unrelated activities around a contest/quiz context, but there's no direct logical connection between Yara's grinning and Noor's chatting with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 24,
+   "rationale": "Yara's excitement about a contest has no bearing on whether she shares a class with Nell; the claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Being classmates makes it plausible and unsurprising that Yara and Eli would greet each other with a fist bump before class starts, so A supports B.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Being in the same class makes it plausible that Yara and Eli work together, and if so, comfort working together is a reasonable possibility, but being classmates doesn't guarantee comfort or familiarity working together.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A concerns Yara and Eli's class membership, while claim B concerns Kira's volunteer status; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "The two claims involve entirely different people and different types of facts (class membership vs. relative height), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Claim A concerns Yara and Eli's class membership, while claim B concerns Kira helping arrange chairs for a quiz; the two describe unrelated people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "A says Yara and Eli share a class, but says nothing about Nell's class placement relative to Eli, so B's claim about Eli and Nell is neither confirmed nor denied by A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A concerns a classroom relationship between Yara and Eli, while claim B describes Nell's independent activity of reviewing trivia cards; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "The two claims involve entirely different sets of people and topics with no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "A states a classmate relationship between Yara and Eli, which has no bearing on the relative ages of Noor and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Claim A states Yara shares a class with Eli, which says nothing about age relationships between Noor and Yara. Being in the same class doesn't imply anything about relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Claim A concerns Yara and Eli's classroom relationship, while claim B describes an unrelated conversation between Noor and Nell about quiz categories. There is no shared entity or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 24,
+   "rationale": "Knowing Yara shares a class with Eli says nothing about whether she shares a class with Nell, unless we know Eli's and Nell's class relationship, which is not stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "A casual fist bump before sitting down suggests familiarity and ease between them, making it more plausible that they are comfortable working together.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A describes an unrelated social interaction between Yara and Eli, while claim B concerns Kira's role status; they share no common subject or context that would connect them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A describes an unrelated interaction between Yara and Eli, while claim B concerns a height comparison among Kira, Nell, and Noor. There is no overlap in subjects or content that would connect these claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Both describe minor social/seating actions likely near the start of a quiz event, but they involve different people and actions with no causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Claim A describes an interaction between Yara and Eli, which has no bearing on Eli's classroom relationship with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "A describes Yara and Eli's actions before sitting down, while B describes an unrelated person, Nell, doing something separate. No overlap in content that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Claim A describes an unrelated interaction between different people (Yara and Eli) with no mention of Nell or Kira, so it has no bearing on B's content.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Claim A describes a physical greeting between Yara and Eli and gives no information about Noor's age or relative age to Eli, so it has no bearing on claim B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Claim A describes a social interaction between Yara and Eli, while claim B is about a relative age comparison between Noor and Yara; neither provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "The claims describe different sets of people engaged in unrelated activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 24,
+   "rationale": "Claim A describes a social interaction between Yara and Eli, which has no bearing on whether Yara shares a class with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "The claim about Yara and Eli's comfortable working relationship has no logical bearing on whether Kira holds the lead volunteer position; these involve different people and different aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Claim A concerns the working relationship between Yara and Eli, while claim B concerns relative heights of Kira, Nell, and Noor. They involve entirely different people and unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Claim A describes a comfortable working relationship between Yara and Eli, while claim B describes Kira's unrelated action of rearranging chairs for visibility. There is no logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A concerns the working relationship between Yara and Eli, while claim B concerns Eli's class assignment relative to Nell; these involve different people and different subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Claim A describes the working relationship between Yara and Eli, while claim B describes Nell's independent activity reviewing trivia cards; the two involve different people and unrelated situations.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Claim A concerns the working relationship between Yara and Eli, while claim B concerns Nell looking to Kira for schedule guidance. They involve different people and different topics, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Claim A is about the working relationship between Yara and Eli, while claim B concerns a relative age comparison between Noor and Eli. These topics do not bear on each other in any way.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Claim A describes the working relationship between Yara and Eli, while claim B concerns a relative age comparison between Noor and Yara; these facts are independent of each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Claim A concerns Yara and Eli's working relationship, while claim B describes an unrelated conversation between Noor and Nell about quiz categories. No shared subjects or logical connection exists between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 24,
+   "rationale": "Claim A concerns Yara and Eli's working relationship, while claim B concerns Yara's class assignment relative to Nell. These involve different people and different subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "A concerns leadership role, B concerns height comparisons; neither implies or affects the other since being the lead volunteer has no bearing on relative height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Not being the lead volunteer does not prevent Kira from helping with tasks like rearranging chairs; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "The two claims concern different, unrelated people and relationships (Kira's volunteer role vs. Eli's and Nell's class membership), with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Claim A concerns Kira's role status, while claim B describes Nell's activity; they involve different people and unrelated facts with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "If Kira is not the lead volunteer, it would be somewhat surprising for Nell to look to her for guidance on the schedule, though it's possible Kira has relevant knowledge without holding that title.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "The claim about Kira's volunteer status has no logical or thematic connection to relative ages of Noor and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "The two claims concern unrelated subjects: one is about a volunteer leadership role, the other about relative ages of different people, with no logical or causal link between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Claim A concerns Kira's role status, while claim B describes an unrelated conversation between different people (Noor and Nell) about quiz categories. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "The two claims concern different sets of people and different topics (volunteer leadership vs. class membership) with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Kira's height relative to Nell and Noor has no bearing on whether she helped rearrange chairs for visibility; these are independent facts about her.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Claim A concerns relative heights of Kira, Nell, and Noor, while claim B concerns class membership of Eli and Nell. There is no logical or contextual connection between height comparisons and class assignment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Height comparison among Kira, Nell, and Noor has no bearing on whether Nell was sitting and reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "A states a height comparison among Kira, Nell, and Noor, while B describes a social behavior about seeking guidance on scheduling; these concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "A discusses relative height among Kira, Nell, and Noor, while B discusses relative age between Noor and Eli. These are different attributes (height vs age) involving only partial overlap in people, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "A concerns relative height among Kira, Nell, and Noor, while B concerns relative age between Noor and Yara. These involve different attributes and different people (Yara not mentioned in A), so neither affects the truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "A is about relative heights of Kira, Nell, and Noor, while B describes a conversation between Nell and Noor about quiz categories. These claims concern unrelated aspects of the people involved.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 24,
+   "rationale": "Claim A concerns relative heights of Kira, Nell, and Noor, while claim B concerns class membership of Yara and Nell. These involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Claim A concerns Kira rearranging chairs for a quiz, while claim B concerns Eli and Nell's class assignment; the two involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "A describes Kira's helpful action before a quiz event, and B describes Nell's separate independent activity of reviewing cards; the two claims concern different people and actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Claim A shows Kira taking an active, organizational role in the event, which is consistent with her being seen as a point of guidance by Nell, but the two claims describe different, independent actions and don't directly影响 each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Claim A concerns Kira rearranging chairs for a quiz event, while claim B is an unrelated statement about relative ages of Noor and Eli. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Claim A concerns Kira rearranging chairs for a quiz event, while claim B concerns a relative age comparison between Noor and Yara. The two statements share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Both describe plausible independent activities happening around a quiz event, but neither implies or affects the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 24,
+   "rationale": "Claim A is about Kira rearranging chairs for a quiz event, while claim B concerns Yara and Nell's class placement. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "A states a relationship between Eli and Nell's class assignments, which has no bearing on what Nell was doing while sitting and reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Whether Eli and Nell share a class has no bearing on Nell glancing at Kira for schedule guidance; the claims involve different people and unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Claim A concerns class placement of Eli and Nell, while claim B concerns relative age between Noor and Eli. These involve different people and different attributes, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "The two claims concern entirely different people and different attributes (class assignment vs. relative age), so knowing one gives no information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Claim A states a class relationship between Eli and Nell, while claim B describes an interaction between Noor and Nell about quiz categories. These involve different people and different subject matter, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 24,
+   "rationale": "A states a fact about Eli's class relative to Nell, which says nothing about Yara's class relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Quietly reviewing cards suggests focused, solitary activity, while occasionally glancing up at Kira for guidance is a mild interruption to that focus; both can occur together without real conflict, though there's a slight tension between 'quietly reviewing' and 'glancing for guidance'.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Claim A describes Nell's activity and has no bearing on the relative ages of Noor and Eli; the two statements involve unrelated subjects and topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Claim A describes Nell's activity and has no bearing on the relative ages of Noor and Yara, who are different, unrelated individuals not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Nell sitting quietly reviewing cards suggests she was focused and not conversing, which is in mild tension with her chatting with Noor about quiz categories, though this could happen at a different moment.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 19,
+   "b": 24,
+   "rationale": "A describes Nell's activity but says nothing about class membership or relations to Yara, so it has no bearing on whether Yara shares a class with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Claim A concerns Nell and Kira's interaction regarding a schedule, while claim B concerns the relative ages of Noor and Eli. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Claim A concerns Nell, Kira, and an evening's schedule, while claim B concerns the relative ages of Noor and Yara. There is no shared subject matter or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Both claims describe Nell's activities during what seems to be the same evening, but they involve different people and actions that could easily coexist without conflict or notable connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 20,
+   "b": 24,
+   "rationale": "A concerns Nell's interaction with Kira regarding scheduling, which has no bearing on whether Yara shares a class with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "A tells us Noor's age relative to Eli only; it gives no information about Yara, so B's truth is unaffected either way.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "Claim A concerns relative age between Noor and Eli, while claim B describes a social interaction between Noor and Nell about quiz categories. These have no logical or thematic connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "The two claims concern entirely different sets of people (age comparison between Noor and Eli vs. class membership of Yara and Nell) with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Claim A concerns relative age between Noor and Yara, while claim B describes a conversation between Noor and Nell about quiz categories. These two claims involve different topics and different people (Yara vs Nell), so neither supports, contradicts, nor creates tension with the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "The relative age of Noor and Yara has no bearing on whether Yara shares a class with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 23,
+   "b": 24,
+   "rationale": "Claim A describes an interaction between Noor and Nell about quiz categories, which has no bearing on whether Yara shares a class with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira"
+    ]
+   },
+   {
+    "id": "eli",
+    "mentions": [
+     "Eli"
+    ]
+   },
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 12,
+    "attribute": "class",
+    "kind": "same",
+    "a": "yara",
+    "b": "eli",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "class",
+    "kind": "different",
+    "a": "eli",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 24,
+    "attribute": "class",
+    "kind": "different",
+    "a": "yara",
+    "b": "nell",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "subject": "eli",
+    "comparative": "next after",
+    "object": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "subject": "nell",
+    "comparative": "shortly after",
+    "object": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "height",
+    "subject": "kira",
+    "comparative": "taller than",
+    "object": "nell",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "height",
+    "subject": "kira",
+    "comparative": "taller than",
+    "object": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "subject": "noor",
+    "comparative": "younger",
+    "object": "eli",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "age",
+    "subject": "noor",
+    "comparative": "older",
+    "object": "yara",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "entity": "kira",
+    "comparative": "earliest",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "entity": "yara",
+    "comparative": "last",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "next after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "shortly after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "older",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "earliest",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "last",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 25,
+  "pairs_requested": 300,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 17,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    2,
+    17
+   ],
+   [
+    7,
+    19
+   ],
+   [
+    15,
+    20
+   ],
+   [
+    19,
+    20
+   ],
+   [
+    19,
+    23
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "height": "magnitude",
+    "class": null,
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 1,
+     "attribute": "arrival_time",
+     "entity": "kira",
+     "extreme": "min",
+     "edges": 4
+    },
+    {
+     "claim_id": 9,
+     "attribute": "arrival_time",
+     "entity": "yara",
+     "extreme": "max",
+     "edges": 4
+    }
+   ],
+   "extreme_edges": 8,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 25,
+  "n_edges": 14,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9797439968572504,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   0.005025125628140708,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.9999747481124212,
+   3.0568360077314207e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   2.958228394578794e-32,
+   7.395570986446986e-32,
+   1.1093356479670479e-31,
+   5.669937756276022e-32,
+   1.9899497487437183,
+   0.0,
+   1.094544505994154e-31,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 1,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 15,
+    "residual": 0.9999747481124212
+   },
+   {
+    "a": 0,
+    "b": 17,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 0,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 17,
+    "residual": 3.0568360077314207e-32
+   },
+   {
+    "a": 4,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 13,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 12,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 14,
+    "residual": 2.465190328815662e-32
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 3.2047474274603606e-32
+   }
+  ],
+  "residual_ranking": [
+   15,
+   0
+  ],
+  "culprits": [
+   {
+    "claim": 15,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.020256003142749557
+   },
+   {
+    "claim": 0,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.020256003142749557
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 8061,
+   "api_calls": 0,
+   "cache_hits": 8061,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    1,
+    3,
+    15,
+    17,
+    20
+   ],
+   [
+    2
+   ],
+   [
+    4,
+    11,
+    12,
+    13,
+    14
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    23
+   ],
+   [
+    7
+   ],
+   [
+    8,
+    19
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    16
+   ],
+   [
+    18
+   ],
+   [
+    21
+   ],
+   [
+    22
+   ],
+   [
+    24
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    0,
+    15
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 2,
+    "b": 17,
+    "rationale": "Carrying scoresheets under one arm doesn't prevent Kira from also rearranging chairs, though it might make it slightly awkward; the two activities can easily occur at different moments or she could set the sheets down.",
+    "confidence": 0.45
+   },
+   {
+    "a": 7,
+    "b": 19,
+    "rationale": "A depicts Nell actively laughing and socializing near an entrance, while B depicts her sitting quietly focused on trivia cards; these describe incompatible simultaneous states, though they could occur at different times or moments.",
+    "confidence": 0.65
+   },
+   {
+    "a": 15,
+    "b": 20,
+    "rationale": "If Kira is not the lead volunteer, it would be somewhat surprising for Nell to look to her for guidance on the schedule, though it's possible Kira has relevant knowledge without holding that title.",
+    "confidence": 0.65
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "rationale": "Quietly reviewing cards suggests focused, solitary activity, while occasionally glancing up at Kira for guidance is a mild interruption to that focus; both can occur together without real conflict, though there's a slight tension between 'quietly reviewing' and 'glancing for guidance'.",
+    "confidence": 0.45
+   },
+   {
+    "a": 19,
+    "b": 23,
+    "rationale": "Nell sitting quietly reviewing cards suggests she was focused and not conversing, which is in mild tension with her chatting with Noor about quiz categories, though this could happen at a different moment.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 12,
+   "attribute": "class",
+   "kind": "same",
+   "a": "yara",
+   "b": "eli",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 18,
+   "attribute": "class",
+   "kind": "different",
+   "a": "eli",
+   "b": "nell",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 24,
+   "attribute": "class",
+   "kind": "different",
+   "a": "yara",
+   "b": "nell",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "eli",
+   "b": "kira",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 6,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "nell",
+   "b": "noor",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "kira",
+   "b": "nell",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "kira",
+   "b": "noor",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 21,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "eli",
+   "b": "noor",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 22,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "noor",
+   "b": "yara",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "eli",
+   "b": "kira",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "nell",
+   "b": "kira",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "noor",
+   "b": "kira",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "yara",
+   "b": "kira",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 9,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "yara",
+   "b": "eli",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 9,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "yara",
+   "b": "kira",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 9,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "yara",
+   "b": "nell",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 9,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "yara",
+   "b": "noor",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

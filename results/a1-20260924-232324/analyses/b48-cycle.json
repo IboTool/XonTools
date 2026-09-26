@@ -1,0 +1,1414 @@
+{
+ "label": "b48-cycle",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-20cca51ddabd",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Pia arrived first, humming a tune from the second act while she taped marks on the stage floor.",
+   "span": "Pia arrived first, humming a tune from the second act while she taped marks on the stage floor.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Ana is the treasurer.",
+   "span": "Assume that Ana is the treasurer.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Bo came in shortly after, carrying a bag of props that clinked softly with every step.",
+   "span": "Bo came in shortly after, carrying a bag of props that clinked softly with every step.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Dara appeared a few minutes later, still shaking off the cold from outside.",
+   "span": "Dara appeared a few minutes later, still shaking off the cold from outside",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Dara nodded a greeting to the stage manager near the wings.",
+   "span": "nodded a greeting to the stage manager near the wings",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Gia drove the minibus.",
+   "span": "Gia drove the minibus.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "The director called for a quick warm up before diving into the first scene.",
+   "span": "The director called for a quick warm up before diving into the first scene",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "The cast spread out across the stage to stretch.",
+   "span": "the cast spread out across the stage to stretch",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Ana stood near the lighting board, reviewing notes from the previous run.",
+   "span": "Ana stood near the lighting board, reviewing notes from the previous run",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Ana occasionally glanced at the clock on the wall.",
+   "span": "occasionally glancing at the clock on the wall",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Dara is older than Bo.",
+   "span": "Dara is older than Bo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "The rehearsal moved briskly through the opening scenes, with the actors trading lines and adjusting their blocking as the director offered corrections.",
+   "span": "The rehearsal moved briskly through the opening scenes, with the actors trading lines and adjusting their blocking as the director offered corrections.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Bo is older than Pia.",
+   "span": "Bo is older than Pia.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "During a short break, Pia practiced a tricky bit of choreography in the corner.",
+   "span": "During a short break, Pia practiced a tricky bit of choreography in the corner",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Gia checked the sound levels for the next segment.",
+   "span": "Gia checked the sound levels for the next segment",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Pia is older than Dara.",
+   "span": "Pia is older than Dara.",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "By the time the rehearsal wrapped up, the group had run through nearly every scene twice.",
+   "span": "By the time the rehearsal wrapped up, the group had run through nearly every scene twice",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Pia's arrival is unrelated to Ana's role as treasurer.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Pia arriving first establishes a sequence that Bo arrived after, supporting the timeline described.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Pia arriving first is consistent with Dara arriving a few minutes later, supporting the sequence.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Pia's arrival has no bearing on Dara greeting the stage manager.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Pia's arrival is unrelated to Gia driving the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Pia's early arrival doesn't determine whether the director calls for warm up.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Pia's arrival is unrelated to the cast stretching later.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Pia's arrival is unrelated to Ana's activity at the lighting board.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Pia's arrival has no bearing on Ana glancing at the clock.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Pia's arrival time is unrelated to relative ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Pia's early arrival doesn't directly affect how rehearsal proceeded later.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Pia's arrival time is unrelated to relative ages of Bo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Pia's early arrival is consistent with her later practicing choreography, but doesn't strongly imply it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Pia's arrival is unrelated to Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Pia's arrival time is unrelated to her age relative to Dara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Pia's early arrival is unrelated to how the rehearsal wrapped up.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Ana being treasurer is unrelated to Bo's arrival with props.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Ana being treasurer is unrelated to Dara's arrival.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Ana being treasurer is unrelated to Dara greeting the stage manager.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Ana being treasurer is unrelated to Gia driving the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Ana's role as treasurer has no bearing on the director calling for warm ups.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Ana's treasurer role is unrelated to the cast stretching.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Being treasurer doesn't imply or preclude standing near the lighting board reviewing notes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Ana's financial role has no connection to glancing at a clock.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Ana being treasurer has no bearing on the relative ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Ana's treasurer role is unrelated to how the rehearsal proceeds.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Ana's role as treasurer has no bearing on Bo and Pia's relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Ana's treasurer role is unrelated to Pia's choreography practice.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Ana's treasurer role has no connection to Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Ana's treasurer role has no bearing on Pia and Dara's relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Ana's treasurer role is unrelated to how the rehearsal wraps up.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Bo's arrival timing is a separate event from Dara's arrival, with no causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Bo carrying props is unrelated to Dara nodding to the stage manager.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Bo carrying a bag of props has no bearing on who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Bo's arrival with props doesn't relate to the director's warm-up call.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Bo's arrival is unrelated to the cast stretching.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Bo's arrival with props is unrelated to Ana's activity at the lighting board.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Bo's arrival is unrelated to Ana glancing at the clock.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Bo carrying props has no bearing on the relative ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Bo's arrival with props is a separate event unrelated to how rehearsal of scenes proceeded.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Bo carrying a bag of props has no bearing on age comparison between Bo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Bo's arrival with props is unrelated to Pia's choreography practice during a break.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Bo's arrival is unrelated to Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Bo's arrival with props has no bearing on the age relation between Pia and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Bo's arrival is unrelated to how the rehearsal wraps up later.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Dara's appearance is a precondition for Dara nodding a greeting, making it more plausible/consistent.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Dara's arrival timing has no bearing on who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Dara's arrival is unrelated to the director's decision to call for a warm up.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Dara's arrival is unrelated to the cast spreading out to stretch.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Dara's arrival has no direct bearing on Ana's activity at the lighting board.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Dara's arrival is unrelated to Ana glancing at the clock.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Dara's late arrival and being cold does not indicate anything about relative age compared to Bo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Dara's arrival timing is unrelated to how briskly the rehearsal proceeded through opening scenes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Dara's arrival has no bearing on the age comparison between Bo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Dara's arrival is unrelated to Pia practicing choreography during a break.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Dara's arrival is unrelated to Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Dara's arrival timing has no bearing on the age comparison between Pia and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Dara's arrival is unrelated to how the rehearsal wraps up later.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Dara nodding to the stage manager has no bearing on who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Dara's greeting to the stage manager is unrelated to the director calling for a warm up.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Dara nodding a greeting is unrelated to the cast stretching on stage.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Dara's greeting near the wings has no bearing on Ana's activity by the lighting board.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Dara nodding to the stage manager does not affect whether Ana glances at the clock.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "A greeting gesture has no logical connection to relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Dara's greeting is unrelated to the pace and content of the rehearsal.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Dara's action has nothing to do with Bo and Pia's relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Dara's greeting near the wings is unrelated to Pia's choreography practice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Dara's nod is unrelated to Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "A greeting gesture has no bearing on age comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Dara's greeting near the wings does not inform how the rehearsal wrapped up.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Gia driving the minibus is unrelated to the director calling for a warm up.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Driving the minibus has no connection to the cast stretching on stage.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Gia driving the minibus is unrelated to Ana's review of notes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Gia driving the minibus has no bearing on Ana glancing at the clock.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Driving a minibus is unrelated to age comparisons between Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Gia driving the minibus does not affect the pace of rehearsal scenes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Driving the minibus is unrelated to Bo and Pia's relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Gia driving the minibus has no connection to Pia practicing choreography.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Driving the minibus is a separate activity unrelated to checking sound levels, though both involve Gia they are not causally linked.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Driving the minibus has no bearing on Pia and Dara's relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Driving the minibus is unrelated to how the rehearsal wrapped up.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "The director calling for a warm up directly leads to the cast stretching.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "The warm-up call is unrelated to Ana reviewing notes near the lighting board.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "The warm-up call is unrelated to Ana glancing at the clock.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "The warm-up call has no bearing on relative ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Calling for a warm up before the first scene supports the idea that rehearsal then moved into the opening scenes.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "The warm-up call has no bearing on ages of Bo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "The warm-up call is unrelated to Pia practicing choreography during a break.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "The warm-up call is unrelated to Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "The warm-up call has no bearing on ages of Pia and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Calling for warm up before starting supports that a full rehearsal eventually wrapped up.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "The cast stretching is unrelated to Ana reviewing notes at the lighting board.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "The cast stretching is unrelated to Ana glancing at the clock.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Stretching has no bearing on ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "The cast stretching before the scene supports that rehearsal then moved into scenes.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Stretching has no bearing on ages of Bo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "The cast stretching is unrelated to Pia's choreography practice during a break.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Stretching is unrelated to Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Stretching has no bearing on ages of Pia and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "The cast warming up supports that a rehearsal took place and eventually wrapped up.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Both describe Ana's actions during the same period, and reviewing notes near the board is consistent with occasionally glancing at the clock.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Ana's activity has no bearing on the relative ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Ana's reviewing notes is a separate activity from the description of the rehearsal's pace, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Ana's actions do not relate to the age comparison between Bo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Ana reviewing notes near the lighting board is unrelated to Pia's choreography practice during a break.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Ana's activity near the lighting board doesn't affect or predict Gia's checking of sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Ana's actions have no bearing on the age relation between Pia and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Ana reviewing notes early on doesn't determine how the rehearsal wraps up later, though both are part of the same event timeline.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Ana glancing at the clock has no connection to the ages of Dara and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Ana's clock-watching is a minor personal habit unrelated to the pace of the rehearsal itself.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Ana's glancing at the clock is unrelated to the age comparison between Bo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Ana's clock-watching and Pia's choreography practice are separate, unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Ana glancing at the clock doesn't relate to Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Ana's habit has no bearing on the age relation between Pia and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Ana occasionally checking the clock could suggest time awareness consistent with the rehearsal running its full course, but this is a weak indirect link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "The age relation between Dara and Bo has no bearing on how the rehearsal proceeded.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Dara being older than Bo doesn't directly determine whether Bo is older than Pia, though it's part of the same age chain.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "The age relation between Dara and Bo is unrelated to Pia's choreography practice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "The age relation between Dara and Bo has no connection to Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Dara being older than Bo doesn't logically determine whether Pia is older than Dara, as they are different comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Age order among cast members is unrelated to rehearsal progress details.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Rehearsal progress is unrelated to relative ages of Bo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "General rehearsal description doesn't specifically confirm or deny Pia's break-time choreography practice, but both are plausible parts of the same event without direct bearing.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "The rehearsal scene description doesn't specifically address Gia's sound check task.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Rehearsal progress details are unrelated to age comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "A brisk early rehearsal makes it plausible that many scenes could be run through by the end, supporting the idea of thorough rehearsal.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Age relation between Bo and Pia has no bearing on Pia's choreography practice.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Age relation is unrelated to Gia's sound check activity.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "If Bo is older than Pia, then Pia cannot be older than Dara unless Dara is younger than Bo but older than Pia is impossible only if it contradicts transitive order with Dara; however this claim alone doesn't specify Dara's relation to Bo or Pia directly, so it's unrelated to Pia vs Dara age.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Ages of Bo and Pia have no bearing on rehearsal completion details.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Pia practicing choreography during a break is unrelated to Gia checking sound levels.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Pia's practice activity during a break has no bearing on her age relative to Dara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "A short break for practice is consistent with, but doesn't specifically confirm, the rehearsal running through scenes twice by the end.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Gia's sound check task is unrelated to Pia and Dara's age comparison.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Gia checking sound levels for the next segment suggests the rehearsal is ongoing and progressing, weakly supporting eventual completion of many scenes.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Pia's age relative to Dara has no bearing on the rehearsal's completion status.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia",
+     "she"
+    ]
+   },
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana"
+    ]
+   },
+   {
+    "id": "bo",
+    "mentions": [
+     "Bo"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "bo",
+    "b": "pia",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "dara",
+    "b": "bo",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gia",
+    "b": "dara",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 10,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dara",
+    "b": "bo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "bo",
+    "b": "pia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "pia",
+    "b": "dara",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 17,
+  "pairs_requested": 136,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 6,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 17,
+  "n_edges": 11,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "age",
+    "entities": [
+     "dara",
+     "bo",
+     "pia"
+    ],
+    "relations": [
+     3,
+     4,
+     5
+    ],
+    "claim_ids": [
+     10,
+     12,
+     15
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   2.588449845256445e-32,
+   2.526820087036053e-32,
+   0.0,
+   0.0,
+   0.0,
+   6.347865096700329e-32,
+   0.0,
+   0.0,
+   1.9721522630525296e-32,
+   0.0,
+   8.135128085091684e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 2,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 4,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 11,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 6,
+    "b": 16,
+    "residual": 6.162975822039155e-33
+   },
+   {
+    "a": 7,
+    "b": 11,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 7,
+    "b": 16,
+    "residual": 6.162975822039155e-33
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 16,
+    "residual": 1.9721522630525296e-32
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 2496,
+   "api_calls": 0,
+   "cache_hits": 2496,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0,
+    2,
+    3,
+    4
+   ],
+   [
+    1
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    7,
+    11,
+    14,
+    16
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    10
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    15
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "age",
+    "entities": [
+     "dara",
+     "bo",
+     "pia"
+    ],
+    "relations": [
+     3,
+     4,
+     5
+    ],
+    "claim_ids": [
+     10,
+     12,
+     15
+    ],
+    "min_confidence": 0.95
+   }
+  ]
+ }
+}

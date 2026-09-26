@@ -1,0 +1,27 @@
+{
+ "request": "5b8cd1ac0bfaecf3ba43cdc6cf1b06f819250e9431f27123a9c9dadaf8568d46",
+ "tag": "text-f0b4afd3858c-var3-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Assume that Uma is the treasurer.",
+     "Uma is not the treasurer."
+    ],
+    "explanation": "These two statements directly assert opposite claims about whether Uma is the treasurer."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1119,
+  "output_tokens": 78,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b00-direct",
+ "repetition": 3,
+ "call": 87
+}

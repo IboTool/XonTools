@@ -1,0 +1,24 @@
+{
+ "request": "6bb71cb9776219220c7402a06ab0b1ec9df14d2c0bf92ed3e28d4b876076cf83",
+ "tag": "text-290dea09a96f-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Assume that Lena is the team captain.",
+     "Lena is not the team captain."
+    ],
+    "explanation": "The text both assumes Lena is the team captain and directly states that she is not, which cannot both be true."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1093,
+  "output_tokens": 292,
+  "thinking_tokens": 209
+ },
+ "stop_reason": "end_turn"
+}

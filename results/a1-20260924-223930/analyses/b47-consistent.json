@@ -1,0 +1,1332 @@
+{
+ "label": "b47-consistent",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-a9a25bb4f0db",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Pia is the lead volunteer.",
+   "span": "Assume that Pia is the lead volunteer.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Ivo arrived a few minutes before Uma.",
+   "span": "Ivo arrived a few minutes before Uma",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Ivo was carrying binoculars slung around his neck.",
+   "span": "both carrying binoculars slung around their necks",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Uma was carrying binoculars slung around her neck.",
+   "span": "both carrying binoculars slung around their necks",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Dara showed up shortly after Ivo and Uma.",
+   "span": "Dara showed up shortly after",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Dara had a battered field guide tucked under one arm.",
+   "span": "a battered field guide tucked under one arm",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Pia was slightly taller than Otto.",
+   "span": "Pia was slightly taller than Otto",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Dara stood taller than both Pia and Otto.",
+   "span": "Dara stood taller than either of them",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Otto brought the first-aid kit.",
+   "span": "Otto brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Everyone gathered near the wooden gate to check their gear before setting off toward the trees.",
+   "span": "Everyone gathered near the wooden gate to check their gear before setting off toward the trees",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Ivo and Uma were on different teams.",
+   "span": "Ivo and Uma were on different teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "A heron had been spotted near the old bridge the previous week.",
+   "span": "a heron had been spotted near the old bridge the previous week",
+   "kind": "quoted"
+  },
+  {
+   "id": 12,
+   "text": "Uma and Dara were on different teams.",
+   "span": "Uma and Dara were on different teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Otto had arrived last.",
+   "span": "Otto, who had arrived last",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Otto jogged to catch up with the others.",
+   "span": "jogged to catch up with the others",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Otto's boots were squelching in the mud.",
+   "span": "his boots squelching in the mud",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Pia mentioned that the light was perfect for photographing warblers.",
+   "span": "Pia mentioned that the light was perfect for photographing warblers",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Uma nodded in agreement.",
+   "span": "Uma nodded in agreement",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Ivo and Dara were on different teams.",
+   "span": "Ivo and Dara were on different teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Dara pointed out a woodpecker tapping steadily against a hollow trunk.",
+   "span": "Dara pointed out a woodpecker tapping steadily against a hollow trunk",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Ivo raised his binoculars to get a better look.",
+   "span": "Ivo raised his binoculars to get a better look",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "There were three teams.",
+   "span": "There were three teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "By midmorning, everyone had reassembled near the visitor center.",
+   "span": "By midmorning, everyone had reassembled near the visitor center",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Everyone was comparing notes on the birds they had seen.",
+   "span": "comparing notes on the birds they had seen",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Everyone was sharing sips of water from their bottles.",
+   "span": "sharing sips of water from their bottles",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "Otto was younger than Pia.",
+   "span": "Otto was younger than Pia",
+   "kind": "asserted"
+  },
+  {
+   "id": 26,
+   "text": "Otto was older than Ivo.",
+   "span": "but older than Ivo",
+   "kind": "asserted"
+  },
+  {
+   "id": 27,
+   "text": "Uma ranked highest on the morning's species count.",
+   "span": "Uma, who ranked highest on the morning's species count",
+   "kind": "asserted"
+  },
+  {
+   "id": 28,
+   "text": "Uma laughed as she recounted spotting a kingfisher darting low over the water.",
+   "span": "laughed as she recounted spotting a kingfisher darting low over the water",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Being the lead volunteer has no bearing on whether Pia carries binoculars.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Leadership status is unrelated to relative height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Leadership status does not affect Dara's height compared to others.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "Being lead volunteer doesn't relate to sharing water sips.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 25,
+   "rationale": "Leadership role doesn't determine relative age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 26,
+   "rationale": "Leadership role doesn't determine relative age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Ivo arriving before Uma is consistent with Dara arriving shortly after both, supporting a sequential arrival order.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Arrival timing is unrelated to height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Ivo arriving before Uma is consistent with Otto arriving last, both describing an arrival order.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Ivo's arrival time relative to Uma doesn't imply anything about Otto jogging.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Arrival timing between Ivo and Uma is unrelated to Otto's muddy boots.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Ivo arriving before Uma has no bearing on Pia's comment about lighting.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 24,
+   "rationale": "Arrival order is unrelated to sharing water sips.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Ivo carrying binoculars doesn't imply anything about Uma's equipment.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Carrying binoculars is unrelated to height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Ivo carrying binoculars around his neck makes it plausible he would raise them to look, supporting that action.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Uma carrying binoculars is unrelated to Pia's height relative to Otto.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Uma having binoculars is consistent with checking gear near the gate but doesn't strongly imply it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Uma's binoculars have no bearing on the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Dara showing up shortly after is consistent with Dara having a field guide, but the two facts are independent details about Dara.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "If Dara arrived shortly after Ivo and Uma, that leaves open whether Otto arrived even later, but doesn't confirm Otto arrived last.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Dara's arrival timing relative to Ivo and Uma doesn't bear on Otto's jogging to catch up.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Dara's early arrival timing is unrelated to whether everyone reassembled by midmorning.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Having a field guide under one's arm has no bearing on relative height of Pia and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Dara carrying a field guide is unrelated to which teams Ivo and Uma were on.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Dara having a field guide has no logical connection to a heron sighting the previous week.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 25,
+   "rationale": "Dara's field guide has nothing to do with Otto's age relative to Pia.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 28,
+   "rationale": "Dara carrying a field guide is unrelated to Uma's laughing about a kingfisher.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Pia being taller than Otto is consistent with and supports Dara being taller than both, since it confirms Otto is not the tallest of the two already compared.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Relative heights of Pia and Otto have no connection to a heron sighting near a bridge.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Height comparison between Pia and Otto is unrelated to the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 24,
+   "rationale": "Pia being taller than Otto has no bearing on everyone sharing water.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 25,
+   "rationale": "Height comparison is unrelated to age comparison between Otto and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 26,
+   "rationale": "Pia's height relative to Otto has no bearing on Otto's age relative to Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Dara's height relative to Pia and Otto has no bearing on Uma nodding in agreement.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 25,
+   "rationale": "Dara's height compared to Pia and Otto is unrelated to Otto's age relative to Pia.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Otto bringing the first-aid kit is consistent with and supports the idea that everyone gathered to check their gear, as the kit would be part of that gear check.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Otto bringing a first-aid kit has no bearing on whether Ivo and Uma were on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Otto bringing the first-aid kit doesn't relate to him jogging to catch up with others.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Otto bringing the first-aid kit has no direct bearing on everyone reassembling by midmorning.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Ivo and Uma being on different teams says nothing about the relationship between Uma and Dara's teams.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Team assignment of Ivo and Uma has no bearing on when Otto arrived.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Ivo/Uma being on different teams doesn't determine whether Ivo and Dara are on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Ivo and Uma being on different teams implies at least two teams exist, which is consistent with but doesn't establish exactly three teams.",
+   "relation": "supports",
+   "confidence": 0.3
+  },
+  {
+   "a": 10,
+   "b": 28,
+   "rationale": "Team assignment of Ivo and Uma is unrelated to Uma's storytelling about a kingfisher.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Uma and Dara being on different teams doesn't determine the relationship between Ivo and Dara's teams.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Uma and Dara being on different teams suggests at least two teams exist, weakly supporting the possibility of three teams but not confirming it.",
+   "relation": "supports",
+   "confidence": 0.3
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Otto arriving last explains why he would jog to catch up with the others.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Otto arriving last doesn't inherently explain or relate to his boots squelching in mud.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Otto arriving last has no bearing on the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Otto jogging through mud could explain why his boots were squelching.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Otto's muddy boots have no bearing on whether Ivo and Dara are on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Otto's squelching boots are unrelated to Dara pointing out a woodpecker.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Otto's muddy boots are unrelated to the group comparing notes on birds seen.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Pia's comment about the light being perfect for photographing warblers could prompt Uma's nod of agreement.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Pia's comment about light for photography is unrelated to Ivo raising his binoculars, which follows from Dara's woodpecker sighting.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 25,
+   "rationale": "Uma nodding in agreement has no bearing on Otto's age relative to Pia.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Ivo and Dara being on different teams suggests at least two teams exist, weakly supporting but not confirming three teams.",
+   "relation": "supports",
+   "confidence": 0.3
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Dara pointing out a woodpecker directly explains why Ivo raised his binoculars to look.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 28,
+   "rationale": "Dara pointing out a woodpecker is a separate event from Uma's story about a kingfisher, with no causal link.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "The existence of three teams is unrelated to whether everyone reassembled by midmorning.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 21,
+   "b": 26,
+   "rationale": "The number of teams has no bearing on relative ages of Otto and Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Everyone reassembling near the visitor center sets up the opportunity for them to compare notes, supporting that they were doing so.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "Everyone reassembling together provides opportunity for sharing water, mildly supporting that activity.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 23,
+   "b": 24,
+   "rationale": "Comparing notes on birds is a separate activity from sharing water sips, neither implying nor precluding the other, though both fit a social gathering.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 23,
+   "b": 25,
+   "rationale": "Comparing bird notes has no bearing on relative ages of Otto and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 23,
+   "b": 27,
+   "rationale": "Everyone comparing notes on species seen is consistent with there being a ranking, supporting that Uma could rank highest.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 23,
+   "b": 28,
+   "rationale": "Comparing notes on birds seen supports the idea that Uma might recount a specific bird sighting like the kingfisher.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 25,
+   "b": 26,
+   "rationale": "Otto being younger than Pia does not determine his relative age to Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 27,
+   "b": 28,
+   "rationale": "Uma ranking highest in species count is consistent with her having spotted many birds, supporting that she recounted seeing a kingfisher.",
+   "relation": "supports",
+   "confidence": 0.5
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo",
+     "his"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma",
+     "her",
+     "she"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "multi",
+    "arity_span": "There were three teams."
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "species_count_rank",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "uma",
+    "b": "ivo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "dara",
+    "b": "ivo",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "dara",
+    "b": "uma",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "pia",
+    "b": "otto",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "dara",
+    "b": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "dara",
+    "b": "otto",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 10,
+    "attribute": "team",
+    "kind": "different",
+    "a": "ivo",
+    "b": "uma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "team",
+    "kind": "different",
+    "a": "uma",
+    "b": "dara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "otto",
+    "b": "ivo",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 13,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "otto",
+    "b": "uma",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 13,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "otto",
+    "b": "dara",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 18,
+    "attribute": "team",
+    "kind": "different",
+    "a": "ivo",
+    "b": "dara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 25,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "pia",
+    "b": "otto",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 26,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "otto",
+    "b": "ivo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 27,
+    "attribute": "species_count_rank",
+    "kind": "greater",
+    "a": "uma",
+    "b": "pia",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 27,
+    "attribute": "species_count_rank",
+    "kind": "greater",
+    "a": "uma",
+    "b": "ivo",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 27,
+    "attribute": "species_count_rank",
+    "kind": "greater",
+    "a": "uma",
+    "b": "dara",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 27,
+    "attribute": "species_count_rank",
+    "kind": "greater",
+    "a": "uma",
+    "b": "otto",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 32,
+  "blind": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    24
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    15
+   ],
+   [
+    1,
+    16
+   ],
+   [
+    1,
+    24
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    21
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    22
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    5,
+    25
+   ],
+   [
+    5,
+    28
+   ],
+   [
+    6,
+    11
+   ],
+   [
+    6,
+    21
+   ],
+   [
+    6,
+    24
+   ],
+   [
+    7,
+    17
+   ],
+   [
+    7,
+    25
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    8,
+    14
+   ],
+   [
+    8,
+    22
+   ],
+   [
+    10,
+    13
+   ],
+   [
+    10,
+    28
+   ],
+   [
+    13,
+    21
+   ],
+   [
+    15,
+    18
+   ],
+   [
+    15,
+    19
+   ],
+   [
+    15,
+    23
+   ],
+   [
+    17,
+    25
+   ],
+   [
+    19,
+    28
+   ],
+   [
+    21,
+    22
+   ],
+   [
+    21,
+    26
+   ],
+   [
+    23,
+    24
+   ],
+   [
+    23,
+    25
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 29,
+  "pairs_requested": 70,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 38,
+  "blind_pairs_related": 1,
+  "entity_relations": 18,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 29,
+  "n_edges": 17,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    11
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   0.9999999999999998,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0000000000000002,
+   1.0,
+   0.9999999999999998,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   2.7117093616972283e-32,
+   1.232595164407831e-32,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   1.479114197289397e-32,
+   0.0,
+   1.479114197289397e-32,
+   7.642090019328552e-32,
+   5.669937756276022e-32,
+   1.9721522630525296e-32,
+   0.0,
+   0.0,
+   1.479114197289397e-32,
+   1.1093356479670479e-32,
+   2.3419308123748787e-32,
+   9.367723249499516e-32,
+   4.190823558986625e-32,
+   1.1709654061874394e-31,
+   1.9721522630525296e-32,
+   0.0,
+   0.0,
+   2.465190328815662e-32,
+   3.328006943901144e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 4,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 13,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 2,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 21,
+    "residual": 1.479114197289397e-32
+   },
+   {
+    "a": 12,
+    "b": 21,
+    "residual": 1.479114197289397e-32
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 15,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 21,
+    "residual": 1.479114197289397e-32
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 1.1093356479670479e-32
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 22,
+    "b": 24,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 23,
+    "b": 27,
+    "residual": 6.162975822039155e-33
+   },
+   {
+    "a": 23,
+    "b": 28,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "residual": 6.162975822039155e-33
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 2414,
+   "api_calls": 0,
+   "cache_hits": 2414,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 7548523
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    4,
+    13,
+    14,
+    15
+   ],
+   [
+    2,
+    19,
+    20
+   ],
+   [
+    3
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    10,
+    12,
+    18,
+    21
+   ],
+   [
+    11
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    22,
+    23,
+    24,
+    27,
+    28
+   ],
+   [
+    25
+   ],
+   [
+    26
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": []
+ }
+}

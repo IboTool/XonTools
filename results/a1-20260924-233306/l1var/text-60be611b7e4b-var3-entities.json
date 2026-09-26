@@ -1,0 +1,190 @@
+{
+ "request": "450dded26e560d2e28f2949bb5fce6e0ff9b7a24e40ffc20a1e33703cc499e23",
+ "tag": "text-60be611b7e4b-var3-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina",
+     "she"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo",
+     "his"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "role",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "booked_hall",
+    "arity": "binary",
+    "arity_span": "Gus booked the hall."
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "work_schedule_preference",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "mina",
+    "b": "leo",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 4,
+    "attribute": "booked_hall",
+    "kind": "same",
+    "a": "gus",
+    "b": "gus",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "booked_hall",
+    "kind": "different",
+    "a": "gus",
+    "b": "gus",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "leo",
+    "b": "mina",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "dev",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 10,
+    "attribute": "team",
+    "kind": "same",
+    "a": "mina",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "ben",
+    "b": "mina",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "team",
+    "kind": "different",
+    "a": "leo",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "team",
+    "kind": "different",
+    "a": "mina",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "ben",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 18,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "leo",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 18,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "mina",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2174,
+  "output_tokens": 879,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b01-direct",
+ "repetition": 3,
+ "call": 169
+}

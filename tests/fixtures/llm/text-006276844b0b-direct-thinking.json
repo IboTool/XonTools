@@ -1,0 +1,24 @@
+{
+ "request": "a471033fd05641bf63103d163bc99ca2ab6f97769a595e54b341221d13c35bc5",
+ "tag": "text-006276844b0b-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Assume that Alma is the treasurer.",
+     "Alma is not the treasurer."
+    ],
+    "explanation": "The text both assumes Alma is the treasurer and states that she is not, which cannot both be true."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1104,
+  "output_tokens": 178,
+  "thinking_tokens": 94
+ },
+ "stop_reason": "end_turn"
+}

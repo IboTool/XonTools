@@ -1,0 +1,25 @@
+{
+ "request": "18cbde1e94ff0b6aea5682fb9eb612d2b172ef6d646a2299950a3ceb1b4fc2f5",
+ "tag": "text-d7531d42eb05-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Fay is taller than Isla.",
+     "Isla is taller than Yara.",
+     "Yara is taller than Fay."
+    ],
+    "explanation": "A height cycle where Fay > Isla > Yara > Fay is logically impossible since taller-than must be transitive and cannot loop back."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1113,
+  "output_tokens": 109,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

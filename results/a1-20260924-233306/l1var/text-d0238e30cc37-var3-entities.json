@@ -1,0 +1,93 @@
+{
+ "request": "efcda231a6e5edcd835116acc22dd883dc76a42e95aa3d555197b25c3939fd08",
+ "tag": "text-d0238e30cc37-var3-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "role",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 7,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "kai",
+    "b": "isla",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "cy",
+    "b": "kai",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "cy",
+    "b": "isla",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2180,
+  "output_tokens": 319,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b00-consistent",
+ "repetition": 3,
+ "call": 40
+}

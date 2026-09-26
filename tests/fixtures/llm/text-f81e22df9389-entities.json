@@ -1,0 +1,232 @@
+{
+ "request": "1b19280d12e559368092b50fc8f6ba4e440e9c24efc1f0935652dec7698e97be",
+ "tag": "text-f81e22df9389-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "bo",
+    "mentions": [
+     "Bo"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "baker",
+    "mentions": [
+     "the baker"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "bo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "bo",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "rosa",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "milo",
+    "b": "vik",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "milo",
+    "b": "bo",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "milo",
+    "b": "rosa",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "milo",
+    "b": "finn",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 13,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "bo",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "rosa",
+    "b": "vik",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "milo",
+    "b": "bo",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 18,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "milo",
+    "b": "rosa",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 18,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "milo",
+    "b": "vik",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 18,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "milo",
+    "b": "finn",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 20,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "bo",
+    "b": "finn",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 20,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "finn",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 20,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "vik",
+    "b": "finn",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 20,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "milo",
+    "b": "finn",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 22,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "bo",
+    "b": "vik",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 24,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "bo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 24,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "milo",
+    "b": "vik",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2255,
+  "output_tokens": 1136,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,59 @@
+{
+ "request": "53eb0fe62498456edce035e77a7b2e437017078daec1ee68dd47557c88df6384",
+ "tag": "text-8448306c92ac-seed1-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 18,
+    "b": 25,
+    "rationale": "The shop running two shifts is unrelated to whether the whole group cheered together.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 20,
+    "b": 25,
+    "rationale": "Volunteers working cheerfully despite heat suggests positive group morale, which slightly supports the idea of a collective cheer later, but it's not a strong logical link.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "rationale": "Yara finishing tasks early and helping set up a banner is unrelated to Finn and Dev comparing notes about the morning.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 21,
+    "b": 24,
+    "rationale": "Yara finishing early and setting up the finish line banner is a separate event from everyone gathering near the stage for the donation total, with no direct causal or logical connection.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   },
+   {
+    "a": 22,
+    "b": 25,
+    "rationale": "Yara laughing with Bo about crowd size is a small, unrelated moment compared to the whole group cheering together.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "Everyone gathering to hear the donation total announced sets up a natural context for a collective cheer in response to the announcement.",
+    "relation": "supports",
+    "confidence": 0.75
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1002,
+  "output_tokens": 462,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

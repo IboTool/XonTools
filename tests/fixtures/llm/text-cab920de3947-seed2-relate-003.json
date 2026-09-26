@@ -1,0 +1,52 @@
+{
+ "request": "cbd8f17bcf0118fc23e6222783c4b691a2956d1b4d29cd5f2e4dc0d888a45340",
+ "tag": "text-cab920de3947-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 18,
+    "b": 23,
+    "rationale": "The surprise announcement before semifinal postings has no bearing on Ana and Milo discussing closing argument timing.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 18,
+    "b": 24,
+    "rationale": "A surprise announcement doesn't inherently indicate anything about how competitive the tournament was overall.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 18,
+    "b": 25,
+    "rationale": "The afternoon announcement about semifinal pairings has no logical connection to people staying late to fold tables.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 21,
+    "b": 25,
+    "rationale": "Wren stacking chairs is an instance consistent with everyone helping to clean up, supporting the claim that everyone stayed to help.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "Ana and Milo discussing strategy near the coffee station is consistent with and likely includes going over timing for closing arguments, supporting that claim.",
+    "relation": "supports",
+    "confidence": 0.65
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1018,
+  "output_tokens": 372,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

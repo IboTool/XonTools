@@ -1,0 +1,122 @@
+{
+ "request": "7d41a1a0c519dd0dbdc113756351669e619d669298ac32aab5182c034c0bedcd",
+ "tag": "text-90ccc98bb76f-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 20,
+    "b": 23,
+    "rationale": "Reaching the rocky overlook sets a plausible location for setting up a camp stove, but does not establish it directly.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "rationale": "Pausing for lunch at the overlook has no bearing on team assignments between Mina and Zeno.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "rationale": "Stopping for lunch at the overlook makes it likely that a camp stove would be set up to prepare food.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 21,
+    "b": 24,
+    "rationale": "Pausing for lunch directly supports the act of unpacking sandwiches for everyone.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 21,
+    "b": 26,
+    "rationale": "Stopping for lunch suggests a pause rather than an increased pace, but doesn't preclude later picking up pace.",
+    "relation": "unrelated",
+    "confidence": 0.5
+   },
+   {
+    "a": 21,
+    "b": 28,
+    "rationale": "Pausing for lunch is a separate event from stopping to watch a hawk; no direct connection.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 22,
+    "b": 29,
+    "rationale": "Team assignment between Mina and Zeno has no bearing on when the group reaches the summit shelter.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 23,
+    "b": 25,
+    "rationale": "Setting up a camp stove has no logical connection to clouds rolling in later.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 24,
+    "b": 26,
+    "rationale": "Unpacking sandwiches for lunch doesn't imply anything about pace decisions toward the summit.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "Clouds rolling in could motivate the group to hurry toward the summit before weather worsens.",
+    "relation": "supports",
+    "confidence": 0.65
+   },
+   {
+    "a": 25,
+    "b": 29,
+    "rationale": "Clouds rolling in early afternoon is consistent with later reaching the summit at sunset, but doesn't strongly imply it.",
+    "relation": "unrelated",
+    "confidence": 0.5
+   },
+   {
+    "a": 26,
+    "b": 29,
+    "rationale": "Deciding to pick up pace toward the summit supports the idea that they would reach the summit shelter as described.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "rationale": "Zeno pointing out the hawk directly causes everyone to stop and watch it.",
+    "relation": "supports",
+    "confidence": 0.9
+   },
+   {
+    "a": 28,
+    "b": 29,
+    "rationale": "Stopping briefly to watch a hawk is a minor pause that doesn't necessarily affect reaching the summit at sunset.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   },
+   {
+    "a": 29,
+    "b": 30,
+    "rationale": "Reaching the summit shelter at sunset naturally leads to settling in for the night under the stars.",
+    "relation": "supports",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1144,
+  "output_tokens": 1022,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,166 @@
+{
+ "request": "3d5b6957c5b9fa75d45335af3477be192fa003c7bea5b867cfa8c911350cdd46",
+ "tag": "text-6d298d9f27e4-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "tess",
+    "mentions": [
+     "Tess"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "finish_order",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "reach",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "photographer",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "training_intensity",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 12,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "alma",
+    "b": "alma",
+    "confidence": 0.0
+   },
+   {
+    "claim_id": 15,
+    "attribute": "photographer",
+    "kind": "different",
+    "a": "tess",
+    "b": "tess",
+    "confidence": 0.0
+   },
+   {
+    "claim_id": 16,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "tess",
+    "b": "vik",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "alma",
+    "b": "vik",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "vik",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "pia",
+    "b": "tess",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 23,
+    "attribute": "reach",
+    "kind": "greater",
+    "a": "tess",
+    "b": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 24,
+    "attribute": "reach",
+    "kind": "greater",
+    "a": "tess",
+    "b": "pia",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 25,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "pia",
+    "b": "vik",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2289,
+  "output_tokens": 745,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

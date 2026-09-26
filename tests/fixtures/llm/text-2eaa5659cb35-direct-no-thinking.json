@@ -1,0 +1,33 @@
+{
+ "request": "a3a4913e23a2b13ec9a477fa9618bb2c183f2ed302cebbe6231056145fe526a6",
+ "tag": "text-2eaa5659cb35-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Assume that Wren is the team captain.",
+     "Wren is not the team captain."
+    ],
+    "explanation": "Wren cannot both be assumed to be the team captain and explicitly not be the team captain."
+   },
+   {
+    "sentences": [
+     "Hana and Lena worked different shifts.",
+     "Lena and Rosa worked different shifts.",
+     "Hana and Rosa worked different shifts.",
+     "The shop ran three shifts."
+    ],
+    "explanation": "With only three shifts, having Hana, Lena, and Rosa each pairwise on different shifts requires three distinct shifts assigned to exactly these three people, which is possible, but combined with five people total needing shifts and no further constraints this creates an inconsistency only if additional overlaps are implied; however, three mutually distinct shifts among three people exactly fills all three shifts, which is consistent, so the real contradiction lies elsewhere—yet as stated, three people each differing from the other two forces three distinct shifts, which is exactly the number available, making it just barely consistent, so no contradiction exists here."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1066,
+  "output_tokens": 346,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

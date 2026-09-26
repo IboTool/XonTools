@@ -1,0 +1,143 @@
+{
+ "request": "61d5b160dc554fa05dcc34e88fe442b871aa3fbce62cf8b71e202d1c2ba9c2c0",
+ "tag": "text-75e2bcfe9b0d-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "lena",
+    "mentions": [
+     "Lena"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses."
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "stage_presence_rank",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "pia",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "lena",
+    "b": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "finn",
+    "b": "lena",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "house",
+    "kind": "different",
+    "a": "pia",
+    "b": "vik",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "dev",
+    "b": "pia",
+    "confidence": 0.2
+   },
+   {
+    "claim_id": 10,
+    "attribute": "house",
+    "kind": "different",
+    "a": "vik",
+    "b": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "house",
+    "kind": "different",
+    "a": "pia",
+    "b": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "stage_presence_rank",
+    "kind": "greater",
+    "a": "finn",
+    "b": "vik",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1956,
+  "output_tokens": 634,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

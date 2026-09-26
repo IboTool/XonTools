@@ -1,0 +1,26 @@
+{
+ "request": "1007cef3ffa2a3b6b509f6fb6121ab049e45096051ad3a7df74d1dd16fcb8c7d",
+ "tag": "text-38f5afd2be49-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Pia and Vik were in different houses.",
+     "Vik and Finn were in different houses.",
+     "Pia and Finn were in different houses.",
+     "The school had two houses."
+    ],
+    "explanation": "With only two houses, Pia, Vik, and Finn cannot all be pairwise in different houses since at least two of them must share a house."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1083,
+  "output_tokens": 121,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

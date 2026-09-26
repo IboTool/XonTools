@@ -1,0 +1,138 @@
+{
+ "request": "724fc405fa49a21e639261d6ba89ed0232a25016442b6b4306e84c0754abf602",
+ "tag": "text-45472e01d657-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "jude",
+    "mentions": [
+     "Jude"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "bo",
+    "mentions": [
+     "Bo"
+    ]
+   },
+   {
+    "id": "shop",
+    "mentions": [
+     "The shop"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "shift",
+    "arity": "multi",
+    "arity_span": "The shop ran three shifts."
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "drove_minibus",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "finn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "finn",
+    "b": "yara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "yara",
+    "b": "bo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "finn",
+    "b": "bo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "bo",
+    "b": "finn",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 13,
+    "attribute": "drove_minibus",
+    "kind": "different",
+    "a": "dev",
+    "b": "dev",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dev",
+    "b": "bo",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2155,
+  "output_tokens": 581,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

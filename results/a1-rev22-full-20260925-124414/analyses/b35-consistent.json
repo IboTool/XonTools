@@ -1,0 +1,2637 @@
+{
+ "label": "b35-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-f0b1c7a3ba7a",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Gus is the lead volunteer.",
+   "span": "Gus is the lead volunteer",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Gus arrived early to help set up the registration table near the entrance.",
+   "span": "Gus arrived early to help set up the registration table near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Ben came in wearing a bright green jacket.",
+   "span": "Ben came in wearing a bright green jacket",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Ben immediately found a seat near the soldering station.",
+   "span": "immediately found a seat near the soldering station",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Rosa arrived a few minutes after Ben.",
+   "span": "Rosa arrived a few minutes after Ben",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Rosa was chatting with one of the younger students about her favorite robot design.",
+   "span": "chatting with one of the younger students about her favorite robot design",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Quinn showed up carrying a backpack full of spare parts collected from a previous competition.",
+   "span": "Quinn showed up carrying a backpack full of spare parts collected from a previous competition",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Uma brought the first-aid kit.",
+   "span": "Uma brought the first-aid kit",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Gus is taller than Quinn.",
+   "span": "Gus is taller than Quinn",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Rosa is taller than both Gus and Quinn.",
+   "span": "Rosa is taller than both of them",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Ben and Rosa worked different shifts.",
+   "span": "Ben and Rosa worked different shifts",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Throughout the morning, the students rotated between stations to test their circuits and calibrate their sensors.",
+   "span": "Throughout the morning, the students rotated between stations to test their circuits and calibrate their sensors",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Rosa and Quinn worked different shifts.",
+   "span": "Rosa and Quinn worked different shifts",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Uma is younger than Gus.",
+   "span": "Uma is younger than Gus",
+   "kind": "quoted"
+  },
+  {
+   "id": 14,
+   "text": "Uma is older than Ben.",
+   "span": "older than Ben",
+   "kind": "quoted"
+  },
+  {
+   "id": 15,
+   "text": "The mentors circulated the room, offering tips on wiring and balance for the walking robots.",
+   "span": "The mentors circulated the room, offering tips on wiring and balance for the walking robots",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Ben and Quinn worked different shifts.",
+   "span": "Ben and Quinn worked different shifts",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Someone had labeled every worktable with a number so that materials would not get mixed up.",
+   "span": "Someone had labeled every worktable with a number so that materials would not get mixed up",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "The shop ran three shifts.",
+   "span": "The shop ran three shifts",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "By the end of the day, most of the robots could move across the floor without tipping over.",
+   "span": "By the end of the day, most of the robots could move across the floor without tipping over",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "A few robots avoided obstacles using simple sensors.",
+   "span": "a few even avoided obstacles using simple sensors",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "The students compared notes about which battery packs lasted longest.",
+   "span": "The students compared notes about which battery packs lasted longest",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Several teams promised to bring improved designs to the next session.",
+   "span": "several teams promised to bring improved designs to the next session",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Everyone helped stack the folding chairs before the doors were locked for the evening.",
+   "span": "Everyone helped stack the folding chairs before the doors were locked for the evening",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Being the lead volunteer makes it plausible that Gus would arrive early to help set up, as lead volunteers often take initiative on setup tasks, but it doesn't guarantee this specific action.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Claim A states Gus's role as lead volunteer, while claim B describes Ben's clothing on some occasion. These involve different people and unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Claim A establishes Gus's role as lead volunteer, which has no logical bearing on whether Ben found a seat near the soldering station; the two describe unrelated facts about different people.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A concerns Gus's role as lead volunteer, while claim B concerns the arrival order of Rosa and Ben; these describe unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Claim A identifies Gus's role as lead volunteer, which has no logical connection to Rosa's conversation with a student about robot design; they involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A concerns Gus's role as lead volunteer, while claim B describes Quinn's actions independently. Neither statement implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "The two claims describe unrelated facts about different people and roles; knowing who the lead volunteer is has no bearing on who brought a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Being the lead volunteer is unrelated to relative height compared to Quinn; no logical or causal connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Being the lead volunteer says nothing about Gus's height relative to Rosa or Quinn, so the claims address unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A identifies Gus's role as lead volunteer, which has no bearing on whether Ben and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Claim A identifies Gus's role as lead volunteer, which has no stated connection to the students rotating between stations to test circuits and calibrate sensors in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A identifies Gus's role as lead volunteer, which has no bearing on whether Rosa and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Being the lead volunteer says nothing about age or relative seniority, so it neither supports nor contradicts a claim about Gus's age compared to Uma's.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A concerns Gus's volunteer role, while claim B concerns a comparative age relationship between Uma and Ben. These involve entirely different people and subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Claim A states Gus's role as lead volunteer, while claim B describes mentors' activity in a room; there is no stated connection between Gus and the mentors or the event described, so the claims neither support nor contradict each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Claim A describes Gus's role as lead volunteer, which has no bearing on whether Ben and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Being the lead volunteer does not indicate whether Gus or anyone else labeled the worktables; the claims concern different, independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Gus being the lead volunteer doesn't inherently relate to how many shifts the shop ran; these describe different aspects of the operation with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Gus being the lead volunteer has no logical bearing on whether robots could move without tipping over; no causal or evidential link is stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Claim A concerns a person's volunteer role, while claim B describes robots navigating with sensors; there is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Claim A states Gus's role as lead volunteer, while claim B describes students discussing battery packs; these have no apparent logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Claim A states a fact about Gus's role, while claim B concerns unrelated commitments made by teams about future designs; there is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "A states Gus's role as lead volunteer, which has no direct bearing on whether everyone helped stack chairs before locking the doors; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Claim A concerns Gus arriving early to set up a table, while claim B concerns Ben's clothing upon entering; these involve different people and unrelated details with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "A concerns Gus's early arrival to set up registration, while B concerns Ben's separate action of finding a seat elsewhere; the two describe different people and events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A describes Gus's early arrival to help set up, while claim B describes Rosa's arrival relative to Ben. These involve different people and events with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "A describes Gus's early arrival to set up a table, while B describes Rosa chatting with a student; these involve different people and actions with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "These claims describe different people doing unrelated things at what may be the same event; neither arrival nor purpose of one bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Both describe different volunteers doing separate setup tasks; neither claim implies anything about the other's occurrence or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Arriving early to help set up a table has no bearing on relative height comparisons between Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A concerns Gus's arrival and helping set up a table, while claim B concerns relative heights of Rosa, Gus, and Quinn. These are unrelated facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A describes Gus helping set up a registration table, while claim B discusses Ben and Rosa's differing shifts; there is no shared subject or context linking these claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "A describes Gus helping set up a registration table near the entrance, while B describes students rotating between stations for circuit testing; these appear to be different aspects of the same event but neither confirms nor implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A describes Gus's arrival and activity, which has no bearing on whether Rosa and Quinn worked different shifts; they involve different people and unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A describes Gus's actions at an event and has no bearing on relative ages of Gus and Uma.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "The claim about Gus arriving early to help set up a registration table has no logical or topical connection to a claim about the relative ages of Uma and Ben.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Both describe activities at what seems like the same robotics event, but Gus setting up registration doesn't directly affect or predict whether mentors were circulating giving advice on robots.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Claim A is about Gus helping set up a registration table and has no bearing on whether Ben and Quinn worked different shifts; they involve different, unrelated people and events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "A describes Gus setting up a registration table near the entrance, while B describes worktables being labeled with numbers, likely a different event context (a workshop or craft session). These are not clearly the same tables or event, so A neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A concerns Gus setting up a registration table, while claim B concerns a shop running three shifts; these describe unrelated events with no shared context or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A describes Gus helping set up a registration table before an event, while claim B describes robots' performance improving over the course of that day; the two describe unrelated aspects of the event with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Claim A describes Gus helping set up a registration table, while claim B describes robots avoiding obstacles with sensors; these describe unrelated scenarios with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "A describes Gus helping set up a registration table before an event, while B describes students discussing battery packs; these events are unconnected in topic and content, with no causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Claim A describes Gus's early arrival to help with registration setup, which has no logical bearing on whether teams promised improved designs for a future session.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "A describes Gus arriving early to help set up before the event, while B describes chair stacking at closing time; both can be true as separate activities at different times, and 'everyone' could plausibly include Gus.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "The jacket's color has no bearing on where Ben chose to sit; these are independent facts about Ben's appearance and actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "A describes what Ben was wearing when he arrived, while B describes when Rosa arrived relative to Ben. These details are independent of each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A describes Ben's arrival and clothing, while claim B describes Rosa's separate conversation about robot design; the two events involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "These claims describe two different people's separate actions and appearances, with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "The two claims describe unrelated actions by different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "The jacket claim concerns Ben's clothing while the second claim concerns relative height between Gus and Quinn; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A describes Ben's jacket color, which has no bearing on relative heights among Rosa, Gus, and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "A describes Ben's clothing on some occasion, which has no bearing on whether Ben and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Ben's jacket color has no bearing on whether students rotated between stations to test circuits and calibrate sensors; the two claims describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Ben's jacket color has no bearing on whether Rosa and Quinn worked different shifts; these describe unrelated facts about different people.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A concerns Ben's clothing while claim B concerns a relative age comparison between Uma and Gus; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "The color of Ben's jacket has no bearing on the relative ages of Uma and Ben; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Ben's jacket color is unrelated to mentors giving robot-building advice; no logical or causal connection is stated or implied.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Ben's jacket color has no bearing on whether Ben and Quinn worked different shifts; these are independent facts about Ben's clothing versus his work schedule relative to Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Ben's jacket color has no bearing on whether worktables were labeled with numbers; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Ben's jacket color has no logical or evidential bearing on how many shifts the shop operates; the two claims concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Ben's jacket color has no bearing on robots' balance or mobility performance; these are unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Claim A describes Ben's clothing while claim B describes robots navigating with sensors; these concern entirely different subjects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Ben's jacket color has no bearing on students discussing battery pack longevity; these are unconnected events with no shared subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Ben's jacket color has no bearing on teams promising improved designs at a next session; these appear to be unrelated events from different contexts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Ben's jacket color has no bearing on whether everyone helped stack chairs before the doors were locked; these describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A describes Ben finding a seat, and claim B describes Rosa arriving later; these events are independent and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A describes Ben finding a seat near the soldering station, while claim B describes an unrelated interaction between Rosa and a student; neither event affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Both claims describe different people's independent actions at what may be the same event, but neither statement implies anything about the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "The two claims describe unrelated actions by different people with no logical or causal connection between finding a seat and bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Ben finding a seat near a soldering station has no logical or topical connection to a height comparison between Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "The claims describe unrelated events involving different people (Ben finding a seat vs. Rosa's height comparisons) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Finding a seat near the soldering station says nothing about work schedules or shift arrangements, so the two claims are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "A places Ben near the soldering station early on; B describes students generally rotating between stations during the morning, which is compatible with Ben starting there before moving on.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Ben finding a seat near the soldering station has no bearing on whether Rosa and Quinn worked different shifts; they involve unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns Ben finding a seat near a soldering station, while claim B concerns the relative ages of Uma and Gus. These involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Finding a seat near a soldering station has no bearing on relative ages of Uma and Ben.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Ben finding a seat near the soldering station is consistent with a workshop setting where mentors circulate helping with wiring and robot balance; the two describe different aspects of the same scene without conflicting.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Finding a seat near the soldering station says nothing about scheduling or shift assignments; the two claims concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "B describes a labeling system for worktables, which is a general organizational detail unrelated to whether Ben found a seat near the soldering station.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Ben finding a seat near the soldering station has no bearing on whether the shop operated in three shifts; these are unrelated details about setting.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "A describes Ben finding a seat near a soldering station, which is unrelated to the general progress of robot mobility outcomes described in B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Claim A describes Ben finding a seat near a soldering station, likely at some kind of maker or robotics event, while claim B describes robots with obstacle-avoiding sensors. There's no direct logical connection between these two statements; they could both be true in the same setting but neither implies or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "A places Ben near a soldering station but says nothing about students discussing battery packs; the two describe unrelated events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Ben finding a seat near the soldering station is a minor logistical detail with no bearing on whether teams promised improved designs at a later session; they concern unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Ben finding a seat near the soldering station happens during an event, while B describes chairs being stacked afterward at closing; these could both occur at different times without conflict, and there's no strong logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A only establishes Rosa's arrival time relative to Ben, which has no bearing on whether she later chatted with a student about a robot design.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A concerns the relative arrival timing of Rosa and Ben, while claim B concerns Quinn's arrival with a backpack of spare parts. These involve different people and different aspects of the event with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A concerns the relative arrival times of Rosa and Ben, while claim B concerns who brought a first-aid kit. These involve different people and different topics with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Claim A concerns arrival times of Rosa and Ben, while claim B concerns relative heights of Gus and Quinn. The two claims share no common subjects or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Arrival timing relative to Ben has no bearing on Rosa's height compared to Gus and Quinn; these are independent facts about different domains.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "A implies Ben and Rosa were both present at roughly the same time, which is odd (though not impossible) if they worked different shifts. This creates mild tension rather than outright contradiction, since overlapping shift transitions could explain it.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Claim A concerns the relative arrival times of Rosa and Ben, while claim B describes a general classroom activity involving students rotating between stations. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "A concerns arrival timing relative to Ben, while B concerns shift assignment relative to Quinn; the two involve different people and different aspects, so A gives no information about B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A concerns the relative arrival times of Rosa and Ben, while claim B concerns the relative ages of Uma and Gus. These involve entirely different people and different attributes, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Claim A concerns arrival timing between Rosa and Ben, while claim B concerns relative ages of Uma and Ben. These involve different people and different attributes (arrival order vs. age), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Claim A concerns the relative arrival times of Rosa and Ben, while claim B describes mentors' activity around walking robots; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A concerns Rosa's arrival time relative to Ben, while claim B concerns Ben and Quinn's shift schedules; they involve different people relationships and no shared content that bears on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Claim A concerns the relative arrival times of Rosa and Ben, while claim B concerns worktables being labeled to avoid mixing materials. These describe unrelated aspects of the scene with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Rosa's arrival time relative to Ben has no bearing on how many shifts the shop operated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Claim A concerns the arrival order of Rosa and Ben, which has no logical or contextual bearing on the robots' ability to move without tipping over described in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Claim A concerns Rosa and Ben's arrival timing, while claim B concerns robots navigating with sensors. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "The two claims describe unrelated events with no shared content: one is about arrival timing, the other about students discussing battery life.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Rosa's arrival time relative to Ben has no bearing on teams promising improved designs at a future session; the two claims concern unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "A describes relative arrival order between Rosa and Ben, which has no clear bearing on whether everyone helped stack chairs before locking up.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "These describe different people doing different, independent actions with no stated connection; A does not make B more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A describes Rosa chatting with a student about robot design, while claim B describes Uma bringing a first-aid kit; these involve different people and unrelated actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A concerns Rosa chatting with a student about robot design, while claim B concerns a height comparison between Gus and Quinn. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A concerns Rosa's social activity and interests, while claim B concerns her physical height relative to others; neither bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "A shows Rosa interacting with a younger student, but says nothing about shift scheduling or whether she and Ben worked the same or different shifts; the two claims concern unrelated aspects.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "B describes the general morning activity of rotating between stations to test circuits and sensors, while A depicts a specific chatting moment; these can coexist as part of the same event without conflict, and A even fits plausibly within the broader rotation described in B.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A describes Rosa chatting with a student about robot design, which gives no information about work shift schedules or Rosa and Quinn's relationship in terms of shifts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A concerns Rosa chatting with a younger student, while claim B compares the ages of Uma and Gus; there is no mentioned connection between these people or contexts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A concerns Rosa and an unnamed younger student, while claim B concerns Uma and Ben's relative ages; there is no shared entity or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "If Rosa, likely a mentor, was chatting with a student about robot design while other mentors circulated offering tips, both can easily be simultaneous, complementary activities at the same event.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A concerns Rosa's conversation with a student, while claim B concerns Ben and Quinn's work shifts; the two describe unrelated people and events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A describes a social interaction between Rosa and a student, while claim B describes a labeling system for worktables; they concern different, unrelated aspects of the setting.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Claim A describes Rosa chatting with a student about robot design, while claim B describes the shop running three shifts. There is no logical or contextual connection between these two statements as given.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "A shows Rosa engaged in a casual conversation about robot design, which is loosely consistent with a general context of robot-building activity, but it neither confirms nor implies the specific progress outcome described in B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "A establishes a context involving robot designs and a conversation about them, which loosely supports the plausibility of robots with sensor-based obstacle avoidance existing in the same setting, but the claims are largely independent in content.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "A shows Rosa discussing favorite robot designs with a student, which is a different topic than comparing battery pack longevity; both could plausibly occur at the same event but neither confirms nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "A describes a casual conversation about a favorite robot design, while B describes multiple teams committing to bring improved designs later; these are different events involving different scopes of people and don't directly bear on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Claim A describes Rosa chatting with a student, which is a separate, unrelated activity from B's claim about everyone helping stack chairs before closing; they could occur at different times and don't inform each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "A describes what Quinn brought, while B describes what Uma brought; these are independent facts about different people with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Claim A describes what Quinn brought to an event, while claim B is a statement about relative height between Gus and Quinn. Neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Claim A describes Quinn's arrival and belongings, while claim B compares heights among Rosa, Gus, and Quinn. These facts are independent and neither influences the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A describes Quinn arriving with spare parts from a past competition, while claim B describes Ben and Rosa working different shifts. These involve different people and events with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Quinn arriving with spare parts is consistent with a robotics-style competition setting where students later test circuits and sensors, but neither claim directly implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Quinn showing up with spare parts from a prior competition doesn't indicate anything about shift scheduling between Rosa and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A concerns Quinn's backpack and spare parts from a past competition, while claim B concerns the relative ages of Uma and Gus. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A concerns Quinn's belongings and past competition activity, while claim B concerns relative ages of Uma and Ben. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Both describe activities plausibly occurring at the same robotics competition or event, but A's content about Quinn's backpack doesn't directly affect the likelihood of mentors circulating and offering advice; they simply co-occur in the same setting.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "A describes Quinn bringing spare parts to what seems like a competition setting, while B concerns a work-shift arrangement between Ben and Quinn; these describe different contexts with no clear logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Both claims describe a competition/workshop setting, but Quinn's backpack of spare parts and the labeling of worktables are independent details with no direct causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "A concerns Quinn bringing spare parts from a past competition, while B concerns the shop's shift schedule; neither statement bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Quinn bringing spare parts could contribute to teams fixing or improving their robots, making it somewhat more plausible that robots functioned well by day's end, but this is a fairly indirect connection.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Quinn's spare parts could plausibly be used to build robots with obstacle-avoiding sensors, but the claims are largely independent since B doesn't specify whose robots or what parts were used.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Quinn arriving with spare parts is a separate event from students discussing battery longevity; neither confirms nor undermines the other, though both could occur in a similar context like a robotics competition.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "A describes Quinn's preparation using parts from a past competition, while B describes other teams' promises for a future session; they involve different subjects and events with no clear logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "These claims describe unrelated events involving different activities (bringing spare parts vs stacking chairs) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "The two claims describe unrelated facts about different people and topics; knowing that Uma brought the first-aid kit has no bearing on the relative heights of Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "The two claims concern entirely different topics (who brought an item vs. relative heights) with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "There is no logical or contextual connection between who brought the first-aid kit and whether Ben and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Bringing a first-aid kit is a precaution unrelated to students rotating between stations to test circuits and sensors; neither claim affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Claim A concerns who brought a first-aid kit, while claim B concerns Rosa and Quinn's work shifts. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Bringing a first-aid kit has no logical or evidential bearing on relative ages between Uma and Gus.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Bringing a first-aid kit has no logical or causal bearing on Uma's relative age compared to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Bringing a first-aid kit is unrelated in content to mentors giving advice about wiring and balance for walking robots; neither implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A concerns Uma bringing a first-aid kit, while claim B concerns the work shifts of Ben and Quinn. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "These describe unrelated preparatory actions by possibly different people for different purposes; knowing Uma brought the first-aid kit has no bearing on whether worktables were numbered.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "These two claims describe unrelated events with no shared subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "The two claims describe unrelated events: bringing a first-aid kit has no bearing on robots' ability to balance and move without tipping.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "The two claims describe unrelated events: one is about a person bringing an item, the other about robots navigating with sensors. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Uma bringing a first-aid kit is unrelated to students discussing battery pack longevity; these events involve different topics and no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "The two claims describe unrelated events involving different subjects (Uma bringing a first-aid kit versus teams promising design improvements) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "A states Uma brought a first-aid kit, which has no bearing on whether everyone helped stack folding chairs before the doors were locked; the two events are independent.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "A establishes a height order between Gus and Quinn but says nothing about Rosa, so Rosa being taller than both is entirely compatible with A and neither confirmed nor made more likely by it.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "The two claims concern entirely different subjects (relative heights of Gus and Quinn vs. work shifts of Ben and Rosa) and share no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Claim A concerns relative heights of two individuals, while claim B describes a classroom activity involving circuit testing and sensor calibration; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Claim A concerns relative height between Gus and Quinn, while claim B concerns work shifts between Rosa and Quinn; these facts have no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Claim A concerns relative height between Gus and Quinn, while claim B concerns relative age between Uma and Gus. These involve different people and different attributes, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Claim A concerns height comparison between Gus and Quinn, while claim B concerns age comparison between Uma and Ben. These involve entirely different people and different attributes, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "The height comparison between Gus and Quinn has no logical or topical connection to mentors giving advice on robot building; they concern entirely separate matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "The height comparison between Gus and Quinn has no bearing on whether Ben and Quinn worked different shifts; these describe unrelated aspects of the people involved.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Claim A concerns relative heights of two people, while claim B concerns worktables being numbered for organizational purposes; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "The two claims concern entirely different subjects (relative heights of two people versus a shop's shift schedule) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "The two claims concern entirely different subjects (Gus and Quinn's heights vs. robots' movement ability) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "The two claims concern entirely unrelated subjects—relative height of two people versus robots avoiding obstacles—so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Claim A concerns relative height of two individuals, while claim B concerns students discussing battery pack longevity. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "The height comparison between Gus and Quinn has no logical or thematic connection to teams promising improved designs at a future session.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Gus's height relative to Quinn has no bearing on whether everyone helped stack chairs; the claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A concerns relative heights of Rosa, Gus, and Quinn, while claim B concerns work shifts of Ben and Rosa. These involve overlapping people but entirely unrelated facts about them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Claim A is about relative heights of Rosa, Gus, and Quinn, while claim B describes students rotating between stations for circuit testing and sensor calibration. There is no shared subject matter or logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Claim A concerns relative heights of Rosa, Gus, and Quinn, while claim B concerns their work schedules. These two facts are independent and neither makes the other more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns height comparisons among Rosa, Gus, and Quinn, while claim B concerns age comparison between Uma and Gus. These involve different attributes (height vs age) and different people (Uma is not mentioned in A), so neither claim bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Claim A concerns relative heights among Rosa, Gus, and Quinn, while claim B concerns relative ages between Uma and Ben. The two involve different people and different attributes (height vs age), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Claim A concerns relative heights of Rosa, Gus, and Quinn, while claim B describes mentors giving advice on robot building; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A concerns relative heights of Rosa, Gus, and Quinn, while claim B concerns work shifts of Ben and Quinn. These are unrelated topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Claim A concerns relative heights of Rosa, Gus, and Quinn, while claim B concerns labeling of worktables for material organization. These involve entirely different subjects and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "The claims describe entirely unrelated matters: relative heights of people versus a shop's shift schedule. Nothing about A bears on the likelihood or truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Claim A concerns relative heights of Rosa, Gus, and Quinn, while claim B concerns robots' ability to move without tipping over; they share no common subject matter or entities.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "These claims concern entirely different subjects (people's heights vs. robots and sensors) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Claim A concerns relative heights of three people, while claim B concerns students comparing battery pack longevity; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Claim A concerns relative heights of three individuals, while claim B concerns teams promising design improvements; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Claim A concerns relative heights of Rosa, Gus, and Quinn, while claim B concerns everyone helping stack chairs before closing. These topics have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A concerns Ben and Rosa's work shifts, while claim B describes students rotating between stations in a lab or classroom setting; there is no shared subject or context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A concerns Ben and Rosa's shifts, while claim B concerns Rosa and Quinn's shifts; knowing Rosa differs from Ben says nothing about whether Rosa differs from Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Claim A concerns work shifts of Ben and Rosa, while claim B concerns relative ages of Uma and Gus. They involve entirely different people and topics, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A concerns work shifts of Ben and Rosa, while claim B concerns Uma's age relative to Ben. These topics are independent and A provides no information bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "The two claims concern unrelated matters: one is about scheduling of Ben and Rosa's shifts, the other about mentors helping with robot building; neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Claim A concerns the relationship between Ben's and Rosa's shifts, while claim B concerns Ben's and Quinn's shifts. Knowing Ben differs from Rosa in shift tells us nothing about whether Ben differs from Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A concerns Ben and Rosa's shift schedules, while claim B concerns a labeling system for worktables; neither has any bearing on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Ben and Rosa working different shifts implies there are at least two shifts, which is consistent with the shop running three shifts; A does not confirm or deny the exact number of shifts.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Claim A concerns work scheduling of two people, while claim B concerns robots' ability to balance and move; there is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Claim A concerns Ben and Rosa's work shifts, while claim B discusses robots and their obstacle-avoidance sensors; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Claim A concerns two individuals' work schedules, while claim B concerns students discussing battery packs; there is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Claim A concerns Ben and Rosa's work shifts, while claim B concerns teams promising improved designs at a future session; these topics are unconnected.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "A states Ben and Rosa had different shifts, which doesn't preclude both from being present when chairs were stacked or from 'everyone' referring to a group at closing time; the claims address largely separate matters with no direct logical bearing.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "A describes students rotating between stations during a morning session, while B refers to Rosa and Quinn working different shifts, which is a different concept unrelated to circuit testing or rotation schedules mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A describes students working on circuits and sensors, which has no bearing on the relative ages of Uma and Gus.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A describes students working on circuits and sensors, while claim B is an unrelated statement about relative ages of two individuals not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Both describe simultaneous, complementary classroom activity during what appears to be the same session: students working on circuits/sensors while mentors give wiring/balance advice for robots, consistent with a robotics workshop setting. A supports the plausibility of B by establishing the same scenario and activity context.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A describes students rotating between stations during a morning session, while claim B concerns Ben and Quinn working different shifts, with no shared context linking these events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "B describes a setup detail (labeled worktables) that would plausibly support the organized station rotation described in A, but neither claim entails or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A describes students rotating between stations during a morning, while claim B refers to a shop running three shifts; these involve different contexts (a classroom/lab activity versus a shop's operational schedule) with no clear logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "The morning testing and calibration described in A is a plausible precursor to the robots functioning well by day's end in B, suggesting the work paid off, though A does not guarantee the later success.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "A describes students calibrating sensors on circuits, which is consistent with and mildly supports the existence of robots that use simple sensors to avoid obstacles, though it doesn't directly establish obstacle-avoidance behavior.",
+   "relation": "supports",
+   "confidence": 0.45
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "A describes students testing circuits and calibrating sensors at rotating stations, an activity plausibly involving battery-powered devices; comparing notes on battery longevity is a natural related follow-up but not implied by A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "A describes routine testing and calibration activity during the morning session, which is plausible background for teams later deciding to promise improvements, but A does not directly imply or address any promises made about future sessions.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "Claim A describes a morning activity involving circuit testing at stations, while claim B describes an evening cleanup task. Both could occur on the same day without conflict, but the claims describe unrelated activities and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A concerns Rosa and Quinn's work shifts, while claim B concerns the relative ages of Uma and Gus. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "The claim about Rosa and Quinn's work shifts has no logical or topical connection to a claim about the relative ages of Uma and Ben.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A concerns Rosa and Quinn's differing work shifts, while claim B describes mentors giving guidance on robot building; there is no shared subject or context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "A tells us Rosa and Quinn were on different shifts, but says nothing about Ben's shift relative to Quinn or Rosa, so B's truth is not affected by A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "The claims concern unrelated topics: one is about Rosa and Quinn's work schedules, the other about labeling worktables for material organization. Neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "That Rosa and Quinn worked different shifts is consistent with the shop having three shifts, and could even be explained by it, but does not itself establish how many shifts existed.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A concerns Rosa and Quinn's work schedules, while claim B concerns robot stability performance; there is no logical or causal connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Claim A concerns Rosa and Quinn's work shifts, while claim B concerns robots and obstacle avoidance; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Claim A concerns Rosa and Quinn's work shifts, while claim B concerns students discussing battery packs. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "The two claims concern entirely different subjects (work shifts of two individuals versus teams' design promises) with no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Working different shifts doesn't preclude both Rosa and Quinn being present at the chair-stacking moment before lock-up; the claims address different time frames and aren't logically linked.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "A places Uma's age relative to Gus (younger), while B places Uma's age relative to Ben (older). These involve different people and are not mutually exclusive; both can hold simultaneously without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A concerns the relative ages of Uma and Gus, while claim B describes mentors giving advice about robot building; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "The claims involve entirely different people and topics (relative age vs. work shifts), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns labeling of worktables for material organization. There is no logical or topical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "The claims concern unrelated subjects: relative ages of two people versus the number of shifts a shop operates. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns robots' balance and movement abilities; they share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "The two claims concern entirely unrelated subjects: relative ages of two people versus robots navigating with sensors. There's no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Claim A concerns relative ages of Uma and Gus, while claim B concerns students discussing battery pack longevity. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "The claims concern entirely unrelated subjects: relative ages of two individuals versus teams' promises about designs. Neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Claim A concerns relative ages of Uma and Gus, while claim B concerns a group activity of stacking chairs before locking doors. Neither statement provides information bearing on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Claim A concerns relative ages of two individuals, while claim B describes mentors' activity related to walking robots; there is no shared content connecting them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Uma's age relative to Ben has no bearing on whether Ben and Quinn worked different shifts; the claims concern unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns worktable labeling for organizational purposes; they share no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "These claims concern unrelated subjects (relative ages of two people vs. a shop's shift schedule) with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "The claims concern entirely different subjects (relative ages of two people versus robot stability) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "The two claims concern entirely unrelated subjects—relative ages of two people versus robots navigating with sensors—so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "The claim about Uma and Ben's relative ages has no topical or logical connection to students comparing notes about battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Claim A concerns relative ages of two individuals, while claim B concerns team promises about design improvements; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Claim A concerns relative ages of Uma and Ben, while claim B concerns a group activity of stacking chairs; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Claim A describes mentors helping with robot-building tasks, while claim B is about Ben and Quinn's work schedules; the two statements involve unrelated subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Both describe organizational aspects of the same workshop/event, but neither implies or excludes the other; numbering tables and mentors giving advice are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "A describes mentors helping with robot-building activities, while B mentions a shop running three shifts; there is no stated connection between the two, so B is neither made more nor less likely by A.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Mentors giving guidance on wiring and balance for the walking robots plausibly improved the participants' ability to build stable, walking robots, making it more likely that most robots could move without tipping by day's end.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "A describes mentors helping with walking robots' wiring and balance, while B describes robots with obstacle-avoidance sensors; both can be true in the same event as different aspects or subsets of robots.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Both describe plausible activities happening in the same event context (a robotics workshop with mentors and students), where mentor circulation could naturally coincide with students discussing battery performance, but neither claim directly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Mentors giving tips on wiring and balance plausibly leads teams to want to apply that advice and promise improved designs next time, so A makes B more plausible though not certain.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Claim A describes mentors actively assisting during an ongoing event, while claim B describes a later cleanup activity after the event ended; both could occur at different times without conflict, but they are not directly connected in content.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "The claim about Ben and Quinn working different shifts has no bearing on whether worktables were labeled with numbers; these describe unrelated aspects of the workplace.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Ben and Quinn working different shifts is consistent with there being multiple shifts at the shop, and could plausibly occur within a three-shift schedule, though it doesn't confirm the exact number of shifts.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Ben and Quinn's shift arrangement has no logical bearing on the robots' mobility or stability outcomes; these are unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Claim A concerns Ben and Quinn's work shifts, while claim B concerns robots with obstacle-avoiding sensors; the two describe unrelated subjects with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "The claim about Ben and Quinn working different shifts has no apparent connection to students comparing notes on battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "These claims concern unrelated matters: one is about scheduling of two individuals' shifts, the other about teams' promises regarding future designs. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Working different shifts doesn't prevent Ben and Quinn from both being present at closing time to help stack chairs; the claims concern different aspects of their schedules and are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Labeling worktables to prevent mixing materials is a workflow organization detail that has no clear bearing on how many shifts the shop operates.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "A concerns labeling worktables to prevent material mix-ups, while B concerns robots' balance and mobility over time; these describe unrelated aspects of the workshop with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Claim A concerns labeling worktables to prevent material mixups, while claim B concerns robots avoiding obstacles via sensors; these describe unrelated aspects of a workspace with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Labeling worktables to prevent material mix-ups is a separate organizational detail and does not bear on whether students compared notes about battery longevity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Labeling worktables to prevent material mix-ups concerns workspace organization, while teams promising design improvements concerns future commitments; the two describe unrelated aspects of the session.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Both describe organizational activities around a shared space, but labeling worktables has no bearing on whether people stacked folding chairs before closing.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "A describes the shop's staffing schedule (three shifts across the day), which plausibly gives context for extended work time on the robots, mildly supporting the idea that by day's end progress like B could occur, but it doesn't directly establish or guarantee the robots' mobility outcome.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Claim A describes the shop's staffing/operation schedule, while claim B describes robot sensor behavior; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "The claim about three shifts running has no evident connection to students comparing notes on battery pack longevity; they concern different subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "The shop's shift structure has no logical or causal bearing on teams promising design improvements at a future session; these describe unrelated aspects of an operation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "A states the shop operated three work shifts, which doesn't directly bear on whether everyone helped stack chairs before locking up in the evening; these describe different aspects of operations with no clear logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "A states general locomotion success across most robots, while B describes a specific subset using obstacle-avoidance sensors; both can be true simultaneously as they describe different capabilities/subsets and don't conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "A is about robots' balance/mobility performance, while B is about students discussing battery longevity; these address different aspects of the robots' functioning with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "A describes generally successful outcomes by day's end, while B describes some teams still planning improvements for next time; these are largely independent as B could occur regardless of overall success, though slight tension exists since success might reduce urgency for some teams to promise improvements.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Claim A concerns robots and their stability during testing, while claim B concerns people stacking chairs before closing; they describe unrelated events with no shared subject or dependency.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Claim A concerns robots' obstacle-avoidance behavior via sensors, while claim B concerns students discussing battery longevity; neither statement implies or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Claim A describes what happened during obstacle avoidance with simple sensors, while claim B describes teams' future promises about improved designs. These concern different aspects of an event with no clear logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "The two claims describe entirely unrelated events involving different subjects (robots avoiding obstacles vs. people stacking chairs) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "A describes students discussing battery performance, which could plausibly motivate teams to plan improvements for next time, but the claims are largely independent events without a strong logical link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "Both describe plausible activities that could occur at the same event, but comparing notes about batteries has no logical bearing on stacking chairs before closing; they are independent occurrences.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Both describe plausible events at the end of a group session, but promising to bring improved designs has no bearing on whether people helped stack chairs afterward.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "shift",
+    "arity": "multi",
+    "arity_span": "The shop ran three shifts.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 10,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "ben",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "rosa",
+    "b": "quinn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "ben",
+    "b": "quinn",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "subject": "rosa",
+    "comparative": "after",
+    "object": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "height",
+    "subject": "gus",
+    "comparative": "taller than",
+    "object": "quinn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "subject": "rosa",
+    "comparative": "taller than",
+    "object": "gus",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "subject": "rosa",
+    "comparative": "taller than",
+    "object": "quinn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "age",
+    "subject": "uma",
+    "comparative": "younger than",
+    "object": "gus",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "subject": "uma",
+    "comparative": "older than",
+    "object": "ben",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 9,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    4,
+    10
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "height": "magnitude",
+    "shift": null,
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 9,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    13
+   ],
+   [
+    14
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   8.320017359752859e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   3.451266460341927e-32,
+   0.0,
+   0.0,
+   0.0,
+   4.2524533172070164e-32,
+   0.0,
+   0.0,
+   0.0,
+   9.244463733058732e-33,
+   0.0,
+   0.0,
+   6.779273404243071e-33,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 1,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 11,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 5,
+    "b": 15,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 11,
+    "b": 15,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 11,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 19,
+    "residual": 9.244463733058732e-33
+   },
+   {
+    "a": 15,
+    "b": 22,
+    "residual": 6.779273404243071e-33
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 1335029,
+   "output_tokens": 123177,
+   "thinking_tokens": 0,
+   "calls": 13949,
+   "api_calls": 1269,
+   "cache_hits": 12680,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 3.8504889999999983,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 29430,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 1458206,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3,
+    5,
+    11,
+    15,
+    19,
+    20,
+    22
+   ],
+   [
+    4
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    10
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ],
+   [
+    18
+   ],
+   [
+    21
+   ],
+   [
+    23
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false,
+   "15": false,
+   "16": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 4,
+    "b": 10,
+    "rationale": "A implies Ben and Rosa were both present at roughly the same time, which is odd (though not impossible) if they worked different shifts. This creates mild tension rather than outright contradiction, since overlapping shift transitions could explain it.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 10,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "ben",
+   "b": "rosa",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 12,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "rosa",
+   "b": "quinn",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "ben",
+   "b": "quinn",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 4,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "rosa",
+   "b": "ben",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 8,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "gus",
+   "b": "quinn",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 9,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "rosa",
+   "b": "gus",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 9,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "rosa",
+   "b": "quinn",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "gus",
+   "b": "uma",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "uma",
+   "b": "ben",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

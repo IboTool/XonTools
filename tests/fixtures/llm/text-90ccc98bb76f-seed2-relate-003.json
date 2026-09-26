@@ -1,0 +1,122 @@
+{
+ "request": "c8b5cfb014463b07a1679460de035f943e8db8000ea9af6812dfd48d4562bab9",
+ "tag": "text-90ccc98bb76f-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 17,
+    "b": 27,
+    "rationale": "Zeno's age has no bearing on whether he pointed out a hawk.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "rationale": "Team assignments are unrelated to the description of the trail.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 19,
+    "b": 22,
+    "rationale": "Both claims describe separate people not being on Zeno's team, which is consistent but not causally supportive of each other.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "The trail opening into a rocky overlook sets up the location where the group paused for lunch, supporting that event.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 20,
+    "b": 23,
+    "rationale": "The trail description doesn't specify who set up a stove, so it's unrelated to that specific action.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "rationale": "Pausing for lunch at the overlook makes it likely someone set up a stove to prepare food.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 21,
+    "b": 24,
+    "rationale": "Pausing for lunch supports the idea that sandwiches were unpacked for everyone.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 21,
+    "b": 26,
+    "rationale": "Pausing for lunch is a rest period, not indicative of picking up pace, and these are somewhat sequential but not causally linked.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   },
+   {
+    "a": 21,
+    "b": 30,
+    "rationale": "Lunch at the overlook doesn't directly relate to settling in for the night under stars.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 23,
+    "b": 27,
+    "rationale": "Setting up a camp stove is unrelated to spotting a hawk.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "Clouds rolling in could motivate the group to hurry toward the summit before weather worsens.",
+    "relation": "supports",
+    "confidence": 0.65
+   },
+   {
+    "a": 25,
+    "b": 29,
+    "rationale": "Clouds rolling in doesn't directly indicate reaching the summit at sunset, though it may affect timing slightly.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   },
+   {
+    "a": 26,
+    "b": 29,
+    "rationale": "Deciding to pick up pace toward the summit supports the idea that they reached the summit shelter by sunset.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "rationale": "Zeno pointing out the hawk directly causes everyone to stop and watch it.",
+    "relation": "supports",
+    "confidence": 0.9
+   },
+   {
+    "a": 29,
+    "b": 30,
+    "rationale": "Reaching the summit shelter at sunset supports the group settling in for the night under stars afterward.",
+    "relation": "supports",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1178,
+  "output_tokens": 976,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,1900 @@
+{
+ "label": "b16-direct",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-a088c5cde480",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Sami is the event organizer.",
+   "span": "Assume that Sami is the event organizer.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Pia arrived early, carrying a large poster board wrapped in plastic to protect it from the morning drizzle.",
+   "span": "Pia arrived early, carrying a large poster board wrapped in plastic to protect it from the morning drizzle.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Ivo showed up a few minutes after Pia.",
+   "span": "Ivo showed up a few minutes later",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Ivo greeted several classmates as he set up his volcano model near the entrance.",
+   "span": "greeting several classmates as he set up his volcano model near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Fay booked the hall.",
+   "span": "Fay booked the hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Rosa is slightly taller than Sami.",
+   "span": "Rosa, who is slightly taller than Sami",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Rosa spent the morning arranging her display about renewable energy sources.",
+   "span": "spent the morning arranging her display about renewable energy sources",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Pia is in the same study group as Ivo.",
+   "span": "Pia is in the same study group as Ivo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Sami checked in with the judges to confirm the schedule for the afternoon presentations.",
+   "span": "Sami checked in with the judges to confirm the schedule for the afternoon presentations",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Sami moved briskly between tables.",
+   "span": "moving briskly between tables",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Ivo is not in the same study group as Rosa.",
+   "span": "Ivo is not in the same study group as Rosa.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Sami is not the event organizer.",
+   "span": "Sami is not the event organizer.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Fay ranks among the top students in her class.",
+   "span": "Fay, who ranks among the top students in her class",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Fay helped several younger participants organize their materials before the judging began.",
+   "span": "helped several younger participants organize their materials before the judging began",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Pia is not in the same study group as Rosa.",
+   "span": "Pia is not in the same study group as Rosa.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Sami is a year older than Ivo.",
+   "span": "Sami is a year older than Ivo",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Sami and Ivo often work together on unrelated class projects.",
+   "span": "they often work together on unrelated class projects",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Rosa arrived just after Fay.",
+   "span": "Rosa arrived just after Fay",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Rosa and Fay chatted about their weekend plans before the fair officially started.",
+   "span": "both chatting about their weekend plans before the fair officially started",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Pia and Sami compared notes on judging criteria while waiting for the results to be announced.",
+   "span": "Pia and Sami compared notes on judging criteria while waiting for the results to be announced.",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Sami's role as organizer is unrelated to Pia's arrival with a poster board.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Sami being organizer has no bearing on when Ivo arrived.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Sami's organizer role doesn't relate to Ivo's greeting classmates or setup.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Sami being organizer doesn't determine who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Sami's role as organizer is unrelated to height comparison with Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Sami's organizer role is unrelated to Rosa's display arranging.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Sami's organizer status has no bearing on study group membership of Pia and Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Being the event organizer supports the likelihood that Sami would check in with judges about scheduling, a typical organizer duty.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "As organizer, Sami moving briskly between tables is consistent with managing the event.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Sami's organizer role is unrelated to Ivo and Rosa's study group relationship.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Sami being the event organizer directly contradicts the claim that Sami is not the event organizer.",
+   "relation": "contradicts",
+   "confidence": 1.0
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Sami's organizer role is unrelated to Fay's academic ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Sami's organizer role is unrelated to Fay helping other participants.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Sami's organizer status is unrelated to Pia and Rosa's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Sami's organizer role is unrelated to his age relative to Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Sami's organizer role is unrelated to whether Sami and Ivo work on unrelated projects together.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Sami's organizer role is unrelated to Rosa's arrival time relative to Fay.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Sami's organizer role is unrelated to Rosa and Fay's conversation about weekend plans.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Being the organizer supports the plausibility that Sami would discuss judging criteria with Pia, consistent with an organizational role.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Pia's early arrival with a poster board is unrelated to the specific timing of Ivo's arrival relative to her, aside from the sequencing already stated elsewhere.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Pia's arrival is unrelated to Ivo's greeting classmates while setting up his volcano model.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Pia arriving early has no bearing on who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Pia's arrival time and poster board have no connection to Rosa's height relative to Sami.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Pia's early arrival with a poster board is unrelated to Rosa arranging her renewable energy display.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Pia's arrival time doesn't affect or indicate study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Pia's arrival has no bearing on Sami's schedule confirmation with judges.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Pia's arrival is unrelated to Sami moving briskly between tables.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Pia's arrival time has no bearing on study group membership between Ivo and Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Pia's arrival is unrelated to whether Sami is the event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Pia's arrival with a poster board has no connection to Fay's academic ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Pia's early arrival is unrelated to Fay helping younger participants.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Pia's arrival time has no bearing on her study group membership relative to Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Pia's arrival is unrelated to the age difference between Sami and Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Pia's arrival has no bearing on Sami and Ivo's collaboration on projects.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Pia's arrival time is unrelated to when Rosa arrived relative to Fay.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Pia's arrival has no bearing on Rosa and Fay's conversation about weekend plans.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Pia's early arrival doesn't directly relate to her later comparing notes with Sami, though both involve Pia they describe unconnected events.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Ivo's arrival shortly after Pia supports the idea that he then set up his volcano model, consistent with a sequence of events.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Ivo's arrival time is unrelated to who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Ivo's arrival time has no bearing on Rosa's height relative to Sami.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Ivo's arrival timing relative to Pia has no bearing on Rosa's morning activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Arrival order is unrelated to study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Ivo's arrival time has no connection to Sami checking in with judges.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Ivo's arrival timing does not relate to Sami's movement between tables.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Arrival order has no bearing on study group composition.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Ivo's arrival time is unrelated to Sami's role as event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Ivo's arrival timing has no connection to Fay's academic ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Ivo's arrival time is unrelated to Fay helping other participants.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Arrival order has no bearing on Pia and Rosa's study group relationship.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Ivo's arrival time is unrelated to the age difference between Sami and Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Arrival timing has no connection to whether Sami and Ivo work together on projects.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Ivo arriving after Pia is unrelated to Rosa's arrival relative to Fay.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Ivo's arrival timing has no bearing on Rosa and Fay's conversation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Ivo's arrival time is unrelated to Pia and Sami comparing notes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Ivo greeting classmates near the entrance has no bearing on who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Ivo's greeting activity is unrelated to the height comparison between Rosa and Sami.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Ivo setting up his volcano model is unrelated to Rosa's morning activities with her display.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Ivo's social greeting behavior does not indicate anything about study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Ivo's activity at the entrance is unrelated to Sami checking the afternoon schedule.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Ivo greeting classmates is unrelated to Sami's movement between tables.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Ivo greeting classmates has no bearing on study group membership between Ivo and Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Ivo's volcano setup activity is unrelated to whether Sami is the event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Ivo's actions have nothing to do with Fay's class ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Ivo setting up his own model is unrelated to Fay helping other participants.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Ivo's greeting behavior has no connection to Pia and Rosa's study group status.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Ivo's setup activity does not relate to age differences between Sami and Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Ivo greeting classmates near the entrance is unrelated to his collaboration with Sami on class projects.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Ivo's greeting activity has no bearing on Rosa's arrival time relative to Fay.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Ivo's actions near the entrance are unrelated to Rosa and Fay's conversation.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Ivo's greeting activity is unrelated to Pia and Sami discussing judging criteria.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Fay booking the hall has no connection to relative heights of Rosa and Sami.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Fay booking the hall does not relate to Rosa's morning activity of arranging her display.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Fay booking the hall is unrelated to Pia's study group membership with Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Fay booking the hall has no bearing on Sami's checking with judges about scheduling.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Fay booking the hall does not relate to Sami's movement between tables.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Fay booking the hall has no connection to Ivo and Rosa's study group status.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Fay booking the hall could suggest she is the organizer, but this doesn't directly confirm or deny Sami's non-organizer status.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Fay booking the hall is unrelated to her academic ranking.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Fay booking the hall as an organizational task is consistent with her helping participants, suggesting she takes an organizing role, weakly supporting her helpfulness.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Fay booking the hall has no bearing on Pia and Rosa's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Fay booking the hall has no bearing on Sami's age relative to Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Booking a hall is unrelated to whether Sami and Ivo work together on projects.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Fay booking the hall doesn't establish anything about arrival order relative to Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Booking the hall is unrelated to whether Rosa and Fay chatted about weekend plans.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Fay booking the hall has no connection to Pia and Sami comparing notes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Height comparison has no bearing on Rosa's display activity.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Height comparison between Rosa and Sami is unrelated to Pia's study group.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Rosa's height relative to Sami has no bearing on Sami's schedule-checking activity.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Height difference is unrelated to Sami's movement between tables.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Height comparison is unrelated to study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Height comparison has no bearing on whether Sami is the event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Rosa's height relative to Sami is unrelated to Fay's academic ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Height comparison is unrelated to Fay helping participants.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Height comparison between Rosa and Sami has no bearing on Pia and Rosa's study group relationship.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Rosa's height relative to Sami is unrelated to Sami's age relative to Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Height comparison is unrelated to Sami and Ivo's collaboration on projects.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Height comparison has no bearing on arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Rosa's height is unrelated to whether she chatted with Fay.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Height comparison is unrelated to Pia and Sami comparing judging notes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Rosa arranging her display is unrelated to Pia's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Rosa's display arrangement has no bearing on Sami's schedule check with judges.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Rosa's activity does not relate to Sami's movement between tables.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Rosa's display work has nothing to do with study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Rosa's activity does not bear on whether Sami is the event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Rosa's display arranging has no connection to Fay's class ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Rosa's morning activity is unrelated to Fay helping other participants.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Rosa's display work does not relate to Pia's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Rosa's activity has no bearing on Sami and Ivo's age difference.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Rosa's display work is unrelated to Sami and Ivo's collaboration.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Rosa spending the morning arranging her display suggests she was present early, consistent with but not directly confirming she arrived after Fay.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Rosa's arranging activity does not directly relate to a later chat with Fay, though both involve Rosa's morning.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Rosa's display arranging has no connection to Pia and Sami's conversation.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Pia's study group membership is unrelated to Sami's schedule check.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Pia's study group membership has no bearing on Sami's movement.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Pia being in the same group as Ivo doesn't determine Ivo's relation to Rosa's group.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Pia's study group has no bearing on Sami's organizer status.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Pia's study group membership does not relate to Fay's class ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Pia's study group has no connection to Fay helping participants.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "If Pia is in the same group as Ivo, and Ivo could be in a different group than Rosa, this doesn't confirm but is consistent with Pia not being in Rosa's group.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Pia's study group membership is unrelated to the age difference between Sami and Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Pia's study group membership with Ivo has no bearing on Sami and Ivo's project collaboration.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Study group membership is unrelated to arrival timing at the fair.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Pia's study group with Ivo has no connection to Rosa and Fay's conversation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Study group membership does not relate to Pia and Sami discussing judging criteria.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Checking in with judges about scheduling is consistent with and could explain Sami moving briskly between tables, providing mild support.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Sami's scheduling check-in with judges has no bearing on Ivo and Rosa's study group status.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Sami checking in with judges to confirm the schedule suggests an organizational role, contradicting the claim that Sami is not the event organizer.",
+   "relation": "contradicts",
+   "confidence": 0.5
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Sami's actions with judges are unrelated to Fay's academic ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Sami's schedule confirmation is unrelated to Fay helping other participants.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Sami's actions have no bearing on Pia and Rosa's study group status.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Sami confirming the schedule is unrelated to his age relative to Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Sami's schedule-related activity is unrelated to his unrelated class projects with Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Sami confirming the schedule is unrelated to Rosa's arrival time relative to Fay.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Sami's schedule check-in is unrelated to Rosa and Fay's conversation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Sami confirming the schedule with judges is consistent with him being involved in judging logistics, supporting the idea he later discusses judging criteria with Pia.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Sami moving between tables has no bearing on Ivo and Rosa's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Sami moving briskly between tables is unrelated to whether he holds the organizer role.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Sami's movement is unrelated to Fay's academic ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Sami moving between tables is unrelated to Fay helping younger participants.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Sami's movement has no bearing on Pia and Rosa's study group status.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Sami's movement between tables has no bearing on relative ages of Sami and Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Moving briskly between tables does not relate to whether Sami and Ivo work together on projects.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Sami's movement between tables has no connection to when Rosa arrived relative to Fay.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Sami's movement between tables is unrelated to Rosa and Fay's conversation about weekend plans.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Sami moving between tables could plausibly be part of the same event context as Pia and Sami comparing notes, but it doesn't directly support or contradict it.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Study group membership of Ivo and Rosa has no bearing on whether Sami is the event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Ivo's study group relation to Rosa has no bearing on Fay's class ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Study group composition involving Ivo and Rosa is unrelated to Fay helping younger participants.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Ivo not sharing a study group with Rosa doesn't imply anything about Pia's study group relation to Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Study group membership is unrelated to relative ages of Sami and Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Ivo's study group status with Rosa doesn't relate to whether Sami and Ivo work on class projects together.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Study group membership has no connection to arrival times at the fair.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Ivo's study group status is unrelated to Rosa and Fay's conversation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Study group membership of Ivo and Rosa is unrelated to Pia and Sami comparing judging notes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Sami not being the event organizer has no bearing on Fay's class ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Sami's non-organizer status is unrelated to Fay helping younger participants.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Sami's role as non-organizer has no connection to Pia and Rosa's study group status.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Sami not being the event organizer is unrelated to the age difference between Sami and Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Sami's organizer status is unrelated to whether Sami and Ivo work together on projects.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Sami not being the organizer has no bearing on when Rosa arrived relative to Fay.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Sami's role as organizer has no bearing on whether Rosa and Fay chatted about weekend plans.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Sami not being the organizer is unrelated to whether Pia and Sami compared judging notes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Fay ranking among top students doesn't directly imply she helped younger participants, though it could be loosely consistent with being a capable helper; still no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Fay's academic ranking has no connection to Pia's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Fay's class ranking is unrelated to Sami's age relative to Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Fay's academic standing has no bearing on Sami and Ivo's project collaboration.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Fay's ranking among students is unrelated to the timing of Rosa's arrival.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Fay's academic ranking doesn't affect whether she chatted with Rosa about weekend plans.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Fay's ranking is unrelated to Pia and Sami's conversation about judging.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Fay helping participants organize materials has no connection to Pia's study group.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Fay's helping behavior is unrelated to Sami's age compared to Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Fay assisting others is unrelated to Sami and Ivo's project collaboration.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Fay helping participants before judging suggests she was present early, supporting the idea that Rosa arrived shortly after her.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Fay helping others before judging began is consistent with her being present and available to chat with Rosa beforehand.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Fay's helping activity is unrelated to Pia and Sami's conversation about judging criteria.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Pia's study group membership has no bearing on Sami's age relative to Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Pia and Rosa's study group difference is unrelated to Sami and Ivo's project work.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Pia's study group status is unrelated to Rosa's arrival timing relative to Fay.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Pia not sharing a study group with Rosa is unrelated to Rosa and Fay's conversation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Pia's study group separation from Rosa is unrelated to Pia and Sami's conversation about judging criteria.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Sami's age relative to Ivo has no bearing on whether they work together on class projects.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Sami and Ivo's ages are unrelated to Rosa and Fay's arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Sami's age difference from Ivo has no connection to Rosa and Fay's conversation.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Sami's age relative to Ivo doesn't affect whether Pia and Sami discuss judging criteria.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Sami and Ivo working together on projects has no bearing on Rosa and Fay's arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Sami and Ivo's project collaboration is unrelated to Rosa and Fay's chat.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Sami and Ivo working together on unrelated projects doesn't directly imply anything about Pia and Sami's conversation, though both involve Sami being social/collaborative.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Rosa arriving just after Fay establishes proximity in time, supporting the idea that they could chat before the fair started.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Rosa and Fay's arrival order has no bearing on Pia and Sami's conversation about judging criteria.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Rosa and Fay chatting about weekend plans is unrelated to Pia and Sami discussing judging criteria.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "event_organizer",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "event_organizer",
+    "kind": "same",
+    "a": "sami",
+    "b": "event_organizer",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "ivo",
+    "b": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "sami",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 7,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "pia",
+    "b": "ivo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 10,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "ivo",
+    "b": "rosa",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "event_organizer",
+    "kind": "different",
+    "a": "sami",
+    "b": "event_organizer",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 14,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "pia",
+    "b": "rosa",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "sami",
+    "b": "ivo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "fay",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 20,
+  "pairs_requested": 190,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 9,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 20,
+  "n_edges": 12,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct",
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9659245440977977,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "event_organizer",
+    "entities": [
+     "sami",
+     "event_organizer"
+    ],
+    "relations": [
+     0,
+     5
+    ],
+    "claim_ids": [
+     0,
+     11
+    ],
+    "min_confidence": 0.85
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   0.8609784151788027,
+   0.9644363387666707,
+   1.0,
+   -0.17219568303576055,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   0.9714827518315492
+  ],
+  "claim_residuals": [
+   0.700961380763176,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.28180450932189993,
+   0.00791058647472264,
+   0.0,
+   2.296513532561521,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.006144995204431981
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 8,
+    "residual": 0.014495250784648018
+   },
+   {
+    "a": 0,
+    "b": 9,
+    "residual": 0.0007588644001914066
+   },
+   {
+    "a": 0,
+    "b": 11,
+    "residual": 0.6852599871846311
+   },
+   {
+    "a": 0,
+    "b": 19,
+    "residual": 0.00044727839370555596
+   },
+   {
+    "a": 2,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 0.005886948074212223
+   },
+   {
+    "a": 8,
+    "b": 11,
+    "residual": 0.2372108260492169
+   },
+   {
+    "a": 8,
+    "b": 19,
+    "residual": 0.004884483367625415
+   },
+   {
+    "a": 13,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   11,
+   0,
+   8,
+   9,
+   19
+  ],
+  "culprits": [
+   {
+    "claim": 11,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.03407545590220229
+   },
+   {
+    "claim": 0,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.014701833415739385
+   },
+   {
+    "claim": 8,
+    "conflict_drop": 0.0,
+    "harmony_change": -0.0016388298120834088
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 830,
+   "api_calls": 0,
+   "cache_hits": 830,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 7548523
+  },
+  "components": [
+   [
+    0,
+    8,
+    9,
+    11,
+    19
+   ],
+   [
+    1
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    4,
+    13,
+    17,
+    18
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    10
+   ],
+   [
+    12
+   ],
+   [
+    14
+   ],
+   [
+    15
+   ],
+   [
+    16
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    0,
+    11
+   ],
+   [
+    8,
+    11
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "event_organizer",
+    "entities": [
+     "sami",
+     "event_organizer"
+    ],
+    "relations": [
+     0,
+     5
+    ],
+    "claim_ids": [
+     0,
+     11
+    ],
+    "min_confidence": 0.85
+   }
+  ]
+ }
+}

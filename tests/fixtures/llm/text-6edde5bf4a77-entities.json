@@ -1,0 +1,127 @@
+{
+ "request": "8879b56ca7645a53d4a5d7ccf0b6e20d4798f99ccfb50e2edcc6b6870a41fa42",
+ "tag": "text-6edde5bf4a77-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana",
+     "her"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi",
+     "his"
+    ]
+   },
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana"
+    ]
+   },
+   {
+    "id": "director",
+    "mentions": [
+     "The director",
+     "her"
+    ]
+   },
+   {
+    "id": "choir",
+    "mentions": [
+     "The choir",
+     "Others",
+     "Everyone",
+     "the group"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "kai",
+    "b": "otto",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "kai",
+    "b": "xavi",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 7,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "kai",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 12,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "otto",
+    "b": "kai",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "kai",
+    "b": "xavi",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 20,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "otto",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2219,
+  "output_tokens": 500,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

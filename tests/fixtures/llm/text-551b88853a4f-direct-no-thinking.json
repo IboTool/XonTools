@@ -1,0 +1,26 @@
+{
+ "request": "cebfba8ec995cff01f26ecd90c557f1ff1496f38dbe838326c5d37d812d94d15",
+ "tag": "text-551b88853a4f-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Hana and Lena worked different shifts.",
+     "Lena and Rosa worked different shifts.",
+     "Hana and Rosa worked different shifts.",
+     "The shop ran three shifts."
+    ],
+    "explanation": "With only three shifts, having Hana, Lena, and Rosa all pairwise on different shifts requires three distinct shifts among them, which is possible, but combined with the group being five people total sharing three shifts consistently, this creates an inconsistency since all three pairwise differences force exactly one person per shift for these three, leaving no valid shift assignment consistent with a three-shift system shared among five people without contradiction elsewhere implied by the narrative's shift logic."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1056,
+  "output_tokens": 236,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

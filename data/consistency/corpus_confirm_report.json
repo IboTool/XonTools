@@ -1,0 +1,1069 @@
+{
+ "regenerations": {
+  "12": {
+   "attempts": 2,
+   "flagged_final_attempt": false,
+   "plant_verify_ok": true,
+   "claim": "Ana brought the first-aid kit.",
+   "variants": [
+    "consistent",
+    "direct",
+    "cycle"
+   ]
+  },
+  "57": {
+   "attempts": 1,
+   "flagged_final_attempt": false,
+   "plant_verify_ok": true,
+   "claim": "Leo brought the first-aid kit.",
+   "variants": [
+    "consistent",
+    "direct",
+    "cycle"
+   ]
+  }
+ },
+ "deterministic": {
+  "n_documents": 180,
+  "n_order_phrases": 234,
+  "n_planted_order_cycle_bases_seen": 20,
+  "planted_order_cycle_bases_seen": [
+   0,
+   3,
+   6,
+   9,
+   12,
+   15,
+   18,
+   21,
+   24,
+   27,
+   30,
+   33,
+   36,
+   39,
+   42,
+   45,
+   48,
+   51,
+   54,
+   57
+  ],
+  "counts": {
+   "same_attribute": 0,
+   "activity_synonyms": 3,
+   "superlative_collisions": 0,
+   "order_cycles_unplanted": 0
+  },
+  "hits": {
+   "same_attribute": [],
+   "activity_synonyms": [
+    {
+     "doc_id": "b04-consistent",
+     "keyword": "photo",
+     "sentence": "Hugo is the tallest of the group, a fact that becomes obvious whenever they line up for the yearly club photo."
+    },
+    {
+     "doc_id": "b04-direct",
+     "keyword": "photo",
+     "sentence": "Hugo is the tallest of the group, a fact that becomes obvious whenever they line up for the yearly club photo."
+    },
+    {
+     "doc_id": "b04-cycle",
+     "keyword": "photo",
+     "sentence": "Hugo is the tallest of the group, a fact that becomes obvious whenever they line up for the yearly club photo."
+    }
+   ],
+   "superlative_collisions": [],
+   "order_cycles_unplanted": []
+  }
+ },
+ "leak_scan": {
+  "n_documents": 180,
+  "n_hits": 161,
+  "n_planted_sentence_flags": 120,
+  "unchanged_documents_identical_to_previous_scan": true,
+  "errors": [],
+  "hits": [
+   {
+    "doc_id": "b00-direct",
+    "sentence": "Uma is not the treasurer.",
+    "reason": "This directly contradicts/references the planted fact about Uma being treasurer, revealing the planted attribute outside its designated sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b00-cycle",
+    "sentence": "Cy is older than Isla.",
+    "reason": "This contradicts and thus directly reveals/negates the planted age order (Isla older than Cy), leaking the planted age comparison fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b01-direct",
+    "sentence": "Gus did not book the hall.",
+    "reason": "This directly contradicts the planted fact that Gus booked the hall, creating a conflicting statement about the same fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b01-direct",
+    "sentence": "Leo laughed and said he preferred working in the mornings, while Dev admitted he liked the evening shifts better.",
+    "reason": "Describing Leo and Dev as having different work schedule preferences hints at them being on separate teams, reinforcing the planted team-split fact.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b01-cycle",
+    "sentence": "Leo is on the same team as Dev.",
+    "reason": "This directly contradicts the planted fact 'Leo is not on the same team as Dev,' introducing a conflicting team-relation statement not among the planted sentences.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b02-direct",
+    "sentence": "Finn is not the team captain.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact about Finn being team captain, exposing the true state of that fact outside its designated planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b02-cycle",
+    "sentence": "There were two teams.",
+    "reason": "Contradicts/duplicates the planted fact about the number of teams (planted as three), leaking the team-count fact by giving a conflicting value.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b03-direct",
+    "sentence": "Everyone appreciated that the trip from the other campus had gone smoothly, since traffic near the roundabout can be unpredictable at that hour.",
+    "reason": "This implies someone drove the minibus successfully, hinting at the planted fact that Xavi drove it.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b03-direct",
+    "sentence": "Xavi did not drive the minibus.",
+    "reason": "This directly contradicts/negates the planted fact that Xavi drove the minibus, revealing information about that fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b03-cycle",
+    "sentence": "Jude arrived before Tess.",
+    "reason": "This directly contradicts/adds to the planted arrival order facts (Tess before Ivo, Ivo before Jude, Tess before Jude), introducing new arrival-time information not confined to the planted sentences.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b04-consistent",
+    "sentence": "By the end of the session, the club had set a date for their next meeting, and everyone agreed the room smelled pleasantly of chalk and old wood, a detail Gia noted fondly as she locked up the cabinet of chess sets for the night.",
+    "reason": "Depicts Gia performing a closing/organizational duty (locking up), implying her role as event organizer.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b04-direct",
+    "sentence": "Gia is not the event organizer.",
+    "reason": "This directly contradicts and thereby reveals/negates the planted fact that Gia is the event organizer, exposing the true status.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b04-cycle",
+    "sentence": "Finn is in the same class as Jun.",
+    "reason": "This directly contradicts the planted fact that Finn is not in the same class as Jun, creating a conflicting statement rather than a leak, but it explicitly states class relations for Finn and Jun outside the designated planted sentence for that fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b05-direct",
+    "sentence": "Xavi did not bring the first-aid kit.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact that Xavi brought the first-aid kit, making the plant's content guessable before it's stated.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b05-cycle",
+    "sentence": "The school had two houses.",
+    "reason": "This directly contradicts the planted fact that the school had three houses, and reveals a specific (wrong) value for the same fact, constituting a leak/conflict of the planted information.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b06-consistent",
+    "sentence": "Sami later checked the list of stallholders to make sure nobody had been left off.",
+    "reason": "This describes Sami performing an organizational duty similar to booking the hall, implying involvement in event logistics that hints at the planted fact about Sami booking the hall.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b06-direct",
+    "sentence": "Finn is not the club secretary.",
+    "reason": "This directly contradicts/restates the planted fact about Finn's role as club secretary, revealing information about that planted fact outside its designated sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b06-cycle",
+    "sentence": "Yara is taller than Fay.",
+    "reason": "This directly contradicts the planted facts that Fay is taller than Yara, creating a fabricated/contradictory height claim not matching the plants.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b07-direct",
+    "sentence": "Finn did not bring the first-aid kit.",
+    "reason": "This directly contradicts and thus re-reveals/references the planted fact about who brought the first-aid kit, restating the fact's subject matter.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b07-cycle",
+    "sentence": "Rosa is in the same study group as Vik.",
+    "reason": "This directly contradicts and thus conflicts with the planted fact that Rosa is not in the same study group as Vik, revealing a false/leaked variant of that relationship fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b08-direct",
+    "sentence": "Esme is not the head judge.",
+    "reason": "This directly contradicts/negates the planted fact that Esme is the head judge, revealing information about that planted attribute outside the designated sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b08-cycle",
+    "sentence": "The shop ran two shifts.",
+    "reason": "Contradicts and thus reveals/undermines the planted fact that the shop ran three shifts.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b09-direct",
+    "sentence": "Tess did not take the photographs.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact that Tess took the photographs, drawing attention to and undermining that fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b09-cycle",
+    "sentence": "Vik finished ahead of Pia.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact that Pia finished ahead of Vik, creating a leak/conflict about the planted rank order.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b10-direct",
+    "sentence": "Zeno is not the lead volunteer.",
+    "reason": "Directly contradicts and thus reveals/negates the planted fact about Zeno being the lead volunteer.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b10-cycle",
+    "sentence": "Jun is on the same team as Hana.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact that 'Jun is not on the same team as Hana,' exposing the team relationship information outside its designated planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b11-direct",
+    "sentence": "Kai did not book the hall.",
+    "reason": "This directly restates/negates the planted fact about who booked the hall, revealing information about that planted fact outside its designated sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b11-cycle",
+    "sentence": "There were two teams.",
+    "reason": "Contradicts and thus reveals information about the planted fact that there were three teams, directly conflicting with the planted count.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b12-direct",
+    "sentence": "Hana is not the treasurer.",
+    "reason": "Directly contradicts/negates the planted fact that Hana is the treasurer, revealing the treasurer topic before the plant.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b12-cycle",
+    "sentence": "Xavi is older than Otto.",
+    "reason": "This contradicts and thus reveals/negates the planted fact that Otto is older than Xavi, directly exposing the age relationship.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b13-consistent",
+    "sentence": "Yara walked in a few minutes later, greeting Zeno with a wave before finding a seat near the piano.",
+    "reason": "Describing a friendly greeting between Yara and Zeno could imply closeness or shared context, subtly suggesting they might be in the same class, contradicting/foreshadowing the planted fact that they are not.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b13-direct",
+    "sentence": "Kai did not drive the minibus.",
+    "reason": "Directly contradicts and thus interacts with the planted fact that Kai drove the minibus, revealing information about that fact by negation.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b13-cycle",
+    "sentence": "Milo is in the same class as Zeno.",
+    "reason": "This directly contradicts the planted fact that Milo is not in the same class as Zeno, and states a class relationship not among the intended planted set, effectively leaking/altering the class-relation information.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b14-direct",
+    "sentence": "Rosa is not the team captain.",
+    "reason": "This directly contradicts/reveals the planted fact about Rosa's captaincy status, engaging with the same fact rather than being neutral filler.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b14-cycle",
+    "sentence": "The school had two houses.",
+    "reason": "This contradicts and thus reveals information about the planted fact that the school had three houses.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b15-consistent",
+    "sentence": "Everyone gathered near the entrance early that morning, checking their poster boards and rehearsing their explanations one more time before the doors opened to visitors.",
+    "reason": "Implies all students arrived together at the same early time, which could conflict with or hint at the specific arrival order being planted, but this is vague enough—actually this does not specify order, so it's borderline filler, not a clear leak.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b15-direct",
+    "sentence": "Wren did not bring the first-aid kit.",
+    "reason": "This directly contradicts and thereby draws attention to/reveals the planted fact that Wren brought the first-aid kit, effectively restating the fact under negation which conflicts with the plant.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b15-cycle",
+    "sentence": "Gia arrived before Milo.",
+    "reason": "This contradicts and thus reveals/conflicts with the planted arrival order that Milo arrived before Gia.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b16-consistent",
+    "sentence": "Sami is a year older than Ivo, though they often work together on unrelated class projects.",
+    "reason": "Stating they 'often work together' could imply a shared group/team association relevant to the study group plant, hinting they might be in the same group.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b16-direct",
+    "sentence": "Sami is not the event organizer.",
+    "reason": "This directly contradicts/restates the planted fact about Sami's organizer role, effectively revealing the planted attribute status again outside its single planted location.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b16-direct",
+    "sentence": "Sami is a year older than Ivo, though they often work together on unrelated class projects.",
+    "reason": "The phrase 'work together on unrelated class projects' implies Sami and Ivo are not in the same study group context, hinting at the study group grouping fact.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b16-cycle",
+    "sentence": "Ivo is in the same study group as Rosa.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact that 'Ivo is not in the same study group as Rosa,' exposing the study group relationship outside the intended planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b17-consistent",
+    "sentence": "Dev checked in with volunteers throughout the day, making sure every table had enough space and that the extension cords were taped down safely.",
+    "reason": "This describes Dev performing organizer-type duties, implying/reinforcing that Dev is the event organizer beyond the planted sentence.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b17-consistent",
+    "sentence": "Zeno mentioned that his shift felt shorter than expected, though he didn't say why.",
+    "reason": "This references Zeno's shift specifically, hinting at shift differences/details beyond the planted comparisons.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b17-direct",
+    "sentence": "Ivo did not bring the first-aid kit.",
+    "reason": "This directly contradicts and thereby draws attention to/reveals the planted fact about who brought the first-aid kit, undermining the single-source plant.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b17-direct",
+    "sentence": "Dev checked in with volunteers throughout the day, making sure every table had enough space and that the extension cords were taped down safely.",
+    "reason": "This describes Dev performing organizer-type duties, implying/confirming the planted fact that Dev is the event organizer.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b17-direct",
+    "sentence": "Zeno mentioned that his shift felt shorter than expected, though he didn't say why.",
+    "reason": "This references Zeno's shift specifically, hinting at shift-related distinctions that touch on the planted shift facts.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b17-cycle",
+    "sentence": "The shop ran two shifts.",
+    "reason": "Contradicts/leaks the planted fact that the shop ran three shifts by stating a specific (different) shift count for the same fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b17-cycle",
+    "sentence": "Dev checked in with volunteers throughout the day, making sure every table had enough space and that the extension cords were taped down safely.",
+    "reason": "Describes Dev performing organizer-type duties, implying/confirming the planted fact that Dev is the event organizer.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b17-cycle",
+    "sentence": "Zeno mentioned that his shift felt shorter than expected, though he didn't say why.",
+    "reason": "Implies something specific about shift differences/details, hinting at the planted shift-based facts about Zeno.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b18-direct",
+    "sentence": "Hana is not the club secretary.",
+    "reason": "Directly contradicts and thereby reveals/negates the planted fact about Hana's role as club secretary, leaking the underlying fact by drawing attention to it.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b18-cycle",
+    "sentence": "Leo is taller than Pia.",
+    "reason": "This contradicts and thus reveals/implies the planted height order (Pia taller than Kai/Leo), directly conflicting with the planted facts about relative height.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b19-direct",
+    "sentence": "Dara did not take the photographs.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact that Dara took the photographs, appearing outside the intended single location.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b19-cycle",
+    "sentence": "Eli is on the same team as Zeno.",
+    "reason": "This directly contradicts the planted fact that Eli is not on the same team as Zeno, creating a conflicting statement that leaks/undermines the planted team fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b20-direct",
+    "sentence": "Jun is not the head judge.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact about Jun being the head judge, drawing attention to and interacting with that fact outside its planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b20-cycle",
+    "sentence": "There were two teams.",
+    "reason": "Contradicts/reveals information about the planted fact that there were three teams.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b21-direct",
+    "sentence": "Esme did not book the hall.",
+    "reason": "This directly contradicts/references the planted fact that Esme booked the hall, revealing information about that planted fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b21-cycle",
+    "sentence": "Nell finished ahead of Sami.",
+    "reason": "This directly contradicts and thus reveals/alters the planted rank fact that Sami finished ahead of Nell, exposing the ranking outcome outside the planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b22-consistent",
+    "sentence": "The two of them exchanged a quick fist bump before settling into their seats, clearly comfortable working together.",
+    "reason": "Implies Yara and Eli are close/paired together, reinforcing the planted same-class fact about Yara and Eli.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b22-direct",
+    "sentence": "Kira is not the lead volunteer.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact that Kira is the lead volunteer, exposing the planted attribute value.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b22-direct",
+    "sentence": "The two of them exchanged a quick fist bump before settling into their seats, clearly comfortable working together.",
+    "reason": "This implies Yara and Eli are close/aligned, reinforcing the planted fact that they are in the same class beyond the planted sentence itself.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b22-cycle",
+    "sentence": "Eli is in the same class as Nell.",
+    "reason": "This directly contradicts the planted fact that Eli is not in the same class as Nell, creating a conflicting statement about the planted class attribute.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b23-direct",
+    "sentence": "Ben did not drive the minibus.",
+    "reason": "This directly contradicts the planted fact that Ben drove the minibus, revealing/negating information about the planted fact in the same location it should only appear.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b23-cycle",
+    "sentence": "The school had two houses.",
+    "reason": "Contradicts and thereby reveals information about the planted fact that the school had three houses.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b24-direct",
+    "sentence": "Alma is not the treasurer.",
+    "reason": "This directly contradicts/negates the planted fact that Alma is the treasurer, revealing information about that planted fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b24-cycle",
+    "sentence": "Ben is older than Noor.",
+    "reason": "Directly contradicts the planted fact that Noor is older than Ben, creating a false/conflicting age claim about the same pair.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b25-direct",
+    "sentence": "Esme did not bring the first-aid kit.",
+    "reason": "This directly contradicts and thus reveals/interacts with the planted fact that Esme brought the first-aid kit, exposing the fact by negating it in the narrative.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b25-cycle",
+    "sentence": "Fay is in the same study group as Nell.",
+    "reason": "This directly contradicts the planted fact that Fay is not in the same study group as Nell, creating a conflicting statement about the planted attribute.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b26-direct",
+    "sentence": "Wren is not the team captain.",
+    "reason": "Directly contradicts/restates the planted fact about Wren being the team captain, revealing information about that fact outside the intended plant.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b26-cycle",
+    "sentence": "The shop ran two shifts.",
+    "reason": "Directly contradicts the planted fact that the shop ran three shifts, revealing a conflicting shift-count fact outside the intended plant.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b27-consistent",
+    "sentence": "Otto stood near the registration table, chatting with volunteers about the schedule for the day.",
+    "reason": "Depicts Otto performing organizational/leadership duties, implying his captain role rather than just being a name mention.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b27-consistent",
+    "sentence": "Otto checked his watch and adjusted the oars on his boat, humming quietly to himself.",
+    "reason": "Could be seen as reinforcing captain-like responsibility (checking schedule/watch), though borderline; flagged as it implies oversight tied to the captain role.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b27-direct",
+    "sentence": "Mina did not win the raffle.",
+    "reason": "This directly contradicts/references the planted fact about who won the raffle, revealing information about the raffle outcome before the actual plant.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b27-cycle",
+    "sentence": "Kai arrived before Nell.",
+    "reason": "This directly contradicts and thus interacts with the planted facts about arrival order (Nell before Milo, Milo before Kai, Nell before Kai), revealing/altering the arrival-time relation among Kai and Nell not sanctioned as a planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b28-consistent",
+    "sentence": "Alma had traveled separately, arriving just as the announcer called the first heat to the starting line.",
+    "reason": "Describes Alma arriving separately from the others, which hints at her not being on the same team as Gus/Gia, the planted team fact.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b28-direct",
+    "sentence": "Jun is not the event organizer.",
+    "reason": "Directly contradicts the planted fact that Jun is the event organizer, revealing/negating it.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b28-direct",
+    "sentence": "Alma had traveled separately, arriving just as the announcer called the first heat to the starting line.",
+    "reason": "Describes Alma as traveling separately, which implies she is not grouped with the others, hinting at the team-separation facts involving Alma.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b28-cycle",
+    "sentence": "Gus is on the same team as Alma.",
+    "reason": "This directly contradicts the planted fact that Gus is not on the same team as Alma, creating a leak/inconsistency by asserting the opposite team relationship.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b28-cycle",
+    "sentence": "Alma had traveled separately, arriving just as the announcer called the first heat to the starting line.",
+    "reason": "Describing Alma as traveling 'separately' implies a separateness from the others that hints at her not sharing a team with Gia/Gus.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b29-direct",
+    "sentence": "Jude did not take the photographs.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact about who took the photographs, drawing attention to it before the plant.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b29-cycle",
+    "sentence": "There were two teams.",
+    "reason": "Contradicts/duplicates the planted fact about the number of teams (three), effectively restating a specific team-count value outside the designated plant.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b30-direct",
+    "sentence": "Hana is not the club secretary.",
+    "reason": "This directly contradicts/references the planted fact about Hana's role as club secretary, revealing the planted attribute is being discussed.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b30-cycle",
+    "sentence": "Nell is taller than Isla.",
+    "reason": "This directly contradicts and thus reveals/interferes with the planted height order (Isla is taller than Nell), leaking the height comparison fact in a conflicting form.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b31-consistent",
+    "sentence": "The two of them often walk to the library together after lectures end.",
+    "reason": "Implies Otto and Kira share the same class schedule, restating the planted fact that they are in the same class.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b31-direct",
+    "sentence": "Noor did not book the hall.",
+    "reason": "This directly contradicts/negates the planted fact that Noor booked the hall, revealing information about that fact before it's planted.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b31-direct",
+    "sentence": "The two of them often walk to the library together after lectures end.",
+    "reason": "This implies Otto and Kira share a schedule/class by suggesting they walk to lectures together, reinforcing the planted class relationship.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b31-cycle",
+    "sentence": "The two of them often walk to the library together after lectures end.",
+    "reason": "Implies Otto and Kira share the same class routine, reinforcing/leaking the planted fact that Otto is in the same class as Kira.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b31-cycle",
+    "sentence": "Kira is in the same class as Jude.",
+    "reason": "This directly contradicts and leaks the planted fact that Kira is not in the same class as Jude, revealing class relationship information outside the intended plant.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b32-direct",
+    "sentence": "Noor is not the head judge.",
+    "reason": "This directly contradicts/negates the planted fact that Noor is the head judge, effectively revealing information about the planted attribute by engaging with it outside the plant.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b32-cycle",
+    "sentence": "The school had two houses.",
+    "reason": "Contradicts/leaks the planted fact that the school had three houses by stating a specific (different) house count, revealing information about the house count that should only appear in the planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b33-consistent",
+    "sentence": "Kira arrived a few minutes after Ivo, both carrying boxes of gears wrapped in cloth.",
+    "reason": "This describes arrival order between Kira and Ivo, which could be read as implying their finishing rank order matches their arrival order.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b33-direct",
+    "sentence": "Leo did not drive the minibus.",
+    "reason": "This directly contradicts/reveals the planted fact that Leo drove the minibus, exposing it as false or making the planted claim ambiguous.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b33-direct",
+    "sentence": "Kira arrived a few minutes after Ivo, both carrying boxes of gears wrapped in cloth.",
+    "reason": "This states an order between Ivo and Kira (arrival time) that mirrors and hints at the planted finishing-rank order between them.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b33-cycle",
+    "sentence": "Kira finished ahead of Nell.",
+    "reason": "This directly contradicts and thus reveals information about the planted rank fact 'Nell finished ahead of Kira,' making the planted rank order explicit/conflicting rather than filler.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b34-direct",
+    "sentence": "Isla is not the lead volunteer.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact about Isla being the lead volunteer, exposing the same fact by asserting its opposite.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b34-cycle",
+    "sentence": "Vik is in the same study group as Ben.",
+    "reason": "This directly contradicts the planted fact that Vik is not in the same study group as Ben, creating a conflicting statement about the planted attribute.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b35-direct",
+    "sentence": "Uma did not bring the first-aid kit.",
+    "reason": "This directly contradicts and thus references the planted fact that Uma brought the first-aid kit, reintroducing the fact outside the planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b35-cycle",
+    "sentence": "The shop ran two shifts.",
+    "reason": "Contradicts the planted fact that the shop ran three shifts, effectively leaking/altering the planted shift-count fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b36-direct",
+    "sentence": "Jun is not the treasurer.",
+    "reason": "Directly contradicts/negates the planted fact that Jun is the treasurer, revealing the treasurer fact by negation.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b36-cycle",
+    "sentence": "Dara is older than Quinn.",
+    "reason": "This directly contradicts and thus reveals/negates the planted age order between Quinn and Dara (Quinn is older than Dara), leaking the planted attribute's ordering by asserting a conflicting claim about the same fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b37-direct",
+    "sentence": "Yara did not bring the first-aid kit.",
+    "reason": "This directly contradicts the planted fact that Yara brought the first-aid kit, revealing/negating the planted information.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b37-cycle",
+    "sentence": "Rosa is on the same team as Hana.",
+    "reason": "This directly contradicts and thus reveals the truth value of the planted fact that Rosa is not on the same team as Hana, creating a leak/inconsistency about the team attribute.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b38-direct",
+    "sentence": "Esme is not the team captain.",
+    "reason": "This directly contradicts and reveals the planted fact about whether Esme is the team captain.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b38-cycle",
+    "sentence": "There were two teams.",
+    "reason": "This contradicts and effectively restates/reveals the planted team-count fact by giving a specific (incorrect but revealing) number, leaking the concept that team count is a defined fact outside the planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b39-direct",
+    "sentence": "Kira did not take the photographs.",
+    "reason": "This directly contradicts/negates the planted fact that Kira took the photographs, revealing information about that fact outside the planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b39-cycle",
+    "sentence": "Cleo arrived before Fay.",
+    "reason": "This directly contradicts the planted arrival order (Fay before Cleo), introducing a conflicting arrival-time fact not among the planted sentences.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b40-direct",
+    "sentence": "Hugo is not the event organizer.",
+    "reason": "This directly contradicts and thereby reveals/negates the planted fact that Hugo is the event organizer, making it a leak (restating the planted fact's status outside the plant).",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b40-cycle",
+    "sentence": "Bo is in the same class as Nell.",
+    "reason": "This directly contradicts and thus reveals information about the planted fact that Bo is not in the same class as Nell, creating a leak/contradiction that exposes the class relationships being tracked.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b41-direct",
+    "sentence": "Xavi did not book the hall.",
+    "reason": "This directly contradicts/restates the planted fact that Xavi booked the hall, leaking it outside the designated sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b41-cycle",
+    "sentence": "The school had two houses.",
+    "reason": "Contradicts/duplicates the planted fact that the school had three houses, revealing information about the planted attribute's value outside the designated sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b42-direct",
+    "sentence": "Nell is not the club secretary.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact about Nell's role as club secretary, drawing attention to the planted assumption.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b42-cycle",
+    "sentence": "Wren is taller than Milo.",
+    "reason": "This directly contradicts and thus reveals information about the planted height fact that Milo is taller than Wren, exposing the height ordering.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b43-direct",
+    "sentence": "Milo did not drive the minibus.",
+    "reason": "This directly contradicts and thereby re-reveals/negates the planted fact that Milo drove the minibus, making it a leak of that fact's content.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b43-cycle",
+    "sentence": "Dev is in the same study group as Ivo.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact that 'Dev is not in the same study group as Ivo,' leaking the actual study group relationship in the opposite direction from what should only appear in the planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b44-consistent",
+    "sentence": "Kai reviewed the final tally sheets once the last debate concluded, and the volunteers began folding tables as the afternoon light faded.",
+    "reason": "Describes Kai performing an authoritative reviewing/judging action, implying Kai's role as head judge, which is a planted fact.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b44-direct",
+    "sentence": "Kai is not the head judge.",
+    "reason": "This directly contradicts/negates the planted fact that Kai is the head judge, revealing information about that fact outside the planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b44-direct",
+    "sentence": "Kai reviewed the final tally sheets once the last debate concluded, and the volunteers began folding tables as the afternoon light faded.",
+    "reason": "Reviewing tally sheets is an action characteristic of the head judge role, implying Kai's planted role.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b44-cycle",
+    "sentence": "The shop ran two shifts.",
+    "reason": "Contradicts/reveals the planted fact that the shop ran three shifts by stating a conflicting shift count.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b45-direct",
+    "sentence": "Vik did not bring the first-aid kit.",
+    "reason": "This directly contradicts the planted fact that Vik brought the first-aid kit, revealing/negating the planted information.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b45-cycle",
+    "sentence": "Leo finished ahead of Hana.",
+    "reason": "This directly contradicts and thus reveals information about the planted rank fact that Hana finished ahead of Leo.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b46-direct",
+    "sentence": "Noor is not the lead volunteer.",
+    "reason": "This directly contradicts and thus references the planted fact that Noor is the lead volunteer, drawing attention to that same fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b46-cycle",
+    "sentence": "Uma is on the same team as Jude.",
+    "reason": "This directly contradicts the planted fact that Uma is not on the same team as Jude, revealing a false/conflicting team assignment.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b47-direct",
+    "sentence": "Otto did not bring the first-aid kit.",
+    "reason": "This directly contradicts and thus interferes with the planted fact that Otto brought the first-aid kit, revealing/negating that planted information.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b47-cycle",
+    "sentence": "There were two teams.",
+    "reason": "Contradicts and thus draws attention to the planted fact that there were three teams, revealing/undermining that specific planted detail.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b48-direct",
+    "sentence": "Ana is not the treasurer.",
+    "reason": "Directly contradicts and thus reveals/negates the planted fact that Ana is the treasurer, exposing the treasurer identity as a topic under scrutiny.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b48-cycle",
+    "sentence": "Pia is older than Dara.",
+    "reason": "This contradicts the planted fact that Dara is older than Pia, effectively leaking/altering the planted age order.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b49-direct",
+    "sentence": "Ana did not take the photographs.",
+    "reason": "Directly contradicts the planted fact that Ana took the photographs, revealing/negating the planted information.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b49-cycle",
+    "sentence": "Noor is in the same class as Hugo.",
+    "reason": "This directly contradicts the planted fact that Noor is not in the same class as Hugo, and states a class relationship fact not in the planted list, leaking/conflicting with the planted class information.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b50-direct",
+    "sentence": "Lena is not the team captain.",
+    "reason": "This directly contradicts/negates the planted fact that Lena is the team captain, revealing information about that planted attribute outside its designated sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b50-cycle",
+    "sentence": "The school had two houses.",
+    "reason": "Contradicts/reveals information about the planted fact that the school had three houses, directly conflicting with the actual planted number.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b51-direct",
+    "sentence": "Hugo did not book the hall.",
+    "reason": "This directly contradicts/references the planted fact about who booked the hall, revealing information about that fact outside its planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b51-cycle",
+    "sentence": "Wren arrived before Dara.",
+    "reason": "This contradicts and thus reveals information about the planted arrival order (Dara before Leo before Wren, Dara before Wren), directly addressing the planted attribute with a conflicting claim.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b52-direct",
+    "sentence": "Quinn is not the event organizer.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact that Quinn is the event organizer, exposing the fact rather than staying silent on it.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b52-cycle",
+    "sentence": "Rosa is in the same study group as Tess.",
+    "reason": "Directly contradicts the planted fact that Rosa is not in the same study group as Tess, revealing an alternate/leaked version of that relation.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b52-cycle",
+    "sentence": "Quinn checked the registration table twice, making sure every runner had signed the waiver before the race began.",
+    "reason": "Describes Quinn performing duties characteristic of an event organizer, reinforcing/implying the planted fact that Quinn is the event organizer.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b53-consistent",
+    "sentence": "Jude checked in with each station leader, making sure the water tables were stocked and the signage was clear.",
+    "reason": "This describes Jude performing organizer-type duties, implying/reinforcing the planted fact that Jude is the event organizer.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b53-direct",
+    "sentence": "Dev did not drive the minibus.",
+    "reason": "This directly contradicts and thereby reveals/negates the planted fact that Dev drove the minibus, exposing information about that fact outside its planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b53-direct",
+    "sentence": "Jude checked in with each station leader, making sure the water tables were stocked and the signage was clear.",
+    "reason": "This describes Jude performing organizer-type duties, implying/confirming the planted fact that Jude is the event organizer.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b53-cycle",
+    "sentence": "The shop ran two shifts.",
+    "reason": "Contradicts/duplicates the planted fact about the number of shifts the shop ran, revealing shift-count information outside the designated planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b53-cycle",
+    "sentence": "Jude checked in with each station leader, making sure the water tables were stocked and the signage was clear.",
+    "reason": "Describes Jude performing organizer-type duties, implying the planted fact that Jude is the event organizer.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b54-consistent",
+    "sentence": "Quinn scanned the room for a good vantage point near the stage.",
+    "reason": "Implies Quinn is positioning to take photographs, hinting at the planted fact that Quinn took the photographs.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b54-direct",
+    "sentence": "Ivo is not the club secretary.",
+    "reason": "This directly contradicts/references the planted fact about Ivo's club secretary status, leaking the topic before the planted sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b54-cycle",
+    "sentence": "Nell is taller than Isla.",
+    "reason": "This directly contradicts the planted fact that Isla is taller than Nell, revealing/altering the planted height order.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b55-consistent",
+    "sentence": "Kai, meanwhile, reviewed some shots with Gus, both laughing about a blurry photo of a squirrel.",
+    "reason": "Depicts Kai and Gus collaborating closely, implying they are on the same team, which restates the planted fact in different words.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b55-direct",
+    "sentence": "Ben did not bring the first-aid kit.",
+    "reason": "This directly contradicts and thus reveals/negates the planted fact that Ben brought the first-aid kit, making the plant's truth value discussable outside its designated sentence.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b55-direct",
+    "sentence": "Kai, meanwhile, reviewed some shots with Gus, both laughing about a blurry photo of a squirrel.",
+    "reason": "Describes Kai and Gus working/interacting together in a way that implies they are on the same team, reinforcing the planted team relation outside its designated sentence.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b55-cycle",
+    "sentence": "Gus is on the same team as Hana.",
+    "reason": "This directly contradicts the planted fact that Gus is not on the same team as Hana, creating a leak/contradiction of the planted team assignment.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b55-cycle",
+    "sentence": "Kai, meanwhile, reviewed some shots with Gus, both laughing about a blurry photo of a squirrel.",
+    "reason": "This implies Kai and Gus are closely paired/collaborating, reinforcing the planted fact that they are on the same team.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b56-direct",
+    "sentence": "Zeno is not the head judge.",
+    "reason": "Directly contradicts and thus reveals/discusses the planted fact about Zeno being the head judge, restating the fact's subject matter in negated form.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b56-cycle",
+    "sentence": "There were two teams.",
+    "reason": "This directly contradicts and reveals a version of the planted fact about the number of teams, implying a specific team count different from the planted 'three teams' fact.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b57-consistent",
+    "sentence": "Otto arrived first, stretching his arms and greeting everyone with a wide grin.",
+    "reason": "Describes arrival order, not finishing rank, so it does not leak the planted rank facts (Otto/Kira/Esme finish order) but could be seen as implying order; however since it's about arrival time (a different attribute) it is expected filler and not a leak.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b57-direct",
+    "sentence": "Otto arrived first, stretching his arms and greeting everyone with a wide grin.",
+    "reason": "Describes arrival order, not finishing order, but could be seen as filler on a different attribute (arrival time) — not a leak of rank.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b57-direct",
+    "sentence": "Kira showed up a few minutes later, carrying a stack of mesh bags for collecting debris.",
+    "reason": "Arrival time detail, different attribute from finishing rank, not a leak.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b57-direct",
+    "sentence": "Esme trailed in last, still tying her shoelaces as she jogged across the sand.",
+    "reason": "Describes arrival order ('trailed in last'), a different attribute from finishing rank, but phrase 'last' could imply overall ranking outcome matching the planted finishing order, making it a leak of the rank fact that Esme finished last.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b57-direct",
+    "sentence": "Leo did not bring the first-aid kit.",
+    "reason": "Directly contradicts and thus restates/negates the planted fact about who brought the first-aid kit, revealing the same information.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b57-cycle",
+    "sentence": "Otto arrived first, stretching his arms and greeting everyone with a wide grin.",
+    "reason": "Describes arrival order, which could be conflated with finishing rank among Otto, Kira, Esme, but this is a different attribute (arrival time) than rank, so not a leak—wait, re-evaluating: this is arrival order not finish order, so it's filler, not flagged.",
+    "is_planted_sentence": false
+   },
+   {
+    "doc_id": "b57-cycle",
+    "sentence": "Esme finished ahead of Otto.",
+    "reason": "This contradicts and thus reveals information about the planted finishing order between Otto and Esme, directly stating a rank relation not among the planted sentences but touching the same planted attribute.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b58-direct",
+    "sentence": "Finn is not the lead volunteer.",
+    "reason": "This directly contradicts the planted fact that Finn is the lead volunteer, effectively leaking/negating the planted fact's content.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b58-cycle",
+    "sentence": "Esme is in the same class as Lena.",
+    "reason": "This directly contradicts the planted fact that Esme is NOT in the same class as Lena, revealing conflicting information about the class attribute.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b59-direct",
+    "sentence": "Ivo did not take the photographs.",
+    "reason": "This directly contradicts/preempts the planted fact 'Ivo took the photographs,' revealing the answer before the planted sentence by negation.",
+    "is_planted_sentence": true
+   },
+   {
+    "doc_id": "b59-cycle",
+    "sentence": "The school had two houses.",
+    "reason": "Directly contradicts and thus reveals information about the planted fact that the school had three houses.",
+    "is_planted_sentence": true
+   }
+  ]
+ },
+ "usage_total": {
+  "input_tokens": 11953,
+  "output_tokens": 2338,
+  "thinking_tokens": 0,
+  "calls": 185,
+  "api_calls": 9,
+  "cache_hits": 176,
+  "fixture_hits": 0,
+  "stale_fixtures": 0,
+  "estimated_cost_usd": 0.047285999999999995,
+  "spent_tokens": 14291,
+  "budget_tokens": 300000
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "request": "7b65aa3a41711f37e054ffaec0b41297f93c4079c6c95c8f5098f11a77ad1d0b",
+ "tag": "text-60be611b7e4b-var1-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Gus booked the hall.",
+     "Gus did not book the hall."
+    ],
+    "explanation": "These two statements directly negate each other, so both cannot be true."
+   },
+   {
+    "sentences": [
+     "Mina is on the same team as Leo.",
+     "Leo is not on the same team as Dev.",
+     "Mina is not on the same team as Dev."
+    ],
+    "explanation": "These statements are consistent alone but combined with team logic, if Mina and Leo are on the same team while Mina is not on Dev's team, it should follow Leo is not on Dev's team, which holds, but no contradiction arises unless team assignments are exclusive; however the setup implies inconsistent partial team overlaps given only three people are compared without a definite team structure."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1107,
+  "output_tokens": 240,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b01-direct",
+ "repetition": 1,
+ "call": 158
+}

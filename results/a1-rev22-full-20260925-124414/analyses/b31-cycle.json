@@ -1,0 +1,1557 @@
+{
+ "label": "b31-cycle",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-e4fed23b0d89",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The library book club met on a rainy Thursday evening.",
+   "span": "The library book club met on a rainy Thursday evening",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Everyone arrived within a few minutes of each other.",
+   "span": "everyone arrived within a few minutes of each other",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Milo is the club secretary.",
+   "span": "Assume that Milo is the club secretary",
+   "kind": "premise"
+  },
+  {
+   "id": 3,
+   "text": "Otto arrived first.",
+   "span": "Otto arrived first",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Otto was carrying a stack of paperbacks he wanted to trade with the group.",
+   "span": "carrying a stack of paperbacks he wanted to trade with the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Kira came in shortly after Otto.",
+   "span": "Kira came in shortly after",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Kira was laughing about the weather.",
+   "span": "laughing about the weather",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Kira was shaking out her umbrella by the door.",
+   "span": "shaking out her umbrella by the door",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Noor booked the hall.",
+   "span": "Noor booked the hall",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Jude showed up last.",
+   "span": "Jude showed up last",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Jude was slightly out of breath from rushing across campus after a late seminar.",
+   "span": "slightly out of breath from rushing across campus after a late seminar",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Milo had already picked seats near the window.",
+   "span": "Milo had already picked seats near the window",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Milo arranged chairs so everyone could see the display of new arrivals.",
+   "span": "arranging chairs so everyone could see the display of new arrivals",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Otto is in the same class as Kira.",
+   "span": "Otto is in the same class as Kira",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Otto and Kira often walk to the library together after lectures end.",
+   "span": "The two of them often walk to the library together after lectures end",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Noor had chosen a mystery novel for next month.",
+   "span": "Noor mentioned she had chosen a mystery novel for next month",
+   "kind": "quoted"
+  },
+  {
+   "id": 16,
+   "text": "Milo nodded approvingly at the suggestion.",
+   "span": "Milo nodded approvingly at the suggestion",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Kira is in the same class as Jude.",
+   "span": "Kira is in the same class as Jude",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Jude was still talking about the seminar.",
+   "span": "Jude, meanwhile, was still talking about the seminar",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Jude described an argument that had run long past its scheduled time.",
+   "span": "describing an argument that had run long past its scheduled time",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Otto is not in the same class as Jude.",
+   "span": "Otto is not in the same class as Jude",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Milo passed around a sign-up sheet for the next meeting.",
+   "span": "Milo passed around a sign-up sheet for the next meeting",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Kira signed the sign-up sheet first.",
+   "span": "Kira signed first",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Otto signed the sign-up sheet after Kira.",
+   "span": "followed by Otto",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Noor is the tallest of the group.",
+   "span": "Noor is the tallest of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "Jude insists he is only an inch shorter than Noor.",
+   "span": "Jude insists he is only an inch shorter",
+   "kind": "quoted"
+  },
+  {
+   "id": 26,
+   "text": "Milo is younger than Otto.",
+   "span": "Milo is younger than Otto",
+   "kind": "asserted"
+  },
+  {
+   "id": 27,
+   "text": "Milo is older than Kira.",
+   "span": "but older than Kira",
+   "kind": "asserted"
+  },
+  {
+   "id": 28,
+   "text": "The club agreed to meet again in three weeks, once the new books had arrived and everyone had time to read them.",
+   "span": "The club agreed to meet again in three weeks, once the new books had arrived and everyone had time to read them",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "A establishes rainy weather during the book club meeting, which could plausibly be the subject of Kira's laughter, but there's no explicit link connecting Kira, the book club, or her laughter to this specific rain.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "If the book club met during rainy weather, it is plausible that an attendee arrived with a wet umbrella and shook it out at the door, making B a natural consequence of A.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A describes a book club meeting on a rainy Thursday; claim B states Noor booked a hall. There is no shared detail linking the two events, so neither supports, contradicts, nor creates tension with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A describes a specific book club meeting, while claim B describes a general habit of two people walking to the library; they share a location but no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "A establishes a book club meeting occurred; B describes a plausible activity during such a meeting, but neither entails nor contradicts the other since no connection to Milo or a sign-up sheet is mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 28,
+   "rationale": "A establishes the setting of a book club meeting; B describes a decision made during or after that meeting to reconvene later. These are compatible and B plausibly follows from a meeting having occurred, but they don't directly evidence each other beyond context.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "A says all arrivals were clustered within a few minutes of each other, which is consistent with someone being the first to arrive within that tight window; it doesn't specify who was first, so it neither confirms nor denies that Otto was first.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "If everyone arrived within a few minutes of each other, it is plausible that Kira arrived shortly after Otto, since that fits within a short arrival window.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "A describes the timing of arrivals at some event, while B describes an earlier action of booking a hall. These concern unrelated aspects of the event's organization and timeline, with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "A states everyone arrived close together in time, which is consistent with there still being an order of arrival, so someone could indeed be last. The claims don't conflict, though A somewhat trivializes the significance of being 'last' since the gap was small.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 27,
+   "rationale": "Arrival timing is unrelated to relative ages of Milo and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Milo's role as club secretary has no bearing on whether Kira was laughing about the weather; these describe unrelated people and situations.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Being club secretary has no clear bearing on whether Milo picked seats near a window; these are unrelated pieces of information about different aspects of Milo's life.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Being club secretary is an administrative role, which plausibly involves organizational tasks like arranging chairs for an event, but the claims describe different, unrelated activities without direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Milo's role as club secretary has no bearing on whether Otto and Kira share a class; the claims involve different people and unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Being club secretary has no bearing on whether Milo nodded approvingly at a suggestion; the claims concern unrelated aspects of Milo.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "As club secretary, Milo would typically handle administrative tasks like sign-up sheets, so this action is consistent with and mildly supported by his role.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "If Otto arrived first, it is consistent and plausible that Kira arrived shortly after him; A supports the ordering implied by B.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "A says Otto was first to arrive, which is consistent with Jude being last; both can be true simultaneously if there are other people arriving in between or Otto and Jude are different people with distinct positions.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Otto arriving first says nothing about whether Jude rushed or was out of breath; the two claims concern different people and different facts with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Otto arriving first at some event or place is largely independent of a general habit of Otto and Kira walking together to the library; neither claim informs the other's likelihood in a meaningful way.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Otto arriving first says nothing about whether or when Milo passed around a sign-up sheet; the two events are independent.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "A shows Otto carrying paperbacks for a trade, possibly at or near a library setting, which is broadly consistent with Otto being a library-goer, but it doesn't specifically confirm the habitual walk with Kira after lectures.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Claim A only concerns the timing of Kira's arrival relative to Otto, and says nothing about her mood or behavior afterward, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A only establishes the timing of Kira's arrival relative to Otto, giving no information about weather or umbrella use, so it neither supports nor conflicts with B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "A only orders Kira relative to Otto and doesn't mention Jude at all, so it doesn't establish or preclude Jude arriving last.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "A describes a specific instance of Kira arriving just after Otto, which is consistent with and mildly suggestive of a habitual pattern of them traveling together, as claim B describes. Neither statement excludes the other; they can both be true.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A concerns Kira's arrival relative to Otto, while claim B concerns Milo's reaction to a suggestion; they involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 27,
+   "rationale": "Claim A concerns the order in which Kira and Otto arrived, which has no bearing on relative ages of Milo and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 28,
+   "rationale": "Claim A describes an arrival order at some event, while claim B describes a scheduling agreement about a future meeting; they share no clear connection to the same subject matter or time frame.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Laughing about bad weather and shaking out a wet umbrella by the door fit naturally together, e.g. she got caught in rain and finds it amusing; A makes B more plausible.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Both claims could describe the same scene, but nothing in A about Kira laughing regarding weather implies or bears on Milo's earlier seat choice near the window; they concern different subjects and actions with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "A's claim about Kira's behavior regarding weather has no logical bearing on Otto's classroom assignment relative to Kira.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "A describes Kira arriving and dealing with a wet umbrella, while B states Jude was the last to arrive. These are about different people's arrival circumstances and neither logically bears on the other, though both could describe the same gathering.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Kira shaking out a wet umbrella suggests it was raining, which could plausibly relate to someone rushing across campus, but the two claims describe different people's independent actions with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Kira shaking out an umbrella suggests rain outside, while Milo arranging chairs for a display is a separate, unrelated activity with no logical connection to the weather or Kira's action.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "The two claims describe unrelated actions by different people in what appear to be separate contexts, with no causal or logical connection between shaking out an umbrella and passing around a sign-up sheet.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 26,
+   "rationale": "Claim A describes an unrelated physical action about Kira and an umbrella, while claim B is a comparative age statement about two different people, Milo and Otto. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Booking a hall and signing a sign-up sheet after someone else are unrelated actions with no logical connection given the information provided.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 24,
+   "rationale": "Booking a hall has no logical or causal connection to Noor's height relative to a group; the claims concern entirely unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 26,
+   "rationale": "The two claims describe entirely unrelated facts: one is about booking a hall, the other about relative ages of different people. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Arriving last is consistent with having rushed after a late seminar, and the rushing explanation naturally accounts for being out of breath; the two fit together plausibly rather than conflicting.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Showing up last says nothing about whether Jude continued discussing the seminar afterward; these describe different aspects of Jude's behavior with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 25,
+   "rationale": "Arriving last has no bearing on relative height, so the two claims are independent.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "A establishes Jude just came from a late seminar, which makes it plausible and unsurprising that Jude would still be talking about it afterward.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A describes Jude rushing after a late seminar, and B describes Jude describing an argument that ran long past schedule; these could plausibly refer to the same delayed event (a seminar could involve an argument running long), so they are consistent and mildly supportive rather than contradictory, but the connection is speculative.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 10,
+   "b": 25,
+   "rationale": "A describes Jude's physical state after rushing to campus, while B is about a claim regarding relative height compared to Noor. These are unrelated aspects of Jude's situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 28,
+   "rationale": "Claim A describes Jude's physical state from rushing, while claim B describes a club's scheduling decision about future meetings; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "A says Milo picked seats near a window, while B says he arranged chairs facing a display of new arrivals; these could describe the same or overlapping actions, but there's some tension since seats near a window may not be positioned toward the display.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "The two claims describe unrelated actions by different people involving different activities, with no logical or causal connection between picking seats and choosing a book.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 28,
+   "rationale": "Claim A describes Milo choosing seats near a window, while claim B concerns a club's decision about scheduling a future meeting. These involve different subjects and contexts with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Claim A concerns Milo arranging chairs for a display, while claim B concerns Otto and Jude's class membership; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Being classmates makes it plausible that Otto and Kira would spend time together, such as walking to the library after lectures, so A supports B.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A only establishes Otto and Kira share a class; it says nothing about Jude, so it neither confirms nor denies whether Kira and Jude are classmates.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Knowing Otto shares a class with Kira says nothing about whether he shares a class with Jude, unless we know Kira and Jude's relationship, which is not given.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 13,
+   "b": 25,
+   "rationale": "Claim A concerns classroom placement of Otto and Kira, while claim B concerns Jude's assertion about a height difference with Noor. The two claims share no common subjects or topics and neither affects the truth or likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 28,
+   "rationale": "Claim A describes a general habit of two individuals walking to the library, while claim B describes a club's decision about scheduling its next meeting. There is no clear connection between these two claims as stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "A establishes Noor made a suggestion (choosing a mystery novel), which sets up context for B where Milo reacts approvingly to that suggestion; the claims fit together naturally.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "The claim about Noor choosing a mystery novel concerns a reading choice and has no bearing on physical height comparisons among the group; the two topics are independent.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 28,
+   "rationale": "Both describe planning activities of what seems to be a book club, but claim B specifies a three-week timeframe while A says 'next month', which is mildly inconsistent but not directly about the same event; they can coexist under loose reading.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Milo's nod of approval at a suggestion has no clear connection to whether Kira was first to sign a sign-up sheet; these appear to be unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "A states Kira shares a class with Jude, but says nothing about Otto's class membership relative to Jude, so it neither confirms nor denies whether Otto shares a class with Jude.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "If Jude was still talking about the seminar, it is plausible that the content included an argument that ran past schedule; A doesn't confirm B's specifics but is consistent with and mildly supportive of it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 18,
+   "b": 25,
+   "rationale": "Claim A describes Jude's ongoing conversation topic (a seminar), while claim B describes a separate assertion he makes about his height relative to Noor; neither has bearing on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "A establishes that a sign-up sheet was circulated, which is a precondition for anyone signing it, including Kira signing first. It makes B plausible but does not guarantee it, since order of signing isn't specified by A.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "A establishes that a sign-up sheet was being circulated, which is a precondition for people signing it as described in B, making B more plausible but not certain.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 21,
+   "b": 28,
+   "rationale": "A sign-up sheet for the next meeting suggests plans for a future meeting are being organized, which fits with the club agreeing to meet again in three weeks; the two are consistent and mutually reinforcing.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "If Kira signed first, that establishes she preceded others on the sheet, which is consistent with and supports Otto signing after her.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 22,
+   "b": 27,
+   "rationale": "Signing a sheet first relates to order of registration, which has no logical bearing on relative ages of the two people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 23,
+   "b": 25,
+   "rationale": "Claim A concerns the order in which Otto and Kira signed a sheet, while claim B concerns Jude's height relative to Noor. The two involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 24,
+   "b": 25,
+   "rationale": "If Noor is the tallest, Jude being only an inch shorter is consistent with him being second tallest, so B fits well with A without contradiction.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 26,
+   "b": 27,
+   "rationale": "Milo's age relative to Otto tells us nothing about how Milo compares to Kira, since Kira's age is unconstrained by claim A.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 27,
+   "b": 28,
+   "rationale": "Claim A concerns relative ages of two individuals, while claim B concerns a club's scheduling decision about meeting again after receiving new books. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo"
+    ]
+   },
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto",
+     "he"
+    ]
+   },
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira",
+     "her"
+    ]
+   },
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "jude",
+    "mentions": [
+     "Jude",
+     "he"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "signup_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 13,
+    "attribute": "class",
+    "kind": "same",
+    "a": "otto",
+    "b": "kira",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "class",
+    "kind": "same",
+    "a": "kira",
+    "b": "jude",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 20,
+    "attribute": "class",
+    "kind": "different",
+    "a": "otto",
+    "b": "jude",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_order",
+    "subject": "kira",
+    "comparative": "shortly after",
+    "object": "otto",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 23,
+    "attribute": "signup_order",
+    "subject": "otto",
+    "comparative": "after",
+    "object": "kira",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_order",
+    "entity": "otto",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_order",
+    "entity": "jude",
+    "comparative": "last",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "signup_order",
+    "entity": "kira",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 24,
+    "attribute": "height",
+    "entity": "noor",
+    "comparative": "tallest",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "shortly after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "last",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "signup_order",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "signup_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "height",
+    "comparative": "tallest",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "older",
+    "greater_side": "subject"
+   }
+  ],
+  "unsupported_order_claims": [
+   25
+  ]
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 36,
+  "blind": [
+   [
+    0,
+    14
+   ],
+   [
+    0,
+    21
+   ],
+   [
+    0,
+    28
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    27
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    2,
+    13
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    21
+   ],
+   [
+    4,
+    14
+   ],
+   [
+    5,
+    16
+   ],
+   [
+    5,
+    27
+   ],
+   [
+    5,
+    28
+   ],
+   [
+    6,
+    11
+   ],
+   [
+    6,
+    13
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    7,
+    12
+   ],
+   [
+    7,
+    21
+   ],
+   [
+    7,
+    26
+   ],
+   [
+    8,
+    23
+   ],
+   [
+    8,
+    24
+   ],
+   [
+    8,
+    26
+   ],
+   [
+    9,
+    25
+   ],
+   [
+    10,
+    25
+   ],
+   [
+    10,
+    28
+   ],
+   [
+    11,
+    15
+   ],
+   [
+    11,
+    28
+   ],
+   [
+    12,
+    20
+   ],
+   [
+    13,
+    25
+   ],
+   [
+    14,
+    28
+   ],
+   [
+    15,
+    24
+   ],
+   [
+    16,
+    22
+   ],
+   [
+    18,
+    25
+   ],
+   [
+    22,
+    27
+   ],
+   [
+    23,
+    25
+   ],
+   [
+    27,
+    28
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 29,
+  "pairs_requested": 73,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 37,
+  "blind_pairs_related": 0,
+  "entity_relations": 10,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    11,
+    12
+   ],
+   [
+    15,
+    28
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence",
+    "class": null,
+    "signup_order": "sequence",
+    "height": "magnitude",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 3,
+     "attribute": "arrival_order",
+     "entity": "otto",
+     "extreme": "min",
+     "edges": 2
+    },
+    {
+     "claim_id": 9,
+     "attribute": "arrival_order",
+     "entity": "jude",
+     "extreme": "max",
+     "edges": 2
+    },
+    {
+     "claim_id": 22,
+     "attribute": "signup_order",
+     "entity": "kira",
+     "extreme": "min",
+     "edges": 1
+    },
+    {
+     "claim_id": 24,
+     "attribute": "height",
+     "entity": "noor",
+     "extreme": "max",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 5,
+   "unsupported_order_claims": [
+    25
+   ]
+  }
+ },
+ "report": {
+  "n_claims": 29,
+  "n_edges": 18,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   2
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "class",
+    "entities": [
+     "otto",
+     "kira",
+     "jude"
+    ],
+    "relations": [
+     0,
+     1,
+     2
+    ],
+    "claim_ids": [
+     13,
+     17,
+     20
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   2.7117093616972283e-32,
+   3.2047474274603606e-32,
+   0.0,
+   0.0,
+   2.7117093616972283e-32,
+   0.0,
+   0.0,
+   0.0,
+   1.0600318413907348e-31,
+   3.4512664603419264e-32,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   7.642090019328552e-32,
+   0.0,
+   0.0,
+   0.0,
+   6.779273404243071e-33,
+   2.4035605705952703e-32,
+   0.0,
+   1.1339875512552044e-31,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   3.2047474274603606e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 5,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 9,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 2,
+    "b": 21,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 3,
+    "b": 5,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 14,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 10,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 19,
+    "residual": 4.930380657631324e-33
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 19,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 28,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 12377,
+   "api_calls": 0,
+   "cache_hits": 12377,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    6,
+    7
+   ],
+   [
+    1,
+    3,
+    5,
+    9,
+    10,
+    13,
+    14,
+    18,
+    19
+   ],
+   [
+    2,
+    21,
+    22,
+    23,
+    28
+   ],
+   [
+    4
+   ],
+   [
+    8
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    17
+   ],
+   [
+    20
+   ],
+   [
+    24,
+    25
+   ],
+   [
+    26
+   ],
+   [
+    27
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "class",
+    "entities": [
+     "otto",
+     "kira",
+     "jude"
+    ],
+    "relations": [
+     0,
+     1,
+     2
+    ],
+    "claim_ids": [
+     13,
+     17,
+     20
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 11,
+    "b": 12,
+    "rationale": "A says Milo picked seats near a window, while B says he arranged chairs facing a display of new arrivals; these could describe the same or overlapping actions, but there's some tension since seats near a window may not be positioned toward the display.",
+    "confidence": 0.55
+   },
+   {
+    "a": 15,
+    "b": 28,
+    "rationale": "Both describe planning activities of what seems to be a book club, but claim B specifies a three-week timeframe while A says 'next month', which is mildly inconsistent but not directly about the same event; they can coexist under loose reading.",
+    "confidence": 0.45
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 13,
+   "attribute": "class",
+   "kind": "same",
+   "a": "otto",
+   "b": "kira",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 17,
+   "attribute": "class",
+   "kind": "same",
+   "a": "kira",
+   "b": "jude",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 20,
+   "attribute": "class",
+   "kind": "different",
+   "a": "otto",
+   "b": "jude",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 5,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "kira",
+   "b": "otto",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 23,
+   "attribute": "signup_order",
+   "kind": "greater",
+   "a": "otto",
+   "b": "kira",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "jude",
+   "b": "otto",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "kira",
+   "b": "otto",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 9,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "jude",
+   "b": "kira",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 9,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "jude",
+   "b": "otto",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 22,
+   "attribute": "signup_order",
+   "kind": "greater",
+   "a": "otto",
+   "b": "kira",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  }
+ ]
+}

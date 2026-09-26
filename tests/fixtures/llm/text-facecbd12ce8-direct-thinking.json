@@ -1,0 +1,25 @@
+{
+ "request": "c263357ba1db6ba3fbb8dc71d9cb07e3a3992e50c321377bef35213b68e03445",
+ "tag": "text-facecbd12ce8-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Milo arrived before Mina.",
+     "Mina arrived before Gia.",
+     "Gia arrived before Milo."
+    ],
+    "explanation": "These three statements form a cyclic ordering (Milo before Mina before Gia before Milo) which is logically impossible for arrival times."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1034,
+  "output_tokens": 250,
+  "thinking_tokens": 146
+ },
+ "stop_reason": "end_turn"
+}

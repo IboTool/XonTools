@@ -1,0 +1,25 @@
+{
+ "request": "6b5af404002d184bc325b4ba04b71fde290ce0c9b12e440b19778028112221e6",
+ "tag": "text-aeee9446b18a-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Mina is on the same team as Leo.",
+     "Leo is on the same team as Dev.",
+     "Mina is not on the same team as Dev."
+    ],
+    "explanation": "If Mina is on the same team as Leo, and Leo is on the same team as Dev, then Mina must be on the same team as Dev, contradicting the claim that she is not."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1096,
+  "output_tokens": 123,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

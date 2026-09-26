@@ -1,0 +1,28 @@
+{
+ "request": "5cc001255f3a72f72cc23d51eaee933ae0c4ddc1cedafc689c5b0044904a60ca",
+ "tag": "text-8ca8174907ae-var1-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Tess arrived before Ivo.",
+     "Ivo arrived before Jude.",
+     "Jude arrived before Tess."
+    ],
+    "explanation": "These three arrival orders form a cycle (Tess before Ivo, Ivo before Jude, Jude before Tess), which is impossible for a consistent sequence of arrivals."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1044,
+  "output_tokens": 124,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b03-cycle",
+ "repetition": 1,
+ "call": 309
+}

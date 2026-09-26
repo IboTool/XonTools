@@ -1,0 +1,80 @@
+{
+ "request": "46e8fa42875c348b305a4e64b30174705bb8807e9ab6fb9d26e5faf18e3b8794",
+ "tag": "text-c9f4de1a6ef5-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 9,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "kira",
+    "b": "quinn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dara",
+    "b": "kira",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "quinn",
+    "b": "dara",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2195,
+  "output_tokens": 275,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

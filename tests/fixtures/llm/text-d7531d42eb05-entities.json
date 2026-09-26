@@ -1,0 +1,126 @@
+{
+ "request": "737050a6388a4f3880463748e3a4b1b7afb88101a1858d4a217c6e9f014e3993",
+ "tag": "text-d7531d42eb05-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay",
+     "she"
+    ]
+   },
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla",
+     "her"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn",
+     "his"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "ross",
+    "mentions": [
+     "Ross",
+     "The baker"
+    ]
+   },
+   {
+    "id": "bakery",
+    "mentions": [
+     "The village bakery",
+     "The bakery",
+     "the bakery",
+     "The little bakery"
+    ]
+   },
+   {
+    "id": "cider_crate",
+    "mentions": [
+     "a crate of bottled cider",
+     "the crate of bottled cider"
+    ]
+   },
+   {
+    "id": "bunting",
+    "mentions": [
+     "bunting",
+     "The bunting"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "isla",
+    "b": "fay",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "fay",
+    "b": "isla",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "yara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "yara",
+    "b": "fay",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2253,
+  "output_tokens": 475,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

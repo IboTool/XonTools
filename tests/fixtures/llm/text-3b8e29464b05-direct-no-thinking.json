@@ -1,0 +1,33 @@
+{
+ "request": "18ba9ee6255e018482c189b4b2bf6354feb9a808428aaed012dbd56ebc4d42f8",
+ "tag": "text-3b8e29464b05-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Jun arrived last, having taken a wrong turn near the visitor center, but still made it before the group set off.",
+     "Jun, being the oldest of the group, set a steady pace that everyone else tried to match."
+    ],
+    "explanation": "If Jun arrived last just before the group set off, he could not also have been the one setting the pace that the group followed, especially since Esme arrived first and led early positioning."
+   },
+   {
+    "sentences": [
+     "Esme and Dara were on different teams.",
+     "Dara and Eli were on different teams.",
+     "Esme and Eli were on different teams.",
+     "There were two teams."
+    ],
+    "explanation": "With only two teams, it's impossible for Esme, Dara, and Eli to all be pairwise on different teams, since at least two of them must share a team by the pigeonhole principle."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1078,
+  "output_tokens": 268,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

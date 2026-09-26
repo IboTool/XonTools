@@ -1,0 +1,45 @@
+{
+ "request": "20a3662cd8ff9a9a9afae767d24a5f3ad42e41b9559754642fe7a88690b1d00a",
+ "tag": "text-c20252601b70-seed1-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 19,
+    "b": 22,
+    "rationale": "If Dev and Cleo were on different teams, there must be at least two teams, which supports the claim that there were two teams.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "Checking the results sheet twice is a related but distinct action from comparing heat times and nodding, so neither confirms nor precludes the other.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   },
+   {
+    "a": 23,
+    "b": 25,
+    "rationale": "The wind picking up in the afternoon contradicts the description of a calm, cloudless sky with no mention of wind while families watch the last boats.",
+    "relation": "contradicts",
+    "confidence": 0.5
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "The final races drawing the largest crowd supports the depiction of families gathering near the finish line to watch the last boats.",
+    "relation": "supports",
+    "confidence": 0.75
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 985,
+  "output_tokens": 307,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

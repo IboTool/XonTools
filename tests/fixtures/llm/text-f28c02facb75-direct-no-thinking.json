@@ -1,0 +1,25 @@
+{
+ "request": "80937dfe726d1ec79362afe0579a01cf1e218900fad5f92a622b3fcf614cdd19",
+ "tag": "text-f28c02facb75-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Noor is older than Fay.",
+     "Fay is older than Ben.",
+     "Ben is older than Noor."
+    ],
+    "explanation": "This creates a cycle (Noor > Fay > Ben > Noor) which is logically impossible for an age ordering."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1093,
+  "output_tokens": 99,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

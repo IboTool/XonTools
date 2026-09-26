@@ -1,0 +1,135 @@
+{
+ "request": "cad03107c9bd84c4fb40ce8889fe503714c02b6d353370fc094e9217ea0bef34",
+ "tag": "text-d74ec1d98e51-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "her"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   },
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia",
+     "her"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "director",
+    "mentions": [
+     "the director"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "team_captain",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses."
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "team_captain",
+    "kind": "different",
+    "a": "rosa",
+    "b": "team_captain",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 3,
+    "attribute": "team_captain",
+    "kind": "same",
+    "a": "rosa",
+    "b": "team_captain",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "leo",
+    "b": "nell",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 9,
+    "attribute": "house",
+    "kind": "different",
+    "a": "nell",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "house",
+    "kind": "different",
+    "a": "leo",
+    "b": "pia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "house",
+    "kind": "different",
+    "a": "nell",
+    "b": "pia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "pia",
+    "b": "altos",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2151,
+  "output_tokens": 560,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

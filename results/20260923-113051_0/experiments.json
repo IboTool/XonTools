@@ -1,0 +1,1882 @@
+[
+  {
+    "id": "E1",
+    "name": "Spectral self-similarity",
+    "status": "passed",
+    "passed": true,
+    "role": "gate",
+    "group": "E1",
+    "summary": "r = 0.9956, 0.9984; min plateau frac 0.071",
+    "criterion": "Pearson r between consecutive levels >= 0.95; plateaus at lambda in {3, 5, 6} with multiplicity > 5% of N at every level (gasket levels 3, 4, 5).",
+    "thresholds": {
+      "pearson_r_min": 0.95,
+      "plateaus": [
+        3.0,
+        5.0,
+        6.0
+      ],
+      "plateau_frac_min": 0.05
+    },
+    "metrics": {
+      "pearson_r": {
+        "3-4": 0.9956192096098662,
+        "4-5": 0.9983877231900994
+      },
+      "plateau_fraction": {
+        "3": {
+          "3.0": 0.07142857142857142,
+          "5.0": 0.09523809523809523,
+          "6.0": 0.2857142857142857
+        },
+        "4": {
+          "3.0": 0.0975609756097561,
+          "5.0": 0.10569105691056911,
+          "6.0": 0.3170731707317073
+        },
+        "5": {
+          "3.0": 0.10655737704918032,
+          "5.0": 0.1092896174863388,
+          "6.0": 0.32786885245901637
+        }
+      },
+      "n": {
+        "3": 42,
+        "4": 123,
+        "5": 366
+      }
+    },
+    "notes": "Pearson r ok; plateaus present (smallest plateau fraction 0.071).",
+    "runtime_s": 0.192,
+    "figures": [
+      "staircase"
+    ]
+  },
+  {
+    "id": "E2",
+    "name": "Individuation from structure (3-way spectral clustering)",
+    "status": "passed",
+    "passed": true,
+    "role": "gate",
+    "group": "E2",
+    "summary": "3-way purity 0.997 (V1 single vector 0.888, eigenspace range 0.839-0.970); frac_loc 0.765; lattice 0.0475",
+    "criterion": "Gasket level 5: k-means (k = 3, 20 seeded restarts) on the rows of the low eigenspace (the constant and every eigenvector with lambda <= lambda_2 (1 + 1e-6)); purity of the best one-to-one matching of the clusters to the three sub-gaskets >= 0.9; frac_localized >= 0.25; lattice control frac_localized < 0.05.",
+    "thresholds": {
+      "purity3_min": 0.9,
+      "frac_localized_min": 0.25,
+      "lattice_frac_localized_max": 0.05
+    },
+    "metrics": {
+      "purity3": 0.9972677595628415,
+      "cluster_sizes": [
+        122,
+        121,
+        123
+      ],
+      "low_eigenspace_dim": 3,
+      "frac_localized": 0.7650273224043715,
+      "lattice_frac_localized": 0.0475,
+      "checks": {
+        "purity3": true,
+        "frac_localized": true,
+        "lattice_frac_localized": true
+      },
+      "n": 366,
+      "lattice_n": 400,
+      "v1": {
+        "partition_purity": 0.8879781420765027,
+        "fiedler_eigenspace_purity": {
+          "multiplicity": 2,
+          "min": 0.8387978142076502,
+          "mean": 0.9291894353369764,
+          "max": 0.9699453551912568
+        },
+        "spectral_gap_ratio": 1.0
+      }
+    },
+    "notes": "Low eigenspace = 3 vectors (constant + lambda_2 with multiplicity 2); k-means with k = 3, 20 k-means++ restarts seeded with 0; cluster sizes [122, 121, 123]. Purity = best one-to-one matching of clusters to sub-gasket labels over the labelled vertices. V1 numbers: single-vector Fiedler purity 0.888; purity over all directions of the lambda_2 eigenspace 0.839-0.970 (mean 0.929). Failed checks: none.",
+    "runtime_s": 0.305,
+    "figures": [
+      "clusters",
+      "ipr"
+    ]
+  },
+  {
+    "id": "E3",
+    "name": "Power-law memory (retention of energy injected at a layer's birth)",
+    "status": "failed",
+    "passed": false,
+    "role": "gate",
+    "group": "E3",
+    "summary": "gasket R2 pow 0.967 vs exp 1.000; tree pow 0.997 vs exp 0.941 (k = 1..4, alpha divided out)",
+    "criterion": "Wave (alpha = 0.005, beta = 0.05, no sink, no drive); gasket grown from level 3 to level 7 with G = 200 steps between growths; unit energy injected on each newly born layer; R(k) = energy remaining on that layer's vertices k growth steps later, averaged over layers, with the known factor exp(-2 alpha k G dt) divided out. Over k = 1..4: gasket R2_powerlaw > R2_exponential AND tree (branch 3) R2_exponential >= R2_powerlaw. Lattice control (no growth, elapsed time in units of G) is reported.",
+    "thresholds": {
+      "gasket": "R2_powerlaw > R2_exponential over k = 1..4",
+      "tree": "R2_exponential >= R2_powerlaw over k = 1..4",
+      "k_max": 4
+    },
+    "metrics": {
+      "gasket": {
+        "n": 3282,
+        "layers": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "k": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "R": [
+          0.07172918194715454,
+          0.005691067127506257,
+          0.00048320966377975817,
+          4.646181892108e-05,
+          4.179241273679357e-06
+        ],
+        "R_corrected": [
+          0.07927300586535196,
+          0.006951085086410817,
+          0.0006522648205589458,
+          6.931288896380361e-05,
+          6.890403983303051e-06
+        ],
+        "per_layer": {
+          "3": [
+            0.05723768605884084,
+            0.0052760178990008,
+            0.0004555580160160917,
+            4.456251288101742e-05,
+            4.179241273679357e-06
+          ],
+          "4": [
+            0.06972812936491797,
+            0.005787967206993989,
+            0.0005015474131004227,
+            4.8361124961142576e-05
+          ],
+          "5": [
+            0.07134208142913467,
+            0.005571925796082218,
+            0.00049252356222276
+          ],
+          "6": [
+            0.07907769703103693,
+            0.006128357607948021
+          ],
+          "7": [
+            0.08126031585184232
+          ]
+        },
+        "r2_powerlaw": 0.9672529074664947,
+        "r2_exponential": 0.9996597056060401,
+        "powerlaw_slope": -4.962467623647367,
+        "exponential_slope": -2.349226861076997,
+        "fits": {
+          "powerlaw": {
+            "r2": 0.9672529074664947,
+            "slope": -4.962467623647367,
+            "intercept": -2.161166367847444
+          },
+          "exponential": {
+            "r2": 0.9996597056060401,
+            "slope": -2.349226861076997,
+            "intercept": -0.23084652498249714
+          }
+        },
+        "fit_k": 4,
+        "dt": 0.05
+      },
+      "tree": {
+        "n": 3280,
+        "layers": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "k": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "R": [
+          0.3798529529256182,
+          0.01305769178003574,
+          0.002608959909145609,
+          0.0007148569293901573,
+          0.00015035421305436766
+        ],
+        "R_corrected": [
+          0.41980243671855116,
+          0.015948700755341032,
+          0.00352172751197289,
+          0.0010664412225442382,
+          0.00024789218920211485
+        ],
+        "per_layer": {
+          "3": [
+            0.37961245053163944,
+            0.012418333565303925,
+            0.0024679556588548058,
+            0.0007777428793496412,
+            0.00015035421305436766
+          ],
+          "4": [
+            0.3818929194756212,
+            0.01366025053452653,
+            0.0027973631486680572,
+            0.0006519709794306735
+          ],
+          "5": [
+            0.37855343813374154,
+            0.012869604286530733,
+            0.0025615609199139654
+          ],
+          "6": [
+            0.3782800862183207,
+            0.013282578733781778
+          ],
+          "7": [
+            0.380925870268768
+          ]
+        },
+        "r2_powerlaw": 0.9972668796085107,
+        "r2_exponential": 0.9411337981226577,
+        "powerlaw_slope": -4.296684944330673,
+        "exponential_slope": -1.943679692962963,
+        "fits": {
+          "powerlaw": {
+            "r2": 0.9972668796085107,
+            "slope": -4.296684944330673,
+            "intercept": -0.9608711764462687
+          },
+          "exponential": {
+            "r2": 0.9411337981226577,
+            "slope": -1.943679692962963,
+            "intercept": 0.48455404467902774
+          }
+        },
+        "fit_k": 4,
+        "dt": 0.05
+      },
+      "lattice": {
+        "n": 400,
+        "layers": [
+          0
+        ],
+        "k": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "R": [
+          0.10369340991698611,
+          0.04424550669347459,
+          0.02619311353965628,
+          0.017711419148445658,
+          0.012920818298289121
+        ],
+        "R_corrected": [
+          0.11459894103635002,
+          0.054041583911604116,
+          0.03535700500934329,
+          0.026422332515927748,
+          0.02130282796324071
+        ],
+        "per_layer": {
+          "0": [
+            0.10369340991698611,
+            0.04424550669347459,
+            0.02619311353965628,
+            0.017711419148445658,
+            0.012920818298289121
+          ]
+        },
+        "r2_powerlaw": 0.9997934718993914,
+        "r2_exponential": 0.9549913070373941,
+        "powerlaw_slope": -1.0603922339679408,
+        "exponential_slope": -0.4825944236010101,
+        "fits": {
+          "powerlaw": {
+            "r2": 0.9997934718993914,
+            "slope": -1.0603922339679408,
+            "intercept": -2.1725347533300567
+          },
+          "exponential": {
+            "r2": 0.9549913070373941,
+            "slope": -0.4825944236010101,
+            "intercept": -1.8085445945357888
+          }
+        },
+        "fit_k": 4,
+        "dt": 0.05
+      },
+      "coherent_injection": {
+        "gasket": {
+          "n": 3282,
+          "layers": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "k": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0
+          ],
+          "R": [
+            0.37626696366344153,
+            0.03331666043414193,
+            0.003168979950681027,
+            0.00030620146321902936,
+            3.0287167255493848e-05
+          ],
+          "R_corrected": [
+            0.41583930567346206,
+            0.04069306094694675,
+            0.004277675497458552,
+            0.00045679890528404305,
+            4.993509688338513e-05
+          ],
+          "per_layer": {
+            "3": [
+              0.3601071363740869,
+              0.034085819427550144,
+              0.0031554783135872336,
+              0.0003054726854498893,
+              3.0287167255493848e-05
+            ],
+            "4": [
+              0.3752231919296076,
+              0.03328476393394611,
+              0.003173988938555554,
+              0.00030693024098816943
+            ],
+            "5": [
+              0.38058803067313074,
+              0.03300310813612252,
+              0.0031774725999002924
+            ],
+            "6": [
+              0.3824161540297315,
+              0.032892950238948934
+            ],
+            "7": [
+              0.38300030531065077
+            ]
+          },
+          "r2_powerlaw": 0.9641463594412347,
+          "r2_exponential": 0.9999199229595476,
+          "powerlaw_slope": -4.785532441495195,
+          "exponential_slope": -2.2694080586203786,
+          "fits": {
+            "powerlaw": {
+              "r2": 0.9641463594412347,
+              "slope": -4.785532441495195,
+              "intercept": -0.504021796680258
+            },
+            "exponential": {
+              "r2": 0.9999199229595476,
+              "slope": -2.2694080586203786,
+              "intercept": 1.3673284233836487
+            }
+          },
+          "fit_k": 4,
+          "dt": 0.05
+        },
+        "tree": {
+          "n": 3280,
+          "layers": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "k": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0
+          ],
+          "R": [
+            0.37193178004870153,
+            0.03943743907625753,
+            0.003623866893250394,
+            0.0038064239219151026,
+            0.0011399989913130645
+          ],
+          "R_corrected": [
+            0.4110481868179333,
+            0.048168996862514614,
+            0.004891708643337132,
+            0.005678517216405497,
+            0.0018795405855545403
+          ],
+          "per_layer": {
+            "3": [
+              0.31663202678401026,
+              0.04306541817850938,
+              0.0009050945316997846,
+              0.006503201470736145,
+              0.0011399989913130645
+            ],
+            "4": [
+              0.46247975944513176,
+              0.029777659902209867,
+              0.008417209513910359,
+              0.0011096463730940606
+            ],
+            "5": [
+              0.3188180074606386,
+              0.053930131299488634,
+              0.0015492966341410382
+            ],
+            "6": [
+              0.41370828404879434,
+              0.030976546924822258
+            ],
+            "7": [
+              0.3480208225049325
+            ]
+          },
+          "r2_powerlaw": 0.9454522105206792,
+          "r2_exponential": 0.8742318887166435,
+          "powerlaw_slope": -3.3796135348813823,
+          "exponential_slope": -1.513323485307274,
+          "fits": {
+            "powerlaw": {
+              "r2": 0.9454522105206792,
+              "slope": -3.3796135348813823,
+              "intercept": -0.9181923817142228
+            },
+            "exponential": {
+              "r2": 0.8742318887166435,
+              "slope": -1.513323485307274,
+              "intercept": 0.17996789664757795
+            }
+          },
+          "fit_k": 4,
+          "dt": 0.05
+        },
+        "lattice": {
+          "n": 400,
+          "layers": [
+            0
+          ],
+          "k": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0
+          ],
+          "R": [
+            0.9048374180359586,
+            0.8187307530779799,
+            0.740818220681715,
+            0.6703200460356356,
+            0.6065306597126296
+          ],
+          "R_corrected": [
+            0.999999999999999,
+            0.9999999999999977,
+            0.9999999999999962,
+            0.9999999999999944,
+            0.9999999999999938
+          ],
+          "per_layer": {
+            "0": [
+              0.9048374180359586,
+              0.8187307530779799,
+              0.740818220681715,
+              0.6703200460356356,
+              0.6065306597126296
+            ]
+          },
+          "r2_powerlaw": 0.9326251464182485,
+          "r2_exponential": 0.9954790096878364,
+          "powerlaw_slope": -3.138451669657119e-15,
+          "exponential_slope": -1.509903313490218e-15,
+          "fits": {
+            "powerlaw": {
+              "r2": 0.9326251464182485,
+              "slope": -3.138451669657119e-15,
+              "intercept": -6.705935326527746e-16
+            },
+            "exponential": {
+              "r2": 0.9954790096878364,
+              "slope": -1.509903313490218e-15,
+              "intercept": 6.106226635438424e-16
+            }
+          },
+          "fit_k": 4,
+          "dt": 0.05
+        }
+      },
+      "checks": {
+        "gasket": false,
+        "tree": false
+      },
+      "alpha_correction": "R(k) multiplied by exp(2 alpha k G dt) before fitting"
+    },
+    "notes": "Protocol: levels 3->7, G = 200 steps (dt = 0.05) between growths and after the last one, alpha = 0.005, beta = 0.05, no drive, no sink. Each newly born layer (the level-3 vertices at t = 0, then every new layer) receives unit energy |a_i|^2 = 1/n_s with independent uniform random phases, averaged over 4 draws; R_s(k) is measured on that layer's vertices after k epochs of G steps. Correction: every R_s(k) is multiplied by exp(2 alpha tau), tau = k G dt, which removes the known uniform decay exp(-2 alpha G k) exactly (alpha I commutes with L); fits use the corrected R over k = 1..4. The coherent (equal-phase) injection is reported but not judged: its constant-mode part never decays under beta L and dilutes as the graph grows. Gasket R2 pow 0.967 vs exp 1.000 (FAIL); tree exp 0.941 vs pow 0.997 (FAIL).",
+    "runtime_s": 5.837,
+    "figures": [
+      "retention",
+      "retention_coherent"
+    ]
+  },
+  {
+    "id": "E4a",
+    "name": "Harmonicity under drive-and-sink: linear wave (negative control)",
+    "status": "negative_control",
+    "passed": false,
+    "role": "negative_control",
+    "group": "E4",
+    "summary": "consonance: sink -0.5248 vs control -0.5247, p=1; holds 0/3 factors",
+    "criterion": "V1 E4 criteria on the V1.1 wave: frontier harmonicity end-mean > start-mean (one-sided paired t-test p < 0.05) AND increase >= 2x that of the no-sink control; sink = Gamma_sink at the maximum allowed gamma_s. Expected to fail; never affects the exit code.",
+    "thresholds": {
+      "p_max": 0.05,
+      "control_ratio_min": 2.0
+    },
+    "metrics": {
+      "primary_factor": "consonance",
+      "per_factor": {
+        "consonance": {
+          "sink": {
+            "start": [
+              0.7211500828716502,
+              0.7395748771729324,
+              0.7281607948640819,
+              0.7163202929891397,
+              0.6710517989783866
+            ],
+            "end": [
+              0.18353005621686247,
+              0.19079556033958256,
+              0.188788773405395,
+              0.19243925669308298,
+              0.19660053272868033
+            ],
+            "increase_mean": -0.5248207334985175
+          },
+          "control": {
+            "start": [
+              0.7212809816589602,
+              0.739538093565814,
+              0.7283316130453511,
+              0.716543502182186,
+              0.6705592146607383
+            ],
+            "end": [
+              0.18358664033382446,
+              0.19102784574594056,
+              0.18881867395151278,
+              0.19251963646989492,
+              0.19666795965972528
+            ],
+            "increase_mean": -0.5247265297904304
+          },
+          "p_value": 0.999998802638153,
+          "rises": false,
+          "attributable_to_sink": true,
+          "passed": false
+        },
+        "spectral_concentration": {
+          "sink": {
+            "start": [
+              0.14431820773302056,
+              0.12333741412580002,
+              0.12284103088092994,
+              0.13847582473521158,
+              0.18714170579145087
+            ],
+            "end": [
+              0.13580112552909834,
+              0.1767133669217953,
+              0.14282574661857445,
+              0.1773662233926201,
+              0.169077841974968
+            ],
+            "increase_mean": 0.017134024234128638
+          },
+          "control": {
+            "start": [
+              0.1444358423068341,
+              0.1236537020557603,
+              0.12300989924036648,
+              0.13856165375946558,
+              0.1876451198802174
+            ],
+            "end": [
+              0.13588817356966115,
+              0.177400057278211,
+              0.1429017071878017,
+              0.17812704977164373,
+              0.1694452079303294
+            ],
+            "increase_mean": 0.01729119569900063
+          },
+          "p_value": 0.13790356863135403,
+          "rises": false,
+          "attributable_to_sink": false,
+          "passed": false
+        },
+        "phase_order": {
+          "sink": {
+            "start": [
+              0.24808204606087708,
+              0.2859916945771188,
+              0.20869119597347094,
+              0.32284531683798284,
+              0.4959154129254356
+            ],
+            "end": [
+              0.1927431371932657,
+              0.2936726548162643,
+              0.08995365986601059,
+              0.3115955605496826,
+              0.28715723641368446
+            ],
+            "increase_mean": -0.07728068350719552
+          },
+          "control": {
+            "start": [
+              0.24792084056741193,
+              0.28539423775560613,
+              0.20859992088634938,
+              0.3232374636667894,
+              0.4962904967884397
+            ],
+            "end": [
+              0.19299415279454468,
+              0.29531587626904116,
+              0.08994089065086755,
+              0.31260080154570136,
+              0.28821964533254174
+            ],
+            "increase_mean": -0.07647431861438
+          },
+          "p_value": 0.9392837231864679,
+          "rises": false,
+          "attributable_to_sink": true,
+          "passed": false
+        }
+      },
+      "seeds": [
+        1377260702,
+        136473562,
+        597601878,
+        453859165,
+        557801166
+      ],
+      "factors_holding": 0
+    },
+    "notes": "Primary coherence factor: consonance. Control: Gamma_sink off; sink condition uses gamma_s = 0.1 beta lambda_2 of each level. Start/end means are over the first and last growth epochs (G=500 steps each; levels 2 and 5). Frontier = depth >= d_max - 1. Result holds under 0/3 coherence factors (a conclusion that holds under only one is not a conclusion). consonance: does not rise (sink -0.5248, control -0.5247, p=1) | spectral_concentration: does not rise (sink +0.0171, control +0.0173, p=0.138) | phase_order: does not rise (sink -0.0773, control -0.0765, p=0.939)",
+    "runtime_s": 8.443,
+    "figures": [
+      "harmonicity_trace",
+      "increase_by_factor"
+    ]
+  },
+  {
+    "id": "E4b",
+    "name": "Harmonicity rises: Stuart-Landau (headline)",
+    "status": "failed",
+    "passed": false,
+    "role": "gate",
+    "group": "E4",
+    "summary": "harmonicity_osc gasket 0.443->0.354 (p=0.813); vs complete 0.095 (p=0.0148); mu0 p=1",
+    "criterion": "Gasket grown from level 2 to level 5 (G = 500 steps per level); stuart_landau with omega by depth and noise sigma = 0.05 at the frontier; 5 seeds; harmonicity_osc at the frontier with the 3-way spectral clusters recomputed after each growth. Pass: end - start > 0 with one-sided paired t-test p < 0.05; AND gasket end > complete-graph (same N) end with p < 0.05; AND the mu = 0 control shows no significant rise. A pass on E4b or E4c passes E4.",
+    "thresholds": {
+      "p_max": 0.05
+    },
+    "metrics": {
+      "per_variant": {
+        "harmonicity_osc": {
+          "gasket": {
+            "start": [
+              0.5011741393596216,
+              0.41652149572970004,
+              0.32227419675562247,
+              0.4827203569801668,
+              0.4944273849248042
+            ],
+            "end": [
+              0.15847754319066326,
+              0.18120608165925117,
+              0.4886037195113943,
+              0.4865172172528583,
+              0.452879596329871
+            ],
+            "start_mean": 0.44342351474998304,
+            "end_mean": 0.3535368315888076
+          },
+          "complete": {
+            "start": [
+              0.46502329949504756,
+              0.21689072415597355,
+              0.30407193959234746,
+              0.30252589371514754,
+              0.3900692197466369
+            ],
+            "end": [
+              0.10742817343415782,
+              0.08367654258604945,
+              0.036970900634403676,
+              0.1359071582715655,
+              0.11108406102444991
+            ],
+            "start_mean": 0.3357162153410306,
+            "end_mean": 0.09501336719012528
+          },
+          "mu0": {
+            "start": [
+              0.5535920811467655,
+              0.4915584970872529,
+              0.46309787071912933,
+              0.5644442322970147,
+              0.5320805808985044
+            ],
+            "end": [
+              0.11173158828671124,
+              0.11408220918086626,
+              0.12086437880766412,
+              0.11626203368939582,
+              0.1492077237364429
+            ],
+            "start_mean": 0.5209546524297334,
+            "end_mean": 0.12242958674021606
+          },
+          "p_rise": 0.8128968233792235,
+          "p_gasket_vs_complete": 0.014764395458538391,
+          "p_rise_mu0": 0.9999803442687853,
+          "rises": false,
+          "beats_complete": true,
+          "mu0_rises": false,
+          "criterion_met": false
+        },
+        "harmonicity_consonance": {
+          "gasket": {
+            "start": [
+              0.7040635444025113,
+              0.6490701706285474,
+              0.6258458305400291,
+              0.7423365215693334,
+              0.7302795856768499
+            ],
+            "end": [
+              0.2780268222130682,
+              0.27805669260931803,
+              0.20665203177093813,
+              0.20880237296456258,
+              0.26493075909361113
+            ],
+            "start_mean": 0.6903191305634542,
+            "end_mean": 0.2472937357302996
+          },
+          "complete": {
+            "start": [
+              0.7304587733619585,
+              0.6796989953263903,
+              0.7029814178878506,
+              0.7080480502286969,
+              0.717799409955962
+            ],
+            "end": [
+              0.25776058241390226,
+              0.25513074324411816,
+              0.24904402801827688,
+              0.25788591593940124,
+              0.27203547912606585
+            ],
+            "start_mean": 0.7077973293521717,
+            "end_mean": 0.25837134974835285
+          },
+          "mu0": {
+            "start": [
+              0.7142250898155414,
+              0.7166130934695651,
+              0.6902583832701896,
+              0.7204323570836717,
+              0.735561662650554
+            ],
+            "end": [
+              0.16819333753510038,
+              0.1715353466003847,
+              0.17093702233077412,
+              0.16253021170793563,
+              0.16419862216828732
+            ],
+            "start_mean": 0.7154181172579045,
+            "end_mean": 0.16747890806849644
+          },
+          "p_rise": 0.9999587800329544,
+          "p_gasket_vs_complete": 0.7476453920497057,
+          "p_rise_mu0": 0.9999998183627914,
+          "rises": false,
+          "beats_complete": false,
+          "mu0_rises": false,
+          "criterion_met": false
+        },
+        "harmonicity_spectral_concentration": {
+          "gasket": {
+            "start": [
+              0.14502416175949742,
+              0.1959937711911045,
+              0.20246924999586743,
+              0.11278345765981217,
+              0.15804069108974925
+            ],
+            "end": [
+              0.2439534854681208,
+              0.24485772930942193,
+              0.19387810030788333,
+              0.1955644921001358,
+              0.23776183214954744
+            ],
+            "start_mean": 0.16286226633920614,
+            "end_mean": 0.22320312786702184
+          },
+          "complete": {
+            "start": [
+              0.10694511762858785,
+              0.12022838954500568,
+              0.12535923710429964,
+              0.1250367779001205,
+              0.11633699274439101
+            ],
+            "end": [
+              0.12096208129247604,
+              0.12331189116688925,
+              0.11731944449668681,
+              0.13446072734350512,
+              0.1489811307561402
+            ],
+            "start_mean": 0.11878130298448093,
+            "end_mean": 0.12900705501113946
+          },
+          "mu0": {
+            "start": [
+              0.14433177581466747,
+              0.15145193053150546,
+              0.14504004959094266,
+              0.14076609689765768,
+              0.13432937815372298
+            ],
+            "end": [
+              0.10924819801291401,
+              0.11479116641361857,
+              0.10858365133939532,
+              0.10145336199353379,
+              0.10245285271473768
+            ],
+            "start_mean": 0.14318384619769922,
+            "end_mean": 0.10730584609483987
+          },
+          "p_rise": 0.016946515009065,
+          "p_gasket_vs_complete": 0.0007748479937555862,
+          "p_rise_mu0": 0.999996120479718,
+          "rises": true,
+          "beats_complete": true,
+          "mu0_rises": false,
+          "criterion_met": true
+        },
+        "harmonicity_phase_order": {
+          "gasket": {
+            "start": [
+              0.267380319389561,
+              0.32942977427396897,
+              0.30879026648402863,
+              0.2654324335137996,
+              0.2775151858671972
+            ],
+            "end": [
+              0.06259602424260222,
+              0.063808561912568,
+              0.23400292386118246,
+              0.23625152778546424,
+              0.05406229640590376
+            ],
+            "start_mean": 0.2897095959057111,
+            "end_mean": 0.13014426684154412
+          },
+          "complete": {
+            "start": [
+              0.2514180552276215,
+              0.1552715956099645,
+              0.15783323733627866,
+              0.1075627247773422,
+              0.11173774950926262
+            ],
+            "end": [
+              0.006830182801501001,
+              0.00216666755617325,
+              0.0027255542712705206,
+              0.003829793785351316,
+              0.0016471911305371433
+            ],
+            "start_mean": 0.1567646724920939,
+            "end_mean": 0.003439877908966646
+          },
+          "mu0": {
+            "start": [
+              0.3809169490313768,
+              0.4078852698194831,
+              0.34203724718470824,
+              0.4512982832027019,
+              0.30146331687470446
+            ],
+            "end": [
+              0.059660054058212716,
+              0.11532885355001606,
+              0.05785580098052989,
+              0.08165849437640485,
+              0.09766075934874612
+            ],
+            "start_mean": 0.3767202132225949,
+            "end_mean": 0.08243279246278193
+          },
+          "p_rise": 0.9875554789503629,
+          "p_gasket_vs_complete": 0.020985363317767625,
+          "p_rise_mu0": 0.9997956796265102,
+          "rises": false,
+          "beats_complete": true,
+          "mu0_rises": false,
+          "criterion_met": false
+        }
+      },
+      "diagnostics": {
+        "cluster_order": {
+          "gasket": {
+            "start_mean": 0.5053917629473119,
+            "end_mean": 0.6788589883149359
+          },
+          "complete": {
+            "start_mean": 0.41192004289296946,
+            "end_mean": 0.19002673438025056
+          },
+          "mu0": {
+            "start_mean": 0.5760073250290623,
+            "end_mean": 0.17935365068238562
+          }
+        },
+        "n_clusters_eff": {
+          "gasket": {
+            "start_mean": 2.4732,
+            "end_mean": 1.1904
+          },
+          "complete": {
+            "start_mean": 2.1491999999999996,
+            "end_mean": 1.0
+          },
+          "mu0": {
+            "start_mean": 2.5596,
+            "end_mean": 1.7711999999999999
+          }
+        }
+      },
+      "seeds": [
+        1505883189,
+        1468214160,
+        1974918333,
+        1066649491,
+        803656019
+      ],
+      "null_control": "mu0",
+      "variants_meeting_criterion": [
+        "harmonicity_spectral_concentration"
+      ]
+    },
+    "notes": "stuart_landau: mu = 1, omega_i = 1 + 1 depth/d_max, c = 1, alpha = 0, beta = 0.02, noise sigma = 0.05 at the newest layer; null control mu = 0. Start/end = means over the first and last growth epochs (G = 500 steps; levels 2 and 5); frontier = depth >= d_max - 1. Clusters = 3-way spectral clusters of the gasket, recomputed after each growth; n_clusters_eff merges cluster frequencies whose phases drift apart by less than 1 rad over the last 200 steps. Complete-graph control: same vertices, depths, frequencies, noise and clusters, coupled through K_N with uniform weight (gasket mean degree)/(N - 1); the V1 harmonicity variants use the gasket's modes in every condition. One-sided paired t-tests across 5 seeds; the pass is on harmonicity_osc, the other variants are reported. harmonicity_osc: gasket 0.4434 -> 0.3535 (p=0.813); complete end 0.0950 (p=0.0148); mu0 0.5210 -> 0.1224 (p=1) | harmonicity_consonance: gasket 0.6903 -> 0.2473 (p=1); complete end 0.2584 (p=0.748); mu0 0.7154 -> 0.1675 (p=1) | harmonicity_spectral_concentration: gasket 0.1629 -> 0.2232 (p=0.0169); complete end 0.1290 (p=0.000775); mu0 0.1432 -> 0.1073 (p=1) [criterion met] | harmonicity_phase_order: gasket 0.2897 -> 0.1301 (p=0.988); complete end 0.0034 (p=0.021); mu0 0.3767 -> 0.0824 (p=1)",
+    "runtime_s": 20.457,
+    "figures": [
+      "clusters",
+      "harmonicity_osc_trace",
+      "increase_by_variant"
+    ]
+  },
+  {
+    "id": "E4c",
+    "name": "Harmonicity rises: Kuramoto",
+    "status": "failed",
+    "passed": false,
+    "role": "gate",
+    "group": "E4",
+    "summary": "harmonicity_osc gasket 0.579->0.480 (p=0.989); vs complete 0.500 (p=0.979); K0 p=0.988",
+    "criterion": "Same protocol and criteria as E4b with the oscillator dynamics (K = 1, omega by depth); the null control is K = 0 (uncoupled phases) in place of mu = 0. A pass on E4b or E4c passes E4.",
+    "thresholds": {
+      "p_max": 0.05
+    },
+    "metrics": {
+      "per_variant": {
+        "harmonicity_osc": {
+          "gasket": {
+            "start": [
+              0.5310401031622841,
+              0.49704429762551194,
+              0.6294053907646969,
+              0.6550673549697793,
+              0.5834467787640891
+            ],
+            "end": [
+              0.45277644973912073,
+              0.4859769194076464,
+              0.48649977314328363,
+              0.4867785745735186,
+              0.4869387413970643
+            ],
+            "start_mean": 0.5792007850572722,
+            "end_mean": 0.47979409165212666
+          },
+          "complete": {
+            "start": [
+              0.5415388307372315,
+              0.4889030160753263,
+              0.5998395558571858,
+              0.631435612643395,
+              0.5563120657992692
+            ],
+            "end": [
+              0.4998136783384072,
+              0.49981331739477813,
+              0.49981368341854315,
+              0.49981419103485475,
+              0.49981363515108534
+            ],
+            "start_mean": 0.5636058162224816,
+            "end_mean": 0.49981370106753376
+          },
+          "K0": {
+            "start": [
+              0.38290669902553337,
+              0.18569715323080874,
+              0.47656368553488265,
+              0.41238286545861386,
+              0.2771256421622122
+            ],
+            "end": [
+              0.11327381334275075,
+              0.16438846724951742,
+              0.1638805776124792,
+              0.13311214935320503,
+              0.1646757345823994
+            ],
+            "start_mean": 0.34693520908241016,
+            "end_mean": 0.14786614842807036
+          },
+          "p_rise": 0.9890414171721218,
+          "p_gasket_vs_complete": 0.9792859404705738,
+          "p_rise_K0": 0.9879401785183046,
+          "rises": false,
+          "beats_complete": false,
+          "K0_rises": false,
+          "criterion_met": false
+        },
+        "harmonicity_consonance": {
+          "gasket": {
+            "start": [
+              0.615450478471,
+              0.4021212037959823,
+              0.429250149812953,
+              0.4147164995483615,
+              0.39473365034802677
+            ],
+            "end": [
+              0.2694076453759313,
+              0.21166871160221415,
+              0.21106643282796003,
+              0.21095772262277707,
+              0.21101376686019432
+            ],
+            "start_mean": 0.45125439639526466,
+            "end_mean": 0.22282285585781536
+          },
+          "complete": {
+            "start": [
+              0.4026958685915956,
+              0.40524802930447,
+              0.4020598679367793,
+              0.4088538772177756,
+              0.39061179459716494
+            ],
+            "end": [
+              0.19425594569757934,
+              0.19422332890115113,
+              0.19426328266479628,
+              0.19425841782735415,
+              0.19423516570591828
+            ],
+            "start_mean": 0.40189388752955707,
+            "end_mean": 0.19424722815935982
+          },
+          "K0": {
+            "start": [
+              0.7001222326505849,
+              0.6744575275831461,
+              0.7203726218334969,
+              0.7033065476146738,
+              0.7235259390856424
+            ],
+            "end": [
+              0.25811304388109846,
+              0.2543300431525096,
+              0.26639450696372013,
+              0.25185725004208115,
+              0.25134495283362557
+            ],
+            "start_mean": 0.7043569737535089,
+            "end_mean": 0.25640795937460703
+          },
+          "p_rise": 0.9992026224579593,
+          "p_gasket_vs_complete": 0.0350735146879192,
+          "p_rise_K0": 0.9999996119330911,
+          "rises": false,
+          "beats_complete": true,
+          "K0_rises": false,
+          "criterion_met": false
+        },
+        "harmonicity_spectral_concentration": {
+          "gasket": {
+            "start": [
+              0.2675458908654543,
+              0.2877639432640268,
+              0.2775597886178416,
+              0.28511275646434925,
+              0.2895429666989887
+            ],
+            "end": [
+              0.23326422731931284,
+              0.19084357051435047,
+              0.19072686608488926,
+              0.19030174732444538,
+              0.1901663507231603
+            ],
+            "start_mean": 0.28150506918213214,
+            "end_mean": 0.19906055239323167
+          },
+          "complete": {
+            "start": [
+              0.2827150268008349,
+              0.28501528994140823,
+              0.28288366436056983,
+              0.28339489945468926,
+              0.2898010640537815
+            ],
+            "end": [
+              0.17626891507173015,
+              0.17626960792030744,
+              0.1762678596362116,
+              0.1762667861080879,
+              0.1762677229092962
+            ],
+            "start_mean": 0.28476198892225674,
+            "end_mean": 0.17626817832912667
+          },
+          "K0": {
+            "start": [
+              0.11132438504436795,
+              0.1386805695591231,
+              0.11715681104124816,
+              0.11411594584925422,
+              0.09275971207184593
+            ],
+            "end": [
+              0.12926214436338518,
+              0.1269500255249417,
+              0.12743310197750593,
+              0.12077258233635171,
+              0.12547978283401884
+            ],
+            "start_mean": 0.11480748471316786,
+            "end_mean": 0.12597952740724067
+          },
+          "p_rise": 0.9987407881926444,
+          "p_gasket_vs_complete": 0.02804117270879957,
+          "p_rise_K0": 0.0994781013637165,
+          "rises": false,
+          "beats_complete": true,
+          "K0_rises": false,
+          "criterion_met": false
+        },
+        "harmonicity_phase_order": {
+          "gasket": {
+            "start": [
+              0.03000316906576814,
+              0.3926570555459756,
+              0.3807429854829393,
+              0.3900639062013197,
+              0.389854671484748
+            ],
+            "end": [
+              0.009333822339158747,
+              0.22772316621293157,
+              0.2276883534394719,
+              0.22704667843267298,
+              0.2268879384691301
+            ],
+            "start_mean": 0.31666435755615013,
+            "end_mean": 0.18373599177867309
+          },
+          "complete": {
+            "start": [
+              0.38056930171999337,
+              0.39611175331532206,
+              0.38081975472153357,
+              0.3876160007109088,
+              0.38682901231050404
+            ],
+            "end": [
+              0.20674899890671167,
+              0.20675011572773966,
+              0.20674714584742204,
+              0.20674543483482027,
+              0.20674683972585234
+            ],
+            "start_mean": 0.38638916455565236,
+            "end_mean": 0.20674770700850917
+          },
+          "K0": {
+            "start": [
+              0.20120734766268839,
+              0.2173345693170432,
+              0.16113146261293892,
+              0.2060079925883778,
+              0.25548316025962503
+            ],
+            "end": [
+              0.092985319322179,
+              0.18798997776535795,
+              0.1031625388866881,
+              0.05564100060593844,
+              0.23944286194599707
+            ],
+            "start_mean": 0.20823290648813467,
+            "end_mean": 0.1358443397052321
+          },
+          "p_rise": 0.9954261570423818,
+          "p_gasket_vs_complete": 0.6872126752902992,
+          "p_rise_K0": 0.9775831542265,
+          "rises": false,
+          "beats_complete": false,
+          "K0_rises": false,
+          "criterion_met": false
+        }
+      },
+      "diagnostics": {
+        "cluster_order": {
+          "gasket": {
+            "start_mean": 0.9603098996120059,
+            "end_mean": 0.9595881833042537
+          },
+          "complete": {
+            "start_mean": 0.9764400134738066,
+            "end_mean": 0.9996274021350675
+          },
+          "K0": {
+            "start_mean": 0.4345607960057719,
+            "end_mean": 0.2957322968561407
+          }
+        },
+        "n_clusters_eff": {
+          "gasket": {
+            "start_mean": 1.3716000000000002,
+            "end_mean": 1.0
+          },
+          "complete": {
+            "start_mean": 1.2904,
+            "end_mean": 1.0
+          },
+          "K0": {
+            "start_mean": 2.0412,
+            "end_mean": 1.0
+          }
+        }
+      },
+      "seeds": [
+        798574545,
+        1573640506,
+        1582435262,
+        334439043,
+        1717001181
+      ],
+      "null_control": "K0",
+      "variants_meeting_criterion": []
+    },
+    "notes": "oscillator (Kuramoto): K = 1, K_s = 0, omega_i = 1 + 1 depth/d_max, phase noise sigma = 0.05 at the newest layer; null control K = 0. Start/end = means over the first and last growth epochs (G = 500 steps; levels 2 and 5); frontier = depth >= d_max - 1. Clusters = 3-way spectral clusters of the gasket, recomputed after each growth; n_clusters_eff merges cluster frequencies whose phases drift apart by less than 1 rad over the last 200 steps. Complete-graph control: same vertices, depths, frequencies, noise and clusters, coupled through K_N with uniform weight (gasket mean degree)/(N - 1); the V1 harmonicity variants use the gasket's modes in every condition. One-sided paired t-tests across 5 seeds; the pass is on harmonicity_osc, the other variants are reported. harmonicity_osc: gasket 0.5792 -> 0.4798 (p=0.989); complete end 0.4998 (p=0.979); K0 0.3469 -> 0.1479 (p=0.988) | harmonicity_consonance: gasket 0.4513 -> 0.2228 (p=0.999); complete end 0.1942 (p=0.0351); K0 0.7044 -> 0.2564 (p=1) | harmonicity_spectral_concentration: gasket 0.2815 -> 0.1991 (p=0.999); complete end 0.1763 (p=0.028); K0 0.1148 -> 0.1260 (p=0.0995) | harmonicity_phase_order: gasket 0.3167 -> 0.1837 (p=0.995); complete end 0.2067 (p=0.687); K0 0.2082 -> 0.1358 (p=0.978)",
+    "runtime_s": 30.613,
+    "figures": [
+      "clusters",
+      "harmonicity_osc_trace",
+      "increase_by_variant"
+    ]
+  },
+  {
+    "id": "E5",
+    "name": "Sheaf inference",
+    "status": "passed",
+    "passed": true,
+    "role": "gate",
+    "group": "E5",
+    "summary": "MSE ratio 3.19e-07 (learned 6.71e-08 / identity 0.211)",
+    "criterion": "Recovery MSE on unclamped vertices < 25% of the identity-map baseline MSE.",
+    "thresholds": {
+      "mse_ratio_max": 0.25
+    },
+    "metrics": {
+      "mse_learned": 6.712701198970332e-08,
+      "mse_identity": 0.2105953558824025,
+      "mse_ground_truth": 1.8994169153381404e-32,
+      "mse_ratio": 3.187487763366794e-07,
+      "ground_truth_kernel_dim": 2,
+      "learned_kernel_dim": 2,
+      "final_training_energy": 0.00027294906104735763,
+      "n": 123,
+      "stalk_dim": 2
+    },
+    "notes": "Ground truth: random orthogonal maps with trivial holonomy (vertex/edge frames), kernel dim 2. Maps learned from identity on 50 consistent states; 37 of 123 vertices clamped.",
+    "runtime_s": 0.44,
+    "figures": [
+      "learning_curve"
+    ]
+  },
+  {
+    "id": "E6",
+    "name": "Constraint solving by dissonance minimization",
+    "status": "passed",
+    "passed": true,
+    "role": "gate",
+    "group": "E6",
+    "summary": "10/10 seeds >= 90% (cuts [53, 54, 53, 55, 52, 54, 52, 55, 56, 53] vs optima [54, 54, 54, 55, 52, 54, 53, 55, 56, 54])",
+    "criterion": "Cut value >= 90% of optimum in >= 8/10 seeds (OscillatorDynamics, implemented in V1.1).",
+    "thresholds": {
+      "ratio_min": 0.9,
+      "seeds_ok_min": 8
+    },
+    "metrics": {
+      "optima": [
+        54,
+        54,
+        54,
+        55,
+        52,
+        54,
+        53,
+        55,
+        56,
+        54
+      ],
+      "cuts": [
+        53,
+        54,
+        53,
+        55,
+        52,
+        54,
+        52,
+        55,
+        56,
+        53
+      ],
+      "ratios": [
+        0.9814814814814815,
+        1.0,
+        0.9814814814814815,
+        1.0,
+        1.0,
+        1.0,
+        0.9811320754716981,
+        1.0,
+        1.0,
+        0.9814814814814815
+      ],
+      "seeds_ok": 10
+    },
+    "notes": "Oscillator Ising machine on J = -A: K = 1, K_s ramped 0 -> 1 over 1500 of 2000 steps, phase noise 0.05 at every vertex, omega = 0 (frame of the sub-harmonic injection); spins = sign(Re a). 10/10 seeds reached 90% of the optimum.",
+    "runtime_s": 5.492,
+    "figures": [
+      "energy"
+    ]
+  },
+  {
+    "id": "E7",
+    "name": "Spectral dimension vs simplex dimension",
+    "status": "passed",
+    "passed": true,
+    "role": "gate",
+    "group": "E7",
+    "summary": "n=2: 1.360 (th 1.365); n=3: 1.552 (th 1.547); n=4: 1.645 (th 1.654)",
+    "criterion": "|d_s estimate - 2 ln(n+1)/ln(n+3)| <= 0.08 for n = 2, 3, 4.",
+    "thresholds": {
+      "tol": 0.08
+    },
+    "metrics": {
+      "n=2": {
+        "level": 8,
+        "N": 9843,
+        "d_s": 1.3602221906869236,
+        "theory": 1.3652123889719707,
+        "abs_error": 0.004990198285047098,
+        "fit_r2": 0.9999492265902044,
+        "ok": true
+      },
+      "n=3": {
+        "level": 6,
+        "N": 8194,
+        "d_s": 1.5523196464955757,
+        "theory": 1.5474112289381663,
+        "abs_error": 0.00490841755740945,
+        "fit_r2": 0.9995198364038351,
+        "ok": true
+      },
+      "n=4": {
+        "level": 5,
+        "N": 7815,
+        "d_s": 1.6446264153893877,
+        "theory": 1.6541749506938324,
+        "abs_error": 0.00954853530444466,
+        "fit_r2": 0.9980192066286097,
+        "ok": true
+      }
+    },
+    "notes": "Window t in [5, 60]; levels chosen so N is closest to 8000; RP exact from the spectrum when N <= 3000, else Hutchinson (64 probes).",
+    "runtime_s": 0.873,
+    "figures": [
+      "return_probability"
+    ]
+  },
+  {
+    "id": "E8",
+    "name": "The peace trap (individuation before global rest)",
+    "status": "passed",
+    "passed": true,
+    "role": "gate",
+    "group": "E8",
+    "summary": "phase 1 end: low subspace 0.9785, fundamental 0.6452 (t = 1742); driven max 0.0514",
+    "criterion": "Wave (V1.1), no sink, gasket level 5. Phase 1 without drive for the predicted global-collapse time 1/(2 beta lambda_2); phase 2 with noise drive at the frontier. Pass: low_subspace_fraction (modes k <= k_gap, the first spectral gap; 3 on the gasket) >= 0.9 at the end of phase 1 AND <= 0.5 throughout the second half of phase 2.",
+    "thresholds": {
+      "low_subspace_min": 0.9,
+      "driven_low_subspace_max": 0.5
+    },
+    "metrics": {
+      "low_subspace_end_phase1": 0.978532049688216,
+      "fundamental_end_phase1": 0.6452135059091225,
+      "low_subspace_max_driven_second_half": 0.051377041773050275,
+      "checks": {
+        "no_drive": true,
+        "driven": true
+      },
+      "k_gap": 3,
+      "lambda": [
+        -3.3175268283032306e-16,
+        0.005741958474561252,
+        0.005741958474561252,
+        0.028472056305050734,
+        0.028674133562577694
+      ],
+      "predicted_global_collapse_time": 1741.566060483241,
+      "predicted_individuation_time": 439.945312799591,
+      "phase1_steps": 34832,
+      "phase2_steps": 2000,
+      "dt": 0.05,
+      "at_v1_phase_length": {
+        "step": 2000,
+        "low_subspace_fraction": 0.18004139492137444,
+        "fundamental_fraction": 0.07740605785425386
+      },
+      "sink_gamma": 0.0
+    },
+    "notes": "Gamma_sink off; exact modal integrator. Gasket level 5, alpha = 0.02, beta = 0.05, dt = 0.05. k_gap = 3 (lambda_4/lambda_3 = 4.96). Phase 1 = predicted global-collapse time 1/(2 beta lambda_2) = 1741.6 (34832 steps) without drive from a random state; modes above the gap fall behind the low subspace on the time scale 1/(2 beta (lambda_4 - lambda_2)) = 439.9. End of phase 1: low_subspace_fraction 0.9785, fundamental_fraction 0.6452. At step 2000 (the V1 phase length) the fractions were 0.1800 and 0.0774. Phase 2: 2000 steps of noise drive at the frontier, judged on its second half (max 0.0514).",
+    "runtime_s": 17.914,
+    "figures": [
+      "energy_fractions"
+    ]
+  },
+  {
+    "id": "E8b",
+    "name": "The peace trap with the weak depth sink",
+    "status": "passed",
+    "passed": true,
+    "role": "gate",
+    "group": "E8b",
+    "summary": "phase 1 end: low subspace 0.9828, fundamental 0.7615 (t = 1742); driven max 0.0612",
+    "criterion": "E8 with Gamma_sink on at the maximum allowed gamma_s = 0.1 beta lambda_2; identical criteria.",
+    "thresholds": {
+      "low_subspace_min": 0.9,
+      "driven_low_subspace_max": 0.5
+    },
+    "metrics": {
+      "low_subspace_end_phase1": 0.9827663038128189,
+      "fundamental_end_phase1": 0.7615465222609116,
+      "low_subspace_max_driven_second_half": 0.06116777050173553,
+      "checks": {
+        "no_drive": true,
+        "driven": true
+      },
+      "k_gap": 3,
+      "lambda": [
+        -3.3175268283032306e-16,
+        0.005741958474561252,
+        0.005741958474561252,
+        0.028472056305050734,
+        0.028674133562577694
+      ],
+      "predicted_global_collapse_time": 1741.566060483241,
+      "predicted_individuation_time": 439.945312799591,
+      "phase1_steps": 34832,
+      "phase2_steps": 2000,
+      "dt": 0.05,
+      "at_v1_phase_length": {
+        "step": 2000,
+        "low_subspace_fraction": 0.23870808841165356,
+        "fundamental_fraction": 0.13673818114964986
+      },
+      "sink_gamma": 2.8709792372806267e-05
+    },
+    "notes": "Gamma_sink on at gamma_s = 2.871e-05 (= 0.1 beta lambda_2) on depths <= d_max - 2; RK4 integrator. Gasket level 5, alpha = 0.02, beta = 0.05, dt = 0.05. k_gap = 3 (lambda_4/lambda_3 = 4.96). Phase 1 = predicted global-collapse time 1/(2 beta lambda_2) = 1741.6 (34832 steps) without drive from a random state; modes above the gap fall behind the low subspace on the time scale 1/(2 beta (lambda_4 - lambda_2)) = 439.9. End of phase 1: low_subspace_fraction 0.9828, fundamental_fraction 0.7615. At step 2000 (the V1 phase length) the fractions were 0.2387 and 0.1367. Phase 2: 2000 steps of noise drive at the frontier, judged on its second half (max 0.0612).",
+    "runtime_s": 8.914,
+    "figures": [
+      "energy_fractions"
+    ]
+  },
+  {
+    "id": "E2_v1",
+    "name": "Individuation from structure (V1)",
+    "status": "failed",
+    "passed": false,
+    "role": "v1",
+    "group": "E2_v1",
+    "summary": "purity 0.888; frac_loc 0.765; lattice 0.0475",
+    "criterion": "Gasket level 5: partition_purity >= 0.9 and frac_localized >= 0.25; lattice control frac_localized < 0.05.",
+    "thresholds": {
+      "purity_min": 0.9,
+      "frac_localized_min": 0.25,
+      "lattice_frac_localized_max": 0.05
+    },
+    "metrics": {
+      "partition_purity": 0.8879781420765027,
+      "frac_localized": 0.7650273224043715,
+      "lattice_frac_localized": 0.0475,
+      "spectral_gap_ratio": 1.0,
+      "fiedler_eigenspace_purity": {
+        "multiplicity": 2,
+        "min": 0.8387978142076502,
+        "mean": 0.9291894353369764,
+        "max": 0.9699453551912568
+      },
+      "checks": {
+        "purity": false,
+        "frac_localized": true,
+        "lattice_frac_localized": true
+      },
+      "n": 366,
+      "lattice_n": 400
+    },
+    "notes": "lambda_2 has multiplicity 2 (spectral_gap_ratio = 1.000). phi_2 is the member of the lambda_2 eigenspace with the sparsest sign cut (canonical basis, see spectrum.py); over all directions of that eigenspace the purity ranges 0.839-0.970 (mean 0.929). IPR is evaluated in the maximally localized basis of each degenerate eigenspace. Failed checks: ['purity'].",
+    "runtime_s": 0.138,
+    "figures": [
+      "fiedler_partition",
+      "ipr"
+    ]
+  },
+  {
+    "id": "E3_v1",
+    "name": "Power-law memory (V1)",
+    "status": "failed",
+    "passed": false,
+    "role": "v1",
+    "group": "E3_v1",
+    "summary": "gasket R2 pow 0.908 vs exp 0.996; tree pow 0.892 vs exp 0.991",
+    "criterion": "Gasket level 6 under noise drive: R2_powerlaw > R2_exponential for E[d]. Tree control is expected to show R2_exponential >= R2_powerlaw (reported, not a failure).",
+    "thresholds": {
+      "gasket": "R2_powerlaw > R2_exponential",
+      "tree (expectation, not a failure)": "R2_exponential >= R2_powerlaw"
+    },
+    "metrics": {
+      "gasket": {
+        "n": 1095,
+        "E": [
+          2.898204172542283,
+          3.118376983966592,
+          10.995887516035829,
+          36.86143694030103,
+          136.00415074457356,
+          562.0926833667444,
+          3144.218436213567
+        ],
+        "r2_powerlaw": 0.9076510189639015,
+        "r2_exponential": 0.9958153038062638,
+        "powerlaw_slope": 3.6725283664373136,
+        "exponential_slope": 1.3625141572696176
+      },
+      "tree": {
+        "n": 1093,
+        "E": [
+          0.021350955563629342,
+          0.09516063612784878,
+          0.6627735989454997,
+          4.011862116440347,
+          30.223773633941644,
+          274.71895862597125,
+          5911.407579075761
+        ],
+        "r2_powerlaw": 0.8922274176119169,
+        "r2_exponential": 0.9905653396859887,
+        "powerlaw_slope": 5.763537572582562,
+        "exponential_slope": 2.1509921548138093
+      },
+      "lattice": {
+        "n": 400,
+        "E": [
+          4103.65151799179
+        ],
+        "r2_powerlaw": null,
+        "r2_exponential": null,
+        "powerlaw_slope": null,
+        "exponential_slope": null
+      },
+      "tree_expectation_met": true
+    },
+    "notes": "E[d] is the total energy at depth d under wave_v1, time-averaged over the second half of T=2000 noise-driven steps; both fits use depths d >= 1 (log d is undefined at 0). Tree expectation R2_exp >= R2_pow met. The lattice has a single depth, so no fit applies.",
+    "runtime_s": 4.328,
+    "figures": [
+      "depth_gasket",
+      "depth_tree"
+    ]
+  },
+  {
+    "id": "E4_v1",
+    "name": "Harmonicity rises under drive-and-sink (V1)",
+    "status": "failed",
+    "passed": false,
+    "role": "v1",
+    "group": "E4_v1",
+    "summary": "consonance: sink -0.5239 vs control -0.5506, p=1; holds 0/3 factors",
+    "criterion": "Frontier harmonicity end-mean > start-mean, one-sided paired t-test p < 0.05 across seeds, AND increase >= 2x the increase of the uniform-damping control (gamma1 = 0).",
+    "thresholds": {
+      "p_max": 0.05,
+      "control_ratio_min": 2.0
+    },
+    "metrics": {
+      "primary_factor": "consonance",
+      "per_factor": {
+        "consonance": {
+          "sink": {
+            "start": [
+              0.6702047319685575,
+              0.6548267104486963,
+              0.6357562960935088,
+              0.6438561045320057,
+              0.6713931705534218
+            ],
+            "end": [
+              0.13141198796962594,
+              0.13063884734554032,
+              0.1316428018436161,
+              0.13236626371269394,
+              0.13025021560816524
+            ],
+            "increase_mean": -0.5239453794233098
+          },
+          "control": {
+            "start": [
+              0.7232143073244002,
+              0.6957341230551329,
+              0.6743821741993915,
+              0.6909016412665092,
+              0.7084984004317647
+            ],
+            "end": [
+              0.14630434823124314,
+              0.1465149571066636,
+              0.14918889514877967,
+              0.15075815160737688,
+              0.14689901210108644
+            ],
+            "increase_mean": -0.5506130564164098
+          },
+          "p_value": 0.9999998873286449,
+          "rises": false,
+          "attributable_to_sink": true,
+          "passed": false
+        },
+        "spectral_concentration": {
+          "sink": {
+            "start": [
+              0.145134203128847,
+              0.15149702572507592,
+              0.1713089651860472,
+              0.16203763567787385,
+              0.13927423696798058
+            ],
+            "end": [
+              0.10221314659940518,
+              0.09773361740831062,
+              0.10202621334931465,
+              0.10165531706948898,
+              0.09163893052107204
+            ],
+            "increase_mean": -0.05479696834764662
+          },
+          "control": {
+            "start": [
+              0.11202684973179486,
+              0.12090052892671938,
+              0.1416420073750551,
+              0.12724187610501766,
+              0.12411721519821144
+            ],
+            "end": [
+              0.08726539547595727,
+              0.07908077255186828,
+              0.08170099705530552,
+              0.08718073443242871,
+              0.08075127862480173
+            ],
+            "increase_mean": -0.04198985983928739
+          },
+          "p_value": 0.9998503029276651,
+          "rises": false,
+          "attributable_to_sink": true,
+          "passed": false
+        },
+        "phase_order": {
+          "sink": {
+            "start": [
+              0.21924579216331266,
+              0.15885432509473169,
+              0.15741512018377898,
+              0.18486862080433497,
+              0.19014433381584456
+            ],
+            "end": [
+              0.04169548047321214,
+              0.0405559542735634,
+              0.04721502136101577,
+              0.039037634947479326,
+              0.032315267289701154
+            ],
+            "increase_mean": -0.14194176674340622
+          },
+          "control": {
+            "start": [
+              0.22542245671869846,
+              0.15503723272401482,
+              0.1699855080193703,
+              0.2398885009462603,
+              0.17382735647124206
+            ],
+            "end": [
+              0.03900236998629485,
+              0.03974608881430634,
+              0.09710270154937437,
+              0.0548977636224947,
+              0.035487764048058965
+            ],
+            "increase_mean": -0.13958487337181133
+          },
+          "p_value": 0.9998309754194482,
+          "rises": false,
+          "attributable_to_sink": true,
+          "passed": false
+        }
+      },
+      "seeds": [
+        967688993,
+        1896382540,
+        994261657,
+        490899024,
+        1724862250
+      ],
+      "factors_holding": 0
+    },
+    "notes": "Primary coherence factor: consonance. Control: uniform damping (gamma1 = 0), wave_v1. Start/end means are over the first and last growth epochs (G=500 steps each; levels 2 and 5). Frontier = depth >= d_max - 1. Result holds under 0/3 coherence factors (a conclusion that holds under only one is not a conclusion). consonance: does not rise (sink -0.5239, control -0.5506, p=1) | spectral_concentration: does not rise (sink -0.0548, control -0.0420, p=1) | phase_order: does not rise (sink -0.1419, control -0.1396, p=1)",
+    "runtime_s": 8.149,
+    "figures": [
+      "harmonicity_trace",
+      "increase_by_factor"
+    ]
+  },
+  {
+    "id": "E8_v1",
+    "name": "The peace trap (V1)",
+    "status": "failed",
+    "passed": false,
+    "role": "v1",
+    "group": "E8_v1",
+    "summary": "no drive end 0.0000; driven max 0.0033",
+    "criterion": "No drive: fundamental_fraction >= 0.9 at the end. With noise drive: stays <= 0.5.",
+    "thresholds": {
+      "no_drive_fundamental_min": 0.9,
+      "driven_fundamental_max": 0.5
+    },
+    "metrics": {
+      "fundamental_end_no_drive": 2.5832816713554864e-09,
+      "fundamental_max_driven_second_half": 0.0033098365825412666,
+      "checks": {
+        "no_drive": false,
+        "driven": true
+      },
+      "fundamental_decay_rate": 0.15327868852458967,
+      "min_decay_rate": 0.049999999999999864,
+      "dominant_modes_no_drive": [
+        {
+          "k": 226,
+          "lambda": 5.000000000000001,
+          "p": 0.10771497363753307,
+          "decay_rate": 0.04999999999999991,
+          "frontier_weight": 0.999999999999999
+        },
+        {
+          "k": 220,
+          "lambda": 5.000000000000001,
+          "p": 0.08683193782686854,
+          "decay_rate": 0.050000000000000024,
+          "frontier_weight": 0.9999999999999992
+        },
+        {
+          "k": 234,
+          "lambda": 5.000000000000001,
+          "p": 0.07119188393944814,
+          "decay_rate": 0.04999999999999998,
+          "frontier_weight": 0.9999999999999999
+        },
+        {
+          "k": 209,
+          "lambda": 5.000000000000001,
+          "p": 0.0553022167606964,
+          "decay_rate": 0.04999999999999999,
+          "frontier_weight": 0.9999999999999999
+        },
+        {
+          "k": 231,
+          "lambda": 5.000000000000001,
+          "p": 0.052545167483299085,
+          "decay_rate": 0.04999999999999994,
+          "frontier_weight": 0.9999999999999989
+        }
+      ]
+    },
+    "notes": "wave_v1 (depth damping). Phase 1: T=2000 steps without drive from a random initial state; phase 2 continues with noise drive for T steps and is judged on its second half (first half = burn-in from the end of phase 1). Secular decay rate of the fundamental = mean(gamma) = 0.1533; slowest mode rate = 0.0500 (k=243, lambda=5.0000). Energy left after the undriven phase sits in the modes listed under dominant_modes_no_drive.",
+    "runtime_s": 1.401,
+    "figures": [
+      "fundamental_fraction"
+    ]
+  }
+]

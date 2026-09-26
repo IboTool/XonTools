@@ -1,0 +1,80 @@
+{
+ "request": "b7ab619eb6b7af056969aaea0690924a01cac0ca27bdb96ae40a37f5fe1df294",
+ "tag": "text-03cb7fe31c2c-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "finish_order",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 9,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "nell",
+    "b": "hana",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "leo",
+    "b": "nell",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "hana",
+    "b": "leo",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2140,
+  "output_tokens": 283,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,217 @@
+{
+ "request": "887aef9917df34d4e033651922b6b5a666653dedf28e9a22afc79d4efbd8cb83",
+ "tag": "text-89cd5d0b6565-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "head_judge",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "shift",
+    "arity": "multi",
+    "arity_span": "The shop ran three shifts."
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "ranking",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "head_judge",
+    "kind": "same",
+    "a": "kai",
+    "b": "head_judge",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "cy",
+    "b": "kai",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "uma",
+    "b": "cy",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "fay",
+    "b": "uma",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "fay",
+    "b": "cy",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "fay",
+    "b": "kai",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 8,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "cy",
+    "b": "uma",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "uma",
+    "b": "fay",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 10,
+    "attribute": "head_judge",
+    "kind": "different",
+    "a": "kai",
+    "b": "head_judge",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "kai",
+    "b": "cy",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "fay",
+    "b": "kai",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "fay",
+    "b": "cy",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "cy",
+    "b": "fay",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "uma",
+    "b": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "noor",
+    "b": "kai",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 18,
+    "attribute": "ranking",
+    "kind": "greater",
+    "a": "uma",
+    "b": "cy",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 19,
+    "attribute": "ranking",
+    "kind": "greater",
+    "a": "noor",
+    "b": "fay",
+    "confidence": 0.8
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2003,
+  "output_tokens": 1048,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

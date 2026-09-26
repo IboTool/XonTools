@@ -1,0 +1,191 @@
+{
+ "request": "10bb0a538b01a23680b8e9f211acd3449876fd34864cac9b5d0f078c1299df20",
+ "tag": "text-8513d54c2e81-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo",
+     "the club secretary"
+    ]
+   },
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto",
+     "he"
+    ]
+   },
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira",
+     "her"
+    ]
+   },
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "jude",
+    "mentions": [
+     "Jude",
+     "he"
+    ]
+   },
+   {
+    "id": "club",
+    "mentions": [
+     "The library book club",
+     "The club"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "signup_order",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "kira",
+    "b": "otto",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "kira",
+    "b": "otto",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "jude",
+    "b": "otto",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "jude",
+    "b": "kira",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 13,
+    "attribute": "class",
+    "kind": "same",
+    "a": "otto",
+    "b": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "class",
+    "kind": "different",
+    "a": "kira",
+    "b": "jude",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 20,
+    "attribute": "class",
+    "kind": "different",
+    "a": "otto",
+    "b": "jude",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "signup_order",
+    "kind": "greater",
+    "a": "kira",
+    "b": "otto",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 23,
+    "attribute": "signup_order",
+    "kind": "greater",
+    "a": "otto",
+    "b": "kira",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 24,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "noor",
+    "b": "jude",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 25,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "noor",
+    "b": "jude",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 26,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "otto",
+    "b": "milo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 27,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "milo",
+    "b": "kira",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2196,
+  "output_tokens": 859,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

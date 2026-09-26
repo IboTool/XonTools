@@ -1,0 +1,2726 @@
+{
+ "label": "b26-cycle",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-ec0149a259d7",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The pottery class met every Tuesday evening in a bright studio near the old market square.",
+   "span": "The pottery class met every Tuesday evening in a bright studio near the old market square.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Wren is the team captain.",
+   "span": "Assume that Wren is the team captain.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Hana arrived first that day.",
+   "span": "Hana arrived first that day, carrying a bag of clay tools she had borrowed from a friend.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Hana carried a bag of clay tools she had borrowed from a friend.",
+   "span": "carrying a bag of clay tools she had borrowed from a friend",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Alma booked the hall.",
+   "span": "Alma booked the hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Wren had suggested the studio because it had good natural light for glazing work.",
+   "span": "Wren had suggested the studio because it had good natural light for glazing work.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Lena came in a little later, still wearing her coat from the walk over.",
+   "span": "Lena came in a little later, still wearing her coat from the walk over",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Lena set her sketchbook on the table beside Rosa.",
+   "span": "set her sketchbook on the table beside Rosa",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Hana and Lena worked different shifts.",
+   "span": "Hana and Lena worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Rosa mentioned that she preferred working near the window where the afternoon sun warmed the wheel.",
+   "span": "Rosa mentioned that she preferred working near the window where the afternoon sun warmed the wheel.",
+   "kind": "quoted"
+  },
+  {
+   "id": 10,
+   "text": "The five of them chatted about the new clay supplier while waiting for the instructor to arrive.",
+   "span": "The five of them chatted about the new clay supplier while waiting for the instructor to arrive.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Lena and Rosa worked different shifts.",
+   "span": "Lena and Rosa worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Alma was the tallest of the group.",
+   "span": "Alma was the tallest of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Wren was only an inch shorter than Alma.",
+   "span": "though Wren was only an inch shorter",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Hana and Rosa worked different shifts.",
+   "span": "Hana and Rosa worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Rosa had been coming to the class the longest, nearly two years now.",
+   "span": "Rosa had been coming to the class the longest, nearly two years now",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Lena had just joined that spring.",
+   "span": "while Lena had just joined that spring",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "The shop ran two shifts.",
+   "span": "The shop ran two shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Wren often brought extra aprons for anyone who forgot theirs.",
+   "span": "Wren often brought extra aprons for anyone who forgot theirs",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Today Hana borrowed an apron gladly.",
+   "span": "today Hana borrowed one gladly",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Alma laughed about a lopsided bowl she had made the week before.",
+   "span": "Alma laughed about a lopsided bowl she had made the week before",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Rosa offered to help Alma fix the rim before it dried out completely.",
+   "span": "Rosa offered to help her fix the rim before it dried out completely",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "As the evening went on, the group settled into a quiet rhythm, shaping clay, trimming edges, and comparing glazes under the soft studio lights until the session ended.",
+   "span": "As the evening went on, the group settled into a quiet rhythm, shaping clay, trimming edges, and comparing glazes under the soft studio lights until the session ended",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Everyone helped tidy the tables together.",
+   "span": "everyone helped tidy the tables together",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "The claim about the pottery class meeting schedule has no topical connection to who the team captain is; they involve entirely different subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "A describes a general schedule and location for the pottery class, while B refers to a specific day's arrival order without connection to the schedule details given in A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "The pottery class setting is consistent with Hana carrying clay tools, but A does not establish or entail anything about Hana or her borrowed tools; they are simply compatible details.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A describes a pottery class meeting in a studio; claim B mentions Alma booking a hall, which is unspecified and not clearly connected to the pottery class or studio.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "A establishes the pottery class was held in a bright studio, and B explains this brightness was due to Wren's suggestion based on good natural light, making B a plausible elaboration consistent with A.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A establishes a setting (pottery class on Tuesday evenings) that could plausibly be the context where Lena arrives late in her coat, but nothing in A directly implies or confirms B's specific detail about Lena's arrival.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Claim A describes a pottery class schedule and location, while claim B describes an unrelated action by Lena involving a sketchbook. There is no shared context or entity that links them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "The pottery class schedule has no stated connection to Hana and Lena's work shifts; there is no shared subject or context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "A says the class met Tuesday evenings, while B implies Rosa worked near the window with afternoon sun, suggesting a daytime session; this creates mild tension but both could be reconciled (e.g., a memory from a different session or a window that catches evening light) so they are not strictly contradictory.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "B describes a scene plausibly occurring at the pottery class, but A does not establish who attended or that a chat about a clay supplier happened, so it neither confirms nor conflicts with B.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "The pottery class schedule has no bearing on Lena and Rosa's work shifts; these are unrelated facts about different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A describes the setting and schedule of a pottery class, while claim B makes an unrelated statement about a person's relative height. Neither claim's content bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "The claim about the pottery class schedule and location has no connection to the relative heights of Wren and Alma.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A describes a pottery class schedule and location, while claim B concerns two people's work shifts; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "A establishes the pottery class exists and meets regularly, providing context in which B's claim about Rosa's long attendance makes sense; A doesn't directly imply anything about individual attendance duration.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Claim A establishes a pottery class exists with a regular schedule and location; claim B introduces Lena joining 'that' class, presumably referring to it. This is a natural continuation providing context rather than evidence for or against, but B does depend on A's referent, making it loosely related rather than directly supporting.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Claim A describes a pottery class schedule and location, while claim B refers to a shop's shift structure; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "B describes Wren's habit possibly related to the pottery class setting, but the claims don't explicitly connect Wren to this class, so A neither confirms nor denies B.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "The claims describe unrelated events; nothing about the pottery class's schedule or location implies anything about Hana borrowing an apron, though one could imagine a loose thematic link (pottery/aprons) it's not established by the text.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "A establishes a pottery class setting where students make items like bowls; B describes a plausible related incident within such a class, though it doesn't require A to be true.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Claim A establishes a general setting for a pottery class, while claim B describes a specific interaction between two named individuals about fixing a pottery rim. There is no stated connection between them, though B could plausibly occur during such a class.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "A establishes that the pottery class met on Tuesday evenings in a bright studio, and B describes a plausible evening session in a studio involving pottery-making activities, consistent with A's setting.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "Claim A describes when and where the pottery class met, but says nothing about whether or how tidying occurred at the end of a session, so B is neither confirmed nor made more or less likely by A.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "The claim about Wren being team captain has no logical or causal connection to Hana's arrival time; they concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A concerns Wren's team role, while claim B concerns Hana's borrowed clay tools; they involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "There is no stated connection between Wren being team captain and Alma booking the hall; the two claims concern unrelated people and actions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Being the team captain and having previously suggested a studio for its lighting are independent facts about Wren; nothing about captaincy bears on the studio suggestion.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A is about Wren's role as team captain, while claim B describes Lena's arrival and attire. They involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A concerns Wren's team role, while claim B describes Lena placing a sketchbook near Rosa. There is no shared subject, context, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A concerns Wren's role as team captain, while claim B concerns Hana and Lena's work shifts. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A is about Wren being team captain, while claim B concerns Rosa's preference for a workspace near a window; they involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Wren being team captain has no bearing on whether the group of five chatted about a clay supplier while waiting for an instructor; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A concerns Wren's role as team captain, while claim B concerns Lena and Rosa's work shifts. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A concerns Wren's role as team captain, while claim B concerns Alma's height relative to a group. These involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Being team captain has no bearing on relative height compared to Alma; these describe unrelated attributes of Wren.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Claim A is about Wren being team captain, which has no connection to whether Hana and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns Wren's role as team captain, while claim B concerns Rosa's tenure in a class; these involve different people and different contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Claim A states Wren's role on a team, while Claim B concerns Lena joining something in spring. There is no shared subject or context linking the two, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "There is no discernible logical or causal connection between Wren being team captain and the shop running two shifts; they involve unrelated subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Being team captain is unrelated to the habit of bringing extra aprons; one does not make the other more or less likely based solely on the claims' content.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A concerns Wren's role as team captain, while claim B concerns Hana borrowing an apron. There is no shared subject, context, or logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Claim A concerns Wren's role as team captain, while claim B concerns Alma and a pottery anecdote; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Claim A is about Wren being team captain, while claim B concerns Rosa helping Alma with a rim; the two involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Claim A concerns Wren's role as team captain, while claim B describes an unrelated pottery studio scene with no mention of Wren, a team, or captaincy.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Wren being team captain has no logical bearing on whether everyone helped tidy the tables together; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Arriving first says nothing about what Hana was carrying; the two claims describe unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Arriving first at some event and booking the hall are unrelated actions with no logical connection indicated by the claims themselves.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A concerns arrival order among people that day, while claim B concerns Wren's reasoning for suggesting a studio location; these address unrelated topics with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "If Hana arrived first, it is consistent that Lena arrived later, still wearing her coat from walking over; nothing about A conflicts with B, and A mildly supports the ordering implied by B.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Claim A concerns Hana's arrival order, while claim B describes Lena placing a sketchbook near Rosa; they involve different subjects and actions with no logical or contextual connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Arriving first on a given day doesn't indicate anything about whether Hana and Lena generally work different shifts; these are largely independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A concerns the order of arrival, while claim B concerns Rosa's personal preference for a work location; they refer to unrelated aspects of the day with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "A states Hana was first to arrive, while B describes all five people already present and chatting while waiting for the instructor; these could both be true if Hana arrived first and the others arrived before the instructor did, so there's no direct contradiction, just a loose connection about the group's arrival sequence.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Claim A concerns arrival order for Hana, while claim B concerns shift differences between Lena and Rosa; they involve different people and different aspects of the day with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Arrival order and relative height are independent facts about different attributes; knowing who arrived first gives no information about who is tallest.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A concerns arrival order among people (likely including Hana and others), while claim B concerns relative heights of Wren and Alma. These describe unrelated attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Arriving first on a given day doesn't indicate whether Hana and Rosa generally work different shifts; the claims address different aspects (a single day's arrival order vs. shift assignments) and neither implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Arriving first on a particular day is about that day's timing, while having attended the class longest is about overall tenure; both can easily be true simultaneously without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "A is about arrival order on a particular day, while B concerns Lena's joining timeline in a season; they refer to different subjects and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Hana arriving first is a claim about the order of arrival for a person, while the shop running two shifts concerns the shop's staffing schedule structure. Neither statement implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A concerns the order of arrival for a specific day, while claim B describes a general habit of Wren regarding aprons; the two share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Claim A concerns Hana's arrival order on some day, while claim B concerns her borrowing an apron gladly 'today'; these describe unrelated events with no logical connection stated, even if 'that day' and 'today' might coincide.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Claim A concerns the order of arrival on a given day, while claim B concerns Alma's memory of a bowl she made previously. There is no logical or contextual link between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Claim A concerns Hana's arrival order, while claim B concerns Rosa offering to help Alma with a pottery-related task. There is no logical or contextual connection stated between these two events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Claim A concerns who arrived first, while claim B describes the group's general activity and mood during the evening; neither statement bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Hana arriving first is about the order of arrival, while B is about a group activity of tidying tables; neither implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A concerns Hana borrowing and carrying clay tools, while claim B concerns Alma booking a hall; there is no logical, causal, or thematic connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "A describes Hana borrowing clay tools while B describes Wren's reason for suggesting a studio; these involve different people and topics with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "These describe different people's separate actions (Hana carrying tools vs Lena arriving in her coat) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A concerns Hana carrying borrowed clay tools, while claim B concerns Lena placing a sketchbook near Rosa. They involve different people and unrelated actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A is about Hana carrying borrowed clay tools, which has no bearing on whether Hana and Lena worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A concerns Hana borrowing clay tools, while claim B concerns Rosa's preference for working near a window; they involve different people and unrelated details with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Hana carrying borrowed clay tools suggests a pottery-related activity, which makes it more plausible that a group of five would chat about a clay supplier while waiting for an instructor, but the claims don't directly entail each other.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Claim A concerns Hana borrowing clay tools, while claim B concerns Lena and Rosa's work shifts; they involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A concerns Hana borrowing clay tools, while claim B concerns Alma's height relative to a group; these describe unrelated facts with no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns Hana borrowing clay tools, while claim B concerns a height comparison between Wren and Alma; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A concerns Hana borrowing clay tools from a friend, while claim B concerns Hana and Rosa having different work shifts; these describe unrelated aspects of Hana's activities with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A concerns Hana borrowing clay tools, while claim B concerns Rosa's tenure in a class. They involve different people and different subject matter with no logical or evidential connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A concerns Hana borrowing clay tools, while claim B concerns Lena joining something in spring; they share no common subject, timeframe, or context that would connect them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "The claim about Hana borrowing clay tools has no logical or thematic connection to the shop's shift schedule.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Both describe people bringing supplies for a craft-related activity (clay tools vs aprons), but they involve different people and items with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Both claims describe Hana borrowing items, but A refers to clay tools while B refers to an apron; these could be separate borrowing events on the same or different days, so they are not directly contradictory or clearly supportive of each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Both claims involve pottery-related activities but reference different people (Hana vs Alma) and different objects/events with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Claim A concerns Hana borrowing clay tools, while claim B concerns Rosa helping Alma with a drying rim; they involve different people and no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "A establishes Hana brought clay tools, which fits naturally with B's scene of a group shaping clay and trimming edges in a studio, making B more plausible as a coherent continuation.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Carrying borrowed clay tools has no bearing on whether everyone helped tidy tables together; these describe unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Alma booking the hall instead of the studio suggests Wren's suggestion was not followed, creating mild tension, but both claims can still be true if Wren simply made a suggestion that wasn't taken.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Alma booking a hall is a separate event from Lena arriving in her coat; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Booking a hall by Alma has no logical or causal connection to Lena placing a sketchbook near Rosa; they involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Booking a hall has no logical or causal bearing on whether Hana and Lena worked different shifts; the two claims involve unrelated people and events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Claim A concerns Alma booking a hall, while claim B concerns Rosa's preference for a workspace location; they share no common subject, event, or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Booking a hall is a logistical act separate from the group's conversation about a clay supplier; neither implies nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Booking a hall has no logical connection to two other people's work shift schedules; the claims involve entirely different subjects and events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Booking a hall is unrelated to a person's height relative to others; the two facts have no bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "A concerns Alma booking a hall, which has no bearing on a physical height comparison between Wren and Alma.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Alma booking the hall has no bearing on whether Hana and Rosa worked different shifts; these involve unrelated people and events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "The two claims describe unrelated facts about different people and events; booking a hall has no bearing on how long Rosa has attended a class.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A about Alma booking a hall has no logical or topical connection to claim B about Lena joining something in spring; they involve different people and unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "The two claims describe unrelated events with no shared subject, location, or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "The two claims describe unrelated events involving different people and topics; booking a hall has no bearing on someone bringing spare aprons.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Booking a hall by Alma has no logical or topical connection to Hana borrowing an apron; they involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Booking a hall and laughing about a lopsided bowl made earlier describe unrelated events with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Booking a hall for some event is unrelated in content to Rosa offering to help fix a rim before it dries; there's no logical or causal link stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Claim A states Alma booked a hall, while claim B describes a pottery session in a studio; there is no clear logical connection between booking a hall and the described studio activity, and neither supports nor contradicts the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Booking a hall is a separate logistical act from tidying tables afterward or before an event; the two claims describe unrelated actions with no direct bearing on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Claim A explains why the studio was chosen, while claim B simply describes Lena's arrival and attire. Neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A concerns Wren's reasoning for suggesting the studio, while claim B describes an unrelated action by Lena involving a sketchbook and Rosa. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A concerns why a studio was chosen for lighting reasons related to glazing, while claim B concerns scheduling of two people's shifts. There is no logical or thematic connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "A states Wren chose the studio for good natural light for glazing, and B describes Rosa preferring a spot near the window for afternoon sun; both fit a well-lit studio setting and are mutually reinforcing rather than conflicting.",
+   "relation": "supports",
+   "confidence": 0.62
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "A explains why the studio was chosen (good light for glazing), while B describes an unrelated scene of people chatting about a clay supplier before class starts. Neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A concerns Wren's reasoning for suggesting a studio based on lighting, which has no bearing on whether Lena and Rosa worked different shifts. The two claims involve different subjects and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "The two claims concern entirely different subjects (a reason for choosing a studio versus a physical attribute of a person) with no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A concerns Wren's reasoning about studio lighting for glazing, while claim B concerns Wren's height relative to Alma; these are unrelated aspects of Wren with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A concerns Wren's reason for suggesting a studio location, while claim B concerns Hana and Rosa's work schedules; the two involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Claim A concerns Wren's reasoning for suggesting a studio location, while claim B concerns Rosa's tenure in a class. These involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "The two claims describe unrelated facts: one about why Wren suggested a studio, the other about when Lena joined; no logical or causal connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "The two claims discuss unrelated aspects of the operation \\u2013 the reason a studio was chosen versus a shop's shift schedule \\u2013 with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Both describe Wren's thoughtful, considerate habits related to the studio, but they concern different aspects (choosing lighting vs. providing aprons) with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Claim A concerns Wren's reasoning for suggesting a studio based on lighting for glazing work, while claim B concerns Hana borrowing an apron on a different occasion. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "A explains why the studio was chosen for glazing work, while B describes an unrelated anecdote about Alma's own pottery mishap; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Claim A concerns Wren's reasoning for suggesting a studio location, while claim B concerns Rosa offering help to Alma with a rim; these involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "A says the studio was chosen for good natural light for glazing, while B describes the evening session lit by soft studio lights rather than natural light, which is expected as evening implies darkness outside. Both can be true since natural light would matter for daytime work while artificial lights are used in the evening.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Claim A concerns why Wren suggested the studio, while claim B describes a group tidying activity; they share no logical connection or common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "A establishes Lena's arrival still in her coat; B describes a subsequent action of placing her sketchbook down, which is a plausible continuation of her entering and settling in near Rosa.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "A describes Lena arriving somewhere after walking over, but says nothing about Hana or their work schedules, so it neither confirms nor conflicts with the shift claim.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Claim A concerns Lena's arrival and attire, while claim B concerns Rosa's preference for a work location; they involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "A establishes Lena arrived late while still in her coat, which is compatible with B's scene of the group chatting while waiting for the instructor; A doesn't confirm or deny the chat topic or group composition, but it fits plausibly into that waiting period.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A describes Lena arriving somewhere wearing her coat, which has no clear bearing on whether Lena and Rosa worked different shifts; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A concerns Lena's arrival and attire, while claim B concerns Alma's relative height; the two describe unrelated aspects of different people with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A concerns Lena's arrival and attire, while claim B concerns relative heights of Wren and Alma; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A describes Lena's arrival and attire, while claim B concerns Hana and Rosa's work schedules; they involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A concerns Lena's arrival and attire, while claim B concerns Rosa's tenure in the class; they involve different people and different facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "A describes Lena arriving late wearing her coat from outside, which is unrelated to when she joined the group or organization referenced in B; both can easily be true simultaneously.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A describes Lena arriving late wearing her coat, which has no bearing on whether the shop operates two shifts; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Claim A describes Lena's arrival and attire, which has no logical bearing on Wren's habit of bringing extra aprons for others; they concern different people and unrelated details.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Claim A concerns Lena arriving late in her coat, while claim B concerns Hana borrowing an apron; the two involve different people and unrelated actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Claim A concerns Lena's arrival and attire, while claim B concerns Alma's memory of a bowl she made; they involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Claim A describes Lena's arrival and attire, while claim B describes Rosa offering help to Alma about a rim; they involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "B describes the overall session activities and mood, while A describes Lena's arrival earlier; they are compatible but A doesn't particularly bear on B's content.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "A merely places Lena arriving somewhat late and still in her coat; it doesn't state whether she participated in tidying or not, so it neither strongly supports nor contradicts B's claim that everyone helped tidy.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A describes Lena's action near Rosa and does not mention Hana or shifts at all, so it has no bearing on whether Hana and Lena worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "A places Rosa at a table, while B references Rosa's preference for working near a window with a wheel (suggesting a pottery wheel), which could be a different location or occasion; these can coexist without direct contradiction, though there's mild tension if the table isn't near the window.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "A places Lena near Rosa at a table, consistent with a group setting; B describes a group of five chatting while waiting for an instructor, which could easily include this scene. The claims are compatible and mildly supportive but not strongly dependent on each other.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "A implies Lena and Rosa were physically together at a table at the same time, which is in tension with them working different shifts, though they might have overlapped briefly or A could describe a non-work setting.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "The claim about Lena placing her sketchbook near Rosa has no bearing on Alma's height relative to the group.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A describes an unrelated physical action involving Lena and Rosa, while claim B compares the heights of Wren and Alma. There is no overlap in subjects or content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "A places Lena and Rosa near a table together but says nothing about shifts, schedules, or Hana at all, so it has no bearing on whether Hana and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "A merely describes a physical placement of a sketchbook near Rosa, which has no bearing on how long Rosa has attended a class.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Setting a sketchbook on a table gives no information about how long Lena had been part of a group or when she joined; the two claims describe unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Claim A describes a specific personal action involving Lena, Rosa, and a sketchbook, while claim B describes a shop's staffing structure. There is no logical or contextual connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Claim A describes a specific action by Lena involving a sketchbook, while claim B describes a general habit of Wren's regarding aprons. The two involve different people and unrelated objects/contexts, with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A concerns Lena setting a sketchbook near Rosa, while claim B concerns Hana borrowing an apron; they involve different people and unrelated actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "The two claims describe unrelated events involving different people and no shared context is indicated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Claim A describes Lena placing a sketchbook near Rosa, which has no bearing on whether Rosa offers to help Alma with a rim; they involve different actions and no shared causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "B describes a pottery-focused activity (clay, trimming, glazes) while A mentions a sketchbook, suggesting drawing; the two activities can coexist in the same group setting but sit oddly together since A implies sketching rather than pottery work.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "A places Lena's sketchbook on a table, which is a small consistent detail with an event where everyone tidied tables together; the two are largely independent but not contradictory.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Claim A concerns Hana and Lena's shift patterns, while claim B is about Rosa's preference for a work location. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A concerns Hana and Lena's work shifts, while claim B describes a group conversation among five people before an instructor arrives; these appear to be unrelated contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Claim A tells us about Hana and Lena's shift relationship, but says nothing about Rosa or her relation to Lena's shift, so it doesn't affect the likelihood of claim B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "The two claims concern entirely different subjects (work shifts vs. height comparison) and share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "The two claims concern entirely different people and topics (work shifts vs. height comparison), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Claim A concerns the relationship between Hana's and Lena's shifts, while claim B concerns Hana's and Rosa's shifts. Knowing Hana differs from Lena tells us nothing about whether Hana differs from Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Claim A concerns Hana and Lena's work shifts, while claim B concerns Rosa's tenure in a class. These involve different people and different contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Knowing Hana and Lena worked different shifts says nothing about when Lena joined the team; the two facts concern separate aspects of their employment.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "If Hana and Lena worked different shifts, that implies the shop had at least two shifts running, which supports the claim that the shop ran two shifts.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "The claims involve different subjects and topics with no logical connection between shift scheduling and apron sharing behavior.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Claim A concerns Hana and Lena's differing work shifts, while claim B concerns Hana borrowing an apron gladly today. There is no logical or causal connection between shift schedules and the act of borrowing an apron.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Claim A concerns Hana and Lena's work shifts, while claim B concerns Alma laughing about a bowl she made. The two claims involve different people and unrelated subject matter, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Claim A concerns Hana and Lena's work shifts, while claim B concerns Rosa helping Alma with a rim; they share no common subjects or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Claim A concerns Hana and Lena's work shifts, while claim B describes an unrelated evening pottery session with a group; no shared subject or logical connection exists between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "If Hana and Lena worked different shifts, they would not typically be present at the same time to tidy tables together, creating tension with a claim that everyone helped together simultaneously. However, both could be true if 'together' refers to collective participation across shifts or at different times, so it's not a strict contradiction.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Rosa's mentioned preference about window seating is largely independent of a group discussion about a clay supplier before the instructor arrives; both could occur in the same setting without one affecting the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "A describes Rosa's preference for working near a sunny window but says nothing about shift scheduling or Lena's schedule, so it has no bearing on whether Lena and Rosa work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Claim A concerns Rosa's preference for a workspace near a window, while claim B concerns Alma's height relative to a group; the two share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns Rosa's preference for a work location due to sunlight, while claim B concerns a height comparison between Wren and Alma. The two share no common subject or topic.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "A describes Rosa's spatial preference for working near the window in the afternoon light, which doesn't indicate anything about shift scheduling relative to Hana's, so the two claims don't bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "A describes a personal preference about workspace location, while B is about Rosa's tenure in the class; the two facts are independent and neither makes the other more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A discusses Rosa's preference for working near a sunny window, while claim B discusses Lena joining in spring; the two involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Rosa's preference for a sunlit window spot near a wheel says nothing about whether the shop operates one or two shifts; the claims address unrelated aspects of the workplace.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Claim A is about Rosa's preference for working near a sunlit window, while claim B is about Wren's habit of bringing extra aprons. These describe unrelated facts about different people with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Claim A concerns Rosa's preference for a workspace near a window, while claim B concerns Hana borrowing an apron; they involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Claim A concerns Rosa's preference for a workspace by the window, while claim B is about Alma laughing over a lopsided bowl she made; the two involve different people and unrelated topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Both claims describe Rosa's work habits and helpfulness related to pottery, but claim A about her preference for window seating doesn't logically bear on her offering help with a rim repair.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "A refers to Rosa preferring the window spot warmed by afternoon sun, while B describes an evening session under studio lights; these describe different times of day and different scenes, so they neither support nor conflict directly.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "A describes Rosa's personal preference for working near a sunny window at what appears to be a pottery wheel, while B describes a group tidying activity. There is no logical connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A describes a group of five chatting before class, while claim B discusses Lena and Rosa's work shifts, an unrelated topic with no overlap in context or implication.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A describes a group conversation while waiting, which has no bearing on relative heights of the group members mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "A describes a group conversation before class, while B states a height comparison between two individuals; neither fact influences the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "A describes five people chatting together while waiting for an instructor, which suggests they were present at the same time; if Hana and Rosa are among them, this is mildly at odds with them working different shifts, but both could still be true (e.g., an overlapping class time or one-off event). No direct logical conflict since context differs.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "A establishes a group scene of five people waiting for the instructor at what appears to be some kind of class, which is consistent with B's mention of Rosa attending 'the class' for nearly two years; the claims fit together as background details of the same setting without one strictly implying the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "A describes five people chatting before class started, while B gives background about when Lena joined; neither directly implies or conflicts with the other, though B could explain why Lena is among the group in A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "A describes a small scene of people waiting for an instructor and discussing a clay supplier, which gives no information about how many shifts a shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "A describes a specific chat while waiting for the instructor; B is a general habit of Wren's about aprons. The two claims involve different topics and neither implies or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Claim A describes a group waiting for an instructor and discussing a supplier, while claim B is about Hana borrowing an apron; there's no stated connection between the events, though both could plausibly occur in a similar setting like a pottery class.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "B describes Alma laughing about a past mishap, which could plausibly occur as part of the general chatting mentioned in A while waiting for the instructor; the topics are different but compatible as part of the same conversation.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "A describes casual chatting before class starts, while B describes Rosa actively helping Alma with a pottery task; these depict different moments and activities that could both occur during the same session but are not directly linked.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "A describes the group waiting for the instructor and chatting before the session, while B describes the session itself once underway; both can be true as sequential parts of the same evening.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "A shows the five chatting while waiting, which is a different activity but does not preclude them also tidying tables together at some other point; the claims are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "The claims concern unrelated topics: work shift scheduling versus relative height comparison, and neither provides information affecting the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "The claims discuss entirely different subjects—work shifts of Lena and Rosa versus the height difference between Wren and Alma—with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A tells us about the relationship between Lena's and Rosa's shifts, but says nothing about Hana's schedule at all, so it has no bearing on whether Hana and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Working different shifts from Lena says nothing about how long Rosa has attended the class; the two facts concern unrelated aspects of Rosa's life.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Working different shifts from Rosa doesn't bear on when Lena joined; these are independent facts about scheduling versus tenure.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "If Lena and Rosa worked different shifts, that implies the shop operated at least two distinct shifts, supporting the claim that the shop ran two shifts.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "The claims concern unrelated subjects: shift scheduling for Lena and Rosa versus Wren's habit of bringing extra aprons. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Claim A concerns Lena and Rosa's work shifts, while claim B concerns Hana borrowing an apron; the two involve different people and unrelated subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Claim A concerns Lena and Rosa's work shifts, while claim B concerns Alma laughing about a bowl she made; they share no common subject, event, or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Claim A concerns Lena and Rosa's work schedules, while claim B describes Rosa's action helping Alma with a pottery-related task; these involve different people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Claim A concerns work shifts of two individuals, while claim B describes an evening studio session with a group; there's no shared context or entities connecting the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "If Lena and Rosa worked different shifts, they would not have been present at the same time to tidy tables together, which is in tension with the claim that everyone helped together simultaneously, though 'together' could loosely mean each contributed at their own shift.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "If Alma was the tallest, it is plausible that others come close to her height; Wren being only an inch shorter is consistent with and mildly supports the idea that Alma barely edges out the group.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "The height comparison among group members has no bearing on whether Hana and Rosa share or differ in work shifts; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Being tallest and having attended a class longest are independent attributes about different people, with no logical or causal link between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Alma being the tallest of the group has no bearing on when Lena joined; these describe unrelated attributes of different people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "The claims concern unrelated topics: one is about relative height within a group, the other about a shop's shift schedule. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Alma's height has no bearing on Wren's habit of bringing extra aprons; these describe unrelated facts about different people.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "The claims involve different people and unrelated topics (height comparison vs. borrowing an apron), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "A's claim about Alma's height has no bearing on an event about her laughing over a bowl she made; the two describe unrelated aspects of Alma.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Alma's height relative to the group has no bearing on Rosa offering to help her fix a rim; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Claim A describes a physical attribute of Alma relative to the group, while claim B describes an activity and atmosphere of the group's session with no connection to height or physical descriptions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Alma's relative height has no bearing on whether the group tidied tables together; the claims concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A concerns relative heights of Wren and Alma, while claim B concerns work shifts of Hana and Rosa; the two involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A concerns relative heights of Wren and Alma, while claim B concerns Rosa's tenure in a class; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A concerns height comparison between Wren and Alma, while claim B concerns Lena joining at a particular time; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns the relative heights of Wren and Alma, while claim B concerns a shop's staffing schedule. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Wren's height relative to Alma has no bearing on whether Wren brought extra aprons for others; these are unrelated facts about the person.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A concerns relative heights of Wren and Alma, while claim B concerns Hana borrowing an apron; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Claim A concerns relative heights of Wren and Alma, while claim B concerns Alma laughing about a bowl she made; the two describe unrelated facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Claim A concerns relative heights of Wren and Alma, while claim B concerns Rosa offering help with a rim; the two describe unrelated situations with no shared entities or logical bearing.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Claim A concerns relative heights of two people, while claim B describes a pottery studio session's atmosphere and activities; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Claim A concerns relative heights of two people, while claim B concerns a group activity of tidying tables; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Working different shifts is unrelated to how long Rosa has attended a class; the two facts concern different activities and contexts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Claim A is about Hana and Rosa's shift schedules, while claim B concerns Lena's start date; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "If Hana and Rosa worked different shifts, that directly implies the shop had at least two shifts running, supporting the claim that the shop operated two shifts.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A concerns Hana and Rosa's differing shifts, while claim B concerns Wren's habit of bringing extra aprons; the two statements involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "A states that Hana and Rosa worked different shifts, which has no bearing on whether Hana borrowed an apron gladly today; the two claims concern unrelated aspects of Hana's activities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Claim A concerns Hana and Rosa's work shifts, while claim B concerns Alma's reaction to a bowl she made. They involve different people and unrelated subject matter, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Claim A concerns Hana's and Rosa's differing work shifts, while claim B concerns Rosa's offer to help Alma with a rim; these involve unrelated activities and contexts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Claim A concerns Hana and Rosa's work shifts, while claim B describes an evening pottery session with a group; they share no common subject or context to connect them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "If Hana and Rosa worked different shifts, they would not have been present at the same time to tidy tables together with everyone else, creating tension with a claim implying simultaneous group participation.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "A establishes Rosa as the longest-attending student, which is consistent with Lena being a recent newcomer; the two claims together paint a plausible contrast in tenure without conflicting.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Claim A concerns Rosa's tenure in a class, while claim B concerns a shop's shift structure; the two describe unrelated subjects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Claim A concerns Rosa's tenure in the class while claim B concerns Wren's habit of bringing aprons; the two describe unrelated facts about different people with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Claim A concerns Rosa's tenure in the class, while claim B concerns Hana borrowing an apron; they involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Both claims describe different students in what appears to be a pottery or craft class, but nothing about Rosa's long tenure bears on Alma's recent lopsided bowl.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "A establishes Rosa's long tenure and familiarity with the class, which plausibly makes her more knowledgeable and willing to help others like Alma, but it doesn't directly imply the specific act in B.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "B describes a general scene of a class session without conflicting with or depending on Rosa's tenure; the claims address different aspects of the setting.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Rosa's tenure in the class has no logical bearing on whether everyone helped tidy tables together; these are independent facts about different aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "A states when Lena joined the shop, while B describes the shop's shift structure. Neither fact bears on the other in any obvious way.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Lena's recent joining and Wren's habit of bringing extra aprons are about different people and different topics; there's no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Claim A concerns Lena's joining date in spring, while claim B concerns Hana borrowing an apron today; they involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Claim A concerns Lena's recent joining, while claim B is about Alma's unrelated experience with a bowl she made; there is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Claim A is about Lena joining in spring, while claim B concerns Rosa helping Alma with a rim; they share no common subject, event, or context.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Claim A gives background about Lena's tenure while claim B describes a general group activity scene; neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "A states Lena is a recent joiner, which has no clear bearing on whether everyone, including presumably Lena, helped tidy tables together; the claims concern different matters.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "The two claims describe unrelated aspects of the shop's operation; running two shifts has no bearing on whether Wren brought extra aprons.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "The shop running two shifts has no logical or contextual bearing on whether Hana borrowed an apron gladly today; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "The two claims describe unrelated matters: shift scheduling at a shop versus Alma's memory of a bowl she made. There is no logical or causal connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "The two claims describe unrelated aspects of the situation; running two shifts has no bearing on Rosa's offer to help fix a rim.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "B describes an evening studio session, while A mentions the shop running two shifts; these could coexist if one shift is the evening session, but they don't clearly reinforce or conflict with each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "The shop running two shifts implies staff worked at different times rather than all together, which is in tension with everyone tidying tables together as one group, though both could still be true if 'everyone' means each shift did so separately.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "A establishes Wren regularly has spare aprons available for those without one, which makes it plausible that Hana borrowed an apron from that supply; it doesn't guarantee it but raises likelihood.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "These describe unrelated events involving different people and topics; Wren's habit of bringing spare aprons has no bearing on Alma's memory of a lopsided bowl.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "A describes Wren's habit of bringing extra aprons, which has no bearing on Rosa's offer to help Alma with a rim; they involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "A describes Wren's habitual generosity with aprons, while B describes the general flow and activities of an evening pottery session; neither directly implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Wren's habit of bringing spare aprons for others suggests a cooperative, considerate group environment, which makes it somewhat more plausible that everyone would also pitch in together to tidy up, but the two claims describe different, largely independent behaviors.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Claim A concerns Hana borrowing an apron, while claim B concerns Alma laughing about a bowl she made; they involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Claim A concerns Hana borrowing an apron, while claim B concerns Rosa offering to help Alma with a rim; they involve different people and different events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "B describes a pottery session that could plausibly involve wearing an apron, but neither claim explicitly connects Hana's borrowing of an apron to this specific group session, so there is no direct logical bearing.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "A describes Hana borrowing an apron gladly, while B describes a group activity of tidying tables. There is no direct logical connection; both could be true or unrelated events happening independently.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "A refers to a bowl already made a week ago, implying it likely already dried; B describes Rosa offering to help fix a rim before it dries, suggesting the bowl is still wet and recent. These timeframes sit awkwardly together, though both could be true if the bowl was fixed earlier or the events are about different bowls.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "A describes Alma recounting a past bowl-making mishap, while B describes the group's general activity during the evening; A could plausibly occur as part of the social atmosphere in B, so it lends mild supporting context rather than conflicting with it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Alma's laughing about a lopsided bowl is a separate, unrelated event from the group's tidying up of tables; neither implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "B describes a broader, calm group scene consistent with A's specific moment of Rosa helping Alma; A's offer could fit within this general session activity, but B doesn't specifically confirm or deny A's event.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "A concerns Rosa offering specific help to Alma with a rim, while B describes a general group activity of tidying tables; they involve different actions and don't clearly bear on each other, though both could plausibly occur in the same setting.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "A describes a calm, cooperative session ending, which makes a shared act of tidying up afterward plausible and consistent, though not certain.",
+   "relation": "supports",
+   "confidence": 0.55
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "wren",
+    "mentions": [
+     "Wren"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   },
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   },
+   {
+    "id": "lena",
+    "mentions": [
+     "Lena"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "shift",
+    "arity": "binary",
+    "arity_span": "The shop ran two shifts.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "tenure",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 8,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "hana",
+    "b": "lena",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "lena",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "hana",
+    "b": "rosa",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "subject": "wren",
+    "comparative": "shorter",
+    "object": "alma",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_order",
+    "entity": "hana",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "entity": "alma",
+    "comparative": "tallest",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "tenure",
+    "entity": "rosa",
+    "comparative": "longest",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "height",
+    "comparative": "shorter",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "height",
+    "comparative": "tallest",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "tenure",
+    "comparative": "longest",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 5,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    0,
+    9
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    7,
+    11
+   ],
+   [
+    7,
+    22
+   ],
+   [
+    8,
+    23
+   ],
+   [
+    11,
+    23
+   ],
+   [
+    14,
+    23
+   ],
+   [
+    17,
+    23
+   ],
+   [
+    20,
+    21
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence",
+    "shift": null,
+    "height": "magnitude",
+    "tenure": "sequence"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 2,
+     "attribute": "arrival_order",
+     "entity": "hana",
+     "extreme": "min",
+     "edges": 0
+    },
+    {
+     "claim_id": 12,
+     "attribute": "height",
+     "entity": "alma",
+     "extreme": "max",
+     "edges": 1
+    },
+    {
+     "claim_id": 15,
+     "attribute": "tenure",
+     "entity": "rosa",
+     "extreme": "max",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 1,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 17,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "shift",
+    "entities": [
+     "hana",
+     "lena",
+     "rosa"
+    ],
+    "relations": [
+     0,
+     1,
+     2
+    ],
+    "claim_ids": [
+     8,
+     11,
+     14
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "truth_assignment": [
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002
+  ],
+  "claim_residuals": [
+   1.1339875512552044e-31,
+   0.0,
+   0.0,
+   7.642090019328552e-32,
+   0.0,
+   4.461994495156348e-32,
+   7.395570986446985e-33,
+   1.9721522630525296e-32,
+   0.0,
+   7.642090019328552e-33,
+   5.916456789157589e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   5.423418723394457e-32,
+   0.0,
+   1.0846837446788913e-31,
+   4.930380657631324e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 5,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 0,
+    "b": 20,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 0,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 6,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 10,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 3,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 9,
+    "residual": 7.642090019328552e-33
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 8,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 22,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 11,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 20,
+    "b": 22,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 10176,
+   "api_calls": 0,
+   "cache_hits": 10176,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    3,
+    5,
+    9,
+    10,
+    20,
+    22,
+    23
+   ],
+   [
+    1
+   ],
+   [
+    2,
+    6,
+    7
+   ],
+   [
+    4
+   ],
+   [
+    8,
+    11,
+    14,
+    17
+   ],
+   [
+    12,
+    13
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    18,
+    19
+   ],
+   [
+    21
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "shift",
+    "entities": [
+     "hana",
+     "lena",
+     "rosa"
+    ],
+    "relations": [
+     0,
+     1,
+     2
+    ],
+    "claim_ids": [
+     8,
+     11,
+     14
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 0,
+    "b": 9,
+    "rationale": "A says the class met Tuesday evenings, while B implies Rosa worked near the window with afternoon sun, suggesting a daytime session; this creates mild tension but both could be reconciled (e.g., a memory from a different session or a window that catches evening light) so they are not strictly contradictory.",
+    "confidence": 0.55
+   },
+   {
+    "a": 4,
+    "b": 5,
+    "rationale": "Alma booking the hall instead of the studio suggests Wren's suggestion was not followed, creating mild tension, but both claims can still be true if Wren simply made a suggestion that wasn't taken.",
+    "confidence": 0.55
+   },
+   {
+    "a": 7,
+    "b": 11,
+    "rationale": "A implies Lena and Rosa were physically together at a table at the same time, which is in tension with them working different shifts, though they might have overlapped briefly or A could describe a non-work setting.",
+    "confidence": 0.55
+   },
+   {
+    "a": 7,
+    "b": 22,
+    "rationale": "B describes a pottery-focused activity (clay, trimming, glazes) while A mentions a sketchbook, suggesting drawing; the two activities can coexist in the same group setting but sit oddly together since A implies sketching rather than pottery work.",
+    "confidence": 0.55
+   },
+   {
+    "a": 8,
+    "b": 23,
+    "rationale": "If Hana and Lena worked different shifts, they would not typically be present at the same time to tidy tables together, creating tension with a claim that everyone helped together simultaneously. However, both could be true if 'together' refers to collective participation across shifts or at different times, so it's not a strict contradiction.",
+    "confidence": 0.6
+   },
+   {
+    "a": 11,
+    "b": 23,
+    "rationale": "If Lena and Rosa worked different shifts, they would not have been present at the same time to tidy tables together, which is in tension with the claim that everyone helped together simultaneously, though 'together' could loosely mean each contributed at their own shift.",
+    "confidence": 0.6
+   },
+   {
+    "a": 14,
+    "b": 23,
+    "rationale": "If Hana and Rosa worked different shifts, they would not have been present at the same time to tidy tables together with everyone else, creating tension with a claim implying simultaneous group participation.",
+    "confidence": 0.55
+   },
+   {
+    "a": 17,
+    "b": 23,
+    "rationale": "The shop running two shifts implies staff worked at different times rather than all together, which is in tension with everyone tidying tables together as one group, though both could still be true if 'everyone' means each shift did so separately.",
+    "confidence": 0.55
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "A refers to a bowl already made a week ago, implying it likely already dried; B describes Rosa offering to help fix a rim before it dries, suggesting the bowl is still wet and recent. These timeframes sit awkwardly together, though both could be true if the bowl was fixed earlier or the events are about different bowls.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 8,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "hana",
+   "b": "lena",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "lena",
+   "b": "rosa",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "hana",
+   "b": "rosa",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "alma",
+   "b": "wren",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 12,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "alma",
+   "b": "wren",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

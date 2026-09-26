@@ -1,0 +1,87 @@
+{
+ "request": "86b642df39e6988b7ebcb2501b4247a82cc24a00af4f8f82970e49f2d11fd0f5",
+ "tag": "text-0a3493794aa8-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 18,
+    "b": 26,
+    "rationale": "Different houses existing supports the idea that there are multiple houses, consistent with three houses existing.",
+    "relation": "supports",
+    "confidence": 0.5
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "rationale": "Sami ranking teams by litter collected is a separate fact from Yara's team leading by midday, though it could support such a ranking, it doesn't directly confirm the midday timing.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   },
+   {
+    "a": 20,
+    "b": 27,
+    "rationale": "Yara's team leading by midday and bags being stacked in early afternoon are sequential but unrelated events in content.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   },
+   {
+    "a": 20,
+    "b": 28,
+    "rationale": "Yara's team leading by midday does not directly bear on the later gathering for a final look at the shoreline.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "rationale": "Ivo arriving slightly after Leo doesn't specify timing relative to Dev's second bag, so it's unrelated to that separate event.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   },
+   {
+    "a": 22,
+    "b": 25,
+    "rationale": "Ivo's arrival time relative to Dev's bag-finishing is unrelated to the age comparison between Sami and Ivo.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 23,
+    "b": 26,
+    "rationale": "Yara and Leo being in different houses supports the existence of multiple houses, consistent with three houses.",
+    "relation": "supports",
+    "confidence": 0.5
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "Sami being shorter than Ivo is a physical trait unrelated to the age difference between them.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "The age difference between Sami and Ivo has no bearing on the number of houses in the school.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "rationale": "Bags being stacked near the entrance in early afternoon plausibly precedes and supports the later gathering for a final look before heading home.",
+    "relation": "supports",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1090,
+  "output_tokens": 789,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

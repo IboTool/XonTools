@@ -1,0 +1,107 @@
+{
+ "request": "945aa34ef1c5e7b3b30f35e7a2dfbc1f1ede0d6f27e99d2ae361033ae89f820e",
+ "tag": "text-c3e2e9c842bb-var1-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "garden",
+    "mentions": [
+     "The community garden"
+    ]
+   },
+   {
+    "id": "rainwater_barrels",
+    "mentions": [
+     "The rainwater barrels"
+    ]
+   },
+   {
+    "id": "fence_gate",
+    "mentions": [
+     "the fence gate"
+    ]
+   },
+   {
+    "id": "gloves",
+    "mentions": [
+     "A few pairs of gloves"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 8,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "isla",
+    "b": "kai",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "kai",
+    "b": "cy",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "cy",
+    "b": "isla",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2213,
+  "output_tokens": 371,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b00-cycle",
+ "repetition": 1,
+ "call": 100
+}

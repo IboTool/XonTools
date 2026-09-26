@@ -1,0 +1,11 @@
+# The check of each provider's terms on publishing its outputs as a dataset (the user's item 16 of 2026-09-25,
+# xonforge/docs/decisions.md), logged before the first export: the date of the check, whether the terms allow it, and
+# the pages read. Nothing is exported with documents rendered by a provider whose check is not logged here, or whose
+# terms do not allow it (xonforge/corpus/terms.py). The check needs web access and is still open, so none is logged.
+# xonforge/docs/providers.md lists the pages to read.
+providers:
+  anthropic: {checked: null, allows: null, sources: [], notes: null}
+  openai: {checked: null, allows: null, sources: [], notes: null}
+  google: {checked: null, allows: null, sources: [], notes: null}
+  xai: {checked: null, allows: null, sources: [], notes: null}
+  openai_compatible: {checked: null, allows: null, sources: [], notes: null}

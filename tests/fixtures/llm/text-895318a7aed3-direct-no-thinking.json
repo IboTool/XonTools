@@ -1,0 +1,26 @@
+{
+ "request": "a8205ef6720520eeadfcabd06f32b47e1fbbe1233b6e36cb401b01ba59d444c1",
+ "tag": "text-895318a7aed3-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Esme and Kai were in different houses.",
+     "Kai and Gus were in different houses.",
+     "Esme and Gus were in different houses.",
+     "The school had two houses."
+    ],
+    "explanation": "With only two houses, three people cannot all be pairwise in different houses, as at least two of Esme, Kai, and Gus must share a house."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1072,
+  "output_tokens": 123,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

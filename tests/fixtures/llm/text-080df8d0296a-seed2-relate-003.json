@@ -1,0 +1,94 @@
+{
+ "request": "2fa0907e51f94736b21efd83da552c569442db74ceef2ab147e5bb193c842e2c",
+ "tag": "text-080df8d0296a-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 19,
+    "b": 20,
+    "rationale": "Isla sitting beside Nell sets up the proximity that enables their conversation about award entries.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 19,
+    "b": 22,
+    "rationale": "Isla settling beside Nell is a separate event involving different characters than Cy asking Ivo about the schedule.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 20,
+    "b": 23,
+    "rationale": "Isla and Nell discussing award predictions doesn't directly cause or relate to Ivo promising an announcement.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 20,
+    "b": 26,
+    "rationale": "Discussing which entries might win suggests they have favorites, supporting the idea that they hope their favorite is recognized.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "rationale": "Nell's height relative to Isla has no bearing on Ivo's promise about an announcement.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "Cy asking Ivo about the ceremony schedule directly prompts Ivo's response promising an announcement soon.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 24,
+    "b": 28,
+    "rationale": "The dimming lights signal the presentation is starting, which would prompt Quinn to seek a good vantage point.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 24,
+    "b": 29,
+    "rationale": "The dimming lights for the presentation align with and contribute to the evening's atmosphere of quiet anticipation.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "The exchange of glances among the five friends reflects their shared anticipation, consistent with each hoping their favorite entry wins.",
+    "relation": "supports",
+    "confidence": 0.55
+   },
+   {
+    "a": 25,
+    "b": 28,
+    "rationale": "The five friends exchanging glances is unrelated to Quinn specifically scanning the room for a vantage point.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   },
+   {
+    "a": 28,
+    "b": 29,
+    "rationale": "Quinn's quiet search for a vantage point fits with and supports the overall mood of quiet anticipation described.",
+    "relation": "supports",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1096,
+  "output_tokens": 770,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,24 @@
+{
+ "request": "c495fd6b16c5bacc4d62b03235eeccddf72ee9e93c071b23f093ee06e436b3c1",
+ "tag": "text-c6c01dbb237c-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Finn brought the first-aid kit.",
+     "Finn did not bring the first-aid kit."
+    ],
+    "explanation": "The text both states that Finn brought the first-aid kit and later denies it, which cannot both be true."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1123,
+  "output_tokens": 491,
+  "thinking_tokens": 404
+ },
+ "stop_reason": "end_turn"
+}

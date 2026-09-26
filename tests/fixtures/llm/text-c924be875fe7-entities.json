@@ -1,0 +1,116 @@
+{
+ "request": "8c3b26f5757d075304e63c2d9afe830c2305d2079c919e4812584bb9425ccade",
+ "tag": "text-c924be875fe7-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   },
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla",
+     "she"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo",
+     "he"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "secretary_status",
+    "arity": "binary",
+    "arity_span": "Hana is not the club secretary."
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "milo",
+    "b": "isla",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "isla",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 8,
+    "attribute": "secretary_status",
+    "kind": "different",
+    "a": "hana",
+    "b": "hana",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "milo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "milo",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "nell",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2144,
+  "output_tokens": 480,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

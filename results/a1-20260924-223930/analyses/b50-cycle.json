@@ -1,0 +1,1560 @@
+{
+ "label": "b50-cycle",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-38f5afd2be49",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Pia arrived first, carrying a worn script covered in notes from the previous week.",
+   "span": "Pia arrived first, carrying a worn script covered in notes from the previous week.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Lena is the team captain.",
+   "span": "Assume that Lena is the team captain.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Vik came in a few minutes later, stretching after a long walk from the bus stop.",
+   "span": "Vik came in a few minutes later, stretching after a long walk from the bus stop",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Vik greeted Finn near the folding chairs.",
+   "span": "he greeted Finn near the folding chairs",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Dev brought the first-aid kit.",
+   "span": "Dev brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Lena was slightly taller than Pia.",
+   "span": "Lena was slightly taller than Pia",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Lena was shorter than Finn.",
+   "span": "though shorter than Finn",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Finn stood near the back adjusting the curtain ropes.",
+   "span": "who stood near the back adjusting the curtain ropes",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Pia and Vik were in different houses.",
+   "span": "Pia and Vik were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Dev had arrived exactly on time.",
+   "span": "Someone mentioned that Dev had arrived exactly on time",
+   "kind": "quoted"
+  },
+  {
+   "id": 10,
+   "text": "Dev arriving exactly on time was unusual given the traffic outside.",
+   "span": "which was unusual given the traffic outside",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Vik and Finn were in different houses.",
+   "span": "Vik and Finn were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Lena checked her watch and reminded the group that the full run-through needed to start soon.",
+   "span": "Lena checked her watch and reminded the group that the full run-through needed to start soon",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "The theatre closed early on weekdays.",
+   "span": "since the theatre closed early on weekdays",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Pia and Finn were in different houses.",
+   "span": "Pia and Finn were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Finn was ranked highest among the ensemble members for stage presence.",
+   "span": "Finn was ranked highest among the ensemble members for stage presence, according to last term's evaluations",
+   "kind": "quoted"
+  },
+  {
+   "id": 16,
+   "text": "Vik ranked just below Finn.",
+   "span": "while Vik ranked just below him",
+   "kind": "quoted"
+  },
+  {
+   "id": 17,
+   "text": "The school had two houses.",
+   "span": "The school had two houses.",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Pia arriving first has no bearing on who is team captain.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Both describe arrival order but neither implies the other directly beyond sequencing which is not causal.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Pia's arrival is unrelated to Vik greeting Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Pia arriving first with a script has no relation to Dev bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Pia's arrival order is unrelated to height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Arrival order has no bearing on height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Pia's arrival is unrelated to Finn's curtain rope activity.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Arrival timing has no connection to house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Pia's arrival time doesn't determine Dev's punctuality.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Pia's arrival has no bearing on traffic conditions or Dev's timing being unusual.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Pia's arrival is unrelated to Vik and Finn's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Pia's arrival with notes doesn't relate to Lena's reminder about the run-through.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Pia's arrival has no connection to theatre closing times.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Pia's arrival order doesn't affect house assignments between Pia and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Pia's arrival has no bearing on Finn's ranking for stage presence.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Pia's arrival has no bearing on Vik's ranking relative to Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Pia's arrival has no connection to the number of houses at the school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Lena being team captain doesn't relate to Vik's arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Lena being team captain doesn't relate to Vik greeting Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Lena being team captain doesn't relate to Dev bringing the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Lena being team captain has no bearing on her height relative to Pia.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Lena's role as captain doesn't relate to her height compared to Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Being captain doesn't imply anything about Finn's position near the curtain ropes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Lena's captaincy is unrelated to which houses Pia and Vik belong to.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Lena being captain has no connection to Dev's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Lena's role as captain doesn't bear on whether Dev's punctuality was unusual.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Lena's captaincy has no relation to Vik and Finn's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Being team captain plausibly supports Lena taking charge of reminding the group about the run-through.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Lena's captaincy has nothing to do with the theatre's closing schedule.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Lena's role as captain is unrelated to Pia and Finn's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Being team captain doesn't determine Finn's ranking for stage presence.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Lena's captaincy has no bearing on Vik's stage presence ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Lena's captaincy is unrelated to the number of houses in the school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Vik arriving later and stretching is consistent with him then greeting Finn, supporting that the greeting happened after arrival.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Vik's late arrival has no bearing on whether Dev brought the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Vik's arrival time is unrelated to Lena and Pia's relative heights.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Vik's arrival timing has no connection to Lena's height compared to Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Vik's late arrival doesn't relate to Finn's position near the curtain ropes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Vik's arrival time has no bearing on house assignments of Pia and Vik.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Vik arriving late doesn't confirm or deny Dev's punctuality; they are independent events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Vik arriving late is unrelated to Dev's timely arrival being unusual.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Vik arriving late doesn't bear on house assignments of Vik and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Vik's late arrival doesn't determine whether Lena reminded the group about the run-through timing.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Vik's arrival time is unrelated to the theatre's closing schedule.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Vik's arrival has no bearing on Pia and Finn's house membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Vik's late arrival doesn't affect stage presence rankings.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Vik's arrival time is unrelated to his ranking position.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Vik's arrival is unrelated to the number of houses in the school.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Vik greeting Finn is unrelated to Dev bringing the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Vik greeting Finn near chairs is unrelated to Lena's height compared to Pia.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Vik greeting Finn doesn't relate to Lena's height compared to Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Vik greeting Finn near the chairs could coincide with Finn being near the back adjusting ropes, but these are different described locations without clear connection, so no clear support.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Vik greeting Finn doesn't bear on Pia and Vik's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Vik greeting Finn doesn't relate to Dev's arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Vik greeting Finn is unrelated to whether Dev's punctuality was unusual.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Vik greeting Finn as a social interaction doesn't indicate their house assignments one way or another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Vik greeting Finn is unrelated to Lena's reminder about the run-through.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Vik greeting Finn is unrelated to the theatre's closing schedule.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Vik greeting Finn doesn't bear on Pia and Finn's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Vik greeting Finn socially doesn't relate to stage presence rankings.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Vik greeting Finn near folding chairs has no bearing on ranking order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "The greeting location is unrelated to the number of houses at the school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Dev bringing the first-aid kit has no relation to Lena and Pia's heights.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Dev bringing the first-aid kit is unrelated to Lena and Finn's height comparison.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Dev bringing the kit has no bearing on Finn's location or actions.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Dev bringing a kit is unrelated to Pia and Vik's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Bringing the first-aid kit doesn't indicate anything about Dev's arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Bringing the kit doesn't relate to whether his on-time arrival was unusual given traffic.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Dev's kit-bringing is unrelated to Vik and Finn's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Dev bringing a kit has no connection to Lena's reminder about the run-through.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Dev bringing a first-aid kit has no bearing on the theatre's closing schedule.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Dev's action is unrelated to Pia and Finn's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Bringing a first-aid kit has no bearing on stage presence rankings.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Dev's kit-bringing is unrelated to Vik's ranking relative to Finn.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Dev bringing a kit is unrelated to the number of houses at the school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Lena being taller than Pia doesn't determine her height relative to Finn.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Height comparison between Lena and Pia is unrelated to Finn's location and actions.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Height comparison between Lena and Pia has no bearing on Pia and Vik's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Lena's height relative to Pia is unrelated to Dev's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Height comparison is unrelated to whether Dev's timely arrival was unusual.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Height comparison between Lena and Pia has no bearing on house assignments of Vik and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Lena's height relative to Pia has no bearing on her checking her watch.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Height comparison is unrelated to theatre closing times.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Height comparison between Lena and Pia has no bearing on house assignments of Pia and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Height has no bearing on stage presence ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Height comparison is unrelated to ranking of Vik versus Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Height comparison has no bearing on number of houses in the school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Lena being shorter than Finn is unrelated to Finn's position adjusting curtain ropes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Height comparison between Lena and Finn has no bearing on house assignments of Pia and Vik.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Height comparison is unrelated to Dev's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Height comparison has no bearing on the unusualness of Dev's timely arrival.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Height comparison between Lena and Finn has no bearing on house assignments of Vik and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Height comparison is unrelated to Lena checking her watch.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Height comparison is unrelated to theatre closing schedule.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Height comparison between Lena and Finn has no bearing on house assignments of Pia and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Lena being shorter than Finn is unrelated to Finn's ranking for stage presence.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Height comparison is unrelated to ranking of Vik below Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Height comparison has no bearing on the number of houses in the school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Finn's position adjusting curtain ropes has no bearing on house assignments of Pia and Vik.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Finn's activity backstage is unrelated to Dev's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Finn's location adjusting curtain ropes has no bearing on Dev's timely arrival being unusual.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Finn's activity does not indicate which house he or Vik belong to.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Finn adjusting curtains is unrelated to Lena's reminder about the run-through timing.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Finn's curtain activity has no connection to the theatre's closing schedule.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Finn's physical position backstage doesn't inform house membership relations with Pia.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Adjusting curtain ropes is a backstage task unrelated to stage presence ranking.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Finn's curtain duty has no bearing on Vik's ranking relative to Finn.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Finn's backstage activity is unrelated to the number of houses in the school.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "House assignments of Pia and Vik have no connection to Dev's punctuality.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Pia and Vik's house difference is unrelated to Dev's arrival being unusual due to traffic.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Pia and Vik being in different houses doesn't directly determine Vik and Finn's house relationship.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "House membership of Pia and Vik has nothing to do with Lena's reminder about rehearsal timing.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Pia and Vik's house assignment is unrelated to the theatre's early closing on weekdays.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Knowing Pia and Vik differ doesn't establish anything about Pia and Finn's house relationship directly.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "House placement of Pia and Vik has no bearing on Finn's stage presence ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Pia and Vik's house difference doesn't relate to Vik's ranking below Finn.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "That Pia and Vik are in different houses supports the idea that there are at least two houses, consistent with there being two houses total.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Dev arriving exactly on time directly supports the claim that this timing was unusual given the traffic.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Dev's punctuality has no bearing on Vik and Finn's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Dev's timely arrival is unrelated to Lena's reminder about the run-through schedule.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Dev arriving on time has no bearing on the theatre's closing schedule.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Dev's arrival time is unrelated to house assignments of Pia and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Dev's punctuality has no connection to Finn's stage presence ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Dev's arrival time is unrelated to Vik's ranking relative to Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Dev's timing has nothing to do with the number of houses in the school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "The unusualness of Dev's timely arrival due to traffic has no bearing on Vik and Finn's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "The traffic-related unusualness of Dev's arrival is unrelated to Lena reminding the group about the run-through schedule.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Traffic conditions affecting Dev's arrival do not relate to the theatre's weekday closing time.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "The claim about traffic and Dev's arrival has no connection to Pia and Finn's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Dev's traffic-related arrival has no bearing on Finn's stage presence ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Traffic conditions affecting Dev are unrelated to Vik's ranking relative to Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "The traffic situation is unrelated to the number of houses at the school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Vik and Finn being in different houses has no bearing on Lena's reminder about the run-through schedule.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "House assignments of Vik and Finn are unrelated to the theatre's closing schedule.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Vik and Finn being in different houses doesn't directly determine whether Pia and Finn are in different houses, since Pia's house is unspecified.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Vik and Finn's house assignments have no bearing on Finn's stage presence ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Being in different houses doesn't relate to their ranking in stage presence.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Vik and Finn being in different houses supports the idea that there are at least two houses, consistent with there being two houses.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Lena's reminder about the run-through schedule has no connection to the theatre's closing time on weekdays.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Lena's reminder about the schedule is unrelated to Pia and Finn's house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Lena reminding about a run-through has no bearing on stage presence rankings.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "The reminder about the run-through is unrelated to Vik's ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "The reminder has nothing to do with the number of houses at the school.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "The theatre's closing schedule has no logical connection to which houses Pia and Finn belong to.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "The theatre's hours have no bearing on stage presence rankings.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "The theatre's closing time is unrelated to Vik's ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "The theatre's schedule is unrelated to the number of houses in the school.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Being in different houses doesn't affect who has the highest stage presence ranking.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Pia and Finn being in different houses has no bearing on Vik's ranking.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "If Pia and Finn are in different houses, this is consistent with and slightly supports the existence of multiple houses (at least two).",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Finn being ranked highest is consistent with and directly supports Vik being ranked just below him.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Finn's stage presence ranking has no relation to the number of houses in the school.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Vik's ranking relative to Finn has no bearing on the number of houses in the school.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "lena",
+    "mentions": [
+     "Lena"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "house",
+    "arity": "binary",
+    "arity_span": "The school had two houses."
+   },
+   {
+    "key": "stage_presence_rank",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "pia",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "pia",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 5,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "lena",
+    "b": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "finn",
+    "b": "lena",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "house",
+    "kind": "different",
+    "a": "pia",
+    "b": "vik",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "house",
+    "kind": "different",
+    "a": "vik",
+    "b": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "house",
+    "kind": "different",
+    "a": "pia",
+    "b": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "stage_presence_rank",
+    "kind": "greater",
+    "a": "finn",
+    "b": "vik",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 18,
+  "pairs_requested": 153,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 8,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 18,
+  "n_edges": 7,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    15,
+    16
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "house",
+    "entities": [
+     "finn",
+     "pia",
+     "vik"
+    ],
+    "relations": [
+     6,
+     4,
+     5
+    ],
+    "claim_ids": [
+     8,
+     11,
+     14
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.7071067811865475,
+   0.7071067811865475,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 16,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 2595,
+   "api_calls": 0,
+   "cache_hits": 2595,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 7548523
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    12
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8,
+    11,
+    14,
+    17
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    13
+   ],
+   [
+    15,
+    16
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "house",
+    "entities": [
+     "finn",
+     "pia",
+     "vik"
+    ],
+    "relations": [
+     6,
+     4,
+     5
+    ],
+    "claim_ids": [
+     8,
+     11,
+     14
+    ],
+    "min_confidence": 0.95
+   }
+  ]
+ }
+}

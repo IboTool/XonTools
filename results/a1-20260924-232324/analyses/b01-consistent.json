@@ -1,0 +1,1201 @@
+{
+ "label": "b01-consistent",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-bfd3938234d1",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Ben is the treasurer.",
+   "span": "Assume that Ben is the treasurer.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Mina arrived first.",
+   "span": "Mina arrived first",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Mina carried a box of seed packets she had collected over the winter.",
+   "span": "carrying a box of seed packets she had collected over the winter",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Mina chatted with Dev about the compost schedule while they waited for the others.",
+   "span": "she chatted with Dev about the compost schedule while they waited for the others",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Gus booked the hall.",
+   "span": "Gus booked the hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Leo showed up shortly after Mina.",
+   "span": "Leo showed up shortly after",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Leo was still in his work boots from an earlier job.",
+   "span": "still in his work boots from an earlier job",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Leo set down a stack of folding chairs near the entrance.",
+   "span": "he set down a stack of folding chairs near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Dev was slightly taller than Ben.",
+   "span": "Dev mentioned that he was slightly taller than Ben",
+   "kind": "quoted"
+  },
+  {
+   "id": 9,
+   "text": "Neither Dev nor Ben seemed to care much about height comparisons that day.",
+   "span": "though neither of them seemed to care much about height comparisons that day",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Mina is on the same team as Leo.",
+   "span": "Mina is on the same team as Leo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Ben arrived a little later than Mina.",
+   "span": "Ben arrived a little later than Mina",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Ben arrived before Gus.",
+   "span": "but before Gus",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Ben immediately began sorting through a pile of gardening gloves donated by a neighbor.",
+   "span": "he immediately began sorting through a pile of gardening gloves donated by a neighbor",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Leo is not on the same team as Dev.",
+   "span": "Leo is not on the same team as Dev.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "The group discussed the layout of the raised beds.",
+   "span": "The group discussed the layout of the raised beds",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "The group decided where the tomatoes and beans would go this year.",
+   "span": "deciding where the tomatoes and beans would go this year",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Dev suggested rotating the herb section closer to the fence.",
+   "span": "Dev suggested rotating the herb section closer to the fence",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Mina is not on the same team as Dev.",
+   "span": "Mina is not on the same team as Dev.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Gus had arrived last of everyone.",
+   "span": "Gus, who had arrived last of everyone",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Gus apologized for the delay.",
+   "span": "apologized for the delay",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Traffic near the market had slowed Gus down considerably.",
+   "span": "explained that traffic near the market had slowed him down considerably",
+   "kind": "quoted"
+  },
+  {
+   "id": 22,
+   "text": "Ben reminded the group that the watering schedule needed to be finalized before the weekend.",
+   "span": "Ben, meanwhile, reminded the group that the watering schedule needed to be finalized before the weekend",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "The forecast predicted a dry spell.",
+   "span": "since the forecast predicted a dry spell",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Leo preferred working in the mornings.",
+   "span": "Leo laughed and said he preferred working in the mornings",
+   "kind": "quoted"
+  },
+  {
+   "id": 25,
+   "text": "Dev liked the evening shifts better.",
+   "span": "Dev admitted he liked the evening shifts better",
+   "kind": "quoted"
+  },
+  {
+   "id": 26,
+   "text": "Everyone agreed the garden was in good shape for the coming months.",
+   "span": "everyone agreed the garden was in good shape for the coming months",
+   "kind": "asserted"
+  },
+  {
+   "id": 27,
+   "text": "They packed up the chairs together before heading home under a clearing sky.",
+   "span": "they packed up the chairs together before heading home under a clearing sky",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Ben's role as treasurer has no bearing on who arrived first.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Ben being treasurer is unrelated to who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Being treasurer doesn't imply anything about sorting gloves.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Mina arriving first is consistent with Leo arriving shortly after her, supporting the sequence.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Mina arriving first directly supports the claim that Ben arrived later than her.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 26,
+   "rationale": "Order of arrival has no bearing on the group's final assessment of the garden.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 27,
+   "rationale": "Who arrived first is unrelated to packing up chairs later.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Mina carrying seed packets doesn't affect Leo's arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Carrying seed packets is thematically related to discussing garden bed layout, providing weak support.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Having seed packets collected suggests plans to plant, supporting the decision about crop placement.",
+   "relation": "supports",
+   "confidence": 0.45
+  },
+  {
+   "a": 2,
+   "b": 24,
+   "rationale": "Carrying seed packets has no relation to Leo's preference for mornings.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Chatting about compost schedule is unrelated to who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Mina chatting with Dev doesn't inform team assignments between Leo and Dev.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Discussing compost schedule while waiting is unrelated to traffic causing Gus's delay.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Gus booking the hall doesn't determine arrival order relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Booking the hall doesn't imply anything about Gus arriving last.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Leo's arrival time is unrelated to height comparison between Dev and Ben.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Leo arriving shortly after Mina doesn't determine when Ben arrived relative to Mina.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Leo's boots from an earlier job are unrelated to Ben's arrival relative to Gus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Leo's boots are unrelated to Ben sorting gloves.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 27,
+   "rationale": "Leo setting down chairs near the entrance establishes chairs exist to later be packed up together.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "A height difference existing doesn't determine whether the two care about it, though it sets up the topic.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Dev's height relative to Ben has no bearing on traffic slowing Gus down.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 26,
+   "rationale": "A height comparison between Dev and Ben has nothing to do with the garden's condition.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Caring about height comparisons is unrelated to team membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "If Mina is on the same team as Leo, this doesn't directly determine whether Leo and Dev are on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "If Mina is on the same team as Leo, and Leo is presumably not on Dev's team, this suggests Mina is also not on Dev's team.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Team membership between Mina and Leo has no bearing on when Gus arrived.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Team membership is unrelated to traffic causing Gus's delay.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 25,
+   "rationale": "Mina being on Leo's team doesn't relate to Dev's shift preference.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Ben arriving after Mina but before Gus is consistent and doesn't contradict, though doesn't confirm the order fully either; it's compatible information.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Arrival timing of Ben relative to Mina has no bearing on team membership of Leo and Dev.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Ben's arrival time relative to Mina has no bearing on what the group discussed.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Ben's arrival time has no bearing on Mina and Dev's team membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Ben arriving after Mina doesn't determine whether Gus arrived last, though it's consistent with it.",
+   "relation": "unrelated",
+   "confidence": 0.5
+  },
+  {
+   "a": 11,
+   "b": 24,
+   "rationale": "Ben's arrival time relative to Mina has no bearing on Leo's preference for mornings.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 26,
+   "rationale": "Ben's arrival time has no bearing on the group's agreement about the garden's condition.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Ben arriving before Gus has no bearing on Leo and Dev's team membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Ben's arrival before Gus has no bearing on Mina and Dev's team membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "If Ben arrived before Gus, this supports the idea that Gus could have arrived last of everyone.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 26,
+   "rationale": "Ben's arrival time before Gus has no bearing on the group's overall assessment of the garden's condition.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 25,
+   "rationale": "Ben sorting gloves has nothing to do with Dev's shift preference.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Leo not being on Dev's team doesn't affect whether Dev suggested moving the herb section.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Leo not being on Dev's team is a separate fact from Mina's team relation to Dev, though both could be true simultaneously without one implying the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Team membership of Leo and Dev has no connection to Gus's arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 24,
+   "rationale": "Leo's team assignment relative to Dev doesn't affect Leo's preferred working time.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Discussing the layout of raised beds naturally leads to and supports deciding where specific crops like tomatoes and beans would go.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Discussing the overall layout could plausibly include or prompt Dev's suggestion about the herb section, making it more likely.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Discussing the garden layout has no logical connection to Gus apologizing for being late.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Deciding on tomato and bean placement is a distinct decision from Dev's suggestion about the herb section, though both are layout-related, one doesn't necessitate the other.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Dev's suggestion about the herb section has no relation to traffic causing Gus's delay.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 27,
+   "rationale": "Mina's team relation to Dev has no bearing on the group packing up chairs together.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Gus arriving last provides a reason for him to apologize for the delay, supporting that claim.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Gus arriving last is consistent with and supports the idea that traffic slowed him down, explaining the delay.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Gus's arrival order has no connection to the weather forecast.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Gus apologizing for the delay supports the idea that there was a specific cause like traffic, making that explanation more plausible.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "Traffic near the market causing delay has no bearing on the weather forecast being dry.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Ben's reminder about the watering schedule has no direct bearing on what the forecast predicts, though it may be prompted by it, the claim itself doesn't establish that link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 22,
+   "b": 26,
+   "rationale": "Ben's reminder about an unfinished task doesn't directly affect the group's overall agreement on the garden being in good shape.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 23,
+   "b": 26,
+   "rationale": "A predicted dry spell could be seen as a concern for garden health, potentially working against a fully positive assessment, but it's not a strong or direct contradiction.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 24,
+   "b": 25,
+   "rationale": "Leo's preference for mornings does not affect Dev's preference for evening shifts, as these describe two independent individuals' preferences.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 24,
+   "b": 27,
+   "rationale": "Leo's morning preference has no bearing on the group packing up chairs and heading home under a clearing sky.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 26,
+   "b": 27,
+   "rationale": "The garden being in good shape and the group packing up chairs and leaving are separate events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina",
+     "she"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo",
+     "his"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "role",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "leo",
+    "b": "mina",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "leo",
+    "b": "mina",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "dev",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 10,
+    "attribute": "team",
+    "kind": "same",
+    "a": "mina",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "ben",
+    "b": "mina",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "team",
+    "kind": "different",
+    "a": "leo",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "team",
+    "kind": "different",
+    "a": "mina",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "mina",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "leo",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 28,
+  "blind": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    1,
+    26
+   ],
+   [
+    1,
+    27
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    2,
+    24
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    14
+   ],
+   [
+    3,
+    21
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    6,
+    12
+   ],
+   [
+    8,
+    21
+   ],
+   [
+    8,
+    26
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    19
+   ],
+   [
+    10,
+    21
+   ],
+   [
+    10,
+    25
+   ],
+   [
+    11,
+    14
+   ],
+   [
+    11,
+    15
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    11,
+    24
+   ],
+   [
+    11,
+    26
+   ],
+   [
+    12,
+    14
+   ],
+   [
+    12,
+    18
+   ],
+   [
+    12,
+    26
+   ],
+   [
+    13,
+    25
+   ],
+   [
+    14,
+    17
+   ],
+   [
+    14,
+    19
+   ],
+   [
+    14,
+    24
+   ],
+   [
+    15,
+    20
+   ],
+   [
+    17,
+    21
+   ],
+   [
+    18,
+    27
+   ],
+   [
+    19,
+    23
+   ],
+   [
+    21,
+    23
+   ],
+   [
+    24,
+    27
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 28,
+  "pairs_requested": 63,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 35,
+  "blind_pairs_related": 0,
+  "entity_relations": 11,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 28,
+  "n_edges": 12,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    8
+   ],
+   [
+    24
+   ],
+   [
+    25
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0,
+   "17": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999997,
+   0.9999999999999998,
+   0.9999999999999998,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.6838616247497574e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.6516775203064933e-31,
+   5.97808654737798e-32,
+   9.244463733058732e-33,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 5,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 7,
+    "b": 27,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 19,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 15,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 1.0477058897466563e-32
+   },
+   {
+    "a": 19,
+    "b": 21,
+    "residual": 9.244463733058732e-33
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 54,
+   "api_calls": 0,
+   "cache_hits": 54,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    5,
+    11
+   ],
+   [
+    2,
+    15,
+    16,
+    17
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    6
+   ],
+   [
+    7,
+    27
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    10,
+    18
+   ],
+   [
+    12,
+    19,
+    20,
+    21
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    22
+   ],
+   [
+    23
+   ],
+   [
+    24
+   ],
+   [
+    25
+   ],
+   [
+    26
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false,
+   "15": false,
+   "16": false,
+   "17": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": []
+ }
+}

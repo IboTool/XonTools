@@ -1,0 +1,154 @@
+{
+ "request": "729e70246a1a2a96d964ad6596ae8da9f4183b030e20f42eb2289846ebbd9b4e",
+ "tag": "text-3b8e29464b05-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme",
+     "her"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun"
+    ]
+   },
+   {
+    "id": "eli",
+    "mentions": [
+     "Eli",
+     "him"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "group",
+    "mentions": [
+     "the group",
+     "everyone",
+     "others",
+     "the others"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "binary",
+    "arity_span": "There were two teams."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "group",
+    "b": "esme",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "dara",
+    "b": "esme",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 10,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "jun",
+    "b": "group",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "eli",
+    "b": "group",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 14,
+    "attribute": "team",
+    "kind": "different",
+    "a": "esme",
+    "b": "dara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "eli",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "team",
+    "kind": "different",
+    "a": "esme",
+    "b": "eli",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "jun",
+    "b": "group",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 22,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "group",
+    "b": "yara",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2250,
+  "output_tokens": 644,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

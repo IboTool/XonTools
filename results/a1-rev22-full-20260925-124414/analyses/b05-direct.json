@@ -1,0 +1,1371 @@
+{
+ "label": "b05-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-42987eb35c93",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The school chess club met every Thursday afternoon in the library annex.",
+   "span": "The school chess club met every Thursday afternoon in the library annex.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Xavi did not bring the first-aid kit.",
+   "span": "Xavi did not bring the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Mina arrived first that day.",
+   "span": "Mina arrived first that day",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Mina carried her own board tucked under one arm.",
+   "span": "carrying her own board tucked under one arm",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Mina greeted Jude who came in shortly after her.",
+   "span": "she greeted Jude who came in shortly after her",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Wren is the event organizer.",
+   "span": "Assume that Wren is the event organizer.",
+   "kind": "premise"
+  },
+  {
+   "id": 6,
+   "text": "Wren had suggested the annex because the tables there were wider and better suited for the tournament brackets pinned to the wall.",
+   "span": "Wren had suggested the annex because the tables there were wider and better suited for the tournament brackets pinned to the wall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Fay arrived a few minutes later, slightly out of breath from running across the courtyard.",
+   "span": "Fay arrived a few minutes later, slightly out of breath from running across the courtyard",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Fay set her bag down near the window.",
+   "span": "set her bag down near the window",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Xavi brought the first-aid kit.",
+   "span": "Xavi brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Everyone found their seats as the afternoon light came through the tall windows.",
+   "span": "Everyone found their seats as the afternoon light came through the tall windows",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Someone dimmed the projector for the opening announcements.",
+   "span": "someone dimmed the projector for the opening announcements",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Mina and Fay were in different houses.",
+   "span": "Mina and Fay were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "The players exchanged friendly nods before the first round began.",
+   "span": "The players exchanged friendly nods before the first round began",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "The players compared notes on openings they had practiced over the weekend.",
+   "span": "comparing notes on openings they had practiced over the weekend",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Wren was noticeably taller than Jude.",
+   "span": "Wren was noticeably taller than Jude",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Xavi stood taller than both Wren and Jude by a fair margin.",
+   "span": "Xavi stood taller than both of them by a fair margin",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Fay and Jude were in different houses.",
+   "span": "Fay and Jude were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Rounds progressed steadily, with pairings rotating so that no two players faced each other twice in the same afternoon.",
+   "span": "Rounds progressed steadily, with pairings rotating so that no two players faced each other twice in the same afternoon.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Xavi and Mina were close in age.",
+   "span": "Xavi and Mina were close in age",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Xavi and Mina were both a year older than Fay.",
+   "span": "both a year older than Fay",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Fay was the youngest at the table that day.",
+   "span": "who was the youngest at the table that day",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Mina and Jude were in different houses.",
+   "span": "Mina and Jude were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Near the end of the session, players compared their standings on a chalkboard near the door.",
+   "span": "Near the end of the session, players compared their standings on a chalkboard near the door.",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "The school had three houses.",
+   "span": "The school had three houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "As the meeting wound down, everyone helped stack chairs and gather stray pawns from beneath the tables before heading home for the evening.",
+   "span": "As the meeting wound down, everyone helped stack chairs and gather stray pawns from beneath the tables before heading home for the evening.",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "The chess club's meeting schedule has no bearing on whether Xavi brought a first-aid kit; the two claims concern unrelated topics and people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "B explains why the annex was chosen as the club's meeting place, which is consistent with and elaborates on A's claim that the club met there weekly.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "A establishes a regular meeting schedule and location, but B describes a specific instance of someone arriving late without clear connection to the club meeting or contradicting/supporting details.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "The two claims describe unrelated events with no shared context, participants, or causal link stated in either claim.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "A directly states Xavi did not bring the first-aid kit, while B states the opposite; these are straightforwardly contradictory statements about the same event.",
+   "relation": "contradicts",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "If Mina arrived first, it is consistent that Jude came in shortly after her, and she could have greeted him then.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "If Mina arrived first, someone arriving 'a few minutes later' than her (Fay) is consistent with that ordering; A supports the plausibility of B's timing without conflicting with it.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Arriving first and being the youngest at the table concern different, independent attributes with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Mina arriving first is about the start of the day, while B describes an unrelated event near the end of a session involving multiple players; neither statement bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 25,
+   "rationale": "Claim A concerns who arrived first, while claim B concerns the end-of-meeting cleanup activities; they describe unrelated aspects of the event with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A concerns Mina carrying her own board, while claim B describes Fay's separate arrival and physical state; they involve different people and actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "These two claims describe unrelated events with no shared context, people acting, or causal link mentioned.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A concerns Mina carrying a board and has no bearing on the relative heights of Wren and Jude.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A describes an unrelated social interaction between Mina and Jude, while claim B concerns Wren's reasoning about choosing the annex venue. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A describes Jude arriving after Mina, and claim B describes Fay arriving later still, out of breath from running. These involve different people arriving and are not inherently connected in time or causation, though both describe a sequence of arrivals at what seems to be the same event.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Claim A establishes Jude's presence and arrival timing, but says nothing about anyone's height, including Wren's or Jude's own stature. The two claims concern entirely different aspects of the scenario with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Being the event organizer makes it plausible that Wren would suggest venue details like the annex for practical reasons such as table size, so A supports B.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Being the event organizer has no bearing on someone's relative height; these describe unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Wren's role as event organizer has no bearing on Wren's relative height compared to Xavi and Jude.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Claim A identifies Wren's role, while claim B describes tournament pairing logistics without reference to Wren or organizational responsibility; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Claim A concerns Wren's role as event organizer, while claim B concerns relative ages of Xavi, Mina, and Fay. There is no logical or contentual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A discusses Wren's reasoning about the annex and tournament tables, which has no bearing on whether Fay and Jude live in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Claim A concerns Wren's reasoning for suggesting the annex for tournament purposes, while claim B is about Xavi and Mina's ages; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "A establishes Fay's arrival; B describes a subsequent ordinary action she could naturally take upon arriving, making it plausible but not required.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Fay running across a courtyard to arrive suggests she and Jude (or the meeting point) were in separate structures, which is loosely consistent with being in different houses, but the claim doesn't establish this directly.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Claim A describes Fay's arrival and does not mention timing relative to the session's end or the chalkboard event; the two describe different moments and activities with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Both describe a scene near windows with light present, consistent with people settling into a room; A is a minor consistent detail that neither strongly supports nor is required by B.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "A implies Fay was near a window in some location, but this does not indicate anything about Jude's whereabouts or whether they were in the same or different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Xavi bringing a first-aid kit is a separate event from people finding seats in afternoon light; neither implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Xavi bringing a first-aid kit has no bearing on whether someone dimmed the projector for the opening announcements; these are independent events with no shared subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Bringing a first-aid kit is a precaution unrelated to whether players exchanged friendly nods before a match; neither claim influences the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "A describes people seated with afternoon light streaming in, which suggests a bright room, while B implies dimming for a projector presentation; these can coexist (blinds or projector needing dimness despite outside light) but sit somewhat awkwardly together.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Claim A describes a shared setting where everyone found seats together, giving no information about Mina and Jude's housing status; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 24,
+   "rationale": "Claim A describes a scene of people settling into seats in a room with tall windows, while claim B states a fact about the school's organizational structure. Neither statement bears on the truth or likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 25,
+   "rationale": "A describes people finding seats in afternoon light, while B describes the same or similar group later cleaning up as the meeting winds down and heading home in the evening; these are plausibly sequential moments of the same event (beginning and end), so both can be true as a temporal progression.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 24,
+   "rationale": "Dimming a projector for announcements has no bearing on how many houses the school has; the two facts are about unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "A tells us Mina and Fay's house relation, but says nothing about Jude, so it doesn't bear on whether Fay and Jude are in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Knowing Mina and Fay are in different houses tells us nothing about Mina's relationship to Jude, since Fay and Jude are separate individuals with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 24,
+   "rationale": "Claim A states Mina and Fay belonged to different houses, which is plausible regardless of how many houses the school has, as long as there are at least two. Claim B specifies three houses, which is consistent with and neutral toward A's claim about two students being in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 25,
+   "rationale": "Claim A concerns Mina and Fay being in different houses, while claim B describes people stacking chairs and gathering pawns after a meeting. There is no shared context, subject, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Exchanging friendly nods suggests a cordial, communicative pre-game atmosphere, which makes it somewhat more plausible they'd also chat about openings, but it doesn't directly imply they discussed chess preparation.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "A describes a friendly gesture before play started, while B describes the structural progression of rounds and pairing rotation; these concern different aspects of the event and neither implies or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "A establishes Wren is taller than Jude but says nothing about Xavi's height; B introduces a new comparison that is fully compatible with A, with Xavi simply being taller than both.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Claim A concerns a height difference between Wren and Jude, while claim B concerns the ages of two different people, Xavi and Mina. There is no logical or semantic connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Claim A concerns height comparison between Wren and Jude, while claim B concerns age comparison among Xavi, Mina, and Fay. There is no shared subject or overlapping content between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Claim A concerns relative height differences with Wren and Jude, while claim B concerns age similarity with Mina. These involve different people and different attributes, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Claim A concerns relative height among Xavi, Wren, and Jude, while claim B concerns relative age among Xavi, Mina, and Fay. These are independent attributes about different comparison groups, so one does not bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Claim A concerns relative heights of Xavi, Wren, and Jude, while claim B concerns house assignments of Mina and Jude. These are unrelated attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Knowing Fay and Jude are in different houses tells us nothing about Mina's house relative to Jude's, since Mina's placement is independent.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 24,
+   "rationale": "A states Fay and Jude belong to different houses, which is consistent with a school having three houses (or any number greater than one); the claims address different aspects and neither implies or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Claim A concerns tournament pairing logistics while claim B concerns the relative ages of three individuals; neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "A describes steady progress of rounds during a session, which naturally leads to a point near the end where standings could be compared; the claims are compatible and loosely supportive but not strictly dependent.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "If Xavi and Mina are both exactly one year older than Fay, they would be the same age, which is consistent with and reinforces the claim that they were close in age.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "A only concerns the relative ages of Xavi and Mina, giving no information about Fay or the full group at the table, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "If Xavi and Mina were both older than Fay, this supports the idea that Fay is younger than at least these two people, making it more plausible she was the youngest overall, though it doesn't confirm others at the table weren't also younger.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "Mina and Jude being in different houses doesn't inform how many houses the school has overall; the school could have two, three, or more houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 23,
+   "b": 25,
+   "rationale": "Both describe activities occurring near the end of the same type of gathering (a game session/meeting), so they are plausibly concurrent or sequential events but neither entails or blocks the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina",
+     "her",
+     "she"
+    ]
+   },
+   {
+    "id": "jude",
+    "mentions": [
+     "Jude"
+    ]
+   },
+   {
+    "id": "wren",
+    "mentions": [
+     "Wren"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay"
+    ]
+   },
+   {
+    "id": "chess_club",
+    "mentions": [
+     "The school chess club"
+    ]
+   },
+   {
+    "id": "school",
+    "mentions": [
+     "The school"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "first_aid_kit_possession",
+    "arity": "binary",
+    "arity_span": "Xavi did not bring the first-aid kit.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 12,
+    "attribute": "house",
+    "kind": "different",
+    "a": "mina",
+    "b": "fay",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 17,
+    "attribute": "house",
+    "kind": "different",
+    "a": "fay",
+    "b": "jude",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 22,
+    "attribute": "house",
+    "kind": "different",
+    "a": "mina",
+    "b": "jude",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 19,
+    "attribute": "age",
+    "kind": "same",
+    "a": "xavi",
+    "b": "mina",
+    "confidence": 0.85
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 4,
+    "attribute": "arrival_order",
+    "subject": "jude",
+    "comparative": "after",
+    "object": "mina",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "subject": "wren",
+    "comparative": "taller than",
+    "object": "jude",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "height",
+    "subject": "xavi",
+    "comparative": "stood taller than",
+    "object": "wren",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "height",
+    "subject": "xavi",
+    "comparative": "stood taller than",
+    "object": "jude",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 20,
+    "attribute": "age",
+    "subject": "xavi",
+    "comparative": "older than",
+    "object": "fay",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 20,
+    "attribute": "age",
+    "subject": "mina",
+    "comparative": "older than",
+    "object": "fay",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_order",
+    "entity": "mina",
+    "comparative": "first",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "entity": "fay",
+    "comparative": "youngest",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "stood taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "youngest",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": [
+   1
+  ]
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 27,
+  "blind": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    2,
+    21
+   ],
+   [
+    2,
+    23
+   ],
+   [
+    2,
+    25
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    15
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    5,
+    15
+   ],
+   [
+    5,
+    16
+   ],
+   [
+    5,
+    18
+   ],
+   [
+    5,
+    20
+   ],
+   [
+    6,
+    17
+   ],
+   [
+    6,
+    19
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    17
+   ],
+   [
+    7,
+    23
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    8,
+    17
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    11
+   ],
+   [
+    9,
+    13
+   ],
+   [
+    10,
+    22
+   ],
+   [
+    10,
+    24
+   ],
+   [
+    11,
+    24
+   ],
+   [
+    12,
+    25
+   ],
+   [
+    16,
+    22
+   ],
+   [
+    18,
+    20
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 26,
+  "pairs_requested": 57,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 30,
+  "blind_pairs_related": 0,
+  "entity_relations": 13,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    10,
+    11
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence",
+    "first_aid_kit_possession": null,
+    "house": null,
+    "height": "magnitude",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 2,
+     "attribute": "arrival_order",
+     "entity": "mina",
+     "extreme": "min",
+     "edges": 1
+    },
+    {
+     "claim_id": 21,
+     "attribute": "age",
+     "entity": "fay",
+     "extreme": "min",
+     "edges": 2
+    }
+   ],
+   "extreme_edges": 3,
+   "unsupported_order_claims": [
+    1
+   ]
+  }
+ },
+ "report": {
+  "n_claims": 26,
+  "n_edges": 9,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   5
+  ],
+  "harmony": 0.9838030450275348,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   0.3401360544217687,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   0.3401360544217687,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.8843074644823916,
+   8.628166150854817e-32,
+   0.0,
+   3.697785493223493e-32,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   0.8843074644823916,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 6,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 9,
+    "residual": 0.44888703780832057
+   },
+   {
+    "a": 2,
+    "b": 4,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 2,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 25,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   1,
+   9
+  ],
+  "culprits": [
+   {
+    "claim": 1,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.016196954972465205
+   },
+   {
+    "claim": 9,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.016196954972465205
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 2037,
+   "api_calls": 0,
+   "cache_hits": 2037,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    5,
+    6
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    4,
+    7
+   ],
+   [
+    3
+   ],
+   [
+    8
+   ],
+   [
+    10,
+    25
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    15
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ],
+   [
+    18,
+    23
+   ],
+   [
+    19,
+    20,
+    21
+   ],
+   [
+    22
+   ],
+   [
+    24
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false,
+   "15": false,
+   "16": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    1,
+    9
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 10,
+    "b": 11,
+    "rationale": "A describes people seated with afternoon light streaming in, which suggests a bright room, while B implies dimming for a projector presentation; these can coexist (blinds or projector needing dimness despite outside light) but sit somewhat awkwardly together.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 12,
+   "attribute": "house",
+   "kind": "different",
+   "a": "mina",
+   "b": "fay",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 17,
+   "attribute": "house",
+   "kind": "different",
+   "a": "fay",
+   "b": "jude",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 22,
+   "attribute": "house",
+   "kind": "different",
+   "a": "mina",
+   "b": "jude",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 19,
+   "attribute": "age",
+   "kind": "same",
+   "a": "xavi",
+   "b": "mina",
+   "confidence": 0.85,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 4,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "jude",
+   "b": "mina",
+   "confidence": 0.8,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "wren",
+   "b": "jude",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "wren",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "jude",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 20,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "fay",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 20,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "mina",
+   "b": "fay",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "jude",
+   "b": "mina",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 21,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "mina",
+   "b": "fay",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 21,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "fay",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  }
+ ]
+}

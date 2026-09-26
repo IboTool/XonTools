@@ -1,0 +1,1491 @@
+{
+ "label": "b57-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-7fde099d7ec1",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The morning fog had barely lifted when the volunteers gathered near the pier for the beach clean-up.",
+   "span": "The morning fog had barely lifted when the volunteers gathered near the pier for the beach clean-up.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Otto arrived first.",
+   "span": "Otto arrived first",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Otto stretched his arms and greeted everyone with a wide grin.",
+   "span": "stretching his arms and greeting everyone with a wide grin",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Kira showed up a few minutes later than Otto.",
+   "span": "Kira showed up a few minutes later",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Kira was carrying a stack of mesh bags for collecting debris.",
+   "span": "carrying a stack of mesh bags for collecting debris",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Cleo is the head judge.",
+   "span": "Assume that Cleo is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 6,
+   "text": "Esme trailed in last.",
+   "span": "Esme trailed in last",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Esme was still tying her shoelaces as she jogged across the sand.",
+   "span": "still tying her shoelaces as she jogged across the sand",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Leo waved from the boardwalk.",
+   "span": "Leo waved from the boardwalk",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Leo was balancing a cooler and a clipboard in his arms.",
+   "span": "balancing a cooler and a clipboard in his arms",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "The five of them split into small groups to cover different sections of the shoreline.",
+   "span": "The five of them split into small groups to cover different sections of the shoreline",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Each of them was armed with gloves and buckets.",
+   "span": "each armed with gloves and buckets",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Leo brought the first-aid kit.",
+   "span": "Leo brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Cleo was slightly taller than Kira.",
+   "span": "Cleo, who was slightly taller than Kira but shorter than Otto",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Cleo was shorter than Otto.",
+   "span": "Cleo, who was slightly taller than Kira but shorter than Otto",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Cleo wandered along the tide line noting how much trash had washed up overnight.",
+   "span": "wandered along the tide line noting how much trash had washed up overnight",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Otto finished ahead of Kira.",
+   "span": "Otto finished ahead of Kira.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "As the sun rose higher, the group began sorting their collected items into recycling bins and trash bags.",
+   "span": "As the sun rose higher, the group began sorting their collected items into recycling bins and trash bags.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Leo did not bring the first-aid kit.",
+   "span": "Leo did not bring the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Kira finished ahead of Esme.",
+   "span": "Kira finished ahead of Esme.",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Esme is the youngest of the group.",
+   "span": "Esme, the youngest of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Esme laughed as she found an old flip-flop buried in the sand.",
+   "span": "laughed as she found an old flip-flop buried in the sand",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Otto finished ahead of Esme.",
+   "span": "Otto finished ahead of Esme.",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "By midday, the beach looked remarkably cleaner.",
+   "span": "By midday, the beach looked remarkably cleaner",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "There were neat piles of sorted waste lined along the boardwalk.",
+   "span": "neat piles of sorted waste lined along the boardwalk",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "Leo was the oldest among them.",
+   "span": "Leo, who was the oldest among them",
+   "kind": "asserted"
+  },
+  {
+   "id": 26,
+   "text": "Leo took a moment to photograph the results for the community newsletter.",
+   "span": "took a moment to photograph the results for the community newsletter",
+   "kind": "asserted"
+  },
+  {
+   "id": 27,
+   "text": "They made plans to return the following month to continue their work along the coastline.",
+   "span": "they made plans to return the following month to continue their work along the coastline",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Both describe the same beach clean-up setting with fog-shrouded morning conditions; Cleo appears to be one of the gathered volunteers, so A's setup plausibly supports B's scene of surveying overnight trash.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Otto arriving first doesn't determine anything about his subsequent physical actions or demeanor; the two claims describe unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "If Otto arrived first, that is consistent with Kira arriving a few minutes after him; A supports the ordering described in B.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Arriving first suggests Otto was ahead of others, which is consistent with and supportive of finishing ahead of Kira specifically, though 'arriving first' and 'finishing ahead' could refer to different events (arrival vs a race finish).",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Arriving first suggests Otto was ahead of others at that point, which is consistent with and lends some support to finishing ahead of Esme, though arriving first and finishing ahead are not strictly the same event.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "A describes Otto arriving and greeting people, which establishes he was present before Kira; B states Kira arrived a few minutes after Otto, which is consistent with and mildly corroborated by A's implication that Otto was already there greeting people.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Otto's stretching and greeting behavior has no bearing on whether Esme is the youngest member of the group; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "The two claims describe different people and unrelated actions with no causal or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Otto's cheerful, relaxed demeanor doesn't logically indicate anything about a race or competition outcome against Esme; the claims describe unrelated aspects of a scenario.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "A describes Kira's relative arrival time, while B describes an unrelated fact about items she was carrying. Neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns relative arrival time between Kira and Otto, while claim B concerns relative height between Cleo and Kira. These are different attributes about different pairs of people and have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "If Kira arrived after Otto, this suggests they were in some ordering event (like a race or task) where Otto's earlier arrival corresponds to finishing ahead of Kira; the two are closely aligned readings of the same situation.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Claim A concerns the relative arrival times of Kira and Otto, while claim B concerns whether Leo brought a first-aid kit. These involve different people and different subject matter with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Claim A concerns arrival timing relative to Otto, while claim B concerns finishing order relative to Esme; these involve different people and different events (arriving vs finishing), so one doesn't bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 24,
+   "rationale": "Claim A concerns relative arrival times of two people, while claim B describes the physical state of a boardwalk. Neither claim's content bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "A shows Kira equipped with mesh bags for debris collection, while B describes everyone being equipped with gloves and buckets; these are complementary tools for a cleanup task and can easily both be true, though B does not mention the bags at all which is a mild inconsistency in completeness rather than a real conflict.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Both describe different people bringing different items, likely for the same event; neither implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 27,
+   "rationale": "Carrying mesh bags for debris collection is consistent with ongoing coastline cleanup work, but the two claims describe different aspects of the activity with no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Claim A about Cleo being head judge has no bearing on Esme finding a flip-flop in the sand; they involve unrelated people and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 25,
+   "rationale": "Being head judge and being the oldest are independent attributes about different people/roles with no logical connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "If Esme finished last in a race, it's plausible she was slow because she was still tying her shoelaces while jogging, which fits with trailing behind others; the two claims are consistent and mutually reinforcing.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "There is no stated connection between Esme trailing in last (in some race or contest) and Leo waving from the boardwalk; they describe unrelated events with no shared context given.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A concerns Esme's finishing position in some race or competition, while claim B concerns a height comparison between Cleo and Otto. There is no logical or factual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "If Esme finished last, then everyone else, including Kira, necessarily finished ahead of her, so B follows directly from A.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "If Esme finished last, then every other competitor, including Otto, finished ahead of her, which is consistent with B.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 27,
+   "rationale": "Claim A describes a momentary action during a beach outing, while claim B refers to future plans to return for ongoing coastal work; neither logically affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Claim A describes Leo waving from a boardwalk, an unrelated event about a different person and action, while claim B compares heights of Cleo and Kira. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Leo waving from the boardwalk is a separate, unrelated event from Esme finding a flip-flop in the sand; neither implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Leo waving from the boardwalk is a small unrelated action that has no bearing on whether the beach looked cleaner by midday; no causal or evidential link connects them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Leo carrying a cooler and clipboard doesn't directly bear on whether the group split into subgroups to cover the shoreline; these describe different aspects of the scene without clear causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Balancing a cooler and clipboard doesn't preclude also bringing a first-aid kit, though it's not directly implied either since only two items are mentioned.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "A cooler and clipboard don't indicate whether a first-aid kit was brought or not; the items are unrelated to that specific object.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Claim A describes Leo's physical activity with objects, while claim B is about Esme's relative age within a group. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 27,
+   "rationale": "A describes Leo's immediate physical situation with a cooler and clipboard, which is unrelated to future plans about continuing coastal work next month.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Splitting into groups to search a shoreline is a normal precursor to individual members being equipped with gloves and buckets, likely for collecting items like shells or trash; the claims are consistent and A mildly supports the plausibility of B.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "A states the five split into small groups to cover the shoreline, while B refers to 'the group' reconvening to sort collected items, implying they came back together later. Both can be true if they split up first to collect items, then regrouped afterward to sort them.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "A establishes that the group split up to search shoreline sections, which is consistent with Esme, presumably one of the five, being in her own section and finding something like an old flip-flop while searching; this is a mildly supportive contextual fit rather than strong causal support.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 26,
+   "rationale": "Splitting into groups to cover shoreline sections could plausibly include Leo taking time to photograph results, such as during a cleanup effort; the claims are compatible and loosely related but neither strongly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "A establishes that the group was equipped for a beach-cleaning or digging activity with gloves and buckets, which is consistent with and mildly supports the idea that Esme would be searching through sand and finding buried items like a flip-flop.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Leo bringing a first-aid kit has no bearing on Cleo's beachcombing activity; the two claims describe unrelated people and events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "A directly asserts that Leo brought the first-aid kit, while B asserts the negation of that same event, with no indication of different times or occasions to reconcile them.",
+   "relation": "contradicts",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "A establishes Cleo's height relative to Kira, but says nothing about Otto's height, so it does not directly bear on whether Cleo is shorter than Otto.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "These claims concern unrelated subjects (relative heights of two people vs. whether someone brought an item), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Claim A concerns relative heights of Cleo and Kira, while claim B concerns a finishing order between Otto and Esme; they involve entirely different people and attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 25,
+   "rationale": "Claim A concerns relative height between Cleo and Kira, while claim B concerns relative age involving Leo. These attributes are independent and neither entails or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Claim A is about relative height of two individuals, while claim B describes a group activity related to time of day and waste sorting; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Claim A concerns relative heights of two people, while claim B concerns the cleanliness of a beach at midday; they share no subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 25,
+   "rationale": "Claim A concerns relative heights of Cleo and Otto, while claim B concerns relative age of Leo compared to others. Neither height nor age comparisons imply anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "A describes trash washing up overnight along the tide line, and B describes finding an old flip-flop buried in sand, which is consistent with such debris; the two events could occur together on the same beach.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "A establishes that a lot of trash washed up overnight, which makes an unexplained cleaner beach by midday somewhat surprising unless a cleanup occurred; both can be true but sit awkwardly together.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 15,
+   "b": 27,
+   "rationale": "A describes Cleo observing trash on a tide line, suggesting she may be involved in some form of coastal work or monitoring, which makes plans to return for continued coastal work plausible but not directly implied or required.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Otto beating Kira says nothing about how Kira compares to Esme; these involve different pairs of runners.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "The finishing order between Otto and Kira has no bearing on who is the youngest in the group; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Knowing Otto beat Kira gives no information about Otto's finishing position relative to Esme, since Kira and Esme are different people in a race.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "The sorting activity described in A is a cleanup effort that, if continued over time, would plausibly result in a cleaner beach by midday, as stated in B.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 24,
+   "rationale": "A describes the group actively sorting collected items into bins and bags, which plausibly results in organized piles of sorted waste, making B a likely consequence or concurrent state.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Leo not bringing a first-aid kit has no bearing on Esme finding a flip-flop in the sand; the two events are independent.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 24,
+   "rationale": "Leo's failure to bring a first-aid kit has no logical bearing on whether sorted waste piles were arranged along a boardwalk; the two events involve unrelated people and circumstances.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 27,
+   "rationale": "Not bringing a first-aid kit has no logical bearing on whether the group planned to return the following month to continue coastal work.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "A only states Kira's finishing position relative to Esme and says nothing about Otto's performance, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 25,
+   "rationale": "Both claims can hold simultaneously since one person being youngest and another being oldest are compatible, non-conflicting positions within the same group.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "Esme finding a discarded flip-flop buried in sand suggests litter/debris scattered in the sand, which sits a bit awkwardly with a scene of neatly sorted waste piles along the boardwalk, though both could occur in different areas of the same beach.",
+   "relation": "tension",
+   "confidence": 0.5
+  },
+  {
+   "a": 23,
+   "b": 24,
+   "rationale": "If the beach looked cleaner by midday, this is consistent with waste having been collected and sorted into piles along the boardwalk, which would explain the cleanliness; the two describe compatible aspects of a cleanup effort.",
+   "relation": "supports",
+   "confidence": 0.72
+  },
+  {
+   "a": 24,
+   "b": 26,
+   "rationale": "Neatly sorted waste piles along the boardwalk provide a visually documentable result, making it plausible and consistent that Leo would photograph them for a newsletter about the cleanup.",
+   "relation": "supports",
+   "confidence": 0.7
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto",
+     "his"
+    ]
+   },
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira",
+     "her"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme",
+     "her",
+     "she"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo",
+     "his"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "finish_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "first_aid_kit_bringer",
+    "arity": "binary",
+    "arity_span": "Leo did not bring the first-aid kit.",
+    "order_kind": null,
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_order",
+    "subject": "kira",
+    "comparative": "later than",
+    "object": "otto",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "subject": "cleo",
+    "comparative": "taller than",
+    "object": "kira",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "height",
+    "subject": "cleo",
+    "comparative": "shorter than",
+    "object": "otto",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "finish_order",
+    "subject": "otto",
+    "comparative": "ahead of",
+    "object": "kira",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "finish_order",
+    "subject": "kira",
+    "comparative": "ahead of",
+    "object": "esme",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 22,
+    "attribute": "finish_order",
+    "subject": "otto",
+    "comparative": "ahead of",
+    "object": "esme",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_order",
+    "entity": "otto",
+    "comparative": "first",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_order",
+    "entity": "esme",
+    "comparative": "last",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 20,
+    "attribute": "age",
+    "entity": "esme",
+    "comparative": "youngest",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 25,
+    "attribute": "age",
+    "entity": "leo",
+    "comparative": "oldest",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "later than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "last",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "shorter than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "finish_order",
+    "comparative": "ahead of",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "youngest",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "age",
+    "comparative": "oldest",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 29,
+  "blind": [
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    20
+   ],
+   [
+    2,
+    21
+   ],
+   [
+    2,
+    22
+   ],
+   [
+    3,
+    13
+   ],
+   [
+    3,
+    18
+   ],
+   [
+    3,
+    24
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    4,
+    12
+   ],
+   [
+    4,
+    27
+   ],
+   [
+    5,
+    21
+   ],
+   [
+    5,
+    25
+   ],
+   [
+    6,
+    14
+   ],
+   [
+    7,
+    27
+   ],
+   [
+    8,
+    13
+   ],
+   [
+    8,
+    21
+   ],
+   [
+    8,
+    23
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    20
+   ],
+   [
+    9,
+    27
+   ],
+   [
+    10,
+    21
+   ],
+   [
+    10,
+    26
+   ],
+   [
+    11,
+    21
+   ],
+   [
+    12,
+    15
+   ],
+   [
+    13,
+    18
+   ],
+   [
+    13,
+    22
+   ],
+   [
+    14,
+    17
+   ],
+   [
+    14,
+    23
+   ],
+   [
+    15,
+    21
+   ],
+   [
+    15,
+    27
+   ],
+   [
+    16,
+    20
+   ],
+   [
+    18,
+    21
+   ],
+   [
+    18,
+    24
+   ],
+   [
+    18,
+    27
+   ],
+   [
+    21,
+    24
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 28,
+  "pairs_requested": 64,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 35,
+  "blind_pairs_related": 6,
+  "entity_relations": 12,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    4,
+    11
+   ],
+   [
+    15,
+    23
+   ],
+   [
+    21,
+    24
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence",
+    "height": "magnitude",
+    "age": "magnitude",
+    "finish_order": "sequence",
+    "first_aid_kit_bringer": null
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 1,
+     "attribute": "arrival_order",
+     "entity": "otto",
+     "extreme": "min",
+     "edges": 2
+    },
+    {
+     "claim_id": 6,
+     "attribute": "arrival_order",
+     "entity": "esme",
+     "extreme": "max",
+     "edges": 2
+    },
+    {
+     "claim_id": 20,
+     "attribute": "age",
+     "entity": "esme",
+     "extreme": "min",
+     "edges": 1
+    },
+    {
+     "claim_id": 25,
+     "attribute": "age",
+     "entity": "leo",
+     "extreme": "max",
+     "edges": 1
+    }
+   ],
+   "extreme_edges": 6,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 28,
+  "n_edges": 20,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   5
+  ],
+  "harmony": 0.9903895186914055,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   0.9999999999999997,
+   0.9999999999999998,
+   0.33783783783783783,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   0.33783783783783783,
+   1.0000000000000002,
+   1.0000000000000002,
+   0.9999999999999996,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   1.0000000000000002,
+   0.9999999999999999,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   7.395570986446985e-33,
+   0.0,
+   8.011868568650901e-33,
+   0.0,
+   0.0,
+   9.367723249499515e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   1.5160920522216322e-31,
+   8.320017359752859e-32,
+   0.8858655953250547,
+   0.0,
+   0.0,
+   1.0846837446788913e-31,
+   2.7733391199176196e-32,
+   5.731567514496414e-32,
+   0.8858655953250547,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   3.3957996779435743e-31,
+   4.4373425918681915e-32,
+   4.474320446800426e-32,
+   1.0205887961296842e-31,
+   4.930380657631324e-32,
+   2.0954117794933126e-32,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 16,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 1,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 16,
+    "residual": 8.011868568650901e-33
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 22,
+    "residual": 4.4373425918681915e-32
+   },
+   {
+    "a": 10,
+    "b": 11,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 10,
+    "b": 17,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 10,
+    "b": 21,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 11,
+    "b": 21,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 12,
+    "b": 18,
+    "residual": 0.4474068663257852
+   },
+   {
+    "a": 15,
+    "b": 21,
+    "residual": 1.0846837446788913e-31
+   },
+   {
+    "a": 17,
+    "b": 23,
+    "residual": 9.244463733058732e-33
+   },
+   {
+    "a": 17,
+    "b": 24,
+    "residual": 8.628166150854816e-33
+   },
+   {
+    "a": 20,
+    "b": 25,
+    "residual": 0.0
+   },
+   {
+    "a": 23,
+    "b": 24,
+    "residual": 3.549874073494553e-32
+   },
+   {
+    "a": 24,
+    "b": 26,
+    "residual": 8.628166150854816e-33
+   }
+  ],
+  "residual_ranking": [
+   12,
+   18
+  ],
+  "culprits": [
+   {
+    "claim": 12,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.009610481308594543
+   },
+   {
+    "claim": 18,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.009610481308594543
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 9422439,
+   "output_tokens": 869936,
+   "thinking_tokens": 0,
+   "calls": 23299,
+   "api_calls": 8925,
+   "cache_hits": 14374,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 27.098536999999997,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 248520,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 10292375,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    10,
+    11,
+    15,
+    17,
+    21,
+    23,
+    24,
+    26
+   ],
+   [
+    1,
+    2,
+    3,
+    6,
+    7,
+    16,
+    19,
+    22
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    12,
+    18
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    20,
+    25
+   ],
+   [
+    27
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    12,
+    18
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 4,
+    "b": 11,
+    "rationale": "A shows Kira equipped with mesh bags for debris collection, while B describes everyone being equipped with gloves and buckets; these are complementary tools for a cleanup task and can easily both be true, though B does not mention the bags at all which is a mild inconsistency in completeness rather than a real conflict.",
+    "confidence": 0.55
+   },
+   {
+    "a": 15,
+    "b": 23,
+    "rationale": "A establishes that a lot of trash washed up overnight, which makes an unexplained cleaner beach by midday somewhat surprising unless a cleanup occurred; both can be true but sit awkwardly together.",
+    "confidence": 0.65
+   },
+   {
+    "a": 21,
+    "b": 24,
+    "rationale": "Esme finding a discarded flip-flop buried in sand suggests litter/debris scattered in the sand, which sits a bit awkwardly with a scene of neatly sorted waste piles along the boardwalk, though both could occur in different areas of the same beach.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 3,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "kira",
+   "b": "otto",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "kira",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "otto",
+   "b": "cleo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "kira",
+   "b": "otto",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 19,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "kira",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 22,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "otto",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "otto",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "kira",
+   "b": "otto",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 6,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "kira",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 6,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "otto",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 20,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "leo",
+   "b": "esme",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 25,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "leo",
+   "b": "esme",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

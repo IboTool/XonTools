@@ -1,0 +1,45 @@
+{
+ "request": "8bb545799200ccc69ef8fe5ffafc64304b53e754e895b5d8b6d6422471a6da2d",
+ "tag": "text-5d58bc684ed3-relate-004",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 28,
+    "b": 29,
+    "rationale": "Zeno pointing out the hawk gives everyone a reason to pause and watch it.",
+    "relation": "supports",
+    "confidence": 0.9
+   },
+   {
+    "a": 30,
+    "b": 31,
+    "rationale": "Reaching the summit shelter as progress made would naturally lead to feeling tired but pleased with progress.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 30,
+    "b": 32,
+    "rationale": "Arriving at the summit shelter at sunset sets up settling in for the night under the stars.",
+    "relation": "supports",
+    "confidence": 0.8
+   },
+   {
+    "a": 31,
+    "b": 32,
+    "rationale": "Feeling tired but pleased is consistent with then settling in for the night, though it doesn't directly cause the stargazing detail.",
+    "relation": "supports",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 944,
+  "output_tokens": 273,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

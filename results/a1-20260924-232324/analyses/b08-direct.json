@@ -1,0 +1,1583 @@
+{
+ "label": "b08-direct",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-03f2aa07dfde",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Esme is the head judge.",
+   "span": "Assume that Esme is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Hugo arrived at the bakery a little earlier than Nell.",
+   "span": "Hugo arrived at the bakery a little earlier than Nell",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Hugo and Nell were both eager to see the fresh batches lined up on the counter.",
+   "span": "both eager to see the fresh batches lined up on the counter",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Jun drove the minibus.",
+   "span": "Jun drove the minibus.",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Leo was the tallest among the staff gathered that morning.",
+   "span": "Leo was the tallest among the staff gathered that morning",
+   "kind": "quoted"
+  },
+  {
+   "id": 5,
+   "text": "The bread trays were stacked according to size.",
+   "span": "The bread trays were stacked according to size",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "The largest loaves were reserved for the market stall outside.",
+   "span": "the largest loaves reserved for the market stall outside",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Hugo and Nell worked different shifts.",
+   "span": "Hugo and Nell worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Jun had recently turned thirty.",
+   "span": "Jun had recently turned thirty",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Nell was the quickest at kneading dough.",
+   "span": "Nell was the quickest at kneading dough",
+   "kind": "quoted"
+  },
+  {
+   "id": 10,
+   "text": "Esme is not the head judge.",
+   "span": "Esme is not the head judge.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Nell and Leo worked different shifts.",
+   "span": "Nell and Leo worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "The bakery windows fogged up whenever the ovens reached full heat.",
+   "span": "The bakery windows fogged up whenever the ovens reached full heat",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Esme ranked highest among the staff in seniority.",
+   "span": "Esme ranked highest among the staff in seniority",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Esme worked there the longest of anyone present.",
+   "span": "having worked there the longest of anyone present",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Hugo and Leo worked different shifts.",
+   "span": "Hugo and Leo worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Jun was younger than Hugo by a couple of years.",
+   "span": "Jun was younger than Hugo by a couple of years",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "The shop ran three shifts.",
+   "span": "The shop ran three shifts.",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Esme's role as head judge has no bearing on arrival times of Hugo and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Esme being head judge is unrelated to Hugo and Nell's eagerness about bread batches.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Esme's judging role has no connection to who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Being head judge does not relate to Leo's height among staff.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Esme's judging status is unrelated to how bread trays are stacked.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Esme being head judge has no bearing on loaf reservation for the market stall.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Esme's judging role is unrelated to Hugo and Nell's shift schedules.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Esme being head judge has no connection to Jun's age.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Esme's judging role is unrelated to Nell's kneading speed.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "If Esme is the head judge, then the claim that Esme is not the head judge is directly false.",
+   "relation": "contradicts",
+   "confidence": 0.99
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Esme's judging role is unrelated to Nell and Leo's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Esme being head judge has no relation to window fogging from oven heat.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Being head judge does not necessarily imply highest seniority among staff, these are different roles/measures.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Being head judge does not necessarily mean Esme has worked there the longest, these are distinct concepts.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Esme's judging role is unrelated to Hugo and Leo's shift schedules.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Esme's judging status has no bearing on Jun and Hugo's relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Esme being head judge does not relate to how many shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Hugo arriving earlier than Nell doesn't determine whether both were eager to see the fresh batches.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Hugo's arrival time relative to Nell has no connection to who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Hugo's arrival time relative to Nell is unrelated to Leo's height.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Arrival timing has no bearing on how bread trays are stacked.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Arrival order is unrelated to which loaves are reserved for the market stall.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Arriving slightly earlier could be consistent with different shifts but doesn't establish it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Hugo's arrival time relative to Nell has no bearing on Jun's age.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Arrival time is unrelated to kneading speed skill.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Hugo and Nell's arrival times have no bearing on Esme's judging status.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Hugo and Nell's arrival timing doesn't inform Nell and Leo's shift arrangement.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Arrival time is unrelated to window fogging from oven heat.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Arrival order has no bearing on seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Arrival timing doesn't affect how long Esme has worked there.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Hugo and Nell's arrival times don't inform Hugo and Leo's shift arrangement.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Arrival time has no bearing on Jun's age relative to Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Arrival timing is unrelated to the number of shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Eagerness to see bread has no bearing on who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Eagerness about bread has no bearing on relative height.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Being eager to see the batches doesn't imply anything about how trays are stacked.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Eagerness to see fresh batches doesn't determine which loaves go to the market stall.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Shared eagerness doesn't indicate whether they work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Eagerness about bread has no bearing on Jun's age.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Eagerness to see bread doesn't relate to kneading speed skill.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "No logical connection between Hugo and Nell's anticipation and Esme's judging status.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Anticipation about batches has no bearing on shift scheduling of Nell and Leo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "No connection between eagerness to see bread and window fogging from oven heat.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Eagerness to see batches has nothing to do with seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "No relation between anticipation of fresh bread and Esme's tenure length.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Anticipation about batches doesn't inform shift differences between Hugo and Leo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "No connection between excitement over bread and Jun's age relative to Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Eagerness about batches has no bearing on the number of shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Driving the minibus has no bearing on who is tallest among staff.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "No connection between driving the minibus and how bread trays are stacked.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Driving the minibus is unrelated to which loaves are reserved for the market stall.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Jun driving the minibus doesn't inform whether Hugo and Nell work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Driving a minibus has no logical bearing on Jun's age.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "No connection between driving the minibus and Nell's kneading speed.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Driving the minibus is unrelated to Esme's status as head judge.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Jun driving the minibus doesn't relate to Nell and Leo's shift differences.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "No connection between minibus driving and window fogging from oven heat.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Driving the minibus has no bearing on Esme's seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "No logical link between driving the minibus and Esme's length of employment.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Jun driving the minibus is unrelated to Hugo and Leo's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Jun driving the minibus has no bearing on Jun's age relative to Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Jun driving the minibus has no bearing on the number of shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Leo's height relative to staff has no bearing on how bread trays are stacked.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Leo's height has no bearing on which loaves are reserved for the market stall.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Leo's height has no bearing on whether Hugo and Nell work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Leo's height has no bearing on Jun's age.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Leo's height has no bearing on who kneads dough fastest.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Leo's height has no bearing on whether Esme is head judge.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Leo's height has no bearing on whether Nell and Leo work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Leo's height has no bearing on window fogging from oven heat.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Leo's height has no bearing on Esme's seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Leo's height has no bearing on how long Esme has worked there.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Leo's height has no bearing on whether Hugo and Leo work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Leo's height has no bearing on Jun's age relative to Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Leo's height has no bearing on the number of shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "If trays are stacked by size, larger loaves being grouped together supports the idea that the largest loaves could be set aside for a specific purpose like the market stall.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Stacking bread trays by size has no bearing on staff shift schedules.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Stacking bread trays by size has no bearing on Jun's age.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Stacking bread trays by size has no bearing on who kneads dough fastest.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Stacking bread trays by size has no bearing on whether Esme is head judge.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Tray stacking by size has no bearing on Nell and Leo's shift schedules.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Tray stacking by size is unrelated to window fogging from oven heat.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Tray stacking organization has no connection to staff seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Tray stacking by size does not relate to how long Esme has worked there.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Tray stacking organization is unrelated to Hugo and Leo's shift schedules.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Tray stacking by size has no bearing on the age difference between Jun and Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Tray stacking organization is unrelated to the number of shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Reserving large loaves for a market stall has no connection to Hugo and Nell's shift schedules.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Reserving large loaves for the market stall is unrelated to Jun's age.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Reserving large loaves for the market has no bearing on who kneads dough fastest.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Reserving loaves for the market stall is unrelated to Esme's judging status.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Reserving large loaves for the market has no connection to Nell and Leo's shifts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Reserving loaves for the market stall is unrelated to window fogging from oven heat.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Reserving loaves for the market stall has no bearing on staff seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Reserving large loaves for the market is unrelated to how long Esme has worked there.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Reserving loaves for the market stall has no connection to Hugo and Leo's shift schedules.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Reserving large loaves for the market is unrelated to the age gap between Jun and Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Reserving loaves for the market stall has no bearing on the number of shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Hugo and Nell's shift arrangement has no bearing on Jun's age.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Hugo and Nell working different shifts is unrelated to who kneads dough the quickest.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Shift assignments of Hugo and Nell have no bearing on who is head judge.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Hugo and Nell working different shifts doesn't determine whether Nell and Leo work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Shift differences between Hugo and Nell are unrelated to oven-induced window fogging.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Shift assignment has no bearing on seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Shift assignment has no bearing on tenure length.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Hugo and Nell working different shifts doesn't establish anything about Hugo and Leo's shifts.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Shift differences are unrelated to age comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "That Hugo and Nell work different shifts is consistent with and mildly suggests multiple shifts exist, supporting the claim of three shifts.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Jun's age has no bearing on Nell's dough-kneading skill.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Jun's age is unrelated to who is head judge.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Jun's age has no bearing on Nell and Leo's shift arrangement.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Jun's age is unrelated to oven heat and window fogging.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Jun's age doesn't determine Esme's seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Jun's age has no direct bearing on Esme's tenure length, though it's plausible younger staff have shorter tenure, this doesn't confirm Esme's specific status.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Jun's age is unrelated to Hugo and Leo's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "If Jun recently turned thirty and is younger than Hugo by a couple years, this is consistent, making the age gap claim more plausible.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Jun's age is unrelated to the number of shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Nell's dough-kneading skill has no bearing on who is head judge.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Nell's kneading skill is unrelated to her shift schedule relative to Leo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Nell's dough skill has no bearing on window fogging from oven heat.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Kneading speed has no bearing on seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Kneading speed does not relate to length of employment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Nell's kneading skill is unrelated to Hugo and Leo's shift schedules.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Kneading speed has no connection to Jun's age relative to Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Nell's kneading skill does not bear on how many shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Esme not being head judge has no bearing on Nell and Leo's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Esme's judge status is unrelated to oven heat and window fogging.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Not being head judge does not imply anything about seniority ranking among staff.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Not being head judge is unrelated to how long Esme has worked there.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Esme's judge role has no bearing on Hugo and Leo's shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Esme's judge status is unrelated to Jun and Hugo's age difference.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Esme's judge role is unrelated to the number of shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Shift assignments of Nell and Leo are unrelated to oven heat causing fogged windows.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Nell and Leo working different shifts does not affect Esme's seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Nell and Leo's shift difference is unrelated to Esme's tenure length.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Nell and Leo working different shifts does not directly determine whether Hugo and Leo work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Nell and Leo's shift arrangement has no bearing on Jun and Hugo's age gap.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "That Nell and Leo work different shifts is consistent with and slightly supports the idea that multiple shifts exist, but doesn't specifically confirm three.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Window fogging from oven heat is unrelated to staff seniority ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Window fogging from oven heat is unrelated to how long Esme has worked there.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Oven heat and window fog have no bearing on shift scheduling of Hugo and Leo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Fogged windows have nothing to do with relative ages of Jun and Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Window fogging from oven heat does not indicate anything about the number of shifts run.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Ranking highest in seniority typically implies having worked there the longest, so A supports B.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Esme's seniority rank has no bearing on whether Hugo and Leo work different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Esme's seniority ranking does not relate to Jun's age relative to Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Esme's seniority rank does not indicate how many shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Esme working the longest tenure has no direct connection to Hugo and Leo's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Esme's tenure length is unrelated to the age difference between Jun and Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Esme's long tenure does not inform the number of shifts the shop operates.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Hugo and Leo working different shifts has no bearing on Jun's age relative to Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Hugo and Leo working different shifts is consistent with and slightly supports the existence of multiple shifts, though it doesn't confirm exactly three.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "The age difference between Jun and Hugo has no bearing on the number of shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "head_judge",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "shift",
+    "arity": "multi",
+    "arity_span": "The shop ran three shifts."
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "kneading_speed",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "seniority",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "head_judge",
+    "kind": "same",
+    "a": "esme",
+    "b": "head_judge",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "hugo",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 7,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "hugo",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "head_judge",
+    "kind": "different",
+    "a": "esme",
+    "b": "head_judge",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 11,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "nell",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "hugo",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "hugo",
+    "b": "jun",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 18,
+  "pairs_requested": 153,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 7,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 18,
+  "n_edges": 7,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct",
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9670319789803891,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    4
+   ],
+   [
+    9
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "head_judge",
+    "entities": [
+     "esme",
+     "head_judge"
+    ],
+    "relations": [
+     0,
+     3
+    ],
+    "claim_ids": [
+     0,
+     10
+    ],
+    "min_confidence": 0.6
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   0.005025125628140708,
+   1.0000000000000002,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002
+  ],
+  "claim_residuals": [
+   0.9999747481124212,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   1.9899497487437183,
+   4.930380657631324e-32,
+   0.0,
+   1.232595164407831e-32,
+   1.232595164407831e-32,
+   4.930380657631324e-32,
+   0.0,
+   4.930380657631324e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 10,
+    "residual": 0.9999747481124212
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "residual": 0.0
+   },
+   {
+    "a": 7,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 17,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   10,
+   0
+  ],
+  "culprits": [
+   {
+    "claim": 10,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.03296802101961094
+   },
+   {
+    "claim": 0,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.03296802101961094
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 448,
+   "api_calls": 0,
+   "cache_hits": 448,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0,
+    10
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7,
+    11,
+    15,
+    17
+   ],
+   [
+    8,
+    16
+   ],
+   [
+    9
+   ],
+   [
+    12
+   ],
+   [
+    13,
+    14
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    0,
+    10
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "head_judge",
+    "entities": [
+     "esme",
+     "head_judge"
+    ],
+    "relations": [
+     0,
+     3
+    ],
+    "claim_ids": [
+     0,
+     10
+    ],
+    "min_confidence": 0.6
+   }
+  ]
+ }
+}

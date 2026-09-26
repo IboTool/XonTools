@@ -1,0 +1,25 @@
+{
+ "request": "a4cfd141f3fbe3197db11abd7b92f781895e1c7fddfa0763e107edeb69f96e61",
+ "tag": "text-8ca8174907ae-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Tess arrived before Ivo.",
+     "Ivo arrived before Jude.",
+     "Jude arrived before Tess."
+    ],
+    "explanation": "These three statements form a cyclic ordering (Tess before Ivo, Ivo before Jude, Jude before Tess) which is impossible for a linear sequence of arrivals."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1044,
+  "output_tokens": 184,
+  "thinking_tokens": 63
+ },
+ "stop_reason": "end_turn"
+}

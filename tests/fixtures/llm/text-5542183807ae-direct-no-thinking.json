@@ -1,0 +1,25 @@
+{
+ "request": "054f61c30db50b6053754bc6adb969d197c695cd73dbca8eafd0715c258792ed",
+ "tag": "text-5542183807ae-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Pia is taller than Kai.",
+     "Kai is taller than Leo.",
+     "Leo is taller than Pia."
+    ],
+    "explanation": "These three height comparisons form a cycle (Pia > Kai > Leo > Pia), which is logically impossible."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1107,
+  "output_tokens": 101,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

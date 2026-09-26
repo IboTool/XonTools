@@ -1,0 +1,80 @@
+{
+ "request": "535aab78406c6935170f4a0c2085683c6e74b2b089e24bcf2b018faf5accd63b",
+ "tag": "text-be07a337e964-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "Sami being ranked highest explains why this fact would surprise newcomers, supporting claim 21.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 22,
+    "b": 25,
+    "rationale": "Sami and Dev being in different houses implies there are at least two houses, which is consistent with there being three houses, but doesn't strongly establish it.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   },
+   {
+    "a": 22,
+    "b": 26,
+    "rationale": "House membership of Sami and Dev has no bearing on Xavi's age relative to the group.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 22,
+    "b": 28,
+    "rationale": "Sami and Dev's house assignment is unrelated to Xavi's promise about bringing static grass.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 23,
+    "b": 24,
+    "rationale": "Lena's reminder about the approaching exhibition date supports the urgency implied by needing the layout finished within three weeks.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 24,
+    "b": 27,
+    "rationale": "The layout deadline creates context for needing supplies soon, supporting the relevance of Xavi's promise to bring glue next weekend.",
+    "relation": "supports",
+    "confidence": 0.5
+   },
+   {
+    "a": 24,
+    "b": 28,
+    "rationale": "The layout deadline creates context for needing supplies soon, supporting the relevance of Xavi's promise to bring static grass next weekend.",
+    "relation": "supports",
+    "confidence": 0.5
+   },
+   {
+    "a": 24,
+    "b": 29,
+    "rationale": "The layout deadline is unrelated to the general mood at the end of the meeting.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "rationale": "Xavi promising to bring glue does not contradict or particularly support a separate promise to bring static grass, as both can be true simultaneously.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1075,
+  "output_tokens": 651,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,90 @@
+{
+ "request": "1dd3b92bb8c322a2abf7cbae4b140ee754674e0deaf2ca4150ee47d2ddaa6599",
+ "tag": "text-d0238e30cc37-var2-relate-010",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 16,
+    "b": 17,
+    "rationale": "The afternoon winding down with admiration is a natural precursor to making future plans, but doesn't directly imply them.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 16,
+    "b": 18,
+    "rationale": "Admiring planted rows has no bearing on the fence gate's condition.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 16,
+    "b": 19,
+    "rationale": "Admiring the rows doesn't relate to Nell's offer about gloves.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 16,
+    "b": 20,
+    "rationale": "The afternoon's conclusion doesn't inform whether gloves wore through during digging.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "rationale": "The plan to repair the sticking fence gate presupposes and confirms that the gate had been sticking.",
+    "relation": "supports",
+    "confidence": 0.95
+   },
+   {
+    "a": 17,
+    "b": 19,
+    "rationale": "Agreeing to meet again doesn't directly imply anything about Nell's glove offer.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   },
+   {
+    "a": 17,
+    "b": 20,
+    "rationale": "The plan to meet again doesn't relate to gloves wearing through during digging.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 18,
+    "b": 19,
+    "rationale": "The gate sticking is unrelated to gloves being offered.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 18,
+    "b": 20,
+    "rationale": "The gate's condition has no bearing on gloves wearing through.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "rationale": "Nell's offer to bring extra gloves is likely motivated by and supports the fact that gloves wore through during digging.",
+    "relation": "supports",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1007,
+  "output_tokens": 630,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b00-consistent",
+ "repetition": 2,
+ "call": 25
+}

@@ -1,0 +1,25 @@
+{
+ "request": "f4c4043a5850134437ea214c7ab9adc5e729f7b68e8daf85b427993f0a8636e9",
+ "tag": "text-73f9c26e76a0-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Ana is in the same class as Esme.",
+     "Esme is in the same class as Lena.",
+     "Ana is not in the same class as Lena."
+    ],
+    "explanation": "If Ana is in the same class as Esme, and Esme is in the same class as Lena, then Ana must be in the same class as Lena, contradicting the statement that she is not."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1079,
+  "output_tokens": 126,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

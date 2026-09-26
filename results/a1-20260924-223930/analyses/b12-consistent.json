@@ -1,0 +1,1834 @@
+{
+ "label": "b12-consistent",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-2c9cc19c0103",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Otto arrived first and began arranging the sheet music into neat stacks by voice part.",
+   "span": "Otto arrived first and began arranging the sheet music into neat stacks by voice part.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Hana is the treasurer.",
+   "span": "Assume that Hana is the treasurer.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Kai came in a few minutes later, greeting everyone with a nod before settling into the tenor section.",
+   "span": "Kai came in a few minutes later, greeting everyone with a nod before settling into the tenor section.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Xavi trailed in shortly after, still tying his shoelace as he found a seat near the back.",
+   "span": "Xavi trailed in shortly after, still tying his shoelace as he found a seat near the back.",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Ana brought the first-aid kit.",
+   "span": "Ana brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "The director tapped her baton twice to signal the start of warmups.",
+   "span": "The director tapped her baton twice to signal the start of warmups",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "The room quieted as scales began to rise and fall.",
+   "span": "the room quieted as scales began to rise and fall",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Otto is older than Kai.",
+   "span": "Otto is older than Kai.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Hana stood near the window, humming softly along with the sopranos while flipping through her folder of music.",
+   "span": "Hana stood near the window, humming softly along with the sopranos while flipping through her folder of music.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Kai is older than Xavi.",
+   "span": "Kai is older than Xavi.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "The rehearsal moved into a new piece with tricky harmonies that required several run-throughs before the parts blended smoothly.",
+   "span": "The rehearsal moved into a new piece, one with tricky harmonies that required several run-throughs before the parts blended smoothly.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Xavi struggled at first to find his note but eventually locked in with the basses around him.",
+   "span": "Xavi struggled at first to find his note but eventually locked in with the basses around him.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Otto is older than Xavi.",
+   "span": "Otto is older than Xavi.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Ana passed around cups of water while others stretched and chatted about the upcoming concert.",
+   "span": "Ana passed around cups of water while others stretched and chatted about the upcoming concert.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Kai's part had gotten easier since the last rehearsal.",
+   "span": "Kai mentioned that his part had gotten easier since the last rehearsal",
+   "kind": "quoted"
+  },
+  {
+   "id": 15,
+   "text": "Xavi still needed more practice.",
+   "span": "Xavi laughed, saying he still needed more practice",
+   "kind": "quoted"
+  },
+  {
+   "id": 16,
+   "text": "Hana suggested they run through the closing number one more time before wrapping up.",
+   "span": "Hana suggested they run through the closing number one more time before wrapping up.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Otto nodded in agreement, and the group returned to their places as the director raised her hands for the final pass of the evening.",
+   "span": "Otto nodded in agreement, and the group returned to their places as the director raised her hands for the final pass of the evening.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "The song ended cleanly.",
+   "span": "The song ended cleanly",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Everyone applauded their own progress before packing up for the night.",
+   "span": "everyone applauded their own progress before packing up for the night",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Otto's arrival order has no bearing on who is treasurer.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Otto arriving first is consistent with Kai arriving later, but doesn't establish it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Otto's arrival order is unrelated to Xavi's later arrival details.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Otto arranging sheet music has no connection to Ana bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Otto's arranging music doesn't affect the director signaling warmups.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Otto's task has no direct bearing on scales rising and falling.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Arrival order does not indicate age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Otto's arranging sheet music is unrelated to Hana humming near the window.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Otto's arrival order has no bearing on Kai's age relative to Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Otto's early arrangement task doesn't affect the later rehearsal of a new piece.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Otto's task is unrelated to Xavi's struggle to find his note.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Arrival order does not establish relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Otto's arranging sheet music is unrelated to Ana passing water.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Otto's early task has no bearing on whether Kai's part got easier.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Otto's task is unrelated to Xavi's need for more practice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Otto's early arranging has no bearing on Hana's later suggestion.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Otto's initial task doesn't determine his later agreement or actions.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Otto's arranging music has no bearing on how the song ended.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Otto's early task is unrelated to the group's later applause and packing up.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Hana being treasurer has no connection to Kai's arrival and greeting.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Hana's role as treasurer has no bearing on Xavi's arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Hana being treasurer is unrelated to Ana bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Hana's treasurer role has no connection to the director signaling warmups.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Hana's treasurer status doesn't affect the room quieting for scales.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Hana's role has nothing to do with relative ages of Otto and Kai.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Being treasurer doesn't relate to Hana's actions near the window, though it's about the same person it doesn't causally support or contradict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Hana's treasurer role is unrelated to Kai and Xavi's relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Hana's treasurer role has no bearing on the rehearsal of harmonies.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Hana's treasurer role doesn't relate to Xavi's struggle finding his note.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Hana's role as treasurer is unrelated to Otto's age relative to Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Hana's treasurer position doesn't relate to Ana passing water.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Hana's treasurer role has no connection to Kai's part difficulty.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Hana's treasurer role is unrelated to Xavi's need for more practice.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Being treasurer doesn't directly cause or prevent Hana suggesting a re-run of the closing number, though same person could be seen as loosely connected but not causally supportive.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Hana's treasurer role is unrelated to Otto's nodding and the group's actions.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Hana's treasurer role has no bearing on how the song ended.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Hana's treasurer role doesn't relate to the group applauding and packing up.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Kai's arrival timing doesn't causally relate to Xavi's separate arrival details.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Kai's arrival is unrelated to Ana bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Kai's arrival timing doesn't affect the director's signal to start warmups.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Kai's arrival is unrelated in content to the room quieting during scales.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Kai's arrival time has no bearing on Otto's age relative to Kai.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Kai's arrival is unrelated to Hana's humming and folder-flipping.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Kai's arrival timing does not affect the age comparison between Kai and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Kai's arrival is unrelated to the rehearsal moving into a new piece.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Kai's arrival has no bearing on Xavi's struggle to find his note.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Kai's arrival time is unrelated to Otto's age relative to Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Kai's arrival is unrelated to Ana passing around water cups.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Kai's arrival timing does not relate to whether his part had gotten easier.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Kai's arrival is unrelated to Xavi's need for more practice.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Kai's arrival is unrelated to Hana's suggestion to run through the closing number.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Kai's arrival is unrelated to Otto's nodding and the final pass beginning.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Kai's arrival is unrelated to how the song ended.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Kai's arrival is unrelated to the group applauding and packing up.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Xavi's late arrival is unrelated to Ana bringing the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Xavi's arrival is unrelated to the director signaling warmups with her baton.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Xavi's late arrival is unrelated to the room quieting for scales.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Xavi's arrival timing does not affect the age comparison between Otto and Kai.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Xavi's arrival is unrelated to Hana humming by the window.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Xavi's arrival timing is unrelated to the age comparison between Kai and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Xavi's late arrival is unrelated to the content or difficulty of a new piece being rehearsed.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Xavi arriving late and finding a seat could plausibly lead to him struggling to find his note, showing a mild causal connection.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Xavi's tardiness has no bearing on relative ages of Otto and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Xavi's late arrival is unrelated to Ana passing water and others stretching.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Xavi's tardiness has no logical connection to Kai's part being easier.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Arriving late while still tying his shoelace suggests some disorganization, which could support the idea he needs more practice, but this is a weak inference.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Xavi's late arrival is unrelated to Hana's suggestion for a final run-through.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Xavi's tardiness earlier has no direct bearing on Otto's later agreement and the final pass.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Xavi's late arrival is unrelated to whether the song ended cleanly.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Xavi's tardiness is unrelated to the group's shared applause at the end.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Ana bringing a first-aid kit has no bearing on the director's baton signal.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Ana bringing a first-aid kit is unrelated to the room quieting for scales.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Ana's first-aid kit has no connection to the ages of Otto and Kai.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Ana bringing a first-aid kit is unrelated to Hana humming by the window.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Ana's first-aid kit is unrelated to the ages of Kai and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Ana bringing a first-aid kit has no logical bearing on rehearsing a new piece with tricky harmonies.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Ana's first-aid kit is unrelated to Xavi's struggle to find his note.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Ana's first-aid kit is unrelated to the relative ages of Otto and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Ana bringing the first-aid kit is consistent with and supports the detail that she was passing around cups of water, both showing her helpful role.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Ana's first-aid kit is unrelated to whether Kai's part became easier.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Ana bringing the first-aid kit has no bearing on whether Xavi needs more practice.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Bringing a first-aid kit is unrelated to Hana's suggestion to run through the closing number.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Bringing a first-aid kit has no connection to Otto nodding and the group returning to places.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Bringing a first-aid kit does not affect whether the song ended cleanly.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Bringing a first-aid kit is unrelated to everyone applauding and packing up.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "The baton tap signaling warmups directly precedes and explains the room quieting for scales.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Signaling warmups has no bearing on relative ages of Otto and Kai.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "The director's signal to start warmups is consistent with and supports Hana humming along during warmups.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Signaling warmups has no bearing on relative ages of Kai and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "The warmup signal is a separate earlier event from the later piece with tricky harmonies, with no direct causal link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "The warmup signal doesn't specifically relate to Xavi's struggle to find his note in a later piece.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Signaling warmups has no bearing on relative ages of Otto and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "The warmup signal is consistent with Ana passing water while others stretched, suggesting concurrent warmup activity.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "The warmup signal has no bearing on whether Kai's part had gotten easier.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "The warmup signal has no bearing on whether Xavi needed more practice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "The warmup signal at the start has no direct bearing on Hana's later suggestion to run the closing number.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "The initial warmup signal has no direct bearing on the later final pass event.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "The warmup signal has no direct bearing on whether the song ended cleanly.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "The warmup signal has no direct bearing on the ending applause and packing up.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "The room quieting for scales has no bearing on relative ages of Otto and Kai.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "The room quieting for scales could plausibly coincide with Hana humming along, but this is only weak temporal correlation, not a logical support.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Room quieting during scales has no bearing on relative ages of Kai and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "The scales episode is a separate event from moving into a new piece; no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Scales rising and falling doesn't inform whether Xavi struggled with his note.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "No connection between room quieting during scales and ages of Otto and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Scales beginning has no bearing on Ana passing water during stretching.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Room quieting during scales doesn't inform whether Kai's part got easier.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Scales rising and falling has no bearing on whether Xavi needed more practice.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "The scales moment doesn't relate to Hana's suggestion about the closing number.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "No causal or logical link between scales quieting the room and Otto's later nod.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Scales beginning is a separate event from the song ending cleanly.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "The scales event doesn't bear on the later applause and packing up.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Otto's age relative to Kai has no bearing on Hana's actions near the window.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Otto being older than Kai doesn't determine the relation between Kai and Xavi's ages directly, though it's part of a chain not fully established here.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Age comparison between Otto and Kai has no bearing on rehearsal content difficulty.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Otto's age relative to Kai doesn't relate to Xavi's struggle finding his note.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Otto being older than Kai doesn't by itself establish or contradict Otto being older than Xavi, since Kai and Xavi's relative ages aren't specified in this pair alone.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Age comparison between Otto and Kai has no bearing on Ana passing water.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Otto being older than Kai doesn't relate to whether Kai's part got easier.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Otto's age relative to Kai has no bearing on Xavi needing more practice.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Otto's age relative to Kai has no bearing on Hana's suggestion.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Age comparison between Otto and Kai does not affect Otto's nodding or the group's actions.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Relative ages are unrelated to how the song ended.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Age comparison has no connection to applause or packing up.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Hana's actions at the window have no bearing on Kai and Xavi's relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Hana humming near the window doesn't relate to the piece's difficulty or run-throughs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Hana's humming is unrelated to Xavi's struggle to find his note.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Hana's actions don't bear on Otto and Xavi's age comparison.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Hana humming near the window is unrelated to Ana passing water.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Hana's humming doesn't relate to whether Kai's part got easier.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Hana's actions are unrelated to Xavi's need for more practice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Hana humming while looking at music could plausibly precede her later suggestion, but this doesn't logically support or contradict it.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Hana's earlier humming doesn't bear on Otto's nodding or the group returning to places.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Hana's humming near the window is unrelated to how the song ended.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Hana's earlier actions don't relate to the applause and packing up later.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Kai being older than Xavi has no bearing on the piece's difficulty.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Age comparison between Kai and Xavi doesn't relate to Xavi's struggle finding his note.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Kai being older than Xavi is consistent with but doesn't establish Otto being older than Xavi; it's a separate comparison and doesn't logically support it alone.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Kai and Xavi's ages are unrelated to Ana passing water.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Kai being older than Xavi doesn't relate to whether Kai's part got easier.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Kai's relative age to Xavi has no bearing on whether Xavi needs more practice.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Age comparison between Kai and Xavi is unrelated to Hana's suggestion about the closing number.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Age comparison between Kai and Xavi has no connection to Otto's nodding and the group's return to places.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Kai being older than Xavi has no bearing on how the song ended.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Age comparison is unrelated to the applause and packing up.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "A rehearsal with tricky harmonies requiring several run-throughs supports the idea that Xavi struggled before locking in, as this fits the described difficulty.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "The rehearsal's musical difficulty has no bearing on Otto's age relative to Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "The rehearsal moving into a new piece is unrelated to Ana passing water during stretching.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "A new tricky piece requiring run-throughs doesn't indicate whether Kai's part specifically got easier since last time.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "The difficulty of the new piece supports the idea that Xavi (among others) still needed more practice.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "The rehearsal moving to a new piece is unrelated to Hana's suggestion about the closing number.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "The rehearsal detail about tricky harmonies is unrelated to Otto's nodding and the director's final pass.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "The rehearsal requiring several run-throughs before blending smoothly supports the idea that eventually the song ended cleanly.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "The difficult rehearsal process is unrelated to the specific act of applauding and packing up.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Xavi's struggle with his note is unrelated to Otto's age relative to Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Xavi's struggle to find his note is unrelated to Ana passing water during stretching.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Xavi's struggle with his note doesn't indicate anything about Kai's part becoming easier.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Xavi eventually locking in after struggling suggests he still has room to improve, supporting the idea he needs more practice.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Xavi's struggle and eventual success finding his note is unrelated to Hana's suggestion about the closing number.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Xavi's struggle with his note is unrelated to Otto's nodding and the group returning to places.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Xavi eventually locking in with the basses suggests the group achieved cohesion, making a clean ending more plausible.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Xavi's eventual success is a minor positive event that could contribute to a general sense of progress being applauded.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Otto's relative age has no bearing on Ana passing around water and chatting.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Otto's age relative to Xavi is unrelated to whether Kai's part became easier.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Otto being older than Xavi does not indicate anything about Xavi's need for more practice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Otto's age relative to Xavi has no connection to Hana's suggestion to rehearse again.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Otto being older than Xavi is unrelated to Otto nodding and the group resuming rehearsal.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Otto's relative age has no bearing on how the song ended.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Otto's age relative to Xavi is unrelated to the group applauding their progress.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Ana passing water and chatting about the concert has no bearing on whether Kai's part became easier.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Ana's water-passing activity is unrelated to whether Xavi needed more practice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "The break activity of passing water and chatting is unrelated to Hana's later suggestion to rehearse again.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Ana's actions during a break are unrelated to Otto's nodding and the group resuming.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Passing water and chatting during a break does not affect how the song later ended.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "The described break activity is unrelated to the later applause for progress.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Kai's part becoming easier is about a different person and doesn't imply anything about Xavi's need for practice.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Kai's part getting easier is unrelated to Hana's suggestion to run through the closing number again.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Kai's improved part has no direct bearing on Otto's nodding and the group's return to rehearsal.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Kai's part becoming easier suggests overall improvement, which supports the song ending cleanly.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Kai's improvement is a form of progress that aligns with the group applauding their own progress.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Xavi needing more practice provides a plausible motive for suggesting another run-through, making it more likely.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "The need for more practice supports the idea that the group would do another final pass rehearsal.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Needing more practice doesn't determine whether the song ends cleanly or not; these are largely independent outcomes.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Needing more practice doesn't preclude the group applauding their progress afterward.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Hana's suggestion directly leads to Otto's agreement and the group returning to positions for the final pass.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Suggesting a run-through makes it plausible that the song eventually ends, including cleanly.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "The suggestion to run through once more before wrapping up supports that they would later pack up for the night.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "The group starting the final pass sets up the scenario where the song could end, supporting that it ended cleanly.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Starting the final pass of the evening supports the later act of applauding and packing up for the night.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "The song ending cleanly supports the idea that everyone would applaud their progress afterward.",
+   "relation": "supports",
+   "confidence": 0.75
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana",
+     "her"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi",
+     "his"
+    ]
+   },
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana"
+    ]
+   },
+   {
+    "id": "director",
+    "mentions": [
+     "The director",
+     "her"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "role",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "arrival_order",
+    "kind": "greater",
+    "a": "kai",
+    "b": "otto",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 2,
+    "attribute": "arrival_order",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "kai",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_order",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "kai",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 7,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "otto",
+    "b": "kai",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "kai",
+    "b": "xavi",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "otto",
+    "b": "xavi",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 20,
+  "pairs_requested": 190,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 6,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 20,
+  "n_edges": 21,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   0.9999999999999998,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   2.958228394578794e-32,
+   7.642090019328552e-32,
+   9.121204216617949e-32,
+   0.0,
+   1.9721522630525296e-32,
+   0.0,
+   3.57452597678271e-32,
+   3.8826747678846674e-32,
+   0.0,
+   1.0600318413907348e-31,
+   0.0,
+   7.395570986446986e-32,
+   4.3140830754274083e-32,
+   4.067564042545842e-32,
+   1.1709654061874395e-32,
+   7.395570986446985e-33
+  ],
+  "edge_residuals": [
+   {
+    "a": 3,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 13,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "residual": 4.190823558986625e-32
+   },
+   {
+    "a": 5,
+    "b": 8,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 5,
+    "b": 13,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 10,
+    "b": 11,
+    "residual": 9.244463733058732e-33
+   },
+   {
+    "a": 10,
+    "b": 15,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 10,
+    "b": 18,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 11,
+    "b": 15,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 11,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 16,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 15,
+    "b": 17,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "residual": 1.1093356479670479e-32
+   },
+   {
+    "a": 16,
+    "b": 18,
+    "residual": 4.930380657631324e-33
+   },
+   {
+    "a": 16,
+    "b": 19,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 17,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 19,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 637,
+   "api_calls": 0,
+   "cache_hits": 637,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 7548523
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3,
+    10,
+    11,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   [
+    4,
+    5,
+    6,
+    8,
+    13
+   ],
+   [
+    7
+   ],
+   [
+    9
+   ],
+   [
+    12
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": []
+ }
+}

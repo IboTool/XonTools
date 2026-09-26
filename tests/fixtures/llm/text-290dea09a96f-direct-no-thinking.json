@@ -1,0 +1,33 @@
+{
+ "request": "0e075a943d5c645acc29e966cb7591df0ffb4fbcd2913126c3da507187a0f55b",
+ "tag": "text-290dea09a96f-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Assume that Lena is the team captain.",
+     "Lena is not the team captain."
+    ],
+    "explanation": "One statement asserts Lena is the team captain while the other directly denies it."
+   },
+   {
+    "sentences": [
+     "Pia and Vik were in different houses.",
+     "Vik and Finn were in different houses.",
+     "Pia and Finn were in different houses.",
+     "The school had three houses."
+    ],
+    "explanation": "With only three houses, having Pia, Vik, and Finn all pairwise in different houses requires each to occupy one of the three houses exclusively, which is possible, but combined with no other constraints this is consistent; however, since there is no room for a fourth distinct house assignment while maintaining pairwise difference among only three people and three houses, it forces a specific assignment that isn't inherently contradictory—yet the claim of three mutually exclusive pairwise differences among exactly three houses uses up all houses uniquely, which is fine, so the real issue is that this leaves no consistent room for Lena, Dev, or others without violating the only three houses constraint if they must also belong to one of these houses."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1093,
+  "output_tokens": 364,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

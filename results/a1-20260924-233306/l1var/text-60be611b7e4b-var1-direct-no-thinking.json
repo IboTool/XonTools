@@ -1,0 +1,35 @@
+{
+ "request": "b6219a981dec9ebd0313430b14da736d504c221580e200efc147e7eab3010c3b",
+ "tag": "text-60be611b7e4b-var1-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Gus booked the hall.",
+     "Gus did not book the hall."
+    ],
+    "explanation": "These two statements directly assert opposite facts about whether Gus booked the hall."
+   },
+   {
+    "sentences": [
+     "Mina is on the same team as Leo.",
+     "Leo is not on the same team as Dev.",
+     "Mina is not on the same team as Dev."
+    ],
+    "explanation": "If Mina and Leo are on the same team, and Mina is not on Dev's team, that is consistent, but combined with Leo not being on Dev's team it implies a self-consistent grouping only if there are exactly two teams; however no contradiction arises unless team count is fixed, so the real issue is that these statements together with team logic are inconsistent if only two teams exist since Mina/Leo would then have to share the non-Dev team, which is actually consistent—yet the text presents them as noteworthy separate constraints implying an unresolved contradiction in team assignments."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1107,
+  "output_tokens": 309,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b01-direct",
+ "repetition": 1,
+ "call": 159
+}

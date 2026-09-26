@@ -1,0 +1,157 @@
+{
+ "request": "381ebef8b95f1135efe8d6f50b37aa5b3873c64fb6c4f090f90db550e34fdd40",
+ "tag": "text-cab920de3947-relate-001",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 4,
+    "b": 6,
+    "rationale": "A establishes Wren's arrival order relative to Milo; B adds Ana arriving after Wren, which is consistent but not directly implied.",
+    "relation": "unrelated",
+    "confidence": 0.65
+   },
+   {
+    "a": 4,
+    "b": 14,
+    "rationale": "Wren arriving shortly after Milo doesn't determine whether Yara arrives last.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 4,
+    "b": 18,
+    "rationale": "Arrival order of Wren and Milo has no bearing on an afternoon surprise announcement.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 5,
+    "b": 23,
+    "rationale": "Wren carrying note cards for rebuttal is unrelated to Ana and Milo discussing closing argument timing.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 5,
+    "b": 25,
+    "rationale": "Wren's note cards have no connection to the group staying late to fold tables.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "rationale": "Ana arriving a few minutes after Wren is consistent with her reviewing her statement during the walk, slightly supporting that she was still arriving/preparing.",
+    "relation": "supports",
+    "confidence": 0.4
+   },
+   {
+    "a": 6,
+    "b": 12,
+    "rationale": "Ana's arrival time relative to Wren doesn't relate to the structure of preliminary matches.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 6,
+    "b": 14,
+    "rationale": "Ana arriving after Wren doesn't establish whether Yara arrived last, since Yara's position isn't specified relative to Ana.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   },
+   {
+    "a": 6,
+    "b": 17,
+    "rationale": "Ana's arrival timing relative to Wren has no bearing on height comparisons between Milo and Wren.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "rationale": "Milo's height compared to Ana has nothing to do with Nell bringing the judges packet.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 8,
+    "b": 11,
+    "rationale": "Height comparison between Milo and Ana is unrelated to how quickly morning rounds moved.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 8,
+    "b": 13,
+    "rationale": "If Milo is taller than Ana, then Ana cannot also be taller than Wren while being shorter than Milo unless heights allow a consistent order, but this doesn't contradict since Wren could be shortest.",
+    "relation": "unrelated",
+    "confidence": 0.5
+   },
+   {
+    "a": 8,
+    "b": 17,
+    "rationale": "Milo being taller than Ana doesn't directly determine his height relative to Wren, though it's consistent with him being tallest.",
+    "relation": "unrelated",
+    "confidence": 0.5
+   },
+   {
+    "a": 8,
+    "b": 22,
+    "rationale": "Height comparison has no bearing on whether Ana and Milo discussed strategy near the coffee station.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 8,
+    "b": 23,
+    "rationale": "Height comparison has no bearing on whether Ana and Milo discussed closing argument timing.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "rationale": "Nell bringing the judges packet is consistent with her having printed ballots the night before, supporting her role in event preparation.",
+    "relation": "supports",
+    "confidence": 0.5
+   },
+   {
+    "a": 9,
+    "b": 20,
+    "rationale": "Nell arriving with the judges packet supports the idea that she was responsible for administrative tasks, consistent with her later tallying speaker points.",
+    "relation": "supports",
+    "confidence": 0.45
+   },
+   {
+    "a": 9,
+    "b": 24,
+    "rationale": "Nell bringing the judges packet is unrelated to the group's overall assessment of the tournament's competitiveness.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 9,
+    "b": 25,
+    "rationale": "Nell bringing the judges packet doesn't relate to everyone staying late to fold tables.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 10,
+    "b": 13,
+    "rationale": "Nell printing ballots the previous evening has no bearing on height comparisons between Ana and Wren.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1348,
+  "output_tokens": 1564,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

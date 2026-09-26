@@ -1,0 +1,24 @@
+{
+ "request": "cd02f56f495579f2e1f5dd9a8f061ec8d605b1ba35458f6c0444dd1abcc7448d",
+ "tag": "text-aafb51e12025-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Hugo took the photographs.",
+     "Hugo is the tallest of the group, a fact that becomes obvious whenever they line up for the yearly club photo."
+    ],
+    "explanation": "If Hugo took the photographs, he could not also be lined up in the photo demonstrating his height."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1078,
+  "output_tokens": 108,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

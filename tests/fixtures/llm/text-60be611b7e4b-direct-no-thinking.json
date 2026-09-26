@@ -1,0 +1,32 @@
+{
+ "request": "b6219a981dec9ebd0313430b14da736d504c221580e200efc147e7eab3010c3b",
+ "tag": "text-60be611b7e4b-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Gus booked the hall.",
+     "Gus did not book the hall."
+    ],
+    "explanation": "These two statements directly negate each other, so both cannot be true."
+   },
+   {
+    "sentences": [
+     "Mina is on the same team as Leo.",
+     "Leo is not on the same team as Dev.",
+     "Mina is not on the same team as Dev."
+    ],
+    "explanation": "If Mina is on the same team as Leo, and Mina is not on the same team as Dev, then Leo should also not be on the same team as Dev, which is consistent, but combined with typical transitive team logic these three statements about team membership create an inconsistent grouping since Mina and Leo share a team while both are separately said not to share with Dev, leaving an unclear but conflicting team structure."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1107,
+  "output_tokens": 246,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

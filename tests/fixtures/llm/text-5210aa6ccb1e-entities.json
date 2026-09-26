@@ -1,0 +1,185 @@
+{
+ "request": "4a4a2c7311cc717914d2af25ceb71cd8b13f0cbb57eb0b9e257912fd6a681a98",
+ "tag": "text-5210aa6ccb1e-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno",
+     "he",
+     "himself"
+    ]
+   },
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo",
+     "his"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "choir",
+    "mentions": [
+     "The choir"
+    ]
+   },
+   {
+    "id": "community_hall",
+    "mentions": [
+     "the community hall",
+     "the hall"
+    ]
+   },
+   {
+    "id": "folding_chairs",
+    "mentions": [
+     "The folding chairs"
+    ]
+   },
+   {
+    "id": "sheet_music_stack",
+    "mentions": [
+     "a stack of sheet music",
+     "The stack of sheet music"
+    ]
+   },
+   {
+    "id": "conductor",
+    "mentions": [
+     "The conductor"
+    ]
+   },
+   {
+    "id": "pianist",
+    "mentions": [
+     "The pianist"
+    ]
+   },
+   {
+    "id": "alto_section",
+    "mentions": [
+     "the alto section"
+    ]
+   },
+   {
+    "id": "soprano_section",
+    "mentions": [
+     "The sopranos"
+    ]
+   },
+   {
+    "id": "minibus",
+    "mentions": [
+     "the minibus"
+    ]
+   },
+   {
+    "id": "music_stand",
+    "mentions": [
+     "his music stand"
+    ]
+   },
+   {
+    "id": "next_rehearsal",
+    "mentions": [
+     "The next rehearsal"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "milo",
+    "b": "zeno",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "milo",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 14,
+    "attribute": "class",
+    "kind": "same",
+    "a": "yara",
+    "b": "milo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "class",
+    "kind": "same",
+    "a": "milo",
+    "b": "zeno",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "kai",
+    "b": "hugo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "class",
+    "kind": "different",
+    "a": "yara",
+    "b": "zeno",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2181,
+  "output_tokens": 740,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

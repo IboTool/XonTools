@@ -1,0 +1,2117 @@
+{
+ "label": "b00-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-d0238e30cc37",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Isla arrived first, carrying a wheelbarrow full of compost.",
+   "span": "Isla arrived first, carrying a wheelbarrow full of compost",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Kai showed up soon after with a bag of seed packets from the local co-op.",
+   "span": "Kai showed up soon after with a bag of seed packets from the local co-op",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Uma is the treasurer.",
+   "span": "Assume that Uma is the treasurer",
+   "kind": "premise"
+  },
+  {
+   "id": 3,
+   "text": "Cy came along a little later, pushing a wheelbarrow of mulch toward the far beds near the fence.",
+   "span": "Cy came along a little later, pushing a wheelbarrow of mulch toward the far beds near the fence",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Uma stood by the tool shed, sorting spades and trowels into neat rows for the volunteers.",
+   "span": "Uma stood by the tool shed, sorting spades and trowels into neat rows for the volunteers",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Nell brought the first-aid kit.",
+   "span": "Nell brought the first-aid kit",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Everyone gathered near the central plot to plan the layout for the season, discussing which rows would hold squash and which would hold beans.",
+   "span": "Everyone gathered near the central plot to plan the layout for the season, discussing which rows would hold squash and which would hold beans",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Isla is older than Kai.",
+   "span": "Isla is older than Kai",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "The group decided to split into pairs to speed up the planting, with Kai and Cy taking the northern section near the sunflowers.",
+   "span": "The group decided to split into pairs to speed up the planting, with Kai and Cy taking the northern section near the sunflowers",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "The rainwater barrels needed cleaning before the next storm.",
+   "span": "the rainwater barrels needed cleaning before the next storm",
+   "kind": "quoted"
+  },
+  {
+   "id": 10,
+   "text": "Nell volunteered to handle the task of cleaning the rainwater barrels later in the week.",
+   "span": "Nell volunteered to handle that task later in the week",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Kai is older than Cy.",
+   "span": "Kai is older than Cy",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "By midday, the sun was high and the smell of turned earth filled the air as everyone worked steadily along the rows.",
+   "span": "By midday, the sun was high and the smell of turned earth filled the air as everyone worked steadily along the rows",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Isla is older than Cy.",
+   "span": "Isla is older than Cy",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Uma paused to hand out water bottles to the tired volunteers.",
+   "span": "Uma paused to hand out water bottles to the tired volunteers",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Cy knelt to press seeds gently into the soil.",
+   "span": "Cy knelt to press seeds gently into the soil",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "The afternoon wound down with everyone admiring the freshly planted rows.",
+   "span": "The afternoon wound down with everyone admiring the freshly planted rows",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "The group agreed to meet again the following weekend to check on the seedlings and repair the fence gate that had been sticking.",
+   "span": "the group agreed to meet again the following weekend to check on the seedlings and repair the fence gate that had been sticking",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "The fence gate had been sticking.",
+   "span": "the fence gate that had been sticking",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Nell offered to bring extra gloves next time.",
+   "span": "Nell offered to bring extra gloves next time",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "A few pairs of gloves had worn through during the digging.",
+   "span": "since a few pairs had worn through during the digging",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "A establishes Isla arrived first with compost, and B describes Kai arriving afterward with seeds; these events are compatible and even suggest a coordinated gardening activity, though not strictly dependent.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Isla's arrival order and what she carried has no bearing on who holds the treasurer role; the two claims involve unrelated subjects and facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "A states Isla arrived first, which is consistent with Cy arriving later; the two events describe different people with different loads and don't conflict.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Both claims describe different people doing different tasks that could easily occur at the same event without conflict or reinforcement.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Both claims describe different people bringing different items; Isla arriving first with compost does not affect whether Nell brought a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Isla arriving first with compost is consistent with a later gathering to plan the garden layout; the events fit a plausible sequence of a communal gardening day without any conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Arriving first with a wheelbarrow of compost has no bearing on relative ages of Isla and Kai; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Both claims describe events at what appears to be a group gardening activity, but arriving first with compost has no direct bearing on the later decision to split into pairs for planting.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Isla arriving with compost is a gardening activity but has no logical bearing on whether rainwater barrels need cleaning before a storm; the two claims describe unrelated tasks.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A describes Isla's arrival with compost, while claim B concerns Nell's separate volunteering to clean rainwater barrels; they involve different people and unrelated actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Claim A concerns Isla's arrival order and cargo, while claim B concerns relative ages of Kai and Cy, entirely different people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "A describes Isla arriving with compost, which is consistent with and mildly supports a scene of gardening work happening later with turned earth smells and people working the rows.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Arriving first with a wheelbarrow of compost has no bearing on relative age between Isla and Cy.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A describes Isla's arrival with compost, while claim B describes Uma handing out water bottles; these involve different people and actions with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Isla arriving first with compost is a separate event from Cy planting seeds; the claims can coexist as part of a shared gardening scene but neither implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Isla arriving first with compost is consistent with a gardening event that later concludes with admiring freshly planted rows; A sets up plausible context for B but doesn't strongly determine it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Isla's early arrival with compost, likely for gardening, is loosely consistent with a group tending seedlings and a fence, but the claims describe different events with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Isla arriving with a wheelbarrow of compost has no logical bearing on whether the fence gate had been sticking; these are independent details.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "A describes Isla's arrival with compost, while B describes Nell offering gloves for a future occasion; the two events involve different people and topics with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Isla arriving with compost suggests gardening activity was planned or underway, which makes digging plausible, but it doesn't directly establish that gloves were used or worn through.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Kai bringing seed packets has no bearing on whether Uma holds the treasurer role; the two statements concern unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Both describe different people arriving separately at what seems to be the same gardening event, carrying different materials; these are compatible parallel actions rather than conflicting or directly reinforcing claims.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Both describe concurrent preparatory activities by different people for what seems to be a shared gardening event, but neither claim implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Both describe different people bringing different items to what appears to be the same event; there is no logical or causal connection between Kai bringing seed packets and Nell bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Kai arriving with seed packets is consistent with and plausibly contributes to a group gathering to plan planting layout for squash and beans; they fit a shared gardening scenario without directly entailing each other.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A describes an action Kai took but provides no information about relative ages of Isla and Kai.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "A establishes Kai arrived with seed packets for planting, which is consistent with and mildly supports the later plan of the group organizing into planting pairs including Kai.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Kai's arrival with seed packets is about planting and does not bear on the condition of the rainwater barrels or their need for cleaning.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Kai bringing seed packets and Nell volunteering for barrel cleaning describe separate people and separate tasks with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A describes Kai's action with seed packets and has no bearing on relative ages of Kai and Cy.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "A describes Kai arriving with seed packets, presumably to help plant; B describes a later midday scene of people working the rows, which is a plausible continuation of the same gardening activity. The claims are compatible and B builds on the scenario set up by A, though neither strictly entails the other.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A describes Kai arriving with seed packets, which has no logical or factual connection to the relative ages of Isla and Cy.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Both describe separate actions by different people during what appears to be a shared event, but neither statement implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Kai arriving with seed packets provides a plausible source for seeds that Cy then plants, making B a natural continuation of A rather than a logical requirement.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Kai arriving with seed packets sets up a plausible planting activity, making it likely that the afternoon later involved admiring freshly planted rows; the claims fit together as sequential parts of the same event.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Kai bringing seed packets suggests planting activity is starting, which makes a later follow-up visit to check on seedlings plausible, but the two claims describe different events with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Kai bringing seed packets from a co-op is unrelated in content to a fence gate sticking; neither statement bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Both claims describe separate actions by different people that could easily occur in the same gardening context, with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Kai arriving with seed packets doesn't inherently relate to gloves wearing through during digging; these are separate events without a clear causal or evidential link.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A states Uma's role as treasurer, while claim B describes Cy's separate action of arriving with a wheelbarrow of mulch; they involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Being treasurer does not preclude also sorting garden tools for volunteers; these describe different roles/activities that can coexist for the same person.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "The two claims describe unrelated facts about different people and different roles/actions; knowing Uma is treasurer gives no information about who brought the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Uma's role as treasurer is unrelated to the group's discussion about planning garden layout for squash and beans.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Claim A concerns Uma's role as treasurer, while claim B concerns the relative ages of Isla and Kai. These involve different people and different subject matters with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Uma's role as treasurer has no bearing on the group's decision to split into pairs for planting or on who took the northern section.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Uma's role as treasurer has no logical or causal connection to the condition of rainwater barrels needing cleaning.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A is about who holds the treasurer role, while claim B concerns Nell volunteering for a cleaning task; these describe unrelated people and activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "The two claims concern unrelated facts: one is about a treasurer role assignment, the other about relative ages of different people. No logical connection exists between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A concerns Uma's organizational role while claim B describes a scene of outdoor work and atmospheric conditions; neither informs or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "The two claims concern entirely different subjects (Uma's role as treasurer vs. relative ages of Isla and Cy) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Being treasurer is an organizational role and doesn't preclude also handing out water bottles to volunteers; these describe different aspects of Uma's involvement and are not in conflict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Uma's role as treasurer has no logical or topical connection to Cy planting seeds; the two claims involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Uma being treasurer is an organizational role fact with no connection to a gardening/planting event described in claim 16.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Claim A concerns Uma's role as treasurer, while claim B concerns a group's plan to meet again for gardening and repair tasks. There is no shared context or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A concerns Uma's role as treasurer, while claim B concerns a physical fence gate sticking; the two describe unrelated facts with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "The claim about Uma being treasurer has no logical or thematic connection to Nell's offer to bring gloves; they involve different people and unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Claim A concerns Uma's role as treasurer, which has no logical or thematic connection to gloves wearing through during digging in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Both claims describe different people doing separate garden-related tasks at what appears to be the same time; neither statement affects the likelihood of the other, they simply coexist as parallel events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "The two claims describe different people doing unrelated tasks with no causal or logical connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "A has Cy heading toward the far beds while B describes everyone gathered at the central plot; both could occur at different moments or Cy could pass through before or after joining the group, but the described locations and activities sit awkwardly together as simultaneous events.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A describes Cy's movement with a wheelbarrow and has no connection to the relative ages of Isla and Kai.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "A has Cy heading toward the far beds near the fence with mulch, while B has Cy paired with Kai working the northern section near the sunflowers; these could be reconciled if the fence beds are in the northern section, but as written the destinations seem distinct, creating tension rather than outright contradiction.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "A describes Cy moving mulch to garden beds, which has no logical bearing on the state or need for cleaning of separate rainwater barrels.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "A describes Cy performing a gardening task near the fence, while B describes Nell's separate volunteering to clean rainwater barrels later in the week. The two claims concern different people, tasks, and timeframes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Claim A describes Cy's activity and timing but gives no information about relative ages of Kai and Cy.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "A describes Cy arriving later with mulch for gardening work, which is consistent with and contributes to the general scene of everyone working steadily along the rows described in B.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A describes Cy's actions and location but says nothing about age or a comparison with Isla, so it has no bearing on the relative ages claim.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Both claims describe separate activities that could plausibly occur around the same time during a gardening or volunteer event, but neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "A shows Cy heading with mulch toward the far beds, which is plausibly a prelude to kneeling and planting, though it could also be a separate task; the two are compatible but not strongly linked.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Cy arriving with mulch for the beds is consistent with ongoing garden work that could culminate in an afternoon spent admiring freshly planted rows; the two events fit a plausible timeline without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "A describes Cy heading toward beds near the fence, and B mentions a fence gate needing repair; these are plausibly the same general area but the claims describe different events (Cy's arrival vs. a future group meeting) without direct logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "A places Cy near the fence heading to the far beds, while B describes a mechanical issue with the fence gate; these could easily coexist without any direct bearing on one another, though the shared fence context makes them loosely related in setting.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Both describe garden-related activities but do not reference each other's content; Cy pushing mulch has no bearing on Nell offering gloves.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Cy's arrival with mulch for gardening work is consistent with ongoing digging activity, but doesn't specifically bear on whether gloves wore through during that digging.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Both describe different people doing separate preparatory tasks, likely for the same volunteer event, but neither implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "If Uma is by the tool shed sorting tools while 'everyone' gathers near the central plot, either she is excluded from 'everyone' or the two activities happen at different moments; this is an awkward but not impossible combination.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A concerns Uma sorting garden tools, while claim B concerns the relative ages of Isla and Kai. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "A describes Uma preparing tools for volunteers, which fits with a planting activity that later gets organized into pairs; the claims are compatible and loosely connected by context but neither entails the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Uma sorting garden tools and the state of rainwater barrels are separate facts about the garden with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Both describe garden-related volunteer activities, but they involve different people and tasks with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Claim A describes Uma's activity organizing gardening tools, while claim B concerns a relative age comparison between two unrelated individuals, Kai and Cy. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "A establishes Uma preparing gardening tools for volunteers, which fits naturally with a later scene of everyone working steadily in a garden setting; A's context supports the plausibility of B's depiction of ongoing gardening activity.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A describes Uma organizing tools for volunteers, while claim B compares the ages of Isla and Cy. These involve different people and unrelated subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Both describe Uma helping volunteers, plausibly at different moments during the same event; sorting tools and later handing out water are compatible activities.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Both describe plausible concurrent gardening activities by different people; A does not affect the likelihood or truth of B in any direct way.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "A shows preparation work with tools happening, plausibly earlier in the day, while B describes an afternoon conclusion with completed planting; these fit together as sequential events in the same gardening activity.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "A shows Uma preparing tools for volunteers, consistent with an organized gardening group that would plan follow-up activities like B describes, but they do not directly imply each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "A describes Uma organizing tools near a shed, while B describes a fence gate sticking; these concern different objects and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Both suggest a gardening or volunteering context, but there is no direct logical connection between Uma sorting tools and Nell offering gloves for a future occasion.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "A describes Uma organizing gardening tools for volunteers, implying a gardening or digging activity is underway or planned. B mentions gloves worn through from digging, which is consistent with the same activity context, but neither directly confirms the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Bringing a first-aid kit doesn't inherently relate to planning a garden layout; they could co-occur but neither influences the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "The two claims concern unrelated matters: one is about who brought a first-aid kit, the other about relative ages of different people. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Bringing a first-aid kit and deciding how to split into pairs for planting are independent decisions with no logical bearing on each other as stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Nell bringing a first-aid kit has no logical or causal bearing on whether rainwater barrels needed cleaning; these are independent events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Bringing a first-aid kit is unrelated to volunteering for a cleaning task later in the week; the claims concern different, independent actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A concerns Nell bringing a first-aid kit, while claim B concerns relative ages of Kai and Cy. There is no shared subject matter or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A is about Nell bringing a first-aid kit, while claim B describes a midday scene of people working in fields. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A concerns who brought a first-aid kit, while claim B concerns a relative age comparison between two different people; there is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Both describe different people performing separate supportive actions during what seems to be the same activity; neither confirms nor denies the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "The two claims describe unrelated actions by different people with no logical or causal connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Bringing a first-aid kit is unrelated to how the afternoon concluded with admiring planted rows; there is no logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A concerns Nell bringing a first-aid kit, while claim B concerns a group's plan to reconvene about seedlings and a fence gate. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "There is no logical or causal connection stated between someone bringing a first-aid kit and a fence gate sticking; they concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Nell bringing the first-aid kit is a mundane fact that doesn't logically bear on whether she offered to bring extra gloves next time; both can easily be true together without one implying or conflicting with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Bringing a first-aid kit suggests anticipation of injuries, which could relate to hands getting hurt from worn gloves during digging, but the claims describe unrelated events (kit vs. glove wear) without direct causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "The gathering to plan garden layout has no bearing on the relative ages of Isla and Kai; these are unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "A describes the group first gathering together to plan the layout, and B describes them subsequently deciding to split into pairs to plant, including assigning Kai and Cy to a section; these are naturally sequential events in the same gardening activity.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "A describes a planning meeting about garden layout, while B concerns maintenance of rainwater barrels; the two topics do not bear on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "A describes a group planning garden layout, while B describes Nell volunteering for a separate task of cleaning barrels; these are independent activities that could both occur without conflict or reinforcement.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "The gathering to plan garden layout has no bearing on the relative ages of Kai and Cy; these claims concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "A describes an initial planning gathering to decide layout, while B describes people already working steadily along rows by midday; these can both be true as a sequence of events (planning first, then working), so they support a coherent narrative rather than conflict.",
+   "relation": "supports",
+   "confidence": 0.62
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A describes a gardening planning meeting and claim B states a relative age comparison between two people; neither content bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Both describe plausible moments in the same gathering/gardening event, but A shows a focused planning discussion while B shows a break for hydration; they can coexist as different moments in the same session without conflict, and neither strongly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "A describes a group planning the layout before planting, while B shows someone actually planting seeds; these could occur sequentially with B happening after the planning session, making them compatible and mildly supportive of a coherent gardening narrative.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "A describes people planning the layout before planting, while B describes admiring rows already planted at the end of the same afternoon. Both can be true if the planning happened early and the actual planting occurred later in the same session, but the transition from mere planning discussion to admiring finished planted rows is a fast, slightly surprising jump.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "A shows a group actively planning garden activities together, which supports the plausibility of that same group making further cooperative plans like a follow-up meeting; the claims describe consistent, complementary group behavior.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Claim A describes a gathering to plan garden layout, while claim B mentions a sticking fence gate; these concern unrelated aspects of the setting with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "A describes a group planning session about garden layout, while B is about Nell offering to bring gloves in the future. These could easily occur in the same broader gardening context (Nell could be one of the group), but neither claim implies or affects the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "A describes people planning the layout before planting, while B describes gloves worn through from prior digging; these suggest different phases of the gardening activity but are not directly related in content.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A concerns relative ages of Isla and Kai, while claim B concerns a task-planning decision about pairing up for planting. They share the character Kai but address unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "The relative ages of Isla and Kai have no bearing on the condition or maintenance needs of rainwater barrels; the two claims concern entirely unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A concerns the relative ages of Isla and Kai, while claim B concerns Nell volunteering for a chore. The two share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "A states a relation between Isla and Kai, while B concerns Kai and Cy, a different pair. Neither statement provides information about Cy's age relative to Isla or Kai, so A does not affect the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Claim B describes an unrelated scene about midday work in a field, with no connection to the ages of Isla and Kai.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Knowing Isla is older than Kai tells us nothing about her age relative to Cy, since Kai and Cy are different people with no stated relation between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "The claim about Isla's and Kai's relative ages has no logical or topical connection to Uma handing out water bottles to volunteers; they involve entirely different people and situations.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "The two claims concern entirely different subjects and actions with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A is about relative age of two people, while claim B describes an unrelated scene about admiring freshly planted rows in the afternoon. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "The relative ages of Isla and Kai have no bearing on plans to meet and repair a fence gate; the two claims share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "The two claims concern unrelated subjects (relative ages of two people vs. a fence gate) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A concerns relative ages of Isla and Kai, while claim B concerns Nell offering to bring gloves. These share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "The two claims concern entirely different subjects (age comparison between two people versus wear on gloves from digging) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Claim A discusses planting group logistics while claim B concerns unrelated maintenance of rainwater barrels; neither affects the truth or likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A concerns pairing off for planting the northern section, while claim B concerns Nell volunteering for a separate task (cleaning rainwater barrels) at a different time; they involve different people, tasks, and timing with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Claim A describes a task assignment involving Kai and Cy but gives no information about their relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "B describes the general scene of everyone working steadily by midday, which is consistent with and plausibly follows from the group splitting into pairs to plant, including Kai and Cy in the northern section.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Claim A describes a planting arrangement involving Kai and Cy, which has no bearing on relative ages of Isla and Cy.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Both describe plausible independent activities during the same planting event; splitting into pairs neither implies nor prevents Uma distributing water to tired volunteers.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "A places Cy in the northern section actively planting with Kai, which is consistent with Cy performing the physical act of planting seeds described in B.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "A describes an efficient division of labor for planting, which plausibly leads to completed rows that the group can later admire, so A makes B more plausible.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "A describes the group organizing itself for a planting task, and B describes a follow-up plan agreed by the same group; both fit naturally into an ongoing gardening project without conflicting.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Claim A describes a group planting task and pairing arrangement, while claim B is about a sticking fence gate; the two describe unrelated events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Claim A describes a group splitting into pairs to plant, while claim B is about Nell offering gloves for a future occasion. There is no direct logical or causal link between the pairing decision and the offer of gloves.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Both claims occur in a gardening/planting context, but splitting into pairs to plant and gloves wearing through during digging are independent facts with no direct causal or logical link stated.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "A establishes a need for the barrels to be cleaned, which makes it plausible that someone would volunteer to do that task, as stated in B.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "The claim about rainwater barrels needing cleaning has no logical or thematic connection to the relative ages of Kai and Cy.",
+   "relation": "unrelated",
+   "confidence": 0.99
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Claim A concerns a maintenance need for rainwater barrels before a storm, while claim B describes a midday scene of people working in fields with sun and earth smells; they involve different activities and contexts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns rainwater barrel maintenance, while claim B concerns the relative ages of two people; neither provides evidence bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Claim A concerns rainwater barrels needing cleaning, while claim B describes Uma distributing water bottles to volunteers; these involve different water sources and activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Both may occur in a garden context, but cleaning rainwater barrels and planting seeds are independent activities with no causal or logical connection described.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A concerns rainwater barrels needing cleaning, while claim B describes an afternoon ending with admiration of planted rows; these involve different subjects and activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Claim A concerns rainwater barrels needing cleaning before a storm, while claim B concerns a plan to meet next weekend for seedlings and fence repair; they involve different tasks and objects with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "The two claims describe unrelated maintenance issues on different objects (barrels vs. gate) with no logical or causal connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Cleaning the barrels might involve manual work where gloves would be useful, so A provides mild plausible context for B, but there's no direct logical link established between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "The two claims describe unrelated tasks (barrel cleaning vs. glove wear from digging) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A concerns Nell volunteering for a chore, while claim B concerns relative ages of Kai and Cy. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "A is about Nell volunteering for a future task, while B describes a general midday farming scene; they concern different times and activities with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Claim A is about Nell volunteering to clean rainwater barrels, while claim B is about the relative ages of Isla and Cy. They share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A concerns Nell volunteering for a future barrel-cleaning task, while claim B describes Uma distributing water bottles to volunteers; these involve different people and actions with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "The two claims describe unrelated actions by different people with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "A is about Nell volunteering for a future task and B describes how an afternoon ended with people admiring planted rows; they concern different events with no clear logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Both describe separate tasks and plans that could easily coexist without one affecting the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Claim A concerns Nell volunteering for a household task, while claim B concerns a fence gate sticking; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Both claims describe Nell volunteering to help with tasks, showing a helpful pattern, but they concern different offers and neither confirms nor precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Claim A concerns Nell volunteering for a future cleaning task, while claim B describes gloves wearing out during digging, an unrelated prior activity with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A is about the relative ages of two people, while claim B describes a midday farming scene; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Both claims state that someone is older than Cy, but they refer to different people (Kai and Isla), so knowing Kai is older than Cy has no bearing on whether Isla is older than Cy.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A concerns the relative ages of Kai and Cy, while claim B describes an unrelated event involving Uma and volunteers. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "A's claim about relative age between Kai and Cy has no bearing on whether Cy knelt to plant seeds; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A concerns relative ages of two people, while claim B describes an afternoon scene involving planted rows; there is no content overlap or logical bearing between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A concerns the relative ages of Kai and Cy, while claim B concerns a group's plan to meet and do chores; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "The claims concern unrelated subjects: relative ages of two individuals versus a mechanical issue with a fence gate. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Claim A concerns relative ages of Kai and Cy, while claim B concerns Nell offering to bring gloves in the future; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns worn gloves from digging activity; there is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A describes a midday farming scene with no information about Isla or Cy's relative ages, so it has no bearing on claim B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "A describes everyone working steadily under midday sun, and B depicts Uma pausing to hydrate tired volunteers, which fits naturally as part of the same scene of ongoing labor.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "A describes a midday scene of everyone working along rows in a field with turned earth, which fits well with Cy kneeling to plant seeds as part of that same activity.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "A describes midday work in progress along the rows, and B describes the afternoon aftermath with planting complete and being admired; these are consistent, sequential moments in the same day's activity.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "A describes a group actively working the fields with seedlings likely present, which plausibly makes a future plan to check on seedlings and fix a fence more coherent, but the claims don't directly entail each other since they concern different times and events.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Claim A describes a midday farming scene with people working the rows, while claim B mentions an unrelated fact about a fence gate sticking; neither statement implies or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A describes a scene of steady field work at midday, while B is a specific offer by Nell about future gloves; neither implies nor conflicts with the other, they are just loosely connected in setting.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "A describes people working steadily along the rows, likely digging, which makes it plausible that gloves used during that work would wear through; A's context of sustained labor supports B's claim about worn gloves.",
+   "relation": "supports",
+   "confidence": 0.62
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A concerns relative ages of Isla and Cy, while claim B describes an unrelated action by Uma involving water bottles and volunteers. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A concerns relative age between Isla and Cy, while claim B describes an action Cy performed. Age has no bearing on whether Cy planted seeds.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A concerns relative ages of two individuals, while claim B describes an unrelated scene about an afternoon of gardening; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns relative ages of two individuals, while claim B concerns a group's plan to meet and do chores. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "The claims concern unrelated subjects: one is about a relative age comparison between two people, the other about a gate's mechanical condition. There is no logical or thematic connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A concerns relative ages of Isla and Cy, while claim B concerns Nell offering to bring gloves; these topics share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns worn-out gloves from digging; these topics have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "The two claims describe different people doing unrelated actions in what may be the same general scene, but nothing in A bears on the likelihood or truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "A depicts a moment during a shared work activity (like planting) where volunteers are tired and being cared for, which fits naturally with B's depiction of the afternoon concluding with admiration of the planting results; A provides supporting context for the scene in B.",
+   "relation": "supports",
+   "confidence": 0.62
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "A describes Uma pausing during a volunteer activity to distribute water, which is plausibly part of the same event described in B, but neither claim entails or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A describes Uma handing out water to volunteers, while claim B describes a mechanical issue with a fence gate; there is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Both describe volunteers being supported with supplies during or after an activity, but they involve different people and items with no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Both suggest a scene of laborious volunteer work, but A's water break doesn't directly cause or confirm B's worn gloves; they are largely independent details from the same setting.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "A describes the act of planting seeds, which naturally leads to the existence of freshly planted rows that could later be admired, so A supports B.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "A describes planting seeds, which naturally leads to a future check on seedlings; A supports the plausibility of B's plan to monitor growth, though the fence repair part is unrelated.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "The two claims describe unrelated activities and objects with no logical or causal connection between planting seeds and a fence gate sticking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Both describe gardening-related activity, but Nell's offer to bring gloves next time is not directly caused or implied by Cy's action of planting seeds; they are loosely thematically connected but independent statements.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Both describe gardening-related activity, but pressing seeds into soil doesn't directly cause or imply gloves wearing through from prior digging; they are loosely related by context but not directly supporting or contradicting.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "A describes a peaceful conclusion to a gardening afternoon, and B naturally follows as the group making plans to continue their gardening activity and address maintenance tasks, consistent with a cooperative gardening context.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Claim A describes a calm end to an afternoon of planting, while claim B is an unrelated maintenance detail about a fence gate with no logical connection to the planting activity or the admiration of it.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "A describes a calm, satisfied end to a gardening afternoon, which fits naturally with someone planning ahead for future sessions like offering extra gloves. The claims are loosely connected in context but neither entails nor conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "A describes a calm, satisfied end to an afternoon of planting, while B implies significant strenuous digging that wore through gloves; both can be true since the wearing-through could have happened during the earlier work before the calm admiring phase.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Claim A explicitly states the fence gate had been sticking as part of the plan, directly restating the same fact as claim B.",
+   "relation": "supports",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "B refers to 'next time,' which aligns with A's plan to meet again the following weekend, making B a natural continuation or addition to that plan.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Both claims can easily be true together, describing different aspects of the same gardening/fence project; A's plan to meet again doesn't bear meaningfully on whether gloves wore out during earlier digging.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "The two claims describe unrelated matters: a sticking gate has no logical bearing on whether Nell offered to bring gloves in the future.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "The gate sticking and gloves wearing through during digging are unrelated events with no causal or logical connection to each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "The offer to bring extra gloves next time is a natural response to gloves having worn through during digging, so A supports B's plausibility.",
+   "relation": "supports",
+   "confidence": 0.75
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 7,
+    "attribute": "age",
+    "subject": "isla",
+    "comparative": "older than",
+    "object": "kai",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 11,
+    "attribute": "age",
+    "subject": "kai",
+    "comparative": "older than",
+    "object": "cy",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 13,
+    "attribute": "age",
+    "subject": "isla",
+    "comparative": "older than",
+    "object": "cy",
+    "confidence": 0.98
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 0,
+    "attribute": "arrival_time",
+    "entity": "isla",
+    "comparative": "first",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "first",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 21,
+  "pairs_requested": 210,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 3,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    3,
+    6
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    6,
+    16
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 0,
+     "attribute": "arrival_time",
+     "entity": "isla",
+     "extreme": "min",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 21,
+  "n_edges": 30,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   2
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   0.9999999999999998,
+   1.0000000000000002,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   1.0
+  ],
+  "claim_residuals": [
+   5.608307998055631e-32,
+   2.120063682781469e-31,
+   0.0,
+   5.731567514496414e-32,
+   8.011868568650901e-33,
+   0.0,
+   7.173703856853576e-32,
+   0.0,
+   2.1940193926459387e-31,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   2.100342160150944e-31,
+   0.0,
+   8.850033280448227e-32,
+   7.826979293989726e-32,
+   1.057566651061919e-31,
+   3.697785493223493e-32,
+   0.0,
+   1.232595164407831e-31,
+   4.461994495156348e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 12,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 1,
+    "b": 6,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 1,
+    "b": 8,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 12,
+    "residual": 6.656013887802286e-32
+   },
+   {
+    "a": 1,
+    "b": 15,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 1,
+    "b": 16,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 3,
+    "b": 12,
+    "residual": 8.011868568650901e-33
+   },
+   {
+    "a": 4,
+    "b": 12,
+    "residual": 8.011868568650901e-33
+   },
+   {
+    "a": 4,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 8,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 6,
+    "b": 12,
+    "residual": 7.642090019328552e-33
+   },
+   {
+    "a": 6,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 12,
+    "residual": 6.656013887802286e-32
+   },
+   {
+    "a": 8,
+    "b": 15,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 8,
+    "b": 16,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 14,
+    "residual": 8.628166150854816e-33
+   },
+   {
+    "a": 12,
+    "b": 15,
+    "residual": 9.244463733058732e-33
+   },
+   {
+    "a": 12,
+    "b": 16,
+    "residual": 8.628166150854816e-33
+   },
+   {
+    "a": 12,
+    "b": 20,
+    "residual": 7.642090019328552e-33
+   },
+   {
+    "a": 14,
+    "b": 16,
+    "residual": 3.0568360077314207e-32
+   },
+   {
+    "a": 15,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 16,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 17,
+    "b": 19,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 3.697785493223493e-32
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 222644,
+   "output_tokens": 19508,
+   "thinking_tokens": 0,
+   "calls": 212,
+   "api_calls": 211,
+   "cache_hits": 1,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.6420030000000005,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 242152,
+   "budget_tokens": 2400000
+  },
+  "components": [
+   [
+    0,
+    1,
+    3,
+    4,
+    6,
+    8,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   [
+    2
+   ],
+   [
+    5
+   ],
+   [
+    7
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11
+   ],
+   [
+    13
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 3,
+    "b": 6,
+    "rationale": "A has Cy heading toward the far beds while B describes everyone gathered at the central plot; both could occur at different moments or Cy could pass through before or after joining the group, but the described locations and activities sit awkwardly together as simultaneous events.",
+    "confidence": 0.55
+   },
+   {
+    "a": 3,
+    "b": 8,
+    "rationale": "A has Cy heading toward the far beds near the fence with mulch, while B has Cy paired with Kai working the northern section near the sunflowers; these could be reconciled if the fence beds are in the northern section, but as written the destinations seem distinct, creating tension rather than outright contradiction.",
+    "confidence": 0.55
+   },
+   {
+    "a": 4,
+    "b": 6,
+    "rationale": "If Uma is by the tool shed sorting tools while 'everyone' gathers near the central plot, either she is excluded from 'everyone' or the two activities happen at different moments; this is an awkward but not impossible combination.",
+    "confidence": 0.55
+   },
+   {
+    "a": 6,
+    "b": 16,
+    "rationale": "A describes people planning the layout before planting, while B describes admiring rows already planted at the end of the same afternoon. Both can be true if the planning happened early and the actual planting occurred later in the same session, but the transition from mere planning discussion to admiring finished planted rows is a fast, slightly surprising jump.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 7,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "isla",
+   "b": "kai",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "kai",
+   "b": "cy",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "isla",
+   "b": "cy",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

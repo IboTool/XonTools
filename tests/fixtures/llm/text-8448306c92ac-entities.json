@@ -1,0 +1,119 @@
+{
+ "request": "7fd66968b71646a7a2ebd0881151cd86f2e18628ef7a983492403ba8b281e3f8",
+ "tag": "text-8448306c92ac-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "jude",
+    "mentions": [
+     "Jude"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "bo",
+    "mentions": [
+     "Bo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "shift",
+    "arity": "binary",
+    "arity_span": "The shop ran two shifts."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "finn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "bo",
+    "b": "finn",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 9,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "finn",
+    "b": "yara",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "yara",
+    "b": "bo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "finn",
+    "b": "bo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dev",
+    "b": "bo",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2146,
+  "output_tokens": 487,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

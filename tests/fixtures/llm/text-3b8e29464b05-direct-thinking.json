@@ -1,0 +1,26 @@
+{
+ "request": "9ccab74710128c2f03e99271164cf0bc4974982a4b957f7d801522ba1cbfcce7",
+ "tag": "text-3b8e29464b05-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Esme and Dara were on different teams.",
+     "Dara and Eli were on different teams.",
+     "Esme and Eli were on different teams.",
+     "There were two teams."
+    ],
+    "explanation": "If there are only two teams, three people cannot all be pairwise on different teams, since at least two of them would have to share one of the two teams."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1078,
+  "output_tokens": 312,
+  "thinking_tokens": 195
+ },
+ "stop_reason": "end_turn"
+}

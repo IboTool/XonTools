@@ -1,0 +1,25 @@
+{
+ "request": "40252053b2d0234627f560aceefe4096cb8fe9bae7399a6d0d9140a09d1980e5",
+ "tag": "text-c20c8f84ae31-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Isla is taller than Milo.",
+     "Milo is taller than Nell.",
+     "Nell is taller than Isla."
+    ],
+    "explanation": "These three height comparisons form a cycle (Isla > Milo > Nell > Isla), which is logically impossible."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1016,
+  "output_tokens": 193,
+  "thinking_tokens": 93
+ },
+ "stop_reason": "end_turn"
+}

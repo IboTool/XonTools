@@ -1,0 +1,26 @@
+{
+ "request": "50d2ba8aeb7747bd225db6d006047cdde64f6f3ba9bf5b8ccdc81df05412c35a",
+ "tag": "text-10908c843fbd-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Yara and Dev were in different houses.",
+     "Dev and Leo were in different houses.",
+     "Yara and Leo were in different houses.",
+     "The school had two houses."
+    ],
+    "explanation": "With only two houses, it's impossible for three people (Yara, Dev, Leo) to be pairwise in different houses, since at least two of them must share one of the two houses."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1054,
+  "output_tokens": 236,
+  "thinking_tokens": 106
+ },
+ "stop_reason": "end_turn"
+}

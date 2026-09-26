@@ -1,0 +1,472 @@
+XON PROJECT — BUILD OVERVIEW
+============================
+Updated: September 25, 2026 (A1 rev 2.2 specified; repository under git)
+
+FOCUS: implementable AI safety tools, with a defensible safety objective. The
+harmonic architecture is pursued for what it can do, and each stage has to beat
+a simple baseline to earn its place. The Xon's metaphysics is not part of this
+build.
+
+WHAT CHANGED THIS REVISION (September 25, later)
+  - A1 REV 2.2 (XON_A1_REV2_2_PRECISION.md) specified from the post-hoc
+    analysis of L1: 11 false positives (10 relation-judge errors, all at
+    confidence 0.50-0.60; 1 entity-direction error; 0 unplanted
+    contradictions); entity agreement 0.518 across L1-var repeats; planted
+    order relations extracted correctly 0.900.
+      R1  "contradicts" means cannot both be true; new `tension` label that
+          creates no edge
+      R2  one pair per relation call: the judge never sees a third claim
+      E1  entity extraction in steps under per-document id enums; the model
+          transcribes comparatives and code derives direction from a fixed
+          lexicon; explicit superlatives (restricted ones not expanded;
+          two unrestricted "firsts" are a superlative collision); a
+          deterministic coverage net; thinking on entity calls only
+      Step 0  missed order relations classified from the cached run first
+      Threshold  chosen per method by a rule fixed in advance: the tau
+          maximizing mean(direct F1, cycle F1), applied on the final
+          development pass and frozen
+  - The L1 corpus is now the DEVELOPMENT SET. The run of record stands.
+    Rev 2.2's result of record is one run on a fresh, sealed XonForge
+    corpus after the freeze.
+  - A1 rev 2.1 and the minimal engine confirmed fully implemented.
+  - The repository is under git (private remote), line endings preserved
+    byte for byte; snapshot tagged a1-run-of-record (in the archived
+    history). The first commit postdates the run, as logged.
+
+EARLIER (after the L1 run of record, September 25)
+  - A1 PASSED its run of record. L1: engine cycle F1 0.916 vs pairwise-only
+    0.329 (48 of 60 cycle detections from the entity clause alone); direct F1
+    0.916; localization 1.000. L1b: harmony AUC 0.926 vs the conflict score's
+    0.528. The minimal engine's advance prediction held (179/180 agreement).
+    Honest reading: a strong LLM judge with thinking slightly outperformed the
+    engine (F1 0.930); the false-positive rate (18%) is the weakest number; the
+    corpus is too easy to separate methods on localization.
+  - A2 is now rev 2.5: deterministic CLAIM-EVIDENCE MATCHING for numbers and
+    lists in reports (CD10-CD11, N6-N7, invariant I11; corpus 540 transcripts).
+  - NEW standalone tool: XonForge (XONFORGE_SPEC.md), a multi-model corpus
+    generator with solver-verified ground truth, blind calibrated cross-model
+    review, hard negatives, and sealed test splits.
+  - Engine extensions (numeric/temporal layer, time-indexed facts, modality,
+    quantifiers) recorded as X2 in future_features.md, to be specified only
+    after XonForge produces a fresh corpus.
+
+EARLIER (after the scouting runs)
+  Three scouting runs (docs/scouting/RESULTS_*.md) settled the harmonicity
+  question for now:
+    - Frequency-group "rich coherence" rewards fragmentation, and locking and
+      coherence metrics are blind to inconsistency. It is not a usable
+      objective.
+    - The defensible form of harmony is NORMALIZED FRUSTRATION ENERGY WITH
+      EVIDENCE CLAMPED. It tracks inconsistency, recovers the truth from sparse
+      evidence, and resists freezing, but it rewards three rule-breaks
+      (dropping evidence, cutting relations, rewriting evidence), so guards
+      are requirements.
+    - Computed exactly (A1), it is reliable. Computed by an oscillator field,
+      it gets stuck in twisted states (6% of runs at 25% evidence, 32% at 10%).
+    - As a drift detector, the field lost to spectral-CUSUM.
+  So: the exact solve is the meter; the field matters only as continuous
+  dynamics for agents, and its reliability is what the H track now tests.
+
+The project runs on two tracks that meet in the convergence stages.
+
+  TOOLS TRACK (A)        consistency engine -> agent monitor ->
+                         learning core -> coherence-driven agent
+  HARMONICITY TRACK (H)  the field as consistency dynamics: can it be made
+                         reliable, and does coarse-to-fine growth help?
+  CONVERGENCE (C)        C2  drift detector (spectral-CUSUM on monitor traces)
+                         C1  belief sheaf + field as one system (deferred)
+  OPTIONAL (A5)          a language model trained with local learning
+
+Every spec is written as a direct prompt for Cursor (or Claude Code). Hand the
+coding agent the whole file, and have it run `pytest` plus the stage's eval CLI
+before declaring the stage done. Every stage runs offline from fixtures.
+
+
+BUILD ORDER
+-----------
+  DONE   V1    XON_SIM_SPEC.md              simulation testbed
+  DONE   V1.1  XON_SIM_FIX_V1_1.md          dynamics fixes
+  DONE   V1.2  XON_SIM_GEOMETRY_V1_2.md     geometry family (E9d skipped)
+
+  DONE   1.  XON_A1_CONSISTENCY.md    rev 2.1  consistency engine + harmony meter
+             XON_A1_MINIMAL_ENGINE.md          report-only ablation
+                                               L1 + L1b PASSED (run of record);
+                                               L1-var and post-hoc analysis done
+  NOW    1b. XON_A1_REV2_2_PRECISION.md       precision fixes; development pass
+                                               on the seen L1 corpus; result of
+                                               record waits for a XonForge corpus
+  NEXT   2.  XON_A2_MONITOR.md        rev 2.5  agent transcript monitor
+             XON_S1_SAFEGUARDS.md             safeguards and reporting layer
+                                               (built with A2; into A1 after L1)
+         3.  XON_H1_RICH_COHERENCE.md rev 2    field as consistency dynamics
+         4.  XON_A3_LEARNING_CORE.md           learned sheaf, local learning
+         5.  XON_H2_DISCOVERY.md      rev 2    tuning for reliable dynamics
+         6.  XON_C2_DRIFT_DETECTOR.md  rev 2.2  streaming drift detector
+         7.  XON_A4_COHERENCE_AGENT.md  rev 2   coherence agent + red-team levers
+         8.  XON_C1_CONVERGENCE.md             DEFERRED REWRITE (after A4, E14)
+   opt   9.  XON_A5_LANGUAGE_MODEL.md          gated on A3's LC1 and LC3
+
+  SEPARATE REPOSITORY
+         F.  XONFORGE_SPEC.md                  multi-model corpus generator
+                                               (v0 core -> 20-doc sample stop ->
+                                               v1 catalog + dashboard -> corpus)
+
+  Flexibility: H1 needs only V1.2 and can run in parallel with A1/A2. C2 no
+  longer depends on the H track. Presets (presets.md) are deferred: they
+  explore rich-coherence regimes that no longer feed anything.
+
+
+---------------------------------------------------------------------------------
+CURRENT STATUS
+---------------------------------------------------------------------------------
+
+V1.1 results (seed 0)
+  PASS   E1, E2, E5, E6, E7, E8, E8b
+  FAIL   E3, E4b, E4c        (E4a failed as expected: negative control)
+    - E8 confirmed a pre-registered prediction: each region comes to rest
+      before the whole.
+    - E3 is a genuine failure: memory retention is exponential in depth.
+
+V1.2 (done; E9d skipped at Ian's request)
+  - E9c re-registration 2: estimator choice made after seeing results, so
+    neither box-counting nor mass-radius can be the criterion.
+  - E9c re-registration 3: d_f verified by EXACT closed-form vertex counts,
+    edge counts, and diameters at every built level (no tolerance). d_w, d_s,
+    and the Einstein residual stay judged at the first registration's
+    tolerances; the residual uses the structural d_f.
+  - Only E9c-passing geometries are used on the H track.
+
+A1 run of record (September 24-25)
+                         Direct F1  Cycle F1  False pos.  Localization
+  Engine                   0.916     0.916     0.183        1.000
+  Minimal (report-only)    0.923     0.923     0.167        1.000
+  Pairwise only            0.916     0.329     0.183          -
+  LLM-direct, thinking     0.930     0.930     0.150        1.000
+  LLM-direct, no thinking  0.805     0.805     0.483        1.000
+  L1b: AUC(1 - H) 0.926 vs AUC(sum lambda_min) 0.528; premise top-3 0.933.
+  Cost: ~6.83M tokens (~$38) for the run of record.
+  Post-hoc (no API calls): 10 of 11 false positives are relation-judge
+  errors, 1 an entity-direction error, none unplanted. L1-var: relation
+  agreement 0.933, entity agreement 0.518 (mostly direction flips); engine
+  verdicts changed on 2 of 12 documents. Cost per document: engine $0.138,
+  LLM-direct with thinking $0.006. Rev 2.2 addresses these on the seen
+  corpus as a development set (section 1b).
+
+Scouting (Claude's reimplementation, toy scale)
+  RESULTS_DRIFT_SCOUT.md          field-as-detector lost to spectral-CUSUM;
+                                  frequency-group harmonicity ROSE under drift
+  RESULTS_HARMONICITY_BATTERY.md  three readings of harmonicity; none passed;
+                                  locking is not consistency
+  RESULTS_CLAMPED_ENERGY.md       clamped energy passes as a definition; the
+                                  field computing it fails on twisted states
+
+Corrections owed to the master and popular documents
+  - Power-law forgetting: NOT supported by the simulation (E3).
+  - Valence as harmonicity: restate as consistency under clamped evidence,
+    not rich coherence; "the field trends toward bliss" is not supported.
+  - State the known failure modes of a consistency objective: it rewards
+    dropping evidence, cutting relations between conflicting claims, and
+    rewriting observations (the peace trap, made quantitative).
+
+
+---------------------------------------------------------------------------------
+1. XON_A1_CONSISTENCY.md (rev 2.1) — Consistency Engine and Harmony Meter  [DONE]
+---------------------------------------------------------------------------------
+ADDS     `xon/llm/`: Claude client (key from ANTHROPIC_API_KEY only; caching;
+         budget cap; dry-run), claim extraction, relation scoring; claims become
+         a signed graph (a sheaf with 1-D stalks): balance, conflict, shortest
+         frustrated cycle, residuals, counterfactual culprits. Rev 2: CLAMPED
+         HARMONY (premises clamped, exact linear solve), the ANCHORING RULE (no
+         harmony score for claims no evidence reaches), and INTEGRITY
+         INVARIANTS I1-I5 against the rule-breaking levers.
+TESTS    L1 contradiction detection and localization (direct and CYCLE) vs
+         pairwise and LLM-direct; L1b clamped harmony on text.
+MEANS    Catches contradictions pairwise checks miss, and says where; and is
+         the project's validated harmony meter. Classical math.
+RESULT   PASSED (see status). The minimal engine (direct + entity clauses) is
+         the detection core; the energy layer is justified by what needs a
+         graded signal (harmony for A3, A4, C2), not by detection.
+
+
+---------------------------------------------------------------------------------
+1b. XON_A1_REV2_2_PRECISION.md — Precision Fixes  [NOW]
+---------------------------------------------------------------------------------
+ADDS     R1 strict "contradicts" plus a `tension` label (no edge); R2 one pair
+         per relation call; E1 entity extraction in steps (inventory, then
+         relations under per-document id enums), direction derived in code
+         from a comparative lexicon, explicit superlatives with bounded
+         expansion, a coverage net, thinking on entity calls only; a
+         threshold selection rule fixed in advance. Rev 2.1 stays runnable
+         and replays the run of record byte for byte.
+STEPS    Step 0 (classify missed order relations, no API calls) -> budget
+         estimate -> gate D0 (12-document subset) -> full development pass
+         -> logged iterations -> threshold rule -> freeze (tag
+         a1-rev2.2-frozen).
+MEANS    On the seen corpus, whether the fixes remove the error types found;
+         the false-positive rate on new text comes only from the fresh
+         corpus. A2 uses A1's claim extraction, relation scoring and
+         claim-graph analysis, not the entity graph, so R1 and R2 carry
+         into A2; E1 matters for A1 and any later stage that adds entities.
+
+
+---------------------------------------------------------------------------------
+2. XON_A2_MONITOR.md (rev 2.5) — Agent Transcript Monitor (the safety tool)
+---------------------------------------------------------------------------------
+ADDS     `xon/monitor/`: typed events and edges; CHAIN CLOSURE; omission scan;
+         temporal checks; redaction. Rev 2: trusted tool output and user task
+         statements CLAMPED as evidence (untrusted content never: a security
+         rule); time-aware relations; unsupported report claims listed
+         separately; CODING FAMILY run for real in sandbox repos (CD1-CD9,
+         negatives N1-N5); rule-checker baseline; report-only red team;
+         invariants I6-I7. Rev 2.1: MC2 on public datasets. Rev 2.2: clamping
+         by provenance only (I8). Rev 2.3: hash-chained evidence (I9). Rev 2.4:
+         built with S1. Rev 2.5: CLAIM-EVIDENCE MATCHING, deterministic checks
+         of counts and lists in reports against pytest, the diff, and the
+         process log (CD10-CD11, N6-N7, I11); 540 coding transcripts.
+TESTS    M1-M4 (simulated family); MC1 (coding family: beat rules on the
+         structural failures, N3 false positives <= 10%; claim matching recall
+         >= 0.9 on CD10-CD11, <= 5% false flags on N6-N7); MC2 (complementarity
+         with a strong LLM judge, per stratum).
+RULE     Monitor only. Never train the monitored agent on its outputs.
+NOTE     Builds on A1 rev 2.2 as frozen (claim extraction, relation scoring,
+         claim-graph analysis; not the entity graph). A2 rev 2.6 is written
+         after the rev 2.2 freeze: it adopts one pair per relation call for
+         belief and observation pairs (with its cost on long transcripts),
+         the strict "contradicts" definition, a decision on `tension`, and
+         the same isolation question for typed relations.
+WRITE-UP The strongest portfolio piece: MC1 + MC2 + the incentive analysis of
+         consistency objectives, limitations first.
+
+
+---------------------------------------------------------------------------------
+2b. XON_S1_SAFEGUARDS.md — Safeguards and Reporting Layer
+---------------------------------------------------------------------------------
+ADDS     `xon/safeguards/`, shared by A1, A2, C2 and any relation scorer:
+         THREE-WAY STATUS (flagged / not_flagged / could_not_assess) with
+         fail-closed rules; PROMPT-INJECTION FENCING for the tools' own LLM
+         calls; CANARY checks with known answers; COVERAGE reporting;
+         reviewer mode vs AUTOMATION mode (no explanations to pipelines);
+         versioned report schema and CI exit codes; append-only REVIEWER
+         DECISION LOG; MULTI-MODEL ENSEMBLES with any number of parallel
+         models and disagreement reporting.
+TESTS    S-E1 injection robustness; S-E2 canaries catch deliberate
+         degradations; S-E3 ensembles (reported).
+TIMING   Built alongside A2. Integrated into A1 only after the L1 run of
+         record is complete; L1's results stay tied to the old prompts.
+
+FUTURE FEATURES  future_features.md lists ideas NOT to implement until
+         explicitly approved (Tier 3 hygiene, anti-features, deferred ideas).
+
+
+---------------------------------------------------------------------------------
+3. XON_H1_RICH_COHERENCE.md (rev 2) — The Field as Consistency Dynamics
+---------------------------------------------------------------------------------
+ADDS     `xon/harmonic/`: clamped phase field, exact reference, vortex
+         (twisted-state) diagnostic, growth schedules with coarse couplings
+         derived from fine paths, edge-update budget accounting.
+TESTS    E11  Chladni replication (P11a must pass): order comes from the drive
+         E13  exploit battery on rev 1's harmonicity_freq in this codebase
+              (predicted to fail)
+         E14  HEADLINE: coarse-to-fine growth vs static, restarts, annealing at
+              matched compute. Pass: stuck rate halved at 10% evidence, at
+              least as good as restarts and annealing, with guards on
+              sensitivity and accuracy. Lattice control: is it self-similarity
+              or just multiscale?
+         E10, E12, E3x  optional model-science; nothing depends on them
+DROPPED  E4d (would have re-scored with a metric that rewards fragmentation).
+MEANS    Whether the model's idea of growth has a real computational job, and
+         whether the field is reliable enough to use as dynamics at all.
+
+
+---------------------------------------------------------------------------------
+4. XON_A3_LEARNING_CORE.md — The New Architecture, First Version
+---------------------------------------------------------------------------------
+ADDS     `xon/core/`: a learned sheaf that replaces Claude's relation judgments
+         in the monitor. Observed events clamped; latents settle; answers read
+         from settled energy. LOCAL learning rules; NumPy only.
+TESTS    LC1 learns at all (gate); LC2 useful inside the monitor vs Claude;
+         LC3 local learning vs backprop; LC4 beats MLP and GNN on chain-level
+         deviations; LC5 growing structure (exploratory).
+NOTE     Trains on A2's export, which now includes the coding family with
+         repository-level splits. Settling should use the exact solve or an
+         H2-promoted schedule, not unguarded gradient flow (twisted states).
+
+
+---------------------------------------------------------------------------------
+5. XON_H2_DISCOVERY.md (rev 2) — Tuning for Reliable Dynamics
+---------------------------------------------------------------------------------
+ADDS     `xon/discover/`: Optuna search over geometry, dynamics (phase or
+         Stuart-Landau), and schedules (static, restarts, annealing, growth,
+         growth guided by residuals) at a fixed compute budget. Objective:
+         low stuck rate at 10% evidence. HARD ANTI-GAMING CONSTRAINTS:
+         sensitivity (AUC >= 0.9), accuracy, evidence never moves, structure
+         never edited, budget matched. Held-out validation, promotion,
+         registry (claim_type: existence_by_search).
+         D3 ROBUSTNESS BATTERY for every passed experiment (kept).
+REMOVED  Rev 1's search on harmonicity_freq (it would have found fragmented
+         states efficiently).
+MEANS    A dependable substrate for continuous dynamics in A4/C1, or a clear
+         answer that none exists and the exact solve should be used instead.
+
+
+---------------------------------------------------------------------------------
+6. XON_C2_DRIFT_DETECTOR.md (rev 2) — Streaming Drift Detector
+---------------------------------------------------------------------------------
+ADDS     `xon/drift/`: A2 run as a stream (no look-ahead); per-step residual
+         channels from the evidence-clamped graph; detectors: PREFIX-FLAG
+         baseline (A2 on every prefix), scalar CUSUM, multichannel CUSUM (max
+         and pooled over a channel graph, the spectral-CUSUM analogue), EWMA,
+         BOCPD; replan-aware resets only for replans whose reason is in
+         trusted evidence; persistence variants. Graded drift corpus (abrupt,
+         5- and 15-step ramps, report inflation, scope creep), negatives
+         (transparent replanning, transient error, honest failure), disguised
+         replanning. YAML authoring format with a validator.
+TESTS    DR1 earlier than the prefix flag on gradual drift (<= 0.75x delay);
+         DR2 does pooling help; DR3 no loss on abrupt; DR4a replanning false
+         alarms <= 10%; DR4b the replan exemption can't be bought; DR5 authored.
+NEEDS    A2 only. No harmonic field.
+
+
+---------------------------------------------------------------------------------
+7. XON_A4_COHERENCE_AGENT.md (rev 2) — Coherence-Driven Agent
+---------------------------------------------------------------------------------
+ADDS     `xon/agent/`: numeric and claim belief sheaves (claim sheaf uses A1
+         rev 2's exact clamped harmony); CoherenceAgent with two gain
+         definitions (G_norm, and G_fixed, which cannot be padded); an
+         8-item RED-TEAM LIST of levers with guards and tests; PROVENANCE
+         WEIGHTS (reliability set by source, never by fit).
+TESTS    AG1 exploration efficiency; AG2 rationalization; AG2b provenance vs
+         rationalization; AG3 peace trap; AG4 DocumentWorld; AG4b evidence
+         avoidance (erratum sections); AG5 evidence padding (decides the gain
+         definition); AG6 field dynamics, gated on an H2-promoted schedule.
+MEANS    A coherence drive that works, the guards shown to hold, and a measure
+         of whether it seeks understanding or comfort.
+
+
+---------------------------------------------------------------------------------
+8. XON_C1_CONVERGENCE.md — Belief Sheaf + Field (DEFERRED REWRITE)
+---------------------------------------------------------------------------------
+STATUS     Rewrite after A4 and E14. CV4 ("rapture needs structure") has lost
+           its premise (rich coherence) and is retired. CV2 (insight
+           signature) may survive as a question about continuous dynamics:
+           does resolving a contradiction produce a sharp event in a reliable
+           field? Toy scale only; no continuous or scaled runs without a
+           separate review.
+
+
+---------------------------------------------------------------------------------
+9. XON_A5_LANGUAGE_MODEL.md — Optional, Gated on A3
+---------------------------------------------------------------------------------
+Unchanged: sheaf-diffusion LM on TinyStories trained with equilibrium
+propagation; gated on A3's LC1 and LC3; run `xon-lm estimate` first.
+
+
+---------------------------------------------------------------------------------
+F. XONFORGE_SPEC.md — Multi-Model Corpus Generator (separate repository)
+---------------------------------------------------------------------------------
+ADDS     A standalone tool, sharing `xon-common` (providers, cache, budgets,
+         hashing) with XonTools. Stories are built first as STRUCTURED
+         SKELETONS checked by a deterministic SOLVER (the source of ground
+         truth), then rendered to prose by models rotated across providers
+         (Claude, OpenAI, Gemini, Grok, and any OpenAI-compatible endpoint
+         including local models). Structural checks and deterministic scans;
+         BLIND cross-model review calibrated with known-defect canaries; human
+         review queue with a hash-chained decision log; quotas; SEALED test
+         splits with published hash manifests and canary strings; dashboard;
+         auto-generated datasheet per corpus.
+CATALOG  Order cycles, equality breaks, binary parity, direct negation (v0);
+         temporal and quantity arithmetic, containment, coreference, negation
+         scope, quantifiers, uniqueness, co-location, calendar and age,
+         cardinality, units, character knowledge (solver-verified); causal,
+         commonsense, implicature (judged split only). TRAPS that must not be
+         flagged, including RESOLVABLE HARD NEGATIVES (time zones, units,
+         overnight spans, same names, role handovers, approximations). v2
+         domain families: agent transcripts, code and documentation,
+         cross-document.
+RULE     The engine under test never influences acceptance; it may run only
+         as an isolated diagnostic.
+MEANS    Harder, fresher, multi-author test sets whose ground truth depends on
+         no model, for the engine, strong judges, the strain head, and future
+         windows.
+
+
+---------------------------------------------------------------------------------
+DEPENDENCY MAP
+---------------------------------------------------------------------------------
+
+  V1 -> V1.1 -> V1.2
+   |
+   +--> A1 --> A2 --+--> A3 --> A4 -----------+
+   |                |    |      ^             |
+   |                |    +--> A5 (optional)   |
+   |                |           |             v
+   |                +--> C2     |            C1
+   |                             |             ^
+   +--> H1 --> H2 ---------------+-------------+
+        (E14 decides whether A4/C1 use field dynamics)
+
+  XonForge is independent; its corpora feed A1 rev 2.2's result of record,
+  A1 rev 3 (X2), A2's text-side
+  tests, and future window experiments.
+  C2 needs A2 only.
+  S1 is built with A2; A1 adopts it after L1.
+  A4 needs A3; uses H2's promoted schedule only if E14/H2 produce one.
+  C1 needs A4 and H1/H2.
+
+
+---------------------------------------------------------------------------------
+SUGGESTED MODEL / EFFORT PER STAGE
+---------------------------------------------------------------------------------
+  Initial one-shot build of any spec:    top model, max effort
+  Numerical debugging (H1, H2, A3, C1, C2): high effort
+  UI and plotting tweaks:                medium effort
+
+
+---------------------------------------------------------------------------------
+PRINCIPLES
+---------------------------------------------------------------------------------
+  - Two ledgers. Pre-registered experiments test claims; thresholds are fixed
+    before running and changes are logged with reasons. Search (H2) finds
+    configurations that work; those are existence results, never model
+    predictions.
+  - Negative results stay on the record.
+  - Every experiment has a control or baseline, and the field must beat the
+    simple baseline on the same signal before it is called a tool.
+  - Evidence is clamped wherever the architecture reasons: beliefs may change,
+    observations may not.
+  - What gets clamped is a SECURITY decision: only trusted sources. Content an
+    attacker could write is a claim, never evidence.
+  - Any quantity used as an OBJECTIVE passes an exploit battery first
+    (fragmentation, freezing, death, noise, frustration, balanced control, and
+    the rule-breaking levers).
+  - Reliability is set by PROVENANCE, never by fit to current beliefs.
+  - What gets clamped is decided by provenance, never by wording.
+  - A monitor never fails silently: when its assurance checks fail, it says
+    "could not assess", never "not flagged".
+  - The tools' own prompts are defended against injection by the text they read.
+  - Explanations are for humans; automated pipelines get verdicts only.
+  - Evidence integrity is checked, not assumed: trusted evidence is hash-chained
+    at capture, and a broken chain downgrades later evidence to untrusted. A hash
+    proves integrity, not trustworthiness.
+  - Measurement uses exact computation where it exists; dynamics are used only
+    where continuity is the point, and only with a validated schedule.
+  - Monitor and detector outputs are never used to train a monitored agent.
+  - When a pre-registered criterion needs re-specifying, the question is asked
+    WITHOUT running it or showing predicted outcomes; it runs after the choice.
+  - The API key lives only in the environment.
+  - Each spec ends with what its results would and would not mean.
+  - Test-case verification never uses the system being evaluated: ground truth
+    comes from structure (solvers, scripted harnesses), and the engine never
+    screens its own test corpus.
+  - A reviewer's clean result counts only if it caught a known defect.
+  - A seen corpus becomes a development set: fixes may be developed and
+    iterated on it (each iteration logged and counted), but results of
+    record come only from a fresh, sealed corpus, run once after a freeze.
+  - Thresholds on model confidences are chosen by a rule fixed before the
+    development data is seen, never by where known errors sit.
+  - What a model must not use, it must not see: isolation is enforced by
+    what the prompt contains, not by instructions.
+  - Where a deterministic rule exists (direction, units, ids), models
+    transcribe and code derives.
+  - The repository is committed at each logged step; freezes and runs of
+    record are tagged; pushed history is never rewritten.

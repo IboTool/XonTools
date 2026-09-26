@@ -1,0 +1,118 @@
+{
+ "request": "3b8ceccbdc8989766ae1bee73ef407c479dadf678a1fbfb341747d34b13459cf",
+ "tag": "text-8ca8174907ae-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "tess",
+    "mentions": [
+     "Tess"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   },
+   {
+    "id": "jude",
+    "mentions": [
+     "Jude"
+    ]
+   },
+   {
+    "id": "club_advisor",
+    "mentions": [
+     "The club advisor"
+    ]
+   },
+   {
+    "id": "newer_members",
+    "mentions": [
+     "Several newer members"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 9,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "jude",
+    "b": "ivo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "ivo",
+    "b": "tess",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "jude",
+    "b": "ivo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 20,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "newer_members",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 22,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "tess",
+    "b": "jude",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2161,
+  "output_tokens": 476,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

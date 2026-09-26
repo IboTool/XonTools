@@ -1,0 +1,26 @@
+{
+ "request": "8c485ed481921a5dddbc08cbb0e03e92bc2f9e567892b6a2fb760be42b623f17",
+ "tag": "text-6c0c7c216527-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Hugo and Nell worked different shifts.",
+     "Nell and Leo worked different shifts.",
+     "Hugo and Leo worked different shifts.",
+     "The shop ran three shifts."
+    ],
+    "explanation": "With only three shifts and Hugo, Nell, and Leo all pairwise on different shifts, they would need three distinct shifts among them, which is possible, but combined with the earlier statement that Hugo arrived a little earlier than Nell implying overlapping presence, and no fourth person mentioned, this creates an inconsistency in shift assignments given the other timing details."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1048,
+  "output_tokens": 205,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

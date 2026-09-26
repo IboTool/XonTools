@@ -1,0 +1,90 @@
+{
+ "request": "1dd3b92bb8c322a2abf7cbae4b140ee754674e0deaf2ca4150ee47d2ddaa6599",
+ "tag": "text-d0238e30cc37-var1-relate-010",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 16,
+    "b": 17,
+    "rationale": "The afternoon winding down with admiration is a temporal/emotional close that does not bear on whether the group made plans to meet again.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 16,
+    "b": 18,
+    "rationale": "Admiring the planted rows has no bearing on the state of the fence gate.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 16,
+    "b": 19,
+    "rationale": "Admiring the rows at day's end does not relate to Nell's offer to bring gloves next time.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 16,
+    "b": 20,
+    "rationale": "The admiring of planted rows has no logical connection to gloves wearing through.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "rationale": "The plan to repair a sticking fence gate implies that the gate had been sticking, supporting that claim.",
+    "relation": "supports",
+    "confidence": 0.95
+   },
+   {
+    "a": 17,
+    "b": 19,
+    "rationale": "Agreeing to meet again does not itself relate to whether Nell offers to bring gloves.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 17,
+    "b": 20,
+    "rationale": "Plans to meet again to check seedlings and fix a gate do not bear on gloves wearing through during digging.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 18,
+    "b": 19,
+    "rationale": "The fence gate sticking has no relation to Nell's offer of gloves.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 18,
+    "b": 20,
+    "rationale": "A sticking gate is unrelated to gloves wearing through during digging.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "rationale": "Gloves having worn through during digging explains and supports why Nell would offer to bring extra gloves next time.",
+    "relation": "supports",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1007,
+  "output_tokens": 653,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b00-consistent",
+ "repetition": 1,
+ "call": 11
+}

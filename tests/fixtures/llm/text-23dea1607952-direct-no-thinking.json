@@ -1,0 +1,33 @@
+{
+ "request": "06d8de164511ad7ac93220d11f6e16f699e86d54cb8b825313e2c1822d27271c",
+ "tag": "text-23dea1607952-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Ivo did not take the photographs.",
+     "Ivo took the photographs."
+    ],
+    "explanation": "These two statements directly assert opposite facts about whether Ivo took the photographs."
+   },
+   {
+    "sentences": [
+     "Yara and Dev were in different houses.",
+     "Dev and Leo were in different houses.",
+     "Yara and Leo were in different houses.",
+     "The school had three houses."
+    ],
+    "explanation": "With only three houses, having Yara, Dev, and Leo pairwise in different houses requires exactly three distinct houses for them, which is possible, but combined with Sami needing a house among only three total, it's tight; however the real issue is that three pairwise-different houses among three people already uses all three houses, leaving no valid house assignment consistent with other constraints implied by the puzzle-like setup."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1066,
+  "output_tokens": 264,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

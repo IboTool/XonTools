@@ -1,0 +1,27 @@
+{
+ "request": "b6219a981dec9ebd0313430b14da736d504c221580e200efc147e7eab3010c3b",
+ "tag": "text-60be611b7e4b-var3-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Gus booked the hall.",
+     "Gus did not book the hall."
+    ],
+    "explanation": "These two statements directly assert and deny the same fact about Gus booking the hall."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1107,
+  "output_tokens": 73,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b01-direct",
+ "repetition": 3,
+ "call": 171
+}

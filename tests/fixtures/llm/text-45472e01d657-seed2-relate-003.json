@@ -1,0 +1,38 @@
+{
+ "request": "57a6144ec608e314091368aabeada56c157fa11d46b3a058f446864d30853603",
+ "tag": "text-45472e01d657-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "Yara finishing tasks early and helping with the banner does not indicate anything about her laughing with Bo about crowd size.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 23,
+    "b": 26,
+    "rationale": "Yara laughing with Bo about the crowd is a separate, small interaction that doesn't imply or preclude the whole group cheering together.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "Everyone gathering to hear the final donation total announced sets up a natural moment that likely leads to the group cheering together.",
+    "relation": "supports",
+    "confidence": 0.8
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 920,
+  "output_tokens": 233,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

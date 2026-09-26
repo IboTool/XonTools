@@ -1,0 +1,113 @@
+{
+ "request": "1711376d06fe376ea6e46f84bc9eb3f4bcb14707a312de3cc372d19ca53582de",
+ "tag": "text-cebe25821176-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia",
+     "she"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme",
+     "she"
+    ]
+   },
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai",
+     "he"
+    ]
+   },
+   {
+    "id": "quizmaster",
+    "mentions": [
+     "The quizmaster"
+    ]
+   },
+   {
+    "id": "school",
+    "mentions": [
+     "The school"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 9,
+    "attribute": "house",
+    "kind": "different",
+    "a": "esme",
+    "b": "kai",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "house",
+    "kind": "different",
+    "a": "kai",
+    "b": "gus",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "house",
+    "kind": "different",
+    "a": "esme",
+    "b": "gus",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 24,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "gia",
+    "b": "esme",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2231,
+  "output_tokens": 411,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

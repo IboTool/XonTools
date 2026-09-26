@@ -1,0 +1,26 @@
+{
+ "request": "cf32ba8fb84e8d0f9ce93f2184d99dc3d7f771bd74c069c9c57bdba476d6d3f0",
+ "tag": "text-f143de671b5a-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Hugo and Nell worked different shifts.",
+     "Nell and Leo worked different shifts.",
+     "Hugo and Leo worked different shifts.",
+     "The shop ran two shifts."
+    ],
+    "explanation": "With only two shifts available, three people (Hugo, Nell, and Leo) cannot all be pairwise assigned to different shifts, since that would require at least three distinct shifts."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1048,
+  "output_tokens": 423,
+  "thinking_tokens": 281
+ },
+ "stop_reason": "end_turn"
+}

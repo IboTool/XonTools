@@ -1,0 +1,1378 @@
+{
+ "label": "b18-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-f770e152bb09",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Pia arrived first at the trailhead parking lot.",
+   "span": "Pia arrived first, stretching her legs after the long drive",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Kai showed up a few minutes after Pia carrying a bright red backpack.",
+   "span": "Kai showed up a few minutes later carrying a bright red backpack",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Hana is the club secretary.",
+   "span": "Assume that Hana is the club secretary",
+   "kind": "premise"
+  },
+  {
+   "id": 3,
+   "text": "Leo trailed in last.",
+   "span": "Leo trailed in last",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Leo apologized for the delay caused by traffic near the highway exit.",
+   "span": "apologizing for the delay caused by traffic near the highway exit",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Everyone gathered around the picnic table to check the map and divide the gear among the group.",
+   "span": "Everyone gathered around the picnic table to check the map and divide the gear among the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Esme drove the minibus.",
+   "span": "Esme drove the minibus",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Hana passed out water bottles and snacks.",
+   "span": "Hana passed out water bottles and snacks",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Kai adjusted the straps on his boots.",
+   "span": "Kai adjusted the straps on his boots",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "The first stretch of trail wound through a shaded forest.",
+   "span": "The first stretch of trail wound through a shaded forest",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "The group moved at a steady pace, chatting about the view ahead.",
+   "span": "the group moved at a steady pace, chatting about the view ahead",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Pia is taller than Kai.",
+   "span": "Pia is taller than Kai",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Around midday, the group stopped at a clearing to eat lunch and compare notes about the terrain still to come.",
+   "span": "Around midday, they stopped at a clearing to eat lunch and compare notes about the terrain still to come",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Esme said that the next section included a steep climb.",
+   "span": "Esme mentioned that the next section included a steep climb",
+   "kind": "quoted"
+  },
+  {
+   "id": 14,
+   "text": "Everyone nodded in agreement.",
+   "span": "everyone nodded in agreement",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Kai is taller than Leo.",
+   "span": "Kai is taller than Leo",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Hana pointed out a bird nest tucked into a nearby tree.",
+   "span": "Hana pointed out a bird nest tucked into a nearby tree",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "The group paused briefly to admire the bird nest before continuing on.",
+   "span": "the group paused briefly to admire it before continuing on",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "The afternoon sun grew warm.",
+   "span": "The afternoon sun grew warm",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "The group took frequent breaks to rest and refill their bottles from a stream.",
+   "span": "they took frequent breaks to rest and refill their bottles from a stream",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Pia is taller than Leo.",
+   "span": "Pia is taller than Leo",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "By late afternoon, the group reached the summit.",
+   "span": "By late afternoon, they reached the summit",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "The whole valley spread out below them in golden light.",
+   "span": "where the whole valley spread out below them in golden light",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Leo took several photographs.",
+   "span": "Leo took several photographs",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Kai unpacked a thermos of tea for everyone to share.",
+   "span": "Kai unpacked a thermos of tea for everyone to share",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "The group started their descent as the sky began to darken.",
+   "span": "As the sky began to darken, the group started their descent",
+   "kind": "asserted"
+  },
+  {
+   "id": 26,
+   "text": "The group moved carefully along the rocky path back toward the parking lot.",
+   "span": "moving carefully along the rocky path back toward the parking lot",
+   "kind": "asserted"
+  },
+  {
+   "id": 27,
+   "text": "The group was satisfied with a full day of hiking together.",
+   "span": "satisfied with a full day of hiking together",
+   "kind": "asserted"
+  },
+  {
+   "id": 28,
+   "text": "Hana is not the club secretary.",
+   "span": "Hana is not the club secretary",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "If Pia arrived first, it is consistent and plausible that Kai showed up a few minutes later; A directly supports the ordering described in B, and the backpack detail is neutral.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "If Pia arrived first, it leaves open who arrived last; the two claims are compatible and A gives some plausibility to a specific ordering but does not establish it, though they don't conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Pia arriving first at the trailhead parking lot doesn't bear on who drove the minibus; these are independent facts about different aspects of the trip.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Pia arriving first at the parking lot is about the start of the trip, while B describes the group's pace and mood during the hike; the two events are largely independent and neither strongly affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "A establishes an order where Kai arrives after Pia but says nothing about Leo's position; B adds that Leo was the last to arrive, which is compatible with Kai being second and Leo arriving even later.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A describes Kai's arrival with a red backpack, while claim B concerns Leo apologizing for a traffic delay; they involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A describes Kai arriving with a backpack, while claim B describes him adjusting boot straps; these concern different actions and items and neither implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "The two claims describe unrelated events involving different people and actions with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 25,
+   "rationale": "Claim A describes Kai's arrival relative to Pia and a red backpack, which has no bearing on the timing or occurrence of the group's descent as the sky darkened.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A states Hana's club role, while claim B describes a group activity of checking a map and dividing gear; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Being club secretary is an administrative role that neither implies nor precludes handing out water and snacks; these actions are independent of the stated position.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim A states Hana's club role, which has no bearing on whether everyone nodded in agreement about some unspecified matter; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "There is no shared context between Hana's club role and the group's hike timing; nothing about being secretary bears on when a summit was reached.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "The claim about Hana's club position has no topical or logical connection to a description of a valley landscape at golden light.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 28,
+   "rationale": "A directly asserts that Hana holds the role of club secretary, while B explicitly denies this same role for the same person, with no indication of different times or contexts.",
+   "relation": "contradicts",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Leo trailing in last is consistent with him being delayed, and his apology for a traffic-caused delay would plausibly explain why he finished last, so A supports the plausibility of B.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Leo trailing in last suggests a race or hike just concluded, which is loosely related to a group gathering afterward, but there's no direct logical link between the two events as stated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "The two claims describe unrelated events (a race outcome versus a group's reaction of agreement) with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Leo trailing in last during some activity has no bearing on Hana noticing a bird nest nearby; these are unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A concerns Leo apologizing about traffic delays, while claim B concerns Esme's statement about a steep climb in the next section. These involve different people, topics, and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Claim A describes a delay from traffic near a highway exit, while claim B describes a brief pause to admire a bird nest; these seem to be unrelated scenarios or causes for delay, with no direct connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Claim A concerns a traffic delay near a highway exit, while claim B describes a group hiking or traveling taking breaks by a stream; these appear unrelated in context and content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "The gathering to check the map and divide gear has no bearing on the relative heights of Kai and Leo; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "A states Esme drove the minibus while B describes an unrelated event about the group stopping for lunch; neither statement bears on the truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Both describe simultaneous but independent actions by different people; neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "A shows Hana provided water bottles and snacks initially, which is compatible with the group later needing to refill those same bottles at a stream during breaks; both can occur without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "These describe two independent activities by different people at what may be the same event, with no stated causal or evidential link between one occurring and the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Adjusting boot straps could plausibly happen during a break, but the claims describe different, independent activities with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 26,
+   "rationale": "Adjusting boot straps suggests preparation for or during physical activity like hiking, which plausibly precedes or accompanies careful movement along a rocky path; this is a supportive contextual connection rather than a strict logical implication.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "A describes the terrain of the trail's start, while B describes the group's pace and conversation; these details are largely independent and could easily co-occur without one implying the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "A shaded forest setting makes it plausible for trees with bird nests to be nearby, but the claims don't necessarily connect since they describe different observations.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "A describes the setting of the trail's start but says nothing about the group pausing or a bird nest; the two claims address different, non-overlapping details.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "A describes an early, shaded forest section of the trail, while B describes a later viewpoint over a valley in golden light; these can easily be different points along the same hike, so B follows naturally as a later stage rather than being contradicted or strongly supported.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A is about relative height between two people, while claim B describes a group activity at midday unrelated to height comparisons. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A only establishes a height relation between Pia and Kai, saying nothing about Leo, so it neither supports nor contradicts B's claim about Kai and Leo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A concerns relative height between two people, while claim B describes a group pausing to look at a bird nest. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Pia being taller than Kai says nothing about her height relative to Leo, since Kai and Leo are different people with no stated relationship to each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "The relative heights of Pia and Kai have no bearing on whether the group reached the summit by late afternoon; these are unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "The two claims describe unrelated topics: relative height of two people versus a scenic description of a valley. Neither has bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "A establishes that the group was discussing the upcoming terrain over lunch, which is a natural context in which Esme's comment about the next section's steep climb could occur, making B more plausible.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "A describes a discussion during lunch about upcoming terrain, which plausibly leads to some form of collective agreement or acknowledgment, making B a natural continuation of that scene.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Both describe brief stops the group might make during the same journey; a lunch stop and a brief pause to admire a bird nest are compatible events that could occur at different moments along the trip.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "A places the events around midday during a lunch stop, and B describes the afternoon sun becoming warm; these refer to different, sequential times of day and are otherwise about unrelated matters (a lunch break vs. weather), so A neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "A introduces Esme's statement as a conversational cue; B describes a plausible immediate reaction of the group acknowledging what was said, which is consistent with and mildly supported by A.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "A steep climb warned about by Esme makes frequent breaks for rest more plausible, but this is a mild supporting inference rather than a strong logical link.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 24,
+   "rationale": "A concerns information about the upcoming trail while B describes an unrelated social action of sharing tea; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "A describes a moment of consensus among the group, while B describes a separate practical behavior during a journey; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 24,
+   "rationale": "Both describe a shared social scene, but nodding agreement doesn't imply or preclude sharing tea afterward; they are independent actions that could coexist without one bearing on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Both claims compare different people (Kai and Pia) to Leo's height. Knowing Kai is taller than Leo gives no information about Pia's height relative to Leo.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 25,
+   "rationale": "Claim A concerns relative heights of two individuals, while claim B concerns a group's activity related to timing and weather. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "A establishes the bird nest was noticed and pointed out, which naturally sets up the group pausing to admire it as described in B; the events fit together as a coherent sequence.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 16,
+   "b": 26,
+   "rationale": "Both could occur during the same walk, perhaps Hana pointed out the nest while the group was moving along the path; there is no inherent conflict or strong support between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 27,
+   "rationale": "Noticing a bird nest during a hike is a minor detail that neither confirms nor conflicts with the group's overall satisfaction with the day's hiking; the two claims describe unrelated aspects of the outing.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Warm afternoon sun makes it plausible the group would need more frequent rest and water breaks, so A modestly supports B.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 25,
+   "rationale": "A suggests it was daytime with warm sun, while B describes the sky darkening as descent began; these could be consistent if time passed between events, but they sit awkwardly close together temporally, suggesting a quick shift from warm afternoon sun to darkening sky.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Claim A describes hiking behavior of a group, while claim B is an unrelated comparison of heights between two individuals with no shared content or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 19,
+   "b": 24,
+   "rationale": "Taking breaks to rest and refill bottles is consistent with also sharing tea during one of those breaks; the two activities can coexist without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Reaching a summit in late afternoon plausibly affords a wide view of the valley below, and late afternoon light is often golden, so A makes B more likely.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 21,
+   "b": 25,
+   "rationale": "Reaching the summit in late afternoon fits naturally with beginning descent as the sky darkens shortly after, since late afternoon is close to dusk; A is consistent with and mildly supports B's timing.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 26,
+   "rationale": "Reaching the summit in the afternoon naturally precedes and motivates a subsequent descent back toward the parking lot, making B a plausible continuation of the narrative implied by A.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 21,
+   "b": 27,
+   "rationale": "Reaching the summit after a day's effort is consistent with, and mildly supports, feeling satisfaction from a full day of hiking together, though satisfaction is not guaranteed by summiting alone.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "A beautiful golden-lit valley view provides a plausible motivation for taking photographs, making B somewhat more likely, though it doesn't guarantee it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 25,
+   "b": 26,
+   "rationale": "Starting a descent as the sky darkens is consistent with then carefully navigating a rocky path back to the parking lot; B plausibly describes part of the same descent.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 26,
+   "b": 27,
+   "rationale": "Moving carefully back toward the parking lot suggests the hike is ending, which is consistent with having completed a full day of hiking and being satisfied, though satisfaction is not guaranteed by the walk itself.",
+   "relation": "supports",
+   "confidence": 0.55
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai",
+     "his"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "group",
+    "mentions": [
+     "Everyone",
+     "the group",
+     "The group",
+     "The whole valley"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "club_secretary_role",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "subject": "kai",
+    "comparative": "after",
+    "object": "pia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "subject": "pia",
+    "comparative": "taller than",
+    "object": "kai",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "subject": "kai",
+    "comparative": "taller than",
+    "object": "leo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 20,
+    "attribute": "height",
+    "subject": "pia",
+    "comparative": "taller than",
+    "object": "leo",
+    "confidence": 0.98
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 0,
+    "attribute": "arrival_time",
+    "entity": "pia",
+    "comparative": "first",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "entity": "leo",
+    "comparative": "last",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "last",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 26,
+  "blind": [
+   [
+    0,
+    10
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    16
+   ],
+   [
+    1,
+    25
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    2,
+    14
+   ],
+   [
+    2,
+    21
+   ],
+   [
+    2,
+    22
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    3,
+    14
+   ],
+   [
+    3,
+    16
+   ],
+   [
+    4,
+    13
+   ],
+   [
+    4,
+    17
+   ],
+   [
+    4,
+    19
+   ],
+   [
+    5,
+    15
+   ],
+   [
+    6,
+    12
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    19
+   ],
+   [
+    7,
+    23
+   ],
+   [
+    8,
+    19
+   ],
+   [
+    8,
+    26
+   ],
+   [
+    9,
+    16
+   ],
+   [
+    9,
+    17
+   ],
+   [
+    9,
+    22
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    17
+   ],
+   [
+    11,
+    21
+   ],
+   [
+    11,
+    22
+   ],
+   [
+    12,
+    14
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    13,
+    19
+   ],
+   [
+    13,
+    24
+   ],
+   [
+    14,
+    19
+   ],
+   [
+    14,
+    24
+   ],
+   [
+    15,
+    25
+   ],
+   [
+    16,
+    26
+   ],
+   [
+    16,
+    27
+   ],
+   [
+    19,
+    20
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 29,
+  "pairs_requested": 64,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 38,
+  "blind_pairs_related": 3,
+  "entity_relations": 8,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    18,
+    25
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "height": "magnitude",
+    "club_secretary_role": null
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 0,
+     "attribute": "arrival_time",
+     "entity": "pia",
+     "extreme": "min",
+     "edges": 2
+    },
+    {
+     "claim_id": 3,
+     "attribute": "arrival_time",
+     "entity": "leo",
+     "extreme": "max",
+     "edges": 2
+    }
+   ],
+   "extreme_edges": 4,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 29,
+  "n_edges": 17,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   2
+  ],
+  "harmony": 0.9829151357806374,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   0.0152284263959391
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.9997680950295034,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.4791141972893971e-31,
+   3.697785493223493e-32,
+   0.0,
+   0.0,
+   2.958228394578794e-32,
+   5.916456789157589e-32,
+   7.642090019328552e-32,
+   1.9695431472081215
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 1,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 28,
+    "residual": 0.9997680950295034
+   },
+   {
+    "a": 3,
+    "b": 4,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 26,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 21,
+    "b": 25,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 21,
+    "b": 26,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 21,
+    "b": 27,
+    "residual": 0.0
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "residual": 0.0
+   },
+   {
+    "a": 26,
+    "b": 27,
+    "residual": 2.7117093616972283e-32
+   }
+  ],
+  "residual_ranking": [
+   28,
+   2
+  ],
+  "culprits": [
+   {
+    "claim": 28,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.017084864219362617
+   },
+   {
+    "claim": 2,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.017084864219362617
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 6543,
+   "api_calls": 0,
+   "cache_hits": 6543,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    1
+   ],
+   [
+    2,
+    28
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27
+   ],
+   [
+    9
+   ],
+   [
+    10
+   ],
+   [
+    11
+   ],
+   [
+    12,
+    13,
+    14,
+    18,
+    19
+   ],
+   [
+    15
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    20
+   ],
+   [
+    24
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    2,
+    28
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 18,
+    "b": 25,
+    "rationale": "A suggests it was daytime with warm sun, while B describes the sky darkening as descent began; these could be consistent if time passed between events, but they sit awkwardly close together temporally, suggesting a quick shift from warm afternoon sun to darkening sky.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "kai",
+   "b": "pia",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "pia",
+   "b": "kai",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "kai",
+   "b": "leo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 20,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "pia",
+   "b": "leo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 0,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "kai",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 0,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "leo",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "leo",
+   "b": "kai",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "leo",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "request": "c3a560c5683b06e23f3ecc4d51c83db7fd78ae48e608d9dc051fd846ed543f30",
+ "tag": "text-b33861b73f3b-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Kai is on the same team as Gus.",
+     "Gus is on the same team as Hana.",
+     "Kai is not on the same team as Hana."
+    ],
+    "explanation": "If Kai is on the same team as Gus, and Gus is on the same team as Hana, then Kai must be on the same team as Hana, contradicting the statement that Kai is not on the same team as Hana."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1099,
+  "output_tokens": 133,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

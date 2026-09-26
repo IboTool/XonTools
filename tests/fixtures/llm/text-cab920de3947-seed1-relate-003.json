@@ -1,0 +1,52 @@
+{
+ "request": "09d128794687c02c6b8665b17afde35d9f9a0e502c0305aec95717a2bf7c94e0",
+ "tag": "text-cab920de3947-seed1-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 20,
+    "b": 22,
+    "rationale": "Both describe events happening around the same time but tallying points has no bearing on whether Ana and Milo discussed strategy.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 20,
+    "b": 23,
+    "rationale": "Nell's tallying activity is independent of Ana and Milo's discussion of closing argument timing.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 21,
+    "b": 25,
+    "rationale": "Wren helping stack chairs is consistent with and suggests a general atmosphere of everyone staying late to help clean up, supporting the claim that everyone stayed to fold tables.",
+    "relation": "supports",
+    "confidence": 0.55
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "Discussing strategy quietly near the coffee station is consistent with and likely includes going over timing for closing arguments, so it supports that claim.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 22,
+    "b": 25,
+    "rationale": "Ana and Milo discussing strategy near the coffee station is unrelated to whether everyone stayed late to fold tables.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 966,
+  "output_tokens": 393,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

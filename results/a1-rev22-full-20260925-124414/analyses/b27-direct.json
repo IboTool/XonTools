@@ -1,0 +1,1091 @@
+{
+ "label": "b27-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-6c6ff5e4e778",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Otto is the team captain.",
+   "span": "Assume that Otto is the team captain.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Nell arrived before Milo.",
+   "span": "Nell arrived before Milo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Kai brought a thermos of tea to share with anyone who looked cold while waiting near the boathouse.",
+   "span": "Kai brought a thermos of tea to share with anyone who looked cold while waiting near the boathouse.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Otto stood near the registration table, chatting with volunteers about the schedule for the day.",
+   "span": "Otto stood near the registration table, chatting with volunteers about the schedule for the day.",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Milo arrived before Kai.",
+   "span": "Milo arrived before Kai.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Mina laughed at a joke someone told while stretching before the first heat.",
+   "span": "Mina laughed at a joke someone told while stretching before the first heat",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Mina did not win the raffle.",
+   "span": "Mina did not win the raffle.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Nell arrived before Kai.",
+   "span": "Nell arrived before Kai.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "The organizers announced that the second race would start a few minutes late due to a light breeze picking up over the course.",
+   "span": "The organizers announced that the second race would start a few minutes late due to a light breeze picking up over the course.",
+   "kind": "quoted"
+  },
+  {
+   "id": 9,
+   "text": "Otto checked his watch and adjusted the oars on his boat.",
+   "span": "Otto checked his watch and adjusted the oars on his boat, humming quietly to himself",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Mina won the raffle.",
+   "span": "Mina won the raffle.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Kai tightened the straps on his shoes.",
+   "span": "Kai tightened the straps on his shoes, glancing at the sky for signs of rain",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Nell offered to help carry extra life jackets to the far end of the dock.",
+   "span": "Nell offered to help carry extra life jackets to the far end of the dock, smiling at the volunteers along the way",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Milo watched the current ripple gently across the lake.",
+   "span": "Milo watched the current ripple gently across the lake, admiring how calm it looked despite the wind",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "The two claims concern entirely different subjects (team leadership vs. arrival order) with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Claim A concerns Otto's role as team captain, while claim B concerns Kai's independent action of bringing tea near the boathouse; neither fact affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Being team captain doesn't preclude standing near a registration table chatting with volunteers; these describe different aspects of Otto with no logical conflict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A concerns Otto's role as team captain, while claim B concerns the arrival order of Milo and Kai. These involve different people and different subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Claim A concerns Otto's role as team captain, while claim B describes an unrelated event about Mina laughing during stretching before a race. There is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "There is no stated connection between team captaincy and the outcome of a raffle; knowing Otto is captain gives no information about whether Mina won the raffle.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Claim A concerns Otto's team role, while claim B concerns the arrival order of Nell and Kai. There is no logical or factual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A concerns team leadership while claim B concerns race scheduling due to weather; they share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Being team captain doesn't preclude checking a watch or adjusting oars; these are unrelated activities that a captain could plausibly do, but the claims don't bear on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "The two claims describe unrelated facts about different people and events, with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Claim A concerns Otto's role as team captain, while claim B describes an unrelated action by a different person (Kai). There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A about Otto being team captain has no logical or causal connection to Nell's offer to help carry life jackets; they involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "The claims concern entirely unrelated subjects: one is about team leadership, the other about a scene of water rippling on a lake. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Claim A concerns the relative arrival order of Nell and Milo, while claim B concerns Kai bringing tea near the boathouse; neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A concerns the relative arrival order of Nell and Milo, while claim B describes Otto's location and activity, with no shared subject or overlapping detail to connect them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "A only orders Nell before Milo and says nothing about Kai's arrival time, so B is neither made more nor less likely by A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A concerns the arrival order of Nell and Milo, while claim B concerns Mina laughing at a joke while stretching before a race heat. These involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A concerns the arrival order of Nell and Milo, while claim B concerns whether Mina won a raffle. These involve different people and different events with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Knowing Nell arrived before Milo says nothing about Nell's arrival relative to Kai, since Milo and Kai are different people with no stated relation between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A concerns the relative arrival order of Nell and Milo, while claim B concerns an announcement about a race start delay due to wind; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A concerns the arrival order of Nell and Milo, while claim B describes Otto's independent actions with his watch and boat. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A concerns the order of arrival between Nell and Milo, while claim B concerns the outcome of a raffle involving Mina. There is no logical or contextual connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A concerns the relative arrival order of Nell and Milo, while claim B concerns Kai adjusting his shoe straps; they involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Arrival order relative to Milo has no bearing on whether Nell offered to help carry life jackets; the claims concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns arrival order between Nell and Milo, while claim B describes Milo watching ripples on a lake; these events are independent and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Both describe people at what seems to be the same event, but their content doesn't directly interact - Kai's thermos-sharing near the boathouse and Otto's chatting near registration are independent activities with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A describes Kai's activity and intent near the boathouse but says nothing about the relative arrival times of Kai and Milo, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "The two claims describe different people and unrelated activities in a possibly similar setting, with no causal or logical connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A describes Kai's thoughtful gesture near the boathouse, while claim B concerns whether Mina won a raffle; these involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "A describes Kai's actions and intent at the boathouse but says nothing about the relative arrival times of Kai and Nell, so it has no bearing on whether Nell arrived before Kai.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Both claims describe a boat racing event but concern different, independent facts—Kai's tea sharing and the organizers' delay announcement—so one does not affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Both describe activities happening near boats/boathouse, but they involve different people doing unrelated actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Kai bringing tea to share near the boathouse has no logical or causal connection to Mina winning a raffle; these describe unrelated events with no shared context implied.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Both describe minor actions Kai could take around the same waiting period; neither implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Both claims describe helpful, considerate actions taken by different people in what seems like a similar waterfront setting, but neither action implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Both describe a plausible scene near a lake/boathouse with mild weather, but A's content about Kai sharing tea does not causally or logically bear on Milo watching the current ripple; they seem to be separate observations that could coexist in the same setting without one affecting the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A describes Otto's activity near a registration table, which has no bearing on the relative arrival order of Milo and Kai.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Both describe different people in possibly the same event context (a race day), but neither claim's truth affects the likelihood of the other; they involve different subjects and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A describes Otto's location and activity at a registration table, which has no bearing on whether Mina won a raffle; there is no shared subject or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A describes Otto's location and activity, while claim B compares arrival times of Nell and Kai. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Otto's location and small talk about the schedule doesn't directly cause or prevent a delay announcement about the second race; these are largely independent events at an event with multiple happenings.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "A places Otto near a registration table talking with volunteers, while B has him at his boat adjusting oars, suggesting a different location and activity at the same general time; these are hard to reconcile unless read as sequential moments, but as simultaneous scenes they conflict.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Otto's activity near the registration table has no bearing on whether Mina won the raffle; they involve different people and unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "The claims describe two different people engaged in unrelated independent actions with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "The two claims describe different people doing unrelated activities at possibly the same event, with no causal or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "The two claims describe different people in seemingly unrelated settings and activities, with no shared context or causal link stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Claim A concerns the arrival order of Milo and Kai, while claim B concerns Mina laughing at a joke during pre-heat stretching. These involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "The two claims concern entirely different events (arrival order versus a raffle outcome) with no logical or factual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "A tells us about the relative arrival order of Milo and Kai, but says nothing about Nell's arrival time, so it does not bear on whether Nell arrived before Kai.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Claim A concerns the arrival order of Milo and Kai, while claim B concerns a delay announcement for a second race due to weather; neither statement bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Claim A concerns the arrival order of Milo and Kai, while claim B describes Otto's independent actions with his watch and oars; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "The order in which Milo and Kai arrived has no logical or causal bearing on who won a raffle; these are unrelated events with no shared entities or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Milo arriving before Kai says nothing about what Kai did with his shoes; the two claims describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "The arrival order of Milo and Kai has no logical or causal connection to Nell's offer to help carry life jackets; they involve different people and unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A concerns the relative arrival order of Milo and Kai, while claim B describes Milo observing a lake's ripples; these are independent facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Claim A describes a social moment before a race, while claim B concerns a raffle outcome; the two events are unrelated in content with no causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A concerns Mina laughing during warm-up stretching, while claim B concerns the arrival order of Nell and Kai. These involve different people and different events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A describes a moment before the first heat, while claim B concerns a delay announcement for the second race due to wind; they involve different events and have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Both describe separate, independent pre-race actions by different people with no stated connection or conflict between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "The two claims describe unrelated events (a pre-race joke versus a raffle outcome) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A describes Mina laughing during pre-race stretching, while claim B describes Kai adjusting his shoe straps; these involve different people and unrelated actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Both describe separate incidental actions in what seems a shared pre-race setting, but neither event implies or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A describes Mina laughing before a race heat, while claim B describes Milo watching a lake; they involve different people, settings, and actions with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "The two claims concern entirely different events (a raffle outcome vs. an arrival order) with no stated connection between the people or events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Claim A concerns Mina losing a raffle, while claim B concerns a race start delay due to wind conditions; they involve unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Mina not winning a raffle has no logical or thematic connection to Otto checking his watch and adjusting his oars; the two claims involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A directly states Mina did not win, while claim B states she did win the same raffle; these are direct negations of each other with no ordinary reading allowing both to be true.",
+   "relation": "contradicts",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "The two claims concern entirely different people and unrelated events; whether Mina won a raffle has no bearing on Kai tightening his shoe straps.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A concerns whether Mina won a raffle, while claim B concerns Nell offering to help carry life jackets. There is no logical or contextual connection between these two events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "These claims describe unrelated events involving different people and contexts; A's content has no bearing on B's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A concerns the order of arrival between Nell and Kai, while claim B concerns a race start delay due to wind; they involve different subjects and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A concerns the relative arrival order of Nell and Kai, while claim B describes Otto's independent actions involving a watch and boat oars. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A concerns arrival order between Nell and Kai, while claim B concerns who won a raffle. There is no logical or contextual connection between these two events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Nell arriving before Kai says nothing about what Kai did with his shoes, so there is no logical or narrative connection given the content of the claims alone.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Arriving before Kai says nothing about whether Nell offered to help carry life jackets; the claims concern different aspects of the event with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "The claims involve different subjects and events with no logical or causal connection between the timing of Nell's and Kai's arrivals and Milo watching the lake current.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "The announcement of a delay gives Otto a plausible reason to check his watch and use the extra time to adjust his oars, so A makes B more plausible in context.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "The race delay due to wind has no logical or causal connection to the outcome of an unrelated raffle drawing.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "A is about a delay announcement due to wind, which has no clear bearing on whether Kai tightens his shoe straps; these are independent actions with no causal or logical link stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Both claims relate to a boating/race event context, but A's announcement about a delayed race start does not logically bear on Nell's offer to help carry life jackets; they describe unrelated actions by different parties.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "A light breeze picking up over a race course could plausibly cause gentle ripples on a nearby lake, so A makes B somewhat more plausible, though the two settings aren't explicitly the same body of water.",
+   "relation": "supports",
+   "confidence": 0.45
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A describes Otto's actions with his watch and boat, which has no logical or causal connection to Mina winning a raffle.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "These describe two different people performing unrelated actions with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Both suggest a boating context with people preparing equipment, but neither claim's truth bears directly on the other's likelihood; they describe separate independent actions.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Both describe plausible simultaneous scenes at a lake involving boats/water, but A is about Otto's actions and B about Milo's observation; there is no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Mina winning a raffle has no logical or causal connection to Kai tightening his shoe straps; these are independent, unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Winning a raffle has no logical or causal bearing on someone else offering to help carry life jackets; these are unrelated events involving different people and activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "The two claims describe unrelated events with no shared subjects, causal links, or contextual overlap.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Both actions seem to happen in a similar preparatory context (getting ready for some water activity), but Kai tightening his shoe straps has no direct bearing on Nell's offer to help carry life jackets; they are independent actions by different people.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "These describe two different people doing unrelated actions in what appear to be different contexts; A gives no information bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "A describes Nell's offer to help with life jackets while B describes Milo passively observing the lake; the two events are independent and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "raffle_outcome",
+    "arity": "binary",
+    "arity_span": "Mina did not win the raffle.",
+    "order_kind": null,
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 6,
+    "attribute": "raffle_outcome",
+    "kind": "different",
+    "a": "mina",
+    "b": "raffle_winner",
+    "confidence": 0.3
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "subject": "nell",
+    "comparative": "before",
+    "object": "milo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "subject": "milo",
+    "comparative": "before",
+    "object": "kai",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 7,
+    "attribute": "arrival_time",
+    "subject": "nell",
+    "comparative": "before",
+    "object": "kai",
+    "confidence": 0.98
+   }
+  ],
+  "extremes": [],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "before",
+    "greater_side": "object"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 14,
+  "pairs_requested": 91,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 4,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    3,
+    9
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "raffle_outcome": null
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 14,
+  "n_edges": 3,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9450943480794227,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.33783783783783783,
+   1.0,
+   0.9999999999999998,
+   0.9999999999999998,
+   0.33783783783783783,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.8858655953250547,
+   0.0,
+   2.2186712959340958e-32,
+   4.930380657631324e-32,
+   0.8858655953250547,
+   0.0,
+   0.0,
+   2.2186712959340958e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 6,
+    "b": 10,
+    "residual": 0.4474068663257852
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 13,
+    "residual": 2.2186712959340958e-32
+   }
+  ],
+  "residual_ranking": [
+   6,
+   10
+  ],
+  "culprits": [
+   {
+    "claim": 6,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.05490565192057728
+   },
+   {
+    "claim": 10,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.05490565192057728
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 10286,
+   "api_calls": 0,
+   "cache_hits": 10286,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    7
+   ],
+   [
+    8,
+    9,
+    13
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    6,
+    10
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 3,
+    "b": 9,
+    "rationale": "A places Otto near a registration table talking with volunteers, while B has him at his boat adjusting oars, suggesting a different location and activity at the same general time; these are hard to reconcile unless read as sequential moments, but as simultaneous scenes they conflict.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 6,
+   "attribute": "raffle_outcome",
+   "kind": "different",
+   "a": "mina",
+   "b": "raffle_winner",
+   "confidence": 0.3,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "milo",
+   "b": "nell",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 4,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "kai",
+   "b": "milo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 7,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "kai",
+   "b": "nell",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

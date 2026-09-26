@@ -1,0 +1,127 @@
+{
+ "request": "903268a12ad7381c5166425c618da39f8e6e85d7b715236b6023330f10325dd2",
+ "tag": "text-4bd0c08f04f5-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 5,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "hana",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 7,
+    "attribute": "team",
+    "kind": "same",
+    "a": "finn",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "finn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "team",
+    "kind": "different",
+    "a": "rosa",
+    "b": "hana",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "alma",
+    "b": "yara",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "team",
+    "kind": "different",
+    "a": "finn",
+    "b": "hana",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "hana",
+    "b": "rosa",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2144,
+  "output_tokens": 523,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

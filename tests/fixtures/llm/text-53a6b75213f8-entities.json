@@ -1,0 +1,164 @@
+{
+ "request": "8a408ca8a34e047ba8303327bcdedac76874ef2a2c88ba1637e969542137e742",
+ "tag": "text-53a6b75213f8-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "bo",
+    "mentions": [
+     "Bo"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "competition_rank",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "event_organizer",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 6,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "bo",
+    "b": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 8,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "nell",
+    "b": "bo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "nell",
+    "b": "hugo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "class",
+    "kind": "same",
+    "a": "finn",
+    "b": "bo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "class",
+    "kind": "different",
+    "a": "bo",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 20,
+    "attribute": "competition_rank",
+    "kind": "greater",
+    "a": "nell",
+    "b": "finn",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 21,
+    "attribute": "competition_rank",
+    "kind": "greater",
+    "a": "nell",
+    "b": "finn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "competition_rank",
+    "kind": "greater",
+    "a": "finn",
+    "b": "nell",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 23,
+    "attribute": "class",
+    "kind": "different",
+    "a": "finn",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 2,
+    "attribute": "event_organizer",
+    "kind": "same",
+    "a": "hugo",
+    "b": "hugo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 29,
+    "attribute": "event_organizer",
+    "kind": "different",
+    "a": "hugo",
+    "b": "hugo",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2278,
+  "output_tokens": 743,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

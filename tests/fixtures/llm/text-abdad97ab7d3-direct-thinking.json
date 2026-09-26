@@ -1,0 +1,25 @@
+{
+ "request": "b4dfa9e83acd8eb98ae9a3a8cd54fee0f1277dfecbac6f4271f2bdc766c25285",
+ "tag": "text-abdad97ab7d3-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Milo is on the same team as Jun.",
+     "Jun is on the same team as Hana.",
+     "Milo is not on the same team as Hana."
+    ],
+    "explanation": "If Milo is on the same team as Jun and Jun is on the same team as Hana, then Milo must be on the same team as Hana, contradicting the statement that he is not."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1043,
+  "output_tokens": 187,
+  "thinking_tokens": 61
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,151 @@
+{
+ "request": "6efd714706afda96f31214f03b0640248692d500d5144c809a7ad0757e2f9b08",
+ "tag": "text-6909e9f16383-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   },
+   {
+    "id": "jude",
+    "mentions": [
+     "Jude"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "multi",
+    "arity_span": "There were three teams."
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "hugo",
+    "b": "dev",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "cleo",
+    "b": "hugo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "ana",
+    "b": "dev",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 7,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "jude",
+    "b": "ana",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "cleo",
+    "b": "hugo",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "dev",
+    "b": "cleo",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "dev",
+    "b": "hugo",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 12,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dev",
+    "b": "hugo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "team",
+    "kind": "different",
+    "a": "hugo",
+    "b": "cleo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dev",
+    "b": "cleo",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2126,
+  "output_tokens": 674,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

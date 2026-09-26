@@ -1,0 +1,128 @@
+{
+ "request": "10d9f7e00c19ebcef2c03286fe0bd628363676d21864a0a849e4ff408ec0c943",
+ "tag": "text-19c490cc2b17-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "tess",
+    "mentions": [
+     "Tess",
+     "she"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "event_organizer_role",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "finish_time",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "dara",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "event_organizer_role",
+    "kind": "different",
+    "a": "quinn",
+    "b": "quinn",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 13,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "dara",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "rosa",
+    "b": "tess",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 22,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "dara",
+    "b": "tess",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 25,
+    "attribute": "finish_time",
+    "kind": "greater",
+    "a": "tess",
+    "b": "rosa",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 26,
+    "attribute": "finish_time",
+    "kind": "greater",
+    "a": "dara",
+    "b": "rosa",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2262,
+  "output_tokens": 559,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

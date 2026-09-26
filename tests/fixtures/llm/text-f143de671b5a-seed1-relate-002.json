@@ -1,0 +1,115 @@
+{
+ "request": "924c5b2efde95eab689f7250428f6cd24401b162cf1c7aa7485a091fd216f21c",
+ "tag": "text-f143de671b5a-seed1-relate-002",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 13,
+    "b": 18,
+    "rationale": "Both claims concern shift assignments but involve different people pairs, so one doesn't directly establish the other.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   },
+   {
+    "a": 13,
+    "b": 19,
+    "rationale": "Shift differences between Nell and Leo have no bearing on age differences between Jun and Hugo.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 13,
+    "b": 23,
+    "rationale": "Nell and Leo working different shifts is consistent with there being two shifts, supporting the idea of multiple shifts existing.",
+    "relation": "supports",
+    "confidence": 0.5
+   },
+   {
+    "a": 14,
+    "b": 15,
+    "rationale": "If the windows fog up, this directly causes the blurred view of the courtyard described in B.",
+    "relation": "supports",
+    "confidence": 0.9
+   },
+   {
+    "a": 14,
+    "b": 21,
+    "rationale": "Oven heat causing fogged windows is unrelated to the smell of cinnamon rolls drifting through the door.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 15,
+    "b": 18,
+    "rationale": "Fogged windows blurring the courtyard view has no connection to Hugo and Leo's shift schedules.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "rationale": "Ranking highest in seniority directly supports having worked there the longest among those present.",
+    "relation": "supports",
+    "confidence": 0.9
+   },
+   {
+    "a": 18,
+    "b": 23,
+    "rationale": "Hugo and Leo working different shifts supports the existence of multiple (two) shifts at the shop.",
+    "relation": "supports",
+    "confidence": 0.5
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "rationale": "Jun being younger than Hugo has no bearing on whether they handle delivery routes with equal care.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "rationale": "The smell drifting through the door directly supports it drawing in customers from the lane.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "rationale": "The smell of cinnamon rolls has no logical connection to how many shifts the shop runs.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 21,
+    "b": 25,
+    "rationale": "The smell drifting through the door is unrelated to the team gathering outside at day's end.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "Customers being drawn in by smell has no bearing on the number of shifts run.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "Empty trays by afternoon suggest the day's baking work was done, consistent with the team later gathering to enjoy sunlight before locking up, though not a strict logical requirement.",
+    "relation": "supports",
+    "confidence": 0.4
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1191,
+  "output_tokens": 946,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

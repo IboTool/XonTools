@@ -1,0 +1,135 @@
+{
+ "request": "05ccce4efdc936bab6d3270e5ff07287e9c6dc90f4fb70e619c25c14cc20a7eb",
+ "tag": "text-f143de671b5a-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun",
+     "he"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "shift",
+    "arity": "binary",
+    "arity_span": "The shop ran two shifts."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "kneading_speed",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "seniority",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "delivery_care",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "hugo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "hugo",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "nell",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "hugo",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "hugo",
+    "b": "jun",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 20,
+    "attribute": "delivery_care",
+    "kind": "same",
+    "a": "hugo",
+    "b": "jun",
+    "confidence": 0.7
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2183,
+  "output_tokens": 576,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

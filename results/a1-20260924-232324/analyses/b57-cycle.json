@@ -1,0 +1,2797 @@
+{
+ "label": "b57-cycle",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-31ad8b8b4dde",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Otto arrived first among the volunteers.",
+   "span": "Otto arrived first, stretching his arms and greeting everyone with a wide grin.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Kira showed up a few minutes later than Otto.",
+   "span": "Kira showed up a few minutes later",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Kira was carrying a stack of mesh bags for collecting debris.",
+   "span": "carrying a stack of mesh bags for collecting debris",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Cleo is the head judge.",
+   "span": "Assume that Cleo is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 4,
+   "text": "Esme trailed in last.",
+   "span": "Esme trailed in last, still tying her shoelaces as she jogged across the sand.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Esme was still tying her shoelaces as she jogged across the sand.",
+   "span": "still tying her shoelaces as she jogged across the sand",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Leo waved from the boardwalk.",
+   "span": "Leo waved from the boardwalk, balancing a cooler and a clipboard in his arms.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Leo was balancing a cooler and a clipboard in his arms.",
+   "span": "balancing a cooler and a clipboard in his arms",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "The five of them split into small groups to cover different sections of the shoreline.",
+   "span": "The five of them split into small groups to cover different sections of the shoreline",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Each of the five was armed with gloves and buckets.",
+   "span": "each armed with gloves and buckets",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Leo brought the first-aid kit.",
+   "span": "Leo brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Cleo was slightly taller than Kira.",
+   "span": "Cleo, who was slightly taller than Kira but shorter than Otto",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Cleo was shorter than Otto.",
+   "span": "but shorter than Otto",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Cleo wandered along the tide line noting how much trash had washed up overnight.",
+   "span": "wandered along the tide line noting how much trash had washed up overnight",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Otto finished ahead of Kira.",
+   "span": "Otto finished ahead of Kira.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "The group began sorting their collected items into recycling bins and trash bags as the sun rose higher.",
+   "span": "As the sun rose higher, the group began sorting their collected items into recycling bins and trash bags",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Kira finished ahead of Esme.",
+   "span": "Kira finished ahead of Esme.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Esme is the youngest of the group.",
+   "span": "Esme, the youngest of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Esme laughed as she found an old flip-flop buried in the sand.",
+   "span": "laughed as she found an old flip-flop buried in the sand",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Esme finished ahead of Otto.",
+   "span": "Esme finished ahead of Otto.",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "By midday, the beach looked remarkably cleaner.",
+   "span": "By midday, the beach looked remarkably cleaner",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "There were neat piles of sorted waste lined along the boardwalk.",
+   "span": "with neat piles of sorted waste lined along the boardwalk",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Leo was the oldest among them.",
+   "span": "Leo, who was the oldest among them",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Leo took a moment to photograph the results for the community newsletter.",
+   "span": "took a moment to photograph the results for the community newsletter",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "They made plans to return the following month to continue their work along the coastline.",
+   "span": "they made plans to return the following month to continue their work along the coastline",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Otto arriving first is consistent with Kira arriving a few minutes later than Otto.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Otto's arrival order has no bearing on what Kira was carrying.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Arrival order among volunteers is unrelated to who is the head judge.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Otto arriving first is consistent with Esme trailing in last, though not guaranteed.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Otto's arrival order doesn't determine Esme's shoelace-tying action.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Otto's arrival timing is unrelated to Leo waving from the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Otto's arrival order has no connection to what Leo was carrying.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Otto arriving first doesn't specifically imply or contradict the group splitting into subgroups later.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Arrival order doesn't relate to equipment carried by all five.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Otto's arrival order is unrelated to Leo bringing the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Arrival timing has no bearing on relative height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Arrival order is unrelated to height comparisons between Cleo and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Otto's arrival timing doesn't affect Cleo's activity along the tide line.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Otto arriving first directly supports the idea that Otto finished ahead of Kira, assuming order corresponds to finishing.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Arrival order has no direct bearing on the group's later sorting activity.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Otto's arrival order doesn't determine the finishing order between Kira and Esme.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Arrival order is unrelated to who is youngest.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Otto's arrival timing has no bearing on Esme finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Otto arriving first as a volunteer doesn't determine finishing order later, since arrival and finishing are separate events.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Arrival order of volunteers is unrelated to how clean the beach looked by midday.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Otto's arrival order has no bearing on whether waste piles were later lined along the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Arrival order is unrelated to relative age of Leo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "Otto arriving first does not affect whether Leo photographed results later.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "Arrival order has no connection to future plans to return.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Kira's arrival timing is unrelated to what she was carrying.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Kira's arrival time has no bearing on who is head judge.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Kira arriving after Otto doesn't determine whether Esme arrived last, since Esme's position is independent.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Kira's arrival time is unrelated to Esme's shoelace-tying action.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Kira's arrival timing is unrelated to Leo waving.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Kira's arrival time is unrelated to what Leo was carrying.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Kira's arrival timing does not affect whether the group later split into subgroups.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Kira's arrival time is unrelated to everyone having gloves and buckets.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Kira's arrival timing is unrelated to Leo bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Kira's arrival order is unrelated to her height compared to Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Kira's arrival timing has no bearing on Cleo's height relative to Otto.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Kira's arrival time is unrelated to Cleo's activity along the tide line.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "If Kira arrived after Otto, this directly supports that Otto finished ahead of Kira in arrival order.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Kira's arrival timing is unrelated to the later sorting activity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Kira's arrival relative to Otto doesn't determine her finishing order relative to Esme.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Kira arriving after Otto doesn't establish anything about Esme's age.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Kira's arrival time relative to Otto has no bearing on Esme's actions with a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim 1 concerns arrival order, unrelated to finishing order between Esme and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Arrival timing has no logical connection to the beach's cleanliness by midday.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Kira's late arrival doesn't affect whether waste piles were sorted on the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Kira's arrival time relative to Otto has no bearing on Leo's age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Kira's arrival timing is unrelated to Leo photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 24,
+   "rationale": "Arrival order has no connection to future plans to return.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Carrying mesh bags says nothing about who is the head judge.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Kira carrying bags doesn't relate to Esme trailing in last.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Kira's equipment has no bearing on Esme's shoelace-tying.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Kira carrying bags is unrelated to Leo waving from the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "What Kira carries doesn't affect what Leo carries.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Kira carrying mesh bags for debris slightly supports the idea of an organized cleanup with groups, but doesn't directly imply the group splitting mechanic.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim 9 says each of the five had gloves and buckets, while claim 2 says Kira had mesh bags instead, which could suggest additional equipment beyond gloves/buckets, not necessarily contradicting but not confirming either.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Kira's bags are unrelated to Leo bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Carrying mesh bags has no bearing on relative height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Kira's equipment is unrelated to height comparison between Cleo and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Kira carrying bags doesn't relate to Cleo's tide-line observations.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Kira's carried items have no bearing on the finishing order between Otto and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Kira carrying mesh bags for debris collection supports the later claim that the group sorted collected items into bins, as it implies preparation for such sorting.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Carrying mesh bags is unrelated to finishing order between Kira and Esme.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Carrying mesh bags has no bearing on Esme's age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Kira carrying mesh bags is unrelated to Esme finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Carrying mesh bags does not affect finishing order between Esme and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Kira carrying bags for debris collection could contribute to cleanup, weakly supporting a cleaner beach outcome.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Carrying mesh bags for collecting debris could plausibly lead to sorted waste piles, offering weak support.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Carrying mesh bags is unrelated to who is oldest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Kira's bag-carrying is unrelated to Leo photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 24,
+   "rationale": "Carrying bags is unrelated to future plans to return.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Cleo being head judge has no bearing on Esme's finishing position.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Cleo's role as head judge is unrelated to Esme tying her shoelaces.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Cleo being head judge is unrelated to Leo waving from the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Cleo's judging role is unrelated to Leo carrying a cooler and clipboard.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Cleo being head judge is unrelated to the group splitting into sections.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Cleo's judging role is unrelated to everyone having gloves and buckets.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Cleo being head judge is unrelated to Leo bringing the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Being head judge is unrelated to relative height compared to Kira.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Being head judge is unrelated to relative height compared to Otto.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Being head judge could plausibly explain Cleo monitoring the tide line, offering weak support.",
+   "relation": "supports",
+   "confidence": 0.3
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Cleo being head judge is unrelated to Otto finishing ahead of Kira.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Cleo being head judge has no bearing on sorting recycling bins.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Cleo's judging role is unrelated to Kira and Esme's finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Cleo being head judge doesn't affect who is youngest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Cleo's role as judge has no connection to Esme finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Cleo being head judge is unrelated to Esme and Otto's race order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Cleo's judging role has no bearing on the beach's cleanliness by midday.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Cleo being head judge doesn't relate to the piles of sorted waste.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Cleo's role as judge doesn't determine Leo's age relative to others.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Cleo being head judge has no connection to Leo photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 24,
+   "rationale": "Cleo's judging role doesn't affect plans to return next month.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Esme trailing in last is directly supported by her still tying shoelaces while others ran.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Esme finishing last has no connection to Leo waving from the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Esme's last-place finish is unrelated to Leo carrying a cooler and clipboard.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Esme trailing last doesn't relate to the group splitting into sections.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Esme's finishing position doesn't relate to everyone having gloves and buckets.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Esme trailing last has no bearing on Leo bringing the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Esme's race position is unrelated to Cleo's height compared to Kira.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Esme trailing last has no bearing on Cleo's height compared to Otto.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Esme's finishing position is unrelated to Cleo wandering the tide line.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Esme trailing last is consistent with but does not directly determine Otto finishing ahead of Kira, though it implies both finished ahead of Esme, slightly supporting the ordering.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Esme trailing last is unrelated to the group's later sorting activity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "If Esme finished last, Kira must have finished ahead of her, supporting claim 16.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Finishing last in a race is unrelated to being the youngest in age.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Trailing last doesn't bear on whether Esme laughed at finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "If Esme trailed in last, she could not have finished ahead of Otto, contradicting claim 19.",
+   "relation": "contradicts",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Esme's finishing position is unrelated to the beach's cleanliness by midday.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Esme's race position has no bearing on piles of sorted waste on the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Esme trailing last is unrelated to Leo's age ranking.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Esme's finishing position doesn't relate to Leo taking photographs.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 24,
+   "rationale": "Esme's race outcome is unrelated to future plans to return.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Esme tying her shoelaces while jogging is unrelated to Leo waving from the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Esme's shoelace-tying is unrelated to Leo carrying a cooler and clipboard.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Esme jogging across sand doesn't bear on the group splitting into sections.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Esme's shoelace issue is unrelated to everyone carrying gloves and buckets.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Esme's shoelace-tying has no bearing on Leo bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Esme's shoelaces are unrelated to Cleo's height relative to Kira.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Esme's shoelace-tying is unrelated to Cleo's height relative to Otto.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Esme's actions are unrelated to Cleo's tide-line observations.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Esme tying shoelaces is unrelated to Otto finishing ahead of Kira.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Esme's shoelace delay while jogging suggests she was still arriving/starting late, which is unrelated to the later sorting activity happening as the sun rose.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Esme still tying shoelaces suggests she started late, which is consistent with Kira finishing ahead of her, but this is not a direct logical entailment.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Tying shoelaces while jogging has no bearing on age ranking.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Both describe Esme's actions on the beach but are independent incidents with no causal link.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Esme being delayed by shoelaces could support her finishing behind others, but Otto's position isn't specified, making this weak.",
+   "relation": "unrelated",
+   "confidence": 0.5
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Esme's shoelace incident is unrelated to the overall midday state of beach cleanliness.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "No connection between Esme's shoelace-tying and the sorted waste piles.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Esme's action has no bearing on Leo's age.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Esme's shoelace incident does not relate to Leo photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 24,
+   "rationale": "Esme's shoelace-tying is unrelated to future group plans.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Both describe Leo's actions at the same time, but waving doesn't imply or preclude him carrying items.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Leo waving from the boardwalk doesn't relate to the group's decision to split into sections.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Leo's waving has no bearing on what equipment each person carries.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Leo waving is unrelated to what he brought.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Leo's action has no bearing on Cleo's height relative to Kira.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Leo's waving is unrelated to Cleo's height compared to Otto.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Leo waving from the boardwalk doesn't relate to Cleo's tide-line activity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Leo's wave has no bearing on the race order of Otto and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Leo waving is unrelated to the group's later sorting activity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Leo's waving has no bearing on Kira's finish relative to Esme.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Leo's action doesn't relate to claims about Esme's age.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Leo waving is unrelated to Esme finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Leo waving has no bearing on finishing order between Esme and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Leo waving from the boardwalk doesn't imply anything about the beach's cleanliness by midday.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Leo waving is unrelated to the arrangement of sorted waste piles.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Waving from the boardwalk gives no information about relative age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Leo waving is a separate action from him photographing results later; no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 24,
+   "rationale": "Leo waving doesn't relate to the group's future plans.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Leo carrying items is unrelated to the group splitting into sections.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Leo's cooler and clipboard don't relate to everyone being armed with gloves and buckets.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Carrying a cooler and clipboard contradicts having brought the first-aid kit as the described items, since his arms are already full with different items and no first-aid kit is mentioned.",
+   "relation": "contradicts",
+   "confidence": 0.4
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Leo's carried items have nothing to do with Cleo and Kira's heights.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Leo's cooler and clipboard are unrelated to Cleo and Otto's height comparison.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Leo carrying a cooler and clipboard is unrelated to Cleo's tide-line activity.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Leo's carried items are unrelated to the finishing order of Otto and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Leo balancing items doesn't directly relate to the group's later sorting activity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Leo's cooler and clipboard have no bearing on Kira and Esme's finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Leo's carried items are unrelated to Esme being the youngest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Leo's balancing act is unrelated to Esme finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Leo's carried items are unrelated to the finishing order of Esme and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Leo carrying a cooler and clipboard doesn't relate to the beach looking cleaner by midday.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Leo carrying items is unrelated to the existence of sorted piles on the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "Carrying a cooler and clipboard has no bearing on Leo's relative age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Balancing items doesn't imply anything about later photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 24,
+   "rationale": "Carrying supplies is unrelated to future plans to return.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Splitting into groups to cover sections is consistent with each person being equipped with gloves and buckets, suggesting they were prepared for the task.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Splitting into groups doesn't specify what Leo carried.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Group division for cleanup has no bearing on height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Splitting into groups is unrelated to height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Splitting into groups to cover the shoreline supports the idea that someone like Cleo would be wandering along the tide line as part of her section.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Group division for cleanup work has no bearing on race finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Splitting into groups to clean supports the later act of sorting collected items together.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Group division for shoreline cleanup is unrelated to any race finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Splitting into cleanup groups has no bearing on who is youngest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Splitting into groups supports the idea that someone like Esme would independently find items like a flip-flop in her section.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Group division for shoreline cleanup is unrelated to any race finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Splitting into groups to clean supports the eventual outcome of a cleaner beach by midday.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Working in groups to sort trash supports the resulting neat piles along the boardwalk.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Splitting into cleanup groups has no bearing on Leo's age relative to others.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Splitting into groups doesn't directly relate to Leo photographing results afterward.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 24,
+   "rationale": "Working together in groups supports a positive outcome that could lead to plans to return.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Both describe equipment brought by group members but do not affect each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Equipment carried has no bearing on relative heights of individuals.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Equipment carried has no bearing on relative heights of individuals.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Being armed with gloves and buckets is consistent with and supports the idea of cleanup activity like noting trash along the tide line.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Carrying cleanup gear has no bearing on race or finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Having gloves and buckets supports the plausibility of later sorting collected items into bins and bags.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Equipment carried has no bearing on finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Equipment carried has no bearing on age comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Having gloves and buckets is consistent with finding items like a flip-flop during cleanup.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Equipment carried has no bearing on finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Being equipped for cleanup supports the outcome of a cleaner beach later.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Having gloves and buckets supports the existence of sorted waste piles as a result of cleanup.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Equipment carried has no bearing on age comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Carrying cleanup gear has no direct bearing on photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 24,
+   "rationale": "Carrying cleanup gear has no direct bearing on future plans to return.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Bringing a first-aid kit has no bearing on relative heights of individuals.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Bringing a first-aid kit has no bearing on relative heights of individuals.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Leo bringing a first-aid kit has no bearing on Cleo's actions along the tide line.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Bringing a first-aid kit has no bearing on race finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Leo bringing a first-aid kit has no direct bearing on the group's sorting activity later.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Leo bringing the first-aid kit has no bearing on race order between Kira and Esme.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Bringing the first-aid kit doesn't relate to who is the youngest.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Leo's action is unrelated to Esme finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Leo bringing supplies has no bearing on finishing order between Esme and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Bringing a first-aid kit doesn't imply anything about the beach's cleanliness at midday.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Bringing a first-aid kit is unrelated to the arrangement of sorted waste piles.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Bringing a first-aid kit doesn't indicate age status.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Leo bringing the kit is unrelated to him photographing the results later.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 24,
+   "rationale": "Bringing a first-aid kit doesn't relate to future plans to return.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Cleo being slightly taller than Kira says nothing about her height relative to Otto.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Height comparison is unrelated to Cleo's activity of checking the tide line.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Cleo's height relative to Kira has no bearing on race finishing order between Otto and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Height comparison is unrelated to the group's sorting activity.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Cleo's height relative to Kira doesn't affect finishing order between Kira and Esme.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Height comparison doesn't indicate age ranking.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Height comparison is unrelated to Esme's flip-flop discovery.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Cleo's height has no bearing on the finishing order between Esme and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Height comparison is unrelated to the state of the beach at midday.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Height comparison is unrelated to the arrangement of waste piles.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Cleo's height relative to Kira doesn't determine who is oldest.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "Height comparison between Cleo and Kira has no bearing on Leo photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 24,
+   "rationale": "Height comparison is unrelated to plans to return next month.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Cleo's height relative to Otto has no bearing on Cleo wandering the tide line.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Height comparison is unrelated to finishing order between Otto and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Height comparison has no bearing on the group's sorting activity.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Cleo's height relative to Otto is unrelated to Kira and Esme's finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Height comparison is unrelated to age ranking of Esme.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Height comparison has no connection to Esme finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Cleo's height relative to Otto is unrelated to the finishing order between Esme and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Height comparison is unrelated to the beach's cleanliness by midday.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Height comparison is unrelated to piles of sorted waste on the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Height comparison between Cleo and Otto is unrelated to Leo being the oldest.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Height comparison is unrelated to Leo photographing the results.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 24,
+   "rationale": "Height comparison is unrelated to future plans to return.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Cleo's activity of wandering the tide line has no bearing on Otto and Kira's finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Cleo noting trash washed up overnight naturally leads into the group sorting collected items later.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Cleo's tide-line activity has no bearing on Kira and Esme's finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Cleo's activity is unrelated to Esme's age ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Cleo wandering the tide line is a separate event from Esme finding a flip-flop, with no causal link.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Cleo's tide-line activity has no bearing on the finishing order between Esme and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Trash washing up overnight sets a starting condition consistent with later cleaning making the beach cleaner, but does not itself establish the outcome.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Noting trash on the tide line is unrelated to whether sorted waste piles exist on the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Cleo's observation of trash has no bearing on who is oldest in the group.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Cleo noting trash has no direct connection to Leo photographing results later.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 24,
+   "rationale": "Noting overnight trash doesn't directly imply plans to return next month.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "A race finishing order has no bearing on the group sorting collected items.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Otto finishing ahead of Kira doesn't determine the relation between Kira and Esme's finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Finishing order in a race is unrelated to Esme's age relative to the group.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Otto beating Kira has no bearing on Esme finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Otto finishing ahead of Kira doesn't directly determine whether Esme finished ahead of Otto.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Race finishing order is unrelated to the beach's cleanliness by midday.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Otto beating Kira in a race has no connection to sorted waste piles on the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Finishing order is unrelated to who is oldest in the group.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Otto's race position has no bearing on Leo photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 24,
+   "rationale": "Race order is unrelated to future plans to return to the coastline.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Sorting collected items has no bearing on race finishing order between Kira and Esme.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Sorting items into bins is unrelated to Esme's age.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "The group sorting items as the sun rose could plausibly include or coincide with Esme finding a flip-flop, but it doesn't specifically support that event.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Sorting collected items has no bearing on race order between Esme and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Beginning to sort trash as the sun rose plausibly leads to the beach looking cleaner by midday.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Sorting items into bins and bags would naturally result in neat sorted piles along the boardwalk.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Sorting activity has no bearing on who is oldest in the group.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "The sorting activity could be part of what Leo photographs later, but doesn't directly imply he does so.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "Beginning cleanup doesn't necessarily imply plans to return next month.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Kira finishing ahead of Esme has no bearing on Esme's age relative to the group.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Kira's finishing position is unrelated to Esme finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Kira finishing ahead of Esme doesn't determine the relative finish of Esme and Otto.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Individual finishing order is unrelated to the overall cleanliness of the beach.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Kira finishing ahead of Esme doesn't relate to the sorted waste piles on the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Finishing order between Kira and Esme has no bearing on Leo's age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Kira's finish time relative to Esme doesn't relate to Leo taking photographs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 24,
+   "rationale": "Kira finishing ahead of Esme doesn't relate to future group plans.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Esme being the youngest doesn't relate to her finding a flip-flop.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Esme's age status doesn't determine her finishing position relative to Otto.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Esme's age has no bearing on the cleanliness of the beach.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Esme's age has no bearing on the sorted waste piles.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Esme being the youngest is consistent with and supports Leo being the oldest, though not strictly required.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Esme's age status doesn't relate to Leo photographing the results.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 24,
+   "rationale": "Esme's age has no bearing on group plans to return.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Esme finding a flip-flop is unrelated to her finishing position relative to Otto.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Finding a flip-flop while cleaning suggests cleanup activity occurred, which supports the beach becoming cleaner, though weakly.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Finding trash items during cleanup slightly supports the existence of sorted waste piles, as it implies collection activity.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Esme finding a flip-flop has no bearing on who is oldest among the group.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Finding an old flip-flop doesn't relate to Leo photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 24,
+   "rationale": "Finding a flip-flop doesn't logically connect to plans for returning next month.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Esme finishing ahead of Otto is about individual pace, not directly about overall beach cleanliness.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Finishing a task ahead of someone doesn't specifically indicate sorted waste piles exist.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Esme finishing ahead of Otto has no connection to Leo's age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Esme's finishing time doesn't relate to Leo photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 24,
+   "rationale": "Esme finishing ahead of Otto doesn't bear on future group plans.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "A cleaner beach by midday is consistent with and supports the presence of sorted waste piles, as both indicate successful cleanup.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "The beach being cleaner has no relation to Leo's age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "A cleaner beach provides a visible result that supports Leo wanting to photograph the outcome.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 20,
+   "b": 24,
+   "rationale": "A cleaner beach could encourage continued efforts, supporting plans to return.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Sorted waste piles have no bearing on who is oldest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "The neat piles of sorted waste are exactly the kind of results Leo would photograph, supporting that claim.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "Visible organized results could motivate the group to continue their work later, supporting future plans.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Leo being the oldest doesn't specifically explain or relate to him photographing results.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "Leo's age doesn't bear on the group's plans to return.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 23,
+   "b": 24,
+   "rationale": "Leo documenting results for the newsletter suggests ongoing engagement with the project, supporting future plans to continue.",
+   "relation": "supports",
+   "confidence": 0.55
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto"
+    ]
+   },
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "finish_order",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_order",
+    "kind": "greater",
+    "a": "kira",
+    "b": "otto",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "cleo",
+    "b": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "otto",
+    "b": "cleo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "otto",
+    "b": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "kira",
+    "b": "esme",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "finish_order",
+    "kind": "greater",
+    "a": "esme",
+    "b": "otto",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 25,
+  "pairs_requested": 300,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 6,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 25,
+  "n_edges": 37,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct",
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   3
+  ],
+  "harmony": 0.9851854500068075,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "finish_order",
+    "entities": [
+     "otto",
+     "kira",
+     "esme"
+    ],
+    "relations": [
+     3,
+     4,
+     5
+    ],
+    "claim_ids": [
+     14,
+     16,
+     19
+    ],
+    "min_confidence": 0.9
+   }
+  ],
+  "truth_assignment": [
+   0.9159736870200258,
+   0.9498393038714156,
+   1.0,
+   1.0,
+   0.6846319407365058,
+   0.8551011619600162,
+   1.0,
+   0.5555555555555556,
+   1.0,
+   0.9999999999999998,
+   0.5555555555555556,
+   1.0,
+   1.0,
+   1.0,
+   0.9231206516152866,
+   1.0,
+   0.8506151298225555,
+   1.0,
+   1.0,
+   0.17928187502580478,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0
+  ],
+  "claim_residuals": [
+   0.03481520270494958,
+   0.004062052542827708,
+   0.0,
+   0.0,
+   0.9074931569188971,
+   0.04569646534220506,
+   0.0,
+   0.6913580246913581,
+   2.958228394578794e-32,
+   2.2186712959340957e-31,
+   0.6913580246913581,
+   0.0,
+   0.0,
+   2.958228394578794e-32,
+   0.029252721038584742,
+   2.958228394578794e-32,
+   0.04711121659118975,
+   0.0,
+   2.465190328815662e-32,
+   1.3826079676729044,
+   5.916456789157588e-32,
+   6.40949485492072e-32,
+   0.0,
+   1.405158487424927e-31,
+   2.7117093616972283e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 1,
+    "residual": 0.000974848004016365
+   },
+   {
+    "a": 0,
+    "b": 4,
+    "residual": 0.02675950178675427
+   },
+   {
+    "a": 0,
+    "b": 14,
+    "residual": 2.0431641170364338e-05
+   },
+   {
+    "a": 1,
+    "b": 14,
+    "residual": 0.0005711091027071585
+   },
+   {
+    "a": 2,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 5,
+    "residual": 0.024700792076867602
+   },
+   {
+    "a": 4,
+    "b": 14,
+    "residual": 0.022750746086649076
+   },
+   {
+    "a": 4,
+    "b": 16,
+    "residual": 0.024795377153257796
+   },
+   {
+    "a": 4,
+    "b": 19,
+    "residual": 0.7090297270117456
+   },
+   {
+    "a": 7,
+    "b": 10,
+    "residual": 0.49382716049382724
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 8,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 13,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 9,
+    "b": 15,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 9,
+    "b": 18,
+    "residual": 2.465190328815662e-32
+   },
+   {
+    "a": 9,
+    "b": 20,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 9,
+    "b": 21,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 13,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 17,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 20,
+    "b": 23,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 20,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 21,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 23,
+    "b": 24,
+    "residual": 2.7117093616972283e-32
+   }
+  ],
+  "residual_ranking": [
+   19,
+   4,
+   7,
+   10,
+   16,
+   5,
+   0,
+   14,
+   1
+  ],
+  "culprits": [
+   {
+    "claim": 19,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.009361243926389484
+   },
+   {
+    "claim": 4,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.008483432550963954
+   },
+   {
+    "claim": 7,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.004631942983587156
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 3000,
+   "api_calls": 0,
+   "cache_hits": 3000,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0,
+    1,
+    4,
+    5,
+    14,
+    16,
+    19
+   ],
+   [
+    2,
+    3,
+    8,
+    9,
+    13,
+    15,
+    18,
+    20,
+    21,
+    23,
+    24
+   ],
+   [
+    6
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    17,
+    22
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    4,
+    19
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "finish_order",
+    "entities": [
+     "otto",
+     "kira",
+     "esme"
+    ],
+    "relations": [
+     3,
+     4,
+     5
+    ],
+    "claim_ids": [
+     14,
+     16,
+     19
+    ],
+    "min_confidence": 0.9
+   }
+  ]
+ }
+}

@@ -1,0 +1,1242 @@
+{
+ "label": "b32-cycle",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-2ad526cb6694",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The library book club met on a rainy Thursday evening in the community room near the periodicals.",
+   "span": "The library book club met on a rainy Thursday evening in the community room near the periodicals.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Noor is the head judge.",
+   "span": "Assume that Noor is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Milo arrived first.",
+   "span": "Milo arrived first",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Milo was carrying a stack of paperbacks he had finished over the weekend.",
+   "span": "carrying a stack of paperbacks he had finished over the weekend",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Hana came in shortly after Milo.",
+   "span": "Hana came in shortly after",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Hana greeted everyone with a plate of cookies she had baked.",
+   "span": "greeting everyone with a plate of cookies she had baked",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Quinn won the raffle.",
+   "span": "Quinn won the raffle.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Dev is taller than Milo.",
+   "span": "Dev, who is taller than Milo",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Dev settled into the corner chair with his notebook ready for discussion.",
+   "span": "settled into the corner chair with his notebook ready for discussion",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Noor mentioned that she had read the assigned novel twice.",
+   "span": "Noor mentioned that she had read the assigned novel twice",
+   "kind": "quoted"
+  },
+  {
+   "id": 10,
+   "text": "Noor read the assigned novel once for pleasure and once for notes.",
+   "span": "once for pleasure and once for notes",
+   "kind": "quoted"
+  },
+  {
+   "id": 11,
+   "text": "Milo and Hana were in different houses.",
+   "span": "Milo and Hana were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "The group spent a while debating the ending of the book.",
+   "span": "The group spent a while debating the ending of the book",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Quinn argued passionately for a different interpretation than everyone else.",
+   "span": "Quinn arguing passionately for a different interpretation than everyone else",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Hana and Dev were in different houses.",
+   "span": "Hana and Dev were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Snacks were passed around.",
+   "span": "Snacks were passed around",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Noor asked everyone to quiet down so the discussion could continue.",
+   "span": "Noor asked everyone to quiet down so the discussion could continue",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Milo and Dev were in different houses.",
+   "span": "Milo and Dev were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Quinn is younger than Dev.",
+   "span": "Quinn, who is younger than Dev",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Quinn took detailed notes throughout the meeting for the next session.",
+   "span": "took detailed notes throughout the meeting for the next session",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "The school had two houses.",
+   "span": "The school had two houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Hana suggested a new book for next month.",
+   "span": "Hana suggested a new book for next month",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Milo checked his watch and realized it was later than he had expected.",
+   "span": "Milo checked his watch and realized it was later than he had expected",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Milo began gathering his things.",
+   "span": "he began gathering his things",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Dev offered to return the extra copies to the shelves before the room closed for the night.",
+   "span": "Dev offered to return the extra copies to the shelves before the room closed for the night",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "Noor thanked everyone for coming as the meeting wrapped up.",
+   "span": "Noor thanked everyone for coming as the meeting wrapped up",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "The two claims describe different, unconnected details (a meeting's setting versus what Milo was carrying); nothing in A implies or conflicts with B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A establishes a book club meeting setting; claim B describes someone preparing for that discussion, which fits naturally as part of the same scene, making it more plausible.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "A establishes the setting of a book club meeting, which makes it plausible that discussion of the book, including its ending, occurred, but it doesn't specifically imply the content of their discussion.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "B describes a plausible follow-up action consistent with a book club meeting in a room that would later close; A sets the scene but neither confirms nor requires this specific offer.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim 1 concerns who the head judge is, while claim 4 concerns the order of arrival of Hana and Milo; these describe unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Being the head judge is consistent with, and even makes plausible, having read an assigned novel twice as part of judging duties; A lends mild plausibility to B but doesn't directly imply it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Noor's role as head judge has no clear bearing on whether Quinn argued passionately for a different interpretation; the two claims concern different people and unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Being head judge plausibly gives Noor authority to ask people to quiet down for the discussion to continue, so A makes B more plausible.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 25,
+   "rationale": "Being the head judge is compatible with also thanking attendees as a meeting concludes; the two describe different roles/moments that can coexist without conflict or strong evidential link.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Arriving first says nothing about what Milo was carrying; the two facts are independent details about Milo that don't influence each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "If Milo arrived first, it is consistent and even expected that Hana came in shortly after him; A supports B by establishing Milo's precedence which B builds upon.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Milo arriving first is compatible with him checking his watch and being surprised at the lateness of the hour; arriving before others doesn't preclude him also feeling he was later than expected relative to his own schedule. The two are largely independent, though a slight tension exists since being first suggests he wasn't late.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "These describe two different people doing unrelated actions with no logical connection between carrying books and baking cookies.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Claim A describes Milo carrying paperbacks but gives no information about his location relative to Hana, so it neither supports nor contradicts the claim about them being in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Milo carrying finished paperbacks has no bearing on Quinn arguing for a different interpretation; they involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Carrying paperbacks and snacks being passed around describe unrelated activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A only concerns the timing of Hana's arrival relative to Milo, which has no bearing on whether she brought cookies and greeted everyone with them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Hana handing out cookies to everyone is a form of snacks being passed around, so A supports B under an ordinary reading.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "The two claims describe different, unrelated actions by different people with no logical connection to each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Winning a raffle has no logical or causal connection to someone else's reading habits for a novel; these are entirely separate events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Winning a raffle is a matter of chance and has no logical bearing on whether Quinn argued for a different interpretation than others; the two claims describe unrelated aspects of Quinn's life.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Winning a raffle has no bearing on relative age; these are independent facts about different domains.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 24,
+   "rationale": "Quinn winning a raffle has no logical or causal connection to Dev offering to return extra copies to shelves before closing; they involve unrelated events and actors.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "The two claims involve entirely different subjects and topics (height comparison vs. an argument/interpretation), with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "A's claim about relative height between Dev and Milo has no bearing on which houses Hana and Dev were in; the two statements concern unrelated attributes and people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "The claims describe unrelated situations with no shared subjects or logical connection; one's truth has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Claim A concerns relative height between Dev and Milo, while claim B concerns relative age between Quinn and Dev. Height and age comparisons involve different attributes and different people, so one gives no information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A concerns relative heights of Dev and Milo, while claim B concerns Quinn's note-taking behavior in a meeting. These involve entirely different people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 24,
+   "rationale": "Height and offering to return books to shelves are unrelated aspects of Dev's character or situation, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Claim A describes Dev's individual action and has no bearing on the location of Milo and Hana; there is no shared subject or context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "A states Noor read the novel twice; B elaborates on the purpose of each of those two readings, which is consistent with and further specifies A's claim.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Noor's claim about rereading a novel has no bearing on facts about the school's house system; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A concerns Noor's reading habits and claim B concerns the house assignments of Hana and Dev; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Noor's reading habits and the school's house structure describe unrelated aspects of the scenario with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A concerns Milo and Hana being in different houses, which has no logical or thematic connection to the group's discussion about a book's ending.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Knowing Milo and Hana are in different houses tells us nothing about Hana's relation to Dev, since Dev's house assignment is independent of Milo's.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Knowing Milo and Hana are in different houses tells us nothing about Milo's relationship to Dev, since Dev is a separate person not mentioned in claim A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A concerns Milo and Hana's living arrangements, while claim B concerns the relative ages of Quinn and Dev. There is no overlap in subjects or content between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "If Milo and Hana were in different houses, the school must have had at least two houses, which is consistent with and supports the school having exactly two houses.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "A states Milo and Hana were in different houses, which has no bearing on Milo's perception of time or his watch-checking behavior described in B. The two claims concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 25,
+   "rationale": "Claim A concerns the locations of Milo and Hana, while claim B concerns Noor's actions at a meeting; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "A general debate about the book's ending is consistent with, and plausibly involves, a member like Quinn passionately arguing a differing interpretation; A makes B more plausible without confirming its specifics.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "A group actively debating for a while plausibly grew loud, making it natural for someone to ask for quiet so the discussion could continue; the claims fit together as a coherent sequence.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "A describes the group discussing the book's ending, which is plausible content for a book club meeting; B describes Quinn taking notes during that meeting. These are compatible and could co-occur, but A doesn't specifically make B more likely since B is about Quinn's general note-taking behavior.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Quinn's passionate argument about interpretation has no bearing on whether snacks were passed around; these describe unrelated aspects of a scene.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Claim A concerns Quinn's stance in a debate, while claim B concerns a relative age comparison between Quinn and Dev; neither fact bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Knowing Hana and Dev are in different houses tells us nothing about the relationship between Milo and Dev, since Hana and Milo could be in the same or different houses independently.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "A implies at least two distinct houses exist, which is consistent with and mildly supports B's claim of exactly two houses, though A alone doesn't confirm there are exactly two rather than more.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Claim A describes Noor requesting quiet during a discussion, which implies people were together and talking; claim B is an unrelated fact about Milo and Dev being in different houses, with no shared context or entities.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Noor's request to quiet down for a discussion has no bearing on the relative ages of Quinn and Dev; the two claims concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "If the school only has two houses and Milo and Dev are in different houses, this is fully consistent - they'd simply be in the two different houses. B provides context that makes A plausible and specific.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 21,
+   "b": 25,
+   "rationale": "These describe different events (a book club suggestion vs. closing a meeting) with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Realizing it's later than expected commonly prompts someone to wrap up and leave, making it plausible that Milo would start gathering his things.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 22,
+   "b": 25,
+   "rationale": "Milo noticing the lateness could plausibly coincide with a meeting wrapping up, but the claims involve different people and events with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 23,
+   "b": 25,
+   "rationale": "Milo packing up his things is consistent with a meeting ending, which aligns with Noor thanking everyone as the meeting wraps up; they describe compatible aspects of the same event but neither entails the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 24,
+   "b": 25,
+   "rationale": "Both describe events near the end of a gathering in a room, but neither entails or precludes the other; they can occur independently as parallel wrap-up actions.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor",
+     "she"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo",
+     "he",
+     "his"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana",
+     "she"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev",
+     "his"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "house",
+    "arity": "binary",
+    "arity_span": "The school had two houses.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 11,
+    "attribute": "house",
+    "kind": "different",
+    "a": "milo",
+    "b": "hana",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 14,
+    "attribute": "house",
+    "kind": "different",
+    "a": "hana",
+    "b": "dev",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 17,
+    "attribute": "house",
+    "kind": "different",
+    "a": "milo",
+    "b": "dev",
+    "confidence": 0.98
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 4,
+    "attribute": "arrival_order",
+    "subject": "hana",
+    "comparative": "after",
+    "object": "milo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "subject": "dev",
+    "comparative": "taller than",
+    "object": "milo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 18,
+    "attribute": "age",
+    "subject": "quinn",
+    "comparative": "younger than",
+    "object": "dev",
+    "confidence": 0.98
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_order",
+    "entity": "milo",
+    "comparative": "first",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 26,
+  "blind": [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    12
+   ],
+   [
+    0,
+    24
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    13
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    13
+   ],
+   [
+    5,
+    19
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    6,
+    24
+   ],
+   [
+    7,
+    13
+   ],
+   [
+    7,
+    14
+   ],
+   [
+    7,
+    16
+   ],
+   [
+    7,
+    19
+   ],
+   [
+    7,
+    24
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    20
+   ],
+   [
+    10,
+    14
+   ],
+   [
+    10,
+    20
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    11,
+    22
+   ],
+   [
+    11,
+    25
+   ],
+   [
+    13,
+    15
+   ],
+   [
+    13,
+    18
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    16,
+    18
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 26,
+  "pairs_requested": 56,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 30,
+  "blind_pairs_related": 2,
+  "entity_relations": 7,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence",
+    "height": "magnitude",
+    "house": null,
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 2,
+     "attribute": "arrival_order",
+     "entity": "milo",
+     "extreme": "min",
+     "edges": 1
+    }
+   ],
+   "extreme_edges": 1,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 26,
+  "n_edges": 13,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "house",
+    "entities": [
+     "dev",
+     "hana",
+     "milo"
+    ],
+    "relations": [
+     1,
+     0,
+     2
+    ],
+    "claim_ids": [
+     11,
+     14,
+     17
+    ],
+    "min_confidence": 0.98
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999998,
+   0.9999999999999998,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   3.697785493223493e-32,
+   2.7117093616972283e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.9721522630525296e-32,
+   2.7117093616972283e-32,
+   0.0,
+   4.930380657631324e-32,
+   1.0846837446788913e-31,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   2.958228394578794e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 8,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 0,
+    "b": 12,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 1,
+    "b": 9,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 1,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 4,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 16,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 14,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 17,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 383287,
+   "output_tokens": 34198,
+   "thinking_tokens": 0,
+   "calls": 13016,
+   "api_calls": 364,
+   "cache_hits": 12652,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 1.098417000000001,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 6540,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 417485,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    1,
+    8,
+    9,
+    10,
+    12,
+    13,
+    16
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    3
+   ],
+   [
+    5,
+    15
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    11,
+    14,
+    17,
+    20
+   ],
+   [
+    18
+   ],
+   [
+    19
+   ],
+   [
+    21
+   ],
+   [
+    22,
+    23
+   ],
+   [
+    24
+   ],
+   [
+    25
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "house",
+    "entities": [
+     "dev",
+     "hana",
+     "milo"
+    ],
+    "relations": [
+     1,
+     0,
+     2
+    ],
+    "claim_ids": [
+     11,
+     14,
+     17
+    ],
+    "min_confidence": 0.98
+   }
+  ],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": []
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 11,
+   "attribute": "house",
+   "kind": "different",
+   "a": "milo",
+   "b": "hana",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "house",
+   "kind": "different",
+   "a": "hana",
+   "b": "dev",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 17,
+   "attribute": "house",
+   "kind": "different",
+   "a": "milo",
+   "b": "dev",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 4,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "hana",
+   "b": "milo",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 7,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "dev",
+   "b": "milo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 18,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "dev",
+   "b": "quinn",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "hana",
+   "b": "milo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  }
+ ]
+}

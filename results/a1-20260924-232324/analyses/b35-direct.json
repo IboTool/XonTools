@@ -1,0 +1,1141 @@
+{
+ "label": "b35-direct",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-91dd17f4bcbe",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The robotics workshop filled the school gym with tables of gears, wires, and small motors.",
+   "span": "The robotics workshop filled the school gym with tables of gears, wires, and small motors.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Gus is the lead volunteer.",
+   "span": "Assume that Gus is the lead volunteer.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Gus arrived early to help set up the registration table near the entrance.",
+   "span": "Gus arrived early to help set up the registration table near the entrance.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Ben came in wearing a bright green jacket.",
+   "span": "Ben came in wearing a bright green jacket",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Ben immediately found a seat near the soldering station.",
+   "span": "immediately found a seat near the soldering station",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Rosa arrived a few minutes after Ben.",
+   "span": "Rosa arrived a few minutes after Ben",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Rosa was chatting with one of the younger students about her favorite robot design.",
+   "span": "chatting with one of the younger students about her favorite robot design",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Quinn showed up carrying a backpack full of spare parts collected from a previous competition.",
+   "span": "Quinn showed up carrying a backpack full of spare parts collected from a previous competition.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Uma brought the first-aid kit.",
+   "span": "Uma brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Gus is taller than Quinn.",
+   "span": "Gus is taller than Quinn",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Rosa is taller than both Gus and Quinn.",
+   "span": "Rosa is taller than both of them",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Ben and Rosa worked different shifts.",
+   "span": "Ben and Rosa worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Throughout the morning, the students rotated between stations to test their circuits and calibrate their sensors.",
+   "span": "Throughout the morning, the students rotated between stations to test their circuits and calibrate their sensors.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Rosa and Quinn worked different shifts.",
+   "span": "Rosa and Quinn worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Uma is younger than Gus.",
+   "span": "Uma is younger than Gus but older than Ben, according to the sign-in sheet",
+   "kind": "quoted"
+  },
+  {
+   "id": 15,
+   "text": "Uma is older than Ben.",
+   "span": "Uma is younger than Gus but older than Ben, according to the sign-in sheet",
+   "kind": "quoted"
+  },
+  {
+   "id": 16,
+   "text": "The mentors circulated the room, offering tips on wiring and balance for the walking robots.",
+   "span": "The mentors circulated the room, offering tips on wiring and balance for the walking robots.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Ben and Quinn worked different shifts.",
+   "span": "Ben and Quinn worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Someone had labeled every worktable with a number so that materials would not get mixed up.",
+   "span": "Someone had labeled every worktable with a number so that materials would not get mixed up.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "The shop ran three shifts.",
+   "span": "The shop ran three shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "By the end of the day, most of the robots could move across the floor without tipping over.",
+   "span": "By the end of the day, most of the robots could move across the floor without tipping over",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "A few of the robots even avoided obstacles using simple sensors.",
+   "span": "a few even avoided obstacles using simple sensors",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "The students compared notes about which battery packs lasted longest.",
+   "span": "The students compared notes about which battery packs lasted longest",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Several teams promised to bring improved designs to the next session.",
+   "span": "several teams promised to bring improved designs to the next session",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Uma did not bring the first-aid kit.",
+   "span": "Uma did not bring the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "Everyone helped stack the folding chairs before the doors were locked for the evening.",
+   "span": "Everyone helped stack the folding chairs before the doors were locked for the evening.",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "The gym setup with gears and motors is unrelated to who brought a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "The gym filled with tables of gears, wires, and motors supports the idea that students rotated between stations to test circuits and sensors.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "The physical setup of the gym has no bearing on whether Ben and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "A gym filled with tables of equipment supports the plausibility that tables were labeled with numbers to avoid mixing materials.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Being the lead volunteer supports the idea that Gus would arrive early to help set up.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Being the lead volunteer has no bearing on relative height compared to Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Being the lead volunteer has no bearing on relative height compared to Rosa and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Gus arriving early to set up registration is unrelated to what Ben wore.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Gus helping set up registration has no bearing on robots avoiding obstacles with sensors.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Ben wearing a green jacket is unrelated to where he chose to sit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Ben's jacket color has no bearing on when Rosa arrived.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Ben's clothing is unrelated to whether he and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Ben's jacket color has no bearing on how many shifts the shop ran.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Ben's jacket is unrelated to students comparing battery pack notes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Ben sitting near the soldering station is unrelated to Rosa chatting with a student about robot designs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Ben finding a seat near the soldering station doesn't indicate anything about shift scheduling with Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Ben sitting at a station is consistent with and supports the general activity of students rotating between stations.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Ben's seating location is unrelated to discussions about battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Rosa's arrival timing supports the plausibility that she was later seen chatting with a student, as it establishes her presence.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Rosa's arrival time relative to Ben is unrelated to Quinn's arrival with a backpack of parts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Arriving a few minutes after Ben doesn't determine whether they worked the same or different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Chatting about a robot design says nothing about relative heights.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Rosa's conversation topic has no bearing on whether she and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Rosa's chatting has no relevance to Ben and Quinn's shift arrangement.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Rosa's conversation topic is unrelated to worktable labeling.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Rosa's chat topic has no bearing on the number of shifts the shop ran.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "Quinn bringing spare parts from a competition is unrelated to students comparing battery pack notes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 24,
+   "rationale": "If Uma brought the first-aid kit, then it is false that Uma did not bring it.",
+   "relation": "contradicts",
+   "confidence": 0.99
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Gus being taller than Quinn is consistent with and doesn't confirm Rosa being taller than both, but doesn't contradict it either.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Height comparison between Gus and Quinn has no bearing on shift assignments of Rosa and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Gus being taller than Quinn doesn't relate to Uma's age relative to Gus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Height comparison is unrelated to worktable labeling.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Height comparison between Gus and Quinn has no bearing on how many shifts the shop ran.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Rosa's height relative to others has no bearing on robot performance.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Ben and Rosa working different shifts doesn't determine whether Rosa and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Ben and Rosa working different shifts doesn't determine the shift relationship between Ben and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Ben and Rosa working different shifts is consistent with multiple shift counts and doesn't specify the total number of shifts.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Both describe activities happening during the same event, with mentors circulating while students rotate, suggesting a consistent, complementary scene.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Rotating between stations to test and calibrate implies effort towards successful robot function, making later success more plausible.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Testing sensors during rotations directly supports the later claim that some robots used sensors to avoid obstacles.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Both concern shift assignments but do not overlap in the people mentioned, so no direct inference follows.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Rosa and Quinn working different shifts implies at least two shifts exist, which is consistent with but does not specifically confirm three shifts.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Shift assignments have no bearing on teams' promises about future designs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 24,
+   "rationale": "Working different shifts has no relation to who brought the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 25,
+   "rationale": "Shift differences do not relate to everyone helping stack chairs at closing.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Uma being younger than Gus does not determine her age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Uma's age relative to Ben has no bearing on Ben and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Mentors giving tips on wiring and balance plausibly contributed to robots successfully moving without tipping over by day's end.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Mentor tips on wiring and balance are not specifically about sensors, so this doesn't strongly bear on obstacle avoidance.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Ben and Quinn working different shifts implies multiple shifts but doesn't confirm the specific total of three.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Shift assignments of Ben and Quinn have no bearing on robot sensor capabilities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Labeling worktables with numbers is unrelated to the number of shifts run.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 25,
+   "rationale": "Labeling worktables has no logical connection to stacking chairs at day's end.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 25,
+   "rationale": "The number of shifts run has no bearing on whether everyone stacked chairs at closing.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Robots successfully moving without tipping is a related but distinct achievement from obstacle avoidance using sensors, and the former being true is consistent with and mildly supportive of further progress like sensor-based navigation.",
+   "relation": "supports",
+   "confidence": 0.45
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Robots working well by day's end could encourage teams to want to improve further, but this is a weak indirect connection.",
+   "relation": "unrelated",
+   "confidence": 0.5
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "Some robots successfully using sensors doesn't directly imply teams promising improved designs next session.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Comparing notes on battery performance is a form of collaborative reflection that could lead to promises of improved designs, but it's not a direct logical link.",
+   "relation": "unrelated",
+   "confidence": 0.45
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "Comparing notes about battery packs has no bearing on who brought the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "shift",
+    "arity": "multi",
+    "arity_span": "The shop ran three shifts."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "first_aid_kit_bringer",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "gus",
+    "b": "quinn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "gus",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "quinn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "ben",
+    "b": "rosa",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "rosa",
+    "b": "quinn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "gus",
+    "b": "uma",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "uma",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "ben",
+    "b": "quinn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 24,
+    "attribute": "first_aid_kit_bringer",
+    "kind": "different",
+    "a": "uma",
+    "b": "first_aid_kit",
+    "confidence": 0.3
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 29,
+  "blind": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    17
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    21
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    19
+   ],
+   [
+    3,
+    22
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    4,
+    12
+   ],
+   [
+    4,
+    22
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    6,
+    13
+   ],
+   [
+    6,
+    17
+   ],
+   [
+    6,
+    18
+   ],
+   [
+    6,
+    19
+   ],
+   [
+    7,
+    22
+   ],
+   [
+    9,
+    13
+   ],
+   [
+    9,
+    18
+   ],
+   [
+    9,
+    19
+   ],
+   [
+    10,
+    20
+   ],
+   [
+    13,
+    23
+   ],
+   [
+    13,
+    24
+   ],
+   [
+    13,
+    25
+   ],
+   [
+    15,
+    17
+   ],
+   [
+    16,
+    21
+   ],
+   [
+    17,
+    21
+   ],
+   [
+    18,
+    25
+   ],
+   [
+    19,
+    25
+   ],
+   [
+    22,
+    24
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 26,
+  "pairs_requested": 59,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 30,
+  "blind_pairs_related": 1,
+  "entity_relations": 10,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 26,
+  "n_edges": 13,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 0.9852611018145221,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    14
+   ],
+   [
+    15
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   0.33557046979865773,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   0.33557046979865773,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.8873924597991083,
+   0.0,
+   0.0,
+   0.0,
+   6.40949485492072e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   2.958228394578794e-32,
+   4.930380657631324e-32,
+   0.0,
+   4.930380657631324e-32,
+   1.0846837446788913e-31,
+   8.38164711797325e-32,
+   0.0,
+   0.0,
+   0.8873924597991083,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 24,
+    "residual": 0.4459258591955318
+   },
+   {
+    "a": 12,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 20,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 12,
+    "b": 21,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 13,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 16,
+    "b": 20,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 17,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   8,
+   24
+  ],
+  "culprits": [
+   {
+    "claim": 8,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.014738898185477911
+   },
+   {
+    "claim": 24,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.014738898185477911
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 1812,
+   "api_calls": 0,
+   "cache_hits": 1812,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0,
+    4,
+    12,
+    16,
+    18,
+    20,
+    21
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    3
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8,
+    24
+   ],
+   [
+    9
+   ],
+   [
+    10
+   ],
+   [
+    11
+   ],
+   [
+    13,
+    17,
+    19
+   ],
+   [
+    14
+   ],
+   [
+    15
+   ],
+   [
+    22
+   ],
+   [
+    23
+   ],
+   [
+    25
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    8,
+    24
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": []
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "request": "842c67fc5bc892417b70f8796d3f16d12a9065c13705b71eace7247f9b750638",
+ "tag": "text-705d9fb8b1ba-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "tess",
+    "mentions": [
+     "Tess",
+     "she"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "finish_time",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "dara",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 7,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "tess",
+    "b": "dara",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "dara",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "rosa",
+    "b": "tess",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "dara",
+    "b": "tess",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 22,
+    "attribute": "finish_time",
+    "kind": "greater",
+    "a": "tess",
+    "b": "rosa",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 23,
+    "attribute": "finish_time",
+    "kind": "greater",
+    "a": "dara",
+    "b": "tess",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2225,
+  "output_tokens": 527,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

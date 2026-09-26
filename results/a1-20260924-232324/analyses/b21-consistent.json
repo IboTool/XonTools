@@ -1,0 +1,1501 @@
+{
+ "label": "b21-consistent",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-7a12a06df239",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Gus is the head judge.",
+   "span": "Assume that Gus is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Sami arrived first.",
+   "span": "Sami arrived first",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Sami chatted with the bartender about the weather while setting down a notebook and pen.",
+   "span": "chatting with the bartender about the weather while setting down a notebook and pen",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Xavi came in a few minutes after Sami.",
+   "span": "Xavi came in a few minutes later",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Xavi waved to a few familiar faces across the room before finding a seat near the back.",
+   "span": "waving to a few familiar faces across the room before finding a seat near the back",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Esme booked the hall.",
+   "span": "Esme booked the hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Nell strolled in last.",
+   "span": "Nell strolled in last",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Nell apologized for the traffic and quickly grabbed a stool near Gus.",
+   "span": "apologizing for the traffic and quickly grabbing a stool near Gus",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Gus stood by the microphone, reviewing his stack of question cards while sipping a lemonade.",
+   "span": "Gus stood by the microphone, reviewing his stack of question cards while sipping a lemonade",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "The teams began forming, some regulars and some newcomers who had never played before.",
+   "span": "The teams began forming, some regulars and some newcomers who had never played before",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Sami finished ahead of Xavi.",
+   "span": "Sami finished ahead of Xavi.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Xavi finished ahead of Nell.",
+   "span": "Xavi finished ahead of Nell.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Gus called out the scores after each round.",
+   "span": "Gus called out the scores after each round",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Gus's voice was steady and clear over the noise of clinking glasses.",
+   "span": "his voice steady and clear over the noise of clinking glasses",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Nell leaned over to check her team's tally.",
+   "span": "Nell leaned over to check her team's tally",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Nell joked about their shaky knowledge of capital cities.",
+   "span": "joking about their shaky knowledge of capital cities",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Sami finished ahead of Nell.",
+   "span": "Sami finished ahead of Nell.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Esme wandered around, chatting with the servers about the turnout.",
+   "span": "Esme wandered around, chatting with the servers about the turnout",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Gus's role as head judge has no bearing on when Sami arrived.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Gus being head judge doesn't relate to Sami's chat with the bartender.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Gus's judging role is unrelated to Xavi's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Gus being head judge doesn't affect Xavi's actions upon entering.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Gus's role as judge is unrelated to who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Gus's judging role doesn't determine the order of arrivals.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Gus being head judge doesn't explain Nell's apology or seating choice.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Being head judge is consistent with and supports the depiction of Gus at the microphone reviewing questions.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Gus's judging role is unrelated to how teams formed.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Gus's role as judge has no bearing on the order Sami and Xavi finished.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Gus's judging role doesn't relate to the finishing order of Xavi and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Being head judge supports the idea that Gus would call out scores after rounds.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Gus's role as head judge is consistent with his voice being steady and clear while judging.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Gus's judging role is unrelated to Nell checking her team's tally.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Gus's role as judge has no direct bearing on Nell's joke about capital cities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Gus's judging role doesn't determine the finishing order of Sami and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Gus's role as head judge is unrelated to Esme's chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Sami arriving first supports the idea that Sami had time to chat with the bartender and set up before others arrived.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Sami arriving first is consistent with and supports Xavi arriving after Sami.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Sami arriving first doesn't specifically relate to Xavi's particular actions upon entering.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Sami arriving first has no bearing on who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Sami arriving first is consistent with Nell arriving last but doesn't establish it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Sami arriving first has no direct bearing on Nell's apology or seating choice.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Sami arriving first is unrelated to Gus's actions at the microphone.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Sami arriving first has no bearing on team formation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Sami arriving first supports the idea that Sami finished ahead of Xavi in arrival order.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Sami arriving first doesn't directly determine the order between Xavi and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Sami's arrival order is unrelated to Gus calling out scores.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Sami's arrival order is unrelated to the quality of Gus's voice.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Sami's arrival order is unrelated to Nell checking her team's tally.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Sami's arrival order is unrelated to Nell's joke about capitals.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Sami arriving first supports the claim that Sami finished ahead of Nell.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Sami's arrival order is unrelated to Esme's chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Sami chatting with the bartender doesn't affect when Xavi arrived.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Sami's actions with the bartender are unrelated to Xavi's waving to familiar faces.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Sami's chat with the bartender is unrelated to who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Sami's actions upon arrival don't determine who arrived last.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Sami's chatting with the bartender is unrelated to Nell's apology and seating.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Sami's actions are unrelated to Gus's actions with the microphone.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Sami's small talk with the bartender is unrelated to team formation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Sami chatting with a bartender is unrelated to Sami finishing ahead of Xavi in some contest.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Sami's chat with the bartender has no bearing on Xavi's finishing position relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Sami setting down a notebook and chatting is unrelated to Gus calling out scores.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Sami's interaction with the bartender does not affect Gus's voice quality.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Sami's chat with the bartender is unrelated to Nell checking her team's tally.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Sami's small talk about weather is unrelated to Nell's joke about capital cities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Sami's chat with the bartender does not indicate anything about finishing order relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Sami's conversation with the bartender is unrelated to Esme's separate conversations with servers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Xavi arriving shortly after Sami is consistent with and supports Xavi then waving to people and finding a seat.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Xavi's arrival time has no bearing on who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Xavi coming after Sami doesn't determine whether Nell arrived last.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Xavi's arrival timing is unrelated to Nell's apology and seating behavior.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Xavi's arrival time doesn't relate to Gus's actions at the microphone.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Xavi arriving after Sami is unrelated to teams forming with regulars and newcomers.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Xavi coming after Sami directly supports the idea that Sami finished (arrived) ahead of Xavi.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Xavi's arrival time relative to Sami doesn't establish his order relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Xavi's arrival timing is unrelated to Gus calling out scores.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Xavi's arrival timing is unrelated to the quality of Gus's voice.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Xavi's arrival timing is unrelated to Nell checking her team's tally.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Xavi's arrival timing is unrelated to Nell's joke about capital cities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Xavi arriving after Sami implies Sami finished ahead of Xavi, but this does not establish Sami's order relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Xavi's arrival timing relative to Sami has no bearing on Esme's activity of chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Xavi waving to faces and finding a seat has no bearing on who booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Xavi's seating behavior does not indicate anything about when Nell arrived.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Xavi's actions finding a seat are unrelated to Nell's apology and seating near Gus.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Xavi's seating behavior is unrelated to what Gus is doing by the microphone.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Xavi's greeting and seating has no bearing on team formation among regulars and newcomers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Xavi's seating actions do not indicate finishing order relative to Sami.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Xavi's seating behavior does not indicate finishing order relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Xavi's seating actions are unrelated to Gus announcing scores.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Xavi's seating behavior has no bearing on the quality of Gus's voice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Xavi's seating actions are unrelated to Nell checking her team's tally.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Xavi's seating behavior is unrelated to Nell's joke about capital cities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Xavi's seating behavior does not establish any finishing order between Sami and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Xavi's seating behavior is unrelated to Esme's chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Esme booking the hall has no bearing on when Nell arrived.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Esme booking the hall is unrelated to Nell's apology and seating choice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Esme booking the hall has no bearing on Gus's actions with the microphone and lemonade.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Esme booking the hall does not directly imply anything about team formation, though it could be a loose enabling context.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Esme booking the hall has no bearing on the finishing order of Sami and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Booking the hall is unrelated to the finishing order of Xavi and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Booking the hall does not bear on Gus calling out scores.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Booking the hall does not affect the quality of Gus's voice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Booking the hall is unrelated to Nell checking her team's tally.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Booking the hall is unrelated to Nell's joke about capital cities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Booking the hall is unrelated to Sami's finishing position relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Esme booking the hall could plausibly support her later being present and chatting with servers about turnout, since organizers often check in on their event.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Nell strolling in last supports her being the one apologizing for traffic and finding a seat upon arrival.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Nell arriving last is unrelated to Gus's activity with the microphone and lemonade.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Nell arriving last is unrelated to teams forming with regulars and newcomers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Nell's late arrival is unrelated to Sami finishing ahead of Xavi in the game.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Arriving last does not determine or affect final quiz standings.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Nell's late arrival is unrelated to Gus calling out scores.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Nell's late arrival is unrelated to the clarity of Gus's voice.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Nell arriving last is unrelated to her later checking her team's tally.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Nell's late arrival is unrelated to her joking about capital cities.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Nell's late arrival is unrelated to the finishing order between Sami and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Nell's late arrival is unrelated to Esme chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Nell grabbing a stool near Gus is unrelated to Gus's separate activity of reviewing question cards and sipping lemonade, though both are simultaneous scene details.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Nell's arrival and seating is unrelated to the general formation of teams.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Nell arriving late has no bearing on Sami and Xavi's relative finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Nell's arrival and seating are unrelated to Xavi's finishing position relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Nell's late arrival is unrelated to Gus calling out scores.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Nell's seating near Gus has no bearing on the quality of Gus's voice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Nell sitting down could plausibly precede her checking her team's tally, but this is only a weak temporal connection, not a logical support.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Nell's arrival is unrelated to her joking about capital cities.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Nell's late arrival and seating don't affect the finishing order between Sami and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Nell's arrival is unrelated to Esme's separate activity of chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Gus reviewing question cards is unrelated to the teams forming, as these are independent events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Gus's preparation with cards and lemonade has no bearing on Sami and Xavi's finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Gus's actions at the microphone are unrelated to Xavi's finishing position relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Gus standing by the microphone with question cards supports the idea that he would later call out scores, as it shows him in the host role.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Gus being at the microphone supports the idea that his voice would be heard over the noise, consistent with him speaking clearly.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Gus's preparation is unrelated to Nell checking her team's tally.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Gus's preparation with question cards is unrelated to Nell's joke about capitals.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Gus's actions at the microphone have no bearing on Sami and Nell's finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Gus's preparation is unrelated to Esme's separate activity of chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Teams forming with regulars and newcomers is unrelated to the specific finishing order between Sami and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Teams forming is unrelated to the specific finishing order between Xavi and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Teams forming for the game supports the later occurrence of Gus calling out scores after rounds, as it sets up the competition.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Team formation is unrelated to the quality of Gus's voice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Teams forming does not specifically imply Nell checking her tally.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Team formation has no bearing on Nell's joke about capital cities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Team formation does not determine finishing order between Sami and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Teams forming is unrelated to Esme's chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Sami beating Xavi does not determine the relation between Xavi and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Sami finishing ahead of Xavi is unrelated to Gus calling scores.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Finishing order is unrelated to the tone of Gus's voice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Sami's ranking relative to Xavi doesn't imply anything about Nell checking her tally.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Sami's finishing position is unrelated to Nell's joke.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Sami beating Xavi doesn't establish Sami's position relative to Nell directly.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Sami's ranking is unrelated to Esme's socializing.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Xavi beating Nell is unrelated to Gus calling out scores.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Finishing order is unrelated to the clarity of Gus's voice.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Xavi beating Nell could explain why Nell checks her tally, as she may want to verify her standing, but this is speculative rather than a direct entailment.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Xavi's ranking above Nell is unrelated to Nell's joke about capitals.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Xavi beating Nell does not determine whether Sami beat Nell.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Finishing order between Xavi and Nell is unrelated to Esme's socializing.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Gus calling out scores after each round supports the idea that his voice was steady and clear enough to be heard doing so.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Gus calling out scores after each round could prompt Nell to check her team's tally, supporting that action.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Gus calling out scores could prompt reflection on knowledge but doesn't specifically relate to jokes about capital cities.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Calling out scores could reveal who finished ahead, but doesn't specifically establish Sami finishing ahead of Nell.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Gus's role calling scores is unrelated to Esme's separate activity of chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Gus's clear voice over noise is unrelated to Nell checking her team's tally.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Gus's voice quality has no bearing on Nell's joke about capital cities.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Gus's voice being clear doesn't affect the outcome of who finished ahead.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Gus's voice carrying over noise is unrelated to Esme's separate socializing activity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Nell checking the tally could plausibly lead to her joking about their knowledge, suggesting a mild connection.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Nell checking her team's tally doesn't establish anything about Sami's individual finishing position relative to her.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Nell's action of checking her tally is unrelated to Esme's separate activity of chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Nell joking about shaky knowledge of capital cities could support the idea that she performed worse, consistent with Sami finishing ahead.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Nell's joke about capital cities is unrelated to Esme's chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Sami finishing ahead of Nell is unrelated to Esme's separate social activity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus",
+     "his",
+     "his"
+    ]
+   },
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "her",
+     "their"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "finish_position",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "sami",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 10,
+    "attribute": "finish_position",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "sami",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "finish_position",
+    "kind": "greater",
+    "a": "nell",
+    "b": "xavi",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "finish_position",
+    "kind": "greater",
+    "a": "nell",
+    "b": "sami",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 18,
+  "pairs_requested": 153,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 4,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 18,
+  "n_edges": 19,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0
+  ],
+  "claim_residuals": [
+   2.033782021272921e-32,
+   9.121204216617949e-32,
+   0.0,
+   4.129193800766233e-32,
+   8.628166150854816e-33,
+   0.0,
+   0.0,
+   0.0,
+   2.9582283945787947e-32,
+   8.011868568650901e-33,
+   1.0168910106364605e-31,
+   0.0,
+   1.0477058897466563e-31,
+   1.479114197289397e-32,
+   1.158639454543361e-31,
+   4.930380657631324e-32,
+   8.874685183736383e-32,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 8,
+    "residual": 9.860761315262648e-33
+   },
+   {
+    "a": 0,
+    "b": 12,
+    "residual": 1.0477058897466563e-32
+   },
+   {
+    "a": 0,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 9.860761315262648e-33
+   },
+   {
+    "a": 1,
+    "b": 6,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 10,
+    "residual": 4.190823558986625e-32
+   },
+   {
+    "a": 1,
+    "b": 16,
+    "residual": 3.944304526105059e-32
+   },
+   {
+    "a": 3,
+    "b": 4,
+    "residual": 8.628166150854816e-33
+   },
+   {
+    "a": 3,
+    "b": 10,
+    "residual": 1.0477058897466563e-32
+   },
+   {
+    "a": 5,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 13,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 9,
+    "b": 12,
+    "residual": 8.011868568650901e-33
+   },
+   {
+    "a": 12,
+    "b": 13,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 12,
+    "b": 14,
+    "residual": 6.656013887802286e-32
+   },
+   {
+    "a": 14,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 16,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 1093,
+   "api_calls": 0,
+   "cache_hits": 1093,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   [
+    5,
+    17
+   ],
+   [
+    11
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": []
+ }
+}

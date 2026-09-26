@@ -1,0 +1,135 @@
+{
+ "request": "3e4d72596430a20009d64a1a3a052dd6462edb59b96bf07928d648c47c6565e7",
+ "tag": "text-f876af20a443-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "binary",
+    "arity_span": "There were two teams."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "dara",
+    "b": "vik",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "dara",
+    "b": "vik",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "dara",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "vik",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 13,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "cleo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "team",
+    "kind": "different",
+    "a": "cleo",
+    "b": "yara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dara",
+    "b": "vik",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 23,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "yara",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2209,
+  "output_tokens": 583,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

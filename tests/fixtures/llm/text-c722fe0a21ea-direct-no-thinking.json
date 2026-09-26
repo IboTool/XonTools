@@ -1,0 +1,26 @@
+{
+ "request": "b3ac9bf040b56e2014aad175ed0e0eeadbf89cacabe2a2e1a35333568ce239b8",
+ "tag": "text-c722fe0a21ea-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Cy and Isla were on different teams.",
+     "Isla and Kira were on different teams.",
+     "Cy and Kira were on different teams.",
+     "There were two teams."
+    ],
+    "explanation": "With only two teams, Cy, Isla, and Kira cannot all be pairwise on different teams, since at least two of the three must share a team."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1106,
+  "output_tokens": 122,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

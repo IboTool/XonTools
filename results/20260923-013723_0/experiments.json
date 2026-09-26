@@ -1,0 +1,470 @@
+[
+  {
+    "id": "E1",
+    "name": "Spectral self-similarity",
+    "status": "passed",
+    "passed": true,
+    "summary": "r = 0.9956, 0.9984; min plateau frac 0.071",
+    "criterion": "Pearson r between consecutive levels >= 0.95; plateaus at lambda in {3, 5, 6} with multiplicity > 5% of N at every level (gasket levels 3, 4, 5).",
+    "thresholds": {
+      "pearson_r_min": 0.95,
+      "plateaus": [
+        3.0,
+        5.0,
+        6.0
+      ],
+      "plateau_frac_min": 0.05
+    },
+    "metrics": {
+      "pearson_r": {
+        "3-4": 0.9956192096098662,
+        "4-5": 0.9983877231900994
+      },
+      "plateau_fraction": {
+        "3": {
+          "3.0": 0.07142857142857142,
+          "5.0": 0.09523809523809523,
+          "6.0": 0.2857142857142857
+        },
+        "4": {
+          "3.0": 0.0975609756097561,
+          "5.0": 0.10569105691056911,
+          "6.0": 0.3170731707317073
+        },
+        "5": {
+          "3.0": 0.10655737704918032,
+          "5.0": 0.1092896174863388,
+          "6.0": 0.32786885245901637
+        }
+      },
+      "n": {
+        "3": 42,
+        "4": 123,
+        "5": 366
+      }
+    },
+    "notes": "Pearson r ok; plateaus present (smallest plateau fraction 0.071).",
+    "runtime_s": 0.336,
+    "figures": [
+      "staircase"
+    ]
+  },
+  {
+    "id": "E2",
+    "name": "Individuation from structure",
+    "status": "failed",
+    "passed": false,
+    "summary": "purity 0.888; frac_loc 0.765; lattice 0.0475",
+    "criterion": "Gasket level 5: partition_purity >= 0.9 and frac_localized >= 0.25; lattice control frac_localized < 0.05.",
+    "thresholds": {
+      "purity_min": 0.9,
+      "frac_localized_min": 0.25,
+      "lattice_frac_localized_max": 0.05
+    },
+    "metrics": {
+      "partition_purity": 0.8879781420765027,
+      "frac_localized": 0.7650273224043715,
+      "lattice_frac_localized": 0.0475,
+      "spectral_gap_ratio": 1.0,
+      "fiedler_eigenspace_purity": {
+        "multiplicity": 2,
+        "min": 0.8387978142076502,
+        "mean": 0.9291894353369764,
+        "max": 0.9699453551912568
+      },
+      "checks": {
+        "purity": false,
+        "frac_localized": true,
+        "lattice_frac_localized": true
+      },
+      "n": 366,
+      "lattice_n": 400
+    },
+    "notes": "lambda_2 has multiplicity 2 (spectral_gap_ratio = 1.000). phi_2 is the member of the lambda_2 eigenspace with the sparsest sign cut (canonical basis, see spectrum.py); over all directions of that eigenspace the purity ranges 0.839-0.970 (mean 0.929). IPR is evaluated in the maximally localized basis of each degenerate eigenspace. Failed checks: ['purity'].",
+    "runtime_s": 0.625,
+    "figures": [
+      "fiedler_partition",
+      "ipr"
+    ]
+  },
+  {
+    "id": "E3",
+    "name": "Power-law memory",
+    "status": "failed",
+    "passed": false,
+    "summary": "gasket R2 pow 0.908 vs exp 0.996; tree pow 0.892 vs exp 0.991",
+    "criterion": "Gasket level 6 under noise drive: R2_powerlaw > R2_exponential for E[d]. Tree control is expected to show R2_exponential >= R2_powerlaw (reported, not a failure).",
+    "thresholds": {
+      "gasket": "R2_powerlaw > R2_exponential",
+      "tree (expectation, not a failure)": "R2_exponential >= R2_powerlaw"
+    },
+    "metrics": {
+      "gasket": {
+        "n": 1095,
+        "E": [
+          2.898204172542283,
+          3.118376983966592,
+          10.995887516035829,
+          36.86143694030103,
+          136.00415074457356,
+          562.0926833667444,
+          3144.218436213567
+        ],
+        "r2_powerlaw": 0.9076510189639015,
+        "r2_exponential": 0.9958153038062638,
+        "powerlaw_slope": 3.6725283664373136,
+        "exponential_slope": 1.3625141572696176
+      },
+      "tree": {
+        "n": 1093,
+        "E": [
+          0.021350955563629342,
+          0.09516063612784878,
+          0.6627735989454997,
+          4.011862116440347,
+          30.223773633941644,
+          274.71895862597125,
+          5911.407579075761
+        ],
+        "r2_powerlaw": 0.8922274176119169,
+        "r2_exponential": 0.9905653396859887,
+        "powerlaw_slope": 5.763537572582562,
+        "exponential_slope": 2.1509921548138093
+      },
+      "lattice": {
+        "n": 400,
+        "E": [
+          4103.65151799179
+        ],
+        "r2_powerlaw": null,
+        "r2_exponential": null,
+        "powerlaw_slope": null,
+        "exponential_slope": null
+      },
+      "tree_expectation_met": true
+    },
+    "notes": "E[d] is the total energy at depth d, time-averaged over the second half of T=2000 noise-driven steps; both fits use depths d >= 1 (log d is undefined at 0). Tree expectation R2_exp >= R2_pow met. The lattice has a single depth, so no fit applies.",
+    "runtime_s": 7.236,
+    "figures": [
+      "depth_gasket",
+      "depth_tree"
+    ]
+  },
+  {
+    "id": "E4",
+    "name": "Harmonicity rises under drive-and-sink",
+    "status": "failed",
+    "passed": false,
+    "summary": "consonance: sink -0.5239 vs control -0.5506, p=1; holds 0/3 factors",
+    "criterion": "Frontier harmonicity end-mean > start-mean, one-sided paired t-test p < 0.05 across seeds, AND increase >= 2x the increase of the uniform-damping control (gamma1 = 0).",
+    "thresholds": {
+      "p_max": 0.05,
+      "control_ratio_min": 2.0
+    },
+    "metrics": {
+      "primary_factor": "consonance",
+      "per_factor": {
+        "consonance": {
+          "sink": {
+            "start": [
+              0.6702047319685575,
+              0.6548267104486963,
+              0.6357562960935088,
+              0.6438561045320057,
+              0.6713931705534218
+            ],
+            "end": [
+              0.13141198796962594,
+              0.13063884734554032,
+              0.1316428018436161,
+              0.13236626371269394,
+              0.13025021560816524
+            ],
+            "increase_mean": -0.5239453794233098
+          },
+          "control": {
+            "start": [
+              0.7232143073244002,
+              0.6957341230551329,
+              0.6743821741993915,
+              0.6909016412665092,
+              0.7084984004317647
+            ],
+            "end": [
+              0.14630434823124314,
+              0.1465149571066636,
+              0.14918889514877967,
+              0.15075815160737688,
+              0.14689901210108644
+            ],
+            "increase_mean": -0.5506130564164098
+          },
+          "p_value": 0.9999998873286449,
+          "rises": false,
+          "attributable_to_sink": true,
+          "passed": false
+        },
+        "spectral_concentration": {
+          "sink": {
+            "start": [
+              0.14513420312884698,
+              0.15149702572507592,
+              0.1713089651860472,
+              0.16203763567787385,
+              0.13927423696798058
+            ],
+            "end": [
+              0.10221314659940516,
+              0.09773361740831062,
+              0.10202621334931465,
+              0.10165531706948898,
+              0.09163893052107204
+            ],
+            "increase_mean": -0.05479696834764662
+          },
+          "control": {
+            "start": [
+              0.11202684973179486,
+              0.12090052892671938,
+              0.1416420073750551,
+              0.12724187610501766,
+              0.12411721519821144
+            ],
+            "end": [
+              0.08726539547595727,
+              0.07908077255186828,
+              0.08170099705530552,
+              0.08718073443242871,
+              0.08075127862480173
+            ],
+            "increase_mean": -0.04198985983928739
+          },
+          "p_value": 0.9998503029276651,
+          "rises": false,
+          "attributable_to_sink": true,
+          "passed": false
+        },
+        "phase_order": {
+          "sink": {
+            "start": [
+              0.2192457921633127,
+              0.15885432509473169,
+              0.15741512018377898,
+              0.18486862080433497,
+              0.19014433381584456
+            ],
+            "end": [
+              0.0416954804732121,
+              0.0405559542735634,
+              0.04721502136101577,
+              0.039037634947479326,
+              0.032315267289701154
+            ],
+            "increase_mean": -0.14194176674340622
+          },
+          "control": {
+            "start": [
+              0.22542245671869846,
+              0.15503723272401482,
+              0.1699855080193703,
+              0.2398885009462603,
+              0.17382735647124206
+            ],
+            "end": [
+              0.03900236998629485,
+              0.03974608881430634,
+              0.09710270154937437,
+              0.0548977636224947,
+              0.035487764048058965
+            ],
+            "increase_mean": -0.13958487337181133
+          },
+          "p_value": 0.9998309754194482,
+          "rises": false,
+          "attributable_to_sink": true,
+          "passed": false
+        }
+      },
+      "seeds": [
+        967688993,
+        1896382540,
+        994261657,
+        490899024,
+        1724862250
+      ],
+      "factors_holding": 0
+    },
+    "notes": "Primary coherence factor: consonance. Start/end means are over the first and last growth epochs (G=500 steps each; levels 2 and 5). Frontier = depth >= d_max - 1. Result holds under 0/3 coherence factors (a conclusion that holds under only one is not a conclusion). consonance: does not rise (sink -0.5239, control -0.5506, p=1) | spectral_concentration: does not rise (sink -0.0548, control -0.0420, p=1) | phase_order: does not rise (sink -0.1419, control -0.1396, p=1)",
+    "runtime_s": 15.786,
+    "figures": [
+      "harmonicity_trace",
+      "increase_by_factor"
+    ]
+  },
+  {
+    "id": "E5",
+    "name": "Sheaf inference",
+    "status": "passed",
+    "passed": true,
+    "summary": "MSE ratio 3.19e-07 (learned 6.71e-08 / identity 0.211)",
+    "criterion": "Recovery MSE on unclamped vertices < 25% of the identity-map baseline MSE.",
+    "thresholds": {
+      "mse_ratio_max": 0.25
+    },
+    "metrics": {
+      "mse_learned": 6.712701198970332e-08,
+      "mse_identity": 0.2105953558824025,
+      "mse_ground_truth": 1.8994169153381404e-32,
+      "mse_ratio": 3.187487763366794e-07,
+      "ground_truth_kernel_dim": 2,
+      "learned_kernel_dim": 2,
+      "final_training_energy": 0.00027294906104735763,
+      "n": 123,
+      "stalk_dim": 2
+    },
+    "notes": "Ground truth: random orthogonal maps with trivial holonomy (vertex/edge frames), kernel dim 2. Maps learned from identity on 50 consistent states; 37 of 123 vertices clamped.",
+    "runtime_s": 0.545,
+    "figures": [
+      "learning_curve"
+    ]
+  },
+  {
+    "id": "E6",
+    "name": "Constraint solving by dissonance minimization",
+    "status": "not_implemented",
+    "passed": null,
+    "summary": "not_implemented (optima [54, 54, 54, 55, 52, 54, 53, 55, 56, 54])",
+    "criterion": "Cut value >= 90% of optimum in >= 8/10 seeds (Phase 2; not_implemented in Phase 1).",
+    "thresholds": {
+      "ratio_min": 0.9,
+      "seeds_ok_min": 8
+    },
+    "metrics": {
+      "optima": [
+        54,
+        54,
+        54,
+        55,
+        52,
+        54,
+        53,
+        55,
+        56,
+        54
+      ],
+      "n": 40
+    },
+    "notes": "Phase 2: OscillatorDynamics.step is not implemented. MaxCutProblem (exact optimum, scoring, Ising and sheaf encodings) is ready.",
+    "runtime_s": 0.075,
+    "figures": []
+  },
+  {
+    "id": "E7",
+    "name": "Spectral dimension vs simplex dimension",
+    "status": "passed",
+    "passed": true,
+    "summary": "n=2: 1.360 (th 1.365); n=3: 1.552 (th 1.547); n=4: 1.645 (th 1.654)",
+    "criterion": "|d_s estimate - 2 ln(n+1)/ln(n+3)| <= 0.08 for n = 2, 3, 4.",
+    "thresholds": {
+      "tol": 0.08
+    },
+    "metrics": {
+      "n=2": {
+        "level": 8,
+        "N": 9843,
+        "d_s": 1.3602221906869236,
+        "theory": 1.3652123889719707,
+        "abs_error": 0.004990198285047098,
+        "fit_r2": 0.9999492265902044,
+        "ok": true
+      },
+      "n=3": {
+        "level": 6,
+        "N": 8194,
+        "d_s": 1.5523196464955757,
+        "theory": 1.5474112289381663,
+        "abs_error": 0.00490841755740945,
+        "fit_r2": 0.9995198364038351,
+        "ok": true
+      },
+      "n=4": {
+        "level": 5,
+        "N": 7815,
+        "d_s": 1.6446264153893877,
+        "theory": 1.6541749506938324,
+        "abs_error": 0.00954853530444466,
+        "fit_r2": 0.9980192066286097,
+        "ok": true
+      }
+    },
+    "notes": "Window t in [5, 60]; levels chosen so N is closest to 8000; RP exact from the spectrum when N <= 3000, else Hutchinson (64 probes).",
+    "runtime_s": 1.02,
+    "figures": [
+      "return_probability"
+    ]
+  },
+  {
+    "id": "E8",
+    "name": "The peace trap",
+    "status": "failed",
+    "passed": false,
+    "summary": "no drive end 0.0000; driven max 0.0033",
+    "criterion": "No drive: fundamental_fraction >= 0.9 at the end. With noise drive: stays <= 0.5.",
+    "thresholds": {
+      "no_drive_fundamental_min": 0.9,
+      "driven_fundamental_max": 0.5
+    },
+    "metrics": {
+      "fundamental_end_no_drive": 2.5832816713554864e-09,
+      "fundamental_max_driven_second_half": 0.0033098365825412666,
+      "checks": {
+        "no_drive": false,
+        "driven": true
+      },
+      "fundamental_decay_rate": 0.15327868852458967,
+      "min_decay_rate": 0.049999999999999864,
+      "dominant_modes_no_drive": [
+        {
+          "k": 226,
+          "lambda": 5.000000000000001,
+          "p": 0.10771497363753307,
+          "decay_rate": 0.04999999999999991,
+          "frontier_weight": 0.999999999999999
+        },
+        {
+          "k": 220,
+          "lambda": 5.000000000000001,
+          "p": 0.08683193782686854,
+          "decay_rate": 0.050000000000000024,
+          "frontier_weight": 0.9999999999999992
+        },
+        {
+          "k": 234,
+          "lambda": 5.000000000000001,
+          "p": 0.07119188393944814,
+          "decay_rate": 0.04999999999999998,
+          "frontier_weight": 0.9999999999999999
+        },
+        {
+          "k": 209,
+          "lambda": 5.000000000000001,
+          "p": 0.0553022167606964,
+          "decay_rate": 0.04999999999999999,
+          "frontier_weight": 0.9999999999999999
+        },
+        {
+          "k": 231,
+          "lambda": 5.000000000000001,
+          "p": 0.052545167483299085,
+          "decay_rate": 0.04999999999999994,
+          "frontier_weight": 0.9999999999999989
+        }
+      ]
+    },
+    "notes": "Phase 1: T=2000 steps without drive from a random initial state; phase 2 continues with noise drive for T steps and is judged on its second half (first half = burn-in from the end of phase 1). Secular decay rate of the fundamental = mean(gamma) = 0.1533; slowest mode rate = 0.0500 (k=243, lambda=5.0000). Energy left after the undriven phase sits in the modes listed under dominant_modes_no_drive.",
+    "runtime_s": 2.791,
+    "figures": [
+      "fundamental_fraction"
+    ]
+  }
+]

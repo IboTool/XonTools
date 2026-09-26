@@ -1,0 +1,1403 @@
+{
+ "label": "b52-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-a7eaca2a077a",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The morning of the charity fun run began with a light mist over the park.",
+   "span": "The morning of the charity fun run began with a light mist over the park",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Volunteers were already setting up water stations along the route.",
+   "span": "volunteers were already setting up water stations along the route",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Quinn is the event organizer.",
+   "span": "Assume that Quinn is the event organizer",
+   "kind": "premise"
+  },
+  {
+   "id": 3,
+   "text": "Runners gathered near the starting line, chatting about their training routines while stretching in the cool air.",
+   "span": "Runners gathered near the starting line, chatting about their training routines while stretching in the cool air",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Dara arrived a few minutes before Rosa.",
+   "span": "Dara arrived a few minutes before Rosa",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Dara and Rosa were both carrying small backpacks with extra socks and snacks.",
+   "span": "both carrying small backpacks with extra socks and snacks",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Uma won the raffle.",
+   "span": "Uma won the raffle",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Tess showed up shortly after Dara.",
+   "span": "Tess showed up shortly after",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Tess laughed about how she almost forgot her race number at home.",
+   "span": "laughing about how she almost forgot her race number at home",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Quinn checked the registration table twice.",
+   "span": "Quinn checked the registration table twice",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Quinn made sure every runner had signed the waiver before the race began.",
+   "span": "making sure every runner had signed the waiver before the race began",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Dara is in the same study group as Rosa.",
+   "span": "Dara is in the same study group as Rosa",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "The sun broke through the clouds just as the announcer called the five-minute warning.",
+   "span": "The sun broke through the clouds just as the announcer called the five-minute warning",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Everyone moved toward the starting corrals.",
+   "span": "everyone moved toward the starting corrals",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Rosa is not in the same study group as Tess.",
+   "span": "Rosa is not in the same study group as Tess",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Quinn glanced at a clipboard.",
+   "span": "Quinn glanced at a clipboard",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Uma had arrived earlier than most other participants that day.",
+   "span": "noting that Uma had arrived earlier than most other participants that day",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Tess adjusted her shoelaces one last time.",
+   "span": "Tess adjusted her shoelaces one last time",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Tess stood near the taller runners at the front of the pack.",
+   "span": "standing near the taller runners at the front of the pack",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Dara is not in the same study group as Tess.",
+   "span": "Dara is not in the same study group as Tess",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "As the horn sounded, the crowd surged forward.",
+   "span": "As the horn sounded, the crowd surged forward",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Sneakers thudded against the pavement in a steady rhythm.",
+   "span": "sneakers thudding against the pavement in a steady rhythm",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Rosa finished slightly ahead of Tess.",
+   "span": "Rosa finished slightly ahead of Tess",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Dara crossed the line moments later, breathing hard but smiling.",
+   "span": "Dara crossed the line moments later, breathing hard but smiling",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Uma had placed near the middle of the pack.",
+   "span": "Uma, who had placed near the middle of the pack",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "Uma cheered loudly for the others as they came in.",
+   "span": "cheered loudly for the others as they came in",
+   "kind": "asserted"
+  },
+  {
+   "id": 26,
+   "text": "By midday, the volunteers began packing up the tables.",
+   "span": "By midday, the volunteers began packing up the tables",
+   "kind": "asserted"
+  },
+  {
+   "id": 27,
+   "text": "The sound of laughter still echoed across the finish area.",
+   "span": "the sound of laughter still echoed across the finish area",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "The morning mist and Tess's anecdote about her race number are separate details that don't logically connect; one doesn't affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "The claim about morning mist during a charity fun run has no logical or thematic connection to who is in Dara's study group.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "A light misty morning can be followed by clouds breaking to sun without contradiction; the two describe consecutive stages of the same morning's weather.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "The two claims describe unrelated events with no logical or causal connection between race preparations and a raffle outcome.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Both claims are consistent with a race-day scenario (volunteers preparing water stations, then a horn signaling the start and the crowd surging), but claim A does not make claim B more or less likely on its own; they describe different, independent events happening around the same occasion.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 26,
+   "rationale": "Both describe stages of the same event (a race/route with water stations run by volunteers), with A being setup before the event and B being teardown afterward; these are consistent sequential stages, and A's mention of preparation slightly supports the existence of tables/stations that would later be packed up.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "As the event organizer, Quinn would plausibly oversee logistics like registration, making it more likely they'd check the registration table; the claims are consistent and A lends some support to B.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "As the event organizer, Quinn would plausibly be responsible for administrative tasks like ensuring waivers are signed, so A makes B more plausible.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Event organizers commonly use clipboards to track schedules and details, so being the organizer makes glancing at a clipboard plausible and unsurprising.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Being an event organizer has no logical bearing on whether sneakers thudded against pavement; these describe unrelated facts about different subjects and activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 27,
+   "rationale": "Quinn's role as event organizer has no direct bearing on whether laughter echoed across the finish area; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A describes runners at a starting line, which has no connection to claim B's statement about study group membership; they share no entities or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "A describes a general race-morning scene of runners gathering and stretching, which is consistent with Uma being one of the early arrivers, but A doesn't specifically mention Uma or arrival timing, so it neither confirms nor strongly suggests B.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Claim A describes runners stretching before a race, while claim B concerns study group membership; the two involve unrelated people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 24,
+   "rationale": "A establishes a race setting with runners preparing to start, which is consistent with B's mention of a runner (Uma) placing in the pack, presumably in the same or a similar race. However, A describes pre-race preparation while B describes a post-race result, so they don't directly confirm or conflict with each other.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Claim A concerns arrival timing while claim B concerns what they were carrying; these details are independent of each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Arrival order between Dara and Rosa has no logical or causal connection to who won a raffle.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "A states Dara arrived shortly before Rosa; B states Tess arrived shortly after Dara. These involve different people arriving after Dara but do not conflict, since both Rosa and Tess could have arrived shortly after Dara at different or similar times.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Claim A concerns Dara's and Rosa's arrival order, while claim B concerns Rosa's and Tess's finishing order (a different event and different relation). These describe unrelated aspects, so A neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Claim A states Dara arrived before Rosa, implying Dara finished or reached a point first, while claim B describes Dara crossing a finish line shortly after arriving somewhere, which is plausible as a continuation of the same event rather than conflicting with it.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A concerns what Dara and Rosa were carrying, while claim B concerns Tess's arrival time relative to Dara. The two describe unrelated aspects of the scene with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "The two claims describe unrelated actions by different people (Dara/Rosa's backpacks versus Quinn's checking a table) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A describes what Dara and Rosa were carrying, which has no bearing on Uma's arrival time relative to other participants.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Uma winning a raffle has no logical bearing on whether Quinn checked a registration table; the two events involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Winning a raffle is typically a matter of chance and not caused by arrival time, so A gives little to no information about B; the two facts could coexist but neither implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 24,
+   "rationale": "Winning a raffle is a matter of chance and doesn't inherently relate to placing in a ranked competition like a race; these seem to describe different kinds of events. However, if both refer to the same context (e.g., a competition with rankings where a raffle prize was also given), placing mid-pack while still winning a raffle is plausible since raffles are typically random draws unrelated to performance.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 25,
+   "rationale": "Winning a raffle doesn't preclude also cheering for others; someone could still be supportive of other participants either before, during, or after their own win. These are compatible and even plausible together, though not directly causally linked.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A is about the order of arrivals of Tess and Dara, while claim B concerns Quinn's actions at the registration table. There is no logical or causal link between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "A describes arrival order of Tess and Dara, while B describes a group movement toward starting corrals; the two events could be related in a sequence but the claims don't inherently connect or contradict each other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A describes an arrival sequence involving Tess and Dara, while claim B describes an unrelated action by Quinn with a clipboard. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "There is no stated connection between Tess arriving after Dara and Tess adjusting her shoelaces; the timing of her arrival doesn't inform whether or when she fixed her laces.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "Both claims describe different relative timing events involving Tess (arrival order relative to Dara vs. finishing order relative to Rosa) which concern different events and people, so one does not bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Claim A concerns Tess's own experience with her race number and does not mention Uma's arrival time or timing relative to others, so there is no logical bearing between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Both describe plausible pre-race actions by Tess, but neither implies or excludes the other; they seem to be separate, loosely related moments before a race.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "A describes Tess's pre-race anecdote while B describes Dara finishing a race; the two events involve different people and there's no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Checking the registration table twice is plausibly the method by which Quinn ensured every runner had signed the waiver, so A supports B by suggesting diligence consistent with B's outcome, though it doesn't guarantee it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Checking a registration table twice plausibly involves glancing at a clipboard (e.g., a sign-in sheet), so A makes B more plausible, though it's not certain since the table might not have a clipboard.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Making sure every runner signed a waiver plausibly involves checking a clipboard with signatures, so A makes B more likely, though not certain.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Claim A is about pre-race waiver compliance, while claim B is about relative finishing positions between two runners. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A only establishes a link between Dara and Rosa's study group membership; it says nothing about Tess or Rosa's relationship to Tess, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Knowing Dara shares a study group with Rosa says nothing about whether Tess is also in that group or a different one; the two claims involve different people with no stated connection between Rosa and Tess.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "A describes an environmental/timing event (sun breaking through, five-minute warning) that sets a race-start scene, which naturally leads to people moving toward starting corrals as B describes; A makes B more plausible but doesn't guarantee it.",
+   "relation": "supports",
+   "confidence": 0.62
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A describes a weather and timing event at some announcement, while claim B concerns study group membership; the two share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A describes a weather and timing event unrelated to any study group membership described in claim B; they share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Both describe a crowd moving forward, likely at the start of a race; A's general movement toward the corrals is consistent with and reinforced by B's description of the crowd surging forward at the horn.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "A describes people heading to the starting area, likely before a race begins, while B describes Dara finishing (crossing the line) shortly after. Both can be true as part of a sequential race narrative, with A setting up the start and B occurring after the race concludes.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 24,
+   "rationale": "A describes people moving to the starting corrals before a race, which is temporally prior to and unrelated to how someone eventually placed in the race's outcome.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A concerns study group membership, while claim B concerns Tess's position among runners; these describe unrelated contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Both claims independently describe different people's group membership relative to Tess; knowing Rosa is not in Tess's group tells us nothing about whether Dara is or isn't.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "The two claims involve entirely different people and contexts (study group membership vs. finishing a race), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 27,
+   "rationale": "These two claims describe different, unrelated details of a scene (an action by Quinn versus ambient sound in a finish area); neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "A is about Uma's arrival time relative to others, while B describes a generic sound of running; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Claim A concerns Uma's arrival time relative to other participants, while claim B concerns the finishing order between Rosa and Tess. These involve different people and different events (arrival vs finishing), so there is no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 24,
+   "rationale": "Arriving early relates to punctuality, while placing mid-pack relates to performance ranking; these are largely independent factors, though arriving early could suggest preparation that might slightly boost performance, making a weak connection at best.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 16,
+   "b": 25,
+   "rationale": "Arriving early leaves open plenty of time for Uma to later cheer on other participants as they arrive; the two claims describe compatible, even complementary situations with no direct logical bearing beyond plausibility.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Adjusting shoelaces suggests preparing for a race, which is consistent with standing at the starting pack; the two describe compatible pre-race actions without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "A describes Tess preparing, likely before a race, while B describes Dara finishing moments later; these seem to belong to the same race scenario but involve different people, so A neither strongly supports nor contradicts B, just sets a temporal/contextual backdrop.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Standing near the front at the start could plausibly correlate with a strong finish, making it somewhat less likely someone finishes ahead of Tess, but the claims are largely independent since starting position doesn't determine finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 27,
+   "rationale": "A describes Tess's position at the start of a race while B describes an ambient sound at the finish area; these concern different locations and aspects of the scene with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "The horn triggers a surge of people moving forward, which plausibly leads to the sound of many feet hitting the ground, though the 'steady rhythm' is a mild contrast with the sudden chaotic 'surge' described in A.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "The horn sounding and crowd surging forward suggests a race start or similar event, but has no direct bearing on the specific finishing order between Rosa and Tess, which depends on unrelated details of their individual performance.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "A describes running (sneakers thudding rhythmically), which is consistent with someone approaching and then crossing a finish line shortly after, as B describes; A supports the scenario in B by establishing the runner's motion leading up to the finish.",
+   "relation": "supports",
+   "confidence": 0.62
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "A describes a runner's steady pace during what appears to be a race, which is consistent with but does not strongly indicate a mid-pack finish; the two describe different moments (during vs. after the race) and are only loosely connected.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "A describes the finishing order between Rosa and Tess but says nothing about Dara's position or timing relative to them, so it neither supports nor contradicts B's description of Dara's finish.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 22,
+   "b": 27,
+   "rationale": "Claim A describes a close race finish while claim B describes an ambient sound at the finish area; neither statement implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 24,
+   "b": 25,
+   "rationale": "Placing mid-pack doesn't preclude Uma from still being enthusiastic and supportive of other finishers; the two facts are plausibly compatible and mildly complementary but not causally linked.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 25,
+   "b": 27,
+   "rationale": "Uma cheering loudly is consistent with and could contribute to an atmosphere where laughter and sound echo across the finish area; both describe a lively, celebratory scene at the same event.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 26,
+   "b": 27,
+   "rationale": "Packing up suggests the event is winding down or over, while laughter still echoing suggests continued lively activity; both could occur simultaneously but there's a mild tension between winding-down and ongoing festivity.",
+   "relation": "tension",
+   "confidence": 0.55
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "tess",
+    "mentions": [
+     "Tess"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "finish_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "pack_position",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "other",
+    "other_greater_means": "closer to the front/lead of the pack"
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 11,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "dara",
+    "b": "rosa",
+    "confidence": 0.97
+   },
+   {
+    "claim_id": 14,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "rosa",
+    "b": "tess",
+    "confidence": 0.97
+   },
+   {
+    "claim_id": 19,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "dara",
+    "b": "tess",
+    "confidence": 0.97
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "subject": "dara",
+    "comparative": "before",
+    "object": "rosa",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 7,
+    "attribute": "arrival_time",
+    "subject": "tess",
+    "comparative": "after",
+    "object": "dara",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "finish_time",
+    "subject": "rosa",
+    "comparative": "ahead of",
+    "object": "tess",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 23,
+    "attribute": "finish_time",
+    "subject": "dara",
+    "comparative": "later",
+    "object": "rosa",
+    "confidence": 0.6
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 16,
+    "attribute": "arrival_time",
+    "entity": "uma",
+    "comparative": "earlier than most other participants",
+    "confidence": 0.7
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "before",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "finish_time",
+    "comparative": "ahead of",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "finish_time",
+    "comparative": "later",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "earlier than most other participants",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 33,
+  "blind": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    20
+   ],
+   [
+    2,
+    21
+   ],
+   [
+    2,
+    27
+   ],
+   [
+    3,
+    14
+   ],
+   [
+    3,
+    16
+   ],
+   [
+    3,
+    19
+   ],
+   [
+    3,
+    24
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    5,
+    16
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    7,
+    13
+   ],
+   [
+    7,
+    15
+   ],
+   [
+    7,
+    17
+   ],
+   [
+    8,
+    16
+   ],
+   [
+    8,
+    23
+   ],
+   [
+    10,
+    22
+   ],
+   [
+    12,
+    14
+   ],
+   [
+    12,
+    19
+   ],
+   [
+    13,
+    23
+   ],
+   [
+    13,
+    24
+   ],
+   [
+    14,
+    18
+   ],
+   [
+    14,
+    23
+   ],
+   [
+    15,
+    27
+   ],
+   [
+    16,
+    21
+   ],
+   [
+    16,
+    22
+   ],
+   [
+    17,
+    23
+   ],
+   [
+    18,
+    27
+   ],
+   [
+    20,
+    22
+   ],
+   [
+    21,
+    24
+   ],
+   [
+    22,
+    27
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 28,
+  "pairs_requested": 68,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 35,
+  "blind_pairs_related": 1,
+  "entity_relations": 10,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    26,
+    27
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "study_group": null,
+    "finish_time": "sequence",
+    "height": "magnitude",
+    "pack_position": "other"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 16,
+     "attribute": "arrival_time",
+     "entity": "uma",
+     "extreme": "min",
+     "edges": 3
+    }
+   ],
+   "extreme_edges": 3,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 28,
+  "n_edges": 14,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   2
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0,
+   "17": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   1.0,
+   1.0000000000000002,
+   0.9999999999999998,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   0.9999999999999998,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   4.930380657631324e-32,
+   0.0,
+   4.3757128336478e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   2.7117093616972283e-32,
+   2.7733391199176196e-32,
+   0.0,
+   1.7157724688557007e-31,
+   1.7835652028981312e-31,
+   0.0,
+   8.997944700177166e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   5.694589659564179e-32,
+   0.0,
+   2.674731506764993e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 26,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 9,
+    "residual": 8.011868568650901e-33
+   },
+   {
+    "a": 2,
+    "b": 10,
+    "residual": 8.628166150854816e-33
+   },
+   {
+    "a": 2,
+    "b": 15,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 15,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 10,
+    "b": 15,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 12,
+    "b": 13,
+    "residual": 1.2227344030925683e-31
+   },
+   {
+    "a": 13,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 23,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "residual": 7.642090019328552e-33
+   },
+   {
+    "a": 25,
+    "b": 27,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 7580584,
+   "output_tokens": 700742,
+   "thinking_tokens": 0,
+   "calls": 21141,
+   "api_calls": 7183,
+   "cache_hits": 13958,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 21.817062999999994,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 196200,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 8281326,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    12,
+    13,
+    20,
+    21,
+    23
+   ],
+   [
+    1,
+    26
+   ],
+   [
+    2,
+    9,
+    10,
+    15
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    11
+   ],
+   [
+    14
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ],
+   [
+    18
+   ],
+   [
+    19
+   ],
+   [
+    22
+   ],
+   [
+    24
+   ],
+   [
+    25,
+    27
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false,
+   "15": false,
+   "16": false,
+   "17": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 26,
+    "b": 27,
+    "rationale": "Packing up suggests the event is winding down or over, while laughter still echoing suggests continued lively activity; both could occur simultaneously but there's a mild tension between winding-down and ongoing festivity.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 11,
+   "attribute": "study_group",
+   "kind": "same",
+   "a": "dara",
+   "b": "rosa",
+   "confidence": 0.97,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "study_group",
+   "kind": "different",
+   "a": "rosa",
+   "b": "tess",
+   "confidence": 0.97,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 19,
+   "attribute": "study_group",
+   "kind": "different",
+   "a": "dara",
+   "b": "tess",
+   "confidence": 0.97,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 4,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "rosa",
+   "b": "dara",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 7,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "tess",
+   "b": "dara",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 22,
+   "attribute": "finish_time",
+   "kind": "greater",
+   "a": "tess",
+   "b": "rosa",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 23,
+   "attribute": "finish_time",
+   "kind": "greater",
+   "a": "dara",
+   "b": "rosa",
+   "confidence": 0.6,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "dara",
+   "b": "uma",
+   "confidence": 0.7,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 16,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "rosa",
+   "b": "uma",
+   "confidence": 0.7,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 16,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "tess",
+   "b": "uma",
+   "confidence": 0.7,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  }
+ ]
+}

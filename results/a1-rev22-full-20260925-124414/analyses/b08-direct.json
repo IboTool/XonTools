@@ -1,0 +1,1744 @@
+{
+ "label": "b08-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-03f2aa07dfde",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Esme is the head judge.",
+   "span": "Assume that Esme is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Hugo arrived at the bakery a little earlier than Nell.",
+   "span": "Hugo arrived at the bakery a little earlier than Nell",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Hugo and Nell were both eager to see the fresh batches lined up on the counter.",
+   "span": "both eager to see the fresh batches lined up on the counter",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Jun drove the minibus.",
+   "span": "Jun drove the minibus.",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Leo was the tallest among the staff gathered that morning.",
+   "span": "Leo was the tallest among the staff gathered that morning",
+   "kind": "quoted"
+  },
+  {
+   "id": 5,
+   "text": "The bread trays were stacked according to size.",
+   "span": "The bread trays were stacked according to size",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "The largest loaves were reserved for the market stall outside.",
+   "span": "the largest loaves reserved for the market stall outside",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Hugo and Nell worked different shifts.",
+   "span": "Hugo and Nell worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Jun had recently turned thirty.",
+   "span": "Jun had recently turned thirty",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Nell was the quickest at kneading dough.",
+   "span": "Nell was the quickest at kneading dough",
+   "kind": "quoted"
+  },
+  {
+   "id": 10,
+   "text": "Esme is not the head judge.",
+   "span": "Esme is not the head judge.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Nell and Leo worked different shifts.",
+   "span": "Nell and Leo worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "The bakery windows fogged up whenever the ovens reached full heat.",
+   "span": "The bakery windows fogged up whenever the ovens reached full heat",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Esme ranked highest among the staff in seniority.",
+   "span": "Esme ranked highest among the staff in seniority",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Esme worked there the longest of anyone present.",
+   "span": "having worked there the longest of anyone present",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Hugo and Leo worked different shifts.",
+   "span": "Hugo and Leo worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Jun was younger than Hugo by a couple of years.",
+   "span": "Jun was younger than Hugo by a couple of years",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "The shop ran three shifts.",
+   "span": "The shop ran three shifts.",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "The claims concern different subjects (a judge's role vs. arrival times at a bakery) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Claim A establishes Esme's role as head judge, which has no bearing on whether Hugo and Nell were eager to see the batches on the counter; the two statements concern different people and events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "The two claims describe unrelated roles for apparently different people, with no logical or causal connection between being a head judge and driving a minibus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Being the head judge and being the tallest among staff are unrelated attributes about different people with no logical connection given.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Esme being the head judge has no bearing on how the bread trays happened to be stacked; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A concerns who the head judge is, while claim B concerns which loaves were reserved for a market stall; neither statement bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Esme's role as head judge has no bearing on whether Hugo and Nell worked different shifts; these concern unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A concerns Esme's role as head judge, while claim B concerns Jun's age. There is no logical or contextual connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "The claims describe unrelated facts about different people and different roles/activities, with no logical connection between being head judge and someone else's dough-kneading speed.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A directly asserts Esme is the head judge while claim B asserts the negation of the same fact; both cannot hold under any ordinary reading.",
+   "relation": "contradicts",
+   "confidence": 0.99
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "The claim about Esme being head judge has no bearing on whether Nell and Leo worked different shifts; these involve unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A concerns a person's role as head judge, while claim B describes a physical phenomenon in a bakery related to oven heat and window fogging. These topics share no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Being head judge suggests a senior position within the staff, so it makes it more plausible that Esme ranked highest in seniority, though not certain.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Being head judge suggests seniority or authority but does not necessarily entail longest tenure at the location; the two are plausibly correlated but not logically dependent.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Claim A about Esme's role as head judge has no logical bearing on whether Hugo and Leo worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "The claim about Esme being head judge concerns a role/position, while the claim about Jun and Hugo concerns their relative ages. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "There is no stated connection between Esme's role as head judge and the shop's shift schedule; these appear to be from unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "A establishes the two arrived at the bakery separately with Hugo slightly first; this is neutral to whether both were eager to see fresh batches, which is an independent motivational fact.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A concerns the relative arrival times of Hugo and Nell at a bakery, while claim B concerns who drove a minibus. These involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A concerns arrival order of Hugo and Nell at the bakery, while claim B concerns relative height of Leo among staff. These deal with entirely different attributes and people, with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A concerns arrival order at the bakery, while claim B concerns how bread trays were organized; these describe unrelated aspects of the scene with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A concerns the relative arrival times of Hugo and Nell at the bakery, while claim B concerns how the largest loaves were allocated to a market stall. These topics do not interact in any way.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Arriving slightly before someone at a shared location like a bakery suggests they were both there around the same time, which is somewhat surprising if they worked different shifts. However, both claims could still be true if their shifts overlapped or handoff occurred at the bakery.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A concerns the relative arrival times of Hugo and Nell at a bakery, while claim B concerns Jun's recent birthday. There is no shared subject or logical connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Arrival order at the bakery has no bearing on who kneads dough fastest; these describe unrelated aspects of the scenario.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A concerns arrival order of Hugo and Nell at a bakery, while claim B concerns whether Esme is the head judge. These involve entirely different people and contexts with no logical or evidential connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A concerns the relative arrival times of Hugo and Nell at a bakery, while claim B concerns whether Nell and Leo worked different shifts. These involve different people (Hugo vs Leo) and different concepts (arrival timing vs shift scheduling), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A is about arrival order of Hugo and Nell at the bakery, while claim B describes a general condition about oven heat and window fogging; they share only the bakery setting and have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns the arrival order of Hugo and Nell at the bakery, while claim B concerns Esme's seniority ranking among staff. These involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Claim A concerns the relative arrival order of Hugo and Nell at the bakery, while claim B concerns Esme's tenure of employment there. These involve different people and different measures (arrival timing vs. length of work), so one does not bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns arrival timing between Hugo and Nell, while claim B concerns work shifts between Hugo and Leo; they involve different people and different aspects, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Claim A concerns arrival order at the bakery, while claim B concerns relative ages of Jun and Hugo; these are independent facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Hugo and Nell's relative arrival time at the bakery has no bearing on how many shifts the shop ran; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A concerns Hugo and Nell's eagerness about fresh batches on a counter, while claim B concerns Jun driving a minibus. There is no shared subject, context, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A concerns Hugo and Nell's eagerness about baked goods, while claim B concerns Leo's height relative to staff; these describe unrelated aspects of the scene with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "A establishes that fresh batches (likely bread trays) were lined up on the counter, which is compatible with them being stacked according to size, but neither claim entails the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Both claims can easily coexist: eagerness to see fresh batches doesn't say anything about which loaves were reserved for the market stall.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "A states both were together anticipating the fresh batches, which suggests overlapping presence, making it slightly awkward though not impossible if shifts overlapped briefly or it happened outside work hours.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Claim A concerns Hugo and Nell's eagerness about fresh batches on a counter, while claim B concerns Jun's recent thirtieth birthday. There is no shared subject or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "A shows Nell's eagerness about the finished baked batches, which doesn't directly bear on her relative speed at kneading dough, an earlier and different step in the process.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A describes Hugo and Nell's eagerness about baked goods on a counter, while claim B is about Esme's judging role. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Claim A concerns Hugo and Nell's shared eagerness to see batches on a counter, while claim B concerns Nell and Leo's work shifts; they involve different people and topics with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A describes Hugo and Nell's eagerness to see fresh batches, while claim B describes a general fact about bakery windows fogging when ovens are hot. These are largely independent statements about different aspects of the bakery scene with no direct logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A concerns Hugo and Nell's eagerness about fresh batches, while claim B concerns Esme's seniority ranking among staff; these involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim A concerns Hugo and Nell's eagerness to see fresh batches, while claim B concerns Esme's tenure at the workplace. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A is about Hugo and Nell's shared eagerness regarding batches on a counter, while claim B concerns Hugo and Leo's work shifts; these involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A concerns Hugo and Nell's eagerness about batches on a counter, while claim B concerns a relative age comparison between Jun and Hugo. These describe unrelated aspects with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Claim A describes two people's eagerness about fresh batches at a counter, while claim B states an operational detail about the shop's shift schedule; neither implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "The claim about who drove the minibus has no logical or evidential bearing on who was the tallest staff member that morning.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "There is no logical or causal link between who drove the minibus and how bread trays were organized; they concern unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "These claims involve unrelated subjects and contexts (driving a minibus vs. loaves reserved for a market stall) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "The claim about Jun driving the minibus has no logical or contextual connection to Hugo and Nell's work shifts; they involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Being able to drive a minibus has no logical bearing on Jun's recent age milestone; these facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "These claims describe unrelated activities involving different people, with no logical connection between driving a minibus and dough-kneading speed.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "The two claims concern different people and different roles/activities; nothing about who drove the minibus bears on whether Esme is the head judge.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Jun driving the minibus has no bearing on whether Nell and Leo worked different shifts; the claims involve different subjects and unrelated content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "These claims describe unrelated situations with no shared subject, context, or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Jun driving the minibus has no bearing on Esme's seniority ranking among staff; these describe unrelated facts about different people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Jun driving the minibus has no bearing on who worked at the location the longest; these describe unrelated facts about different people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "The claim about Jun driving the minibus has no bearing on whether Hugo and Leo worked different shifts; they involve unrelated people and events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Driving a minibus has no bearing on relative age between Jun and Hugo; the claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "There is no logical or causal connection between Jun driving a minibus and a shop running three shifts; they involve unrelated subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Claim A concerns the relative height of a person among staff, while claim B concerns the organization of bread trays by size; these describe unrelated aspects of the scene with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A is about relative height of staff members, while claim B concerns the allocation of bread loaves; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Leo's height relative to staff gathered that morning has no bearing on whether Hugo and Nell worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Leo's height ranking among staff has no bearing on Jun's recent birthday or age; these are independent facts about different attributes and people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "A concerns Leo's height relative to staff, while B concerns Nell's speed at kneading dough; these describe different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Claim A concerns Leo's height relative to staff members, while claim B concerns Esme's role as head judge. These involve different people and unrelated attributes, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Leo's height relative to staff present that morning says nothing about whether Nell and Leo share the same work shift.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A is about Leo's relative height among staff, while claim B describes a general condition about bakery windows fogging with oven heat. They share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Height ranking and seniority ranking measure different attributes, so Leo being tallest has no bearing on who has the highest seniority.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Both claims describe different superlative attributes (height vs. tenure) among the same group, and neither one's truth affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "A states Leo's relative height among staff gathered that morning, which has no bearing on whether Hugo and Leo work the same or different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A concerns relative height among staff, while claim B concerns relative age between two individuals. There is no logical or contextual connection between height ranking and age difference.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Leo's height relative to staff gathered one morning has no bearing on how many shifts the shop operates.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Stacking trays by size suggests organization related to loaf size, which plausibly supports separating out the largest loaves for a special purpose like the market stall, but the connection is indirect and not guaranteed.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "The organization of bread trays by size has no logical or causal connection to whether Hugo and Nell worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "The organization of bread trays by size has no logical or causal connection to Jun's age or birthday.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "The organization of bread trays by size has no bearing on who was quickest at kneading dough; they concern unrelated aspects of a bakery workflow.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "The stacking of bread trays by size has no logical or thematic connection to who holds the position of head judge.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "The organization of bread trays by size has no logical bearing on whether Nell and Leo worked different shifts; these describe unrelated aspects of the workplace.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A concerns the organization of bread trays by size, while claim B concerns window fogging related to oven heat. These describe unrelated aspects of the bakery with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "The organization of bread trays by size has no logical or causal connection to Esme's seniority ranking among staff members.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "The organization of bread trays by size has no logical bearing on how long Esme has worked there; these are independent facts about the workplace.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "The claim about bread trays being stacked by size has no logical or topical connection to whether Hugo and Leo worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "The organization of bread trays by size has no logical or causal connection to the age difference between two people.",
+   "relation": "unrelated",
+   "confidence": 0.99
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A concerns organization of bread trays by size, while claim B concerns the shop's shift schedule; these describe unrelated aspects of the operation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Claim A discusses reservation of large loaves for a market stall, while claim B concerns two people's work shifts. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "The claims concern unrelated topics: bread allocation for a market stall versus a person's age; neither has bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Claim A concerns which loaves were reserved for the market stall, while claim B concerns who kneaded dough fastest; these describe unrelated aspects of the bakery process with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "The two claims describe unrelated situations: one concerns the allocation of large loaves to a market stall, the other concerns Esme's role as a judge. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A concerns which loaves were reserved for a market stall, while claim B concerns Nell and Leo's work schedules; there is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A concerns which loaves were set aside for the market stall, while claim B concerns a physical effect of oven heat on the windows; the two describe unrelated aspects of the bakery with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A concerns bread allocation for a market stall, while claim B concerns staff seniority ranking; these topics are unconnected and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A concerns where the largest loaves were allocated, while claim B concerns Esme's tenure at some location; they share no clear subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A concerns loaf allocation to a market stall, while claim B concerns two people's work shifts; there is no logical or contextual connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "The two claims concern entirely different subjects (bread loaves for a market stall versus relative ages of two people) with no logical or thematic connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "The claim about reserving the largest loaves for an outside market stall does not provide information about how many shifts the shop operated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A concerns Hugo and Nell's work schedules, while claim B concerns Jun's age. There is no overlap in subject matter or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Working different shifts from Hugo doesn't bear on Nell's relative skill or speed at kneading dough compared to others.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A concerns Hugo and Nell's work shifts, while claim B concerns Esme's role as a judge. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "A tells us about Hugo and Nell's shift relationship but says nothing about Leo, so it doesn't bear on whether Nell and Leo worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Claim A concerns work scheduling of two people, while claim B describes a physical phenomenon related to oven heat and window fogging; they share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A concerns Hugo and Nell's shift schedules, while claim B concerns Esme's seniority ranking among staff. These involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Claim A concerns Hugo and Nell's shift schedules, while claim B concerns Esme's tenure relative to others present; the two statements involve different people and different dimensions (timing vs. duration) with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A concerns Hugo and Nell's shift relationship, while claim B concerns Hugo and Leo's shift relationship. These involve different people (Nell vs Leo) and give no information about each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A concerns shift scheduling between Hugo and Nell, while claim B concerns relative ages of Jun and Hugo; these facts are independent of each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "That Hugo and Nell worked different shifts implies there were at least two shifts, which is consistent with and mildly supports the idea of multiple shifts existing, though it doesn't confirm the specific number three.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Jun's age has no bearing on Nell's dough-kneading speed; the claims concern different people and unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "The two claims concern unrelated people and topics; Jun's age has no bearing on whether Esme holds a judging position.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Jun's age has no bearing on Nell and Leo's work schedules; these claims involve different, unconnected subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Jun's recent birthday has no logical or causal connection to the bakery's oven heat and window fogging; the two claims concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Jun's age is unrelated to Esme's seniority ranking among staff; no shared subject or logical connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Claim A concerns Jun's age and recent birthday, while claim B concerns Esme's tenure at a workplace relative to others present. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Claim A is about Jun's age and recent birthday, while claim B concerns Hugo and Leo's work schedules. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "A gives Jun's age as around thirty, which is compatible with Jun being a couple of years younger than Hugo (Hugo would be around thirty-two); the claims address different, independent facts about relative and absolute age.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Jun's recent 30th birthday has no logical or thematic connection to the shop's shift structure; nothing in A bears on B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A concerns Nell's speed at kneading dough, which has no logical or contextual connection to claim B about Esme's role as head judge.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Being the quickest at kneading dough has no logical bearing on whether Nell and Leo worked different shifts; these are independent facts about ability and scheduling.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Nell's dough-kneading speed has no bearing on the physical/thermal behavior of the bakery windows and ovens; these are unrelated facts about different aspects of the bakery.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "The two claims describe different, unrelated attributes (speed at kneading dough vs. seniority ranking) of apparently different people, with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Being the quickest at kneading dough and working somewhere the longest are independent attributes about different people; knowing one gives no information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Claim A concerns Nell's dough-kneading speed, while claim B concerns Hugo and Leo's work shifts; they involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A concerns dough-kneading speed among some group, while claim B concerns relative ages of Jun and Hugo. These involve entirely different people and attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Nell's speed at kneading dough has no bearing on whether the shop operated three shifts; the two claims concern unrelated aspects of the operation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "The two claims concern entirely different people and topics (a judging role versus work shifts), with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "These claims concern entirely different subjects (a judge's role versus bakery oven conditions) with no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Not being head judge doesn't preclude having the highest seniority among staff; these are different roles/attributes, though it's slightly surprising if seniority typically determines who is head judge.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Not being head judge doesn't bear on how long someone has worked somewhere; these are independent facts about role versus tenure.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "The two claims concern unrelated people and topics: one is about Esme's judging role, the other about Hugo and Leo's work shifts. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "These claims concern unrelated subjects: one is about judging roles, the other about relative ages of two people, with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "The two claims concern unrelated subjects: one is about Esme's role as a judge, the other about shop shift scheduling. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A concerns Nell and Leo's work schedules, while claim B describes a physical condition of bakery windows related to oven heat. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A concerns Nell and Leo's shift schedules, while claim B concerns Esme's seniority ranking among staff. These involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A concerns Nell and Leo's differing shifts, which has no bearing on Esme's tenure being the longest among those present.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns Nell and Leo's shift relationship, while claim B concerns Hugo and Leo's shift relationship. These involve different people (Nell vs Hugo) and knowing one doesn't logically determine the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A concerns Nell and Leo's work shifts, while claim B concerns the relative ages of Jun and Hugo. They involve entirely different people and topics, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "That Nell and Leo worked different shifts is consistent with and slightly supportive of a workplace having multiple shifts, but it doesn't establish or require exactly three shifts existing.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A concerns bakery oven heat and window fogging, while claim B concerns Esme's seniority ranking among staff; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A describes a physical condition about the bakery's ovens and windows, while claim B is about Esme's tenure relative to others present. Neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A describes a physical condition in the bakery related to oven heat, while claim B describes two people's work schedules; neither provides information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A concerns bakery ovens and window condensation, while claim B concerns the relative ages of two people; neither content bears on the other in any way.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "A describes a physical effect of oven heat on the bakery windows, while B describes the shop's staffing schedule; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Ranking highest in seniority typically means having the longest tenure among staff, so if Esme has the highest seniority, she likely worked there longest among those present, assuming seniority is measured by tenure.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Esme's seniority ranking has no bearing on whether Hugo and Leo worked the same or different shifts; these are independent facts about the staff.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Seniority typically refers to length of service or rank, not age, so Esme having the highest seniority has no bearing on the relative ages of Jun and Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Esme's seniority ranking among staff has no logical bearing on how many shifts the shop operates.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "A's claim about Esme's tenure being the longest doesn't bear on whether Hugo and Leo worked different shifts; these concern unrelated aspects of the workplace.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "A's claim about tenure at a workplace has no bearing on B's claim about relative ages of two other people; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Esme's tenure length among those present is unrelated to how many shifts the shop operates; the claims concern different aspects of the workplace.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Claim A concerns work shifts of Hugo and Leo, while claim B concerns relative ages of Jun and Hugo; they share a person but address unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "If the shop runs three shifts, it's plausible for two employees to work different shifts among those, making B provide a context that supports A's plausibility, though it doesn't directly follow from A.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Claim A concerns the relative ages of two people, while claim B concerns a shop's shift structure; the two topics share no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "head_judge",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "shift",
+    "arity": "multi",
+    "arity_span": "The shop ran three shifts.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "kneading_speed",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "other",
+    "other_greater_means": "quicker at kneading"
+   },
+   {
+    "key": "seniority",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "tenure",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 7,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "hugo",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "nell",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "hugo",
+    "b": "leo",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "subject": "hugo",
+    "comparative": "earlier than",
+    "object": "nell",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "age",
+    "subject": "jun",
+    "comparative": "younger than",
+    "object": "hugo",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 4,
+    "attribute": "height",
+    "entity": "leo",
+    "comparative": "tallest",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "kneading_speed",
+    "entity": "nell",
+    "comparative": "quickest",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "seniority",
+    "entity": "esme",
+    "comparative": "highest",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "tenure",
+    "entity": "esme",
+    "comparative": "longest",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "earlier than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "height",
+    "comparative": "tallest",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "kneading_speed",
+    "comparative": "quickest",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "seniority",
+    "comparative": "highest",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "tenure",
+    "comparative": "longest",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 18,
+  "pairs_requested": 153,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 5,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    7
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "head_judge": null,
+    "arrival_time": "sequence",
+    "shift": null,
+    "height": "magnitude",
+    "kneading_speed": "other",
+    "seniority": "magnitude",
+    "tenure": "magnitude",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 4,
+     "attribute": "height",
+     "entity": "leo",
+     "extreme": "max",
+     "edges": 0
+    },
+    {
+     "claim_id": 9,
+     "attribute": "kneading_speed",
+     "entity": "nell",
+     "extreme": "max",
+     "edges": 0
+    },
+    {
+     "claim_id": 13,
+     "attribute": "seniority",
+     "entity": "esme",
+     "extreme": "max",
+     "edges": 0
+    },
+    {
+     "claim_id": 14,
+     "attribute": "tenure",
+     "entity": "esme",
+     "extreme": "max",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 18,
+  "n_edges": 4,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9353072253334291,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    4
+   ],
+   [
+    9
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.005025125628140708,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002
+  ],
+  "claim_residuals": [
+   0.9999747481124212,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.9899497487437183,
+   0.0,
+   0.0,
+   7.642090019328552e-32,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   4.930380657631324e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 10,
+    "residual": 0.9999747481124212
+   },
+   {
+    "a": 0,
+    "b": 13,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 17,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   10,
+   0
+  ],
+  "culprits": [
+   {
+    "claim": 10,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.06469277466657086
+   },
+   {
+    "claim": 0,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.06469277466657086
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 2856,
+   "api_calls": 0,
+   "cache_hits": 2856,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    10,
+    13,
+    14
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    15,
+    17
+   ],
+   [
+    16
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    0,
+    10
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 1,
+    "b": 7,
+    "rationale": "Arriving slightly before someone at a shared location like a bakery suggests they were both there around the same time, which is somewhat surprising if they worked different shifts. However, both claims could still be true if their shifts overlapped or handoff occurred at the bakery.",
+    "confidence": 0.55
+   },
+   {
+    "a": 2,
+    "b": 7,
+    "rationale": "A states both were together anticipating the fresh batches, which suggests overlapping presence, making it slightly awkward though not impossible if shifts overlapped briefly or it happened outside work hours.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 7,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "hugo",
+   "b": "nell",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "nell",
+   "b": "leo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "hugo",
+   "b": "leo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "nell",
+   "b": "hugo",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "hugo",
+   "b": "jun",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

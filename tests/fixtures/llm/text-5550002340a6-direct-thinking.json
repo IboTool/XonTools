@@ -1,0 +1,26 @@
+{
+ "request": "63e3d5252dbef482dcd8f4170a42849d6fac72315fae29f6326bd008bebd65a9",
+ "tag": "text-5550002340a6-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Sami and Eli were in different houses.",
+     "Eli and Dev were in different houses.",
+     "Sami and Dev were in different houses.",
+     "The school had two houses."
+    ],
+    "explanation": "With only two houses in the school, it is impossible for three people (Sami, Eli, and Dev) to be pairwise in different houses, since by the pigeonhole principle at least two of them must share a house."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1054,
+  "output_tokens": 553,
+  "thinking_tokens": 413
+ },
+ "stop_reason": "end_turn"
+}

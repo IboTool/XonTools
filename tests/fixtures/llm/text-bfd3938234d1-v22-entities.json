@@ -1,0 +1,182 @@
+{
+ "request": "226f5ff275c0f51cf923e7648b0599f00c0bbe268949f06ffc6a15ba5801f2f6",
+ "tag": "text-bfd3938234d1-v22-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpecV22",
+ "output": {
+  "entities": [
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina",
+     "she"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 10,
+    "attribute": "team",
+    "kind": "same",
+    "a": "mina",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "team",
+    "kind": "different",
+    "a": "leo",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "team",
+    "kind": "different",
+    "a": "mina",
+    "b": "dev",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "subject": "leo",
+    "comparative": "shortly after",
+    "object": "mina",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "height",
+    "subject": "dev",
+    "comparative": "slightly taller than",
+    "object": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "arrival_time",
+    "subject": "ben",
+    "comparative": "a little later than",
+    "object": "mina",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "arrival_time",
+    "subject": "ben",
+    "comparative": "before",
+    "object": "gus",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "entity": "mina",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "arrival_time",
+    "entity": "gus",
+    "comparative": "last",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "shortly after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "slightly taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "a little later than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "before",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "last",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "usage": {
+  "input_tokens": 3828,
+  "output_tokens": 883,
+  "thinking_tokens": 0,
+  "cache_write_tokens": 0,
+  "cache_read_tokens": 3270
+ },
+ "stop_reason": "end_turn"
+}

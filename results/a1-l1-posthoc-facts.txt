@@ -1,0 +1,150 @@
+# Full engine false positives on consistent documents: 11 of 60
+
+## b22-consistent, base equality_break
+full engine clauses: ['direct']; minimal engine clauses: ['direct']
+direct: 18 (asserted): Nell sat quietly reviewing trivia cards.
+        22 (asserted): Noor chatted with Nell about favorite quiz categories.
+        18-22: contradicts 0.55 | Nell sitting quietly reviewing cards suggests she is not actively chatting, making it somewhat less likely she is simultaneously chatting with Noor.
+
+## b26-consistent, base binary_parity (binary three-value control)
+full engine clauses: ['direct']; minimal engine clauses: ['direct']
+direct: 6 (asserted): Lena set her sketchbook on the table beside Rosa.
+        10 (asserted): Lena and Rosa worked different shifts.
+        6-10: contradicts 0.55 | Lena setting her sketchbook beside Rosa suggests they were together at the same time, weakly implying they shared a shift, which contradicts them working different shifts.
+direct: 7 (asserted): Hana and Lena worked different shifts.
+        9 (asserted): The five of them chatted about the new clay supplier while waiting for the instructor to arrive.
+        7-9: contradicts 0.6 | If Hana and Lena worked different shifts, it's less likely both would be present chatting together with the other three at the same time.
+
+## b28-consistent, base equality_break
+full engine clauses: ['direct']; minimal engine clauses: ['direct']
+direct: 9 (asserted): The wind picked up slightly, rippling the surface of the river.
+        21 (asserted): The oars sliced through the calm water in unison.
+        9-21: contradicts 0.6 | Wind rippling the surface suggests water is not perfectly calm, which contradicts oars slicing through calm water.
+
+## b30-consistent, base order_cycle
+full engine clauses: ['direct', 'claim_balance']; minimal engine clauses: ['direct']
+direct: 1 (asserted): Everyone arrived within a few minutes of each other.
+        5 (asserted): Nell arrived a little later.
+        1-5: contradicts 0.5 | If everyone arrived within a few minutes, this contradicts Nell arriving 'a little later' implying a notable delay.
+claim balance: frustrated cycle [1, 3, 5]
+        1 (asserted): Everyone arrived within a few minutes of each other.
+        3 (asserted): Isla arrived first, carrying a stack of novels she wanted to discuss.
+        5 (asserted): Nell arrived a little later.
+        1-3: supports 0.55 | Everyone arriving within minutes of each other is broadly consistent with someone arriving first, like Isla.
+        3-5: supports 0.7 | Isla arriving first implies others, including Nell, would arrive after her, supporting Nell arriving later.
+        5-1: contradicts 0.5 | If everyone arrived within a few minutes, this contradicts Nell arriving 'a little later' implying a notable delay.
+
+## b31-consistent, base equality_break
+full engine clauses: ['entity']; minimal engine clauses: ['entity']
+entity: order_cycle on signup_order over ['kira', 'otto'], min confidence 0.6
+        relation 7: {'claim_id': 22, 'attribute': 'signup_order', 'kind': 'greater', 'a': 'kira', 'b': 'otto', 'confidence': 0.6}
+        relation 8: {'claim_id': 23, 'attribute': 'signup_order', 'kind': 'greater', 'a': 'otto', 'b': 'kira', 'confidence': 0.85}
+        22 (asserted): Kira signed the sign-up sheet first.
+        23 (asserted): Otto signed the sign-up sheet after Kira.
+
+## b32-consistent, base binary_parity (binary three-value control)
+full engine clauses: ['direct', 'claim_balance']; minimal engine clauses: ['direct']
+direct: 15 (asserted): Noor asked everyone to quiet down so the discussion could continue.
+        24 (asserted): Noor thanked everyone for coming as the meeting wrapped up.
+        15-24: contradicts 0.5 | Asking to continue the discussion implies the meeting is not yet over, contradicting it wrapping up.
+claim balance: frustrated cycle [1, 15, 24]
+        1 (premise): Noor is the head judge.
+        15 (asserted): Noor asked everyone to quiet down so the discussion could continue.
+        24 (asserted): Noor thanked everyone for coming as the meeting wrapped up.
+        1-15: supports 0.5 | Noor being head judge could plausibly support her authority to ask everyone to quiet down, giving some causal connection.
+        15-24: contradicts 0.5 | Asking to continue the discussion implies the meeting is not yet over, contradicting it wrapping up.
+        24-1: supports 0.55 | As head judge, Noor plausibly would be the one to thank everyone and wrap up the meeting, giving mild support.
+
+## b33-consistent, base order_cycle
+full engine clauses: ['direct']; minimal engine clauses: ['direct']
+direct: 16 (asserted): Ivo finished ahead of Kira.
+        29 (asserted): Both Kira's and Ivo's designs worked equally well in the trials.
+        16-29: contradicts 0.5 | Ivo finishing ahead of Kira in the race suggests unequal performance, which could contradict them working equally well.
+
+## b34-consistent, base equality_break
+full engine clauses: ['direct']; minimal engine clauses: ['direct']
+direct: 4 (asserted): Ben was carrying a folder of printed diagrams.
+        5 (asserted): Sami was carrying a folder of printed diagrams.
+        4-5: contradicts 0.55 | If Ben carried the folder, this makes it less likely that Sami was the one carrying it, assuming one folder is being referenced.
+
+## b45-consistent, base order_cycle
+full engine clauses: ['direct']; minimal engine clauses: ['direct']
+direct: 15 (asserted): Hana walked with a steady pace, pausing now and then to sketch a quick outline of a sparrow perched on a fence post.
+        18 (asserted): Hana finished ahead of Leo.
+        15-18: contradicts 0.55 | Hana pausing frequently to sketch suggests she moved slower, which would make it less likely she finished ahead of Leo.
+
+## b54-consistent, base order_cycle
+full engine clauses: ['claim_balance']; minimal engine clauses: []
+claim balance: frustrated cycle [0, 5, 20]
+        0 (asserted): The annual club exhibition drew a modest crowd on a cool autumn evening.
+        5 (quoted): The turnout this year seemed larger than the last three gatherings combined.
+        20 (asserted): The evening carried on with quiet anticipation, the kind that settles over a room right before results are announced.
+        0-5: contradicts 0.6 | A modest crowd this year could contradict the idea that turnout was larger than the last three combined.
+        5-20: supports 0.55 | A larger turnout could support an atmosphere of anticipation, making the claim slightly more plausible
+        20-0: supports 0.6 | The described modest, cool evening atmosphere aligns with and supports the description of quiet anticipation later in the evening.
+
+## b56-consistent, base binary_parity (binary three-value control)
+full engine clauses: ['direct']; minimal engine clauses: ['direct']
+direct: 8 (asserted): The lighting in the main room was carefully arranged so that every print would be seen under even conditions.
+        20 (asserted): The afternoon light cast long shadows across the display tables where framed prints were being arranged in neat rows.
+        8-20: contradicts 0.55 | Even, carefully arranged lighting suggests controlled conditions, which would tend to counter the idea of shifting natural light causing shadows over the display tables.
+
+# Cost per document (claude-sonnet-5, $2.0/M input, $10.0/M output; each request priced at its paid call)
+engine: 180 documents; mean $0.1376, median $0.1007, min $0.0236, max $0.2681; mean tokens 13,155 in, 11,128 out; total $24.77
+pairwise: 180 documents; mean $0.1266, median $0.0899, min $0.0170, max $0.2576; mean tokens 10,993 in, 10,462 out; total $22.79
+llm_direct_thinking: 180 documents; mean $0.0057, median $0.0047, min $0.0022, max $0.0322; mean tokens 1,074 in, 355 out; total $1.03
+llm_direct_no_thinking: 180 documents; mean $0.0034, median $0.0033, min $0.0021, max $0.0074; mean tokens 1,074 in, 125 out; total $0.61
+pairing seeds 1 and 2 (seed-spread diagnostic, sampled documents only): 104 documents; all their requests: mean $0.1205, total $12.54; requests not already made for seed 0: mean $0.1143, total $11.88
+requests listed under more than one category of their document: 228 (['extra_seeds', 'pairs', 'relate'])
+request aa1365e57de955c1 is shared by b16-cycle (relate-009), b16-direct (relate-009): 1,719 tokens, $0.0092
+request da12b294ce04e51f is shared by b35-consistent (relate-002), b35-cycle (relate-002): 2,689 tokens, $0.0153
+request 7497c4ffdad9928c is shared by b36-consistent (relate-012), b36-cycle (relate-012): 2,017 tokens, $0.0114
+request c0465b9991bb352e is shared by b56-consistent (relate-001), b56-cycle (relate-001): 2,734 tokens, $0.0162
+engine, all pairs scored (<= 25 claims): 76 documents, mean $0.1970
+engine, pairs sampled (> 25 claims): 104 documents, mean $0.0942
+all requests of the run: 2871 distinct, 3,754,804 input + 3,072,494 output tokens, $38.23
+reconciliation: engine $24.7660 + LLM-direct $1.0251 + $0.6122 + new seed requests $11.8833 = $38.2866, against $38.2345
+
+# Planted-cycle pairs the relation judge labeled contradicts
+
+## b04-cycle, equality_break; engine clauses ['direct', 'entity']
+[1] 6 (asserted): Rosa is in the same class as Finn.
+    15 (asserted): Rosa is not in the same class as Jun.
+    6-15: contradicts 0.8 | If Rosa is in the same class as Finn, and Finn is in Jun's class, this contradicts the claim that Rosa is not in Jun's class.
+
+## b10-cycle, equality_break; engine clauses ['entity']
+[2] 6 (asserted): Milo is on the same team as Jun.
+    16 (asserted): Milo is not on the same team as Hana.
+    6-16: contradicts 0.4 | If Milo is on the same team as Jun, and Jun is (per other claims) on Hana's team, this would suggest Milo is on Hana's team, contradicting the claim that Milo is not on Hana's team.
+
+## b25-cycle, equality_break; engine clauses ['direct', 'entity']
+[3] 9 (asserted): Milo is in the same study group as Fay.
+    16 (asserted): Milo is not in the same study group as Nell.
+    9-16: contradicts 0.4 | If Milo is in the same study group as Fay, and Fay is in the same group as Nell (per other claims), this would imply Milo is in the same group as Nell, contradicting claim 16 that Milo is not in the same group as Nell.
+
+## b37-cycle, equality_break; engine clauses ['direct', 'entity']
+[4] 7 (asserted): Finn is on the same team as Rosa.
+    16 (asserted): Finn is not on the same team as Hana.
+    7-16: contradicts 0.85 | Finn being on Rosa's team combined with Rosa being on Hana's team would imply Finn is on Hana's team, contradicting claim 16.
+
+## b40-cycle, equality_break; engine clauses ['direct', 'entity']
+[5] 14 (asserted): Finn is in the same class as Bo.
+    24 (asserted): Finn is not in the same class as Nell.
+    14-24: contradicts 0.55 | If Finn is in the same class as Bo, and Bo is in the same class as Nell (per other claims), this would imply Finn is in the same class as Nell, contradicting that Finn is not in Nell's class.
+
+## b46-cycle, equality_break; engine clauses ['direct', 'entity']
+[6] 14 (asserted): Bo is on the same team as Uma.
+    25 (asserted): Bo is not on the same team as Jude.
+    14-25: contradicts 0.55 | If Bo is on the same team as Uma, and Uma is on the same team as Jude, then Bo would be on the same team as Jude, contradicting that Bo is not on the same team as Jude.
+
+## b52-cycle, equality_break; engine clauses ['entity']
+[7] 11 (asserted): Dara is in the same study group as Rosa.
+    19 (asserted): Dara is not in the same study group as Tess.
+    11-19: contradicts 0.4 | If Dara and Rosa are in the same group, and if Rosa and Tess were also in the same group, Dara and Tess would be in the same group, contradicting B; but A alone doesn't determine Tess's group, though it creates tension with the claim that Dara is not with Tess given the group chain implied elsewhere.
+
+## b58-cycle, equality_break; engine clauses ['direct', 'entity']
+[8] 11 (asserted): Ana is in the same class as Esme.
+    16 (asserted): Ana is not in the same class as Lena.
+    11-16: contradicts 0.55 | If Ana is in the same class as Esme, and Esme is in the same class as Lena (per claim 15, not assumed here), this would suggest Ana is in the same class as Lena, contradicting claim 16; but taken alone, A doesn't establish this link.
+
+8 pairs

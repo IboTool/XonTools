@@ -1,0 +1,1361 @@
+{
+ "label": "b02-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-33810c949db0",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The community garden project began early on a Saturday morning.",
+   "span": "The community garden project began early on a Saturday morning",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Volunteers arrived in waves to prepare the beds for spring planting.",
+   "span": "volunteers arriving in waves to prepare the beds for spring planting",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Finn is the team captain.",
+   "span": "Assume that Finn is the team captain",
+   "kind": "premise"
+  },
+  {
+   "id": 3,
+   "text": "Dara arrived first.",
+   "span": "Dara arrived first",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Dara was carrying a wheelbarrow full of compost.",
+   "span": "carrying a wheelbarrow full of compost",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Vik showed up shortly after Dara.",
+   "span": "Vik showed up shortly after",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Vik showed up with several boxes of supplies.",
+   "span": "with several boxes of supplies",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Finn had already marked out the plots with string and small wooden stakes the night before.",
+   "span": "Finn had already marked out the plots with string and small wooden stakes the night before",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Vik brought the first-aid kit.",
+   "span": "Vik brought the first-aid kit",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Yara arrived a little later than the others.",
+   "span": "Yara arrived a little later than the others",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Yara was still wearing her work gloves from a previous shift at the tool shed.",
+   "span": "still wearing her work gloves from a previous shift at the tool shed",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Cleo is the tallest of the group.",
+   "span": "Cleo, who is the tallest of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Cleo helped carry the heavier bags of soil from the shed to the beds.",
+   "span": "helped carry the heavier bags of soil from the shed to the beds",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Dara and Cleo were on different teams.",
+   "span": "Dara and Cleo were on different teams",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "The morning air was cool.",
+   "span": "The morning air was cool",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "The smell of fresh mulch drifted across the garden as everyone settled into their tasks.",
+   "span": "the smell of fresh mulch drifted across the garden as everyone settled into their tasks",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Finn checked the schedule.",
+   "span": "Finn checked the schedule",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Finn noted that the seedlings needed to be planted before noon to avoid the midday heat.",
+   "span": "noted that the seedlings needed to be planted before noon to avoid the midday heat",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Cleo and Yara were on different teams.",
+   "span": "Cleo and Yara were on different teams",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Vik is younger than Dara.",
+   "span": "Vik, who is younger than Dara",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Vik spent much of the morning setting up the watering cans and hoses along the far row.",
+   "span": "spent much of the morning setting up the watering cans and hoses along the far row",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "The volunteers took a short break around ten.",
+   "span": "The volunteers took a short break around ten",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "The volunteers shared coffee and pastries someone had brought from the bakery down the street.",
+   "span": "sharing coffee and pastries someone had brought from the bakery down the street",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Dara and Yara were on different teams.",
+   "span": "Dara and Yara were on different teams",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "By midmorning, the garden buzzed with activity, rakes scraping against soil and laughter carrying over the fences.",
+   "span": "By midmorning, the garden buzzed with activity, rakes scraping against soil and laughter carrying over the fences",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "There were three teams.",
+   "span": "There were three teams",
+   "kind": "asserted"
+  },
+  {
+   "id": 26,
+   "text": "As the sun rose higher, the group paused to admire how much progress had been made.",
+   "span": "As the sun rose higher, the group paused to admire how much progress had been made",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "A establishes the timing and start of the garden project, which naturally sets the scene for volunteers arriving to work on it, making B more plausible and coherent as a continuation of the same event.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "A sets the general time and context of a community garden project starting Saturday morning, but says nothing about who did what tasks; B describes a specific activity by Cleo that could plausibly occur during such a project.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "The timing of the garden project starting on Saturday morning has no bearing on whether Dara and Cleo were on different teams; these are unrelated facts about scheduling versus team assignment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Early Saturday morning is consistent with cool morning air, a common and unsurprising conjunction; A slightly supports B by setting an early time of day when air tends to be cooler.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "The claim about when the community garden project began has no bearing on whether Dara and Yara were on different teams; these are unrelated pieces of information.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "If the project began early Saturday morning, it is natural for activity to have built up by midmorning that same day, making B a plausible continuation of A.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 26,
+   "rationale": "A establishes the project started early Saturday morning; B describes the sun rising higher and the group pausing to note progress, which fits naturally as a later moment in the same morning session.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Volunteers arriving to prepare beds for planting suggests an organized event where supplies might be needed, making Vik's arrival with supplies plausible and complementary, though not directly implied.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Finn marking out plots the night before is a natural preparatory step that would help volunteers know where to prepare beds; the two events fit together as sequential parts of the same project without conflicting.",
+   "relation": "supports",
+   "confidence": 0.62
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "A establishes volunteers arriving in staggered waves, which is consistent with Yara, presumably one of the volunteers, arriving somewhat later than others. B fits naturally as an instance of the pattern described in A.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 24,
+   "rationale": "Volunteers arriving in waves to prepare beds is consistent with, and plausibly leads to, a garden buzzing with activity including raking and laughter by midmorning.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A concerns Finn's role as team captain, while claim B describes the arrival order of Vik and Dara. These claims involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Being team captain does not inherently relate to marking out plots with string and stakes; while a captain might do such preparatory work, the claims describe unrelated facts about Finn's role versus his actions.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Finn's role as team captain has no bearing on the temperature of the morning air; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Being team captain does not imply or preclude checking a schedule; the two claims concern unrelated aspects of Finn's role and actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Being team captain and noting a fact about planting seedlings are unrelated topics; one does not affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Being team captain has no logical or contextual bearing on whether volunteers shared coffee and pastries; the claims describe unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Arriving first says nothing about what Dara was carrying, so the two claims don't bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "If Dara arrived first, it is plausible and consistent that Vik showed up shortly after her, since someone had to arrive first for others to follow.",
+   "relation": "supports",
+   "confidence": 0.72
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "If Dara arrived first, that is consistent with Yara arriving later than the others (Dara being one of the 'others' who arrived before Yara), so A supports the plausibility of B rather than conflicting with it.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "A states only the order of arrival, which has no bearing on relative ages; there's no logical or contextual link between arrival order and age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 24,
+   "rationale": "Dara arriving first is consistent with the garden later becoming busy with activity; the two describe different times and events without conflict, though A does not particularly make B more likely.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "A wheelbarrow of compost could plausibly contribute to smells in a garden setting, but compost and fresh mulch are different substances, so the connection is loose and not directly supportive or contradictory.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Claim A concerns timing of Vik's arrival relative to Dara, while claim B concerns what Vik brought. These are independent aspects of the event with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "A concerns the relative arrival order of Vik and Dara, while B concerns Yara arriving after 'the others'; these could be consistent (Yara arriving after both Vik and Dara) with no direct logical connection forcing either outcome.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A concerns the order of arrival of Vik and Dara, while claim B concerns relative height among a group. These pertain to entirely different attributes and have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Arrival order and relative age are independent facts; nothing about who arrived shortly after whom implies anything about age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "A places Vik's arrival shortly after Dara, but doesn't specify when in the morning this was, so Vik could still have spent much of the morning setting up equipment afterward. The claims are largely compatible depending on how early Dara and Vik arrived.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Claim A concerns the relative arrival time of Vik and Dara, while claim B describes volunteers sharing food at some event. There is no stated connection between these two facts, and neither makes the other more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "If Vik arrived with several boxes of supplies, it's plausible one of them contained or was the first-aid kit, making B more likely, though not certain.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Vik bringing supplies has no logical bearing on whether Cleo and Yara were assigned to the same or different teams; these are unrelated facts about the scenario.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Showing up with supplies is consistent with and mildly supports Vik then spending time setting up equipment, though the boxes may not contain watering cans or hoses specifically.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Both claims describe separate preparatory actions by different people and are not directly connected by content; knowing Finn marked plots the night before doesn't affect the likelihood of Yara wearing gloves from a prior shift.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A concerns Finn's preparation of garden plots the night before, while claim B concerns Cleo's height relative to a group. These topics share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Both actions could plausibly be done by Vik on the same day; carrying a first-aid kit does not preclude also setting up watering equipment, though it does suggest Vik's morning was fairly occupied with multiple tasks.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Both claims describe different people bringing different items to what appears to be a shared event; there's no logical connection between bringing a first-aid kit and others bringing coffee and pastries.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Vik bringing the first-aid kit has no bearing on whether Dara and Yara were assigned to different teams; the two claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 26,
+   "rationale": "Vik bringing a first-aid kit is a minor supply detail with no direct bearing on the group's later progress or their pausing to admire it.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Arriving later than others is largely independent of whether she still had her work gloves on from a previous shift; there's no strong logical or causal link, though one could loosely imagine she was late because she came from the shed.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Being tallest could plausibly make someone more capable of carrying heavy bags, but this is only a weak, indirect plausibility link rather than a direct logical connection; the claims address different attributes (height vs. an action performed).",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Cleo's height relative to a group has no bearing on the temperature of the morning air; the two claims concern unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "Cleo's height ranking has no bearing on which teams Dara and Yara were assigned to; the claims concern unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "The claim about Cleo carrying soil bags has no logical or topical connection to the claim comparing Vik's and Dara's ages; they involve different people and unrelated subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Both claims describe different people doing different gardening tasks, likely concurrent activities during a shared work session, with no indication that one affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Both describe activities plausibly occurring during the same gardening event, but carrying soil bags and sharing coffee/pastries are independent actions with no causal or logical connection described.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "The claim about Dara and Cleo being on different teams has no bearing on the weather described in claim 14; they concern entirely different topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Knowing Dara and Cleo are on different teams tells us nothing about the relationship between Cleo and Yara's team assignments, since Yara isn't mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Claim A only concerns Dara and Cleo's team membership relative to each other and gives no information about Yara, so it neither supports nor contradicts the claim about Dara and Yara.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 25,
+   "rationale": "A merely establishes that Dara and Cleo belong to different teams, which is compatible with there being two, three, or more teams; it gives no information about the total number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 26,
+   "rationale": "The claim about Dara and Cleo being on different teams has no discernible connection to the group pausing to admire progress as the sun rose; they concern unrelated aspects of the scenario.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "The temperature of the morning air has no logical or causal connection to the relative ages of Vik and Dara.",
+   "relation": "unrelated",
+   "confidence": 0.99
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "A describes people beginning tasks in the garden with mulch smell present, while B mentions a later short break; these describe different moments in a plausible sequence of gardening activity and do not conflict.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Claim A describes a sensory detail about the garden environment while claim B describes team assignments of two people; neither informs the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "A depicts the initial settling into gardening tasks with fresh mulch smell, which naturally precedes and supports B's depiction of the garden being actively busy with work sounds later in the morning.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 26,
+   "rationale": "Both describe stages of the same gardening event happening in temporal sequence; the initial settling into tasks plausibly leads to later progress being visible, so A mildly supports the plausibility of B without being required by it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Checking a schedule could plausibly lead Finn to note timing information about planting, but the schedule itself is not clearly related to plant care timing, so this is a weak, indirect connection at best.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Finn checking a schedule has no bearing on the relative ages of Vik and Dara; these are unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "A short break around ten still leaves time to plant seedlings before noon, so both claims can easily hold together with no notable conflict.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Claim A concerns team assignments of Cleo and Yara, while claim B describes Vik's morning activity with watering equipment; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Claim A tells us only about Cleo and Yara's team relationship; it says nothing about Dara's team, so it neither confirms nor denies whether Dara and Yara share a team.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 25,
+   "rationale": "A states Cleo and Yara were on different teams, which requires at least two teams but says nothing about whether there were exactly two, three, or more teams total. This is consistent with B's claim of three teams but does not itself support or confirm that specific number.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Claim A concerns relative ages of Vik and Dara, while claim B concerns team membership of Dara and Yara. These pertain to unrelated attributes and people, so one does not bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "A describes Vik's morning setup task while B describes volunteers sharing food; both could easily occur during the same event without conflict, but neither makes the other more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "A short break around ten is a plausible occasion during which the volunteers could share coffee and pastries; the two events fit naturally together without contradiction.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "A brief pause around ten doesn't preclude a bustling, active garden scene at midmorning; the break could have occurred before or after this activity, or the two moments simply describe different parts of the same session.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 26,
+   "rationale": "Both describe a pause taken by a group of people, plausibly during a morning work session; a break around ten and pausing as the sun rose higher are compatible and could describe the same or a related event, with A lending some support to B's context.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 23,
+   "b": 25,
+   "rationale": "That Dara and Yara were on different teams is consistent with there being three teams (or any number of teams two or more), but the two claims don't inform each other much beyond that basic compatibility.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 24,
+   "b": 26,
+   "rationale": "A establishes active midmorning gardening work with rakes and laughter, which naturally sets up visible progress that the group could later pause to admire as the sun rises higher.",
+   "relation": "supports",
+   "confidence": 0.75
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   },
+   {
+    "id": "volunteers",
+    "mentions": [
+     "Volunteers",
+     "the volunteers",
+     "everyone",
+     "the group"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "team",
+    "arity": "multi",
+    "arity_span": "There were three teams.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 13,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "cleo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "team",
+    "kind": "different",
+    "a": "cleo",
+    "b": "yara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 23,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "yara",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_order",
+    "subject": "vik",
+    "comparative": "after",
+    "object": "dara",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_order",
+    "subject": "yara",
+    "comparative": "later than",
+    "object": "volunteers",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 19,
+    "attribute": "age",
+    "subject": "vik",
+    "comparative": "younger",
+    "object": "dara",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_order",
+    "entity": "dara",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "entity": "cleo",
+    "comparative": "tallest",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "later than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "height",
+    "comparative": "tallest",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 36,
+  "blind": [
+   [
+    0,
+    12
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    0,
+    23
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    2,
+    14
+   ],
+   [
+    2,
+    22
+   ],
+   [
+    3,
+    24
+   ],
+   [
+    4,
+    15
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    5,
+    20
+   ],
+   [
+    5,
+    22
+   ],
+   [
+    6,
+    18
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    7,
+    11
+   ],
+   [
+    8,
+    22
+   ],
+   [
+    8,
+    23
+   ],
+   [
+    8,
+    26
+   ],
+   [
+    11,
+    14
+   ],
+   [
+    11,
+    23
+   ],
+   [
+    12,
+    19
+   ],
+   [
+    12,
+    22
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    13,
+    26
+   ],
+   [
+    14,
+    19
+   ],
+   [
+    15,
+    21
+   ],
+   [
+    15,
+    23
+   ],
+   [
+    15,
+    26
+   ],
+   [
+    16,
+    19
+   ],
+   [
+    18,
+    20
+   ],
+   [
+    19,
+    23
+   ],
+   [
+    20,
+    22
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 27,
+  "pairs_requested": 68,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 32,
+  "blind_pairs_related": 1,
+  "entity_relations": 9,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence",
+    "team": null,
+    "height": "magnitude",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 3,
+     "attribute": "arrival_order",
+     "entity": "dara",
+     "extreme": "min",
+     "edges": 3
+    },
+    {
+     "claim_id": 11,
+     "attribute": "height",
+     "entity": "cleo",
+     "extreme": "max",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 3,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 27,
+  "n_edges": 16,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   2
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   0.9999999999999999,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   0.9999999999999999
+  ],
+  "claim_residuals": [
+   1.9351744081202945e-31,
+   1.4766490069605815e-31,
+   0.0,
+   1.143848312570467e-31,
+   0.0,
+   3.549874073494553e-32,
+   6.286235338479937e-32,
+   8.110476181803528e-32,
+   1.910522504832138e-32,
+   5.916456789157588e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   7.333941228226594e-32,
+   4.3757128336477996e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.910522504832138e-32,
+   3.882674767884668e-32,
+   8.135128085091684e-32,
+   0.0,
+   1.6948183510607676e-31,
+   0.0,
+   1.9228484564762165e-31
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 1,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 14,
+    "residual": 6.101346063818763e-32
+   },
+   {
+    "a": 0,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 26,
+    "residual": 8.320017359752859e-32
+   },
+   {
+    "a": 1,
+    "b": 7,
+    "residual": 6.877881017395697e-32
+   },
+   {
+    "a": 1,
+    "b": 9,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 1,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 5,
+    "residual": 3.549874073494553e-32
+   },
+   {
+    "a": 3,
+    "b": 9,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 6,
+    "b": 8,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 6,
+    "b": 20,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 15,
+    "b": 24,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 15,
+    "b": 26,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 21,
+    "b": 26,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 24,
+    "b": 26,
+    "residual": 8.320017359752859e-32
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 944,
+   "api_calls": 0,
+   "cache_hits": 944,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    1,
+    3,
+    5,
+    7,
+    9,
+    14,
+    15,
+    21,
+    22,
+    24,
+    26
+   ],
+   [
+    2
+   ],
+   [
+    4
+   ],
+   [
+    6,
+    8,
+    20
+   ],
+   [
+    10
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ],
+   [
+    18
+   ],
+   [
+    19
+   ],
+   [
+    23
+   ],
+   [
+    25
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": []
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 13,
+   "attribute": "team",
+   "kind": "different",
+   "a": "dara",
+   "b": "cleo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 18,
+   "attribute": "team",
+   "kind": "different",
+   "a": "cleo",
+   "b": "yara",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 23,
+   "attribute": "team",
+   "kind": "different",
+   "a": "dara",
+   "b": "yara",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 5,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "vik",
+   "b": "dara",
+   "confidence": 0.85,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 9,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "yara",
+   "b": "volunteers",
+   "confidence": 0.8,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 19,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "dara",
+   "b": "vik",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "vik",
+   "b": "dara",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "volunteers",
+   "b": "dara",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "yara",
+   "b": "dara",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  }
+ ]
+}

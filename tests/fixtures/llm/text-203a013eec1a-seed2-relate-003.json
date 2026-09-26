@@ -1,0 +1,87 @@
+{
+ "request": "0e243925ff353155da8f5c2647b4c10c879920b5d17f6067940053d6f1a06223",
+ "tag": "text-203a013eec1a-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 19,
+    "b": 20,
+    "rationale": "Cleo's age relative to Uma does not determine Cleo's age relative to Bo.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   },
+   {
+    "a": 19,
+    "b": 21,
+    "rationale": "Cleo's age relative to Uma has no bearing on Uma's age relative to Bo.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "Cleo being younger than Bo does not determine Uma's age relative to Bo.",
+    "relation": "unrelated",
+    "confidence": 0.75
+   },
+   {
+    "a": 22,
+    "b": 26,
+    "rationale": "Uma not being on Jude's team and Bo not being on Jude's team are independent facts about different people's team membership.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 23,
+    "b": 24,
+    "rationale": "Pausing at a bend where a kingfisher was previously seen is unrelated to Jude spotting a woodpecker in an oak tree.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "Jude pointing out the woodpecker sighting provides the event that Noor would then jot down in her notebook.",
+    "relation": "supports",
+    "confidence": 0.8
+   },
+   {
+    "a": 26,
+    "b": 28,
+    "rationale": "Bo not being on Jude's team has no connection to the weather being pleasant.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "rationale": "Cleo ranking the walk highly is consistent with and suggests pleasant weather contributed, but doesn't directly establish weather condition.",
+    "relation": "supports",
+    "confidence": 0.5
+   },
+   {
+    "a": 27,
+    "b": 29,
+    "rationale": "Cleo's high ranking of the walk suggests it was a successful outing, consistent with counting many species.",
+    "relation": "supports",
+    "confidence": 0.55
+   },
+   {
+    "a": 28,
+    "b": 29,
+    "rationale": "Pleasant weather could plausibly contribute to more species being spotted and counted.",
+    "relation": "supports",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1102,
+  "output_tokens": 682,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

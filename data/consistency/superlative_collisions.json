@@ -1,0 +1,63 @@
+{
+ "n_documents_with_hits": 3,
+ "hits": [
+  {
+   "doc_id": "b32-consistent",
+   "base": 32,
+   "variant": "consistent",
+   "hits": [
+    {
+     "attribute": "arrival",
+     "pole": "earliest",
+     "people": [
+      "Milo",
+      "Quinn"
+     ],
+     "sentences": [
+      "Milo arrived first, carrying a stack of sticky notes for his favorite passages, and Hana came in shortly after with a thermos of tea for the group.",
+      "Quinn, always punctual, had arrived a full ten minutes before anyone else and claimed the comfiest armchair."
+     ]
+    }
+   ]
+  },
+  {
+   "doc_id": "b32-cycle",
+   "base": 32,
+   "variant": "cycle",
+   "hits": [
+    {
+     "attribute": "arrival",
+     "pole": "earliest",
+     "people": [
+      "Milo",
+      "Quinn"
+     ],
+     "sentences": [
+      "Milo arrived first, carrying a stack of sticky notes for his favorite passages, and Hana came in shortly after with a thermos of tea for the group.",
+      "Quinn, always punctual, had arrived a full ten minutes before anyone else and claimed the comfiest armchair."
+     ]
+    }
+   ]
+  },
+  {
+   "doc_id": "b32-direct",
+   "base": 32,
+   "variant": "direct",
+   "hits": [
+    {
+     "attribute": "arrival",
+     "pole": "earliest",
+     "people": [
+      "Milo",
+      "Quinn"
+     ],
+     "sentences": [
+      "Milo arrived first, carrying a stack of sticky notes for his favorite passages, and Hana came in shortly after with a thermos of tea for the group.",
+      "Quinn, always punctual, had arrived a full ten minutes before anyone else and claimed the comfiest armchair."
+     ]
+    }
+   ]
+  }
+ ],
+ "note": "Pre-regeneration scan. Only base 32 hit (arrival/earliest: Milo vs Quinn). False-positive ownership fixed to nearest name before cue."
+}

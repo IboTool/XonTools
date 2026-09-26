@@ -1,0 +1,24 @@
+{
+ "request": "35ced810c87339db7523b57965cfcfb0f191b4ff8b066f153a117b6caee09b51",
+ "tag": "text-eff0062ab6be-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Ana took the photographs.",
+     "Ana did not take the photographs."
+    ],
+    "explanation": "These two statements directly assert opposite facts about whether Ana took the photographs, so both cannot be true."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1062,
+  "output_tokens": 224,
+  "thinking_tokens": 143
+ },
+ "stop_reason": "end_turn"
+}

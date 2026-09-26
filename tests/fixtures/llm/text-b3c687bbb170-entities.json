@@ -1,0 +1,169 @@
+{
+ "request": "06544ca54f2f9fc41b04b5b39c0d9c5fd73da32ffe384a4ba5ee98a7fd3b8488",
+ "tag": "text-b3c687bbb170-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben",
+     "his"
+    ]
+   },
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik",
+     "his"
+    ]
+   },
+   {
+    "id": "workshop",
+    "mentions": [
+     "The robotics workshop"
+    ]
+   },
+   {
+    "id": "participants",
+    "mentions": [
+     "The participants",
+     "Everyone"
+    ]
+   },
+   {
+    "id": "group",
+    "mentions": [
+     "the group"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "item_carried",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "rank",
+    "arity": "multi",
+    "arity_span": "Kai ranked fastest overall among the five."
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "ben",
+    "b": "sami",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 4,
+    "attribute": "item_carried",
+    "kind": "same",
+    "a": "ben",
+    "b": "sami",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 5,
+    "attribute": "item_carried",
+    "kind": "same",
+    "a": "ben",
+    "b": "sami",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 9,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "sami",
+    "b": "vik",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "ben",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "kai",
+    "b": "isla",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "kai",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "vik",
+    "b": "ben",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "sami",
+    "b": "ben",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2282,
+  "output_tokens": 727,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,32 @@
+{
+ "request": "c5c1ebdefb700ce473604b1c471898ba58353a8d549a66cc1dfe482098bb05f8",
+ "tag": "text-67d8981061a3-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Assume that Gia is the event organizer.",
+     "Gia is not the event organizer."
+    ],
+    "explanation": "These two statements directly assert opposite claims about whether Gia is the event organizer."
+   },
+   {
+    "sentences": [
+     "Hugo took the photographs.",
+     "Hugo is the tallest of the group, a fact that becomes obvious whenever they line up for the yearly club photo.",
+     "By the end of the session, the club had set a date for their next meeting, and everyone agreed the room smelled pleasantly of chalk and old wood, a detail Gia noted fondly as she locked up the cabinet of chess sets for the night."
+    ],
+    "explanation": "If Hugo is the one taking the photographs, he cannot simultaneously be lined up in the photo to demonstrate he is the tallest."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1089,
+  "output_tokens": 264,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,24 @@
+{
+ "request": "89acfefad277a3442d74fe39d577b4f9e8b5d6f7479dac1e09b872a8658d404b",
+ "tag": "text-0743dcabde96-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Assume that Kira is the lead volunteer.",
+     "Kira is not the lead volunteer."
+    ],
+    "explanation": "The text first assumes Kira is the lead volunteer and later directly states she is not, which cannot both be true."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1086,
+  "output_tokens": 246,
+  "thinking_tokens": 156
+ },
+ "stop_reason": "end_turn"
+}

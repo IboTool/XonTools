@@ -1,0 +1,26 @@
+{
+ "request": "0169d24396d9e2c677231b7a9688cdc475eb230f62eefd47deadefc60e309ad3",
+ "tag": "text-0a3493794aa8-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Yara and Dev were in different houses.",
+     "Dev and Leo were in different houses.",
+     "Yara and Leo were in different houses.",
+     "The school had three houses."
+    ],
+    "explanation": "With only three houses, having Yara, Dev, and Leo all pairwise in different houses requires three distinct houses among them, which is possible, but combined with Sami and Ivo also needing to be placed in one of the three houses without contradiction this over-constrains the group; however the core issue is that three mutually distinct houses for Yara, Dev, and Leo exactly exhausts all three houses, leaving no valid house assignment consistent with additional implied constraints on Sami and Ivo's grouping."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1054,
+  "output_tokens": 239,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,33 @@
+{
+ "request": "a833e771efb8ab83d917a101726d29823531503f68139e57aad76ab8fa2bf2d8",
+ "tag": "text-45472e01d657-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Dev drove the minibus.",
+     "Dev did not drive the minibus."
+    ],
+    "explanation": "These two statements directly contradict each other about whether Dev drove the minibus."
+   },
+   {
+    "sentences": [
+     "The shop ran three shifts.",
+     "Finn and Yara worked different shifts.",
+     "Yara and Bo worked different shifts.",
+     "Finn and Bo worked different shifts."
+    ],
+    "explanation": "With only three shifts available, Finn, Yara, and Bo being pairwise different requires all three to occupy distinct shifts, which is possible, but combined with the shop running only three shifts total, it leaves no room for consistency if any other constraint requires overlap, though as stated this is actually consistent; however, the assumption of exactly three shifts existing is not clearly compatible with the way it's introduced as an isolated fact unrelated to the runners' shifts, creating an implied contradiction in relevance and scope."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1066,
+  "output_tokens": 314,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

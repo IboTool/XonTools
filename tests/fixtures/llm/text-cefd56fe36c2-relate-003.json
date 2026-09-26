@@ -1,0 +1,45 @@
+{
+ "request": "f10b85a47219e25e532ac466885a9e104de2cf6d3f5e612b2c2a6010b4063487",
+ "tag": "text-cefd56fe36c2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 19,
+    "b": 21,
+    "rationale": "If Xavi was a year older than Fay, that supports the claim that Fay is the youngest.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "If Mina was a year older than Fay, that supports the claim that Fay is the youngest.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 22,
+    "b": 24,
+    "rationale": "Mina and Jude being in different houses is consistent with but doesn't establish the total number of houses the school has.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 23,
+    "b": 25,
+    "rationale": "Both describe activities near the end of the session, but comparing standings doesn't imply or preclude stacking chairs and gathering pawns.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 992,
+  "output_tokens": 304,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

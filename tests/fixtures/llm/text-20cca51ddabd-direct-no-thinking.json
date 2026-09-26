@@ -1,0 +1,25 @@
+{
+ "request": "a92e962b6b9e48e1d23b2368ede81ace2e8ad24241c9dd6ba587af254dc1d88c",
+ "tag": "text-20cca51ddabd-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Dara is older than Bo.",
+     "Bo is older than Pia.",
+     "Pia is older than Dara."
+    ],
+    "explanation": "This creates a cyclic ordering (Dara > Bo > Pia > Dara) which is impossible for a strict age ordering."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1054,
+  "output_tokens": 103,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

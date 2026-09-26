@@ -1,0 +1,1748 @@
+{
+ "label": "b21-cycle",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-1d01fbaae539",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Gus is the head judge.",
+   "span": "Assume that Gus is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Sami arrived first.",
+   "span": "Sami arrived first, chatting with the bartender about the weather while setting down a notebook and pen",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Sami chatted with the bartender about the weather while setting down a notebook and pen.",
+   "span": "chatting with the bartender about the weather while setting down a notebook and pen",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Xavi came in a few minutes after Sami.",
+   "span": "Xavi came in a few minutes later, waving to a few familiar faces across the room before finding a seat near the back",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Xavi waved to a few familiar faces across the room before finding a seat near the back.",
+   "span": "waving to a few familiar faces across the room before finding a seat near the back",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Esme booked the hall.",
+   "span": "Esme booked the hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Nell strolled in last.",
+   "span": "Nell strolled in last, apologizing for the traffic and quickly grabbing a stool near Gus",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Nell apologized for the traffic and quickly grabbed a stool near Gus.",
+   "span": "apologizing for the traffic and quickly grabbing a stool near Gus",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Gus stood by the microphone, reviewing his stack of question cards while sipping a lemonade.",
+   "span": "Gus stood by the microphone, reviewing his stack of question cards while sipping a lemonade",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "The teams began forming, some regulars and some newcomers who had never played before.",
+   "span": "The teams began forming, some regulars and some newcomers who had never played before",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Sami finished ahead of Xavi.",
+   "span": "Sami finished ahead of Xavi.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Questions about geography, movies, and sports kept the crowd engaged.",
+   "span": "questions about geography, movies, and sports kept the crowd engaged",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Laughter erupted after every wrong guess.",
+   "span": "laughter erupting after every wrong guess",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Xavi finished ahead of Nell.",
+   "span": "Xavi finished ahead of Nell.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Gus called out the scores after each round.",
+   "span": "Gus called out the scores after each round, his voice steady and clear over the noise of clinking glasses",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Nell leaned over to check her team's tally.",
+   "span": "Nell leaned over to check her team's tally, joking about their shaky knowledge of capital cities",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Nell finished ahead of Sami.",
+   "span": "Nell finished ahead of Sami.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Esme wandered around, chatting with the servers about the turnout.",
+   "span": "Esme wandered around, chatting with the servers about the turnout, clearly pleased at how full the room had become",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Being the head judge has no bearing on who arrived first; these claims describe unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Claim A concerns Gus's role as head judge, while claim B describes Sami's unrelated action of chatting with a bartender and setting down a notebook and pen. There is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Claim A concerns who the head judge is, while claim B concerns arrival order between two other people; neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A states Gus's role as head judge, while claim B describes Xavi's unrelated actions of greeting people and sitting down. There is no logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "There is no logical or contextual connection stated between Gus being the head judge and Esme booking the hall; they concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "There is no stated connection between who the head judge is and who arrived last; these describe different roles and events with no logical dependency.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "A establishes Gus's role but has no direct bearing on whether Nell apologized for traffic or sat near him; the claims concern different, unconnected facts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Being the head judge is consistent with standing by a microphone reviewing question cards, a plausible activity for someone running a competition; the claims complement each other without conflict.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Gus being the head judge has no direct bearing on how teams formed with regulars and newcomers; these describe unrelated aspects of the same event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "The claim about Gus being head judge has no bearing on the relative finishing positions of Sami and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Being the head judge doesn't inherently relate to the specific quiz topics that engaged the crowd; these are independent facts about the event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A establishes Gus's role as head judge, but this has no clear bearing on whether laughter erupted after wrong guesses in some event; the two describe unrelated aspects of a scenario.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "There is no stated connection between who the head judge is and the relative finishing positions of Xavi and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Being the head judge makes it plausible that Gus would be responsible for calling out scores after each round, so A supports B.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Claim A states Gus's role as head judge, while claim B describes an unrelated action by Nell involving her team's tally. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Gus being the head judge has no bearing on the relative finishing order of Nell and Sami.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "The claim about Gus being head judge has no logical bearing on Esme's actions of wandering around and chatting with servers; they concern different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Arriving first is consistent with, and provides a plausible occasion for, Sami having idle time to chat with the bartender and set down belongings, though it doesn't necessitate it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "If Sami arrived first, it is consistent and plausible that Xavi arrived a few minutes later, which supports B rather than conflicting with it.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "A states only that Sami arrived first, which says nothing about Xavi's actions or arrival order relative to others; no logical connection is established.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Arrival order at some event has no bearing on who booked the hall; the claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "If Sami arrived first, others arrived after, which is consistent with Nell being the last to arrive; the two claims describe compatible positions in the same arrival order.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Sami arriving first says nothing about Nell's arrival, her apology for traffic, or her seating choice near Gus; the claims concern different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A concerns arrival order among some group, while B describes Gus's independent activity at a microphone; neither implies anything about the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Sami arriving first is a minor detail about order of arrival, which has no clear bearing on how teams later formed or their composition of regulars and newcomers.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Arriving first suggests Sami began or entered before others, which is consistent with and mildly supportive of finishing ahead of Xavi, though arrival order doesn't guarantee finishing order.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A concerns arrival order of a person named Sami, while claim B concerns the content of quiz questions and crowd engagement; they share no common subject matter that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A is about the order of arrival for Sami, while claim B describes a reaction pattern to wrong guesses during some activity; they concern unrelated aspects of the situation with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns Sami's arrival order, while claim B concerns finishing order between Xavi and Nell. Neither person mentioned in A appears in B, so there is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "The claims concern different topics (arrival order versus calling out scores) with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A describes Sami arriving first in some context, while claim B describes Nell checking a tally; there is no stated connection between the arrival order and Nell's action, and no shared subject or causal link is given.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "A says Sami arrived first, which likely refers to a race or sequence of events; B says Nell finished ahead of Sami. If these refer to the same event/order, they conflict since 'first' implies no one was ahead of Sami. However, 'arrived first' and 'finished ahead' could refer to different stages (arrival vs finishing) or different events, allowing both to be true under an ordinary reading, but the natural reading suggests direct contradiction.",
+   "relation": "contradicts",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "A states Sami arrived first, while B describes Esme's behavior; these involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A describes Sami's actions at the bar, while claim B describes Xavi arriving shortly after Sami; these are compatible events in a sequence with no logical conflict.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Both claims describe different people engaged in plausible, independent actions in what could be the same or similar social setting (a bar or venue), but neither action implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "The two claims describe unrelated actions involving different people (Sami and Esme) in different contexts, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A describes Sami's actions at a bar, while claim B describes Nell arriving last; they involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Both describe possibly simultaneous but distinct bar-scene actions by different people with no stated connection; neither event affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Both describe different people engaged in separate simultaneous activities at what may be the same event; nothing in A affects the likelihood or truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A describes a casual bar scene with Sami chatting and setting down a notebook, while claim B describes teams forming for some game or event; there's no stated connection between these two activities.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A describes Sami casually chatting and setting down items at a bar, which has no clear connection to a competitive outcome involving Xavi mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "A describes a casual, small-scale interaction (chatting with a bartender) while setting down objects, whereas B describes a crowd engaged with quiz-like questions on various topics; these seem to depict different scenes or moments with no clear causal or evidential link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A describes Sami chatting calmly with a bartender about mundane topics while setting down items, while claim B describes a lively game-like scene with wrong guesses and laughter. They could occur in the same setting at different moments, but there's no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A describes Sami's actions at a bar and has no connection to a race or competition between Xavi and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "The two claims describe different people engaged in unrelated actions in what could be different or overlapping scenes; nothing about Sami's chatting or setting down items bears on Gus calling scores.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "The claims describe unrelated actions by different people in what may be different settings, with no shared context or dependency indicated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A describes Sami casually chatting at a bar and setting down items, with no mention of any race or competition, while claim B implies Sami was in some contest with Nell. These claims are largely unrelated in content, though A's leisurely tone could mildly suggest Sami wasn't rushing, creating slight tension with the idea of a competitive finish.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Both describe similar social scenes (chatting with staff) but involve different people (Sami vs Esme) and different topics/staff (bartender/weather vs servers/turnout), so they are largely independent events without direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "A states Xavi arrived a bit after Sami, which is compatible with Xavi then waving to familiar faces and finding a seat; nothing in A conflicts with or particularly supports B's details about his behavior after entering.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A concerns the order of arrival of Xavi and Sami, while claim B concerns who booked the hall; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A establishes that Xavi arrived after Sami, but says nothing about Nell's arrival time relative to others, so it neither supports nor contradicts Nell being last.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A concerns the arrival order and timing of Xavi and Sami, while claim B describes Nell's apology and seating choice; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A describes the arrival order of Xavi and Sami, while claim B describes Gus's independent actions at a microphone; they share no common subject or context that would link them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A describes the arrival order of two individuals, while claim B describes team formation involving regulars and newcomers; they concern different aspects of the scene with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "If Xavi arrived a few minutes after Sami, then Sami arrived/finished first, which directly supports Sami finishing ahead of Xavi.",
+   "relation": "supports",
+   "confidence": 0.92
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Claim A concerns the arrival order of Xavi and Sami, while claim B concerns the content of questions that engaged a crowd; they involve unrelated subjects with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A concerns the timing of Xavi's arrival relative to Sami, while claim B concerns laughter following wrong guesses in some game or activity. These describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns the arrival order of Xavi relative to Sami, while claim B concerns the finishing order of Xavi relative to Nell. These involve different people and provide no information about each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A concerns the arrival order and timing of Xavi and Sami, while claim B concerns Gus announcing scores after rounds; they describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A concerns the timing of Xavi and Sami's arrival, while claim B describes Nell checking a tally; they involve different people and actions with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A concerns the relative arrival order of Xavi and Sami, while claim B concerns Nell's finishing position relative to Sami. These involve different people (Xavi vs Nell) and no shared reference point that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Claim A describes the timing of Xavi's arrival relative to Sami, while claim B describes Esme's separate activity of chatting with servers; they involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Claim A describes Xavi's actions at some event in a room, while claim B describes Esme booking a hall; there's no stated connection between these events or that they are the same location, so neither confirms nor denies the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "A describes Xavi entering and finding a seat, while B describes Nell arriving last; these could easily be the same event from different people's perspectives, or unrelated arrivals, with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Both describe people finding seats in what may be the same setting, but there's no explicit shared context or dependency between Xavi's actions and Nell's; they seem to be independent events possibly in the same scene.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Both describe different people in what seems like the same event setting (a room with seating, a speaker with question cards), but they describe independent actions by different individuals with no direct logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "A depicts Xavi recognizing regulars in a setting that involves group activity, which fits naturally with B's description of teams forming from a mix of regulars and newcomers; A lends mild plausibility to B by establishing a recurring social gathering.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Claim A describes Xavi at some social gathering finding a seat, while claim B refers to Xavi finishing (e.g., a race or competition) relative to Sami. These describe unrelated contexts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "A describes Xavi's arrival and social gesture at some event, while B describes the content of questions engaging the crowd; they may occur at the same event (e.g., a trivia night) but neither claim entails or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Both claims could describe the same social gathering, but A gives no information about laughter or wrong guesses occurring; the claims describe different, independent events at the setting.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A describes Xavi arriving and settling into a social gathering or event, while claim B describes a competitive finishing order between Xavi and Nell. The two claims describe different types of scenarios (social gathering vs. a race/competition) with no clear connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Both claims may describe the same event (e.g., a trivia or bingo night), but they concern different people and actions with no direct logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Claim A describes Xavi's actions upon entering a room, while claim B describes Nell checking a tally; neither claim references the other or shares a clear causal or contextual link.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A describes Xavi's actions at some gathering, while claim B concerns a finishing order between Nell and Sami, likely in a race or competition. There is no shared subject, context, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Both claims describe different people's independent actions at what may be the same event, but neither statement implies anything about the other's occurrence or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Booking a hall has no logical bearing on who arrived last; these describe unrelated actions by different people.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Booking a hall and apologizing for traffic while grabbing a stool describe unrelated events with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Booking a hall is unrelated to Gus's independent actions of preparing question cards and drinking lemonade; there's no logical connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Booking a hall for an event could plausibly precede teams forming for some activity there, but the claims are not directly linked in content beyond a loose contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "The two claims describe unrelated events involving different people and activities; booking a hall has no bearing on a race or competition outcome between Sami and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Booking a hall is a logistical act unrelated to the content or engagement of trivia questions used in an event; no causal or evidential link is stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Booking a hall is an unrelated logistical action with no bearing on what happens during an event involving laughter and wrong guesses; there's no logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Booking a hall by Esme has no logical or causal connection to the outcome of a race or competition between Xavi and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Booking a hall and calling out scores after rounds appear to belong to the same event, but neither claim implies or affects the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "The two claims describe unrelated events with different subjects and no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "These claims concern entirely different people and events (booking a hall vs. finishing a race or task), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Booking the hall establishes Esme's role as organizer, which makes it plausible she'd be present and mingling with servers about turnout; this is mild support, not a strict entailment.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "If Nell arrived last, it is plausible she would apologize for being delayed by traffic and hurry to grab a seat, so A supports the scenario in B without contradicting it.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Claim A describes Nell's arrival order while claim B describes Gus's separate activity with a microphone and cards; they involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Nell arriving last is about arrival order, while B describes team formation involving regulars and newcomers; these events are independent aspects of the same gathering with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "A states Nell arrived last in some ordering, while B concerns the relative order of Sami and Xavi; the two claims involve different individuals and provide no shared information to infer or block one another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A concerns Nell's arrival order, while claim B concerns the topics of questions engaging a crowd; these describe unrelated aspects of what appears to be an event, with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A describes Nell's arrival order, while claim B describes a recurring reaction to wrong guesses in some game; the two describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "If Nell strolled in last, she finished after everyone else, so anyone including Xavi would have finished ahead of her. This makes B consistent with and supported by A.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "The two claims describe unrelated events (Nell's arrival order versus Gus announcing scores) with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Arriving last says nothing about whether Nell later leaned over to check her team's score; the two actions are compatible and largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "A says Nell arrived or finished last, meaning everyone else finished before her, so she could not finish ahead of Sami as B claims.",
+   "relation": "contradicts",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A concerns Nell's arrival order, while claim B describes Esme's behavior after arriving; the two claims involve different people and different actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "A places Nell sitting near Gus, while B describes Gus standing by a microphone; these could refer to different moments or Gus later moving, so they are not strictly contradictory, but the details sit awkwardly together since A implies Gus is seated nearby to be grabbed a stool near.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "A describes Nell arriving late and sitting near Gus, while B describes teams forming with regulars and newcomers; these could occur in the same setting but neither event affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A describes Nell's actions regarding traffic and seating near Gus, while claim B describes a race or competition outcome between Sami and Xavi. These involve entirely different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A describes Nell arriving late and sitting near Gus, while claim B describes a trivia-like event engaging a crowd; the two are set in a similar scene but neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "A describes Nell apologizing and sitting near Gus, while B describes laughter following wrong guesses in some unspecified context; there is no clear causal or logical link between the two events as stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A concerns Nell apologizing and sitting near Gus, which does not involve any race, competition, or ordering with Xavi, so it provides no information bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "A places Gus in a seated social setting near Nell, while B describes Gus actively announcing scores during some game or competition; these could both occur at the same gathering but neither entails the other.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "A places Nell arriving late and sitting near Gus, which is consistent with her then leaning over to check her team's tally afterward; the claims describe sequential compatible actions.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A describes Nell arriving late, apologizing, and sitting near Gus, which suggests a social setting rather than a competitive race; it gives no information about a contest with Sami or its outcome.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Both describe simultaneous social scene activities but involve different people and actions with no direct logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "A describes Gus preparing for what appears to be a trivia or quiz event, while B describes teams forming for the same event; they are compatible parts of the same setup scene but neither entails the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A describes Gus preparing with question cards near a microphone, while claim B describes a finishing order between Sami and Xavi. There is no stated connection between these two scenarios.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "A shows Gus preparing question cards before or during an event with a microphone, which supports the idea that questions on varied topics (like geography, movies, sports) were being asked and engaging the crowd.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "A depicts Gus preparing for what appears to be a quiz or game show event; B describes a reaction (laughter) that plausibly occurs during such an event with wrong guesses. They are consistent and B is a natural continuation of the scenario, but A doesn't specifically establish that wrong guesses occur, so it's more a loose contextual fit than direct support.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Claim A describes Gus preparing with question cards and a drink, which has no apparent connection to a race or competition result between Xavi and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "A depicts Gus preparing before or between rounds with question cards, consistent with him being the host/quizmaster who would later announce scores; the activities are compatible and even mutually reinforcing of his role.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Both describe simultaneous but independent actions by different people in what appears to be a quiz or game show scene; A does not affect the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Claim A describes Gus preparing with question cards and a drink, while claim B concerns a finishing order between Nell and Sami; the two events involve different people and contexts with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Both claims describe different people doing independent activities, likely at the same event; nothing in A affects the likelihood or truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A discusses team formation with regulars and newcomers, while claim B states a specific race/competition outcome between two individuals. These describe unrelated aspects of an event with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "A describes team formation with mixed experience levels, while B describes trivia question topics keeping the crowd engaged; these are different aspects of the same event but neither implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "A describes team formation with mixed experience levels, while B describes a reaction to wrong guesses during what seems to be a game; these are largely sequential/contextual events that neither strongly support nor contradict each other.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A describes team formation with mixed experience levels among players, while claim B states a specific finishing order between two individuals. Nothing in A connects to a race or competition outcome involving Xavi and Nell specifically.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Both describe events at what seems to be the same gathering or game session, but forming teams doesn't directly cause or prevent someone calling out scores; they are simply different parts of the same activity.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "A describes team formation with a mix of experienced and new players, which is a plausible setup before Nell checks her team's score, but neither claim directly implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A describes team formation with mixed experience levels, while claim B states a specific race/competition outcome between two individuals. There is no logical connection between team composition and this particular result.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Both describe simultaneous but independent activities at what appears to be an event; team formation doesn't directly affect Esme's chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A is about a race or competition result between Sami and Xavi, while claim B describes topics of questions engaging a crowd; these describe unrelated scenarios with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "The two claims describe unrelated events (a race outcome versus reactions to wrong guesses) with no shared context or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Claim A only establishes Sami's position relative to Xavi and says nothing about Nell's finishing position, so it neither supports nor contradicts B, which concerns Xavi versus Nell.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A describes the relative finishing order between Sami and Xavi, while claim B describes an unrelated activity by Gus during the event. Neither claim provides information that affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Claim A concerns the finishing order between Sami and Xavi, while claim B describes Nell checking her team's tally; they involve different people and actions with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Claim A only states Sami's relative position to Xavi, while claim B concerns Nell's position relative to Sami. These involve different people and neither directly implies or precludes the other; both could hold simultaneously in a race where Nell finished first, Sami second, Xavi third.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A concerns the relative finishing positions of Sami and Xavi in some competition, while claim B describes Esme's unrelated social activity at what appears to be an event. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "A describes varied trivia topics keeping the crowd engaged, which is broadly consistent with a lively atmosphere where laughter follows wrong guesses, but A doesn't specifically mention laughter or wrong guesses, so it neither confirms nor strongly implies B.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A describes the general subject matter of trivia questions engaging the crowd, while claim B states a specific ranking outcome between two individuals; neither informs the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "A trivia event with rounds and audience engagement plausibly involves scores being tallied and announced; B fits naturally as part of the same event described in A.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "A describes a lively quiz-like event keeping a crowd engaged with varied topics, which plausibly matches a scenario where teams track scores, making B a natural consequence, though not strictly implied.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A describes general trivia content of an event, while claim B describes a specific ranking outcome between two individuals; the two claims share no clear connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "A describes a trivia-style event keeping the crowd engaged with questions, while B describes Esme's separate activity of chatting with servers; these could easily occur at the same event without conflict, but they don't directly bear on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A describes reactions during some guessing activity, while claim B describes a ranked outcome between two individuals; neither informs the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "The claims describe different activities that could easily occur together at the same event (e.g., a game show or party); laughter after wrong guesses does not affect whether Gus called out scores after rounds.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "A describes a lively, humorous atmosphere during a guessing game, while B describes Nell checking her team's score; both could plausibly occur in the same game context without conflicting.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A describes laughter after wrong guesses in some game, while claim B describes a finishing order between Nell and Sami. There is no stated connection between the two, and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Both could occur during the same event (e.g., a party or game night), but the claims describe unrelated actions by different implied subjects with no direct causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A concerns the relative finishing order of Xavi and Nell, while claim B describes Gus's role in announcing scores; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "A states a race outcome about Xavi finishing ahead of Nell, while B describes an unrelated action of Nell checking a tally; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "A tells us about the relative finish order of Xavi and Nell, but says nothing about Sami's position relative to Nell, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns a race or competition result between Xavi and Nell, while claim B describes Esme's unrelated social activity at some event. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Gus announcing scores after each round provides a natural reason for Nell to check her team's tally, as she would want to verify or track the score being called out.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Gus calling out scores each round has no bearing on the actual relative finishing positions of Nell and Sami; it's about announcement, not outcome.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Both describe activities that could occur simultaneously during an event, but there's no direct logical connection between Gus announcing scores and Esme chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Checking her team's tally suggests Nell is monitoring a competitive standing, which is loosely consistent with her having finished ahead of Sami, but it neither confirms nor strongly implies that specific outcome.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Both describe simultaneous activities by different people at what seems to be a shared event, but there's no logical connection between Nell checking a tally and Esme chatting with servers.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Claim A concerns a race or competition outcome between Nell and Sami, while claim B describes Esme's unrelated social activity with servers. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus",
+     "his"
+    ]
+   },
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "her"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_order",
+    "subject": "xavi",
+    "comparative": "after",
+    "object": "sami",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 10,
+    "attribute": "arrival_order",
+    "subject": "sami",
+    "comparative": "ahead of",
+    "object": "xavi",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "arrival_order",
+    "subject": "xavi",
+    "comparative": "ahead of",
+    "object": "nell",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "arrival_order",
+    "subject": "nell",
+    "comparative": "ahead of",
+    "object": "sami",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_order",
+    "entity": "sami",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_order",
+    "entity": "nell",
+    "comparative": "last",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "ahead of",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "last",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 18,
+  "pairs_requested": 153,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 8,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    7,
+    8
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 1,
+     "attribute": "arrival_order",
+     "entity": "sami",
+     "extreme": "min",
+     "edges": 2
+    },
+    {
+     "claim_id": 6,
+     "attribute": "arrival_order",
+     "entity": "nell",
+     "extreme": "max",
+     "edges": 2
+    }
+   ],
+   "extreme_edges": 4,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 18,
+  "n_edges": 19,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct",
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9819527928015053,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "arrival_order",
+    "entities": [
+     "sami",
+     "nell"
+    ],
+    "relations": [
+     3,
+     4
+    ],
+    "claim_ids": [
+     1,
+     16
+    ],
+    "min_confidence": 0.9
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   0.7637500075563397,
+   0.9161693575199913,
+   0.9030711303508093,
+   1.0,
+   1.0,
+   0.7308866578235762,
+   0.9156643846281476,
+   0.9978508421921793,
+   1.0,
+   0.9112906656189196,
+   0.9947146402520606,
+   1.0,
+   0.8763533292702919,
+   0.9953051672259319,
+   0.9807005792665457,
+   -0.018584374283042923,
+   1.0
+  ],
+  "claim_residuals": [
+   1.7098273174451628e-05,
+   0.4567504710845614,
+   0.019804988652449194,
+   0.02401514311322537,
+   0.0,
+   0.0,
+   0.4938341931678471,
+   0.031631660067315145,
+   1.7347706117227923e-05,
+   0.0,
+   0.019904037085402667,
+   0.0001425715906487375,
+   0.0,
+   0.03327496880905957,
+   0.00016813571699727742,
+   0.002934799319417088,
+   1.7789717185439076,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 8,
+    "residual": 2.7713275697498935e-06
+   },
+   {
+    "a": 0,
+    "b": 14,
+    "residual": 1.4326945604701735e-05
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "residual": 0.012777412033838153
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 0.014557781442533762
+   },
+   {
+    "a": 1,
+    "b": 6,
+    "residual": 0.0007019998411776525
+   },
+   {
+    "a": 1,
+    "b": 10,
+    "residual": 0.011972535179846516
+   },
+   {
+    "a": 1,
+    "b": 16,
+    "residual": 0.3609266836575358
+   },
+   {
+    "a": 3,
+    "b": 10,
+    "residual": 6.215589922181168e-05
+   },
+   {
+    "a": 4,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.022192825409992133
+   },
+   {
+    "a": 6,
+    "b": 13,
+    "residual": 0.01798646962651871
+   },
+   {
+    "a": 6,
+    "b": 16,
+    "residual": 0.38053090735279366
+   },
+   {
+    "a": 7,
+    "b": 15,
+    "residual": 0.0023263386371739853
+   },
+   {
+    "a": 8,
+    "b": 11,
+    "residual": 6.3932456959830625e-06
+   },
+   {
+    "a": 8,
+    "b": 14,
+    "residual": 3.5642535685784782e-06
+   },
+   {
+    "a": 11,
+    "b": 14,
+    "residual": 2.266693694652345e-07
+   },
+   {
+    "a": 11,
+    "b": 15,
+    "residual": 0.00010801664791815092
+   },
+   {
+    "a": 14,
+    "b": 15,
+    "residual": 0.00012797639367806776
+   }
+  ],
+  "residual_ranking": [
+   16,
+   6,
+   1,
+   13,
+   7,
+   3,
+   10,
+   2,
+   15,
+   14,
+   11,
+   8,
+   0
+  ],
+  "culprits": [
+   {
+    "claim": 16,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.01804720719849473
+   },
+   {
+    "claim": 6,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.0037800442108789634
+   },
+   {
+    "claim": 1,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.0028808484529911915
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 7481,
+   "api_calls": 0,
+   "cache_hits": 7481,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    17
+   ],
+   [
+    12
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    1,
+    16
+   ],
+   [
+    6,
+    16
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "arrival_order",
+    "entities": [
+     "sami",
+     "nell"
+    ],
+    "relations": [
+     3,
+     4
+    ],
+    "claim_ids": [
+     1,
+     16
+    ],
+    "min_confidence": 0.9
+   }
+  ],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 7,
+    "b": 8,
+    "rationale": "A places Nell sitting near Gus, while B describes Gus standing by a microphone; these could refer to different moments or Gus later moving, so they are not strictly contradictory, but the details sit awkwardly together since A implies Gus is seated nearby to be grabbed a stool near.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 3,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "sami",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 10,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "sami",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "nell",
+   "b": "xavi",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "sami",
+   "b": "nell",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "nell",
+   "b": "sami",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "sami",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 6,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "nell",
+   "b": "sami",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 6,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "nell",
+   "b": "xavi",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

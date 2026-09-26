@@ -1,0 +1,2659 @@
+{
+ "label": "b14-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-d74ec1d98e51",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Rosa is not the team captain.",
+   "span": "Rosa is not the team captain.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Nell arrived first, carrying her folder of sheet music.",
+   "span": "Nell arrived first, carrying her folder of sheet music",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Nell greeted Rosa warmly by the piano.",
+   "span": "she greeted Rosa warmly by the piano",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Rosa is the team captain.",
+   "span": "Assume that Rosa is the team captain.",
+   "kind": "premise"
+  },
+  {
+   "id": 4,
+   "text": "Leo came in a few minutes later, slightly out of breath from cycling across town.",
+   "span": "Leo came in a few minutes later, slightly out of breath from cycling across town",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Leo sat near the back row beside Pia.",
+   "span": "he sat near the back row beside Pia",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Pia had already tuned her voice with a few quiet scales.",
+   "span": "who had already tuned her voice with a few quiet scales",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "The director asked everyone to stand according to their sections, sopranos on one side and basses on the other.",
+   "span": "The director asked everyone to stand according to their sections, sopranos on one side and basses on the other",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "The room slowly filled with warm-up hums.",
+   "span": "the room slowly filled with warm-up hums",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Nell and Leo were in different houses.",
+   "span": "Nell and Leo were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Cy stood near the doorway, watching the rehearsal unfold with quiet attention.",
+   "span": "Cy stood near the doorway, watching the rehearsal unfold with quiet attention",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Pia was taller than most of the altos.",
+   "span": "Pia mentioned that she was taller than most of the altos",
+   "kind": "quoted"
+  },
+  {
+   "id": 12,
+   "text": "Forming straight rows was a bit of a challenge for the director.",
+   "span": "which made forming straight rows a bit of a challenge for the director",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Leo and Pia were in different houses.",
+   "span": "Leo and Pia were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "The rehearsal moved through several pieces, starting with a slow hymn and building toward a lively folk arrangement that required careful timing.",
+   "span": "The rehearsal moved through several pieces, starting with a slow hymn and building toward a lively folk arrangement that required careful timing",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Cy took the photographs.",
+   "span": "Cy took the photographs.",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Rosa is always punctual.",
+   "span": "Rosa, always punctual",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Rosa reminded everyone about the upcoming concert date and the importance of consistent attendance.",
+   "span": "reminded everyone about the upcoming concert date and the importance of consistent attendance",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Nell and Pia were in different houses.",
+   "span": "Nell and Pia were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Leo joked about being the last to leave every week.",
+   "span": "Leo joked about being the last to leave every week",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Nell laughed and packed up her music stand.",
+   "span": "Nell laughed and packed up her music stand",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "The school had three houses.",
+   "span": "The school had three houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Cy offered to help carry the folding chairs back to storage.",
+   "span": "Cy offered to help carry the folding chairs back to storage",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Pia stayed behind to help stack the sheet music neatly for the next rehearsal.",
+   "span": "Pia stayed behind to help stack the sheet music neatly for the next rehearsal",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns Nell's arrival and sheet music; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Rosa's status as team captain has no bearing on whether Nell greeted her warmly by the piano; these are unrelated facts about different aspects of Rosa's life.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "A directly denies what B asserts about the same person and role; both cannot be true simultaneously under any ordinary reading.",
+   "relation": "contradicts",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B describes Leo's arrival and physical state; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns Leo's seating position; they involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns Pia's vocal warm-up; the two involve different people and unrelated topics, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B is about a choir director organizing singers by voice section; these involve unrelated contexts and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B describes an unrelated ambient scene of a room filling with warm-up hums. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "The two claims concern unrelated subjects (team captaincy of Rosa vs. house assignments of Nell and Leo) with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A concerns Rosa's role on a team, while claim B describes Cy's location and behavior during a rehearsal. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns Pia's height relative to altos in what appears to be a choir context. There is no shared subject, property, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A concerns whether Rosa is team captain, while claim B concerns a director's difficulty forming straight rows. These involve different people and unrelated contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns the housing arrangement of Leo and Pia. These involve different people and different subject matters with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A concerns whether Rosa holds a team captain role, while claim B describes the structure of a rehearsal session; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "The two claims concern unrelated people and topics: one addresses Rosa's role as team captain, the other addresses who took photographs. Knowing Rosa is not captain gives no information about who took the photos.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Whether Rosa is team captain has no bearing on her punctuality habits; the two claims concern unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Reminding the team about scheduling and attendance is something any member could do, not exclusively the captain, so Rosa not being captain doesn't affect the likelihood of her doing this.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Claim A concerns Rosa's team captaincy status, while claim B concerns Nell and Pia's housing arrangement. There is no logical or contextual connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Claim A is about Rosa's role as team captain, while claim B concerns Leo's joking behavior about leaving; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "The claim about Rosa's team captaincy has no logical or contextual connection to Nell laughing and packing up her music stand; they involve different subjects and situations with no overlap.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Rosa's captaincy status has no bearing on how many houses the school had; the claims concern entirely unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns Cy offering to help carry chairs; these involve different people and unrelated matters with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "Claim A concerns team captaincy of Rosa, while claim B concerns Pia's actions helping with sheet music; they involve different people and unrelated contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "A states Nell arrived first with sheet music, which is consistent with and could naturally precede her greeting Rosa by the piano; there's no direct evidential link but no conflict either.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A describes Nell arriving first with sheet music, which has no bearing on who the team captain is; the two claims concern unrelated people and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "A establishes Nell arrived before Leo, and B describes Leo arriving afterward, which is consistent with and reinforces the sequence implied by A.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A concerns Nell's arrival order and belongings, while claim B concerns where Leo sat relative to Pia. These involve different people and different aspects of the scenario with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "If Nell arrived first, it suggests she was there before others, including Pia, which makes it less likely (though not impossible) that Pia had already tuned her voice before Nell's arrival. Both could be true if Pia's warming up happened at a different time or after Nell's arrival, but there's a mild tension in the framing of 'arrived first.'",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Nell arriving first with sheet music suggests a choir/rehearsal setting, which is consistent with the director's request, but these are largely independent events with no direct causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Nell arriving first with sheet music suggests she or others are preparing for a musical session, which plausibly leads to the room filling with warm-up hums; the claims are compatible and A lends mild plausibility to B occurring afterward.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A describes Nell arriving somewhere with her sheet music, but gives no information about where Leo was or whether they were in the same or different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Nell arriving first with sheet music doesn't preclude or particularly support Cy standing near the doorway watching a rehearsal; they describe different people and actions without clear causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A describes Nell's arrival order and belongings, while claim B is about Pia's height relative to altos. There is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Nell's arrival with sheet music does not indicate anything about the difficulty of forming straight rows for the director; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Nell's arrival with sheet music has no bearing on whether Leo and Pia were in different houses; the claims concern different people and unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Nell arriving first with sheet music sets up a music rehearsal, which is consistent with and mildly supports a rehearsal occurring with various pieces played, though it doesn't directly confirm the specific sequence of pieces.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A describes Nell's arrival with sheet music, while claim B describes Cy taking photographs; they involve different people and actions with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "A states Nell arrived first, which says nothing about Rosa's punctuality; there is no direct link between Nell's arrival order and Rosa's habitual timeliness unless Rosa was expected to arrive first, which is not stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Both claims describe separate events that could occur at the same gathering (e.g., a music rehearsal), but Nell's arrival with sheet music has no direct bearing on Rosa's reminder about concert attendance.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A describes Nell arriving first with sheet music, which says nothing about whether Nell and Pia live in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "A describes Nell arriving first at some event, while B is about Leo's habitual joking about leaving last; these concern different people and different aspects (arrival vs departure) with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "A shows Nell arriving with sheet music, while B has her later packing up a music stand; both can be true at different points in the same event (arrival vs. departure), so no contradiction, and A only loosely supports the idea she was involved in a music-related gathering.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Claim A describes Nell arriving first with sheet music, which has no logical or thematic connection to the number of houses a school has.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "A describes Nell arriving first with sheet music, while B describes Cy offering to help with folding chairs; these involve different people and objects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Both claims involve sheet music at what may be the same rehearsal, but Nell arriving first with her own folder doesn't directly bear on whether Pia stayed behind afterward to stack music; they can easily coexist without meaningful support or conflict.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "A describes a greeting scene and says nothing about Rosa's role or status, so it neither supports nor contradicts her being team captain.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "A describes Nell greeting Rosa at some point, and B describes Leo arriving later out of breath from cycling. These involve different people and events with no stated connection, so one doesn't affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "The two claims describe different people in different locations with no shared elements or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Both claims describe seemingly unrelated events involving different people (Nell/Rosa vs. Pia) with no stated connection between them or shared context that would link warming up vocally to a greeting by the piano.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "The two claims describe different, unrelated moments and actions with no logical connection between Nell greeting Rosa and the director's seating instructions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "A places Nell and Rosa near a piano with a warm greeting, which is compatible with a room gradually filling with warm-up hums, suggesting a shared setting like a rehearsal or performance venue, but A does not directly cause or evidence B.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A places Nell at the piano with Rosa, but says nothing about Leo's location, so it neither confirms nor conflicts with Nell and Leo being in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Both describe simultaneous but independent actions in what seems to be the same scene (a rehearsal), but neither statement implies or affects the truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Claim A describes a social greeting near a piano, while claim B compares Pia's height to other altos; they share no common subject, setting, or topic.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A describes a specific warm social interaction by a piano, while claim B concerns a director's difficulty organizing rows; the two describe unrelated scenes with no shared context or implication.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A concerns Nell and Rosa's interaction near a piano, while claim B concerns Leo and Pia's locations; they involve entirely different people and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "A describes a warm greeting near a piano, plausibly setting a scene before a musical rehearsal, but it does not establish or preclude details about the rehearsal's content or progression.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "The two claims describe different, unrelated actions by different people with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "A describes a single friendly greeting scene and gives no information about Rosa's punctuality habits, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "A describes a warm greeting near a piano, which is a plausible setting for a music-related event; it neither confirms nor denies Rosa's reminder about a concert, so the claims are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A describes Nell interacting with Rosa near a piano, while claim B concerns Nell and Pia being in different houses; these involve different people and contexts with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "The two claims describe different people and unrelated events with no shared context or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "A places Nell greeting Rosa warmly by the piano, suggesting a friendly social moment; B describes Nell laughing and packing up her music stand, a plausible subsequent or related action but not directly implied by A. The two could occur in the same scene without one entailing the other.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "The claim about Nell greeting Rosa by the piano has no logical or contextual connection to the number of houses at a school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "The two claims describe unrelated actions involving different people (Nell/Rosa vs Cy) with no shared context or logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Both claims describe unrelated actions by different people in what could be the same general setting, but neither implies or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B describes Leo's arrival and physical state after cycling. These claims involve different people and different subjects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "The claims describe unrelated facts about different people and situations with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A concerns a team captaincy role held by Rosa, while claim B describes Pia's vocal warm-up activity; these involve different people and unrelated contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A concerns a team captain, while claim B concerns choir sections and a director; there is no shared context or entity linking sports team leadership to choir seating arrangement.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B describes an unrelated ambient scene of a room filling with warm-up hums; there is no logical or factual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A is about Rosa's role as team captain, while claim B concerns Nell and Leo's housing arrangement. There is no logical or contextual connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B describes Cy's actions and position during a rehearsal. There is no shared subject or logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns Pia's height relative to altos in some group, likely a choir. These involve different people, different contexts, and no shared subject matter that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A concerns team leadership while claim B concerns a director organizing rows; the two describe unrelated contexts with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns Leo and Pia's living arrangements; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A concerns team leadership while claim B describes a musical rehearsal's structure and content; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "There is no logical or contextual connection between who serves as team captain and who took the photographs; the two claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Being team captain does not inherently imply anything about punctuality; these are independent personal attributes, though one might loosely associate leadership with reliability, the claim content itself doesn't establish a connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Being team captain is consistent with, and plausibly explains why, Rosa would remind the team about a concert date and attendance—leadership roles typically involve such organizational reminders.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns Nell and Pia's living arrangements; there is no logical or contextual connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns Leo's joking habit about leaving late. There is no logical or factual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Claim A is about Rosa's role as team captain, while claim B describes an unrelated action by a different person, Nell, involving music. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns the number of houses at a school. There is no logical or contextual connection between these two claims as stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "There is no logical or causal connection between Rosa's role as team captain and Cy's offer to help carry chairs; they concern different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Claim A concerns Rosa's role as team captain, while claim B concerns Pia's actions regarding sheet music at a rehearsal; these involve different people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A establishes Leo arrived late and out of breath, which is consistent with him then finding a seat toward the back near Pia; there's no conflict, just a plausible continuation.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Leo arriving later suggests Pia was there before him and had time to prepare, making it plausible she warmed up her voice beforehand, but the claims describe independent actions by different people with no direct causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "The two claims describe different, unrelated events: Leo's late arrival from cycling and the director organizing singers by section. Neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Leo's arrival is a separate event from the general filling of the room with warm-up sounds; there's no direct logical connection between one person's late, breathless entrance and the ambient soundscape gradually developing.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Claim A describes Leo arriving somewhere, implying he was in the same place as whoever else is present (likely Nell), which suggests they were together rather than in different houses. This creates tension rather than direct contradiction since it's not explicit they end up in the same house.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "The claims describe two different people in what may be the same scene, but neither statement implies anything about the other's actions or state.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Claim A describes Leo's arrival and physical state, while claim B is an unrelated observation about Pia's height compared to altos; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A describes Leo arriving out of breath from cycling, while claim B discusses a director struggling to form straight rows; these events involve different subjects and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "A describes Leo arriving somewhere after cycling, implying he traveled to join others, which suggests he and Pia may end up in the same location rather than being in different houses; the claims are largely unrelated in content but slightly in tension if Leo's arrival implies joining Pia's location.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "A describes Leo's arrival at some gathering, likely a rehearsal, while B describes the content of the rehearsal itself. There's no direct logical link, though they could both be part of the same scene.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Claim A describes Leo's arrival and physical state from cycling, while claim B is about a different person, Cy, taking photographs. There is no logical connection between the two events as described.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A is about Leo arriving slightly late and out of breath, not about Rosa, so it has no bearing on Rosa's punctuality.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Leo's late arrival due to cycling is a separate event from Rosa's reminder about attendance; the claims don't reference each other or bear logically on one another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Leo's arrival by cycling across town has no bearing on where Nell and Pia were located; the claims involve different people and no shared context is indicated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "A shows Leo arriving late, out of breath, which fits with a pattern of him being tardy, but claim B is specifically about being last to leave, not last to arrive, so they concern different events without direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Leo's arrival slightly out of breath is a separate event from Nell's reaction of laughing and packing up; nothing in A implies or precludes B, though they could occur in the same scene.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Claim A describes Leo's arrival and physical state, while claim B states a fact about a school's organizational structure. These topics are unconnected and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Claim A describes Leo's arrival and physical state, while claim B describes an unrelated action by a different person (Cy) regarding chairs. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Claim A describes Leo's arrival and physical state after cycling, which has no bearing on whether Pia stayed behind to help with sheet music; the two events involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Leo sitting beside Pia is consistent with Pia having warmed up her voice earlier; the two claims describe compatible, unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Both can hold: Leo could sit near the back beside Pia before or after being arranged by vocal section, or seating and sectional standing groupings are simply different arrangements at different times.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Both claims could describe the same scene (people gathering in a room before a performance), but seating arrangement details have no bearing on ambient warm-up sounds filling the room.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Sitting in the back row beside Pia says nothing about house assignments for Leo or Nell, so the claims are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Both describe different people in different locations during what appears to be the same event, but neither statement implies anything about the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A places Leo and Pia's seating position but says nothing about Pia's height relative to altos, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "B describes a general difficulty the director had organizing people into straight rows, while A simply states Leo's seating position; the seating arrangement described in A neither confirms nor strongly implies anything about the director's difficulty forming rows.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Sitting near the back row beside Pia suggests they were in the same seating group or house, whereas B claims they were in different houses. This creates surprise but not strict contradiction, since seating and house membership aren't necessarily linked (mixed seating is possible).",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A describes seating arrangement while claim B describes the musical program's structure; neither informs the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Claim A describes where Leo sat, while claim B describes who took photographs; these concern different people and different activities with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A describes seating arrangement involving Leo and Pia, while claim B is an unrelated general statement about Rosa's punctuality. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A describes seating arrangement while claim B describes an announcement by Rosa about a concert date; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Claim A places Leo beside Pia in a room, which says nothing about which houses Nell or Pia belong to; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Sitting near the back beside Pia says nothing about Leo's habits of leaving late or joking about it; the claims concern unrelated aspects of his behavior.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Claim A concerns Leo's seating position near Pia, while claim B describes an unrelated action by Nell involving laughter and a music stand. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Leo's seating position has no bearing on the number of houses the school has; these describe unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Both claims could describe events at the same gathering, but Leo's seating position has no bearing on whether Cy offers to help with chairs afterward.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Sitting beside Leo near the back row does not preclude Pia later staying behind to help stack sheet music; these describe different moments and are compatible without strongly implying each other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Both describe plausible parts of preparing for a choir rehearsal or performance; Pia warming up her voice and the director organizing sections by voice type are compatible and even complementary activities, but not directly causally linked.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Pia's quiet scales are a form of vocal warm-up, and the room filling with warm-up hums is consistent with (and supports the plausibility of) such vocal preparation occurring nearby.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Claim A describes Pia's vocal warm-up and has no bearing on the whereabouts of Nell and Leo, so the two statements are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "A describes Pia's vocal preparation while B describes Cy's positioning and attention during rehearsal; they involve different people and actions with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "A describes Pia warming up her voice, which is unrelated to her physical height compared to other altos.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "A describes Pia's personal vocal preparation, while B describes a director's difficulty organizing rows; these concern different subjects and activities with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "A describes Pia warming up her voice, which does not indicate her location relative to Leo; the two claims concern different aspects and don't bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Pia warming up her voice beforehand is consistent with and mildly supportive of her being prepared to participate in a rehearsal that progresses through multiple pieces, though the claims describe different stages and don't strictly depend on each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Pia's vocal warm-up has no bearing on whether Cy took photographs; the two claims describe unrelated actions by different people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A describes Pia's vocal warm-up and has no connection to Rosa's punctuality; they involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "A describes Pia privately warming up her voice, while B describes Rosa making an announcement about scheduling; these involve different people and topics with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Claim A describes Pia tuning her voice with scales but says nothing about her location relative to Nell, so it neither supports nor contradicts the claim about them being in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Claim A concerns Pia's vocal preparation, while claim B concerns Leo's habitual joke about staying late; they involve different people and unrelated situations with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Pia's warming up her voice for a performance is a different action from Nell laughing and packing up her stand; nothing in A implies or precludes B, they involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Claim A concerns Pia warming up her voice, while claim B is an unrelated fact about the school's organizational structure into houses; neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Claim A describes Pia preparing her voice through vocal scales, while claim B describes Cy volunteering to move chairs. These involve different people and unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Warming up her voice with scales suggests Pia was preparing to sing, but this doesn't directly bear on whether she later stayed behind to help organize sheet music; these are separate, unconnected actions.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "A describes a choir director organizing singers into sections, which is consistent with a rehearsal setting where singers would warm up; B describes a plausible related event but is not directly implied by A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A concerns choir sections (sopranos/basses) organized by the director, while claim B concerns Nell and Leo being in different houses (likely unrelated categorization, e.g., school houses). There's no logical connection between the two statements' subjects or content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A describes the director organizing singers into sections, while claim B describes Cy observing from the doorway rather than participating in the singing arrangement, suggesting Cy may not be one of the singers being arranged. These are largely independent scenarios that could coexist without one affecting the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "A concerns choir seating arrangement by voice section, while B is a comparative height statement about Pia relative to altos; they discuss unrelated attributes of choir members.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Organizing singers into sections could plausibly make forming straight rows more difficult due to coordination demands, giving mild support, but the connection is speculative and not directly implied.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A concerns choir seating by voice section, while claim B concerns two people being in different houses (likely a residential or team designation); these describe unrelated organizational contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "A describes an organizational instruction about choir positioning while B describes the progression of pieces during rehearsal; both can occur in the same rehearsal without conflict, but they concern different aspects with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "The director's seating instruction for singers has no bearing on who took the photographs; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "The director's seating instruction concerns choir organization by voice section and has no logical bearing on Rosa's punctuality; the two claims are about unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Both claims describe plausible statements made during a choir rehearsal, but they concern different topics (seating arrangement vs. concert reminder) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Claim A concerns choir sections (sopranos/basses) with no mention of Nell, Pia, or houses; claim B concerns two people being in different houses, an unrelated context.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A describes seating arrangement instructions during a rehearsal, while claim B is about Leo's joking habit regarding leaving late; the two describe unrelated aspects of an event with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Claim A describes the director organizing singers into sections, while claim B describes Nell laughing and packing up afterward; these could both occur at different points during or after a rehearsal, but they don't directly bear on each other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "A concerns choir seating arrangement by vocal section, while B concerns the school's house system; these describe unrelated organizational aspects with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "Claim A concerns choir arrangement by voice section, while claim B concerns Cy volunteering to move chairs; these are separate actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Claim A concerns section arrangement during a rehearsal, while claim B concerns Pia staying behind afterward to help organize sheet music; the two describe different, unrelated actions/times.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "A describes a room filling with warm-up hums, implying people are gathered together in one space, which is in tension with B's claim that Nell and Leo were in separate houses, though both could be true if they are unrelated to the room scene.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "A sets a scene of musicians warming up, which is consistent with and plausibly precedes a rehearsal that Cy would be watching from the doorway; the two describe compatible parts of the same setting.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Claim A describes an ambient sound event as the room fills with warm-up hums, while claim B is a static fact about Pia's height relative to altos; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Both describe an ensemble preparing for practice or performance, but warm-up hums don't directly relate to the physical arrangement of rows; they're compatible but not causally connected.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "The room filling with warm-up hums implies people are gathered together in one shared space, which sits oddly with Leo and Pia being in separate houses, though B may refer to people other than those in the room.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Warm-up hums filling the room suggest musicians preparing before a rehearsal, which fits naturally with a rehearsal then proceeding through several pieces; the two describe a plausible sequence of events.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "The room filling with warm-up hums describes an ambient event unrelated to who took photographs; there's no logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "The room filling with warm-up hums does not bear on whether Rosa is punctual; there is no mention of Rosa or timing in claim A.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "A describes a room filling with warm-up hums, suggesting a rehearsal setting; B describes Rosa making an announcement, which plausibly occurs in the same rehearsal context but neither claim entails or increases likelihood of the other's specific content.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "The claims describe unrelated scenarios with no shared entities or logical connection; a room filling with hums has no bearing on whether two people are in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "A describes an ambient scene of a room filling with warm-up hums, while B describes Leo making a joke about a weekly habit; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "A describes musicians beginning to warm up, suggesting a session is starting, while B describes Nell packing up, suggesting she is finishing or leaving. These are mildly conflicting expectations but not strictly incompatible, since Nell could be packing up early while others continue warming up.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "The two claims describe unrelated aspects of a scene (ambient sound versus institutional structure) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Both claims could describe different moments in a music rehearsal or event setting, but they don't logically bear on one another; warming up doesn't imply anything about offering to help with chairs.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "A describes musicians arriving and warming up, suggesting a rehearsal is beginning; B describes Pia staying after to help stack music for the next rehearsal, implying the current session is ending. These depict different, non-overlapping temporal points and are not directly connected.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A concerns the locations of Nell and Leo relative to each other, while claim B describes Cy's position and behavior. Neither claim provides information about the other's subjects or circumstances.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Claim A concerns Nell and Leo's house assignments, while claim B concerns Pia's height relative to altos; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Claim A concerns Nell and Leo being in different houses, which has no stated connection to the director's difficulty forming straight rows.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Knowing Nell and Leo are in different houses tells us nothing about Leo and Pia's house relationship, since Pia's placement is independent of Nell's.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Claim A concerns Nell and Leo's locations, while claim B describes the structure of a musical rehearsal; the two share no common subject matter or entities that would let one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "The location of Nell and Leo has no bearing on who took the photographs; these claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A concerns Nell and Leo's locations, while claim B concerns Rosa's punctuality; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Claim A concerns Nell and Leo's living arrangements, while claim B concerns Rosa reminding people about a concert; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Knowing Nell and Leo are in different houses tells us nothing about Nell's relationship to Pia, since these involve a different pair of people with no stated connection between Leo and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Being in a different house from Nell doesn't bear on whether Leo jokes about being last to leave gatherings; these are independent facts about Leo's living situation and his social habits.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Claim A states Nell and Leo were in different houses, which is unrelated to the specific detail of Nell laughing and packing a music stand; nothing about location bears on this action.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "A mentions two different houses among possibly many, while B states the total number of houses at the school; the two statements are compatible and B does not depend on A's content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Claim A concerns Nell and Leo's locations, while claim B concerns Cy offering to help with chairs; they share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Claim A concerns Nell and Leo's locations, while claim B concerns Pia's actions at a rehearsal; they share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A describes Cy observing a rehearsal, while claim B is an unrelated statement about Pia's height compared to altos; neither bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "A describes Cy observing the rehearsal, while B describes a challenge the director faced with organizing rows; these are independent observations about different aspects of the scene with no direct causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Claim A describes Cy observing a rehearsal, which gives no information about Leo and Pia's locations or relationship. The two claims share no common elements to establish a logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "A establishes that a rehearsal is taking place and Cy is observing it; B elaborates on what that rehearsal consisted of, which is consistent and complementary rather than conflicting.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Watching quietly near the doorway is compatible with Cy also taking photographs at some point, and does not strongly indicate one way or the other whether he did so.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Claim A describes Cy's behavior at a rehearsal and says nothing about Rosa or punctuality, so it has no bearing on claim B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Both claims describe compatible events plausibly occurring at the same rehearsal, but A's content about Cy's quiet observation doesn't inform or affect the truth of B's claim about Rosa's announcement.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Claim A describes Cy watching a rehearsal near a doorway, while claim B concerns Nell and Pia being in different houses; the two involve different people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A describes Cy's quiet observation of a rehearsal, while B is about Leo's joke regarding leaving late; the two claims involve different people and unrelated content.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "A describes Cy watching quietly near the doorway while B describes Nell's independent action; the two events could easily occur simultaneously in the same scene without conflict or particular reinforcement.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Claim A describes Cy observing a rehearsal, while claim B states a fact about a school's organizational structure. There is no logical or contextual connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Watching quietly from the doorway during rehearsal doesn't preclude later offering to help with chairs; these could occur at different times (before/after rehearsal ends), so B is plausible after A.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Both describe different people doing different actions that could easily occur at the same or nearby time without conflict; A does not increase or decrease the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "A describes a height difference among altos, while B is a general statement about the director's difficulty organizing rows. There's a loose thematic link (height variation could complicate row formation), but no direct logical connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A concerns Pia's height relative to altos, while claim B concerns house membership of Leo and Pia; these topics are independent and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A is about Pia's height relative to altos, while claim B describes the structure of a rehearsal's musical program. Neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns Pia's height relative to altos, while claim B concerns Cy taking photographs; there is no logical or contextual link between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A concerns Pia's height relative to altos, while claim B concerns Rosa's punctuality; they involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A is about Pia's height relative to the altos, while claim B concerns Rosa reminding people about a concert date and attendance; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A concerns Pia's height relative to altos, while claim B concerns house assignments for Nell and Pia; neither statement bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Claim A concerns Pia's height relative to altos in a choir-like context, while claim B concerns Leo's joking habit about leaving late; the two share no common subject, event, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Claim A concerns Pia's height relative to altos, while claim B describes Nell's action of laughing and packing up her music stand. There is no logical or contextual connection between the two claims as stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Claim A concerns Pia's height relative to the altos, while claim B concerns the number of houses at a school. These topics share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Claim A concerns Pia's height relative to altos, while claim B concerns Cy offering help with chairs; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "A's claim about Pia's height relative to altos has no bearing on whether she stayed to help stack sheet music; these describe unrelated attributes and actions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A is about the director's difficulty organizing rows, which is unrelated in content to whether two specific people, Leo and Pia, lived in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "A describes a minor logistical difficulty in organizing performers into rows, while B describes the musical content and progression of the rehearsal; neither bears directly on the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A describes a director struggling to organize rows (likely for a group photo), while claim B states someone named Cy took the photographs; these could describe the same event with different roles (director organizing, Cy photographing) but there's no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A concerns a director's difficulty organizing straight rows, likely in a rehearsal or event context, while claim B is about a person named Rosa's punctuality; there is no shared subject or context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "A concerns the director's difficulty organizing straight rows, likely in a rehearsal setting, while B concerns Rosa reminding people about a concert date and attendance; they involve different actions and no clear causal or logical link is stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "The difficulty forming straight rows is unrelated to whether two specific individuals were assigned to different houses; no logical connection is stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A concerns a director's difficulty organizing rows, while claim B concerns Leo joking about leaving last; they share no common subject, event, or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Both may occur in a rehearsal context, but nothing in A about the director's difficulty forming rows connects to Nell laughing and packing up her music stand.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Claim A concerns a director's difficulty organizing straight rows, while claim B concerns the school's house system; neither fact bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "A describes a director's difficulty arranging rows, while B describes Cy volunteering to carry chairs afterward; the two events involve different actions and there's no logical connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Claim A concerns the director's difficulty organizing rows, while claim B describes Pia staying to stack sheet music; they involve different people and activities with no clear logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A concerns Leo and Pia's locations, while claim B describes the structure and progression of a rehearsal's musical program; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A concerns the locations of Leo and Pia, while claim B concerns who took the photographs. These describe unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A concerns Leo and Pia's locations, while claim B concerns Rosa's punctuality. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns Leo and Pia's living arrangements, while claim B concerns Rosa reminding others about a concert date and attendance. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Knowing Leo and Pia are in different houses tells us nothing about the relationship between Nell and Pia's house assignments, since Nell's placement is independent of Leo's.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Being in a different house from Pia has no clear bearing on whether Leo jokes about being last to leave weekly; the claims concern unrelated aspects.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Claim A concerns Leo and Pia's locations, while claim B describes an unrelated action by Nell involving her music stand; there is no content link between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Claim A about Leo and Pia being in different houses doesn't specify how many houses the school has in total; both claims can coexist regardless of the total number of houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "The claims concern unrelated events with no shared entities or logical connection; knowing Leo and Pia were in different houses tells us nothing about Cy's offer to help with chairs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "A states Leo and Pia were in different houses, which is a separate context from B's claim about Pia staying behind to help with sheet music; the two claims don't directly bear on each other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Claim A describes the content and progression of a rehearsal, while claim B states an unrelated fact about someone taking photographs; neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "The rehearsal's content and timing requirements say nothing about Rosa's punctuality habits; there's no shared reference connecting the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "A describes the content of a rehearsal while B describes an announcement possibly made during or around the same rehearsal; they are plausibly part of the same event but neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A describes the structure of a rehearsal, while claim B states a fact about two people's locations. There is no logical or contextual connection between them as written.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Claim A describes musical content and structure of a rehearsal, while claim B is about Leo's habitual joking regarding being last to leave; neither informs the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Claim A describes an ongoing rehearsal building toward a demanding piece, while B depicts Nell already finished and packing up; this is plausible as a later moment but sits awkwardly with the description of building momentum, suggesting mild tension rather than direct support.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Claim A describes the content and progression of a rehearsal, while claim B states an unrelated fact about a school's organizational structure into houses. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "The rehearsal's content and progression have no bearing on whether Cy offered to help carry chairs afterward; these are independent events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Claim A describes the content and progression of a rehearsal but says nothing about who attended or what happened afterward, so it neither supports nor contradicts B's claim about Pia staying behind afterward.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "The two claims involve unrelated subjects and topics: one is about who took photographs, the other about a person's punctuality habits. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "These claims concern different people and unrelated events; nothing about Cy taking photographs bears on Rosa's reminder about a concert date.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Claim A concerns who took the photographs, while claim B concerns the physical locations of two other people; neither statement provides evidence about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "The claims concern different people and different activities with no logical or contextual link stated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Claim A concerns who took photographs, while claim B describes Nell's unrelated actions with a music stand; no logical or causal connection is stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Claim A concerns who took certain photographs, while claim B concerns the structure of a school having three houses. These topics are unconnected and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Taking photographs and offering to help carry chairs are independent actions that could both occur at an event; there's no logical or causal connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "The two claims describe different people performing unrelated actions with no logical connection between them; A does not affect the likelihood or truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Rosa's punctuality is a personal trait about timeliness, while B describes her reminding others about a concert and attendance; these are different topics with no direct logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Claim A concerns Rosa's punctuality, while claim B concerns the housing arrangement of Nell and Pia; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Claim A concerns Rosa's punctuality while claim B concerns Leo joking about being last to leave; they involve different people and different behaviors with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Claim A concerns Rosa's punctuality while claim B describes an unrelated action by a different person, Nell. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Rosa's punctuality has no logical or contextual connection to the number of houses at the school.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Rosa's punctuality has no bearing on Cy's offer to help carry chairs; the two claims involve different people and unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Claim A concerns Rosa's punctuality habits, while claim B concerns Pia's actions helping with sheet music; they involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Claim A concerns Rosa reminding people about a concert and attendance, which has no logical or topical connection to whether Nell and Pia lived in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Rosa's reminder about attendance concerns the group's punctuality practices, but Leo's joke about leaving last is a separate, unrelated matter of timing at the end of sessions rather than attendance itself.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Rosa's reminder about the concert and attendance has no clear bearing on Nell's unrelated action of laughing and packing up her music stand.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Rosa's reminder about a concert date and attendance has no logical bearing on how many houses the school had; the two facts concern unrelated aspects of school life.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Rosa's reminder about the concert and attendance is a separate matter from Cy volunteering to carry chairs; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "A is about Rosa reminding the group about a concert and attendance; B describes Pia's separate action of helping tidy sheet music. These involve different people and actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Claim A concerns Nell and Pia's living arrangements, while claim B concerns Leo's habitual joking about leaving order; the two share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Claim A only states that Nell and Pia were in separate houses; it says nothing about Nell's actions or emotional state, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Nell and Pia being in different houses is consistent with the school having any number of houses two or more, including three, so B is neither strongly supported nor contradicted by A.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Claim A concerns the locations of Nell and Pia, while claim B concerns Cy offering help with chairs; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Claim A only states Nell and Pia were in different houses, which doesn't bear on whether Pia stayed behind to organize sheet music; these describe unrelated facts about the two.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "A describes Leo making a joke, and B describes Nell reacting with laughter while packing up, which is a plausible and consistent response to such a joke in a shared scene.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Leo's joke about being the last to leave weekly has no logical or thematic connection to the number of houses at a school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Both claims could describe events at the same regular meeting (e.g., a weekly group that uses folding chairs), but Leo's joke about being last to leave doesn't logically bear on Cy's offer to help with chairs; they are independent statements about different people's actions.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "A says Leo jokes about being the last to leave weekly, which suggests he is usually the last one there. If Pia also stayed behind to help stack music, that creates mild tension with Leo's claim to being the last, though both could still be true if Leo left after Pia or on other occasions.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "A describes Nell's personal action of laughing and packing up a music stand, while B states an unrelated fact about a school's organizational structure. There is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Both describe plausible simultaneous actions during a cleanup after some musical event, but A's content about Nell laughing and packing her music stand does not logically bear on Cy's offer to help with chairs.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Both describe plausible actions during the same post-rehearsal wind-down; Nell packing her own stand doesn't preclude Pia staying to help stack sheet music, and the scenes are complementary rather than dependent.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "The number of houses at the school has no logical or causal bearing on whether Cy offered to help carry chairs; they are unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "The number of houses at the school has no logical or thematic connection to Pia staying behind to organize sheet music; they concern entirely different topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Both describe helpful post-event actions by different people that are compatible and even mutually reinforcing in setting a cooperative cleanup scene, but neither directly causes or evidences the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "her"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   },
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia",
+     "her"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "director",
+    "mentions": [
+     "the director"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "team_captain",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "leaving_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 9,
+    "attribute": "house",
+    "kind": "different",
+    "a": "nell",
+    "b": "leo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "house",
+    "kind": "different",
+    "a": "leo",
+    "b": "pia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "house",
+    "kind": "different",
+    "a": "nell",
+    "b": "pia",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "subject": "pia",
+    "comparative": "taller than",
+    "object": "most of the altos",
+    "confidence": 0.8
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_order",
+    "entity": "nell",
+    "comparative": "first",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "leaving_order",
+    "entity": "leo",
+    "comparative": "last to leave",
+    "confidence": 0.7
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "leaving_order",
+    "comparative": "last to leave",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 4,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    1,
+    6
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    13
+   ],
+   [
+    8,
+    20
+   ],
+   [
+    14,
+    20
+   ],
+   [
+    19,
+    23
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "team_captain": null,
+    "arrival_order": "sequence",
+    "house": null,
+    "height": "magnitude",
+    "leaving_order": "sequence"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 1,
+     "attribute": "arrival_order",
+     "entity": "nell",
+     "extreme": "min",
+     "edges": 0
+    },
+    {
+     "claim_id": 19,
+     "attribute": "leaving_order",
+     "entity": "leo",
+     "extreme": "max",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 12,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   3
+  ],
+  "harmony": 0.9741944997419449,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    11
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   0.01010101010101011,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   1.97979797979798,
+   1.3805065841367706e-31,
+   0.0,
+   0.9998979695949395,
+   3.4512664603419264e-32,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   5.669937756276022e-32,
+   0.0,
+   2.958228394578794e-32,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   1.0846837446788913e-31,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   2.7117093616972283e-32,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 3,
+    "residual": 0.9998979695949395
+   },
+   {
+    "a": 1,
+    "b": 4,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 1,
+    "b": 8,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 1,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 20,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 3,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 8,
+    "residual": 0.0
+   },
+   {
+    "a": 7,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 14,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 10,
+    "b": 14,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   0,
+   3
+  ],
+  "culprits": [
+   {
+    "claim": 0,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.02580550025805506
+   },
+   {
+    "claim": 3,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.02580550025805506
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 5182,
+   "api_calls": 0,
+   "cache_hits": 5182,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    3,
+    17
+   ],
+   [
+    1,
+    4,
+    6,
+    8,
+    10,
+    14,
+    19,
+    20
+   ],
+   [
+    2
+   ],
+   [
+    5
+   ],
+   [
+    7,
+    12
+   ],
+   [
+    9
+   ],
+   [
+    11
+   ],
+   [
+    13
+   ],
+   [
+    15
+   ],
+   [
+    16
+   ],
+   [
+    18
+   ],
+   [
+    21
+   ],
+   [
+    22
+   ],
+   [
+    23
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    0,
+    3
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 1,
+    "b": 6,
+    "rationale": "If Nell arrived first, it suggests she was there before others, including Pia, which makes it less likely (though not impossible) that Pia had already tuned her voice before Nell's arrival. Both could be true if Pia's warming up happened at a different time or after Nell's arrival, but there's a mild tension in the framing of 'arrived first.'",
+    "confidence": 0.55
+   },
+   {
+    "a": 4,
+    "b": 9,
+    "rationale": "Claim A describes Leo arriving somewhere, implying he was in the same place as whoever else is present (likely Nell), which suggests they were together rather than in different houses. This creates tension rather than direct contradiction since it's not explicit they end up in the same house.",
+    "confidence": 0.55
+   },
+   {
+    "a": 5,
+    "b": 13,
+    "rationale": "Sitting near the back row beside Pia suggests they were in the same seating group or house, whereas B claims they were in different houses. This creates surprise but not strict contradiction, since seating and house membership aren't necessarily linked (mixed seating is possible).",
+    "confidence": 0.6
+   },
+   {
+    "a": 8,
+    "b": 20,
+    "rationale": "A describes musicians beginning to warm up, suggesting a session is starting, while B describes Nell packing up, suggesting she is finishing or leaving. These are mildly conflicting expectations but not strictly incompatible, since Nell could be packing up early while others continue warming up.",
+    "confidence": 0.55
+   },
+   {
+    "a": 14,
+    "b": 20,
+    "rationale": "Claim A describes an ongoing rehearsal building toward a demanding piece, while B depicts Nell already finished and packing up; this is plausible as a later moment but sits awkwardly with the description of building momentum, suggesting mild tension rather than direct support.",
+    "confidence": 0.55
+   },
+   {
+    "a": 19,
+    "b": 23,
+    "rationale": "A says Leo jokes about being the last to leave weekly, which suggests he is usually the last one there. If Pia also stayed behind to help stack music, that creates mild tension with Leo's claim to being the last, though both could still be true if Leo left after Pia or on other occasions.",
+    "confidence": 0.45
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 9,
+   "attribute": "house",
+   "kind": "different",
+   "a": "nell",
+   "b": "leo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "house",
+   "kind": "different",
+   "a": "leo",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 18,
+   "attribute": "house",
+   "kind": "different",
+   "a": "nell",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "pia",
+   "b": "most_of_the_altos",
+   "confidence": 0.8,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

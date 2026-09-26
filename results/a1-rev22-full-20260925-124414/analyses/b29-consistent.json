@@ -1,0 +1,2705 @@
+{
+ "label": "b29-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-6909e9f16383",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Ana is the event organizer.",
+   "span": "Ana is the event organizer",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "The morning began with a light mist over the river.",
+   "span": "The morning began with a light mist over the river",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Rowers gathered near the boathouse as the sun rose higher.",
+   "span": "rowers gathered near the boathouse as the sun rose higher",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Dev arrived earlier than Hugo.",
+   "span": "Dev arrived earlier than Hugo",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Hugo came in well before Cleo made her way to the dock.",
+   "span": "who came in well before Cleo made her way to the dock",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Jude took the photographs.",
+   "span": "Jude took the photographs",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Ana was slightly older than Dev.",
+   "span": "Ana was slightly older than Dev",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Ana was younger than Jude.",
+   "span": "younger than Jude",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Everyone agreed the age gaps hardly mattered once the boats were on the water.",
+   "span": "everyone agreed the age gaps hardly mattered once the boats were on the water",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Cleo stood taller than Hugo.",
+   "span": "Cleo stood taller than Hugo",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Neither Cleo nor Hugo was as tall as Dev.",
+   "span": "though neither was as tall as Dev",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Dev towered over most of the crews gathered that day.",
+   "span": "who towered over most of the crews gathered that day",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Dev and Hugo were on different teams.",
+   "span": "Dev and Hugo were on different teams",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "The river was calm, with only a slight current pulling toward the far bank.",
+   "span": "The river was calm, with only a slight current pulling toward the far bank",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "The calm river made the early heats easier to judge.",
+   "span": "which made the early heats easier to judge",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Hugo and Cleo were on different teams.",
+   "span": "Hugo and Cleo were on different teams",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Spectators lined the shore, cheering as boats lined up for the first race.",
+   "span": "Spectators lined the shore, cheering as boats lined up for the first race",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Volunteers passed out schedules printed on bright paper.",
+   "span": "volunteers passed out schedules printed on bright paper",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Dev and Cleo were on different teams.",
+   "span": "Dev and Cleo were on different teams",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Ana checked the results sheet twice, comparing times from the earlier heats before nodding in satisfaction.",
+   "span": "Ana checked the results sheet twice, comparing times from the earlier heats before nodding in satisfaction",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "There were three teams.",
+   "span": "There were three teams",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "By afternoon, the wind picked up.",
+   "span": "By afternoon, the wind picked up",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "The final races drew the largest crowd of the day.",
+   "span": "the final races drew the largest crowd of the day",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Families settled onto blankets near the finish line to watch the last boats cross under a warm, cloudless sky.",
+   "span": "with families settling onto blankets near the finish line to watch the last boats cross under a warm, cloudless sky",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Ana's role as event organizer has no bearing on weather conditions described in claim B; the two statements concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Ana's role as event organizer has no stated connection to rowers gathering near a boathouse; nothing links the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "The claim about Ana's role as event organizer has no logical bearing on the relative arrival times of Dev and Hugo; they concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A states Ana's role as event organizer, which has no bearing on the relative timing of Hugo's and Cleo's arrivals at the dock.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Being the event organizer and taking photographs are separate roles with no stated connection; knowing Ana organized the event tells us nothing about who took the photos.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Being the event organizer says nothing about relative age compared to Dev; the two claims concern unrelated attributes of Ana.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Being the event organizer says nothing about relative age compared to Jude; the two facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Ana being the event organizer has no direct bearing on whether participants felt age gaps mattered once racing began; these are unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "The claim about Ana's role as event organizer has no logical or topical connection to the height comparison between Cleo and Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A concerns Ana's role as event organizer, while claim B concerns height comparisons among Cleo, Hugo, and Dev. These topics are independent and have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Claim A is about Ana's role as event organizer, while claim B concerns Dev's physical height relative to crews present. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Ana's role as event organizer has no stated bearing on whether Dev and Hugo were on different teams; the claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Ana's role as event organizer has no logical connection to the description of the river's current or calmness; they concern entirely unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A states Ana's role as event organizer, while claim B discusses the river conditions affecting judging; these topics are unrelated to each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "A's role as event organizer has no bearing on whether Hugo and Cleo were on different teams; the claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "A states a fact about Ana's role, while B describes a scene at a boat race with spectators; neither statement provides information that raises or lowers the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Ana being the event organizer has no direct bearing on whether volunteers passed out schedules printed on bright paper; these are independent facts about the event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Ana's role as event organizer has no logical bearing on whether Dev and Cleo were assigned to the same or different teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Being the event organizer is consistent with checking results sheets and comparing heat times; the organizing role plausibly explains why Ana would do this task.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Claim A identifies Ana's role as event organizer, which has no bearing on the number of teams present at the event.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Claim A describes a person's role at an event, while claim B describes a weather change during the afternoon; the two statements have no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Ana's role as event organizer has no bearing on which races drew the largest crowd; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "A states Ana's role as event organizer, which has no bearing on families watching boats finish under clear weather; the two describe unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "A light misty morning is a plausible setting for rowers gathering as the sun rises later; the two events describe a natural progression of the same morning without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "The mist over the river is a scene-setting weather detail and has no logical bearing on the relative arrival times of Dev and Hugo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "The mist over the river describes weather conditions and has no bearing on the relative arrival times of Hugo and Cleo at the dock.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "The mist description is atmospheric scene-setting and has no bearing on whether Jude took photographs; nothing links the two claims causally or logically.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "The claim about morning mist over the river has no bearing on the relative ages of Ana and Dev; they concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "The weather description in A has no bearing on the relative ages of Ana and Jude in B; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A describes weather conditions at the start of the morning, while claim B discusses social dynamics among people on boats; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "The mist over the river has no bearing on the relative heights of Cleo and Hugo; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "The mist over the river has no bearing on the relative heights of Cleo, Hugo, and Dev; these are unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "The mist over the river is a weather detail unrelated to Dev's height relative to other crews present; neither claim informs the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "The misty morning setting has no bearing on whether Dev and Hugo were assigned to different teams; these are unrelated facts about atmosphere versus team composition.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "A describes misty weather conditions over the river, while B describes the river's water flow characteristics; these are independent aspects that can coexist without one affecting the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Mist suggests calm, still air/water conditions in the morning, which makes it more plausible that the river was calm for the early heats, supporting B rather than contradicting it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "The morning weather described in A has no bearing on team assignments described in B; they concern unrelated aspects of the scenario.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "A light mist doesn't preclude spectators gathering or races starting; these describe compatible aspects of the same morning scene, with no strong dependency between them.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "The mist over the river and the volunteers distributing schedules describe unrelated aspects of the scene with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "The morning mist over the river has no bearing on whether Dev and Cleo were on different teams; they involve unrelated subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "A describes weather at the start of the morning, while B describes Ana reviewing race results; these events are unrelated in content with no causal or logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "The mist over the river has no logical or thematic connection to the number of teams; nothing in A implies anything about B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "A describes calm misty morning conditions, while B describes a shift to windy conditions by afternoon; these refer to different times of day and are plausible as a natural weather progression, not related in a way that supports or contradicts.",
+   "relation": "unrelated",
+   "confidence": 0.72
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "The morning mist over the river has no evident bearing on crowd size during the final races later in the day; they concern different times and unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "A describes misty conditions at the start of the morning, while B describes a warm, cloudless sky later at the finish line; mist can burn off as the day progresses, so both can be true at different times.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A describes a general scene of rowers gathering with no mention of Dev or Hugo, so it has no bearing on their relative arrival times.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "A describes a general scene of rowers gathering near the boathouse but gives no information about the relative timing of Hugo and Cleo's arrivals, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A describes rowers gathering at sunrise, which provides a plausible scene but gives no information about who took photographs or whether photography is even occurring.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "The gathering of rowers at the boathouse has no bearing on the relative ages of Ana and Dev; these are unrelated scenarios with no shared subjects or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "The claim about rowers gathering at the boathouse has no bearing on the relative ages of Ana and Jude; they concern entirely unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "A sets a scene of rowers gathering at the boathouse; B refers to the same group's agreement about age gaps once rowing, which is plausibly the same event but adds unrelated information about age dynamics not implied by A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A describes rowers gathering near a boathouse at sunrise, while claim B is an unrelated statement about relative heights of two individuals not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "The two claims describe unrelated scenarios: one is about rowers gathering at a boathouse, the other about relative heights of three people. There is no logical or thematic connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "A describes rowers gathering near the boathouse; B describes Dev being tall relative to crews gathered that day, likely the same event. They are compatible and B slightly builds on the scene set by A, but B adds independent information not implied by A.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "The rowers gathering near the boathouse at sunrise is a scene-setting claim that has no bearing on whether two specific individuals, Dev and Hugo, were on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Rowers gathering near the boathouse does not inherently indicate anything about the river's calmness or current; these are independent observations about the scene.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "A describes rowers gathering at the boathouse as the sun rose, which sets a similar early-morning rowing context as B's mention of calm river conditions during early heats; both suggest the same event but neither confirms the other's specific detail.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A describes a general rowing scene with no mention of Hugo, Cleo, or team arrangements, so it has no bearing on whether they were on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Both describe a rowing event unfolding over time, with rowers gathering and later boats lining up for a race while spectators cheer; these can easily be sequential parts of the same morning event, so A supports the plausibility of B.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Both describe plausible activities at a morning rowing event, but neither claim implies or excludes the other; they could occur together or independently.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A describes a general scene of rowers gathering near a boathouse and has no bearing on the team affiliations of Dev and Cleo, who are not even mentioned.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "A describes rowers gathering at a boathouse in the morning, which is plausibly consistent with a rowing event where heats occur and Ana checks results, but there's no direct logical connection established between the two claims as stated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "A describes rowers gathering at sunrise but gives no information about how many teams exist, so it neither confirms nor undermines the specific claim of three teams.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "A describes a morning scene while B describes a later afternoon weather change; these refer to different times of the same day and are largely independent events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "A describes an early-morning gathering of rowers, while B refers to crowd size at the final races, presumably later in the day. These describe different times and events without clear logical connection, though both could be part of the same day's events.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Both describe a boating event under similar weather conditions with the sun rising higher, plausibly consistent with a warm, cloudless sky later in the day; the scenes could be different stages of the same regatta.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A only orders Dev before Hugo and says nothing about Cleo's arrival time, so it neither supports nor contradicts the timing between Hugo and Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "The order in which Dev and Hugo arrived has no bearing on who took the photographs; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A concerns arrival order between Dev and Hugo, while claim B concerns relative ages of Ana and Dev. These involve different attributes (time of arrival vs. age) and different subjects, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A concerns arrival order between Dev and Hugo, while claim B concerns relative ages of Ana and Jude; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A concerns arrival order, while claim B concerns opinions about age gaps during boating; they address different topics with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A concerns arrival order between Dev and Hugo, while claim B concerns relative height between Cleo and Hugo. These involve different attributes (time vs. height) and different pairs of people (only Hugo overlaps), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Claim A concerns arrival order/time, while claim B concerns relative height. These are independent attributes with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Arriving earlier than Hugo says nothing about Dev's physical height or stature relative to the crews, so the two claims address unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Arrival order says nothing about team assignment; the two facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A is about the relative arrival order of two people, while claim B describes the state of a river. There is no logical or contextual connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A concerns the relative arrival times of Dev and Hugo, while claim B concerns river conditions affecting judging of early heats; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "A concerns arrival order between Dev and Hugo, while B concerns team membership between Hugo and Cleo; neither fact bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "A is about the relative arrival order of two individuals, while B describes a general scene of spectators and boats at a race; neither statement implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "The order in which Dev and Hugo arrived has no logical or causal connection to volunteers distributing printed schedules; they concern unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "The order in which Dev and Hugo arrived has no bearing on which teams Dev and Cleo were assigned to; these are independent facts about the scenario.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Claim B describes Ana's independent action of checking results and does not confirm or deny the arrival order of Dev and Hugo mentioned in claim A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "The order in which Dev and Hugo arrived has no bearing on how many teams there were; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Claim A concerns the relative arrival times of Dev and Hugo, while claim B concerns weather conditions in the afternoon. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Claim A concerns the relative arrival times of Dev and Hugo, while claim B concerns crowd size during the final races; these topics are unconnected and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Claim A concerns the relative arrival order of two individuals, while claim B describes an unrelated scene of families watching boats finish under clear weather. There is no logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Claim A discusses the relative timing of Hugo and Cleo's arrival at the dock, while claim B concerns who took photographs. There is no logical or factual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A concerns the relative timing of Hugo and Cleo's arrival at the dock, while claim B concerns the relative ages of Ana and Dev. These involve entirely different people and different types of comparison, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A concerns the relative arrival timing of Hugo and Cleo at a dock, while claim B concerns the relative ages of Ana and Jude. These involve entirely different people and attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "A concerns arrival timing relative to Cleo reaching the dock, while B concerns social agreement about age gaps once racing began; the two claims address unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Claim A concerns relative arrival times at the dock, while claim B concerns relative heights; the two describe unrelated attributes of Hugo and Cleo with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Claim A concerns the relative timing of Hugo and Cleo's arrivals at the dock, while claim B concerns relative heights of Cleo, Hugo, and Dev. These are independent facts about different domains (time vs. height) with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Claim A concerns the relative arrival timing of Hugo and Cleo, while claim B concerns Dev's height relative to crews present. They share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A concerns the timing of Hugo's arrival relative to Cleo, while claim B concerns team assignments involving Dev and Hugo. These deal with unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A describes the relative timing of Hugo and Cleo's arrivals at the dock, while claim B describes the river's condition. Neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Claim A concerns the relative arrival times of Hugo and Cleo at the dock, while claim B concerns river conditions affecting judging of early heats. Neither statement bears on the other's content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "A only describes relative arrival timing between Hugo and Cleo; it gives no information about team membership or affiliation, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "A describes the relative arrival timing of Hugo and Cleo at the dock, while B describes a general scene of spectators and boats lining up for a race. Neither statement provides information that affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Claim A concerns the timing of Hugo and Cleo's arrivals, while claim B describes an unrelated event about volunteers distributing schedules; neither has bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Claim A concerns timing of Hugo's arrival relative to Cleo reaching the dock, while claim B concerns team membership of Dev and Cleo. These pertain to unrelated aspects with no logical or evidential connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "A concerns the relative arrival times of Hugo and Cleo at the dock, while B describes Ana reviewing results sheets from earlier heats; there is no stated connection between these events or people.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Claim A concerns the timing of Hugo's arrival relative to Cleo reaching the dock, while claim B states a fact about the number of teams. These deal with entirely different subjects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "The claim about Hugo and Cleo's arrival times at the dock has no logical or contentful connection to a claim about wind picking up in the afternoon; they concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Claim A concerns the relative timing of Hugo and Cleo's arrivals, which has no bearing on crowd size during the final races described in B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "A concerns the relative arrival order of Hugo and Cleo at a dock, while B describes a general scene of families watching boats finish under clear weather. There is no direct logical connection between the specific ordering claim and the ambient scene description.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Claim A is about who took photographs, while claim B concerns a relative age comparison between two other people; neither statement bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A states Jude took photographs, which has no bearing on relative ages of Ana and Jude; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A is about who took photographs, while claim B concerns opinions about age gaps and boating; they share no connecting content.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A concerns who took photographs, while claim B concerns relative heights of two unrelated individuals. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A concerns who took the photographs, while claim B concerns relative heights of Cleo, Hugo, and Dev. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A concerns who took the photographs, while claim B concerns Dev's height relative to crews present; the two describe unrelated facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A is about who took photographs, while claim B is about team assignments for Dev and Hugo; neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A states who took the photographs, while claim B describes river conditions; neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A is about who took photographs, while claim B concerns river conditions affecting judging of heats; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Claim A concerns who took the photographs, which has no logical or contextual bearing on team assignments of Hugo and Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A states Jude took photographs, while claim B describes a scene of spectators and boats at a race; there is no logical connection between who took photographs and the described race scene, though A could plausibly describe the context in which the photos were taken.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A concerns Jude taking photographs, while claim B concerns volunteers distributing printed schedules; these describe unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "The two claims concern unrelated matters: who took the photographs versus the team assignments of Dev and Cleo. There is no logical or contextual connection given between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "The two claims describe unrelated actions by different people (Jude photographing, Ana checking results) with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Claim A concerns who took the photographs, while claim B concerns the number of teams; neither statement provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "The claim about who took the photographs has no logical or causal connection to the claim about wind picking up in the afternoon.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "There is no logical or causal connection stated between who took the photographs and the size of the crowd at the final races; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Claim A states who took the photographs, while claim B describes a scene at a boat race finish line; neither statement implies anything about the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Claim A establishes Ana's age relative to Dev only; it says nothing about Jude's age, so it neither supports nor contradicts B, which compares Ana to a different person.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "B refers generally to age gaps not mattering during racing, and A merely states a small age difference between Ana and Dev, which is consistent with and mildly reinforces the premise that such gaps exist but are inconsequential.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "The two claims involve entirely different people and different attributes (age vs. height), with no logical or contextual connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A concerns relative age between Ana and Dev, while claim B concerns relative height among Cleo, Hugo, and Dev. Age and height comparisons involve different attributes and different people overlap only in Dev, so one gives no information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "A concerns relative age between Ana and Dev, while B concerns Dev's physical height compared to crews. Age difference has no bearing on height, so the two claims are unrelated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A concerns the relative ages of Ana and Dev, while claim B concerns the team assignments of Dev and Hugo. These involve different people and different attributes, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A concerns the relative ages of two people, while claim B describes the physical condition of a river. There is no logical, causal, or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Ana's relative age has no bearing on the river's calmness or the ease of judging early heats; the two claims concern unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A concerns the relative ages of Ana and Dev, while claim B concerns team membership of Hugo and Cleo. These involve entirely different people and attributes, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A concerns the relative ages of Ana and Dev, while claim B describes a scene of spectators and boats at a race; the two share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "The relative age of Ana and Dev has no bearing on volunteers distributing printed schedules; these are unrelated facts about different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "A's claim about relative ages of Ana and Dev has no bearing on which teams Dev and Cleo were assigned to; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Claim A concerns a relative age comparison between Ana and Dev, while claim B describes Ana's actions reviewing race results; the two share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "The relative ages of Ana and Dev have no bearing on the number of teams that existed.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Claim A concerns the relative ages of two people, while claim B describes a weather change during the afternoon. There is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "The relative ages of Ana and Dev have no bearing on the attendance size of the final races; these are unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "The relative ages of Ana and Dev have no bearing on families watching boats finish under a clear sky; the claims describe unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "A establishes an age gap between Ana and Jude, which is consistent with B's reference to age gaps existing but not mattering during the activity; they fit together without conflict.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "The two claims involve different people and different attributes (age vs. height) with no logical or contextual connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A concerns relative ages of Ana and Jude, while claim B concerns relative heights of Cleo, Hugo, and Dev. There is no shared subject or property linking the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A concerns a relative age comparison between Ana and Jude, while claim B concerns Dev's height relative to a crowd. They involve different people and different attributes, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Claim A concerns the relative ages of Ana and Jude, while claim B concerns team assignments of different individuals, Dev and Hugo. There is no logical or contextual connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A concerns relative ages of two people, while claim B describes the state of a river. These topics have no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Claim A concerns the relative ages of Ana and Jude, while claim B concerns river conditions affecting judging of heats. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "The claims concern entirely different people and different types of facts (age comparison vs team assignment), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A is about relative ages of two people, while claim B describes a scene of spectators and boat races. There is no logical or thematic connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Claim A concerns a relative age comparison between two individuals, while claim B describes an unrelated event about volunteers distributing printed schedules. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "The two claims concern different people and different kinds of facts (relative age vs. team membership), with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "A's claim about relative age has no bearing on B's description of Ana's actions at a results sheet; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns the number of teams; they share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "The relative ages of Ana and Jude have no bearing on wind conditions in the afternoon; the two claims concern entirely unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "The claim about Ana's and Jude's relative ages has no bearing on crowd sizes at races; they concern entirely unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Claim A concerns the relative ages of Ana and Jude, while claim B describes families watching boats finish a race under clear weather. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Claim A concerns opinions about age gaps being irrelevant once boating, while claim B is a simple physical height comparison between two people; neither bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A concerns age gaps and rowing dynamics, while claim B concerns relative height of different people; they share no common subject matter that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Both claims can hold at once: A concerns whether age differences mattered once racing began, while B concerns Dev's physical height relative to others; they address different attributes and neither implies or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Claim A discusses age gaps and agreement about them being irrelevant once boats were on the water, but says nothing about team assignments or specific individuals like Dev and Hugo. The two claims concern different aspects of the situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "A discusses social dynamics among boaters regarding age gaps, while B describes physical river conditions; these are independent aspects of the same scene with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Claim A concerns age gaps not mattering once racing began, while claim B concerns river conditions affecting judging difficulty; the two address different aspects of the event with no logical overlap.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Claim A discusses attitudes about age gaps among rowers on the water but says nothing about team assignments, so it neither supports nor contradicts B's claim about Hugo and Cleo being on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "A refers to boats being on the water and age gaps not mattering, implying a rowing/boating event with crews of varying ages; B describes spectators watching boats line up for a race, a plausible setting for the same event. These are compatible and B provides supporting context but doesn't directly increase likelihood of A's specific claim.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Claim A concerns social dynamics among people on boats, while claim B concerns logistical schedule distribution; neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "A discusses perceptions of age gaps among rowers without indicating team assignments, so it neither supports nor contradicts whether Dev and Cleo were on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Claim A concerns general agreement about age gaps not mattering once racing, while B describes Ana's specific action of checking results and heat times; they touch on the same rowing/racing context but don't directly support, contradict, or create tension with each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Claim A discusses attitudes about age gaps in a boating context, while B states a fact about the number of teams; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Claim A concerns social dynamics among people on boats, while claim B describes a change in weather conditions; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Claim A concerns perceptions of age gaps among participants during boat races, while claim B concerns crowd size at the final races. These address different aspects of the event with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Both claims seem to describe aspects of the same boating/rowing event, but they refer to different elements (crew age dynamics vs. spectator conditions) without directly bearing on each other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "A only establishes a relative height order between Cleo and Hugo, saying nothing about Dev's height, so B's claim that both are shorter than Dev is independent of A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "A concerns the relative height of Cleo and Hugo only, while B concerns Dev's height relative to crews present. There is no shared subject or logical link between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Claim A concerns relative height between Cleo and Hugo, while claim B concerns team membership of Dev and Hugo. These involve overlapping individuals but unrelated attributes, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns relative heights of two people, while claim B describes the state of a river. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Claim A concerns relative height of two individuals, while claim B concerns river conditions affecting judging of race heats; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "A claim about relative height gives no information about team membership; the two facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A is a height comparison between two individuals, while claim B describes a crowd watching boat races; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "The claims describe unrelated situations: relative heights of two people versus volunteers distributing printed schedules. Neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "A concerns relative height between Cleo and Hugo, while B concerns team membership between Dev and Cleo; these involve overlapping people but unrelated attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Claim A concerns relative height between Cleo and Hugo, while claim B describes Ana reviewing race results; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Claim A concerns relative height between two individuals, while claim B concerns the number of teams; these describe unrelated aspects of the situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "The height comparison between Cleo and Hugo has no logical or causal connection to wind conditions in the afternoon.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "The claims describe unrelated topics: relative height of two people versus crowd size at events. Nothing about A bears on the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Claim A is about the relative height of two individuals, while claim B describes families watching boats finish under a clear sky. These claims share no common subject, event, or context that would connect them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "A shows Dev was taller than at least two people (Cleo and Hugo), which is consistent with and mildly supportive of Dev being notably tall relative to a crowd, though it doesn't establish 'most of the crews.'",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "A concerns relative height between Cleo, Hugo, and Dev, while B concerns team membership. These are unrelated attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Claim A concerns the relative heights of three people, while claim B describes a river's current; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A concerns relative heights of three people, while claim B concerns river conditions affecting race judging; they share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Claim A concerns relative heights of Hugo, Cleo, and Dev, while claim B concerns team membership of Hugo and Cleo. These are unrelated attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Claim A concerns relative heights of Cleo, Hugo, and Dev, while claim B describes a scene of spectators and boats at a race; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "The claims concern entirely different subjects (relative heights of people vs. volunteers distributing schedules); neither has any bearing on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "A discusses relative height among Cleo, Hugo, and Dev, which has no bearing on team membership or assignment. The claims concern entirely different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Claim A concerns relative heights of Cleo, Hugo, and Dev, while claim B concerns Ana checking race results. These involve different people, attributes, and contexts with no logical or thematic connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Claim A discusses relative heights of Cleo, Hugo, and Dev, while claim B concerns the number of teams; these topics are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "The heights of Cleo, Hugo, and Dev have no bearing on wind conditions in the afternoon; these are entirely unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.99
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Claim A concerns relative heights of Cleo, Hugo, and Dev, while claim B concerns crowd size at final races. The two topics share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Claim A concerns relative heights of three people, while claim B describes a scene at a boat race under a clear sky. The two claims share no entities, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A is about Dev's height relative to crews at an event, while claim B is about team membership. These pertain to different attributes and have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A describes Dev's height relative to other crew members, while claim B describes the river's condition. These pertain to entirely different subjects with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A concerns Dev's height relative to crews, while claim B concerns the river's calmness affecting judging of early heats; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns Dev's height relative to crews, while claim B concerns team assignments of Hugo and Cleo. They share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Both could describe the same regatta scene, but A's fact about Dev's height doesn't affect the likelihood of spectators lining the shore or boats lining up for a race.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "A describes Dev's height relative to the crews, while B describes an unrelated activity of volunteers distributing schedules. Neither claim affects the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A describes Dev's height relative to crews present, while claim B describes team assignment for Dev and Cleo; these facts are independent of each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Claim A describes Dev's physical height relative to crews, while claim B describes Ana's unrelated action of checking a results sheet; neither statement bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Claim A describes Dev's height relative to crews present, while claim B states a count of teams. These concern different aspects (physical stature vs. number of teams) and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Claim A is about Dev's height relative to crews, while claim B concerns weather conditions in the afternoon. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "A describes Dev's physical height relative to crews present, while B describes crowd size at the final races; these concern different subjects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "A describes Dev's height relative to crews at an event, while B describes families watching boats finish under clear weather; they seem to reference the same general event (a boat race) but neither claim informs the truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A concerns team membership of two people, while claim B describes river conditions; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A discusses team assignments of Dev and Hugo, while claim B discusses river conditions affecting judging; they share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Knowing Dev and Hugo are on different teams tells us nothing about Cleo's team assignment relative to Hugo's, since Cleo's relation to Dev or Hugo is unspecified.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A discusses Dev and Hugo's team assignments while claim B describes spectators and boats at a race; they share no common subject matter that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Claim A concerns team assignments of two people, while claim B concerns volunteers distributing printed schedules; neither has bearing on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Knowing Dev and Hugo are on different teams tells us nothing about Dev's relationship to Cleo's team, since Cleo could be on Dev's team, Hugo's team, or a third team.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A concerns team membership of Dev and Hugo, while claim B describes Ana's independent action of reviewing a results sheet; neither provides evidence about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Dev and Hugo being on different teams is consistent with there being three teams (or any number two or more); the claims don't directly determine or preclude each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "The claim about Dev and Hugo being on different teams has no logical or causal connection to the wind picking up in the afternoon; they concern entirely unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Claim A concerns team membership of two individuals, while claim B concerns crowd size during final races; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Claim A concerns team membership of two individuals, while claim B describes a scene of spectators watching a boat race under clear weather; these have no logical or thematic connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "A calm river with minimal current would make conditions more stable and predictable, plausibly making it easier for judges to assess the early heats consistently.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "The state of the river's current has no bearing on team assignments of Hugo and Cleo; these describe unrelated aspects of the scenario.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "A calm river with a slight current is plausible background condition for a boat race, and doesn't contradict spectators gathering; the two claims can easily coexist as a coherent scene.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "The river's calmness and current have no bearing on volunteers distributing printed schedules; these describe unrelated aspects of a scene.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "The river's calmness and current have no bearing on which teams Dev and Cleo were assigned to; these describe unrelated aspects of the scenario.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A describes a calm river with a gentle current, while claim B describes an unrelated scene of Ana reviewing race results; neither shares subject matter, context, or logical bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Claim A describes river conditions while claim B states a fact about the number of teams; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "A describes calm river conditions at some point, while B describes wind picking up by afternoon; these could refer to different times of day and don't directly conflict or reinforce each other.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "The state of the river's current has no bearing on crowd size at races held that day; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "A describes calm river conditions with a mild current, which is compatible with families watching boats finish under clear weather; neither claim contradicts the other and calm conditions could plausibly support a pleasant race day setting.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Claim A discusses river conditions affecting judging of heats, while claim B states a fact about team membership; neither has bearing on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "A describes calm river conditions during early heats, while B describes spectators and boats lining up for the first race; these are compatible scenes from the same event and B's setup is consistent with A's context, though not directly implied by it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "A discusses calm river conditions aiding judging, while B describes volunteers distributing printed schedules; these concern unrelated aspects of the event with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A discusses river conditions affecting judging of races, while claim B is about team membership of two individuals; neither has bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "A calm river making heats easier to judge is broadly consistent with someone reviewing and being satisfied with the recorded times, but the connection is loose and not directly causal or evidential.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Claim A discusses river conditions affecting judging of heats, while claim B states a fact about the number of teams; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Calm conditions in the morning don't preclude wind picking up later in the day; these describe different time periods and are compatible, with A even providing context that makes a later change plausible.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Claim A concerns calm water aiding judging of early heats, while claim B concerns crowd size at the final races; these are different aspects of the event with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "A calm river and a warm, cloudless sky both suggest good weather conditions at the event, making both claims plausible as part of the same scene, though A does not directly imply the sky conditions.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Claim A states a team relationship between Hugo and Cleo, while claim B describes a general scene of spectators and boats racing; neither statement provides information that affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Claim A is about team assignments for Hugo and Cleo, while claim B describes an unrelated event involving volunteers and schedules. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Knowing Hugo and Cleo are on different teams says nothing about whether Dev and Cleo are on different teams, since Dev's team assignment relative to Cleo is independent information.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Claim A concerns team assignments of Hugo and Cleo, while claim B describes Ana's unrelated action of checking a results sheet. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "A states Hugo and Cleo were on different teams, which is compatible with there being any number of teams two or more, including three. It doesn't specifically support or contradict the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Claim A concerns team assignments while claim B concerns weather conditions; there is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Claim A concerns team membership of two individuals, while claim B concerns crowd size at the final races; these topics are unconnected and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Claim A concerns Hugo and Cleo's team assignments, while claim B describes an unrelated scene of families watching a boat race finish. There is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Both describe plausible concurrent activities at a boat race event, but neither entails or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "A describes the scene of spectators and boats lining up for a race, but says nothing about Dev, Cleo, or team assignments, so it has no direct bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "A describes the start of the first race while B describes checking results from earlier heats implying prior races already happened; these seem to describe different points in time but are not necessarily incompatible as part of a broader event timeline.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "A describes a spectator scene with boats lining up for a race but gives no information about the number of teams involved, so B's specific claim of three teams is neither supported nor contradicted by A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Claim A describes the start of the race event, while B refers to a later time of day and a weather change; there is no logical connection or contradiction, just a temporal sequence in the same narrative.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "A describes spectators at the first race, while B claims the final races drew the largest crowd of the day; these can coexist since crowd size could grow over the day, with the final races having even more spectators than the first.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Both describe spectators at what seems to be the same regatta, one at the start of the first race and one at the end of the last race; these are consistent as different moments of the same event, with spectators plausibly at different vantage points at different times.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "The distribution of brightly printed schedules by volunteers has no bearing on whether Dev and Cleo were assigned to different teams; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Both concern event materials at what seems to be a race, but knowing volunteers distributed schedules on bright paper doesn't affect the likelihood of Ana checking results sheets from heats; these are separate activities.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "A describes volunteers distributing schedules on colored paper, which has no bearing on how many teams existed; the two statements address unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "There is no logical or causal connection between volunteers distributing schedules and the wind picking up later; they concern unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Passing out printed schedules has no clear bearing on whether the final races drew the largest crowd; these describe unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Both describe elements consistent with an outdoor event like a boat race, but knowing volunteers distributed schedules doesn't make it more or less likely that families sat on blankets under a clear sky; they are independent details of the same event scene.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Claim A concerns team membership of Dev and Cleo, while claim B describes Ana's independent action of checking results; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Dev and Cleo being on different teams implies at least two teams exist, but says nothing about whether there are exactly two, three, or more teams total.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "The two claims concern unrelated topics: team assignment of two people versus weather conditions in the afternoon. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Claim A concerns team membership of two individuals, while claim B concerns crowd size at final races; these topics do not bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Claim A concerns Dev and Cleo's team affiliations while claim B describes families watching a boat race finish; they share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Claim A describes Ana checking a results sheet with heat times, which has no bearing on how many teams participated; the two facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Ana's checking of results has no bearing on the afternoon wind picking up; they describe unrelated events with no causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "A describes Ana reviewing earlier heat results, while B is a general statement about crowd size at the final races; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Both claims appear to describe the same race event but from different perspectives (Ana checking results vs families watching), with no direct logical connection between checking a results sheet and families setting up to watch; they are largely independent details of the same scene.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "The number of teams has no bearing on weather conditions in the afternoon; these describe unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Claim A states a fact about the number of teams, which has no bearing on crowd size at the final races described in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "The number of teams is unrelated to the weather or family spectators watching the finish; both describe different aspects of the event without bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Wind picking up in the afternoon is a weather detail unrelated to spectator turnout for the final races; neither claim implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "Wind picking up doesn't necessarily conflict with a warm, cloudless sky, but increased wind in the afternoon sits awkwardly with a calm, pleasant picnic scene under those conditions.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "B describes a large gathering near the finish line for the last boats under favorable weather, which is consistent with and plausibly supports A's claim that the final races drew the biggest crowd of the day.",
+   "relation": "supports",
+   "confidence": 0.6
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   },
+   {
+    "id": "jude",
+    "mentions": [
+     "Jude"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "team",
+    "arity": "multi",
+    "arity_span": "There were three teams.",
+    "order_kind": null,
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 12,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dev",
+    "b": "hugo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 15,
+    "attribute": "team",
+    "kind": "different",
+    "a": "hugo",
+    "b": "cleo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 18,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dev",
+    "b": "cleo",
+    "confidence": 0.98
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "subject": "dev",
+    "comparative": "earlier than",
+    "object": "hugo",
+    "confidence": 0.97
+   },
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "subject": "hugo",
+    "comparative": "before",
+    "object": "cleo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 6,
+    "attribute": "age",
+    "subject": "ana",
+    "comparative": "older than",
+    "object": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 7,
+    "attribute": "age",
+    "subject": "ana",
+    "comparative": "younger than",
+    "object": "jude",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "subject": "cleo",
+    "comparative": "taller than",
+    "object": "hugo",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "entity": "dev",
+    "comparative": "tallest",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "entity": "dev",
+    "comparative": "towered over",
+    "confidence": 0.7
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "earlier than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "before",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "tallest",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "height",
+    "comparative": "towered over",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 12,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    1,
+    23
+   ],
+   [
+    21,
+    23
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "age": "magnitude",
+    "height": "magnitude",
+    "team": null
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 10,
+     "attribute": "height",
+     "entity": "dev",
+     "extreme": "max",
+     "edges": 2
+    },
+    {
+     "claim_id": 11,
+     "attribute": "height",
+     "entity": "dev",
+     "extreme": "max",
+     "edges": 2
+    }
+   ],
+   "extreme_edges": 4,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 11,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 8,
+    "residual": 0.0
+   },
+   {
+    "a": 7,
+    "b": 8,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 16,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 11171,
+   "api_calls": 0,
+   "cache_hits": 11171,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    19
+   ],
+   [
+    1,
+    2,
+    13,
+    14,
+    16,
+    22,
+    23
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    7,
+    8
+   ],
+   [
+    9
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    12
+   ],
+   [
+    15
+   ],
+   [
+    17
+   ],
+   [
+    18
+   ],
+   [
+    20
+   ],
+   [
+    21
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 1,
+    "b": 23,
+    "rationale": "A describes misty conditions at the start of the morning, while B describes a warm, cloudless sky later at the finish line; mist can burn off as the day progresses, so both can be true at different times.",
+    "confidence": 0.55
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "rationale": "Wind picking up doesn't necessarily conflict with a warm, cloudless sky, but increased wind in the afternoon sits awkwardly with a calm, pleasant picnic scene under those conditions.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 12,
+   "attribute": "team",
+   "kind": "different",
+   "a": "dev",
+   "b": "hugo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "team",
+   "kind": "different",
+   "a": "hugo",
+   "b": "cleo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 18,
+   "attribute": "team",
+   "kind": "different",
+   "a": "dev",
+   "b": "cleo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "hugo",
+   "b": "dev",
+   "confidence": 0.97,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 4,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "hugo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 6,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "ana",
+   "b": "dev",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 7,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "jude",
+   "b": "ana",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 9,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "hugo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 10,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "dev",
+   "b": "cleo",
+   "confidence": 0.6,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 10,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "dev",
+   "b": "hugo",
+   "confidence": 0.6,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 11,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "dev",
+   "b": "cleo",
+   "confidence": 0.7,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 11,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "dev",
+   "b": "hugo",
+   "confidence": 0.7,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

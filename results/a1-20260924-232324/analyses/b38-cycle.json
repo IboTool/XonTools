@@ -1,0 +1,1546 @@
+{
+ "label": "b38-cycle",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-716fc04d4b0b",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Esme is the team captain.",
+   "span": "Assume that Esme is the team captain.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Ben arrived first, carrying crates of apples toward the front tables.",
+   "span": "Ben arrived first, carrying crates of apples toward the front tables",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Bo showed up a few minutes later with a tray of honey jars.",
+   "span": "Bo showed up a few minutes later with a tray of honey jars",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Nell drove the minibus.",
+   "span": "Nell drove the minibus.",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Isla is taller than Bo.",
+   "span": "Isla, who is taller than Bo but shorter than Ben",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Isla is shorter than Ben.",
+   "span": "Isla, who is taller than Bo but shorter than Ben",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Isla helped set up the folding chairs near the entrance.",
+   "span": "helped set up the folding chairs near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Esme arrived just after the sun rose fully over the hills.",
+   "span": "Esme arrived just after the sun rose fully over the hills",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Esme greeted each vendor with a warm smile.",
+   "span": "greeting each vendor with a warm smile",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Ben and Bo were on different teams.",
+   "span": "Ben and Bo were on different teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Bo and Isla were on different teams.",
+   "span": "Bo and Isla were on different teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Nell is the oldest among the group.",
+   "span": "Nell, who is the oldest among the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Nell checked the schedule posted near the fruit stand to confirm the vendor rotation for the afternoon.",
+   "span": "checked the schedule posted near the fruit stand to confirm the vendor rotation for the afternoon",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Ben and Isla were on different teams.",
+   "span": "Ben and Isla were on different teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Esme ranked highest in sales that day.",
+   "span": "Esme ranked highest in sales that day",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "There were two teams.",
+   "span": "There were two teams.",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "The flower stall sold out faster than expected.",
+   "span": "the flower stall sold out faster than expected",
+   "kind": "quoted"
+  },
+  {
+   "id": 17,
+   "text": "Ben helped restock the bread baskets before the lunchtime rush.",
+   "span": "Ben helped restock the bread baskets before the lunchtime rush",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Being team captain is unrelated to Ben's arrival order or actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Esme's captaincy has no bearing on Bo's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Esme being captain is unrelated to who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Team captaincy has no bearing on relative heights of Isla and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Team captaincy has no bearing on relative heights of Isla and Ben.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Esme's captaincy does not relate to Isla setting up chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Being captain doesn't imply anything about arrival timing relative to sunrise.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Captaincy status doesn't inherently relate to greeting vendors, though a captain might plausibly do so, it's not a logical entailment.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Esme's captaincy status doesn't determine whether Ben and Bo are on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Esme's captaincy doesn't bear on whether Bo and Isla are on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Being team captain doesn't relate to being oldest among the group.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Esme's captaincy is unrelated to Nell checking the schedule.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Esme's captaincy doesn't bear on whether Ben and Isla are on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Being captain doesn't necessarily entail highest sales ranking, though it's plausible, it's not a direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Esme being captain slightly supports there being a team structure implying at least one team, but doesn't confirm exactly two teams.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Esme's captaincy is unrelated to the flower stall selling out.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Esme's captaincy status is unrelated to Ben restocking bread baskets.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Ben arriving first establishes a timeline, supporting that Bo arrived later as stated.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Ben's arrival and carrying crates has no bearing on who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Ben's arrival order and task carrying crates doesn't relate to Isla's height compared to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Ben's arrival order is unrelated to his height compared to Isla.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Ben's arrival with crates of apples has no bearing on Isla's setup of chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Ben's arrival timing relative to Esme's is not established by claim 1 alone.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Ben carrying crates has no logical connection to Esme's greeting behavior.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Arrival order does not indicate team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Ben's arrival has no bearing on Bo and Isla's team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Arrival order does not determine age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Ben's actions are unrelated to Nell's schedule-checking activity.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Ben's arrival timing does not establish team membership differences.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Ben's arrival has no connection to Esme's sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Ben's arrival order does not indicate the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Ben carrying apple crates has no bearing on flower stall sales.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Carrying crates toward front tables does not confirm or deny restocking bread baskets, a separate task.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Bo's arrival with honey jars is unrelated to who drove the minibus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Bo's arrival timing has no bearing on height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Bo's arrival has no bearing on Isla and Ben's height comparison.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Bo's arrival with honey jars is unrelated to Isla setting up chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Bo's arrival timing does not establish when Esme arrived.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Bo's arrival has no connection to Esme's greeting behavior.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Bo's arrival timing does not indicate team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Bo bringing honey jars has no bearing on whether Bo and Isla were on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Bo's arrival with honey jars is unrelated to Nell's age ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Bo's arrival with honey jars has no connection to Nell checking the schedule.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Bo's arrival with honey jars does not affect the team assignment of Ben and Isla.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Bo bringing honey jars has no bearing on Esme's sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Bo's arrival with honey jars does not indicate anything about the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Bo's arrival with honey jars is unrelated to the flower stall selling out.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Bo's arrival with honey jars has no logical connection to Ben restocking bread baskets.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Nell driving the minibus is unrelated to height comparisons between Isla and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Nell driving the minibus has no bearing on height comparisons between Isla and Ben.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Nell driving the minibus is unrelated to Isla setting up folding chairs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Nell driving the minibus has no connection to when Esme arrived.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Nell driving the minibus is unrelated to Esme greeting vendors.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Nell driving the minibus does not affect whether Ben and Bo were on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Nell driving the minibus has no bearing on Bo and Isla's team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Nell driving the minibus does not indicate anything about her being the oldest.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Nell driving the minibus is a different activity from checking the schedule, and doesn't confirm or deny it happened.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Nell driving the minibus has no bearing on Ben and Isla's team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Nell driving the minibus is unrelated to Esme's sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Nell driving the minibus does not indicate anything about the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Driving the minibus has no bearing on flower stall sales.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Driving the minibus is unrelated to Ben restocking bread baskets.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Isla's height relative to Bo does not determine her height relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Height comparison has no bearing on setting up chairs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Height comparison is unrelated to Esme's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Height comparison is unrelated to Esme's friendliness toward vendors.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Height comparison between Isla and Bo does not determine team assignments of Ben and Bo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Height comparison does not determine team membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Height comparison is unrelated to age ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Height comparison is unrelated to Nell checking a schedule.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Height comparison does not determine team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Height comparison is unrelated to sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Height comparison is unrelated to the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Height comparison is unrelated to flower stall sales.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Height comparison is unrelated to bread basket restocking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Height comparison is unrelated to setting up chairs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Height comparison is unrelated to Esme's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Height comparison is unrelated to Esme's greetings.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Isla's height relative to Ben does not determine whether Ben and Bo are on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Height comparison does not determine team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Height comparison has no bearing on age ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Isla's height is unrelated to Nell checking a schedule.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Relative height does not indicate team assignment.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Height comparison has no bearing on sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Height comparison does not affect number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Height comparison has no bearing on flower stall sales.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Height comparison has no bearing on bread restocking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Isla setting up chairs is unrelated to when Esme arrived.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Isla setting up chairs has no bearing on Esme's greeting behavior.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Setting up chairs does not indicate anything about Ben and Bo's team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Setting up chairs does not indicate anything about Bo and Isla's team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Chair setup task is unrelated to age ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Isla's chair setup and Nell's schedule check are independent activities.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Setting up chairs does not indicate team assignment relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Chair setup by Isla has no bearing on Esme's sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Chair setup task does not indicate number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Isla's chair task is unrelated to flower stall sales outcome.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Both are helpful setup actions by different people but do not causally relate.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Arrival time does not determine how Esme greeted vendors.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Esme's arrival time has no bearing on Ben and Bo's team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Esme's arrival time is unrelated to Bo and Isla's team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Arrival time has no bearing on who is oldest.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Esme's arrival time doesn't relate to Nell checking a schedule.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Arrival time is unrelated to team assignments of Ben and Isla.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Arriving after sunrise doesn't affect sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Arrival time has nothing to do with the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Esme's arrival time is unrelated to flower stall sales.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Esme's arrival time doesn't relate to Ben restocking bread.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Esme's friendliness with vendors is unrelated to Ben and Bo's team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Greeting vendors has no bearing on Bo and Isla's teams.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Esme's friendliness doesn't indicate age ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Esme greeting vendors is unrelated to Nell checking the schedule.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Greeting vendors has no connection to Ben and Isla's team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Being warm and friendly could plausibly help sales but is not a strong logical link, though it slightly supports higher sales.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Esme's greeting behavior has no bearing on the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Esme's friendliness with vendors is unrelated to the flower stall selling out.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Esme's greeting vendors is unrelated to Ben restocking bread.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Ben and Bo being on different teams doesn't determine Bo and Isla's team relationship in a two-person comparison without knowing team count.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Team assignment of Ben and Bo has no bearing on who is oldest.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Ben and Bo's team split is unrelated to Nell checking the schedule.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Ben and Bo being on different teams doesn't determine whether Ben and Isla are on different teams.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Team assignments are unrelated to sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "If Ben and Bo are on different teams, there must be at least two teams, supporting the claim of two teams.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Team membership has no bearing on flower stall sales.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Being on different teams doesn't relate to restocking bread baskets.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Team differences between Bo and Isla don't relate to age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Team membership is unrelated to checking a schedule.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Bo and Isla being on different teams doesn't determine Ben and Isla's team relationship.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Team differences don't relate to sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "If Bo and Isla are on different teams, there must be at least two teams, supporting that claim.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Team membership has no bearing on flower stall sales.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Team differences don't relate to restocking bread.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Being oldest doesn't imply checking the schedule near the fruit stand.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Age has no bearing on team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Being oldest doesn't relate to sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Age has no bearing on the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Being oldest doesn't relate to flower stall sales.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Being oldest doesn't relate to restocking bread baskets.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Checking a schedule is unrelated to team assignments among Ben and Isla.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Checking the schedule is unrelated to sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Checking a vendor rotation schedule has no bearing on how many teams existed.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Confirming vendor rotation has no bearing on how fast the flower stall sold out.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Checking the schedule is unrelated to whether Ben restocked bread baskets.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Being on different teams doesn't indicate anything about Esme's sales ranking.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Ben and Isla being on different teams implies at least two teams exist, supporting the claim of two teams.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Team assignments of Ben and Isla have no connection to flower stall sales speed.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Being on a different team from Isla doesn't relate to Ben restocking bread baskets.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Esme's high sales ranking doesn't imply anything about the number of teams.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Esme's sales ranking is unrelated to the flower stall's sell-out speed.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Esme's sales performance has no bearing on Ben's restocking activity.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "The number of teams has no logical connection to how fast the flower stall sold out.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "The number of teams doesn't relate to Ben's specific restocking action.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "The flower stall selling out quickly is unrelated to Ben restocking bread baskets.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "bo",
+    "mentions": [
+     "Bo"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "binary",
+    "arity_span": "There were two teams."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "sales_rank",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "bo",
+    "b": "ben",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 4,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "bo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "ben",
+    "b": "isla",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "team",
+    "kind": "different",
+    "a": "ben",
+    "b": "bo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "team",
+    "kind": "different",
+    "a": "bo",
+    "b": "isla",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "team",
+    "kind": "different",
+    "a": "ben",
+    "b": "isla",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 18,
+  "pairs_requested": 153,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 6,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 18,
+  "n_edges": 5,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    16
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "team",
+    "entities": [
+     "ben",
+     "bo",
+     "isla"
+    ],
+    "relations": [
+     3,
+     4,
+     5
+    ],
+    "claim_ids": [
+     9,
+     10,
+     13
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   1.232595164407831e-32,
+   1.232595164407831e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 2,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 15,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 1983,
+   "api_calls": 0,
+   "cache_hits": 1983,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8,
+    14
+   ],
+   [
+    9,
+    10,
+    13,
+    15
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "team",
+    "entities": [
+     "ben",
+     "bo",
+     "isla"
+    ],
+    "relations": [
+     3,
+     4,
+     5
+    ],
+    "claim_ids": [
+     9,
+     10,
+     13
+    ],
+    "min_confidence": 0.95
+   }
+  ]
+ }
+}

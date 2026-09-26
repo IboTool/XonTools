@@ -1,0 +1,6971 @@
+{
+ "pass": "full",
+ "label": "rev. 2.2 development pass on the seen L1 corpus; not a result of record",
+ "threshold_rule": null,
+ "rev21_curves": {
+  "engine": [
+   {
+    "tau": 0.5,
+    "direct_f1": 0.916030534351145,
+    "cycle_f1": 0.916030534351145,
+    "mean": 0.916030534351145
+   },
+   {
+    "tau": 0.55,
+    "direct_f1": 0.9375,
+    "cycle_f1": 0.9375,
+    "mean": 0.9375
+   },
+   {
+    "tau": 0.6,
+    "direct_f1": 0.967741935483871,
+    "cycle_f1": 0.967741935483871,
+    "mean": 0.967741935483871
+   },
+   {
+    "tau": 0.65,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   },
+   {
+    "tau": 0.7,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   },
+   {
+    "tau": 0.75,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   },
+   {
+    "tau": 0.8,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   },
+   {
+    "tau": 0.85,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   },
+   {
+    "tau": 0.9,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   }
+  ],
+  "minimal": [
+   {
+    "tau": 0.5,
+    "direct_f1": 0.923076923076923,
+    "cycle_f1": 0.923076923076923,
+    "mean": 0.923076923076923
+   },
+   {
+    "tau": 0.55,
+    "direct_f1": 0.9448818897637796,
+    "cycle_f1": 0.9448818897637796,
+    "mean": 0.9448818897637796
+   },
+   {
+    "tau": 0.6,
+    "direct_f1": 0.975609756097561,
+    "cycle_f1": 0.975609756097561,
+    "mean": 0.975609756097561
+   },
+   {
+    "tau": 0.65,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   },
+   {
+    "tau": 0.7,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   },
+   {
+    "tau": 0.75,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   },
+   {
+    "tau": 0.8,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   },
+   {
+    "tau": 0.85,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   },
+   {
+    "tau": 0.9,
+    "direct_f1": 1.0,
+    "cycle_f1": 1.0,
+    "mean": 1.0
+   }
+  ],
+  "pairwise": [
+   {
+    "tau": 0.5,
+    "direct_f1": 0.916030534351145,
+    "cycle_f1": 0.32941176470588235,
+    "mean": 0.6227211495285137
+   },
+   {
+    "tau": 0.55,
+    "direct_f1": 0.9448818897637796,
+    "cycle_f1": 0.325,
+    "mean": 0.6349409448818898
+   },
+   {
+    "tau": 0.6,
+    "direct_f1": 0.975609756097561,
+    "cycle_f1": 0.24999999999999997,
+    "mean": 0.6128048780487805
+   },
+   {
+    "tau": 0.65,
+    "direct_f1": 1.0,
+    "cycle_f1": 0.15384615384615385,
+    "mean": 0.5769230769230769
+   },
+   {
+    "tau": 0.7,
+    "direct_f1": 1.0,
+    "cycle_f1": 0.125,
+    "mean": 0.5625
+   },
+   {
+    "tau": 0.75,
+    "direct_f1": 1.0,
+    "cycle_f1": 0.125,
+    "mean": 0.5625
+   },
+   {
+    "tau": 0.8,
+    "direct_f1": 1.0,
+    "cycle_f1": 0.125,
+    "mean": 0.5625
+   },
+   {
+    "tau": 0.85,
+    "direct_f1": 1.0,
+    "cycle_f1": 0.09523809523809523,
+    "mean": 0.5476190476190477
+   },
+   {
+    "tau": 0.9,
+    "direct_f1": 1.0,
+    "cycle_f1": 0.06451612903225806,
+    "mean": 0.532258064516129
+   }
+  ]
+ },
+ "diagnostics": {
+  "label": "rev. 2.2 development pass on the seen L1 corpus; not a result of record",
+  "documents": 180,
+  "selected_thresholds": null,
+  "unscored": {
+   "pairs_requested": 23754,
+   "unscored": 0,
+   "unscored_malformed": 0,
+   "left_out_by_model": 0,
+   "relations_rescored": 0,
+   "answers_for_another_pair": 0,
+   "fraction": 0.0,
+   "limit": 0.01,
+   "stop": false,
+   "documents_with_planted_unscored": 0,
+   "documents": []
+  },
+  "methods": {
+   "rev_2_1": {
+    "engine": {
+     "direct": {
+      "n": 120,
+      "tp": 60,
+      "fp": 11,
+      "fn": 0,
+      "precision": 0.8450704225352113,
+      "recall": 1.0,
+      "f1": 0.916030534351145
+     },
+     "cycle": {
+      "n": 120,
+      "tp": 60,
+      "fp": 11,
+      "fn": 0,
+      "precision": 0.8450704225352113,
+      "recall": 1.0,
+      "f1": 0.916030534351145
+     },
+     "cycle_by_type": {
+      "order_cycle": {
+       "n": 40,
+       "tp": 20,
+       "fp": 4,
+       "fn": 0,
+       "precision": 0.8333333333333334,
+       "recall": 1.0,
+       "f1": 0.9090909090909091
+      },
+      "equality_break": {
+       "n": 40,
+       "tp": 20,
+       "fp": 4,
+       "fn": 0,
+       "precision": 0.8333333333333334,
+       "recall": 1.0,
+       "f1": 0.9090909090909091
+      },
+      "binary_parity": {
+       "n": 40,
+       "tp": 20,
+       "fp": 3,
+       "fn": 0,
+       "precision": 0.8695652173913043,
+       "recall": 1.0,
+       "f1": 0.9302325581395349
+      }
+     },
+     "false_positive_rate": 0.18333333333333332,
+     "binary_control_false_positive_rate": 0.15,
+     "localization": 1.0,
+     "false_positive_rate_by_type": {
+      "order_cycle": 0.2,
+      "equality_break": 0.2,
+      "binary_parity": 0.15
+     },
+     "carried": false
+    },
+    "minimal": {
+     "direct": {
+      "n": 120,
+      "tp": 60,
+      "fp": 10,
+      "fn": 0,
+      "precision": 0.8571428571428571,
+      "recall": 1.0,
+      "f1": 0.923076923076923
+     },
+     "cycle": {
+      "n": 120,
+      "tp": 60,
+      "fp": 10,
+      "fn": 0,
+      "precision": 0.8571428571428571,
+      "recall": 1.0,
+      "f1": 0.923076923076923
+     },
+     "cycle_by_type": {
+      "order_cycle": {
+       "n": 40,
+       "tp": 20,
+       "fp": 3,
+       "fn": 0,
+       "precision": 0.8695652173913043,
+       "recall": 1.0,
+       "f1": 0.9302325581395349
+      },
+      "equality_break": {
+       "n": 40,
+       "tp": 20,
+       "fp": 4,
+       "fn": 0,
+       "precision": 0.8333333333333334,
+       "recall": 1.0,
+       "f1": 0.9090909090909091
+      },
+      "binary_parity": {
+       "n": 40,
+       "tp": 20,
+       "fp": 3,
+       "fn": 0,
+       "precision": 0.8695652173913043,
+       "recall": 1.0,
+       "f1": 0.9302325581395349
+      }
+     },
+     "false_positive_rate": 0.16666666666666666,
+     "binary_control_false_positive_rate": 0.15,
+     "localization": 1.0,
+     "false_positive_rate_by_type": {
+      "order_cycle": 0.15,
+      "equality_break": 0.2,
+      "binary_parity": 0.15
+     },
+     "carried": false
+    },
+    "pairwise": {
+     "direct": {
+      "n": 120,
+      "tp": 60,
+      "fp": 11,
+      "fn": 0,
+      "precision": 0.8450704225352113,
+      "recall": 1.0,
+      "f1": 0.916030534351145
+     },
+     "cycle": {
+      "n": 120,
+      "tp": 14,
+      "fp": 11,
+      "fn": 46,
+      "precision": 0.56,
+      "recall": 0.23333333333333334,
+      "f1": 0.32941176470588235
+     },
+     "cycle_by_type": {
+      "order_cycle": {
+       "n": 40,
+       "tp": 5,
+       "fp": 4,
+       "fn": 15,
+       "precision": 0.5555555555555556,
+       "recall": 0.25,
+       "f1": 0.3448275862068966
+      },
+      "equality_break": {
+       "n": 40,
+       "tp": 6,
+       "fp": 3,
+       "fn": 14,
+       "precision": 0.6666666666666666,
+       "recall": 0.3,
+       "f1": 0.41379310344827586
+      },
+      "binary_parity": {
+       "n": 40,
+       "tp": 3,
+       "fp": 4,
+       "fn": 17,
+       "precision": 0.42857142857142855,
+       "recall": 0.15,
+       "f1": 0.2222222222222222
+      }
+     },
+     "false_positive_rate": 0.18333333333333332,
+     "binary_control_false_positive_rate": 0.2,
+     "localization": null,
+     "false_positive_rate_by_type": {
+      "order_cycle": 0.2,
+      "equality_break": 0.15,
+      "binary_parity": 0.2
+     },
+     "carried": false
+    },
+    "direct_thinking": {
+     "direct": {
+      "n": 120,
+      "tp": 60,
+      "fp": 9,
+      "fn": 0,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "f1": 0.9302325581395349
+     },
+     "cycle": {
+      "n": 120,
+      "tp": 60,
+      "fp": 9,
+      "fn": 0,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "f1": 0.9302325581395349
+     },
+     "cycle_by_type": {
+      "order_cycle": {
+       "n": 40,
+       "tp": 20,
+       "fp": 2,
+       "fn": 0,
+       "precision": 0.9090909090909091,
+       "recall": 1.0,
+       "f1": 0.9523809523809523
+      },
+      "equality_break": {
+       "n": 40,
+       "tp": 20,
+       "fp": 4,
+       "fn": 0,
+       "precision": 0.8333333333333334,
+       "recall": 1.0,
+       "f1": 0.9090909090909091
+      },
+      "binary_parity": {
+       "n": 40,
+       "tp": 20,
+       "fp": 3,
+       "fn": 0,
+       "precision": 0.8695652173913043,
+       "recall": 1.0,
+       "f1": 0.9302325581395349
+      }
+     },
+     "false_positive_rate": 0.15,
+     "binary_control_false_positive_rate": 0.15,
+     "localization": 1.0,
+     "false_positive_rate_by_type": {
+      "order_cycle": 0.1,
+      "equality_break": 0.2,
+      "binary_parity": 0.15
+     },
+     "carried": true
+    },
+    "direct_no_thinking": {
+     "direct": {
+      "n": 120,
+      "tp": 60,
+      "fp": 29,
+      "fn": 0,
+      "precision": 0.6741573033707865,
+      "recall": 1.0,
+      "f1": 0.8053691275167786
+     },
+     "cycle": {
+      "n": 120,
+      "tp": 60,
+      "fp": 29,
+      "fn": 0,
+      "precision": 0.6741573033707865,
+      "recall": 1.0,
+      "f1": 0.8053691275167786
+     },
+     "cycle_by_type": {
+      "order_cycle": {
+       "n": 40,
+       "tp": 20,
+       "fp": 3,
+       "fn": 0,
+       "precision": 0.8695652173913043,
+       "recall": 1.0,
+       "f1": 0.9302325581395349
+      },
+      "equality_break": {
+       "n": 40,
+       "tp": 20,
+       "fp": 6,
+       "fn": 0,
+       "precision": 0.7692307692307693,
+       "recall": 1.0,
+       "f1": 0.8695652173913044
+      },
+      "binary_parity": {
+       "n": 40,
+       "tp": 20,
+       "fp": 20,
+       "fn": 0,
+       "precision": 0.5,
+       "recall": 1.0,
+       "f1": 0.6666666666666666
+      }
+     },
+     "false_positive_rate": 0.48333333333333334,
+     "binary_control_false_positive_rate": 1.0,
+     "localization": 1.0,
+     "false_positive_rate_by_type": {
+      "order_cycle": 0.15,
+      "equality_break": 0.3,
+      "binary_parity": 1.0
+     },
+     "carried": true
+    }
+   },
+   "rev_2_2_at_0.5": {
+    "engine": {
+     "direct": {
+      "n": 120,
+      "tp": 60,
+      "fp": 4,
+      "fn": 0,
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1": 0.967741935483871
+     },
+     "cycle": {
+      "n": 120,
+      "tp": 60,
+      "fp": 4,
+      "fn": 0,
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1": 0.967741935483871
+     },
+     "cycle_by_type": {
+      "order_cycle": {
+       "n": 40,
+       "tp": 20,
+       "fp": 0,
+       "fn": 0,
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "equality_break": {
+       "n": 40,
+       "tp": 20,
+       "fp": 2,
+       "fn": 0,
+       "precision": 0.9090909090909091,
+       "recall": 1.0,
+       "f1": 0.9523809523809523
+      },
+      "binary_parity": {
+       "n": 40,
+       "tp": 20,
+       "fp": 2,
+       "fn": 0,
+       "precision": 0.9090909090909091,
+       "recall": 1.0,
+       "f1": 0.9523809523809523
+      }
+     },
+     "false_positive_rate": 0.06666666666666667,
+     "binary_control_false_positive_rate": 0.1,
+     "localization": 0.9833333333333333,
+     "false_positive_rate_by_type": {
+      "order_cycle": 0.0,
+      "equality_break": 0.1,
+      "binary_parity": 0.1
+     },
+     "carried": false
+    },
+    "minimal": {
+     "direct": {
+      "n": 120,
+      "tp": 60,
+      "fp": 4,
+      "fn": 0,
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1": 0.967741935483871
+     },
+     "cycle": {
+      "n": 120,
+      "tp": 60,
+      "fp": 4,
+      "fn": 0,
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1": 0.967741935483871
+     },
+     "cycle_by_type": {
+      "order_cycle": {
+       "n": 40,
+       "tp": 20,
+       "fp": 0,
+       "fn": 0,
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "equality_break": {
+       "n": 40,
+       "tp": 20,
+       "fp": 2,
+       "fn": 0,
+       "precision": 0.9090909090909091,
+       "recall": 1.0,
+       "f1": 0.9523809523809523
+      },
+      "binary_parity": {
+       "n": 40,
+       "tp": 20,
+       "fp": 2,
+       "fn": 0,
+       "precision": 0.9090909090909091,
+       "recall": 1.0,
+       "f1": 0.9523809523809523
+      }
+     },
+     "false_positive_rate": 0.06666666666666667,
+     "binary_control_false_positive_rate": 0.1,
+     "localization": 0.9666666666666667,
+     "false_positive_rate_by_type": {
+      "order_cycle": 0.0,
+      "equality_break": 0.1,
+      "binary_parity": 0.1
+     },
+     "carried": false
+    },
+    "pairwise": {
+     "direct": {
+      "n": 120,
+      "tp": 60,
+      "fp": 4,
+      "fn": 0,
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1": 0.967741935483871
+     },
+     "cycle": {
+      "n": 120,
+      "tp": 6,
+      "fp": 4,
+      "fn": 54,
+      "precision": 0.6,
+      "recall": 0.1,
+      "f1": 0.17142857142857143
+     },
+     "cycle_by_type": {
+      "order_cycle": {
+       "n": 40,
+       "tp": 3,
+       "fp": 0,
+       "fn": 17,
+       "precision": 1.0,
+       "recall": 0.15,
+       "f1": 0.2608695652173913
+      },
+      "equality_break": {
+       "n": 40,
+       "tp": 3,
+       "fp": 2,
+       "fn": 17,
+       "precision": 0.6,
+       "recall": 0.15,
+       "f1": 0.24
+      },
+      "binary_parity": {
+       "n": 40,
+       "tp": 0,
+       "fp": 2,
+       "fn": 20,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     },
+     "false_positive_rate": 0.06666666666666667,
+     "binary_control_false_positive_rate": 0.1,
+     "localization": null,
+     "false_positive_rate_by_type": {
+      "order_cycle": 0.0,
+      "equality_break": 0.1,
+      "binary_parity": 0.1
+     },
+     "carried": false
+    },
+    "direct_thinking": {
+     "direct": {
+      "n": 120,
+      "tp": 60,
+      "fp": 9,
+      "fn": 0,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "f1": 0.9302325581395349
+     },
+     "cycle": {
+      "n": 120,
+      "tp": 60,
+      "fp": 9,
+      "fn": 0,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "f1": 0.9302325581395349
+     },
+     "cycle_by_type": {
+      "order_cycle": {
+       "n": 40,
+       "tp": 20,
+       "fp": 2,
+       "fn": 0,
+       "precision": 0.9090909090909091,
+       "recall": 1.0,
+       "f1": 0.9523809523809523
+      },
+      "equality_break": {
+       "n": 40,
+       "tp": 20,
+       "fp": 4,
+       "fn": 0,
+       "precision": 0.8333333333333334,
+       "recall": 1.0,
+       "f1": 0.9090909090909091
+      },
+      "binary_parity": {
+       "n": 40,
+       "tp": 20,
+       "fp": 3,
+       "fn": 0,
+       "precision": 0.8695652173913043,
+       "recall": 1.0,
+       "f1": 0.9302325581395349
+      }
+     },
+     "false_positive_rate": 0.15,
+     "binary_control_false_positive_rate": 0.15,
+     "localization": 1.0,
+     "false_positive_rate_by_type": {
+      "order_cycle": 0.1,
+      "equality_break": 0.2,
+      "binary_parity": 0.15
+     },
+     "carried": true
+    },
+    "direct_no_thinking": {
+     "direct": {
+      "n": 120,
+      "tp": 60,
+      "fp": 29,
+      "fn": 0,
+      "precision": 0.6741573033707865,
+      "recall": 1.0,
+      "f1": 0.8053691275167786
+     },
+     "cycle": {
+      "n": 120,
+      "tp": 60,
+      "fp": 29,
+      "fn": 0,
+      "precision": 0.6741573033707865,
+      "recall": 1.0,
+      "f1": 0.8053691275167786
+     },
+     "cycle_by_type": {
+      "order_cycle": {
+       "n": 40,
+       "tp": 20,
+       "fp": 3,
+       "fn": 0,
+       "precision": 0.8695652173913043,
+       "recall": 1.0,
+       "f1": 0.9302325581395349
+      },
+      "equality_break": {
+       "n": 40,
+       "tp": 20,
+       "fp": 6,
+       "fn": 0,
+       "precision": 0.7692307692307693,
+       "recall": 1.0,
+       "f1": 0.8695652173913044
+      },
+      "binary_parity": {
+       "n": 40,
+       "tp": 20,
+       "fp": 20,
+       "fn": 0,
+       "precision": 0.5,
+       "recall": 1.0,
+       "f1": 0.6666666666666666
+      }
+     },
+     "false_positive_rate": 0.48333333333333334,
+     "binary_control_false_positive_rate": 1.0,
+     "localization": 1.0,
+     "false_positive_rate_by_type": {
+      "order_cycle": 0.15,
+      "equality_break": 0.3,
+      "binary_parity": 1.0
+     },
+     "carried": true
+    }
+   }
+  },
+  "comparisons": {
+   "0.5": {
+    "engine": {
+     "method": "engine",
+     "tau_2_2": 0.5,
+     "tau_2_1": 0.5,
+     "rev_2_1_false_positives": [
+      {
+       "doc_id": "b22-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 18,
+          "b": 22,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Nell sitting quietly reviewing cards suggests she is not actively chatting, making it somewhat less likely she is simultaneously chatting with Noor."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "18": "Nell sat quietly reviewing trivia cards.",
+         "22": "Noor chatted with Nell about favorite quiz categories."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "2": "Kira was carrying a stack of scoresheets under one arm.",
+         "7": "Nell was laughing at a joke someone made near the entrance.",
+         "16": "Kira helped rearrange chairs so everyone could see the quiz board clearly.",
+         "18": "Nell sat quietly reviewing trivia cards.",
+         "22": "Noor chatted with Nell about favorite quiz categories."
+        }
+       }
+      },
+      {
+       "doc_id": "b26-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 6,
+          "b": 10,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Lena setting her sketchbook beside Rosa suggests they were together at the same time, weakly implying they shared a shift, which contradicts them working different shifts."
+         },
+         {
+          "a": 7,
+          "b": 9,
+          "relation": "contradicts",
+          "confidence": 0.6,
+          "rationale": "If Hana and Lena worked different shifts, it's less likely both would be present chatting together with the other three at the same time."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "6": "Lena set her sketchbook on the table beside Rosa.",
+         "7": "Hana and Lena worked different shifts.",
+         "9": "The five of them chatted about the new clay supplier while waiting for the instructor to arrive.",
+         "10": "Lena and Rosa worked different shifts."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "4": "Wren had suggested the studio because it had good natural light for glazing work.",
+         "6": "Lena set her sketchbook on the table beside Rosa.",
+         "7": "Hana and Lena worked different shifts.",
+         "8": "Rosa preferred working near the window where the afternoon sun warmed the wheel.",
+         "9": "The five of them chatted about the new clay supplier while waiting for the instructor to arrive.",
+         "10": "Lena and Rosa worked different shifts.",
+         "13": "Hana and Rosa worked different shifts.",
+         "21": "The group settled into a quiet rhythm, shaping clay, trimming edges, and comparing glazes under the soft studio lights until the session ended.",
+         "22": "Everyone helped tidy the tables together."
+        }
+       }
+      },
+      {
+       "doc_id": "b28-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 9,
+          "b": 21,
+          "relation": "contradicts",
+          "confidence": 0.6,
+          "rationale": "Wind rippling the surface suggests water is not perfectly calm, which contradicts oars slicing through calm water."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "9": "The wind picked up slightly, rippling the surface of the river.",
+         "21": "The oars sliced through the calm water in unison."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "5": "Alma arrived just as the announcer called the first heat to the starting line.",
+         "9": "The wind picked up slightly, rippling the surface of the river.",
+         "10": "The flags along the shore snapped crisply.",
+         "18": "Both Alma and Jun seemed relaxed before the race.",
+         "21": "The oars sliced through the calm water in unison.",
+         "22": "The crowd cheered as the boats streaked toward the first bend of the river."
+        }
+       }
+      },
+      {
+       "doc_id": "b30-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct",
+         "claim_balance"
+        ],
+        "direct": [
+         {
+          "a": 1,
+          "b": 5,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "If everyone arrived within a few minutes, this contradicts Nell arriving 'a little later' implying a notable delay."
+         }
+        ],
+        "cycle": {
+         "claims": [
+          1,
+          3,
+          5
+         ],
+         "relations": [
+          {
+           "a": 1,
+           "b": 3,
+           "relation": "supports",
+           "confidence": 0.55,
+           "rationale": "Everyone arriving within minutes of each other is broadly consistent with someone arriving first, like Isla."
+          },
+          {
+           "a": 3,
+           "b": 5,
+           "relation": "supports",
+           "confidence": 0.7,
+           "rationale": "Isla arriving first implies others, including Nell, would arrive after her, supporting Nell arriving later."
+          },
+          {
+           "a": 1,
+           "b": 5,
+           "relation": "contradicts",
+           "confidence": 0.5,
+           "rationale": "If everyone arrived within a few minutes, this contradicts Nell arriving 'a little later' implying a notable delay."
+          }
+         ]
+        },
+        "entity": [],
+        "claims": {
+         "1": "Everyone arrived within a few minutes of each other.",
+         "3": "Isla arrived first, carrying a stack of novels she wanted to discuss.",
+         "5": "Nell arrived a little later."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "1": "Everyone arrived within a few minutes of each other.",
+         "5": "Nell arrived a little later.",
+         "6": "Nell apologized for the delay caused by traffic near the station.",
+         "15": "Everyone nodded in agreement.",
+         "20": "Isla countered with a different interpretation.",
+         "21": "The evening continued with lively debate, occasional laughter, and the comfortable rustle of pages turning."
+        }
+       }
+      },
+      {
+       "doc_id": "b31-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "entity"
+        ],
+        "direct": [],
+        "cycle": null,
+        "entity": [
+         {
+          "type": "order_cycle",
+          "attribute": "signup_order",
+          "entities": [
+           "kira",
+           "otto"
+          ],
+          "claims": [
+           22,
+           23
+          ]
+         }
+        ],
+        "claims": {
+         "22": "Kira signed the sign-up sheet first.",
+         "23": "Otto signed the sign-up sheet after Kira."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "3": "Otto arrived first.",
+         "5": "Kira came in shortly after Otto.",
+         "11": "Milo had already picked seats near the window.",
+         "12": "Milo arranged chairs so everyone could see the display of new arrivals.",
+         "22": "Kira signed the sign-up sheet first.",
+         "23": "Otto signed the sign-up sheet after Kira."
+        }
+       }
+      },
+      {
+       "doc_id": "b32-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct",
+         "claim_balance"
+        ],
+        "direct": [
+         {
+          "a": 15,
+          "b": 24,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "Asking to continue the discussion implies the meeting is not yet over, contradicting it wrapping up."
+         }
+        ],
+        "cycle": {
+         "claims": [
+          1,
+          15,
+          24
+         ],
+         "relations": [
+          {
+           "a": 1,
+           "b": 15,
+           "relation": "supports",
+           "confidence": 0.5,
+           "rationale": "Noor being head judge could plausibly support her authority to ask everyone to quiet down, giving some causal connection."
+          },
+          {
+           "a": 15,
+           "b": 24,
+           "relation": "contradicts",
+           "confidence": 0.5,
+           "rationale": "Asking to continue the discussion implies the meeting is not yet over, contradicting it wrapping up."
+          },
+          {
+           "a": 1,
+           "b": 24,
+           "relation": "supports",
+           "confidence": 0.55,
+           "rationale": "As head judge, Noor plausibly would be the one to thank everyone and wrap up the meeting, giving mild support."
+          }
+         ]
+        },
+        "entity": [],
+        "claims": {
+         "1": "Noor is the head judge.",
+         "15": "Noor asked everyone to quiet down so the discussion could continue.",
+         "24": "Noor thanked everyone for coming as the meeting wrapped up."
+        }
+       },
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 4,
+          "b": 10,
+          "relation": "contradicts",
+          "confidence": 0.7,
+          "rationale": "If Hana came in shortly after Milo arrived, both were entering the same place, implying they were in or entering the same house at that time, which contradicts the claim that they were in different houses."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "4": "Hana came in shortly after Milo arrived.",
+         "5": "Hana greeted everyone with a plate of cookies she had baked.",
+         "8": "Dev settled into the corner chair with his notebook ready for discussion.",
+         "10": "Milo and Hana were in different houses.",
+         "11": "The group spent a while debating the ending of the book.",
+         "13": "Hana and Dev were in different houses.",
+         "15": "Noor asked everyone to quiet down so the discussion could continue.",
+         "16": "Milo and Dev were in different houses.",
+         "22": "Milo began gathering his things.",
+         "24": "Noor thanked everyone for coming as the meeting wrapped up."
+        }
+       }
+      },
+      {
+       "doc_id": "b33-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 16,
+          "b": 29,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "Ivo finishing ahead of Kira in the race suggests unequal performance, which could contradict them working equally well."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "16": "Ivo finished ahead of Kira.",
+         "29": "Both Kira's and Ivo's designs worked equally well in the trials."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "16": "Ivo finished ahead of Kira.",
+         "28": "Kira's design used fewer parts than Ivo's design.",
+         "29": "Both Kira's and Ivo's designs worked equally well in the trials."
+        }
+       }
+      },
+      {
+       "doc_id": "b34-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 4,
+          "b": 5,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "If Ben carried the folder, this makes it less likely that Sami was the one carrying it, assuming one folder is being referenced."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "4": "Ben was carrying a folder of printed diagrams.",
+         "5": "Sami was carrying a folder of printed diagrams."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "7": "Vik had already claimed a seat near the window.",
+         "8": "Vik was tightening a small motor with a screwdriver.",
+         "22": "Sami helped a younger participant fix a loose wheel axle.",
+         "23": "Sami laughed when the wheel axle popped off again.",
+         "28": "Kai ranked fastest overall among the five.",
+         "29": "Everyone agreed the difference in speed was small.",
+         "30": "The group packed away tools as the workshop wound down."
+        }
+       }
+      },
+      {
+       "doc_id": "b45-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 15,
+          "b": 18,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Hana pausing frequently to sketch suggests she moved slower, which would make it less likely she finished ahead of Leo."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "15": "Hana walked with a steady pace, pausing now and then to sketch a quick outline of a sparrow perched on a fence post.",
+         "18": "Hana finished ahead of Leo."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "0": "Alma is the head judge.",
+         "5": "Leo seemed a little unsure of the route markers.",
+         "6": "Alma pointed out the trail signs to help Leo along.",
+         "8": "Everyone lifted their binoculars at once.",
+         "18": "Hana finished ahead of Leo.",
+         "20": "Alma read the tally aloud while the others rested on a fallen log."
+        }
+       }
+      },
+      {
+       "doc_id": "b54-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "claim_balance"
+        ],
+        "direct": [],
+        "cycle": {
+         "claims": [
+          0,
+          5,
+          20
+         ],
+         "relations": [
+          {
+           "a": 0,
+           "b": 5,
+           "relation": "contradicts",
+           "confidence": 0.6,
+           "rationale": "A modest crowd this year could contradict the idea that turnout was larger than the last three combined."
+          },
+          {
+           "a": 5,
+           "b": 20,
+           "relation": "supports",
+           "confidence": 0.55,
+           "rationale": "A larger turnout could support an atmosphere of anticipation, making the claim slightly more plausible"
+          },
+          {
+           "a": 0,
+           "b": 20,
+           "relation": "supports",
+           "confidence": 0.6,
+           "rationale": "The described modest, cool evening atmosphere aligns with and supports the description of quiet anticipation later in the evening."
+          }
+         ]
+        },
+        "entity": [],
+        "claims": {
+         "0": "The annual club exhibition drew a modest crowd on a cool autumn evening.",
+         "5": "The turnout this year seemed larger than the last three gatherings combined.",
+         "8": "The judges took their seats at a long table near the entrance, sorting through folders of entries while the room slowly filled with murmurs and laughter.",
+         "20": "The evening carried on with quiet anticipation, the kind that settles over a room right before results are announced."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "0": "The annual club exhibition drew a modest crowd on a cool autumn evening.",
+         "1": "Isla arrived first, greeting the organizers with a warm smile before finding a seat near the front.",
+         "3": "Nell wandered in a few minutes later, chatting with Cy about the drive over from the north side of town.",
+         "5": "The turnout this year seemed larger than the last three gatherings combined.",
+         "8": "The judges took their seats at a long table near the entrance, sorting through folders of entries while the room slowly filled with murmurs and laughter.",
+         "14": "Isla and Nell began discussing which entries might win the top prizes this year.",
+         "16": "Cy leaned over to ask Ivo about the schedule for the awards ceremony.",
+         "18": "As the lights dimmed for the presentation, the five friends exchanged glances, each hoping their favorite entry would be recognized.",
+         "19": "Nell rummaged through a bag for a program while Quinn scanned the room for a good vantage point near the stage."
+        }
+       }
+      },
+      {
+       "doc_id": "b56-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 8,
+          "b": 20,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Even, carefully arranged lighting suggests controlled conditions, which would tend to counter the idea of shifting natural light causing shadows over the display tables."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "8": "The lighting in the main room was carefully arranged so that every print would be seen under even conditions.",
+         "20": "The afternoon light cast long shadows across the display tables where framed prints were being arranged in neat rows."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "8": "The lighting in the main room was carefully arranged so that every print would be seen under even conditions.",
+         "13": "Wren chatted quietly with a volunteer near the entrance.",
+         "14": "Wren was checking names off a list as guests filed inside.",
+         "19": "The afternoon light shifted through the tall windows.",
+         "20": "The afternoon light cast long shadows across the display tables where framed prints were being arranged in neat rows."
+        }
+       }
+      }
+     ],
+     "still_flagged": 1,
+     "new_false_positives": [
+      {
+       "doc_id": "b05-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 3,
+          "b": 22,
+          "relation": "contradicts",
+          "confidence": 0.85,
+          "rationale": "A implies Mina and Jude were together in the same location (she greeted him as he came in), which contradicts B's claim that they were in different houses."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "3": "Mina greeted Jude who came in shortly after her.",
+         "9": "Everyone found their seats as the afternoon light came through the tall windows.",
+         "10": "Someone dimmed the projector for the opening announcements.",
+         "22": "Mina and Jude were in different houses."
+        }
+       }
+      },
+      {
+       "doc_id": "b07-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "direct",
+         "claim_balance"
+        ],
+        "direct": [
+         {
+          "a": 8,
+          "b": 11,
+          "relation": "contradicts",
+          "confidence": 0.72,
+          "rationale": "A claims Vik arrived later than the others, implying Vik was last. B claims Milo was last. Both cannot be last, so these claims conflict unless 'others' in A excludes Milo, but that reading is strained given B's explicit 'last' claim."
+         }
+        ],
+        "cycle": {
+         "claims": [
+          8,
+          11,
+          24
+         ],
+         "relations": [
+          {
+           "a": 8,
+           "b": 11,
+           "relation": "contradicts",
+           "confidence": 0.72,
+           "rationale": "A claims Vik arrived later than the others, implying Vik was last. B claims Milo was last. Both cannot be last, so these claims conflict unless 'others' in A excludes Milo, but that reading is strained given B's explicit 'last' claim."
+          },
+          {
+           "a": 11,
+           "b": 24,
+           "relation": "supports",
+           "confidence": 0.75,
+           "rationale": "If Milo strolled in last, then everyone else, including Vik, arrived before Milo, which is consistent with Vik arriving before Milo as stated in B."
+          },
+          {
+           "a": 8,
+           "b": 24,
+           "relation": "supports",
+           "confidence": 0.55,
+           "rationale": "A states Vik arrived slightly later than others in general, which is consistent with B's specific ordering placing Vik after Bo but before Milo, though it depends on how many 'others' there are and their arrival times."
+          }
+         ]
+        },
+        "entity": [],
+        "claims": {
+         "3": "Bo was humming quietly while the ovens warmed.",
+         "6": "Rosa was carrying a basket of eggs from the market stall down the road.",
+         "7": "Bo and Rosa chatted about the weekend fair while sorting flour sacks.",
+         "8": "Vik showed up a little later than the others.",
+         "11": "Milo strolled in last.",
+         "19": "Milo reached the high shelf to grab extra baking tins without needing a stool.",
+         "21": "Finn laughed and passed Milo the tray from below.",
+         "24": "Vik arrived after Bo but before Milo.",
+         "28": "Finn was humming along with the radio as the bakery buzzed with the comfortable rhythm of a busy village morning."
+        }
+       }
+      },
+      {
+       "doc_id": "b25-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 0,
+          "b": 8,
+          "relation": "contradicts",
+          "confidence": 0.62,
+          "rationale": "If Milo was first to walk in, that suggests no one else was there before him, yet B says Mina was already seated when presumably Milo entered. This creates tension unless B occurs in a different scene, but taken together they are awkward."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "0": "Milo was the first to walk in.",
+         "8": "Mina was already seated at the far table, sorting through glazes she had picked out the week before.",
+         "17": "Mina asked Fay if she wanted to trade seats so she could be closer to the kiln.",
+         "18": "Fay agreed happily to trade seats with Mina."
+        }
+       }
+      }
+     ],
+     "lost_detections": []
+    },
+    "minimal": {
+     "method": "minimal",
+     "tau_2_2": 0.5,
+     "tau_2_1": 0.5,
+     "rev_2_1_false_positives": [
+      {
+       "doc_id": "b22-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 18,
+          "b": 22,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Nell sitting quietly reviewing cards suggests she is not actively chatting, making it somewhat less likely she is simultaneously chatting with Noor."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "18": "Nell sat quietly reviewing trivia cards.",
+         "22": "Noor chatted with Nell about favorite quiz categories."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "2": "Kira was carrying a stack of scoresheets under one arm.",
+         "7": "Nell was laughing at a joke someone made near the entrance.",
+         "16": "Kira helped rearrange chairs so everyone could see the quiz board clearly.",
+         "18": "Nell sat quietly reviewing trivia cards.",
+         "22": "Noor chatted with Nell about favorite quiz categories."
+        }
+       }
+      },
+      {
+       "doc_id": "b26-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 6,
+          "b": 10,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Lena setting her sketchbook beside Rosa suggests they were together at the same time, weakly implying they shared a shift, which contradicts them working different shifts."
+         },
+         {
+          "a": 7,
+          "b": 9,
+          "relation": "contradicts",
+          "confidence": 0.6,
+          "rationale": "If Hana and Lena worked different shifts, it's less likely both would be present chatting together with the other three at the same time."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "6": "Lena set her sketchbook on the table beside Rosa.",
+         "7": "Hana and Lena worked different shifts.",
+         "9": "The five of them chatted about the new clay supplier while waiting for the instructor to arrive.",
+         "10": "Lena and Rosa worked different shifts."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "4": "Wren had suggested the studio because it had good natural light for glazing work.",
+         "6": "Lena set her sketchbook on the table beside Rosa.",
+         "7": "Hana and Lena worked different shifts.",
+         "8": "Rosa preferred working near the window where the afternoon sun warmed the wheel.",
+         "9": "The five of them chatted about the new clay supplier while waiting for the instructor to arrive.",
+         "10": "Lena and Rosa worked different shifts.",
+         "13": "Hana and Rosa worked different shifts.",
+         "21": "The group settled into a quiet rhythm, shaping clay, trimming edges, and comparing glazes under the soft studio lights until the session ended.",
+         "22": "Everyone helped tidy the tables together."
+        }
+       }
+      },
+      {
+       "doc_id": "b28-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 9,
+          "b": 21,
+          "relation": "contradicts",
+          "confidence": 0.6,
+          "rationale": "Wind rippling the surface suggests water is not perfectly calm, which contradicts oars slicing through calm water."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "9": "The wind picked up slightly, rippling the surface of the river.",
+         "21": "The oars sliced through the calm water in unison."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "5": "Alma arrived just as the announcer called the first heat to the starting line.",
+         "9": "The wind picked up slightly, rippling the surface of the river.",
+         "10": "The flags along the shore snapped crisply.",
+         "18": "Both Alma and Jun seemed relaxed before the race.",
+         "21": "The oars sliced through the calm water in unison.",
+         "22": "The crowd cheered as the boats streaked toward the first bend of the river."
+        }
+       }
+      },
+      {
+       "doc_id": "b30-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 1,
+          "b": 5,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "If everyone arrived within a few minutes, this contradicts Nell arriving 'a little later' implying a notable delay."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "1": "Everyone arrived within a few minutes of each other.",
+         "3": "Isla arrived first, carrying a stack of novels she wanted to discuss.",
+         "5": "Nell arrived a little later."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "1": "Everyone arrived within a few minutes of each other.",
+         "5": "Nell arrived a little later.",
+         "6": "Nell apologized for the delay caused by traffic near the station.",
+         "15": "Everyone nodded in agreement.",
+         "20": "Isla countered with a different interpretation.",
+         "21": "The evening continued with lively debate, occasional laughter, and the comfortable rustle of pages turning."
+        }
+       }
+      },
+      {
+       "doc_id": "b31-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "entity"
+        ],
+        "direct": [],
+        "cycle": null,
+        "entity": [
+         {
+          "type": "order_cycle",
+          "attribute": "signup_order",
+          "entities": [
+           "kira",
+           "otto"
+          ],
+          "claims": [
+           22,
+           23
+          ]
+         }
+        ],
+        "claims": {
+         "22": "Kira signed the sign-up sheet first.",
+         "23": "Otto signed the sign-up sheet after Kira."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "3": "Otto arrived first.",
+         "5": "Kira came in shortly after Otto.",
+         "11": "Milo had already picked seats near the window.",
+         "12": "Milo arranged chairs so everyone could see the display of new arrivals.",
+         "22": "Kira signed the sign-up sheet first.",
+         "23": "Otto signed the sign-up sheet after Kira."
+        }
+       }
+      },
+      {
+       "doc_id": "b32-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 15,
+          "b": 24,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "Asking to continue the discussion implies the meeting is not yet over, contradicting it wrapping up."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "1": "Noor is the head judge.",
+         "15": "Noor asked everyone to quiet down so the discussion could continue.",
+         "24": "Noor thanked everyone for coming as the meeting wrapped up."
+        }
+       },
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 4,
+          "b": 10,
+          "relation": "contradicts",
+          "confidence": 0.7,
+          "rationale": "If Hana came in shortly after Milo arrived, both were entering the same place, implying they were in or entering the same house at that time, which contradicts the claim that they were in different houses."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "4": "Hana came in shortly after Milo arrived.",
+         "5": "Hana greeted everyone with a plate of cookies she had baked.",
+         "8": "Dev settled into the corner chair with his notebook ready for discussion.",
+         "10": "Milo and Hana were in different houses.",
+         "11": "The group spent a while debating the ending of the book.",
+         "13": "Hana and Dev were in different houses.",
+         "15": "Noor asked everyone to quiet down so the discussion could continue.",
+         "16": "Milo and Dev were in different houses.",
+         "22": "Milo began gathering his things.",
+         "24": "Noor thanked everyone for coming as the meeting wrapped up."
+        }
+       }
+      },
+      {
+       "doc_id": "b33-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 16,
+          "b": 29,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "Ivo finishing ahead of Kira in the race suggests unequal performance, which could contradict them working equally well."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "16": "Ivo finished ahead of Kira.",
+         "29": "Both Kira's and Ivo's designs worked equally well in the trials."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "16": "Ivo finished ahead of Kira.",
+         "28": "Kira's design used fewer parts than Ivo's design.",
+         "29": "Both Kira's and Ivo's designs worked equally well in the trials."
+        }
+       }
+      },
+      {
+       "doc_id": "b34-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 4,
+          "b": 5,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "If Ben carried the folder, this makes it less likely that Sami was the one carrying it, assuming one folder is being referenced."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "4": "Ben was carrying a folder of printed diagrams.",
+         "5": "Sami was carrying a folder of printed diagrams."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "7": "Vik had already claimed a seat near the window.",
+         "8": "Vik was tightening a small motor with a screwdriver.",
+         "22": "Sami helped a younger participant fix a loose wheel axle.",
+         "23": "Sami laughed when the wheel axle popped off again.",
+         "28": "Kai ranked fastest overall among the five.",
+         "29": "Everyone agreed the difference in speed was small.",
+         "30": "The group packed away tools as the workshop wound down."
+        }
+       }
+      },
+      {
+       "doc_id": "b45-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 15,
+          "b": 18,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Hana pausing frequently to sketch suggests she moved slower, which would make it less likely she finished ahead of Leo."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "15": "Hana walked with a steady pace, pausing now and then to sketch a quick outline of a sparrow perched on a fence post.",
+         "18": "Hana finished ahead of Leo."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "0": "Alma is the head judge.",
+         "5": "Leo seemed a little unsure of the route markers.",
+         "6": "Alma pointed out the trail signs to help Leo along.",
+         "8": "Everyone lifted their binoculars at once.",
+         "18": "Hana finished ahead of Leo.",
+         "20": "Alma read the tally aloud while the others rested on a fallen log."
+        }
+       }
+      },
+      {
+       "doc_id": "b56-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 8,
+          "b": 20,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Even, carefully arranged lighting suggests controlled conditions, which would tend to counter the idea of shifting natural light causing shadows over the display tables."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "8": "The lighting in the main room was carefully arranged so that every print would be seen under even conditions.",
+         "20": "The afternoon light cast long shadows across the display tables where framed prints were being arranged in neat rows."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "direct": [],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "8": "The lighting in the main room was carefully arranged so that every print would be seen under even conditions.",
+         "13": "Wren chatted quietly with a volunteer near the entrance.",
+         "14": "Wren was checking names off a list as guests filed inside.",
+         "19": "The afternoon light shifted through the tall windows.",
+         "20": "The afternoon light cast long shadows across the display tables where framed prints were being arranged in neat rows."
+        }
+       }
+      }
+     ],
+     "still_flagged": 1,
+     "new_false_positives": [
+      {
+       "doc_id": "b05-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 3,
+          "b": 22,
+          "relation": "contradicts",
+          "confidence": 0.85,
+          "rationale": "A implies Mina and Jude were together in the same location (she greeted him as he came in), which contradicts B's claim that they were in different houses."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "3": "Mina greeted Jude who came in shortly after her.",
+         "9": "Everyone found their seats as the afternoon light came through the tall windows.",
+         "10": "Someone dimmed the projector for the opening announcements.",
+         "22": "Mina and Jude were in different houses."
+        }
+       }
+      },
+      {
+       "doc_id": "b07-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 8,
+          "b": 11,
+          "relation": "contradicts",
+          "confidence": 0.72,
+          "rationale": "A claims Vik arrived later than the others, implying Vik was last. B claims Milo was last. Both cannot be last, so these claims conflict unless 'others' in A excludes Milo, but that reading is strained given B's explicit 'last' claim."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "3": "Bo was humming quietly while the ovens warmed.",
+         "6": "Rosa was carrying a basket of eggs from the market stall down the road.",
+         "7": "Bo and Rosa chatted about the weekend fair while sorting flour sacks.",
+         "8": "Vik showed up a little later than the others.",
+         "11": "Milo strolled in last.",
+         "19": "Milo reached the high shelf to grab extra baking tins without needing a stool.",
+         "21": "Finn laughed and passed Milo the tray from below.",
+         "24": "Vik arrived after Bo but before Milo.",
+         "28": "Finn was humming along with the radio as the bakery buzzed with the comfortable rhythm of a busy village morning."
+        }
+       }
+      },
+      {
+       "doc_id": "b25-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "direct"
+        ],
+        "direct": [
+         {
+          "a": 0,
+          "b": 8,
+          "relation": "contradicts",
+          "confidence": 0.62,
+          "rationale": "If Milo was first to walk in, that suggests no one else was there before him, yet B says Mina was already seated when presumably Milo entered. This creates tension unless B occurs in a different scene, but taken together they are awkward."
+         }
+        ],
+        "cycle": null,
+        "entity": [],
+        "claims": {
+         "0": "Milo was the first to walk in.",
+         "8": "Mina was already seated at the far table, sorting through glazes she had picked out the week before.",
+         "17": "Mina asked Fay if she wanted to trade seats so she could be closer to the kiln.",
+         "18": "Fay agreed happily to trade seats with Mina."
+        }
+       }
+      }
+     ],
+     "lost_detections": []
+    },
+    "pairwise": {
+     "method": "pairwise",
+     "tau_2_2": 0.5,
+     "tau_2_1": 0.5,
+     "rev_2_1_false_positives": [
+      {
+       "doc_id": "b22-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 18,
+          "b": 22,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Nell sitting quietly reviewing cards suggests she is not actively chatting, making it somewhat less likely she is simultaneously chatting with Noor."
+         }
+        ],
+        "claims": {
+         "18": "Nell sat quietly reviewing trivia cards.",
+         "22": "Noor chatted with Nell about favorite quiz categories."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "2": "Kira was carrying a stack of scoresheets under one arm.",
+         "7": "Nell was laughing at a joke someone made near the entrance.",
+         "16": "Kira helped rearrange chairs so everyone could see the quiz board clearly.",
+         "18": "Nell sat quietly reviewing trivia cards.",
+         "22": "Noor chatted with Nell about favorite quiz categories."
+        }
+       }
+      },
+      {
+       "doc_id": "b26-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 6,
+          "b": 10,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Lena setting her sketchbook beside Rosa suggests they were together at the same time, weakly implying they shared a shift, which contradicts them working different shifts."
+         },
+         {
+          "a": 7,
+          "b": 9,
+          "relation": "contradicts",
+          "confidence": 0.6,
+          "rationale": "If Hana and Lena worked different shifts, it's less likely both would be present chatting together with the other three at the same time."
+         }
+        ],
+        "claims": {
+         "6": "Lena set her sketchbook on the table beside Rosa.",
+         "7": "Hana and Lena worked different shifts.",
+         "9": "The five of them chatted about the new clay supplier while waiting for the instructor to arrive.",
+         "10": "Lena and Rosa worked different shifts."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "4": "Wren had suggested the studio because it had good natural light for glazing work.",
+         "6": "Lena set her sketchbook on the table beside Rosa.",
+         "7": "Hana and Lena worked different shifts.",
+         "8": "Rosa preferred working near the window where the afternoon sun warmed the wheel.",
+         "9": "The five of them chatted about the new clay supplier while waiting for the instructor to arrive.",
+         "10": "Lena and Rosa worked different shifts.",
+         "13": "Hana and Rosa worked different shifts.",
+         "21": "The group settled into a quiet rhythm, shaping clay, trimming edges, and comparing glazes under the soft studio lights until the session ended.",
+         "22": "Everyone helped tidy the tables together."
+        }
+       }
+      },
+      {
+       "doc_id": "b28-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 9,
+          "b": 21,
+          "relation": "contradicts",
+          "confidence": 0.6,
+          "rationale": "Wind rippling the surface suggests water is not perfectly calm, which contradicts oars slicing through calm water."
+         }
+        ],
+        "claims": {
+         "9": "The wind picked up slightly, rippling the surface of the river.",
+         "21": "The oars sliced through the calm water in unison."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "5": "Alma arrived just as the announcer called the first heat to the starting line.",
+         "9": "The wind picked up slightly, rippling the surface of the river.",
+         "10": "The flags along the shore snapped crisply.",
+         "18": "Both Alma and Jun seemed relaxed before the race.",
+         "21": "The oars sliced through the calm water in unison.",
+         "22": "The crowd cheered as the boats streaked toward the first bend of the river."
+        }
+       }
+      },
+      {
+       "doc_id": "b30-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 1,
+          "b": 5,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "If everyone arrived within a few minutes, this contradicts Nell arriving 'a little later' implying a notable delay."
+         }
+        ],
+        "claims": {
+         "1": "Everyone arrived within a few minutes of each other.",
+         "3": "Isla arrived first, carrying a stack of novels she wanted to discuss.",
+         "5": "Nell arrived a little later."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "1": "Everyone arrived within a few minutes of each other.",
+         "5": "Nell arrived a little later.",
+         "6": "Nell apologized for the delay caused by traffic near the station.",
+         "15": "Everyone nodded in agreement.",
+         "20": "Isla countered with a different interpretation.",
+         "21": "The evening continued with lively debate, occasional laughter, and the comfortable rustle of pages turning."
+        }
+       }
+      },
+      {
+       "doc_id": "b32-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 15,
+          "b": 24,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "Asking to continue the discussion implies the meeting is not yet over, contradicting it wrapping up."
+         }
+        ],
+        "claims": {
+         "1": "Noor is the head judge.",
+         "15": "Noor asked everyone to quiet down so the discussion could continue.",
+         "24": "Noor thanked everyone for coming as the meeting wrapped up."
+        }
+       },
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 4,
+          "b": 10,
+          "relation": "contradicts",
+          "confidence": 0.7,
+          "rationale": "If Hana came in shortly after Milo arrived, both were entering the same place, implying they were in or entering the same house at that time, which contradicts the claim that they were in different houses."
+         }
+        ],
+        "claims": {
+         "4": "Hana came in shortly after Milo arrived.",
+         "5": "Hana greeted everyone with a plate of cookies she had baked.",
+         "8": "Dev settled into the corner chair with his notebook ready for discussion.",
+         "10": "Milo and Hana were in different houses.",
+         "11": "The group spent a while debating the ending of the book.",
+         "13": "Hana and Dev were in different houses.",
+         "15": "Noor asked everyone to quiet down so the discussion could continue.",
+         "16": "Milo and Dev were in different houses.",
+         "22": "Milo began gathering his things.",
+         "24": "Noor thanked everyone for coming as the meeting wrapped up."
+        }
+       }
+      },
+      {
+       "doc_id": "b33-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 16,
+          "b": 29,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "Ivo finishing ahead of Kira in the race suggests unequal performance, which could contradict them working equally well."
+         }
+        ],
+        "claims": {
+         "16": "Ivo finished ahead of Kira.",
+         "29": "Both Kira's and Ivo's designs worked equally well in the trials."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "16": "Ivo finished ahead of Kira.",
+         "28": "Kira's design used fewer parts than Ivo's design.",
+         "29": "Both Kira's and Ivo's designs worked equally well in the trials."
+        }
+       }
+      },
+      {
+       "doc_id": "b34-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 4,
+          "b": 5,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "If Ben carried the folder, this makes it less likely that Sami was the one carrying it, assuming one folder is being referenced."
+         }
+        ],
+        "claims": {
+         "4": "Ben was carrying a folder of printed diagrams.",
+         "5": "Sami was carrying a folder of printed diagrams."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "7": "Vik had already claimed a seat near the window.",
+         "8": "Vik was tightening a small motor with a screwdriver.",
+         "22": "Sami helped a younger participant fix a loose wheel axle.",
+         "23": "Sami laughed when the wheel axle popped off again.",
+         "28": "Kai ranked fastest overall among the five.",
+         "29": "Everyone agreed the difference in speed was small.",
+         "30": "The group packed away tools as the workshop wound down."
+        }
+       }
+      },
+      {
+       "doc_id": "b41-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 17,
+          "b": 18,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "Dev claiming to be the tallest contradicts Eli's claim of having grown taller, since both cannot be true if only one can be tallest and Eli's growth might make a competing claim."
+         }
+        ],
+        "claims": {
+         "17": "Dev mentioned he was the tallest of the group.",
+         "18": "Eli insisted he had grown taller over the summer."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "10": "Everyone gathered around the long table to look over the layout plans for the display.",
+         "15": "Sami and Eli were in different houses.",
+         "16": "The five members chatted about their school days while sorting through spools of wire and small tins of ballast.",
+         "24": "The layout needed to be finished within three weeks."
+        }
+       }
+      },
+      {
+       "doc_id": "b45-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 15,
+          "b": 18,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Hana pausing frequently to sketch suggests she moved slower, which would make it less likely she finished ahead of Leo."
+         }
+        ],
+        "claims": {
+         "15": "Hana walked with a steady pace, pausing now and then to sketch a quick outline of a sparrow perched on a fence post.",
+         "18": "Hana finished ahead of Leo."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "0": "Alma is the head judge.",
+         "5": "Leo seemed a little unsure of the route markers.",
+         "6": "Alma pointed out the trail signs to help Leo along.",
+         "8": "Everyone lifted their binoculars at once.",
+         "18": "Hana finished ahead of Leo.",
+         "20": "Alma read the tally aloud while the others rested on a fallen log."
+        }
+       }
+      },
+      {
+       "doc_id": "b54-consistent",
+       "variant": "consistent",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 0,
+          "b": 5,
+          "relation": "contradicts",
+          "confidence": 0.6,
+          "rationale": "A modest crowd this year could contradict the idea that turnout was larger than the last three combined."
+         }
+        ],
+        "claims": {
+         "0": "The annual club exhibition drew a modest crowd on a cool autumn evening.",
+         "5": "The turnout this year seemed larger than the last three gatherings combined.",
+         "8": "The judges took their seats at a long table near the entrance, sorting through folders of entries while the room slowly filled with murmurs and laughter.",
+         "20": "The evening carried on with quiet anticipation, the kind that settles over a room right before results are announced."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "0": "The annual club exhibition drew a modest crowd on a cool autumn evening.",
+         "1": "Isla arrived first, greeting the organizers with a warm smile before finding a seat near the front.",
+         "3": "Nell wandered in a few minutes later, chatting with Cy about the drive over from the north side of town.",
+         "5": "The turnout this year seemed larger than the last three gatherings combined.",
+         "8": "The judges took their seats at a long table near the entrance, sorting through folders of entries while the room slowly filled with murmurs and laughter.",
+         "14": "Isla and Nell began discussing which entries might win the top prizes this year.",
+         "16": "Cy leaned over to ask Ivo about the schedule for the awards ceremony.",
+         "18": "As the lights dimmed for the presentation, the five friends exchanged glances, each hoping their favorite entry would be recognized.",
+         "19": "Nell rummaged through a bag for a program while Quinn scanned the room for a good vantage point near the stage."
+        }
+       }
+      },
+      {
+       "doc_id": "b56-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 8,
+          "b": 20,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Even, carefully arranged lighting suggests controlled conditions, which would tend to counter the idea of shifting natural light causing shadows over the display tables."
+         }
+        ],
+        "claims": {
+         "8": "The lighting in the main room was carefully arranged so that every print would be seen under even conditions.",
+         "20": "The afternoon light cast long shadows across the display tables where framed prints were being arranged in neat rows."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "8": "The lighting in the main room was carefully arranged so that every print would be seen under even conditions.",
+         "13": "Wren chatted quietly with a volunteer near the entrance.",
+         "14": "Wren was checking names off a list as guests filed inside.",
+         "19": "The afternoon light shifted through the tall windows.",
+         "20": "The afternoon light cast long shadows across the display tables where framed prints were being arranged in neat rows."
+        }
+       }
+      }
+     ],
+     "still_flagged": 1,
+     "new_false_positives": [
+      {
+       "doc_id": "b05-consistent",
+       "variant": "consistent",
+       "cycle_type": "binary_parity",
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 3,
+          "b": 22,
+          "relation": "contradicts",
+          "confidence": 0.85,
+          "rationale": "A implies Mina and Jude were together in the same location (she greeted him as he came in), which contradicts B's claim that they were in different houses."
+         }
+        ],
+        "claims": {
+         "3": "Mina greeted Jude who came in shortly after her.",
+         "9": "Everyone found their seats as the afternoon light came through the tall windows.",
+         "10": "Someone dimmed the projector for the opening announcements.",
+         "22": "Mina and Jude were in different houses."
+        }
+       }
+      },
+      {
+       "doc_id": "b07-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 8,
+          "b": 11,
+          "relation": "contradicts",
+          "confidence": 0.72,
+          "rationale": "A claims Vik arrived later than the others, implying Vik was last. B claims Milo was last. Both cannot be last, so these claims conflict unless 'others' in A excludes Milo, but that reading is strained given B's explicit 'last' claim."
+         }
+        ],
+        "claims": {
+         "3": "Bo was humming quietly while the ovens warmed.",
+         "6": "Rosa was carrying a basket of eggs from the market stall down the road.",
+         "7": "Bo and Rosa chatted about the weekend fair while sorting flour sacks.",
+         "8": "Vik showed up a little later than the others.",
+         "11": "Milo strolled in last.",
+         "19": "Milo reached the high shelf to grab extra baking tins without needing a stool.",
+         "21": "Finn laughed and passed Milo the tray from below.",
+         "24": "Vik arrived after Bo but before Milo.",
+         "28": "Finn was humming along with the radio as the bakery buzzed with the comfortable rhythm of a busy village morning."
+        }
+       }
+      },
+      {
+       "doc_id": "b25-consistent",
+       "variant": "consistent",
+       "cycle_type": "equality_break",
+       "rev_2_2": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 0,
+          "b": 8,
+          "relation": "contradicts",
+          "confidence": 0.62,
+          "rationale": "If Milo was first to walk in, that suggests no one else was there before him, yet B says Mina was already seated when presumably Milo entered. This creates tension unless B occurs in a different scene, but taken together they are awkward."
+         }
+        ],
+        "claims": {
+         "0": "Milo was the first to walk in.",
+         "8": "Mina was already seated at the far table, sorting through glazes she had picked out the week before.",
+         "17": "Mina asked Fay if she wanted to trade seats so she could be closer to the kiln.",
+         "18": "Fay agreed happily to trade seats with Mina."
+        }
+       }
+      }
+     ],
+     "lost_detections": [
+      {
+       "doc_id": "b04-cycle",
+       "variant": "cycle",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 6,
+          "b": 15,
+          "relation": "contradicts",
+          "confidence": 0.8,
+          "rationale": "If Rosa is in the same class as Finn, and Finn is in Jun's class, this contradicts the claim that Rosa is not in Jun's class."
+         },
+         {
+          "a": 9,
+          "b": 17,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "If Hugo took the photographs, he likely wasn't in the lineup being photographed, which could contradict the idea that his height stood out in the photo."
+         }
+        ],
+        "claims": {
+         "6": "Rosa is in the same class as Finn.",
+         "9": "Hugo took the photographs.",
+         "12": "Finn is in the same class as Jun.",
+         "15": "Rosa is not in the same class as Jun.",
+         "17": "Hugo being the tallest becomes obvious whenever they line up for the yearly club photo."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "6": "Rosa is in the same class as Finn.",
+         "9": "Hugo took the photographs.",
+         "12": "Finn is in the same class as Jun.",
+         "15": "Rosa is not in the same class as Jun.",
+         "17": "Hugo being the tallest becomes obvious whenever they line up for the yearly club photo."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 6,
+         "b": 12,
+         "relation": "unrelated",
+         "confidence": 0.75,
+         "rationale": "A states Rosa shares a class with Finn, which says nothing about Finn's relationship to Jun; both could be true if all three share a class, or false independently."
+        },
+        {
+         "a": 6,
+         "b": 15,
+         "relation": "unrelated",
+         "confidence": 0.75,
+         "rationale": "Knowing Rosa shares a class with Finn says nothing about whether Jun is in that same class or a different one; the two facts are independent unless Finn and Jun's relationship is specified."
+        },
+        {
+         "a": 12,
+         "b": 15,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "A states Finn shares a class with Jun, but says nothing about Rosa's class membership, so B's claim about Rosa and Jun is neither confirmed nor denied by A."
+        }
+       ]
+      },
+      {
+       "doc_id": "b12-cycle",
+       "variant": "cycle",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 13,
+          "b": 14,
+          "relation": "contradicts",
+          "confidence": 0.6,
+          "rationale": "Hana cannot simultaneously be standing near the window humming and flipping through her folder, so these are contradictory actions unless sequential, but as stated they conflict."
+         },
+         {
+          "a": 19,
+          "b": 24,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "Eventually locking in suggests he succeeded, weakening the claim that he still needs more practice."
+         }
+        ],
+        "claims": {
+         "5": "Kai came in a few minutes later.",
+         "7": "Xavi trailed in shortly after.",
+         "12": "Otto is older than Kai.",
+         "13": "Hana stood near the window, humming softly along with the sopranos.",
+         "14": "Hana was flipping through her folder of music.",
+         "15": "Kai is older than Xavi.",
+         "17": "The new piece had tricky harmonies that required several run-throughs before the parts blended smoothly.",
+         "19": "Xavi eventually locked in with the basses around him.",
+         "20": "Xavi is older than Otto.",
+         "24": "Xavi still needed more practice."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "12": "Otto is older than Kai.",
+         "13": "Hana stood near the window, humming softly along with the sopranos.",
+         "14": "Hana was flipping through her folder of music.",
+         "15": "Kai is older than Xavi.",
+         "16": "The rehearsal moved into a new piece.",
+         "19": "Xavi eventually locked in with the basses around him.",
+         "20": "Xavi is older than Otto.",
+         "24": "Xavi still needed more practice.",
+         "25": "Hana suggested they run through the closing number one more time before wrapping up.",
+         "27": "The group returned to their places as the director raised her hands for the final pass of the evening.",
+         "29": "Everyone applauded their own progress before packing up for the night."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 12,
+         "b": 15,
+         "relation": "unrelated",
+         "confidence": 0.9,
+         "rationale": "Knowing Otto is older than Kai tells us nothing about Kai's age relative to Xavi, since Xavi is not mentioned in A."
+        },
+        {
+         "a": 12,
+         "b": 20,
+         "relation": "unrelated",
+         "confidence": 0.7,
+         "rationale": "The two claims concern different age relationships (Otto vs Kai, and Xavi vs Otto) and can both hold simultaneously if Xavi is oldest, Otto middle, and Kai youngest."
+        },
+        {
+         "a": 15,
+         "b": 20,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "A states a relative age relation between Kai and Xavi, while B relates Xavi and Otto; there is no shared basis to infer one from the other since neither claim mentions the other's comparison pair (Kai-Otto or Otto's actual age)."
+        }
+       ]
+      },
+      {
+       "doc_id": "b30-cycle",
+       "variant": "cycle",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 1,
+          "b": 5,
+          "relation": "contradicts",
+          "confidence": 0.6,
+          "rationale": "If everyone arrived within minutes of each other, this contradicts Nell arriving noticeably later."
+         },
+         {
+          "a": 1,
+          "b": 6,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "Close arrival times make a delay-driven late arrival with an apology less consistent."
+         },
+         {
+          "a": 15,
+          "b": 20,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "Everyone nodding in agreement suggests consensus, which somewhat contradicts Isla offering a different interpretation."
+         }
+        ],
+        "claims": {
+         "1": "Everyone arrived within a few minutes of each other.",
+         "3": "Isla arrived first, carrying a stack of novels she wanted to discuss.",
+         "5": "Nell arrived a little later.",
+         "6": "Nell apologized for the delay caused by traffic near the station.",
+         "10": "Isla is taller than Milo.",
+         "13": "Milo is taller than Nell.",
+         "15": "Everyone nodded in agreement.",
+         "16": "Nell is taller than Isla.",
+         "20": "Isla countered with a different interpretation."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "1": "Everyone arrived within a few minutes of each other.",
+         "5": "Nell arrived a little later.",
+         "6": "Nell apologized for the delay caused by traffic near the station.",
+         "10": "Isla is taller than Milo.",
+         "13": "Milo is taller than Nell.",
+         "15": "Everyone nodded in agreement.",
+         "16": "Nell is taller than Isla.",
+         "20": "Isla countered with a different interpretation.",
+         "21": "The evening continued with lively debate, occasional laughter, and the comfortable rustle of pages turning."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 10,
+         "b": 13,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "A tells us about Isla vs Milo but says nothing about Milo's height relative to Nell, so it neither confirms nor denies B."
+        },
+        {
+         "a": 10,
+         "b": 16,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Isla being taller than Milo says nothing about the height relation between Nell and Isla, as they involve different comparison pairs with no shared constraint."
+        },
+        {
+         "a": 13,
+         "b": 16,
+         "relation": "unrelated",
+         "confidence": 0.9,
+         "rationale": "A tells us about the relative height of Milo and Nell, but says nothing about Isla, so it neither supports nor contradicts a claim comparing Nell and Isla."
+        }
+       ]
+      },
+      {
+       "doc_id": "b37-cycle",
+       "variant": "cycle",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 7,
+          "b": 16,
+          "relation": "contradicts",
+          "confidence": 0.85,
+          "rationale": "Finn being on Rosa's team combined with Rosa being on Hana's team would imply Finn is on Hana's team, contradicting claim 16."
+         }
+        ],
+        "claims": {
+         "7": "Finn is on the same team as Rosa.",
+         "12": "Rosa is on the same team as Hana.",
+         "16": "Finn is not on the same team as Hana."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "7": "Finn is on the same team as Rosa.",
+         "12": "Rosa is on the same team as Hana.",
+         "16": "Finn is not on the same team as Hana.",
+         "19": "More shoppers arrived as the afternoon wore on.",
+         "20": "The narrow aisles between stalls were filled with the sound of laughter and haggling.",
+         "21": "Yara eventually found a quiet bench to rest.",
+         "22": "Yara watched the last of the golden light fall across the market square."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 7,
+         "b": 12,
+         "relation": "unrelated",
+         "confidence": 0.7,
+         "rationale": "A places Finn on Rosa's team, but says nothing about whether Hana is also on that team, so B could independently be true or false."
+        },
+        {
+         "a": 7,
+         "b": 16,
+         "relation": "unrelated",
+         "confidence": 0.7,
+         "rationale": "Knowing Finn is on Rosa's team says nothing directly about whether Finn shares a team with Hana; Hana could be on either team."
+        },
+        {
+         "a": 12,
+         "b": 16,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "A places Rosa on Hana's team, but says nothing about Finn's team membership, so B could independently be true or false."
+        }
+       ]
+      },
+      {
+       "doc_id": "b40-cycle",
+       "variant": "cycle",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 14,
+          "b": 24,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "If Finn is in the same class as Bo, and Bo is in the same class as Nell (per other claims), this would imply Finn is in the same class as Nell, contradicting that Finn is not in Nell's class."
+         }
+        ],
+        "claims": {
+         "14": "Finn is in the same class as Bo.",
+         "17": "Bo is in the same class as Nell.",
+         "24": "Finn is not in the same class as Nell."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "5": "Bo is a year older than Finn.",
+         "14": "Finn is in the same class as Bo.",
+         "17": "Bo is in the same class as Nell.",
+         "24": "Finn is not in the same class as Nell."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 14,
+         "b": 17,
+         "relation": "unrelated",
+         "confidence": 0.75,
+         "rationale": "Both claims describe class-membership relations involving Bo, but A does not say anything about Nell, so it neither confirms nor conflicts with B."
+        },
+        {
+         "a": 14,
+         "b": 24,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Knowing Finn shares a class with Bo says nothing about whether Finn shares a class with Nell, since Bo and Nell could be in the same or different classes."
+        },
+        {
+         "a": 17,
+         "b": 24,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "A states Bo shares Nell's class, but says nothing about Finn's class assignment, so it neither confirms nor denies whether Finn shares that class."
+        }
+       ]
+      },
+      {
+       "doc_id": "b41-cycle",
+       "variant": "cycle",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 17,
+          "b": 18,
+          "relation": "contradicts",
+          "confidence": 0.5,
+          "rationale": "Dev claiming to be tallest directly conflicts with Eli's claim of having grown taller, which could suggest Eli is now tallest, making Dev's claim less credible."
+         }
+        ],
+        "claims": {
+         "15": "Sami and Eli were in different houses.",
+         "17": "Dev mentioned he was the tallest of the group.",
+         "18": "Eli insisted he had grown taller over the summer.",
+         "19": "Eli and Dev were in different houses.",
+         "22": "Sami and Dev were in different houses.",
+         "25": "The school had two houses."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "10": "Everyone gathered around the long table to look over the layout plans for the display.",
+         "15": "Sami and Eli were in different houses.",
+         "16": "The five members chatted about their school days while sorting through spools of wire and small tins of ballast.",
+         "19": "Eli and Dev were in different houses.",
+         "22": "Sami and Dev were in different houses.",
+         "25": "The school had two houses."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 15,
+         "b": 19,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Knowing Sami and Eli are in different houses gives no information about Eli and Dev's house arrangement, since Dev's location relative to Eli is unconstrained by A."
+        },
+        {
+         "a": 15,
+         "b": 22,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Knowing Sami and Eli were in different houses tells us nothing about the relationship between Sami and Dev's house assignments, since Dev is a separate individual not mentioned in claim A."
+        },
+        {
+         "a": 15,
+         "b": 25,
+         "relation": "unrelated",
+         "confidence": 0.55,
+         "rationale": "A implies there are at least two houses (Sami's and Eli's), which is consistent with the school having exactly two houses; B supports the plausibility of A but isn't strictly required by it."
+        },
+        {
+         "a": 19,
+         "b": 22,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Knowing Eli and Dev are in different houses tells us nothing about the relationship between Sami and Dev's house assignments, since Sami is a separate individual not mentioned in claim A."
+        },
+        {
+         "a": 19,
+         "b": 25,
+         "relation": "supports",
+         "confidence": 0.55,
+         "rationale": "If there are only two houses and Eli and Dev are in different ones, that is consistent with a two-house system; B doesn't guarantee this but A fits comfortably within B's scenario."
+        },
+        {
+         "a": 22,
+         "b": 25,
+         "relation": "supports",
+         "confidence": 0.65,
+         "rationale": "If Sami and Dev were in different houses, then the school must have had at least two houses, which supports the claim that the school had two houses (or at least is consistent with and made more plausible by it)."
+        }
+       ]
+      },
+      {
+       "doc_id": "b46-cycle",
+       "variant": "cycle",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 14,
+          "b": 25,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "If Bo is on the same team as Uma, and Uma is on the same team as Jude, then Bo would be on the same team as Jude, contradicting that Bo is not on the same team as Jude."
+         }
+        ],
+        "claims": {
+         "14": "Bo is on the same team as Uma.",
+         "20": "Uma is on the same team as Jude.",
+         "25": "Bo is not on the same team as Jude."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "14": "Bo is on the same team as Uma.",
+         "20": "Uma is on the same team as Jude.",
+         "25": "Bo is not on the same team as Jude."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 14,
+         "b": 20,
+         "relation": "unrelated",
+         "confidence": 0.6,
+         "rationale": "A places Bo on Uma's team but says nothing about whether Jude is also on that team; B introduces Jude independently. These could both be true if all three share a team, or B could concern a different context, so there's no necessary conflict or strong support."
+        },
+        {
+         "a": 14,
+         "b": 25,
+         "relation": "unrelated",
+         "confidence": 0.65,
+         "rationale": "A tells us Bo shares a team with Uma but says nothing about Jude's team membership, so whether Bo shares a team with Jude is left undetermined unless we know Uma and Jude's relationship."
+        },
+        {
+         "a": 20,
+         "b": 25,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "A tells us Uma's team relationship to Jude, but says nothing about Bo's relationship to Jude's team, so it neither supports nor contradicts B."
+        }
+       ]
+      },
+      {
+       "doc_id": "b53-cycle",
+       "variant": "cycle",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 12,
+          "b": 22,
+          "relation": "contradicts",
+          "confidence": 0.6,
+          "rationale": "Yara and Bo working different shifts contradicts the implication that they were together laughing about the crowd size, as different shifts imply not being present together."
+         }
+        ],
+        "claims": {
+         "9": "Finn and Yara worked different shifts.",
+         "12": "Yara and Bo worked different shifts.",
+         "15": "Finn and Bo worked different shifts.",
+         "18": "The shop ran two shifts.",
+         "22": "Yara laughed with Bo about the crowd size."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "4": "Finn arrived a few minutes before Yara.",
+         "5": "Finn and Yara were both eager to warm up along the riverside path.",
+         "9": "Finn and Yara worked different shifts.",
+         "12": "Yara and Bo worked different shifts.",
+         "15": "Finn and Bo worked different shifts.",
+         "18": "The shop ran two shifts.",
+         "21": "Yara finished her tasks early and went to help set up the finish line banner.",
+         "22": "Yara laughed with Bo about the crowd size.",
+         "24": "Everyone gathered near the stage to hear the final donation total announced."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 9,
+         "b": 12,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Both claims describe shift relations involving Yara but with different other people (Finn vs Bo), so knowing Finn and Yara had different shifts tells us nothing about whether Yara and Bo did."
+        },
+        {
+         "a": 9,
+         "b": 15,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Knowing Finn and Yara worked different shifts tells us nothing about the relationship between Finn's and Bo's shifts, since Yara and Bo are different people."
+        },
+        {
+         "a": 9,
+         "b": 18,
+         "relation": "supports",
+         "confidence": 0.7,
+         "rationale": "If Finn and Yara worked different shifts, that implies at least two shifts existed at the shop, which supports the claim that the shop ran two shifts."
+        },
+        {
+         "a": 12,
+         "b": 15,
+         "relation": "unrelated",
+         "confidence": 0.9,
+         "rationale": "A tells us about the relationship between Yara's and Bo's shifts, but says nothing about Finn's schedule relative to Bo's, so it has no bearing on whether Finn and Bo worked different shifts."
+        },
+        {
+         "a": 12,
+         "b": 18,
+         "relation": "supports",
+         "confidence": 0.65,
+         "rationale": "If Yara and Bo worked different shifts, that implies at least two shifts existed in the shop's schedule, making it likely the shop ran two shifts."
+        },
+        {
+         "a": 15,
+         "b": 18,
+         "relation": "supports",
+         "confidence": 0.7,
+         "rationale": "If Finn and Bo worked different shifts, that implies at least two shifts existed at the shop, which supports the claim that the shop ran two shifts."
+        }
+       ]
+      },
+      {
+       "doc_id": "b54-cycle",
+       "variant": "cycle",
+       "cycle_type": "order_cycle",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 0,
+          "b": 8,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "A 'modest' crowd suggests a smaller turnout, which somewhat contradicts the claim that turnout was larger than the last three gatherings combined."
+         }
+        ],
+        "claims": {
+         "0": "The annual club exhibition drew a modest crowd on a cool autumn evening.",
+         "8": "The turnout this year seemed larger than the last three gatherings combined.",
+         "10": "Isla is taller than Cy.",
+         "14": "Cy is taller than Nell.",
+         "21": "Nell is taller than Isla."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "0": "The annual club exhibition drew a modest crowd on a cool autumn evening.",
+         "8": "The turnout this year seemed larger than the last three gatherings combined.",
+         "10": "Isla is taller than Cy.",
+         "14": "Cy is taller than Nell.",
+         "16": "The event was running a little behind schedule.",
+         "17": "Nobody in the audience seemed to mind.",
+         "21": "Nell is taller than Isla."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 10,
+         "b": 14,
+         "relation": "unrelated",
+         "confidence": 0.9,
+         "rationale": "Claim A tells us about the relative height of Isla and Cy but says nothing about Nell, so it doesn't affect whether Cy is taller than Nell."
+        },
+        {
+         "a": 10,
+         "b": 21,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "A establishes Isla's height relative to Cy but says nothing about Nell, so it neither supports nor contradicts B; the two claims concern different people relationships."
+        },
+        {
+         "a": 14,
+         "b": 21,
+         "relation": "unrelated",
+         "confidence": 0.9,
+         "rationale": "A tells us about Cy's height relative to Nell but says nothing about Isla, so it neither supports nor contradicts B."
+        }
+       ]
+      },
+      {
+       "doc_id": "b56-cycle",
+       "variant": "cycle",
+       "cycle_type": "binary_parity",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 8,
+          "b": 20,
+          "relation": "contradicts",
+          "confidence": 0.65,
+          "rationale": "Careful lighting arrangement for even viewing conditions suggests controlled lighting, which contradicts the idea of shifting light casting long shadows over the same display tables."
+         }
+        ],
+        "claims": {
+         "8": "The lighting in the main room was carefully arranged so that every print would be seen under even conditions.",
+         "9": "Cy and Isla were on different teams.",
+         "12": "Isla and Kira were on different teams.",
+         "15": "Cy and Kira were on different teams.",
+         "18": "There were two teams.",
+         "20": "The afternoon light cast long shadows across the display tables where framed prints were being arranged in neat rows."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "8": "The lighting in the main room was carefully arranged so that every print would be seen under even conditions.",
+         "9": "Cy and Isla were on different teams.",
+         "12": "Isla and Kira were on different teams.",
+         "13": "Wren chatted quietly with a volunteer near the entrance.",
+         "14": "Wren was checking names off a list as guests filed inside.",
+         "15": "Cy and Kira were on different teams.",
+         "18": "There were two teams.",
+         "19": "The afternoon light shifted through the tall windows.",
+         "20": "The afternoon light cast long shadows across the display tables where framed prints were being arranged in neat rows."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 9,
+         "b": 12,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Knowing Cy and Isla are on different teams tells us nothing about Isla and Kira's team relationship, since Cy and Kira's relationship is unspecified."
+        },
+        {
+         "a": 9,
+         "b": 15,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Knowing Cy and Isla are on different teams tells us nothing about Cy and Kira's team assignment, since Isla and Kira could be on the same or different teams relative to each other."
+        },
+        {
+         "a": 9,
+         "b": 18,
+         "relation": "supports",
+         "confidence": 0.6,
+         "rationale": "A implies at least two teams exist for Cy and Isla to be on different ones, which is consistent with and mildly supports there being exactly two teams, though it doesn't rule out more than two."
+        },
+        {
+         "a": 12,
+         "b": 15,
+         "relation": "unrelated",
+         "confidence": 0.9,
+         "rationale": "Knowing Isla and Kira are on different teams tells us nothing about the relationship between Cy and Kira's team assignments, as Cy is not mentioned in claim A."
+        },
+        {
+         "a": 12,
+         "b": 18,
+         "relation": "supports",
+         "confidence": 0.55,
+         "rationale": "If Isla and Kira were on different teams, there must be at least two teams, which is consistent with and mildly supportive of there being exactly two teams."
+        },
+        {
+         "a": 15,
+         "b": 18,
+         "relation": "supports",
+         "confidence": 0.55,
+         "rationale": "If Cy and Kira were on different teams, there must be at least two teams; this is consistent with and mildly supportive of there being exactly two teams, though it doesn't rule out more."
+        }
+       ]
+      },
+      {
+       "doc_id": "b58-cycle",
+       "variant": "cycle",
+       "cycle_type": "equality_break",
+       "rev_2_1": {
+        "flagged": true,
+        "clauses": [
+         "pairwise"
+        ],
+        "relations": [
+         {
+          "a": 11,
+          "b": 16,
+          "relation": "contradicts",
+          "confidence": 0.55,
+          "rationale": "If Ana is in the same class as Esme, and Esme is in the same class as Lena (per claim 15, not assumed here), this would suggest Ana is in the same class as Lena, contradicting claim 16; but taken alone, A doesn't establish this link."
+         }
+        ],
+        "claims": {
+         "11": "Ana is in the same class as Esme.",
+         "15": "Esme is in the same class as Lena.",
+         "16": "Ana is not in the same class as Lena."
+        }
+       },
+       "rev_2_2": {
+        "flagged": false,
+        "clauses": [],
+        "relations": [],
+        "claims": {
+         "4": "Vik drove the minibus.",
+         "11": "Ana is in the same class as Esme.",
+         "12": "The group split into pairs to cover more ground.",
+         "15": "Esme is in the same class as Lena.",
+         "16": "Ana is not in the same class as Lena."
+        }
+       },
+       "rev_2_2_planted_pairs": [
+        {
+         "a": 11,
+         "b": 15,
+         "relation": "unrelated",
+         "confidence": 0.7,
+         "rationale": "A tells us Ana shares a class with Esme, but says nothing about Lena's class placement relative to Esme, so it neither confirms nor rules out B."
+        },
+        {
+         "a": 11,
+         "b": 16,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Knowing Ana's class relationship with Esme says nothing about whether Ana shares a class with Lena, unless Esme and Lena's relationship is known, which is not stated."
+        },
+        {
+         "a": 15,
+         "b": 16,
+         "relation": "unrelated",
+         "confidence": 0.85,
+         "rationale": "Knowing Esme shares a class with Lena says nothing about whether Ana shares a class with Lena, since these involve different people and no relationship between Esme and Ana is stated."
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "tension": {
+   "per_variant": {
+    "consistent": {
+     "documents": 60,
+     "tension_pairs": 140,
+     "documents_with_tension": 45
+    },
+    "direct": {
+     "documents": 60,
+     "tension_pairs": 129,
+     "documents_with_tension": 48
+    },
+    "cycle": {
+     "documents": 60,
+     "tension_pairs": 133,
+     "documents_with_tension": 47
+    }
+   },
+   "direct_planted_pairs": 60,
+   "direct_planted_labels": {
+    "contradicts": 60
+   },
+   "direct_planted_tension": [],
+   "direct_planted_tension_was_contradicts": 0
+  },
+  "contamination": {
+   "rev_2_1": {
+    "pairs": 240,
+    "scored": 240,
+    "unscored": 0,
+    "contradicts": 8,
+    "rate": 0.03333333333333333,
+    "by_type": {
+     "order_cycle": {
+      "pairs": 60,
+      "scored": 60,
+      "unscored": 0,
+      "contradicts": 0,
+      "rate": 0.0
+     },
+     "equality_break": {
+      "pairs": 60,
+      "scored": 60,
+      "unscored": 0,
+      "contradicts": 8,
+      "rate": 0.13333333333333333
+     },
+     "binary_parity": {
+      "pairs": 120,
+      "scored": 120,
+      "unscored": 0,
+      "contradicts": 0,
+      "rate": 0.0
+     }
+    },
+    "residual": [
+     {
+      "doc_id": "b04-cycle",
+      "cycle_type": "equality_break",
+      "a": 6,
+      "b": 15,
+      "confidence": 0.8,
+      "rationale": "If Rosa is in the same class as Finn, and Finn is in Jun's class, this contradicts the claim that Rosa is not in Jun's class."
+     },
+     {
+      "doc_id": "b10-cycle",
+      "cycle_type": "equality_break",
+      "a": 6,
+      "b": 16,
+      "confidence": 0.4,
+      "rationale": "If Milo is on the same team as Jun, and Jun is (per other claims) on Hana's team, this would suggest Milo is on Hana's team, contradicting the claim that Milo is not on Hana's team."
+     },
+     {
+      "doc_id": "b25-cycle",
+      "cycle_type": "equality_break",
+      "a": 9,
+      "b": 16,
+      "confidence": 0.4,
+      "rationale": "If Milo is in the same study group as Fay, and Fay is in the same group as Nell (per other claims), this would imply Milo is in the same group as Nell, contradicting claim 16 that Milo is not in the same group as Nell."
+     },
+     {
+      "doc_id": "b37-cycle",
+      "cycle_type": "equality_break",
+      "a": 7,
+      "b": 16,
+      "confidence": 0.85,
+      "rationale": "Finn being on Rosa's team combined with Rosa being on Hana's team would imply Finn is on Hana's team, contradicting claim 16."
+     },
+     {
+      "doc_id": "b40-cycle",
+      "cycle_type": "equality_break",
+      "a": 14,
+      "b": 24,
+      "confidence": 0.55,
+      "rationale": "If Finn is in the same class as Bo, and Bo is in the same class as Nell (per other claims), this would imply Finn is in the same class as Nell, contradicting that Finn is not in Nell's class."
+     },
+     {
+      "doc_id": "b46-cycle",
+      "cycle_type": "equality_break",
+      "a": 14,
+      "b": 25,
+      "confidence": 0.55,
+      "rationale": "If Bo is on the same team as Uma, and Uma is on the same team as Jude, then Bo would be on the same team as Jude, contradicting that Bo is not on the same team as Jude."
+     },
+     {
+      "doc_id": "b52-cycle",
+      "cycle_type": "equality_break",
+      "a": 11,
+      "b": 19,
+      "confidence": 0.4,
+      "rationale": "If Dara and Rosa are in the same group, and if Rosa and Tess were also in the same group, Dara and Tess would be in the same group, contradicting B; but A alone doesn't determine Tess's group, though it creates tension with the claim that Dara is not with Tess given the group chain implied elsewhere."
+     },
+     {
+      "doc_id": "b58-cycle",
+      "cycle_type": "equality_break",
+      "a": 11,
+      "b": 16,
+      "confidence": 0.55,
+      "rationale": "If Ana is in the same class as Esme, and Esme is in the same class as Lena (per claim 15, not assumed here), this would suggest Ana is in the same class as Lena, contradicting claim 16; but taken alone, A doesn't establish this link."
+     }
+    ]
+   },
+   "rev_2_2_at_0.5": {
+    "pairs": 240,
+    "scored": 240,
+    "unscored": 0,
+    "contradicts": 0,
+    "rate": 0.0,
+    "by_type": {
+     "order_cycle": {
+      "pairs": 60,
+      "scored": 60,
+      "unscored": 0,
+      "contradicts": 0,
+      "rate": 0.0
+     },
+     "equality_break": {
+      "pairs": 60,
+      "scored": 60,
+      "unscored": 0,
+      "contradicts": 0,
+      "rate": 0.0
+     },
+     "binary_parity": {
+      "pairs": 120,
+      "scored": 120,
+      "unscored": 0,
+      "contradicts": 0,
+      "rate": 0.0
+     }
+    },
+    "residual": []
+   }
+  },
+  "clause_attribution": {
+   "rev_2_1": {
+    "detections": 60,
+    "entity_alone": 48,
+    "entity_with_direct_or_balance": 12,
+    "direct_or_balance_without_entity": 0,
+    "combinations": {
+     "entity": 48,
+     "direct+entity": 10,
+     "direct+claim_balance+entity": 2
+    },
+    "by_type": {
+     "order_cycle": {
+      "detections": 20,
+      "entity_alone": 16,
+      "entity_with_direct_or_balance": 4,
+      "direct_or_balance_without_entity": 0,
+      "combinations": {
+       "entity": 16,
+       "direct+claim_balance+entity": 2,
+       "direct+entity": 2
+      }
+     },
+     "equality_break": {
+      "detections": 20,
+      "entity_alone": 14,
+      "entity_with_direct_or_balance": 6,
+      "direct_or_balance_without_entity": 0,
+      "combinations": {
+       "entity": 14,
+       "direct+entity": 6
+      }
+     },
+     "binary_parity": {
+      "detections": 20,
+      "entity_alone": 18,
+      "entity_with_direct_or_balance": 2,
+      "direct_or_balance_without_entity": 0,
+      "combinations": {
+       "entity": 18,
+       "direct+entity": 2
+      }
+     }
+    }
+   },
+   "rev_2_2_at_0.5": {
+    "detections": 60,
+    "entity_alone": 54,
+    "entity_with_direct_or_balance": 6,
+    "direct_or_balance_without_entity": 0,
+    "combinations": {
+     "entity": 54,
+     "direct+claim_balance+entity": 1,
+     "direct+entity": 5
+    },
+    "by_type": {
+     "order_cycle": {
+      "detections": 20,
+      "entity_alone": 17,
+      "entity_with_direct_or_balance": 3,
+      "direct_or_balance_without_entity": 0,
+      "combinations": {
+       "entity": 17,
+       "direct+entity": 3
+      }
+     },
+     "equality_break": {
+      "detections": 20,
+      "entity_alone": 17,
+      "entity_with_direct_or_balance": 3,
+      "direct_or_balance_without_entity": 0,
+      "combinations": {
+       "entity": 17,
+       "direct+claim_balance+entity": 1,
+       "direct+entity": 2
+      }
+     },
+     "binary_parity": {
+      "detections": 20,
+      "entity_alone": 20,
+      "entity_with_direct_or_balance": 0,
+      "direct_or_balance_without_entity": 0,
+      "combinations": {
+       "entity": 20
+      }
+     }
+    }
+   }
+  },
+  "entity": {
+   "rev_2_1": {
+    "planted_relations_extracted": 0.9666666666666667,
+    "planted_relations_extracted_by_type": {
+     "order_cycle": 0.9,
+     "equality_break": 1.0,
+     "binary_parity": 1.0
+    },
+    "sense_overrides": 0,
+    "sense_override_list": [],
+    "superlatives": 0,
+    "superlative_edges": 0,
+    "superlative_list": [],
+    "superlative_collisions": [],
+    "unsupported_order_claims": 0,
+    "documents_with_unsupported_order_claims": [],
+    "unresolved_statements": 0,
+    "entity_relations": 1689,
+    "entity_relations_dropped": 0
+   },
+   "rev_2_2": {
+    "planted_relations_extracted": 1.0,
+    "planted_relations_extracted_by_type": {
+     "order_cycle": 1.0,
+     "equality_break": 1.0,
+     "binary_parity": 1.0
+    },
+    "sense_overrides": 19,
+    "sense_override_list": [
+     {
+      "claim_id": 10,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b09-consistent"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b09-consistent"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b09-consistent"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b09-direct"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b09-direct"
+     },
+     {
+      "claim_id": 25,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b09-direct"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b09-cycle"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b09-cycle"
+     },
+     {
+      "claim_id": 24,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b09-cycle"
+     },
+     {
+      "claim_id": 10,
+      "attribute": "arrival_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b21-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "arrival_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b21-consistent"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "arrival_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b21-consistent"
+     },
+     {
+      "claim_id": 9,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b45-consistent"
+     },
+     {
+      "claim_id": 14,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b45-consistent"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b45-consistent"
+     },
+     {
+      "claim_id": 10,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b45-direct"
+     },
+     {
+      "claim_id": 14,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b45-direct"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "finish_order",
+      "comparative": "ahead of",
+      "model": "subject",
+      "lexicon": "object",
+      "doc_id": "b45-direct"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "arrival_time",
+      "comparative": "earlier",
+      "model": "min",
+      "lexicon": "object",
+      "doc_id": "b52-direct"
+     }
+    ],
+    "superlatives": 348,
+    "superlative_edges": 429,
+    "superlative_list": [
+     {
+      "claim_id": 0,
+      "attribute": "arrival_time",
+      "entity": "isla",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b00-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "isla",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b00-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "isla",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b00-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "mina",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b01-consistent"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "arrival_time",
+      "entity": "gus",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b01-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "mina",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b01-direct"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "arrival_time",
+      "entity": "gus",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b01-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "mina",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b01-cycle"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "arrival_time",
+      "entity": "gus",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b01-cycle"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_order",
+      "entity": "dara",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b02-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "height",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b02-consistent"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_order",
+      "entity": "dara",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b02-direct"
+     },
+     {
+      "claim_id": 10,
+      "attribute": "height",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b02-direct"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_order",
+      "entity": "dara",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b02-cycle"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "height",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b02-cycle"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "jun",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b04-consistent"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "age",
+      "entity": "gia",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b04-consistent"
+     },
+     {
+      "claim_id": 14,
+      "attribute": "height",
+      "entity": "hugo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b04-consistent"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "tournament_rank",
+      "entity": "jun",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b04-consistent"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "membership_tenure",
+      "entity": "hugo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b04-consistent"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "jun",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b04-direct"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "height",
+      "entity": "hugo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b04-direct"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "membership_tenure",
+      "entity": "hugo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b04-direct"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "tournament_rank",
+      "entity": "jun",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b04-direct"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "jun",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b04-cycle"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "height",
+      "entity": "hugo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b04-cycle"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "tournament_rank",
+      "entity": "jun",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b04-cycle"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "tenure",
+      "entity": "hugo",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b04-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "mina",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b05-consistent"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "age",
+      "entity": "fay",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b05-consistent"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "mina",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b05-direct"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "age",
+      "entity": "fay",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b05-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "mina",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b05-cycle"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "age",
+      "entity": "fay",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b05-cycle"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "fay",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b06-consistent"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "fay",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b06-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "fay",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b06-cycle"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "bo",
+      "extreme": "min",
+      "edges": 4,
+      "doc_id": "b07-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "arrival_time",
+      "entity": "milo",
+      "extreme": "max",
+      "edges": 4,
+      "doc_id": "b07-consistent"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "height",
+      "entity": "milo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b07-consistent"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "height",
+      "entity": "finn",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b07-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "arrival_time",
+      "entity": "milo",
+      "extreme": "max",
+      "edges": 4,
+      "doc_id": "b07-direct"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "height",
+      "entity": "milo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b07-direct"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "height",
+      "entity": "finn",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b07-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "bo",
+      "extreme": "min",
+      "edges": 4,
+      "doc_id": "b07-cycle"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "arrival_time",
+      "entity": "milo",
+      "extreme": "max",
+      "edges": 4,
+      "doc_id": "b07-cycle"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "height",
+      "entity": "milo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b07-cycle"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "height",
+      "entity": "finn",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b07-cycle"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "height",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-consistent"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "kneading_speed",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "seniority",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-consistent"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "seniority",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-consistent"
+     },
+     {
+      "claim_id": 5,
+      "attribute": "loaf_size",
+      "entity": "largest_loaves",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-consistent"
+     },
+     {
+      "claim_id": 4,
+      "attribute": "height",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-direct"
+     },
+     {
+      "claim_id": 9,
+      "attribute": "kneading_speed",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-direct"
+     },
+     {
+      "claim_id": 13,
+      "attribute": "seniority",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-direct"
+     },
+     {
+      "claim_id": 14,
+      "attribute": "tenure",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-direct"
+     },
+     {
+      "claim_id": 5,
+      "attribute": "height",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-cycle"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "kneading_speed",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-cycle"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "seniority",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-cycle"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "seniority",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b08-cycle"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "distance_traveled",
+      "entity": "pia",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b09-consistent"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "height",
+      "entity": "zeno",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b09-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "arrival_time",
+      "entity": "alma",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b09-consistent"
+     },
+     {
+      "claim_id": 5,
+      "attribute": "distance_traveled",
+      "entity": "pia",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b09-direct"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "height",
+      "entity": "zeno",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b09-direct"
+     },
+     {
+      "claim_id": 13,
+      "attribute": "arrival_time",
+      "entity": "alma",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b09-direct"
+     },
+     {
+      "claim_id": 5,
+      "attribute": "distance_traveled",
+      "entity": "pia",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b09-cycle"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "height",
+      "entity": "zeno",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b09-cycle"
+     },
+     {
+      "claim_id": 13,
+      "attribute": "arrival_time",
+      "entity": "alma",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b09-cycle"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "previous_year_rank",
+      "entity": "hana",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b10-direct"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "previous_year_rank",
+      "entity": "isla",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b10-direct"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "rank",
+      "entity": "hana",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b10-cycle"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "rank",
+      "entity": "isla",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b10-cycle"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "distance_traveled",
+      "entity": "ivo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b11-consistent"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "season_rank",
+      "entity": "kai",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b11-consistent"
+     },
+     {
+      "claim_id": 5,
+      "attribute": "distance_traveled",
+      "entity": "ivo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b11-direct"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "rank",
+      "entity": "kai",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b11-direct"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "distance_traveled",
+      "entity": "ivo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b11-cycle"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "season_rank",
+      "entity": "kai",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b11-cycle"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_time",
+      "entity": "otto",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b12-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "otto",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b12-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "otto",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b12-cycle"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "zeno",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b13-consistent"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "zeno",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b13-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "zeno",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b13-cycle"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "nell",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b14-consistent"
+     },
+     {
+      "claim_id": 15,
+      "attribute": "height",
+      "entity": "pia",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b14-consistent"
+     },
+     {
+      "claim_id": 25,
+      "attribute": "arrival_time",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b14-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "nell",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b14-direct"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "leaving_order",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b14-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "nell",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b14-cycle"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "punctuality",
+      "entity": "rosa",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b14-cycle"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "arrival_time",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b14-cycle"
+     },
+     {
+      "claim_id": 25,
+      "attribute": "shift_duration",
+      "entity": "zeno",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b17-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "pia",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b18-consistent"
+     },
+     {
+      "claim_id": 7,
+      "attribute": "arrival_order",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b18-consistent"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_time",
+      "entity": "pia",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b18-direct"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b18-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "pia",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b18-cycle"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "arrival_order",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b18-cycle"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "zeno",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b19-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "height",
+      "entity": "eli",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b19-consistent"
+     },
+     {
+      "claim_id": 15,
+      "attribute": "race_rank",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b19-consistent"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "age",
+      "entity": "zeno",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b19-consistent"
+     },
+     {
+      "claim_id": 4,
+      "attribute": "arrival_order",
+      "entity": "zeno",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b19-direct"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "height",
+      "entity": "eli",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b19-direct"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "speed_rank",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b19-direct"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "age",
+      "entity": "zeno",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b19-direct"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "zeno",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b19-cycle"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "height",
+      "entity": "eli",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b19-cycle"
+     },
+     {
+      "claim_id": 15,
+      "attribute": "race_speed_rank",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b19-cycle"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "age",
+      "entity": "zeno",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b19-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "esme",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b20-consistent"
+     },
+     {
+      "claim_id": 10,
+      "attribute": "arrival_time",
+      "entity": "jun",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b20-consistent"
+     },
+     {
+      "claim_id": 7,
+      "attribute": "height",
+      "entity": "eli",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b20-consistent"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "age",
+      "entity": "jun",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b20-consistent"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "age",
+      "entity": "yara",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b20-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "esme",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b20-direct"
+     },
+     {
+      "claim_id": 7,
+      "attribute": "height",
+      "entity": "eli",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b20-direct"
+     },
+     {
+      "claim_id": 10,
+      "attribute": "arrival_time",
+      "entity": "jun",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b20-direct"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "age",
+      "entity": "jun",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b20-direct"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "age",
+      "entity": "yara",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b20-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "esme",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b20-cycle"
+     },
+     {
+      "claim_id": 10,
+      "attribute": "arrival_time",
+      "entity": "jun",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b20-cycle"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "age",
+      "entity": "jun",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b20-cycle"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "age",
+      "entity": "yara",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b20-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "sami",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b21-consistent"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "arrival_order",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b21-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "sami",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b21-direct"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "arrival_order",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b21-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "sami",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b21-cycle"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "arrival_order",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b21-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "kira",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b22-consistent"
+     },
+     {
+      "claim_id": 9,
+      "attribute": "arrival_time",
+      "entity": "yara",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b22-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "kira",
+      "extreme": "min",
+      "edges": 4,
+      "doc_id": "b22-direct"
+     },
+     {
+      "claim_id": 9,
+      "attribute": "arrival_time",
+      "entity": "yara",
+      "extreme": "max",
+      "edges": 4,
+      "doc_id": "b22-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "kira",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b22-cycle"
+     },
+     {
+      "claim_id": 9,
+      "attribute": "arrival_time",
+      "entity": "yara",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b22-cycle"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "rank",
+      "entity": "kai",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b23-consistent"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "quiz_rank",
+      "entity": "kai",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b23-direct"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "rank",
+      "entity": "kai",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b23-cycle"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "noor",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b24-consistent"
+     },
+     {
+      "claim_id": 24,
+      "attribute": "proximity_to_studio",
+      "entity": "ben",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b24-consistent"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "noor",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b24-direct"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "completion_speed",
+      "entity": "milo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b24-direct"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "proximity_to_studio",
+      "entity": "ben",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b24-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "noor",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b24-cycle"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "proximity_to_studio",
+      "entity": "ben",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b24-cycle"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_order",
+      "entity": "milo",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b25-consistent"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "age",
+      "entity": "milo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b25-consistent"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_time",
+      "entity": "milo",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b25-direct"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "age",
+      "entity": "milo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b25-direct"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_order",
+      "entity": "milo",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b25-cycle"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "age",
+      "entity": "milo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b25-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "hana",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b26-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "height",
+      "entity": "alma",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b26-consistent"
+     },
+     {
+      "claim_id": 14,
+      "attribute": "tenure",
+      "entity": "rosa",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b26-consistent"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "hana",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b26-direct"
+     },
+     {
+      "claim_id": 13,
+      "attribute": "height",
+      "entity": "alma",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b26-direct"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "tenure",
+      "entity": "rosa",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b26-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "hana",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b26-cycle"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "height",
+      "entity": "alma",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b26-cycle"
+     },
+     {
+      "claim_id": 15,
+      "attribute": "tenure",
+      "entity": "rosa",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b26-cycle"
+     },
+     {
+      "claim_id": 5,
+      "attribute": "raffle",
+      "entity": "mina",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b27-consistent"
+     },
+     {
+      "claim_id": 10,
+      "attribute": "height",
+      "entity": "dev",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b29-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "height",
+      "entity": "dev",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b29-consistent"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "height",
+      "entity": "dev",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b29-direct"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "height",
+      "entity": "dev",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b29-cycle"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_order",
+      "entity": "isla",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b30-consistent"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "isla",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b30-direct"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_order",
+      "entity": "isla",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b30-cycle"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_order",
+      "entity": "otto",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b31-consistent"
+     },
+     {
+      "claim_id": 9,
+      "attribute": "arrival_order",
+      "entity": "jude",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b31-consistent"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "signup_order",
+      "entity": "kira",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b31-consistent"
+     },
+     {
+      "claim_id": 24,
+      "attribute": "height",
+      "entity": "noor",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b31-consistent"
+     },
+     {
+      "claim_id": 4,
+      "attribute": "arrival_order",
+      "entity": "otto",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b31-direct"
+     },
+     {
+      "claim_id": 10,
+      "attribute": "arrival_order",
+      "entity": "jude",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b31-direct"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "signup_order",
+      "entity": "kira",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b31-direct"
+     },
+     {
+      "claim_id": 25,
+      "attribute": "height",
+      "entity": "noor",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b31-direct"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_order",
+      "entity": "otto",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b31-cycle"
+     },
+     {
+      "claim_id": 9,
+      "attribute": "arrival_order",
+      "entity": "jude",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b31-cycle"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "signup_order",
+      "entity": "kira",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b31-cycle"
+     },
+     {
+      "claim_id": 24,
+      "attribute": "height",
+      "entity": "noor",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b31-cycle"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "milo",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b32-consistent"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "milo",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b32-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "milo",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b32-cycle"
+     },
+     {
+      "claim_id": 24,
+      "attribute": "age",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b33-consistent"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "age",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b33-direct"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "age",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b33-cycle"
+     },
+     {
+      "claim_id": 28,
+      "attribute": "speed_rank",
+      "entity": "kai",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b34-consistent"
+     },
+     {
+      "claim_id": 28,
+      "attribute": "race_speed",
+      "entity": "kai",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b34-direct"
+     },
+     {
+      "claim_id": 26,
+      "attribute": "rank",
+      "entity": "kai",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b34-cycle"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "quinn",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b36-consistent"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_order",
+      "entity": "quinn",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b36-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "quinn",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b36-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "ben",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b38-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "age",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b38-consistent"
+     },
+     {
+      "claim_id": 14,
+      "attribute": "sales_rank",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b38-consistent"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_order",
+      "entity": "ben",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b38-direct"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "age",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b38-direct"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "sales_rank",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b38-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "ben",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b38-cycle"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "age",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b38-cycle"
+     },
+     {
+      "claim_id": 14,
+      "attribute": "sales_rank",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b38-cycle"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "sell_out_time",
+      "entity": "flower_stall",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b38-cycle"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "scenery_competition_rank",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b39-consistent"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "scenery_competition_rank",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b39-direct"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "scenery_competition_rank",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b39-cycle"
+     },
+     {
+      "claim_id": 7,
+      "attribute": "height",
+      "entity": "nell",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b40-consistent"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "competition_rank",
+      "entity": "nell",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b40-consistent"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "competition_rank",
+      "entity": "finn",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b40-consistent"
+     },
+     {
+      "claim_id": 15,
+      "attribute": "layout_size",
+      "entity": "mountain_layout",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b40-direct"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "proximity_to_door",
+      "entity": "mountain_layout",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b40-direct"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "competition_rank",
+      "entity": "nell",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b40-direct"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "competition_rank",
+      "entity": "finn",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b40-direct"
+     },
+     {
+      "claim_id": 15,
+      "attribute": "layout_size",
+      "entity": "largest_layout",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b40-cycle"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "competition_rank",
+      "entity": "nell",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b40-cycle"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "competition_rank",
+      "entity": "finn",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b40-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "sami",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b41-consistent"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "arrival_time",
+      "entity": "xavi",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b41-consistent"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "height",
+      "entity": "dev",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b41-consistent"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "chess_rank",
+      "entity": "sami",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b41-consistent"
+     },
+     {
+      "claim_id": 26,
+      "attribute": "age",
+      "entity": "xavi",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b41-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "sami",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b41-direct"
+     },
+     {
+      "claim_id": 5,
+      "attribute": "arrival_time",
+      "entity": "xavi",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b41-direct"
+     },
+     {
+      "claim_id": 13,
+      "attribute": "height",
+      "entity": "dev",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b41-direct"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "chess_rank",
+      "entity": "sami",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b41-direct"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "age",
+      "entity": "xavi",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b41-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "sami",
+      "extreme": "min",
+      "edges": 4,
+      "doc_id": "b41-cycle"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "arrival_order",
+      "entity": "xavi",
+      "extreme": "max",
+      "edges": 4,
+      "doc_id": "b41-cycle"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "height",
+      "entity": "dev",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b41-cycle"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "chess_rank",
+      "entity": "sami",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b41-cycle"
+     },
+     {
+      "claim_id": 21,
+      "attribute": "chess_rank",
+      "entity": "sami",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b41-cycle"
+     },
+     {
+      "claim_id": 26,
+      "attribute": "age",
+      "entity": "xavi",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b41-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "milo",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b42-consistent"
+     },
+     {
+      "claim_id": 14,
+      "attribute": "arrival_time",
+      "entity": "yara",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b42-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "milo",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b42-direct"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "arrival_time",
+      "entity": "yara",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b42-direct"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "milo",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b42-cycle"
+     },
+     {
+      "claim_id": 13,
+      "attribute": "arrival_time",
+      "entity": "yara",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b42-cycle"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_order",
+      "entity": "bo",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b43-consistent"
+     },
+     {
+      "claim_id": 7,
+      "attribute": "arrival_order",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b43-consistent"
+     },
+     {
+      "claim_id": 10,
+      "attribute": "height",
+      "entity": "ivo",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b43-consistent"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "age",
+      "entity": "ivo",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b43-consistent"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "age",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b43-consistent"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "debate_experience",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b43-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "bo",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b43-direct"
+     },
+     {
+      "claim_id": 5,
+      "attribute": "arrival_order",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b43-direct"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "height",
+      "entity": "ivo",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b43-direct"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "age",
+      "entity": "ivo",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b43-direct"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "age",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b43-direct"
+     },
+     {
+      "claim_id": 19,
+      "attribute": "debate_experience",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b43-direct"
+     },
+     {
+      "claim_id": 4,
+      "attribute": "arrival_order",
+      "entity": "bo",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b43-cycle"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "arrival_order",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b43-cycle"
+     },
+     {
+      "claim_id": 15,
+      "attribute": "height",
+      "entity": "ivo",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b43-cycle"
+     },
+     {
+      "claim_id": 25,
+      "attribute": "age",
+      "entity": "ivo",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b43-cycle"
+     },
+     {
+      "claim_id": 27,
+      "attribute": "age",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b43-cycle"
+     },
+     {
+      "claim_id": 28,
+      "attribute": "debate_experience",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b43-cycle"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "arrival_time",
+      "entity": "fay",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b44-consistent"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "height",
+      "entity": "fay",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b44-consistent"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "arrival_time",
+      "entity": "fay",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b44-direct"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "arrival_time",
+      "entity": "fay",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b44-cycle"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "noor",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b46-consistent"
+     },
+     {
+      "claim_id": 15,
+      "attribute": "height",
+      "entity": "noor",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b46-consistent"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "height",
+      "entity": "jude",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b46-consistent"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "noor",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b46-direct"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "height",
+      "entity": "noor",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b46-direct"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "height",
+      "entity": "jude",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b46-direct"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "noor",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b46-cycle"
+     },
+     {
+      "claim_id": 15,
+      "attribute": "height",
+      "entity": "noor",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b46-cycle"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "height",
+      "entity": "jude",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b46-cycle"
+     },
+     {
+      "claim_id": 26,
+      "attribute": "rank",
+      "entity": "cleo",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b46-cycle"
+     },
+     {
+      "claim_id": 7,
+      "attribute": "height",
+      "entity": "dara",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b47-consistent"
+     },
+     {
+      "claim_id": 13,
+      "attribute": "arrival_time",
+      "entity": "otto",
+      "extreme": "max",
+      "edges": 4,
+      "doc_id": "b47-consistent"
+     },
+     {
+      "claim_id": 27,
+      "attribute": "species_count",
+      "entity": "uma",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b47-consistent"
+     },
+     {
+      "claim_id": 13,
+      "attribute": "arrival_time",
+      "entity": "otto",
+      "extreme": "max",
+      "edges": 4,
+      "doc_id": "b47-direct"
+     },
+     {
+      "claim_id": 25,
+      "attribute": "species_count",
+      "entity": "uma",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b47-direct"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "arrival_time",
+      "entity": "otto",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b47-cycle"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "species_count",
+      "entity": "uma",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b47-cycle"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_time",
+      "entity": "pia",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b48-consistent"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_order",
+      "entity": "pia",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b48-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "kai",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b49-consistent"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "arrival_time",
+      "entity": "hugo",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b49-consistent"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "height",
+      "entity": "hugo",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b49-consistent"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "kai",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b49-direct"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "arrival_time",
+      "entity": "hugo",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b49-direct"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "focus",
+      "entity": "ana",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b49-direct"
+     },
+     {
+      "claim_id": 25,
+      "attribute": "height",
+      "entity": "hugo",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b49-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "kai",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b49-cycle"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "arrival_time",
+      "entity": "hugo",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b49-cycle"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "height",
+      "entity": "hugo",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b49-cycle"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_time",
+      "entity": "pia",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b50-consistent"
+     },
+     {
+      "claim_id": 14,
+      "attribute": "stage_presence_rank",
+      "entity": "finn",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b50-consistent"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_order",
+      "entity": "pia",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b50-direct"
+     },
+     {
+      "claim_id": 26,
+      "attribute": "stage_presence_rank",
+      "entity": "finn",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b50-direct"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_time",
+      "entity": "pia",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b50-cycle"
+     },
+     {
+      "claim_id": 15,
+      "attribute": "stage_presence_rank",
+      "entity": "finn",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b50-cycle"
+     },
+     {
+      "claim_id": 25,
+      "attribute": "height",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b51-consistent"
+     },
+     {
+      "claim_id": 27,
+      "attribute": "height",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b51-direct"
+     },
+     {
+      "claim_id": 25,
+      "attribute": "height",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b51-cycle"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "arrival_time",
+      "entity": "uma",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b52-consistent"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "arrival_time",
+      "entity": "uma",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b52-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "isla",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b54-consistent"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "distance_traveled",
+      "entity": "isla",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b54-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "isla",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b54-direct"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "distance_traveled",
+      "entity": "isla",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b54-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "isla",
+      "extreme": "min",
+      "edges": 0,
+      "doc_id": "b54-cycle"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "distance_traveled",
+      "entity": "isla",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b54-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "kai",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b55-consistent"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "arrival_time",
+      "entity": "ben",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b55-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "kai",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b55-direct"
+     },
+     {
+      "claim_id": 11,
+      "attribute": "arrival_order",
+      "entity": "ben",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b55-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "kai",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b55-cycle"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "arrival_time",
+      "entity": "ben",
+      "extreme": "max",
+      "edges": 3,
+      "doc_id": "b55-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "cy",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b56-consistent"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "travel_distance",
+      "entity": "kira",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b56-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "cy",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b56-direct"
+     },
+     {
+      "claim_id": 12,
+      "attribute": "distance_traveled",
+      "entity": "kira",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b56-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "cy",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b56-cycle"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "arrival_time",
+      "entity": "kira",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b56-cycle"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_order",
+      "entity": "otto",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b57-consistent"
+     },
+     {
+      "claim_id": 4,
+      "attribute": "finish_order",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b57-consistent"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "age",
+      "entity": "esme",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b57-consistent"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "age",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b57-consistent"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "otto",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b57-direct"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "arrival_order",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b57-direct"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "age",
+      "entity": "esme",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b57-direct"
+     },
+     {
+      "claim_id": 25,
+      "attribute": "age",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b57-direct"
+     },
+     {
+      "claim_id": 0,
+      "attribute": "arrival_order",
+      "entity": "otto",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b57-cycle"
+     },
+     {
+      "claim_id": 4,
+      "attribute": "finish_order",
+      "entity": "esme",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b57-cycle"
+     },
+     {
+      "claim_id": 17,
+      "attribute": "age",
+      "entity": "esme",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b57-cycle"
+     },
+     {
+      "claim_id": 22,
+      "attribute": "age",
+      "entity": "leo",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b57-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "ana",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b58-consistent"
+     },
+     {
+      "claim_id": 7,
+      "attribute": "arrival_order",
+      "entity": "lena",
+      "extreme": "max",
+      "edges": 2,
+      "doc_id": "b58-consistent"
+     },
+     {
+      "claim_id": 16,
+      "attribute": "age",
+      "entity": "lena",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b58-consistent"
+     },
+     {
+      "claim_id": 3,
+      "attribute": "arrival_time",
+      "entity": "ana",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b58-direct"
+     },
+     {
+      "claim_id": 10,
+      "attribute": "arrival_time",
+      "entity": "lena",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b58-direct"
+     },
+     {
+      "claim_id": 27,
+      "attribute": "age",
+      "entity": "lena",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b58-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "ana",
+      "extreme": "min",
+      "edges": 1,
+      "doc_id": "b58-cycle"
+     },
+     {
+      "claim_id": 8,
+      "attribute": "arrival_time",
+      "entity": "lena",
+      "extreme": "max",
+      "edges": 1,
+      "doc_id": "b58-cycle"
+     },
+     {
+      "claim_id": 18,
+      "attribute": "age",
+      "entity": "lena",
+      "extreme": "min",
+      "edges": 2,
+      "doc_id": "b58-cycle"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_time",
+      "entity": "yara",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b59-consistent"
+     },
+     {
+      "claim_id": 20,
+      "attribute": "litter_collected",
+      "entity": "yara",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b59-consistent"
+     },
+     {
+      "claim_id": 2,
+      "attribute": "arrival_time",
+      "entity": "yara",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b59-direct"
+     },
+     {
+      "claim_id": 6,
+      "attribute": "lead_role",
+      "entity": "sami",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b59-direct"
+     },
+     {
+      "claim_id": 23,
+      "attribute": "litter_collected",
+      "entity": "yaras_team",
+      "extreme": "max",
+      "edges": 0,
+      "doc_id": "b59-direct"
+     },
+     {
+      "claim_id": 1,
+      "attribute": "arrival_order",
+      "entity": "yara",
+      "extreme": "min",
+      "edges": 3,
+      "doc_id": "b59-cycle"
+     }
+    ],
+    "superlative_collisions": [],
+    "unsupported_order_claims": 21,
+    "documents_with_unsupported_order_claims": [
+     "b04-direct",
+     "b05-direct",
+     "b07-direct",
+     "b13-direct",
+     "b17-consistent",
+     "b17-direct",
+     "b20-direct",
+     "b25-direct",
+     "b29-direct",
+     "b31-consistent",
+     "b31-cycle",
+     "b33-direct",
+     "b34-direct",
+     "b39-direct",
+     "b41-direct",
+     "b52-direct",
+     "b53-direct",
+     "b54-direct",
+     "b59-cycle"
+    ],
+    "unresolved_statements": 4,
+    "entity_relations": 1541,
+    "entity_relations_dropped": 0
+   }
+  },
+  "l1b": {
+   "rev_2_1": {
+    "documents": 120,
+    "kept": {
+     "consistent": 60,
+     "direct": 60
+    },
+    "left_out_harmony_none": {
+     "consistent": 0,
+     "direct": 0
+    },
+    "auc_harmony": 0.9258333333333333,
+    "auc_conflict": 0.5277777777777778,
+    "premise_top3": 0.9333333333333333,
+    "premise_documents": 30,
+    "unanchored_fraction": 0.3416666666666667,
+    "judged": false,
+    "checks": {
+     "auc": true,
+     "auc_at_least_conflict": true,
+     "premise_top3": true
+    },
+    "passed": null
+   },
+   "rev_2_2": {
+    "documents": 120,
+    "kept": {
+     "consistent": 59,
+     "direct": 60
+    },
+    "left_out_harmony_none": {
+     "consistent": 1,
+     "direct": 0
+    },
+    "auc_harmony": 0.9751412429378531,
+    "auc_conflict": 0.4998587570621469,
+    "premise_top3": 1.0,
+    "premise_documents": 30,
+    "unanchored_fraction": 0.4166666666666667,
+    "judged": false,
+    "checks": {
+     "auc": true,
+     "auc_at_least_conflict": true,
+     "premise_top3": true
+    },
+    "passed": null
+   }
+  },
+  "minimal": {
+   "rev_2_1": {
+    "report_only": true,
+    "documents": 180,
+    "methods": {
+     "minimal": {
+      "direct": {
+       "n": 120,
+       "tp": 60,
+       "fp": 10,
+       "fn": 0,
+       "precision": 0.8571428571428571,
+       "recall": 1.0,
+       "f1": 0.923076923076923
+      },
+      "cycle": {
+       "n": 120,
+       "tp": 60,
+       "fp": 10,
+       "fn": 0,
+       "precision": 0.8571428571428571,
+       "recall": 1.0,
+       "f1": 0.923076923076923
+      },
+      "cycle_by_type": {
+       "order_cycle": {
+        "n": 40,
+        "tp": 20,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.8695652173913043,
+        "recall": 1.0,
+        "f1": 0.9302325581395349
+       },
+       "equality_break": {
+        "n": 40,
+        "tp": 20,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "f1": 0.9090909090909091
+       },
+       "binary_parity": {
+        "n": 40,
+        "tp": 20,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.8695652173913043,
+        "recall": 1.0,
+        "f1": 0.9302325581395349
+       }
+      },
+      "false_positive_rate": 0.16666666666666666,
+      "binary_control_false_positive_rate": 0.15,
+      "localization": 1.0
+     },
+     "full": {
+      "direct": {
+       "n": 120,
+       "tp": 60,
+       "fp": 11,
+       "fn": 0,
+       "precision": 0.8450704225352113,
+       "recall": 1.0,
+       "f1": 0.916030534351145
+      },
+      "cycle": {
+       "n": 120,
+       "tp": 60,
+       "fp": 11,
+       "fn": 0,
+       "precision": 0.8450704225352113,
+       "recall": 1.0,
+       "f1": 0.916030534351145
+      },
+      "cycle_by_type": {
+       "order_cycle": {
+        "n": 40,
+        "tp": 20,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "f1": 0.9090909090909091
+       },
+       "equality_break": {
+        "n": 40,
+        "tp": 20,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "f1": 0.9090909090909091
+       },
+       "binary_parity": {
+        "n": 40,
+        "tp": 20,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.8695652173913043,
+        "recall": 1.0,
+        "f1": 0.9302325581395349
+       }
+      },
+      "false_positive_rate": 0.18333333333333332,
+      "binary_control_false_positive_rate": 0.15,
+      "localization": 1.0
+     }
+    },
+    "agreement": 0.9944444444444445,
+    "disagreements": [
+     {
+      "doc_id": "b54-consistent",
+      "variant": "consistent",
+      "cycle_type": "order_cycle",
+      "full_clauses": [
+       "claim_balance"
+      ],
+      "minimal_clauses": [],
+      "predicted": true
+     }
+    ],
+    "clause_mismatches": [],
+    "prediction": {
+     "agreement_at_least": 0.98,
+     "agreement_met": true,
+     "all_disagreements_predicted": true,
+     "held": true
+    },
+    "investigate": false
+   },
+   "rev_2_2_at_0.5": {
+    "report_only": true,
+    "documents": 180,
+    "methods": {
+     "minimal": {
+      "direct": {
+       "n": 120,
+       "tp": 60,
+       "fp": 4,
+       "fn": 0,
+       "precision": 0.9375,
+       "recall": 1.0,
+       "f1": 0.967741935483871
+      },
+      "cycle": {
+       "n": 120,
+       "tp": 60,
+       "fp": 4,
+       "fn": 0,
+       "precision": 0.9375,
+       "recall": 1.0,
+       "f1": 0.967741935483871
+      },
+      "cycle_by_type": {
+       "order_cycle": {
+        "n": 40,
+        "tp": 20,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+       },
+       "equality_break": {
+        "n": 40,
+        "tp": 20,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523
+       },
+       "binary_parity": {
+        "n": 40,
+        "tp": 20,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523
+       }
+      },
+      "false_positive_rate": 0.06666666666666667,
+      "binary_control_false_positive_rate": 0.1,
+      "localization": 0.9666666666666667
+     },
+     "full": {
+      "direct": {
+       "n": 120,
+       "tp": 60,
+       "fp": 4,
+       "fn": 0,
+       "precision": 0.9375,
+       "recall": 1.0,
+       "f1": 0.967741935483871
+      },
+      "cycle": {
+       "n": 120,
+       "tp": 60,
+       "fp": 4,
+       "fn": 0,
+       "precision": 0.9375,
+       "recall": 1.0,
+       "f1": 0.967741935483871
+      },
+      "cycle_by_type": {
+       "order_cycle": {
+        "n": 40,
+        "tp": 20,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+       },
+       "equality_break": {
+        "n": 40,
+        "tp": 20,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523
+       },
+       "binary_parity": {
+        "n": 40,
+        "tp": 20,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523
+       }
+      },
+      "false_positive_rate": 0.06666666666666667,
+      "binary_control_false_positive_rate": 0.1,
+      "localization": 0.9833333333333333
+     }
+    },
+    "agreement": 1.0,
+    "disagreements": [],
+    "clause_mismatches": [],
+    "prediction": {
+     "agreement_at_least": 0.98,
+     "agreement_met": true,
+     "all_disagreements_predicted": true,
+     "held": true
+    },
+    "investigate": false
+   }
+  },
+  "cost": {
+   "rev_2_1": {
+    "documents": 180,
+    "per_document_usd": {
+     "engine": 0.1375888222222222,
+     "minimal": 0.1375888222222222,
+     "pairwise": 0.12660513333333334,
+     "direct": 0.009096044444444444
+    },
+    "total_usd": 26.403275999999998,
+    "by_call": {
+     "extract": {
+      "calls": 180,
+      "input_tokens": 246357,
+      "output_tokens": 270633,
+      "usd": 3.1990439999999998
+     },
+     "pairs": {
+      "calls": 104,
+      "input_tokens": 121716,
+      "output_tokens": 37417,
+      "usd": 0.617602
+     },
+     "relate": {
+      "calls": 1256,
+      "input_tokens": 1610744,
+      "output_tokens": 1575079,
+      "usd": 18.972278
+     },
+     "entities": {
+      "calls": 180,
+      "input_tokens": 389007,
+      "output_tokens": 119905,
+      "usd": 1.977064
+     },
+     "direct": {
+      "calls": 360,
+      "input_tokens": 386514,
+      "output_tokens": 86426,
+      "usd": 1.637288
+     }
+    }
+   },
+   "rev_2_2": {
+    "documents": 180,
+    "per_document_usd": {
+     "engine": 0.42442515000000003,
+     "minimal": 0.42442515000000003,
+     "pairwise": 0.4136078888888889,
+     "direct": 0.0
+    },
+    "total_usd": 76.39652699999999,
+    "by_call": {
+     "extract": {
+      "calls": 180,
+      "input_tokens": 246357,
+      "output_tokens": 270633,
+      "usd": 3.1990439999999998
+     },
+     "pairs": {
+      "calls": 104,
+      "input_tokens": 121716,
+      "output_tokens": 37417,
+      "usd": 0.617602
+     },
+     "relate": {
+      "calls": 23754,
+      "input_tokens": 24514887,
+      "output_tokens": 2160300,
+      "usd": 70.632774
+     },
+     "entities": {
+      "calls": 180,
+      "input_tokens": 684927,
+      "output_tokens": 161417,
+      "usd": 1.947107
+     },
+     "direct": {
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "usd": 0.0
+     }
+    }
+   }
+  }
+ }
+}

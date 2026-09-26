@@ -1,0 +1,26 @@
+{
+ "request": "b1a723f0580860f4a8254047ab68a18a6e53196b7da1187077045e0803b61374",
+ "tag": "text-c20252601b70-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Dev and Hugo were on different teams.",
+     "Hugo and Cleo were on different teams.",
+     "Dev and Cleo were on different teams.",
+     "There were two teams."
+    ],
+    "explanation": "With only two teams, three people cannot all be pairwise on different teams (by pigeonhole principle at least two of them must share a team)."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 992,
+  "output_tokens": 182,
+  "thinking_tokens": 62
+ },
+ "stop_reason": "end_turn"
+}

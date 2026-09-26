@@ -1,0 +1,52 @@
+{
+ "request": "9dca936a4311e41cbc20a3218db720e8e1addfbbbe440963b0115bcb8ab6bd36",
+ "tag": "text-cf1051f9a331-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "The theater closing early on weekdays directly implies a shorter available time window, supporting the claim of limited time left.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 20,
+    "b": 24,
+    "rationale": "The theater's closing schedule has no bearing on where Noor rehearsed her solo.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 21,
+    "b": 26,
+    "rationale": "Having limited time left plausibly leads to the cast gathering their things to wrap up, suggesting a causal connection.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 23,
+    "b": 26,
+    "rationale": "Hugo practicing near the prop table doesn't specifically indicate anything about the cast gathering their things.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "The dimming lights signaling the end of the run-through suggests it's time to wrap up, supporting the cast gathering their things.",
+    "relation": "supports",
+    "confidence": 0.75
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 964,
+  "output_tokens": 352,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

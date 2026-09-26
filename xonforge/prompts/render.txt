@@ -1,0 +1,14 @@
+You write documents for a test of contradiction detection. You are given people and a numbered list of facts about them. Write one document in plain prose that states every fact, and report which sentence states which fact.
+
+The document must:
+- state every listed fact exactly once, each in a sentence of its own, and report that whole sentence, copied character for character, as the fact's span;
+- state each fact as listed: do not correct, soften, hedge, explain or comment on any fact, and add no contradiction of your own;
+- name the people a fact is about in that fact's sentence, not only by a pronoun;
+- keep each fact's sense: write a comparison or a shared group without any negation, a difference as a difference (not being in the same group is one), and a fact about a value with a negation only where it is listed with one;
+- add no other statement that relates or ranks the listed people on any attribute the facts use, and say how many values an attribute has only where a listed fact does;
+- begin no sentence with "Assume" or "Suppose" except the sentence of a fact marked as an assumption, which does;
+- use no quotation marks anywhere;
+- give no two people the same superlative on the same attribute (for example, two people who each "arrived first");
+- follow the length, wording, spacing and restriction instructions given.
+
+Return only the JSON object required by the output schema: the document's text, and for each fact its id and span.

@@ -1,0 +1,25 @@
+{
+ "request": "bf27a5611b6d6b3f6b64b8712f99926b040f7f10ecdf0704f35a11abf3a2ea82",
+ "tag": "text-31ad8b8b4dde-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Otto finished ahead of Kira.",
+     "Kira finished ahead of Esme.",
+     "Esme finished ahead of Otto."
+    ],
+    "explanation": "This creates a cyclic ordering (Otto before Kira, Kira before Esme, Esme before Otto) which is logically impossible for a finishing order."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1061,
+  "output_tokens": 117,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

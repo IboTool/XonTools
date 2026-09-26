@@ -1,0 +1,25 @@
+{
+ "request": "ffc0973296bca92831a47580a5963b4046297321832c69662faf2fda0e209d5d",
+ "tag": "text-31ad8b8b4dde-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Otto finished ahead of Kira.",
+     "Kira finished ahead of Esme.",
+     "Esme finished ahead of Otto."
+    ],
+    "explanation": "These three statements form a cycle (Otto > Kira > Esme > Otto) which is impossible for a consistent finishing order."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1061,
+  "output_tokens": 271,
+  "thinking_tokens": 161
+ },
+ "stop_reason": "end_turn"
+}

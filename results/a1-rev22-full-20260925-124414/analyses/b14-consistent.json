@@ -1,0 +1,1482 @@
+{
+ "label": "b14-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-c4041fcdb110",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The choir gathered early in the community hall for the evening rehearsal.",
+   "span": "The choir gathered early in the community hall for the evening rehearsal",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "The wooden floor creaked as everyone found their seats.",
+   "span": "the wooden floor creaked as everyone found their seats",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Nell arrived first.",
+   "span": "Nell arrived first",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Nell was carrying her folder of sheet music.",
+   "span": "carrying her folder of sheet music",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Nell greeted Rosa warmly by the piano.",
+   "span": "she greeted Rosa warmly by the piano",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Rosa is the team captain.",
+   "span": "Assume that Rosa is the team captain",
+   "kind": "premise"
+  },
+  {
+   "id": 6,
+   "text": "Leo came in a few minutes later.",
+   "span": "Leo came in a few minutes later",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Leo was slightly out of breath from cycling across town.",
+   "span": "slightly out of breath from cycling across town",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Leo sat near the back row beside Pia.",
+   "span": "he sat near the back row beside Pia",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Pia had already tuned her voice with a few quiet scales.",
+   "span": "who had already tuned her voice with a few quiet scales",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "The director asked everyone to stand according to their sections, sopranos on one side and basses on the other.",
+   "span": "The director asked everyone to stand according to their sections, sopranos on one side and basses on the other",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "The room slowly filled with warm-up hums.",
+   "span": "the room slowly filled with warm-up hums",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Nell and Leo were in different houses.",
+   "span": "Nell and Leo were in different houses",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Cy stood near the doorway.",
+   "span": "Cy stood near the doorway",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Cy watched the rehearsal unfold with quiet attention.",
+   "span": "watching the rehearsal unfold with quiet attention",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Pia was taller than most of the altos.",
+   "span": "Pia mentioned that she was taller than most of the altos",
+   "kind": "quoted"
+  },
+  {
+   "id": 16,
+   "text": "Forming straight rows was a bit of a challenge for the director.",
+   "span": "which made forming straight rows a bit of a challenge for the director",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Leo and Pia were in different houses.",
+   "span": "Leo and Pia were in different houses",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "The rehearsal moved through several pieces, starting with a slow hymn and building toward a lively folk arrangement.",
+   "span": "The rehearsal moved through several pieces, starting with a slow hymn and building toward a lively folk arrangement",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "The lively folk arrangement required careful timing.",
+   "span": "that required careful timing",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Cy took the photographs.",
+   "span": "Cy took the photographs",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Rosa is always punctual.",
+   "span": "Rosa, always punctual",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Rosa reminded everyone about the upcoming concert date.",
+   "span": "reminded everyone about the upcoming concert date",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Rosa reminded everyone about the importance of consistent attendance.",
+   "span": "and the importance of consistent attendance",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Nell and Pia were in different houses.",
+   "span": "Nell and Pia were in different houses",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "Leo joked about being the last to leave every week.",
+   "span": "Leo joked about being the last to leave every week",
+   "kind": "asserted"
+  },
+  {
+   "id": 26,
+   "text": "Nell laughed and packed up her music stand.",
+   "span": "Nell laughed and packed up her music stand",
+   "kind": "asserted"
+  },
+  {
+   "id": 27,
+   "text": "The school had three houses.",
+   "span": "The school had three houses",
+   "kind": "asserted"
+  },
+  {
+   "id": 28,
+   "text": "Cy offered to help carry the folding chairs back to storage.",
+   "span": "Cy offered to help carry the folding chairs back to storage",
+   "kind": "asserted"
+  },
+  {
+   "id": 29,
+   "text": "Pia stayed behind to help stack the sheet music neatly for the next rehearsal.",
+   "span": "Pia stayed behind to help stack the sheet music neatly for the next rehearsal",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "A sets up the choir gathering in the hall, which naturally creates the scene of people moving and finding seats, making B a plausible continuation of the same event.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "If the choir gathered early for rehearsal, it is natural for the room to fill with warm-up hums as members prepare to sing, making B a plausible consequence of A.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "A establishes that the rehearsal is taking place in the evening in the community hall, which sets the scene for B's description of how that rehearsal unfolded through various pieces. The two claims are consistent and B naturally follows from A as a continuation of the same event.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 28,
+   "rationale": "The choir rehearsal setting makes it plausible that folding chairs were used and would need to be put away afterward, but B introduces a specific person and action not implied by A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 29,
+   "rationale": "A establishes a rehearsal took place; B describes Pia staying behind afterward to organize materials for the next one, which is a plausible continuation but not required by A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A describes a creaking floor as people sit down, while claim B describes Leo's physical state from cycling; these events are unrelated in content with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "A describes ambient noise while people are settling in, and B describes a separate preparatory action by Pia; both can easily occur around the same event without conflict or strong influence on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Arriving first doesn't specify how Nell would behave or where; the two claims describe different, compatible aspects of the scene and neither strongly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "If Nell arrived first, it is consistent and plausible that Leo came in a few minutes after her, matching the sequence implied by 'first' and 'later'.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A concerns arrival order while claim B concerns organizing standing positions by voice section; neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Nell arriving first says nothing directly about Rosa's punctuality; without knowing Rosa's arrival time or expected time, A neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.72
+  },
+  {
+   "a": 2,
+   "b": 26,
+   "rationale": "Arriving first says nothing about later actions like laughing or packing up a music stand; these events are independent aspects of Nell's activities.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Carrying sheet music is consistent with going to a piano and greeting someone there; the two events can easily co-occur with no conflict.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A concerns Nell carrying sheet music, while claim B concerns Leo's seating position beside Pia; the two describe different people and unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "The claim about Nell carrying sheet music has no bearing on where Leo and Pia were located.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Nell carrying sheet music is consistent with and mildly supports the idea of a rehearsal covering multiple pieces, since she would need the music for that.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 26,
+   "rationale": "Carrying a folder of sheet music is consistent with an ongoing music-related activity like packing up a music stand; the two details fit together as part of the same scene without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A describes a warm greeting between Nell and Rosa, which gives no information about Rosa's role or status as team captain.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Both suggest a musical setting (piano, warm-up hums) but neither confirms nor requires the other; they could coexist in a rehearsal scene without one implying the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Claim A describes a social greeting near a piano, while claim B discusses requirements of a musical arrangement; there is no stated connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Claim A describes Nell greeting Rosa near a piano, while claim B describes Cy taking photographs; there is no stated connection between these events or people that would make one affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A concerns Rosa's leadership role on a team, while claim B describes an ambient scene of a room filling with warm-up sounds. There is no logical or contextual connection between the two statements as written.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Being team captain does not inherently imply punctuality; the two attributes are independent character traits with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Being team captain plausibly involves organizing and reminding the team about events, so A makes B somewhat more plausible, though it's not a strict logical requirement.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Being team captain is a leadership role that would plausibly involve reminding teammates about attendance, so A makes B more plausible though not certain.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "A establishes Leo arrived later than others; B adds a plausible explanation (cycling) for that lateness and physical state, making it more coherent and likely rather than contradictory.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "A states Leo arrived a bit later than others, which is consistent with him then finding a seat near the back beside Pia; late arrivals often take remaining seats at the back, so A mildly supports B rather than contradicting or being unrelated.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Claim A concerns Leo's arrival time, not Rosa's, so it has no bearing on Rosa's punctuality unless Leo and Rosa are the same person, which is not stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 26,
+   "rationale": "Both claims could describe adjacent or overlapping events in the same scene, but there is no stated causal or temporal link between Leo's arrival and Nell's laughing and packing up her stand.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Leo's breathlessness from cycling has no logical or thematic connection to the director organizing choir members by vocal section; they describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Claim A describes Leo's physical state from cycling, while claim B describes Rosa making an unrelated statement about attendance. There is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Both claims describe details compatible with a shared scene (Leo sitting beside Pia while Pia warms up her voice); knowing Leo sat near her doesn't affect the likelihood of her having done vocal scales earlier, so they are essentially unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "A merely places Leo near Pia; it says nothing about Pia's height relative to the altos, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Sitting beside someone at an event doesn't imply anything about which residential house or team they belong to; these are unrelated aspects unless 'houses' refers to seating arrangement, which isn't specified.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Claim A describes seating arrangement while claim B describes the content and progression of the rehearsal itself; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Leo's seating position bears no logical connection to Rosa's reminder about attendance; they describe unrelated events with no shared implication.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 27,
+   "rationale": "A describes seating arrangement between Leo and Pia, while B states a fact about the school's house system. These concern entirely different aspects of the setting with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 29,
+   "rationale": "A places Leo and Pia together in the back row, but says nothing about what happens after, so it neither supports nor conflicts with Pia staying behind afterward to stack sheet music.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Both describe plausible preparatory steps before a choir performance, but they are independent actions by different people that don't causally or logically bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "A describes Pia's own quiet vocal warm-up scales, which is consistent with and could be part of the broader description of the room filling with warm-up hums from performers, though A implies she was already done while B describes an ongoing process.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 25,
+   "rationale": "Claim A describes Pia's vocal preparation, while claim B is about Leo's unrelated joke regarding leaving times; they concern different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 27,
+   "rationale": "Claim A describes Pia's vocal warm-up, while claim B states an unrelated fact about the school's organizational structure into houses. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 29,
+   "rationale": "A describes Pia warming up her voice before what seems to be a performance or rehearsal, while B describes her staying afterward to help tidy up. These are compatible sequential actions with no direct logical connection, though both involve Pia in a musical setting.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "A describes choristers organizing into sections, which plausibly precedes or accompanies vocal warm-ups; A makes B somewhat more likely by establishing a choir rehearsal context, but doesn't directly cause it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A concerns choir sections (sopranos and basses) and has no stated connection to Nell and Leo or the concept of 'houses', which is likely an unrelated grouping context.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Asking singers to arrange themselves by section is a spatial organizing task, so it plausibly relates to the difficulty of forming straight rows, though A doesn't explicitly mention rows or difficulty.",
+   "relation": "supports",
+   "confidence": 0.45
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Both claims describe choir-related organizational statements, but they concern different topics (seating arrangement vs. attendance) and neither implies or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "The two claims describe unrelated aspects of a scene (ambient sound versus a person's position) with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A about Nell and Leo being in different houses has no stated connection to the director's difficulty forming straight rows; there's no shared context linking the two.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Knowing that Nell and Leo are in different houses tells us nothing about the relationship between Leo and Pia's house assignments, since Pia is not mentioned in claim A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 24,
+   "rationale": "Claim A concerns the relative house placement of Nell and Leo, while claim B concerns Nell and Pia; knowing Nell differs from Leo tells us nothing about her relation to Pia.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 27,
+   "rationale": "A states Nell and Leo belonged to different houses, which is plausible and unremarkable regardless of how many houses the school has, whether two or more. B's claim about the total number of houses doesn't bear on whether two specific people are in different ones.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Standing near the doorway is a plausible vantage point from which Cy could quietly watch the rehearsal, so A is consistent with and mildly supports B.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Standing near the doorway does not preclude taking photographs; one could photograph from or near a doorway, or the timing could differ. There's no direct logical connection either supporting or contradicting.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Watching quietly with attention is plausibly compatible with also taking photographs, though it slightly suggests a more passive, hands-off observation rather than active photography, creating mild tension without outright contradiction.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 14,
+   "b": 26,
+   "rationale": "Both describe actions that could plausibly occur during or after the same rehearsal scene, but neither claim's truth meaningfully raises or lowers the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Claim A concerns Pia's height relative to altos, while claim B concerns Rosa's reminder about attendance; these describe unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 25,
+   "rationale": "Claim A concerns Pia's height relative to altos, while claim B concerns Leo's joking about being last to leave; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 26,
+   "rationale": "Claim A concerns Pia's height relative to altos, while claim B describes Nell's actions with a music stand; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Both describe difficulties or demands in directing a performance, but they concern different aspects (spatial formation vs. musical timing) with no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 16,
+   "b": 29,
+   "rationale": "A concerns the director's difficulty organizing rows, while B describes Pia staying behind to stack sheet music; these involve different people and activities with no clear logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 24,
+   "rationale": "Knowing Leo and Pia are in different houses tells us nothing about the relationship between Nell and Pia's house assignments, as Leo and Nell are independent individuals.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 27,
+   "rationale": "Claim A states Leo and Pia belonged to different houses, which is unrelated to the total number of houses the school has; both can be true regardless of whether the school has two, three, or more houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "A establishes that a lively folk arrangement was played, and such arrangements plausibly require careful timing, making B a reasonable elaboration rather than a certainty, but it does bear positively on it.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 29,
+   "rationale": "A describes the content and progression of a rehearsal, while B describes Pia's actions afterward; the two are compatible but B is not made more or less likely by A's content.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 19,
+   "b": 25,
+   "rationale": "The two claims describe unrelated matters: one is about a musical arrangement's technical demands, the other about Leo's habitual joke regarding leaving late. No causal or logical connection is given.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 28,
+   "rationale": "Claim A concerns a musical arrangement's timing demands, while claim B concerns Cy helping carry chairs; they share no logical connection despite possibly occurring in the same event context.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Claim A concerns Cy taking photographs, while claim B concerns Rosa's punctuality. There is no logical or contextual connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 20,
+   "b": 24,
+   "rationale": "Claim A concerns who took photographs, while claim B concerns the locations of Nell and Pia; there is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 20,
+   "b": 28,
+   "rationale": "Taking photographs and offering to help carry chairs afterward are compatible actions Cy could both do; A neither strongly supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Being punctual relates to arriving on time, which has no direct bearing on whether Rosa reminded others about a concert date; the two claims describe unrelated behaviors.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "Rosa's consistent punctuality makes it plausible she would value and remind others about consistent attendance, but there's no direct logical link between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "Claim A concerns Rosa's punctuality while claim B concerns the locations of Nell and Pia; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Both describe reminders Rosa gave; these could be two separate reminders given at the same or different times without conflict, and one doesn't strongly imply the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 24,
+   "b": 27,
+   "rationale": "A states Nell and Pia belong to different houses, which requires at least two houses to exist, but says nothing about the total number of houses. B's claim of three houses is fully compatible with A and neither confirms nor is required by it strongly.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 25,
+   "b": 26,
+   "rationale": "A describes Leo making a recurring joke, which plausibly occurs in a social setting like a rehearsal; B describes Nell's reaction and packing up, consistent with being in that same setting and reacting to the joke.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 25,
+   "b": 28,
+   "rationale": "A describes Leo's habitual joking about lingering, while B describes Cy offering to help with chairs; these involve different people and different actions with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 26,
+   "b": 29,
+   "rationale": "Both describe plausible, compatible actions after some shared event like a rehearsal; Nell packing up her own stand doesn't preclude Pia staying to help with other sheet music.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "her"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   },
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia",
+     "her"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "director",
+    "mentions": [
+     "The director"
+    ]
+   },
+   {
+    "id": "choir",
+    "mentions": [
+     "The choir",
+     "everyone"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "role",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "punctuality",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 12,
+    "attribute": "house",
+    "kind": "different",
+    "a": "nell",
+    "b": "leo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 17,
+    "attribute": "house",
+    "kind": "different",
+    "a": "leo",
+    "b": "pia",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 24,
+    "attribute": "house",
+    "kind": "different",
+    "a": "nell",
+    "b": "pia",
+    "confidence": 0.98
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "subject": "leo",
+    "comparative": "later",
+    "object": "nell",
+    "confidence": 0.85
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "entity": "nell",
+    "comparative": "first",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "entity": "pia",
+    "comparative": "taller than most of the altos",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 25,
+    "attribute": "arrival_time",
+    "entity": "leo",
+    "comparative": "last to leave",
+    "confidence": 0.6
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "later",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than most of the altos",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "last to leave",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 38,
+  "blind": [
+   [
+    0,
+    28
+   ],
+   [
+    0,
+    29
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    10
+   ],
+   [
+    2,
+    26
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    17
+   ],
+   [
+    3,
+    18
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    4,
+    19
+   ],
+   [
+    4,
+    20
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    6,
+    21
+   ],
+   [
+    6,
+    26
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    7,
+    23
+   ],
+   [
+    8,
+    18
+   ],
+   [
+    8,
+    23
+   ],
+   [
+    8,
+    27
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    25
+   ],
+   [
+    9,
+    27
+   ],
+   [
+    10,
+    12
+   ],
+   [
+    10,
+    23
+   ],
+   [
+    11,
+    13
+   ],
+   [
+    12,
+    16
+   ],
+   [
+    14,
+    26
+   ],
+   [
+    15,
+    23
+   ],
+   [
+    15,
+    25
+   ],
+   [
+    15,
+    26
+   ],
+   [
+    16,
+    19
+   ],
+   [
+    16,
+    29
+   ],
+   [
+    18,
+    29
+   ],
+   [
+    19,
+    25
+   ],
+   [
+    19,
+    28
+   ],
+   [
+    20,
+    21
+   ],
+   [
+    20,
+    24
+   ],
+   [
+    21,
+    24
+   ],
+   [
+    25,
+    28
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 30,
+  "pairs_requested": 78,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 40,
+  "blind_pairs_related": 1,
+  "entity_relations": 6,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    14,
+    20
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "house": null,
+    "height": "magnitude",
+    "role": null,
+    "punctuality": null
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 2,
+     "attribute": "arrival_time",
+     "entity": "nell",
+     "extreme": "min",
+     "edges": 1
+    },
+    {
+     "claim_id": 15,
+     "attribute": "height",
+     "entity": "pia",
+     "extreme": "max",
+     "edges": 0
+    },
+    {
+     "claim_id": 25,
+     "attribute": "arrival_time",
+     "entity": "leo",
+     "extreme": "max",
+     "edges": 1
+    }
+   ],
+   "extreme_edges": 2,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 30,
+  "n_edges": 15,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   5
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    15
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   3.697785493223493e-32,
+   0.0,
+   2.1570415377137042e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   9.737501798821864e-32,
+   3.2047474274603606e-32,
+   1.910522504832138e-32,
+   0.0,
+   2.2186712959340958e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   7.149051953565419e-32,
+   0.0,
+   1.1586394545433611e-31,
+   2.958228394578794e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 1,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 18,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 2,
+    "b": 6,
+    "residual": 9.244463733058732e-33
+   },
+   {
+    "a": 3,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 6,
+    "b": 8,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 9,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 16,
+    "residual": 2.2186712959340958e-32
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 19,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 4904,
+   "api_calls": 0,
+   "cache_hits": 4904,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    1,
+    3,
+    9,
+    10,
+    11,
+    16,
+    18,
+    19
+   ],
+   [
+    2,
+    6,
+    7,
+    8
+   ],
+   [
+    4
+   ],
+   [
+    5,
+    22,
+    23
+   ],
+   [
+    12
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    15
+   ],
+   [
+    17
+   ],
+   [
+    20
+   ],
+   [
+    21
+   ],
+   [
+    24
+   ],
+   [
+    25,
+    26
+   ],
+   [
+    27
+   ],
+   [
+    28
+   ],
+   [
+    29
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 14,
+    "b": 20,
+    "rationale": "Watching quietly with attention is plausibly compatible with also taking photographs, though it slightly suggests a more passive, hands-off observation rather than active photography, creating mild tension without outright contradiction.",
+    "confidence": 0.45
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 12,
+   "attribute": "house",
+   "kind": "different",
+   "a": "nell",
+   "b": "leo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 17,
+   "attribute": "house",
+   "kind": "different",
+   "a": "leo",
+   "b": "pia",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 24,
+   "attribute": "house",
+   "kind": "different",
+   "a": "nell",
+   "b": "pia",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 6,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "leo",
+   "b": "nell",
+   "confidence": 0.85,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "leo",
+   "b": "nell",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 25,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "leo",
+   "b": "nell",
+   "confidence": 0.6,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "request": "ae200ed7a6b552d567ce673ecc7b5441097837e7a438adad46737c55f7a5a295",
+ "tag": "text-a2e9c63c034d-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 5,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "sami",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 7,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "pia",
+    "b": "ivo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "ivo",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "pia",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "sami",
+    "b": "ivo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "fay",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2049,
+  "output_tokens": 493,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

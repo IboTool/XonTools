@@ -1,0 +1,25 @@
+{
+ "request": "4d0baece5cad24face6ff1a0a072ea17a87a5c02aef7e6d3f57f8b2350e9e890",
+ "tag": "text-8c0ce72510b3-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Fay arrived before Kai.",
+     "Kai arrived before Cleo.",
+     "Cleo arrived before Fay."
+    ],
+    "explanation": "These three statements form a cyclic ordering (Fay before Kai, Kai before Cleo, Cleo before Fay) which is impossible for a linear sequence of arrivals."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1060,
+  "output_tokens": 185,
+  "thinking_tokens": 64
+ },
+ "stop_reason": "end_turn"
+}

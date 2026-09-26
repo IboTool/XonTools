@@ -1,0 +1,34 @@
+{
+ "request": "9e4e43d6342434445d67c02badf1a9656a5f98e1b4e71f0e552de6223170c36f",
+ "tag": "text-0b5115e9efcc-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Ivo and Uma were on different teams.",
+     "Uma and Dara were on different teams.",
+     "Ivo and Dara were on different teams.",
+     "There were two teams."
+    ],
+    "explanation": "With only two teams, if Ivo and Uma differ, and Uma and Dara differ, then Dara must be on the same team as Ivo, contradicting that Ivo and Dara are also on different teams."
+   },
+   {
+    "sentences": [
+     "Otto, who had arrived last, jogged to catch up with the others, his boots squelching in the mud.",
+     "Otto brought the first-aid kit.",
+     "Everyone gathered near the wooden gate to check their gear before setting off toward the trees."
+    ],
+    "explanation": "If Otto arrived last, he could not have already gathered near the wooden gate with everyone else checking gear before setting off."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1091,
+  "output_tokens": 271,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

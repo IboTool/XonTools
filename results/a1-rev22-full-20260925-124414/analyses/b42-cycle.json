@@ -1,0 +1,2881 @@
+{
+ "label": "b42-cycle",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-0060a8b0038d",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The regional debate tournament drew five competitors.",
+   "span": "The regional debate tournament drew five competitors who had trained together for months.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "The five competitors had trained together for months.",
+   "span": "who had trained together for months",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Milo arrived first, checking in his materials before the sun had fully risen over the venue parking lot.",
+   "span": "Milo arrived first, checking in his materials before the sun had fully risen over the venue parking lot.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Nell is the club secretary.",
+   "span": "Assume that Nell is the club secretary.",
+   "kind": "premise"
+  },
+  {
+   "id": 4,
+   "text": "Wren showed up shortly after Milo, carrying a stack of note cards organized by topic and rebuttal strategy.",
+   "span": "Wren showed up shortly after, carrying a stack of note cards organized by topic and rebuttal strategy.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Ana arrived a few minutes later than Wren.",
+   "span": "Ana arrived a few minutes later than Wren",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Ana was still reviewing her opening statement on the walk from the bus stop.",
+   "span": "still reviewing her opening statement on the walk from the bus stop",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Milo is taller than Ana.",
+   "span": "Milo is taller than Ana.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Nell came in with the judges packet.",
+   "span": "Nell came in with the judges packet, having spent the previous evening printing ballots for every round.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Nell spent the previous evening printing ballots for every round.",
+   "span": "having spent the previous evening printing ballots for every round",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "The morning rounds moved quickly.",
+   "span": "The morning rounds moved quickly, with each debater rotating through three preliminary matches before lunch.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Each debater rotated through three preliminary matches before lunch.",
+   "span": "with each debater rotating through three preliminary matches before lunch",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Ana is taller than Wren.",
+   "span": "Ana is taller than Wren.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Yara arrived last among the group.",
+   "span": "Yara arrived last among the group, slightly out of breath after her car had trouble finding parking near the auditorium.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Yara was slightly out of breath after her car had trouble finding parking near the auditorium.",
+   "span": "slightly out of breath after her car had trouble finding parking near the auditorium",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Several teams compared notes during the lunch break on which judges tended to favor policy arguments over value arguments.",
+   "span": "During the lunch break, several teams compared notes on which judges tended to favor policy arguments over value arguments.",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Wren is taller than Milo.",
+   "span": "Wren is taller than Milo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "The afternoon session included a surprise announcement before the semifinal pairings were posted on the corkboard outside the main hall.",
+   "span": "The afternoon session included a surprise announcement before the semifinal pairings were posted on the corkboard outside the main hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Yara won the raffle.",
+   "span": "Yara won the raffle.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Nell spent the final hour tallying speaker points.",
+   "span": "Nell spent the final hour tallying speaker points while Wren helped stack extra chairs along the back wall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Wren helped stack extra chairs along the back wall.",
+   "span": "while Wren helped stack extra chairs along the back wall",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Ana and Milo discussed strategy quietly near the coffee station.",
+   "span": "Ana and Milo discussed strategy quietly near the coffee station, going over timing for their closing arguments.",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Ana and Milo went over timing for their closing arguments.",
+   "span": "going over timing for their closing arguments",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "The whole group agreed the tournament had been one of the most competitive in recent seasons.",
+   "span": "the whole group agreed the tournament had been one of the most competitive in recent seasons",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Everyone stayed late to help fold up the extra tables before heading home.",
+   "span": "everyone stayed late to help fold up the extra tables before heading home",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "A establishes there were five competitors but says nothing about their preparation history; B adds specific new information about their training that is neither implied nor precluded by A.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "A states the tournament had five competitors but says nothing about arrival times or order, so it neither confirms nor conflicts with Milo being the first to check in.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "The number of competitors at a debate tournament has no bearing on who holds the position of club secretary; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A states the number of competitors at the tournament, while claim B describes Wren's arrival and preparation materials; neither directly implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "The tournament claim describes the number of competitors, which has no bearing on the relative arrival times of Ana and Wren.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "A describes the scale of the tournament while B describes Ana's personal preparation activity; the two are largely independent, though both could plausibly relate to the same event without one implying the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "The size of the debate tournament has no bearing on relative heights of Milo and Ana; the claims share no common subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "A describes the scale of a debate tournament, while B describes Nell arriving with a judges packet; the claims concern different subjects with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "A small tournament of five competitors is unrelated to whether Nell prepared ballots for every round the night before; they concern different aspects (attendance size vs. preparation logistics) with no direct logical link.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "The number of competitors in a debate tournament has no clear bearing on whether the morning rounds moved quickly; a small field could speed things up but the claims are not directly connected as stated.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "A establishes the tournament had five participants; B describes the structure of preliminary matches, which is a separate logistical detail not directly implied or precluded by the number of competitors.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "The number of debate competitors has no bearing on the relative heights of Ana and Wren; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "A establishes a group of five competitors in a tournament, which provides a plausible context for a ranking or arrival order, making B's claim about someone arriving last coherent but not directly implied.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A describes the size of a debate tournament, while claim B describes Yara's physical state due to parking trouble near an auditorium. There's no clear logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "A states there were five competitors at the tournament, while B refers to 'several teams' comparing notes, which is plausible with a small tournament but not directly implied by it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "The number of competitors in a debate tournament has no bearing on the relative heights of two individuals, and there's no shared context linking these claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Claim A states the number of competitors in the tournament, while claim B describes an event during a session (an announcement before semifinal pairings). These details are largely independent; nothing about five competitors implies or conflicts with a surprise announcement or the posting of pairings.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "The debate tournament turnout has no logical or causal bearing on who won an unrelated raffle.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Both could describe the same tournament (debate events involve speaker points), but nothing in A establishes Nell's role or actions, so there's no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "The size of the debate tournament has no bearing on whether Wren helped stack chairs; these describe unrelated events or details.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Claim A merely states the number of competitors in the tournament, which has no logical bearing on whether Ana and Milo discussed strategy near a coffee station; they could easily coexist without connection, or be entirely separate scenarios.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "A general fact about the tournament's size doesn't establish who Ana and Milo are or what they did to prepare, though it's plausible they could be competitors preparing closing arguments; the claims don't directly bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "A small field of five competitors doesn't directly imply the tournament was highly competitive; competitiveness depends on skill level, not headcount, so A neither strongly supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "A small tournament with only five competitors doesn't strongly imply anything about who stayed late to fold tables; the claims concern different aspects of the event with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Training together for months is background context about the competitors and does not directly bear on who arrives first or when; the two claims can both be true without one supporting or undermining the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A concerns competitors' shared training history, while claim B states Nell's organizational role; neither implies anything about the other without further context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "A states the group of competitors trained together for months, which is consistent with and mildly supportive of B's depiction of Wren arriving prepared with organized rebuttal materials, though it doesn't directly imply it.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Training together for months among five competitors doesn't inherently indicate anything about the relative arrival times of two individuals, Ana and Wren; these are separate facts about different aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Training together for months shows preparation and teamwork, yet Ana still reviewing her opening statement last-minute is somewhat surprising given that extensive preparation, though not impossible for an individual competitor.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A discusses group training among competitors, which has no bearing on relative heights of two individuals; the two statements concern unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A concerns competitors training together, while claim B concerns Nell arriving with a judges packet; they involve different subjects and events with no clear causal or logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A concerns competitors training together for a contest, while claim B concerns Nell preparing ballots for voting rounds; these appear to belong to different contexts (an athletic/competitive event vs. a voting process) with no direct logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Training together for months could plausibly help competitors move efficiently through rounds, but this is a weak, indirect connection at best; the claims describe different aspects (preparation vs. pace) with no strong logical link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "A concerns competitors training together beforehand, while B concerns a rotation of preliminary matches on the day of competition; both can be true simultaneously with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Training together for months among five competitors has no bearing on relative heights of two individuals named Ana and Wren; the claims address unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Training together for months does not determine finishing order or arrival timing; the claims concern different aspects (preparation vs. arrival sequence) and are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Claim A concerns group training history among competitors, while claim B describes an individual's breathlessness due to a parking issue; these are unrelated circumstances with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "A concerns five competitors who trained together, while B concerns unspecified teams comparing notes during a lunch break; these describe different groups and events with no clear logical link.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Training together for months has no bearing on relative height between two individuals; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Claim A concerns the competitors' shared training history, while claim B describes an unrelated event about a session announcement and semifinal pairings posting. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A concerns training among five competitors for some competition, while claim B concerns winning a raffle, an unrelated chance-based event with no stated connection to competitors or training.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "The claim about competitors training together does not bear on Nell's tallying of speaker points; they appear to concern different aspects of a competition with no stated causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "The training history of competitors has no logical bearing on someone named Wren stacking chairs; these appear to be unrelated events with no shared context established.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Training together for months makes it plausible that competitors would discuss strategy together, but the claims are about different specific details and not directly linked by content.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Claim A describes group training among five competitors, while B describes two people preparing closing arguments together, suggesting a different context (a debate or legal-style competition). The two could plausibly refer to related activity, but B doesn't clearly follow from or bear on A's truth beyond mild thematic connection.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Training together for months doesn't directly imply anything about the whole group's later assessment of the tournament's competitiveness; these describe different aspects (preparation vs. post-event evaluation) that are only loosely related.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 24,
+   "rationale": "The claims describe unrelated events involving different groups and activities; training together for a competition has no bearing on staying late to fold tables.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Milo's arrival time and check-in order have no bearing on who holds the secretary position in the club; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "A establishes Milo arrived first at an early hour; B states Wren arrived shortly after, which is consistent and even implied by 'first' needing a subsequent arrival.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A describes Milo's early arrival and check-in, which says nothing about the relative arrival times of Ana and Wren; the two claims concern different people with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "A states Milo arrived first and checked in early, while B describes Ana walking from a bus stop reviewing notes; these could easily be different people at different times without conflict, and A doesn't strongly imply anything about Ana's timing or activity.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Claim A describes Milo's arrival time and actions, which has no bearing on his physical height relative to Ana. The two claims concern entirely different topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "A states Milo was first to arrive and check in, but does not specify who else came at what time or what Nell brought; there's no direct logical connection unless B implies Nell was also first, which it doesn't state.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "A describes Milo's early arrival and check-in, which has no clear bearing on whether Nell printed ballots the previous evening; the two events involve different people and activities with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Milo arriving very early and checking in before sunrise suggests an efficient, prompt start to proceedings, which is consistent with morning activities moving quickly, though it doesn't guarantee it.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "A describes Milo's early arrival and check-in, which neither confirms nor conflicts with the structure of the preliminary matches described in B. The two claims concern different aspects of the event with no direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A concerns Milo's arrival time and check-in, while claim B concerns a height comparison between Ana and Wren. There is no logical, causal, or thematic connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "A states Milo arrived first, which is compatible with Yara arriving last since these describe different people's relative positions in the same arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "A states Milo arrived first, checking in before sunrise, which suggests parking was not yet congested; B describes Yara struggling to find parking, implying she arrived later amid congestion. These are plausibly compatible (different arrival times), though A slightly undercuts the likelihood of parking trouble at that early hour, creating mild tension rather than direct contradiction.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "A describes Milo's early arrival and check-in, while B describes a separate event (team discussions during lunch break) that has no logical connection to A's content.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A concerns the timing of Milo's arrival and check-in, while claim B concerns a height comparison between Wren and Milo. These facts are independent of each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "A describes Milo's early morning arrival while B describes an afternoon session event; both can occur on the same day without conflict, and A has little bearing on the likelihood of B occurring.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A describes Milo arriving early and checking in materials, which has no bearing on who won a raffle described in claim B; the two events are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "A describes Milo's early arrival while B describes an unrelated action by Nell later in the day; neither statement bears on the truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "A describes Milo's early arrival and check-in, while B describes an unrelated action by a different person (Wren) involving chairs; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "A states Milo arrived early and checked in before sunrise; B describes Milo later discussing strategy with Ana near coffee, which could plausibly happen after his early arrival. Neither claim excludes the other, and they concern different moments in a plausible sequence.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "A establishes Milo was present early at the venue, which is consistent with him later coordinating with Ana on closing arguments, but the early arrival doesn't itself suggest or require the timing discussion.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "A describes Milo's early arrival and check-in, which has no clear bearing on whether the group later judged the tournament to be highly competitive; the two describe unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 24,
+   "rationale": "A describes Milo's early arrival at the start of the event, while B describes people staying late at the end; these concern different times and different actions with no direct logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A concerns Nell's club role, while claim B describes Wren's arrival and preparation materials; they involve different people and unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A concerns Nell's club role, while claim B concerns the relative arrival times of Ana and Wren. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A concerns Nell's club role while claim B concerns Ana's activity before some event; the two share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "The claims concern unrelated matters: one is about a club role, the other about relative heights of different people. Neither bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "As club secretary, Nell might plausibly handle administrative materials like a judges packet, making it slightly more expected she'd bring it in, though this is not a strong logical link.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Being club secretary makes it plausible that Nell would be responsible for administrative tasks like printing ballots, so A supports B.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "There is no stated connection between Nell's role as club secretary and the pace of the morning rounds; nothing in A informs B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Nell's role as club secretary has no bearing on the structure or number of preliminary matches debaters rotated through before lunch.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A concerns Nell's role as club secretary, while claim B concerns a height comparison between Ana and Wren. There is no logical or factual connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns Nell's club role while claim B concerns Yara's arrival order; the two describe unrelated facts about different people with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "The two claims involve different people and unrelated events; Nell's role as club secretary has no bearing on Yara's breathlessness from parking trouble.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Nell's role as club secretary has no clear bearing on teams discussing judges' tendencies during lunch break; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "The two claims concern entirely different people and topics (club role vs. relative height), with no logical or factual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Claim A concerns Nell's role as club secretary, while claim B describes events during an afternoon session about announcements and semifinal pairings. There is no stated connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "There is no logical or contextual connection between Nell's role as club secretary and Yara winning a raffle; they concern different people and unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Being club secretary plausibly involves duties like tallying speaker points, so A makes B somewhat more likely, though it doesn't guarantee it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Nell's role as club secretary has no bearing on whether Wren helped stack chairs; the two claims involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Nell being the club secretary has no bearing on whether Ana and Milo discussed strategy near the coffee station; the claims involve different people and unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Claim A concerns Nell's role as club secretary, while claim B describes an unrelated activity between Ana and Milo about closing arguments; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Nell's role as club secretary has no bearing on whether the group agreed the tournament was competitive; these are unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 24,
+   "rationale": "Nell's role as club secretary has no bearing on whether everyone stayed late to fold up tables; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A establishes Wren's arrival time relative to Milo, and B builds on that by placing Ana's arrival a few minutes after Wren's, which is consistent and complementary information about the sequence of arrivals.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "A describes Wren's arrival and preparation, while B describes Ana's separate activity on her walk; these involve different people and events with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A concerns Wren's arrival timing and preparation materials, while claim B concerns a height comparison between Milo and Ana. These involve different subjects and facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Both describe different people arriving with different materials; nothing about Wren's timing or notecards bears on Nell's arrival with the judges packet.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "A describes Wren's preparation for a debate with note cards, while B describes Nell's separate activity printing ballots. There is no logical connection between the two events as described.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Wren's meticulous, topic-organized rebuttal notecards suggest thorough preparation for detailed debate, which is in mild tension with rounds moving quickly, though both could still be true if she was efficient despite the preparation.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "A describes Wren's arrival and preparation materials, which neither confirms nor denies anything about the structure or scheduling of preliminary matches described in B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A describes Wren's arrival and preparation materials, which has no bearing on relative height comparisons between Ana and Wren.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "A only establishes Wren's arrival relative to Milo and says nothing about Yara's arrival time or the full group order, so it neither confirms nor undermines whether Yara was last.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Claim A describes Wren's arrival and preparation, while claim B describes Yara's separate experience with parking; they involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "A describes Wren's preparation for what appears to be a debate, while B describes teams strategizing about judges' preferences in what also seems to be a debate context; they could be part of the same event but neither directly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A describes Wren's arrival time and preparation materials, which has no bearing on relative height between Wren and Milo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "A describes Wren's arrival and preparation before what appears to be a debate event, while B describes a separate event structure involving a surprise announcement and pairings posting; neither confirms nor denies the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Wren's arrival and preparation with note cards has no logical or topical connection to Yara winning a raffle.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Claim A describes Wren's arrival and preparation for what seems to be a debate, while claim B describes Nell tallying speaker points, likely as a judge or scorer in the same event. These could both be part of the same debate scenario without contradiction, but they concern different people and actions with no direct logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "A depicts Wren arriving focused on preparing note cards for a debate or discussion, while B shows Wren doing a different task (stacking chairs). Both can be true at different moments, so there's no contradiction, but preparing rebuttal materials suggests focus on debate prep rather than logistics, creating mild tension.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "A places Wren arriving shortly after Milo with prepared materials, while B describes Milo discussing strategy with Ana near the coffee station; these could occur at different moments or overlap, but neither confirms nor denies the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Wren's arrival prepared with rebuttal note cards suggests a debate context, which is compatible with Ana and Milo separately preparing closing arguments, but the claims involve different people and don't directly bear on each other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "A describes Wren's preparation for what appears to be a debate tournament, which is consistent with a highly competitive event, but it doesn't directly establish or imply the group's collective assessment of the tournament's competitiveness.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 24,
+   "rationale": "A describes Wren arriving early with prepared materials, likely for a debate or discussion; B describes a later, unrelated activity of folding tables after the event. There is no direct logical connection between them, though both could occur on the same occasion.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Arriving late gives a plausible reason Ana was still reviewing her statement on the way, but the two claims aren't directly tied to the same fact, so A only mildly supports B by suggesting she was rushed or preparing until the last moment.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A concerns relative arrival times while claim B concerns relative height; these are independent attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A concerns the relative arrival times of Ana and Wren, while claim B concerns Nell arriving with a judges packet. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A concerns the relative arrival times of Ana and Wren, while claim B concerns Nell's activity printing ballots the previous evening. These involve different people, actions, and timeframes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Ana's slightly late arrival relative to Wren is unrelated to the general pace of the morning rounds; no logical or causal connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A concerns arrival timing of two individuals, while claim B describes a structural rule about debate matches; neither informs the truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Arrival time relative to someone has no bearing on their relative height; these are independent attributes.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "A only orders Ana relative to Wren; it says nothing about Yara's arrival time relative to the others, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A concerns Ana's arrival time relative to Wren, while claim B concerns Yara's breathlessness due to parking issues. They involve different people and unrelated circumstances.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Claim A concerns the relative arrival times of Ana and Wren, while claim B concerns teams discussing judges' preferences during lunch; the two describe unrelated events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A concerns arrival timing between Ana and Wren, while claim B concerns height comparison between Wren and Milo. These involve different attributes and different people pairs, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A is about the relative arrival time of Ana and Wren, while claim B concerns the order of events in an afternoon session involving an announcement and posting of pairings. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Ana's arrival time relative to Wren has no bearing on who won the raffle; the two claims concern unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Claim A concerns the relative arrival times of Ana and Wren, while claim B concerns Nell's activity during the final hour. They share no common subject, timeframe reference, or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Ana's arriving later than Wren says nothing about what Wren did upon arrival, such as helping stack chairs; the two claims address different matters.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "A describes Ana's arrival time relative to Wren, while B describes a separate activity involving Ana and Milo. There is no direct logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Claim A concerns Ana's arrival time relative to Wren, while claim B concerns Ana and Milo discussing timing for closing arguments. These involve different people and activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "A describes a minor timing detail about Ana and Wren's arrival, while B is about the group's collective assessment of tournament competitiveness. These concern unrelated aspects of the event with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 24,
+   "rationale": "Claim A concerns relative arrival times of Ana and Wren, while claim B concerns departure behavior of everyone at the end. These describe different events and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Claim A concerns Ana's activity before a presentation and has no bearing on relative height between Milo and Ana.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Both claims describe separate concurrent or sequential events without any stated connection; Ana reviewing her statement does not affect the likelihood of Nell arriving with a judges packet.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Claim A concerns Ana's activity on the walk, while claim B concerns Nell's activity the prior evening; they involve different people, actions, and times with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "A shows Ana was still preparing her opening statement en route, which is unrelated in content to the pace of morning rounds; no direct logical connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Ana reviewing her opening statement suggests preparation before a debate event, which is broadly consistent with a tournament structure involving preliminary matches, but the claims don't directly interact or confirm each other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Ana's activity on the walk (reviewing her opening statement) has no bearing on a physical attribute comparison like relative height to Wren.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A describes Ana's activity while walking from the bus stop, but says nothing about arrival order or timing relative to others, including Yara. There is no logical or causal connection stated between these two events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "A concerns Ana walking from a bus stop while reviewing notes; B concerns Yara being out of breath due to parking trouble in a car. These involve different people and different modes of transport, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A concerns Ana reviewing her statement before an event, while claim B describes unrelated teams discussing judges during a lunch break; there's no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A concerns Ana reviewing her opening statement, while claim B is about relative heights of Wren and Milo. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A concerns Ana's preparation activity before some session, while claim B describes an unrelated procedural event (an announcement and posting of pairings) in the afternoon session; there's no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "The two claims describe unrelated events involving different people with no logical or causal connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Claim A describes Ana's activity before a debate; claim B describes Nell's activity, likely a judge tallying points. These involve different people and different roles with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Claim A describes Ana's activity before an event, while claim B describes an unrelated action by a different person (Wren) involving chairs. There is no logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "A shows Ana was preparing/rehearsing her opening statement while walking, which is consistent with and could lead into a subsequent strategy discussion with Milo, but the two events occur at different times/locations and neither entails the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "A shows Ana was still preparing her opening statement en route, which is compatible with later reviewing closing argument timing with Milo; these concern different parts of preparation and different moments, so one does not conflict with or strongly imply the other.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Claim A concerns Ana individually preparing an opening statement, while claim B concerns a group consensus about a tournament's competitiveness; the two describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 24,
+   "rationale": "Claim A concerns Ana reviewing her opening statement while walking from the bus stop, which is unrelated in content to claim B about people staying late to fold tables; no logical or thematic connection is stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "The claims describe unrelated situations with different subjects and no shared context linking height comparisons to someone entering with a judges packet.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A is about relative heights of two people, while claim B concerns Nell printing ballots; the two describe entirely unrelated facts with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A is about relative height between two people, while claim B concerns the pace of morning rounds. There is no logical or contextual connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "The two claims concern unrelated topics: one is about relative height between two people, the other about a debate schedule. Neither bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Claim A concerns the height relation between Milo and Ana, while claim B concerns the relation between Ana and Wren. They share the person Ana but do not logically bear on each other since Milo and Wren are not compared.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A concerns relative height between Milo and Ana, while claim B concerns arrival order for Yara; the two describe unrelated attributes and involve no overlapping logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Claim A concerns relative heights of Milo and Ana, while claim B concerns Yara's breathlessness and parking issues; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A concerns relative height between two individuals, while claim B concerns teams discussing judges' argument preferences at a debate event. The two describe entirely unconnected facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Milo being taller than Ana says nothing about the height relation between Wren and Milo, since these involve a disjoint comparison pair.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Claim A concerns a height comparison between two people, while claim B describes an unrelated event about a session announcement and semifinal pairings. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "The claim about Milo's height relative to Ana has no logical or causal connection to who won a raffle; they concern entirely unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.99
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "The two claims concern entirely different subjects and events with no logical or contextual connection between height comparison and tallying speaker points.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "The two claims involve entirely different subjects and topics with no logical or causal connection between height comparison and chair stacking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "A is about relative height, B is about a conversation location; neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "A is about relative height, B is about a shared activity related to legal proceedings; neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Height comparison between Milo and Ana has no logical or thematic connection to the group's opinion about a tournament's competitiveness.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 24,
+   "rationale": "Claim A concerns relative height between two individuals, while claim B concerns a group action about staying late to fold tables. Neither claim's content bears on the other in any way.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "A shows Nell arrived with the judges packet, which is consistent with and mildly supports the idea that she had prepared materials (like ballots) in advance, since carrying a packet suggests prior preparation work.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Nell arriving with the judges packet is a logistical detail that could enable rounds to start on time, but it doesn't strongly indicate whether the rounds themselves moved quickly once underway.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "A's mention of a judges packet arriving suggests a competition context, which could support the plausibility of B's debate format, but they describe different aspects and neither confirms nor denies the other's specifics.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Claim A concerns Nell arriving with a judges packet, while claim B concerns relative heights of Ana and Wren. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "A says Nell arrived with the judges packet, but does not indicate whether she arrived before or after Yara, so it neither confirms nor conflicts with Yara being last.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "These describe different people and separate circumstances (Nell arriving with a packet vs. Yara's parking trouble); neither statement implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Claim A about Nell arriving with the judges packet is unrelated in content to teams discussing judges' preferences during lunch; neither implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Claim A describes Nell arriving with a judges packet, which has no logical or topical connection to a height comparison between Wren and Milo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Nell arriving with the judges packet is plausibly related to a competition/judging event, but it doesn't specifically confirm or deny details about an afternoon session, a surprise announcement, or semifinal pairings being posted.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Nell bringing a judges packet is about a judging or competition context, while Yara winning a raffle is a separate, unrelated event with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Coming in with the judges packet suggests Nell was carrying materials related to judging, which is consistent with and mildly supportive of her later tallying speaker points, though it doesn't confirm it directly.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "These describe different people doing unrelated tasks around what seems to be an event; nothing about Nell arriving with a judges packet implies anything about Wren stacking chairs.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Nell arriving with the judges packet is a separate event from Ana and Milo's quiet conversation near the coffee station; nothing in A implies or precludes B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "The two claims describe different, unrelated activities (Nell delivering a packet vs. Ana and Milo rehearsing timing), with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "A describes an unrelated small action (Nell arriving with a packet) that has no logical bearing on the group's collective assessment of the tournament's competitiveness.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 24,
+   "rationale": "A describes Nell arriving with a judges packet, which is unrelated in content to whether everyone stayed late to fold up tables afterward; no logical or causal connection is stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Having ballots pre-printed for every round could facilitate smoother, faster morning rounds by removing a preparation bottleneck, so A somewhat supports B, though the connection is not certain.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Both claims describe preparations and logistics for what seems to be a debate event, but printing ballots in advance neither confirms nor implies details about the number or timing of preliminary matches debaters had.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Printing ballots for a voting process has no bearing on the relative heights of Ana and Wren.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns Nell's preparation of ballots the prior evening, while claim B concerns Yara's arrival order in some event. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Claim A concerns Nell's preparation of ballots the prior evening, while claim B concerns Yara's arrival and parking trouble; they involve different people and events with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "A concerns Nell's preparation of ballots the prior evening, while B concerns teams discussing judge tendencies during a lunch break; these describe unrelated activities with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "The claims concern entirely different topics—ballot printing versus relative height—with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Claim A concerns Nell's prior-evening ballot preparations, while claim B describes an afternoon session with an announcement and pairing postings. Neither statement's truth affects the likelihood of the other, as they involve different tasks and timeframes without clear overlap.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Printing ballots for a round-based event is unrelated to the outcome of a raffle Yara won; no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Both describe Nell's activities but at different times (previous evening vs final hour) and different tasks (printing ballots vs tallying points), so both can easily be true without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.72
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "A concerns Nell's evening spent printing ballots; B concerns Wren stacking chairs. No shared subject, event, or logical connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "The two claims describe unrelated activities involving different people and no shared context or dependency is stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "A describes Nell's ballot preparation for a voting event, while B describes Ana and Milo rehearsing closing arguments; these appear to be unrelated aspects or people involved in some larger event (possibly a debate), with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Printing ballots in advance is a logistical preparation detail and doesn't directly indicate anything about how competitive the tournament actually turned out to be.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 24,
+   "rationale": "Claim A concerns Nell's activity the previous evening printing ballots, while claim B concerns people folding tables after some event; they involve different subjects, times, and activities with no evident connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "If morning rounds moved quickly, it's plausible that three matches could be fit in before lunch, so A makes B more plausible without directly implying it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "The pace of morning rounds has no bearing on the relative heights of Ana and Wren; the two claims concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Rounds moving quickly is about the pace of the process, while Yara's arrival order among the group is a separate fact about individual timing; neither directly implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.72
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Fast-moving morning rounds could contribute to someone being rushed and out of breath, but the specific cause given for B is parking trouble, not the pace of rounds. The two are only loosely related and not directly dependent.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "A describes the pace of morning rounds, while B describes what teams discussed during lunch break; these concern different times and activities with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "The pace of morning rounds has no logical or causal bearing on the relative heights of Wren and Milo; these are entirely separate matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A concerns the pace of morning rounds, while claim B describes events in the afternoon session; they refer to different time periods and events with no logical dependency between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "The pace of morning rounds has no bearing on the outcome of a raffle; there's no shared context linking these events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A describes morning rounds pace, while B describes an activity in the final hour, likely a different time period; there's no direct logical link between quick morning rounds and spending an hour tallying speaker points.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "The claims describe unrelated activities (speed of rounds vs. chair stacking) with no logical or causal connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "A describes rounds moving quickly, while B describes a quiet strategy discussion near the coffee station; these could occur at different times or be unrelated events with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "A describes the pace of morning rounds in general, while B describes a specific activity between Ana and Milo about closing arguments; neither statement's truth clearly affects the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Claim A is about the pace of morning rounds, while claim B is about a group's opinion on the competitiveness of the tournament. These concern different aspects of the event and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 24,
+   "rationale": "Morning rounds and folding up tables at the end are separate, unrelated events in time and context; nothing about the pace of morning rounds bears on whether people stayed late later on.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A concerns debate scheduling and rotations, while claim B concerns relative height of two people; there is no logical or evidential connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "The claim about debaters rotating through three preliminary matches before lunch has no bearing on when Yara arrived relative to the group; they concern unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A discusses debaters' match schedules while claim B describes Yara's parking trouble and physical state; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "A establishes that preliminary matches occurred before a lunch break, which is consistent with and sets the scene for teams comparing notes during that same lunch break; A supports the existence of the lunch context in B but doesn't directly affect the content about judges' preferences.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "The claim about debate rotation schedules has no bearing on relative heights of two individuals; they concern entirely unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A describes the morning preliminary schedule while claim B describes an unrelated afternoon event; neither confirms nor conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "The two claims describe unrelated events with no shared subjects or logical connection; knowing about debate rotation says nothing about a raffle winner.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "A describes activity before lunch, while B describes tallying during the final hour, likely after all matches concluded; these could easily be compatible parts of the same event schedule.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Claim A concerns debate match scheduling, while claim B describes an unrelated chair-stacking activity by a specific individual. There is no logical connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Claim A describes a formal debate schedule for preliminary matches, while claim B describes an informal conversation between two individuals near a coffee station. There is no direct logical connection between the two events as stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "A describes a general schedule of rotating preliminary matches before lunch, while B describes a specific activity between two individuals preparing closing arguments. These could easily co-occur without conflict, but they don't directly bear on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "A describes a scheduling detail about the number of preliminary matches, while B is a general evaluative consensus about the tournament's competitiveness. Neither directly implies or conflicts with the other, though a busy schedule could loosely support a competitive impression.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 24,
+   "rationale": "Claim A describes preliminary morning activities while claim B describes end-of-day cleanup; they concern different times and events with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A concerns relative height between Ana and Wren, while claim B concerns arrival order among a group; these describe unrelated attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A concerns relative heights of Ana and Wren, while claim B concerns Yara's breathlessness due to parking trouble; the two share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A is about relative height between two individuals, while claim B concerns teams discussing judges' argument preferences at a debate event; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "A tells us about the relative height of Ana and Wren but says nothing about Milo, so it neither supports nor contradicts a claim comparing Wren and Milo.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Claim A concerns relative heights of two individuals, while claim B concerns events during an afternoon session unrelated to height comparisons. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "The claims describe entirely unrelated facts about different people and events, with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "The two claims involve entirely different subjects and topics with no logical or contextual connection between height comparison and tallying speaker points.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Height comparison between Ana and Wren has no bearing on whether Wren helped stack chairs; these describe unrelated attributes and actions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Height comparison between Ana and Wren has no bearing on Ana discussing strategy with Milo; the claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Height comparison between Ana and Wren has no bearing on Ana meeting Milo about closing arguments; the claims involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Height comparison between two individuals has no logical or thematic bearing on a group's shared opinion about a tournament's competitiveness.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 24,
+   "rationale": "The two claims concern entirely unrelated matters: one is about relative height between two individuals, the other about a group staying late to fold tables. Neither has any bearing on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Arriving last is consistent with having trouble finding parking and being out of breath from rushing afterward; the parking trouble plausibly explains why she was last.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A is about Yara's arrival order relative to a group, while claim B concerns teams discussing judges' preferences during lunch break; these describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Arrival order among a group has no logical bearing on relative height comparisons between two individuals; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns Yara's arrival order among a group, while claim B describes events in an afternoon session about announcements and semifinal pairings. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Arriving last relates to timing of arrival, while winning a raffle is typically a matter of chance unrelated to arrival order; the two facts don't bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A concerns Yara's arrival order relative to a group, while claim B concerns Nell's activity during a final hour tallying speaker points. These involve different people and different contexts with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Yara's arrival order has no bearing on whether Wren helped stack chairs; these describe unrelated actions by different people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Yara's arrival order and Ana and Milo's quiet conversation near the coffee station describe unrelated events involving different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Yara's arrival order and Ana/Milo discussing closing argument timing involve different people and different activities with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Yara arriving last is about individual placement in the group's arrival order, while B concerns a collective opinion about the tournament's competitiveness; these topics don't bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 24,
+   "rationale": "A states Yara's arrival order relative to the group, while B concerns everyone staying late afterward to help with tables; these describe different events and neither implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "A describes Yara arriving slightly out of breath due to parking trouble, while B describes unrelated activity by other teams during a lunch break; there is no logical connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Claim A concerns Yara's parking trouble and being out of breath, while claim B concerns relative heights of Wren and Milo; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Claim A concerns Yara's arrival and physical state due to parking trouble, while claim B describes events during the afternoon session unrelated to Yara's arrival or breathing. There is no shared subject or causal link between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Parking trouble and being out of breath have no logical or causal bearing on whether Yara won a raffle; these are unconnected events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Claim A concerns Yara's parking trouble and shortness of breath, while claim B concerns Nell tallying speaker points; they involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "A concerns Yara's parking trouble and breathlessness, while B describes an unrelated action by a different person (Wren) setting up chairs; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Claim A describes Yara's parking trouble and breathlessness, while claim B describes an unrelated conversation between different people (Ana and Milo) in a different location (coffee station). There's no logical connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Claim A describes Yara's parking trouble and breathlessness, while claim B describes an unrelated activity involving different people (Ana and Milo) preparing closing arguments. There is no logical connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Claim A describes Yara's parking trouble and slight breathlessness near an auditorium, while claim B describes a group consensus about a competitive tournament. These involve different events and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 24,
+   "rationale": "Claim A describes Yara's parking trouble and being out of breath before an event, while claim B describes a group activity of folding tables after an event; they involve different people's actions and different points in time with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Claim A concerns debate teams discussing judging tendencies, while claim B is an unrelated statement about relative heights of two people; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Both describe events at what appears to be the same debate tournament, but they concern different, independent occurrences (lunch break gossip vs. an afternoon announcement), with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "The claim about teams discussing judges' preferences during lunch break has no logical or thematic connection to whether Yara won a raffle.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Both describe activities that could plausibly occur at a debate tournament, but one concerns teams discussing judges over lunch and the other concerns Nell tallying scores at a different time; neither confirms nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Claim A concerns teams discussing judges' preferences during lunch, while claim B concerns Wren stacking chairs; these describe unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "A describes several teams sharing notes at lunch about judges' tendencies, while B describes two individuals discussing strategy near a coffee station; B could plausibly be an instance of the general activity in A, but neither confirms nor requires the other.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "A describes other teams discussing judge tendencies during lunch, while B describes Ana and Milo separately working on timing for closing arguments; these are different activities by different people that could easily occur at the same event without connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "A describes teams strategizing about judge preferences, which doesn't directly bear on the overall competitiveness assessment described in B; these are largely independent observations about the tournament.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "The two claims describe different, unrelated activities (comparing notes at lunch about judges vs. folding tables afterward) with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Claim A concerns relative heights of two people, while claim B concerns events at an afternoon session and posting of semifinal pairings; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "The two claims describe unrelated facts about different people and events, with no logical connection between height comparison and a raffle outcome.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "The claims involve entirely different subjects (height comparison between Wren and Milo vs. Nell's activity) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "A's height comparison between Wren and Milo has no logical or causal bearing on whether Wren helped stack chairs; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "A is about relative height between Wren and Milo, while B describes a conversation between Ana and Milo. These claims share no relevant connection beyond mentioning Milo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Claim A concerns relative height between Wren and Milo, while claim B concerns Ana and Milo discussing timing for closing arguments. These involve no shared subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Wren's height relative to Milo has no bearing on the group's opinion about the tournament's competitiveness; these are unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 24,
+   "rationale": "Height comparison between Wren and Milo has no bearing on whether everyone stayed late to fold tables.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "The surprise announcement or semifinal pairings have no stated connection to a raffle outcome; nothing in A implies anything about who won a raffle.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Both describe events that could occur during or around the afternoon session, but the announcement and corkboard posting don't directly bear on Nell's activity of tallying speaker points; they could easily coexist without one affecting the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "The claims describe unrelated events occurring at what could be the same or different times during the session; there is no logical or causal connection between a surprise announcement/pairings posting and chair-stacking.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "A describes events in the afternoon session and hallway area, while B describes a quiet private conversation elsewhere; the claims neither support nor conflict with each other and involve unrelated details.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Claim A describes a surprise announcement before semifinal pairings were posted, while claim B describes two people preparing timing for closing arguments; neither event implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "A describes a specific procedural detail about the afternoon session's announcement and pairing posting, while B is a general evaluative statement about the tournament's competitiveness that has no direct logical connection to A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 24,
+   "rationale": "The afternoon session's surprise announcement and semifinal pairings have no logical or narrative connection to whether everyone stayed late to fold up tables; they concern different, unrelated events at possibly different times.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Yara winning a raffle has no logical bearing on Nell tallying speaker points; these appear to be unrelated events with no shared context or causal link implied.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Yara winning a raffle has no logical or causal bearing on Wren stacking chairs; these are unrelated events likely occurring at the same gathering but independent of one another.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "The two claims describe unrelated events with no overlapping subjects or logical connection; winning a raffle has no bearing on a separate conversation near a coffee station.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Winning a raffle and going over timing for closing arguments involve entirely different people and activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Winning a raffle is a matter of chance and unrelated to the group's assessment of a tournament's competitiveness; the claims concern different events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 24,
+   "rationale": "Winning the raffle has no bearing on whether people stayed late to fold tables; these are unrelated facts about an event.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Both describe different people doing different tasks, likely at the same event, but neither claim's truth affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "These describe different people doing unrelated activities during possibly the same period, with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Both describe activities that could occur during the same final hour of a debate event, but A says nothing about Ana and Milo's actions; the claims are about different people doing different tasks with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Tallying speaker points suggests a debate tournament occurred and Nell was involved, but it says nothing about whether the group found it especially competitive; these are largely independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 19,
+   "b": 24,
+   "rationale": "Both describe activities happening after or near the event's end, and if Nell was tallying points during the final hour while others folded tables, both could plausibly be true simultaneously with no direct conflict, but the claims are essentially independent activities.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Both describe minor concurrent activities that could plausibly happen at the same event (e.g., a meeting or gathering), but A's content about stacking chairs has no bearing on whether Ana and Milo discussed strategy elsewhere.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "These describe two different, unrelated activities happening in what seems to be the same general setting; A does not make B more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Wren stacking chairs is a minor logistical action unrelated to the group's opinion about the competitiveness of the tournament; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 20,
+   "b": 24,
+   "rationale": "Both describe cleanup activity after an event, with Wren stacking chairs and everyone (including presumably Wren) folding tables; these are compatible actions that could both occur during the same cleanup effort, so A mildly supports B's plausibility.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Discussing strategy quietly near the coffee station is consistent with, and could plausibly include, going over timing for closing arguments; B specifies a plausible content of that strategy talk, making it more likely true.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "A describes a private, quiet conversation between two people about strategy, while B describes a broader group consensus about the tournament's competitiveness. These are different events and topics that neither support nor conflict with each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "A describes a quiet conversation between two people near the coffee station, which is unrelated to whether everyone stayed late to fold tables afterward; the claims describe different activities without clear temporal or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "A concerns Ana and Milo preparing closing arguments, suggesting a debate context, while B concerns a group's opinion about a tournament's competitiveness; these describe different activities and contexts with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "Discussing closing arguments suggests a legal or debate context, while B describes an event with tables being folded up, likely unrelated activities or settings; no direct logical connection exists between them.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 23,
+   "b": 24,
+   "rationale": "A concerns the group's opinion about the tournament's competitiveness, while B describes a separate physical action of cleaning up tables. Neither statement implies anything about the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "wren",
+    "mentions": [
+     "Wren"
+    ]
+   },
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "debate_tournament",
+    "mentions": [
+     "The regional debate tournament",
+     "the tournament"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "subject": "ana",
+    "comparative": "later than",
+    "object": "wren",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "subject": "milo",
+    "comparative": "taller than",
+    "object": "ana",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "subject": "ana",
+    "comparative": "taller than",
+    "object": "wren",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "height",
+    "subject": "wren",
+    "comparative": "taller than",
+    "object": "milo",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "entity": "milo",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "arrival_time",
+    "entity": "yara",
+    "comparative": "last",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "later than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "last",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 25,
+  "pairs_requested": 300,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 10,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    1,
+    6
+   ],
+   [
+    2,
+    14
+   ],
+   [
+    4,
+    10
+   ],
+   [
+    4,
+    20
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "height": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 2,
+     "attribute": "arrival_time",
+     "entity": "milo",
+     "extreme": "min",
+     "edges": 3
+    },
+    {
+     "claim_id": 13,
+     "attribute": "arrival_time",
+     "entity": "yara",
+     "extreme": "max",
+     "edges": 3
+    }
+   ],
+   "extreme_edges": 6,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 25,
+  "n_edges": 15,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   3
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "height",
+    "entities": [
+     "milo",
+     "ana",
+     "wren"
+    ],
+    "relations": [
+     1,
+     2,
+     3
+    ],
+    "claim_ids": [
+     7,
+     12,
+     16
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   0.9999999999999998,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   3.2047474274603606e-32,
+   5.17689969051289e-32,
+   8.135128085091684e-32,
+   6.902532920683853e-32,
+   1.9721522630525296e-32,
+   0.0,
+   9.614242282381082e-32,
+   1.0846837446788913e-31,
+   5.423418723394457e-32,
+   7.642090019328552e-32,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   2.7117093616972283e-32,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 2,
+    "b": 4,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 2,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 8,
+    "residual": 1.9721522630525296e-32
+   },
+   {
+    "a": 3,
+    "b": 9,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 3,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 5,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "residual": 1.9721522630525296e-32
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 19,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 10,
+    "b": 11,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 11,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 20,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 4131696,
+   "output_tokens": 380184,
+   "thinking_tokens": 0,
+   "calls": 17437,
+   "api_calls": 3909,
+   "cache_hits": 13528,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 11.87851500000004,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 104640,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 4511880,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    15,
+    19
+   ],
+   [
+    7
+   ],
+   [
+    12
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ],
+   [
+    18
+   ],
+   [
+    20,
+    24
+   ],
+   [
+    21,
+    22
+   ],
+   [
+    23
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "height",
+    "entities": [
+     "milo",
+     "ana",
+     "wren"
+    ],
+    "relations": [
+     1,
+     2,
+     3
+    ],
+    "claim_ids": [
+     7,
+     12,
+     16
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 1,
+    "b": 6,
+    "rationale": "Training together for months shows preparation and teamwork, yet Ana still reviewing her opening statement last-minute is somewhat surprising given that extensive preparation, though not impossible for an individual competitor.",
+    "confidence": 0.55
+   },
+   {
+    "a": 2,
+    "b": 14,
+    "rationale": "A states Milo arrived first, checking in before sunrise, which suggests parking was not yet congested; B describes Yara struggling to find parking, implying she arrived later amid congestion. These are plausibly compatible (different arrival times), though A slightly undercuts the likelihood of parking trouble at that early hour, creating mild tension rather than direct contradiction.",
+    "confidence": 0.55
+   },
+   {
+    "a": 4,
+    "b": 10,
+    "rationale": "Wren's meticulous, topic-organized rebuttal notecards suggest thorough preparation for detailed debate, which is in mild tension with rounds moving quickly, though both could still be true if she was efficient despite the preparation.",
+    "confidence": 0.45
+   },
+   {
+    "a": 4,
+    "b": 20,
+    "rationale": "A depicts Wren arriving focused on preparing note cards for a debate or discussion, while B shows Wren doing a different task (stacking chairs). Both can be true at different moments, so there's no contradiction, but preparing rebuttal materials suggests focus on debate prep rather than logistics, creating mild tension.",
+    "confidence": 0.45
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 5,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "ana",
+   "b": "wren",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 7,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "milo",
+   "b": "ana",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 12,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "ana",
+   "b": "wren",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "wren",
+   "b": "milo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "ana",
+   "b": "milo",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "wren",
+   "b": "milo",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "yara",
+   "b": "milo",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 13,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "yara",
+   "b": "ana",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 13,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "yara",
+   "b": "milo",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 13,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "yara",
+   "b": "wren",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

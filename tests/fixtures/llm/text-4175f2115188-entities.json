@@ -1,0 +1,260 @@
+{
+ "request": "b0aed4c5f424d91a7a2544aa43793879d4eb8d2d733eeb490a7b75506671ce23",
+ "tag": "text-4175f2115188-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina"
+    ]
+   },
+   {
+    "id": "eli",
+    "mentions": [
+     "Eli"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "speed_rank",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "mina",
+    "b": "zeno",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "eli",
+    "b": "zeno",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "same",
+    "a": "mina",
+    "b": "eli",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 7,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "mina",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 7,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "eli",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "eli",
+    "b": "zeno",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "eli",
+    "b": "mina",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "eli",
+    "b": "dara",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "eli",
+    "b": "nell",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "eli",
+    "b": "zeno",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "eli",
+    "b": "dara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "team",
+    "kind": "same",
+    "a": "mina",
+    "b": "eli",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "speed_rank",
+    "kind": "greater",
+    "a": "nell",
+    "b": "zeno",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 15,
+    "attribute": "speed_rank",
+    "kind": "greater",
+    "a": "nell",
+    "b": "mina",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 15,
+    "attribute": "speed_rank",
+    "kind": "greater",
+    "a": "nell",
+    "b": "eli",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 15,
+    "attribute": "speed_rank",
+    "kind": "greater",
+    "a": "nell",
+    "b": "dara",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "dara",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "nell",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "mina",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "eli",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 18,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "dara",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "team",
+    "kind": "same",
+    "a": "eli",
+    "b": "zeno",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "team",
+    "kind": "different",
+    "a": "mina",
+    "b": "zeno",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2286,
+  "output_tokens": 1293,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

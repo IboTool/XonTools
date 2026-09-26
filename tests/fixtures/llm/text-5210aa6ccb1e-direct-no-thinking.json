@@ -1,0 +1,25 @@
+{
+ "request": "7cd7380acdc48c588a286be112674111fcb54c991fb04503954ccec55587bf47",
+ "tag": "text-5210aa6ccb1e-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Yara is in the same class as Milo.",
+     "Milo is in the same class as Zeno.",
+     "Yara is not in the same class as Zeno."
+    ],
+    "explanation": "If Yara and Milo are in the same class, and Milo and Zeno are in the same class, then Yara and Zeno must also be in the same class, contradicting the statement that they are not."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1085,
+  "output_tokens": 131,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

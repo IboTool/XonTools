@@ -1,0 +1,108 @@
+{
+ "request": "4e96a1d41a0c5d10e560d5544aa7cc4016a0a48b9300a3d2a86d6ae62e45bf15",
+ "tag": "text-3b8e29464b05-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 17,
+    "b": 25,
+    "rationale": "Jun's age has no bearing on whether the group quickened pace due to clouds.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 18,
+    "b": 21,
+    "rationale": "Jun setting a pace for the group doesn't relate to how many teams existed.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 18,
+    "b": 25,
+    "rationale": "Jun setting a steady pace is a separate cause from the clouds prompting a quicker pace, not directly related.",
+    "relation": "unrelated",
+    "confidence": 0.8
+   },
+   {
+    "a": 19,
+    "b": 21,
+    "rationale": "Esme and Eli being on different teams implies there are at least two teams, supporting the claim of two teams.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 20,
+    "b": 24,
+    "rationale": "Stopping for lunch at midday doesn't determine whether clouds gathered later in the afternoon.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 20,
+    "b": 26,
+    "rationale": "Reaching an outcrop for lunch is consistent with later reaching camp in the evening, supporting the timeline of progress.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 23,
+    "b": 25,
+    "rationale": "Yara tracking time to reach camp before sunset is a different motivation than quickening due to clouds, but both push toward hastening, so it's largely unrelated in causal terms.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "Clouds gathering directly caused the group to quicken their pace as stated.",
+    "relation": "supports",
+    "confidence": 0.95
+   },
+   {
+    "a": 24,
+    "b": 26,
+    "rationale": "Clouds gathering in the afternoon is consistent with the group later settling into camp in the evening.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "Quickening pace toward the campsite supports the group successfully settling into camp by evening.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 26,
+    "b": 27,
+    "rationale": "Settling into tents in the evening is consistent with being tired but satisfied with the day's progress.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 26,
+    "b": 28,
+    "rationale": "Having settled into tents suggests the group is now ready to rest before continuing the next day.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "rationale": "Being tired but satisfied naturally leads to being ready to rest before the next leg.",
+    "relation": "supports",
+    "confidence": 0.8
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1153,
+  "output_tokens": 864,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

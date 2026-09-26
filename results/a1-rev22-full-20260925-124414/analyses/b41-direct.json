@@ -1,0 +1,1392 @@
+{
+ "label": "b41-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-19f6df791462",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The model railway club met on a cold Saturday morning to plan the autumn exhibition.",
+   "span": "The model railway club met on a cold Saturday morning to plan the autumn exhibition.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Sami arrived first, carrying a box of freshly painted locomotives.",
+   "span": "Sami arrived first, carrying a box of freshly painted locomotives",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Eli followed soon after with a folder of track diagrams.",
+   "span": "Eli followed soon after with a folder of track diagrams",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Lena is the event organizer.",
+   "span": "Assume that Lena is the event organizer.",
+   "kind": "premise"
+  },
+  {
+   "id": 4,
+   "text": "Dev came a little later, still buttoning his coat against the wind.",
+   "span": "Dev came a little later, still buttoning his coat against the wind",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Xavi trailed in last of the five.",
+   "span": "Xavi trailed in last of the five",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Xavi had stopped to help a neighbor with a flat tire.",
+   "span": "having stopped to help a neighbor with a flat tire",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Everyone gathered around the long table to look over the layout plans for the display.",
+   "span": "Everyone gathered around the long table to look over the layout plans for the display.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Xavi booked the hall.",
+   "span": "Xavi booked the hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Lena had spent the previous week measuring the space and sketching where each module would sit.",
+   "span": "Lena had spent the previous week measuring the space and sketching where each module would sit",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Lena seemed pleased that the group had settled in so quickly.",
+   "span": "she seemed pleased that the group had settled in so quickly",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Sami and Eli were in different houses.",
+   "span": "Sami and Eli were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "The five members chatted about their school days while sorting through spools of wire and small tins of ballast.",
+   "span": "The five members chatted about their school days while sorting through spools of wire and small tins of ballast.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Dev mentioned he was the tallest of the group.",
+   "span": "Dev mentioned he was the tallest of the group",
+   "kind": "quoted"
+  },
+  {
+   "id": 14,
+   "text": "Eli insisted he had grown taller over the summer.",
+   "span": "Eli insisted he had grown taller over the summer",
+   "kind": "quoted"
+  },
+  {
+   "id": 15,
+   "text": "Eli and Dev were in different houses.",
+   "span": "Eli and Dev were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Sami was ranked highest in the regional junior chess league.",
+   "span": "Sami, meanwhile, was ranked highest in the regional junior chess league",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "This fact always surprised newcomers to the club.",
+   "span": "a fact that always surprised newcomers to the club",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Sami and Dev were in different houses.",
+   "span": "Sami and Dev were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Lena reminded everyone that the exhibition date was approaching fast.",
+   "span": "Lena reminded everyone that the exhibition date was approaching fast",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "The layout needed to be finished within three weeks.",
+   "span": "the layout needed to be finished within three weeks",
+   "kind": "quoted"
+  },
+  {
+   "id": 21,
+   "text": "Xavi did not book the hall.",
+   "span": "Xavi did not book the hall.",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "The school had three houses.",
+   "span": "The school had three houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Xavi was the youngest of the group.",
+   "span": "Xavi, who was the youngest of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Xavi promised to bring extra glue and static grass for the scenery next weekend.",
+   "span": "promised to bring extra glue and static grass for the scenery next weekend",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "The meeting ended with everyone in good spirits.",
+   "span": "the meeting ended with everyone in good spirits",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "A establishes a cold morning meeting, which fits with B's detail of Dev arriving late while buttoning his coat against wind, a plausible everyday continuation of the same scene.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A describes a club meeting to plan an exhibition, while claim B is an unrelated personal statement by an individual about his height; they share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "The claim about the model railway club meeting has no connection to Sami and Dev being in different houses; no shared entities or context are mentioned.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "A states Sami arrived first, which is consistent with Xavi arriving last among five people; these describe different positions in the same arrival order and do not conflict.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "A states Sami arrived first with painted locomotives, which does not preclude Xavi's separate reason for delay; the claims concern different people and events with no direct logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Claim A describes a specific event (Sami arriving first with painted locomotives), while claim B refers vaguely to 'this fact' without clear antecedent connection to A's content; B seems to reference some general club fact rather than the specific arrival event, making the link too indirect to establish support, contradiction, or tension.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "A describes Sami arriving with painted locomotives, which has no logical bearing on a stated deadline for finishing a layout; they concern different aspects of what appears to be a shared project but neither implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Eli bringing track diagrams shows event preparation activity but says nothing about who the organizer is or Lena's role specifically.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "A says Eli followed soon after someone, suggesting an early or middling position, while B says Xavi trailed last; these could refer to different people so no direct contradiction, but if Eli were meant to be last too there'd be tension. As written they concern different individuals and are largely unrelated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "A implies Eli was following someone (likely Sami) to the same location, suggesting they were together or headed to the same place, which is in tension with them being in different houses.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A describes Eli arriving with track diagrams, while claim B describes an unrelated remark by Dev about his height; neither event bears on the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Claim A describes Eli arriving with track diagrams, which has no bearing on whether Xavi booked the hall.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 24,
+   "rationale": "Both claims involve people bringing materials for a shared project, but they concern different people, items, and timing, with no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "As the event organizer, Lena would plausibly be responsible for keeping participants aware of upcoming deadlines like an exhibition date, so her role supports the likelihood of her sending such a reminder.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A states Dev arrived later than someone else but does not establish his position relative to all five people; B claims Xavi was the very last. Both could be true if Dev arrived before Xavi, or false if Dev was actually last, so there's no direct contradiction, but the two claims are related in that they both describe arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "A describes Dev's arrival and clothing action, which has no bearing on his height or claims about being tallest in the group.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Claim A describes Dev arriving somewhere, but says nothing about whether he was in the same or a different house from Eli; the two claims concern different aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A describes Dev arriving late and buttoning his coat, which has no logical or contextual connection to Sami's chess ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "A neighbor helping with a flat tire would explain why Xavi lost time and finished last, so A makes B plausible as a cause rather than being at odds with it.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "B explains the origin of the layout plans being reviewed in A: Lena's prior measuring and sketching would naturally produce the plans now being examined. This makes B plausible and coherent with A, though not strictly required by it.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "A states everyone gathered together around one table, which implies Sami and Eli were in the same location, while B claims they were in different houses. There is no ordinary reading reconciling both as simultaneous facts.",
+   "relation": "contradicts",
+   "confidence": 0.72
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "A describes the group gathering to review layout plans, while B describes them chatting about school days while sorting materials; these could be two different moments in the same session, but A's focus on layout plans sits somewhat awkwardly with B's depiction of casual chit-chat and unrelated tasks happening at the same time.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "B is the direct negation of A; if Xavi booked the hall, then it is false that Xavi did not book the hall.",
+   "relation": "contradicts",
+   "confidence": 0.99
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "A describes Lena's prior planning work, while B describes a separate later group activity of sorting materials; the two are about different times and events but are consistent as part of the same overall project.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Lena's planning activities have no logical or topical connection to Dev's remark about his height.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "A describes Lena's planning process, while B refers vaguely to 'this fact' surprising newcomers without clear connection to the planning activity described in A; the referent of 'this fact' is unclear and not obviously tied to A's content.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "A shows Lena preparing exhibition-related work in advance, which is consistent with and mildly supports the idea that she was conscious of an approaching exhibition deadline, but the two claims describe separate actions without a direct logical link.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Spending a week planning ahead is consistent with, and mildly supportive of, there being a tight three-week deadline that requires careful upfront planning, but the claims don't directly entail one another.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 25,
+   "rationale": "Lena's prior planning activity has no bearing on how an unspecified meeting ended; the claims share no common subject or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Lena's satisfaction with the group settling in quickly has no logical connection to a deadline for finishing a layout; these appear to be unrelated facts from different contexts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 24,
+   "rationale": "Lena's satisfaction about the group settling in and Xavi's promise about hobby supplies for next weekend concern unrelated topics with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 25,
+   "rationale": "Lena's satisfaction that the group settled in quickly suggests a positive atmosphere, which makes it more plausible that the meeting ended on a good note, though it's not the same event.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Knowing Sami and Eli were in different houses tells us nothing about whether Eli and Dev were in different or the same house; no logical or causal link connects these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "A establishes a fact, and B refers to 'this fact' as surprising newcomers, which is consistent with A being that surprising fact; B builds on A rather than conflicting with it.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Knowing Sami and Eli were in different houses tells us nothing about Sami's relationship to Dev, since Eli and Dev are separate individuals with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Claim A states Sami and Eli belong to different houses, which is compatible with the school having any number of houses two or more, including three. The claims are largely independent, though B provides context that makes A plausible.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Dev being the tallest of the group doesn't preclude Eli from having grown taller over the summer; Eli could still be shorter than Dev while having grown. The claims address different aspects (relative ranking vs. personal change over time) and are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Being tallest and someone else being youngest concern different attributes (height vs age) and different people, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 25,
+   "rationale": "Dev's remark about being the tallest has no bearing on the emotional tone at the end of the meeting; the two claims concern unrelated aspects of the gathering.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "A refers to Eli's personal claim about his height, while B refers to some other unspecified 'fact' about the club that surprises newcomers. B's referent is unclear and not obviously connected to A's content.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Claim A concerns Eli's height change over summer, while claim B concerns Xavi's relative age within a group. These involve different people and different attributes with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Both claims describe house assignments involving Dev, but relative to different other people (Eli vs Sami). Knowing Eli and Dev are in different houses tells us nothing about whether Sami and Dev are in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "A states Eli and Dev belong to different houses, which is a fact about their assignment but does not indicate the total number of houses the school has; B could be true regardless of A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 25,
+   "rationale": "Being in different houses has no clear bearing on the emotional tone at the end of a meeting; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "If Sami was indeed ranked highest, it plausibly explains why newcomers to the club found this fact surprising, though the surprise itself is a separate psychological claim not strictly entailed by the ranking.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 25,
+   "rationale": "Sami's chess ranking has no logical or causal bearing on the mood at the end of an unspecified meeting; the two claims concern entirely different subjects and events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Claim A refers to an unspecified 'fact' that surprised newcomers, and claim B states a specific fact about Sami and Dev's houses. Without explicit context linking the 'fact' in A to the house arrangement in B, there is no clear logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Claim A refers to an unspecified 'fact' that surprises newcomers, with no connection to who booked the hall. There is no shared content linking the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "A's mention of houses (as in school houses) is consistent with there being three houses; the existence of multiple houses supports the possibility of two students being in different ones, though it doesn't confirm the specific number three.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "A establishes that a deadline (the exhibition) is approaching soon, which is consistent with and lends plausibility to a specific near-term deadline like finishing the layout within three weeks, though it doesn't confirm the exact timeframe.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 19,
+   "b": 24,
+   "rationale": "Lena's reminder about the approaching exhibition creates urgency, which fits with Xavi promising to bring supplies for scenery work, but the claims describe different people and actions with no direct logical dependency.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Claim A concerns a deadline for finishing a layout, while claim B states a fact about a school's organizational structure. These topics are unrelated and neither bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "The number of houses at the school has no logical or thematic bearing on Xavi's promise about scenery materials; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 22,
+   "b": 25,
+   "rationale": "The number of houses at the school has no bearing on the mood at the end of a meeting; these are unrelated facts about different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "eli",
+    "mentions": [
+     "Eli"
+    ]
+   },
+   {
+    "id": "lena",
+    "mentions": [
+     "Lena"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi"
+    ]
+   },
+   {
+    "id": "club",
+    "mentions": [
+     "The model railway club",
+     "the group",
+     "five members",
+     "the five"
+    ]
+   },
+   {
+    "id": "exhibition",
+    "mentions": [
+     "the autumn exhibition",
+     "the exhibition"
+    ]
+   },
+   {
+    "id": "hall",
+    "mentions": [
+     "the hall"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "chess_rank",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "other",
+    "other_greater_means": "higher ranked in league"
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "hall_booking",
+    "arity": "binary",
+    "arity_span": "Xavi did not book the hall.",
+    "order_kind": null,
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 11,
+    "attribute": "house",
+    "kind": "different",
+    "a": "sami",
+    "b": "eli",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "house",
+    "kind": "different",
+    "a": "eli",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "house",
+    "kind": "different",
+    "a": "sami",
+    "b": "dev",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "subject": "eli",
+    "comparative": "followed",
+    "object": "sami",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "subject": "dev",
+    "comparative": "later",
+    "object": "eli",
+    "confidence": 0.6
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "entity": "sami",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "entity": "xavi",
+    "comparative": "last",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "entity": "dev",
+    "comparative": "tallest",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "chess_rank",
+    "entity": "sami",
+    "comparative": "ranked highest",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 23,
+    "attribute": "age",
+    "entity": "xavi",
+    "comparative": "youngest",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "followed",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "later",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "last",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "height",
+    "comparative": "tallest",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "chess_rank",
+    "comparative": "ranked highest",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "age",
+    "comparative": "youngest",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": [
+   14
+  ]
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 23,
+  "blind": [
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    14
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    17
+   ],
+   [
+    1,
+    20
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    2,
+    13
+   ],
+   [
+    2,
+    21
+   ],
+   [
+    2,
+    24
+   ],
+   [
+    4,
+    13
+   ],
+   [
+    4,
+    15
+   ],
+   [
+    4,
+    16
+   ],
+   [
+    7,
+    11
+   ],
+   [
+    9,
+    12
+   ],
+   [
+    9,
+    13
+   ],
+   [
+    9,
+    17
+   ],
+   [
+    9,
+    25
+   ],
+   [
+    10,
+    20
+   ],
+   [
+    10,
+    24
+   ],
+   [
+    11,
+    17
+   ],
+   [
+    13,
+    25
+   ],
+   [
+    14,
+    17
+   ],
+   [
+    15,
+    25
+   ],
+   [
+    16,
+    25
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    17,
+    21
+   ],
+   [
+    20,
+    22
+   ],
+   [
+    22,
+    24
+   ],
+   [
+    22,
+    25
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 26,
+  "pairs_requested": 54,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 31,
+  "blind_pairs_related": 4,
+  "entity_relations": 11,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    2,
+    11
+   ],
+   [
+    7,
+    12
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "house": null,
+    "height": "magnitude",
+    "chess_rank": "other",
+    "age": "magnitude",
+    "hall_booking": null
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 1,
+     "attribute": "arrival_time",
+     "entity": "sami",
+     "extreme": "min",
+     "edges": 3
+    },
+    {
+     "claim_id": 5,
+     "attribute": "arrival_time",
+     "entity": "xavi",
+     "extreme": "max",
+     "edges": 3
+    },
+    {
+     "claim_id": 13,
+     "attribute": "height",
+     "entity": "dev",
+     "extreme": "max",
+     "edges": 0
+    },
+    {
+     "claim_id": 16,
+     "attribute": "chess_rank",
+     "entity": "sami",
+     "extreme": "max",
+     "edges": 0
+    },
+    {
+     "claim_id": 23,
+     "attribute": "age",
+     "entity": "xavi",
+     "extreme": "min",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 6,
+   "unsupported_order_claims": [
+    14
+   ]
+  }
+ },
+ "report": {
+  "n_claims": 26,
+  "n_edges": 11,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   3
+  ],
+  "harmony": 0.9675064264947318,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    13
+   ],
+   [
+    14
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   0.5094671196562015,
+   0.33557046979865773,
+   0.8379152514410435,
+   1.0,
+   0.49115312005655953,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9445810328774471,
+   0.8438192744728055,
+   1.0,
+   0.9612406036054668,
+   0.9612406036054669,
+   0.33557046979865773,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0011267181066514141,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   1.0370306515578833,
+   0.8873924597991083,
+   0.11015121677405067,
+   0.0,
+   1.054442619279053,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.008655374493168052,
+   0.10460058148488437,
+   0.0,
+   0.010994037283083432,
+   6.779273404243071e-33,
+   0.8873924597991083,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 4,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 19,
+    "residual": 0.0011267181066514141
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "residual": 0.0
+   },
+   {
+    "a": 7,
+    "b": 9,
+    "residual": 0.07551472269106706
+   },
+   {
+    "a": 7,
+    "b": 11,
+    "residual": 0.7208934221684329
+   },
+   {
+    "a": 8,
+    "b": 21,
+    "residual": 0.4459258591955318
+   },
+   {
+    "a": 9,
+    "b": 19,
+    "residual": 0.008365028367563466
+   },
+   {
+    "a": 10,
+    "b": 25,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 17,
+    "residual": 0.07462404988244604
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "residual": 0.005584112576237453
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 6.779273404243071e-33
+   }
+  ],
+  "residual_ranking": [
+   11,
+   7,
+   8,
+   21,
+   9,
+   17,
+   19,
+   16,
+   3
+  ],
+  "culprits": [
+   {
+    "claim": 11,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.014999378397281271
+   },
+   {
+    "claim": 7,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.014906767517937736
+   },
+   {
+    "claim": 8,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.012830730366807819
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 3419332,
+   "output_tokens": 315589,
+   "thinking_tokens": 0,
+   "calls": 16736,
+   "api_calls": 3232,
+   "cache_hits": 13504,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 9.831381000000016,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 91560,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 3734921,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    4
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3,
+    7,
+    9,
+    11,
+    16,
+    17,
+    19,
+    20
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    8,
+    21
+   ],
+   [
+    10,
+    25
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    15
+   ],
+   [
+    18
+   ],
+   [
+    22
+   ],
+   [
+    23
+   ],
+   [
+    24
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    7,
+    11
+   ],
+   [
+    8,
+    21
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 2,
+    "b": 11,
+    "rationale": "A implies Eli was following someone (likely Sami) to the same location, suggesting they were together or headed to the same place, which is in tension with them being in different houses.",
+    "confidence": 0.55
+   },
+   {
+    "a": 7,
+    "b": 12,
+    "rationale": "A describes the group gathering to review layout plans, while B describes them chatting about school days while sorting materials; these could be two different moments in the same session, but A's focus on layout plans sits somewhat awkwardly with B's depiction of casual chit-chat and unrelated tasks happening at the same time.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 11,
+   "attribute": "house",
+   "kind": "different",
+   "a": "sami",
+   "b": "eli",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "house",
+   "kind": "different",
+   "a": "eli",
+   "b": "dev",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 18,
+   "attribute": "house",
+   "kind": "different",
+   "a": "sami",
+   "b": "dev",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "eli",
+   "b": "sami",
+   "confidence": 0.85,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 4,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "dev",
+   "b": "eli",
+   "confidence": 0.6,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "dev",
+   "b": "sami",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "eli",
+   "b": "sami",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "sami",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 5,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "dev",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 5,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "eli",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 5,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "xavi",
+   "b": "sami",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

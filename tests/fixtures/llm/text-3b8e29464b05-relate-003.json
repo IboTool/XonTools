@@ -1,0 +1,108 @@
+{
+ "request": "64682a989e43b58e8f23b909151febdcba24f94c4bb4bfa5f26ec3e7104d6bbd",
+ "tag": "text-3b8e29464b05-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 19,
+    "b": 21,
+    "rationale": "Different teams existing implies there are at least two teams, supporting the claim that there were two teams.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 19,
+    "b": 24,
+    "rationale": "Team assignment of Esme and Eli has no bearing on weather conditions.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 20,
+    "b": 22,
+    "rationale": "Stopping for lunch at a rocky outcrop has no bearing on who is the youngest.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 20,
+    "b": 24,
+    "rationale": "Reaching an outcrop at midday is a separate event from clouds gathering later; no causal or logical link.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 20,
+    "b": 26,
+    "rationale": "Reaching an outcrop at midday and stopping for lunch is a prior event consistent with continuing to camp by evening, providing mild temporal support.",
+    "relation": "supports",
+    "confidence": 0.55
+   },
+   {
+    "a": 21,
+    "b": 24,
+    "rationale": "The number of teams has no relation to weather conditions.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 23,
+    "b": 25,
+    "rationale": "Yara's time-tracking to reach camp before sunset aligns with everyone quickening pace, both driving toward the same goal, so they are consistent and mutually reinforcing.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "Clouds gathering as a sign of worsening weather plausibly prompted the group to hurry toward camp.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "Quickening pace toward the campsite supports the idea that they eventually arrived and settled into tents by evening.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 25,
+    "b": 27,
+    "rationale": "Quickening pace due to urgency doesn't directly indicate satisfaction with progress, though it's plausible; the link is weak.",
+    "relation": "unrelated",
+    "confidence": 0.55
+   },
+   {
+    "a": 26,
+    "b": 27,
+    "rationale": "Settling into tents by evening after a day's hike supports the idea that they were tired but satisfied with the day's progress.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 26,
+    "b": 28,
+    "rationale": "Settling into tents suggests they are now resting, supporting readiness to rest before continuing.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "rationale": "Being tired but satisfied naturally leads to being ready to rest before continuing.",
+    "relation": "supports",
+    "confidence": 0.8
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1131,
+  "output_tokens": 891,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

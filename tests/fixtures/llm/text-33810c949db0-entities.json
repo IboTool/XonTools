@@ -1,0 +1,119 @@
+{
+ "request": "895f60ea07c86c19d0423c31e15b5817a57f742b3d05122ec86b850c62b8c306",
+ "tag": "text-33810c949db0-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "multi",
+    "arity_span": "There were three teams."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "dara",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "vik",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 13,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "cleo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "team",
+    "kind": "different",
+    "a": "cleo",
+    "b": "yara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dara",
+    "b": "vik",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 23,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "yara",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2203,
+  "output_tokens": 487,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

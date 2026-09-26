@@ -1,0 +1,2247 @@
+{
+ "label": "b43-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-1f10fb0afa13",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Cleo is the club secretary.",
+   "span": "Cleo is the club secretary",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Bo arrived first, well before the others settled into the hall.",
+   "span": "Bo arrived first, well before the others settled into the hall",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Ivo showed up shortly after, carrying a stack of prepared briefs.",
+   "span": "Ivo showed up shortly after, carrying a stack of prepared briefs",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Dev followed a few minutes later looking rushed but ready.",
+   "span": "Dev followed a few minutes later looking rushed but ready",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Milo drove the minibus.",
+   "span": "Milo drove the minibus",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Cleo was the last to walk in, calm and unhurried despite the tight schedule.",
+   "span": "Cleo was the last to walk in, calm and unhurried despite the tight schedule",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Milo stood taller than Dev.",
+   "span": "Milo stood taller than both Dev and Cleo",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Milo stood taller than Cleo.",
+   "span": "Milo stood taller than both Dev and Cleo",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Ivo was the shortest of the group.",
+   "span": "Ivo was the shortest of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Bo is in the same study group as Dev.",
+   "span": "Bo is in the same study group as Dev",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Rankings from the previous tournament were posted on a board near the entrance.",
+   "span": "rankings from the previous tournament were posted on a board near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Cleo sat comfortably in the middle of the pack.",
+   "span": "Cleo sitting comfortably in the middle of the pack",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Dev is not in the same study group as Ivo.",
+   "span": "Dev is not in the same study group as Ivo",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Milo seemed especially confident about the rebuttal section.",
+   "span": "Milo seemed especially confident about the rebuttal section",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Bo is not in the same study group as Ivo.",
+   "span": "Bo is not in the same study group as Ivo",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Milo did not drive the minibus.",
+   "span": "Milo did not drive the minibus",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Ivo was the youngest in the room.",
+   "span": "he was the youngest in the room",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Ivo was younger than Bo by nearly two years.",
+   "span": "younger even than Bo by nearly two years",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Cleo was the oldest competitor present.",
+   "span": "Cleo, meanwhile, was the oldest competitor present",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Cleo had debated for several seasons longer than anyone else.",
+   "span": "having debated for several seasons longer than anyone else",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Cleo's role as club secretary has no bearing on who arrived first at the hall; these are independent facts about different people and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Cleo's role as club secretary has no bearing on Ivo's arrival or what he carried; the claims involve different people and unrelated content.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Claim A concerns Cleo's role as club secretary, while claim B describes Dev's arrival and demeanor. They share no common subject or context that would connect them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "The two claims describe unrelated facts about different people and roles with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Being the club secretary has no direct bearing on whether Cleo arrived last or how she behaved despite a tight schedule; these are independent facts about role versus behavior.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "The claim about Cleo's role as club secretary has no logical or topical connection to a claim about relative heights of Milo and Dev.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Being club secretary is a role unrelated to physical height, so it has no bearing on whether Milo is taller than Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A concerns Cleo's organizational role, while claim B concerns Ivo's relative height; these topics are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Cleo's role as club secretary has no bearing on whether Bo and Dev share a study group; the claims concern unrelated people and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Cleo's role as club secretary has no logical bearing on whether rankings were posted on a board near the entrance; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Being a club secretary is an administrative role and has no bearing on where someone sits or positions themselves within a group or pack; the two claims concern unrelated domains.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A concerns Cleo's club role, while claim B concerns Dev and Ivo's study group membership; the two describe unrelated people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Claim A is about Cleo's club role and claim B is about Milo's demeanor regarding a rebuttal section; they share no common subject or context that would connect them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A concerns Cleo's club role while claim B concerns Bo and Ivo's study group membership; there is no shared subject or logical link between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Claim A concerns Cleo's role as club secretary, while claim B concerns whether Milo drove a minibus. These involve different people and unrelated topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Claim A is about Cleo's role as club secretary, while claim B concerns Ivo's relative age in some room. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Claim A is about club roles and claim B is about a relative age comparison between two unrelated people; there is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Being the club secretary is an organizational role and has no logical bearing on someone's age relative to other competitors present at an event.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Being the club secretary is an administrative role unrelated to length of debating experience; knowing one tells us nothing about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "A establishes that Bo was first and others arrived later; B describes Ivo arriving shortly after, which fits naturally as one of those later arrivals without conflict.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "A establishes a sequence where Bo arrived first before others settled in, and B describes Dev arriving a few minutes after, consistent with being one of the 'others' who followed after Bo's early arrival.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A concerns arrival order at a hall, while claim B concerns who drove a minibus; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "A establishes Bo as the first to arrive, and B states Cleo was the last to enter; these describe different people at opposite ends of an arrival order, which is consistent rather than conflicting.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A concerns Bo's arrival time relative to others, while claim B concerns relative heights of Milo and Dev. These involve different people and different attributes, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A concerns Bo's arrival time relative to others, while claim B concerns a height comparison between Milo and Cleo. Neither claim's content bears on the other in any way.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A concerns arrival order and timing, while claim B concerns relative height; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A describes when Bo arrived somewhere, while claim B describes a social/organizational relationship between Bo and Dev. These concern unrelated aspects of Bo's life with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "A describes the order of arrival at the hall, while B describes an unrelated posting of past tournament rankings; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "A establishes Bo as first to arrive, but says nothing about Cleo's arrival position or ranking, so it neither supports nor contradicts B's claim about Cleo being mid-pack.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A concerns Bo's arrival time relative to others in a hall, while claim B concerns study group membership of Dev and Ivo. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns Bo's arrival time relative to others settling in, while claim B concerns Milo's confidence about a rebuttal section. There is no shared subject, event type, or causal link between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Claim A concerns arrival timing at a hall, while claim B concerns study group membership; these describe unrelated aspects of Bo's situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A describes Bo's arrival timing relative to others settling in a hall, while claim B is about whether Milo drove a minibus. These involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Arriving first relates to timing and order of entry, while being youngest concerns age; the two claims describe unrelated attributes with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Claim A concerns arrival order and timing at the hall, while claim B concerns relative ages of Ivo and Bo. These are independent facts with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A concerns arrival order in time, while claim B concerns relative age of competitors; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A is about arrival order and timing at an event, while claim B concerns Cleo's relative debating experience across seasons. These describe unrelated aspects of different people with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "A describes Ivo arriving shortly after some reference event with prepared materials; B describes Dev arriving a bit later in a different state. These are about different people and are consistent with a sequence of arrivals, neither confirming nor undermining the other.",
+   "relation": "unrelated",
+   "confidence": 0.72
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "The two claims describe different people doing unrelated actions with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "A states Ivo arrived shortly after some earlier event, while B claims Cleo was the last to walk in. These could both be true if Ivo arrived before Cleo, but they create mild tension since both describe arrival order and B's claim of Cleo being last implies Ivo was not the last, which is consistent but the two claims focus on different people's arrival without direct conflict.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A describes Ivo's arrival with briefs, which has no bearing on the relative heights of Milo and Dev.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Claim A concerns Ivo arriving with briefs, while claim B concerns a height comparison between Milo and Cleo; they share no people, objects, or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Claim A describes Ivo's arrival and what he was carrying, which has no bearing on his physical height relative to others in the group.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A concerns Ivo arriving with briefs, which has no logical or topical connection to Bo and Dev's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A describes Ivo's arrival with briefs, while claim B describes a board of rankings near an entrance; neither event implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Claim A describes Ivo's arrival with briefs, while claim B describes Cleo's position in some group; there is no shared subject or context linking the two events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "A describes Ivo arriving with prepared briefs, which says nothing about group membership or Dev's relationship to Ivo's study group.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "A describes Ivo arriving with prepared briefs, while B describes Milo's confidence about a rebuttal section; the two claims involve different people and different aspects of a presumably shared context, but nothing in A directly bears on B's truth.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "A describes Ivo arriving with prepared briefs, which says nothing about group membership or Bo's relationship to Ivo's study group.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A describes Ivo arriving with briefs, which has no bearing on whether Milo drove a minibus; the two events involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "A describes Ivo's arrival and preparedness with briefs, which has no bearing on his relative age compared to others in the room.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Claim A describes Ivo's arrival and actions, while claim B states a fact about relative age between Ivo and Bo. These concern unrelated aspects of Ivo's situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "A describes Ivo's arrival with briefs, which has no bearing on Cleo's age relative to other competitors present.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Claim A concerns Ivo's arrival with prepared briefs, while claim B concerns Cleo's relative debating experience; they share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "A describes Dev arriving on foot or otherwise shortly after someone else, while B states who drove the minibus; the two claims concern different people and actions with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "A states Dev followed a few minutes later, implying Dev was the one arriving after others; B states Cleo was the last to arrive. Both cannot be the last arrival, creating a direct conflict unless Dev's arrival was not literally the last, but the phrasing suggests sequential order that clashes with Cleo being last.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "A describes Dev's arrival and demeanor, which has no bearing on a comparison of physical height between Milo and Dev.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A describes Dev arriving rushed but ready, which has no bearing on the relative heights of Milo and Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A describes Dev's arrival and demeanor, while claim B concerns Ivo's relative height; neither statement provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A describes Dev's arrival and demeanor at some event, which has no bearing on whether Bo shares a study group with Dev; these are unrelated facts about different aspects of Dev's life.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Dev's rushed arrival has no logical bearing on whether rankings were posted on a board near the entrance; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "A describes Dev's arrival and demeanor, while B describes Cleo's position in some pack or group; they involve different people and different aspects of a scenario without direct logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A describes Dev's arrival and demeanor at some event, which has no bearing on whether Dev shares a study group with Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A describes Dev's arrival and demeanor, while claim B describes Milo's confidence about a different matter; they involve different people and topics with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A describes Dev arriving somewhere in a rushed manner, while claim B is about group membership of Bo and Ivo; the two involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A describes Dev arriving separately looking rushed, while claim B is about whether Milo drove a minibus; the two involve different people and different events with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A describes Dev's arrival and demeanor, while claim B describes Ivo's relative age in the room; the two statements concern different people and different attributes with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Claim A describes Dev's arrival and demeanor, while claim B concerns an age comparison between Ivo and Bo. These involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Claim A describes Dev's arrival and demeanor, while claim B is about Cleo's relative age among competitors; neither statement bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Claim A describes Dev's arrival and demeanor at some event, while claim B describes Cleo's tenure in debate; they involve different people and unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A states who drove the minibus while B describes Cleo's demeanor and order of arrival; the two claims concern different people and events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Driving a minibus has no bearing on someone's relative height compared to another person.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Driving a minibus has no bearing on relative height compared to Cleo; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Claim A concerns who drove the minibus, while claim B concerns relative height within a group; neither has bearing on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Milo driving a minibus has no logical or topical connection to Bo and Dev's study group membership; they concern entirely different people and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "The two claims describe unrelated situations with no shared entities or logical connection; one being true has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Milo driving a minibus has no bearing on Cleo's seating position or comfort; these describe unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "The claim about Milo driving the minibus has no logical or topical connection to the claim about Dev and Ivo's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Driving a minibus has no logical bearing on someone's confidence about a rebuttal section; the two claims concern unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Driving a minibus has no logical or thematic connection to who is grouped with whom in a study group.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Claim A directly asserts Milo drove the minibus, while claim B asserts the exact negation of this. There is no ordinary reading (different time, occasion, or context) provided that would reconcile these as both true simultaneously.",
+   "relation": "contradicts",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A describes who drove a minibus, while claim B describes relative age within a room; these concern different subjects and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "The two claims concern entirely different subjects (who drove a minibus vs. relative ages of two people) with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Claim A concerns who drove the minibus, while claim B concerns Cleo's relative age among competitors present. These involve different people and unrelated facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "The two claims concern unrelated people and activities; driving a minibus has no bearing on debating tenure.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Claim A describes Cleo's arrival manner and timing, while claim B is an unrelated comparison of heights between two different people not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A describes Cleo's manner and timing of entry, which has no bearing on relative heights of Milo and Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A describes Cleo's arrival order and demeanor, while claim B is about Ivo's height relative to the group. These concern unrelated aspects of different people with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A concerns Cleo's demeanor and arrival order, while claim B concerns Bo and Dev's study group membership; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A describes Cleo's demeanor upon entering, while claim B describes an unrelated environmental detail about a posted board. Neither statement affects the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Being the last to walk in suggests Cleo would be near the end/back rather than the middle of the pack, though 'middle' could refer to seating arrangement unrelated to arrival order, creating some awkward fit rather than outright impossibility.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A describes Cleo's arrival manner and timing, while claim B concerns Dev and Ivo's study group membership. The two involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A describes Cleo's demeanor upon arrival, while claim B describes Milo's confidence about a rebuttal section; they involve different people and different aspects with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A concerns Cleo's arrival and demeanor, while claim B concerns Bo and Ivo's study group membership; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Claim A concerns Cleo's arrival manner and timing, while claim B concerns whether Milo drove a minibus. These involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A describes Cleo's arrival manner and timing; claim B is about Ivo's relative age. These concern different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A concerns Cleo's arrival manner and timing, while claim B concerns a relative age difference between Ivo and Bo. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Being the last to walk in calmly relates to timing and demeanor, while being the oldest competitor concerns age; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Being the last to walk in calmly despite a tight schedule doesn't inform anything about Cleo's debate experience or tenure; the two claims concern unrelated aspects of Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Both claims describe Milo's height relative to different people (Dev and Cleo), so knowing Milo is taller than Dev gives no direct information about his height compared to Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "A tells us Milo was taller than Dev, but says nothing about Ivo's height relative to others, so it neither confirms nor rules out Ivo being the shortest.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "A is about relative height between Milo and Dev, while B concerns group membership involving Bo and Dev; they share the person Dev but address unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A concerns relative height between two individuals, while claim B concerns posted tournament rankings; neither height nor comparison bears on the existence or content of a ranking board.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A concerns a height comparison between Milo and Dev, while claim B concerns Cleo's seating position; they involve different people and unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Height comparison between Milo and Dev has no bearing on study group membership between Dev and Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "A is a claim about relative physical height, while B concerns Milo's confidence about a rebuttal section; these describe unrelated aspects of Milo with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A concerns relative heights of Milo and Dev, while claim B concerns study group membership of Bo and Ivo. The two claims share no common subjects or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Height has no bearing on whether Milo drove the minibus; the two claims concern unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Height comparisons between Milo and Dev have no bearing on age rankings involving Ivo; these are unrelated attributes and people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A concerns relative height between Milo and Dev, while claim B concerns relative age between Ivo and Bo. The people and attributes involved are entirely different, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "A concerns relative height between Milo and Dev, while B concerns Cleo's age relative to other competitors. These describe unrelated attributes and people, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Claim A concerns relative height between Milo and Dev, while claim B concerns relative debate experience of Cleo. They involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "A only establishes a height relation between Milo and Cleo, saying nothing about Ivo or his relative standing among the group, so it neither supports nor undermines B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "The two claims concern entirely different people and topics (relative height vs. study group membership), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A is a height comparison between two individuals, while claim B describes tournament rankings being posted on a board; these concern unrelated domains with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "A concerns relative height between Milo and Cleo, while B concerns Cleo's position within a group. These describe different attributes and don't bear on each other logically.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "The two claims concern entirely different people and topics (relative height vs. study group membership), with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Height and confidence about a rebuttal section are unrelated attributes with no logical or causal connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Claim A concerns Milo and Cleo's relative height, while claim B concerns study group membership of Bo and Ivo; the two involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "A claim about relative height has no bearing on whether Milo drove a minibus; there's no logical or causal link between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "The two claims concern different attributes (height comparison between Milo and Cleo vs. age ranking involving Ivo) with no overlapping subjects or logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Claim A concerns relative height between Milo and Cleo, while claim B concerns relative age between Ivo and Bo. There is no overlap in subjects or attributes, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Height and age are independent traits; Milo being taller than Cleo says nothing about Cleo's relative age compared to other competitors.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A concerns physical height while claim B concerns debate experience; these attributes are independent and neither supports nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Claim A concerns Ivo's height relative to an unspecified group, while claim B concerns Bo and Dev's study group membership; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A concerns Ivo's height relative to a group, while claim B concerns tournament rankings posted on a board; these are unrelated topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Ivo being the shortest of the group says nothing about Cleo's position or comfort within the pack, so the two claims are independent.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "A states Ivo's height relative to some group, but says nothing about which group Dev belongs to or whether Dev is in Ivo's group, so it has no bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Claim A concerns Ivo's height relative to a group, while claim B concerns Milo's confidence about a rebuttal section. These describe unrelated aspects of different people with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Claim A refers to Ivo being shortest within some group, but says nothing about which specific group or about Bo's membership in any group, so it doesn't bear on whether Bo shares a study group with Ivo.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "There is no logical or causal link between Ivo's height relative to the group and whether Milo drove the minibus; these describe unrelated facts about different people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Being shortest is about height and being youngest is about age; these are independent attributes with no logical connection, though both could describe the same person.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Being the shortest and being younger by a specific age gap concern different attributes (height vs age) with no logical link between them; neither makes the other more or less likely based solely on the claims' content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Being the shortest of a group and someone else being the oldest competitor present concern different attributes (height vs age/competitive status) and different people, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Claim A concerns Ivo's height relative to the group, while claim B concerns Cleo's debate experience relative to others. These are independent attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A concerns a study group membership relationship between Bo and Dev, while claim B concerns tournament rankings being posted on a board. These two claims share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Claim A concerns study group membership between Bo and Dev, while claim B concerns Cleo's position in some ranking or pack. They involve different people and unrelated contexts, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Knowing Bo and Dev share a study group tells us nothing about Ivo's group membership relative to Dev, since B involves a different person not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns Bo and Dev's study group membership, while claim B concerns Milo's demeanor about a rebuttal section; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Being in the same study group as Dev doesn't inherently determine Bo's relationship to Ivo unless Dev and Ivo's group membership is known; the claims concern different people and are not logically linked without further information.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "The two claims concern unrelated subjects (study group membership vs. driving a minibus) with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A concerns study group membership of Bo and Dev, while claim B concerns Ivo's relative age in a room; they share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Being in the same study group as Dev has no bearing on the relative ages of Bo and Ivo; these describe unrelated aspects of Bo's life.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "The study group membership of Bo and Dev has no bearing on Cleo's age relative to competitors present; these describe unrelated situations and people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Claim A concerns study group membership between Bo and Dev, while claim B concerns debate seniority involving Cleo; the two share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "A establishes that rankings existed and were publicly visible, which provides context making it plausible that Cleo's standing could be known, but it does not itself indicate anything about her specific position.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "The posting of previous tournament rankings on a board has no bearing on whether Dev and Ivo share a study group; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "A describes a posted board of past rankings while B describes Milo's confidence about a rebuttal section; these concern unrelated aspects of the event with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "The posting of tournament rankings near the entrance has no bearing on whether Bo and Ivo share a study group; these concern unrelated domains.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "The two claims concern unrelated matters: one is about posted tournament rankings, the other about who drove a minibus. Nothing in A bears on the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "A concerns rankings on a board and has no bearing on Ivo's age relative to others in the room.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A concerns tournament rankings posted on a board, while claim B concerns an age difference between two individuals; these topics have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "A concerns visibility of past tournament rankings near the entrance, while B concerns Cleo's age relative to other competitors. Neither claim provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A merely describes where past rankings were posted and carries no information about Cleo's relative debating experience, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A is about Cleo's position within a pack (perhaps a race or group ranking), while claim B concerns Dev and Ivo's study group membership. There is no shared subject or context linking these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "The two claims describe different people and unrelated aspects of a situation (Cleo's ranking versus Milo's confidence about a rebuttal), with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A concerns Cleo's position in some pack/ranking, while claim B concerns Bo and Ivo's study group membership. They involve different people and different contexts with no shared subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A describes Cleo's position in a pack, which has no bearing on whether Milo drove a minibus. The two claims involve different subjects and unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A concerns Cleo's relative position within a pack (likely a ranking or race), while claim B concerns Ivo's age relative to others in a room. These involve different people, different contexts, and different metrics of comparison, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A concerns Cleo's position in some ranked group, while claim B concerns the relative ages of Ivo and Bo. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Sitting comfortably in the middle of the pack refers to Cleo's position or ranking, which has no logical bearing on her age relative to other competitors.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Being comfortably mid-pack suggests average standing, while having debated far longer than anyone else would typically imply greater experience and likely higher performance; the two facts sit awkwardly together though not impossible.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A concerns study group membership of Dev and Ivo, while claim B concerns Milo's confidence about a rebuttal section; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Both claims state that different people are not in Ivo's study group; these are independent facts about separate individuals and neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A concerns study group membership of Dev and Ivo, while claim B concerns Milo driving a minibus; these describe entirely different people and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A is about group membership relations, while claim B is about relative age within a room. Neither claim provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Study group membership and relative age are independent facts about different attributes; knowing Dev and Ivo are in different groups says nothing about Ivo's age relative to Bo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "The two claims concern unrelated matters: study group membership versus age ranking among competitors. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "The claims concern unrelated matters: study group membership versus debate experience. Neither statement bears on the truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A discusses Milo's confidence about a rebuttal section, while claim B concerns study group membership involving different people (Bo and Ivo). There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Milo's confidence about a rebuttal section has no logical or topical connection to whether he drove a minibus.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A concerns Milo's confidence about a rebuttal section, while claim B concerns Ivo's relative age in a room; the two describe unrelated people and topics with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns Milo's confidence about a rebuttal section, while claim B concerns Ivo's age relative to Bo. There is no shared subject or logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Claim A concerns Milo's confidence about a rebuttal section, while claim B concerns Cleo's age relative to other competitors. There is no logical or contextual connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A concerns Milo's confidence about a rebuttal section, while claim B concerns Cleo's relative debate experience; they involve different people and different topics with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "The two claims concern entirely different subjects (study group membership vs. driving a minibus) with no apparent logical or factual connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Being in a different study group from Ivo has no bearing on whether Ivo was the youngest person in the room; these describe unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Being in different study groups has no bearing on their relative ages; these are independent facts about the two people.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A discusses study group membership between Bo and Ivo, while claim B discusses relative age among competitors; these concern unrelated people, contexts, and facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "The claims concern entirely different people and topics (study group membership vs. debate experience), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "The two claims concern entirely different subjects (who drove the minibus vs. who was youngest in a room) with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "The two claims concern unrelated matters: one is about who drove a minibus, the other about a relative age difference between two other people. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Milo's driving status has no bearing on who was the oldest competitor present; these describe unrelated facts about different people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Claim A concerns whether Milo drove a minibus, while claim B concerns Cleo's debating tenure. The two topics share no common subject or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "If Ivo was the youngest in the room, he is younger than everyone else present, which is consistent with him being younger than Bo specifically by nearly two years, provided Bo was also in the room. The claims are compatible and A lends plausibility to B if Bo is in the room.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Both claims describe age-based superlatives among people present, but 'competitor' and 'room' may refer to overlapping or distinct groups, and Ivo being youngest doesn't prevent Cleo from being oldest among competitors specifically. They can coexist without contradiction, and one doesn't particularly make the other more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Being youngest in age doesn't directly determine debate experience, though there could be a loose correlation. These describe different attributes (age vs. years of debate experience) of different people, with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Claim A concerns the relative age of Ivo and Bo only, giving no information about Cleo's age relative to other competitors, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Claim A concerns the age relationship between Ivo and Bo, while claim B concerns Cleo's debate experience relative to others; they involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Being the oldest in age doesn't necessarily mean having the most debate experience, but it does make it plausible; the two are correlated but not equivalent, since someone could start debating late in life.",
+   "relation": "supports",
+   "confidence": 0.55
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   },
+   {
+    "id": "bo",
+    "mentions": [
+     "Bo"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "debate_experience",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 9,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "bo",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "dev",
+    "b": "ivo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "bo",
+    "b": "ivo",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_order",
+    "subject": "ivo",
+    "comparative": "after",
+    "object": "bo",
+    "confidence": 0.8
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_order",
+    "subject": "dev",
+    "comparative": "after",
+    "object": "ivo",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "subject": "milo",
+    "comparative": "taller than",
+    "object": "dev",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "subject": "milo",
+    "comparative": "taller than",
+    "object": "cleo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "subject": "ivo",
+    "comparative": "younger than",
+    "object": "bo",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_order",
+    "entity": "bo",
+    "comparative": "first",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_order",
+    "entity": "cleo",
+    "comparative": "last",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 8,
+    "attribute": "height",
+    "entity": "ivo",
+    "comparative": "shortest",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "age",
+    "entity": "ivo",
+    "comparative": "youngest",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "age",
+    "entity": "cleo",
+    "comparative": "oldest",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 19,
+    "attribute": "debate_experience",
+    "entity": "cleo",
+    "comparative": "longer than anyone else",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "last",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "shortest",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "youngest",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "age",
+    "comparative": "oldest",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "debate_experience",
+    "comparative": "longer than anyone else",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 20,
+  "pairs_requested": 190,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 21,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    11,
+    19
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence",
+    "height": "magnitude",
+    "study_group": null,
+    "age": "magnitude",
+    "debate_experience": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 1,
+     "attribute": "arrival_order",
+     "entity": "bo",
+     "extreme": "min",
+     "edges": 3
+    },
+    {
+     "claim_id": 5,
+     "attribute": "arrival_order",
+     "entity": "cleo",
+     "extreme": "max",
+     "edges": 3
+    },
+    {
+     "claim_id": 8,
+     "attribute": "height",
+     "entity": "ivo",
+     "extreme": "min",
+     "edges": 3
+    },
+    {
+     "claim_id": 16,
+     "attribute": "age",
+     "entity": "ivo",
+     "extreme": "min",
+     "edges": 2
+    },
+    {
+     "claim_id": 18,
+     "attribute": "age",
+     "entity": "cleo",
+     "extreme": "max",
+     "edges": 2
+    },
+    {
+     "claim_id": 19,
+     "attribute": "debate_experience",
+     "entity": "cleo",
+     "extreme": "max",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 13,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 20,
+  "n_edges": 6,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9763828222770855,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   1.0000000000000002,
+   0.3401360544217687,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.3401360544217687,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   9.182833974838341e-32,
+   1.232595164407831e-32,
+   1.2141062369417137e-31,
+   0.8843074644823916,
+   7.395570986446985e-33,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.8843074644823916,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 2,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 7.210681711785812e-32
+   },
+   {
+    "a": 1,
+    "b": 5,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 4,
+    "b": 15,
+    "residual": 0.44888703780832057
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 19,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   4,
+   15
+  ],
+  "culprits": [
+   {
+    "claim": 4,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.023617177722914495
+   },
+   {
+    "claim": 15,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.023617177722914495
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 4415372,
+   "output_tokens": 407022,
+   "thinking_tokens": 0,
+   "calls": 17710,
+   "api_calls": 4179,
+   "cache_hits": 13531,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 12.702475000000055,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 111180,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 4822394,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    2,
+    3,
+    5
+   ],
+   [
+    4,
+    15
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    10
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    16,
+    17
+   ],
+   [
+    18,
+    19
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    4,
+    15
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 2,
+    "b": 5,
+    "rationale": "A states Ivo arrived shortly after some earlier event, while B claims Cleo was the last to walk in. These could both be true if Ivo arrived before Cleo, but they create mild tension since both describe arrival order and B's claim of Cleo being last implies Ivo was not the last, which is consistent but the two claims focus on different people's arrival without direct conflict.",
+    "confidence": 0.45
+   },
+   {
+    "a": 3,
+    "b": 5,
+    "rationale": "A states Dev followed a few minutes later, implying Dev was the one arriving after others; B states Cleo was the last to arrive. Both cannot be the last arrival, creating a direct conflict unless Dev's arrival was not literally the last, but the phrasing suggests sequential order that clashes with Cleo being last.",
+    "confidence": 0.55
+   },
+   {
+    "a": 5,
+    "b": 11,
+    "rationale": "Being the last to walk in suggests Cleo would be near the end/back rather than the middle of the pack, though 'middle' could refer to seating arrangement unrelated to arrival order, creating some awkward fit rather than outright impossibility.",
+    "confidence": 0.55
+   },
+   {
+    "a": 11,
+    "b": 19,
+    "rationale": "Being comfortably mid-pack suggests average standing, while having debated far longer than anyone else would typically imply greater experience and likely higher performance; the two facts sit awkwardly together though not impossible.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 9,
+   "attribute": "study_group",
+   "kind": "same",
+   "a": "bo",
+   "b": "dev",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 12,
+   "attribute": "study_group",
+   "kind": "different",
+   "a": "dev",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "study_group",
+   "kind": "different",
+   "a": "bo",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "ivo",
+   "b": "bo",
+   "confidence": 0.8,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "dev",
+   "b": "ivo",
+   "confidence": 0.7,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 6,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "milo",
+   "b": "dev",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 7,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "milo",
+   "b": "cleo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 17,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "bo",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "bo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "dev",
+   "b": "bo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "ivo",
+   "b": "bo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 5,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "bo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 5,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "dev",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 5,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 8,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 8,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "dev",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 8,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "milo",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 16,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "bo",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 16,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 18,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "bo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 18,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

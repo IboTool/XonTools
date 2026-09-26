@@ -1,0 +1,2075 @@
+﻿start 2026-09-24T14:20:56.8241079-07:00
+b00-consistent (1/180): 36,379 tokens spent
+b00-direct (2/180): 76,076 tokens spent
+b00-cycle (3/180): 115,417 tokens spent
+b01-consistent (4/180): 153,097 tokens spent
+b01-direct (5/180): 187,299 tokens spent
+b01-cycle (6/180): 224,837 tokens spent
+b02-consistent (7/180): 264,676 tokens spent
+b02-direct (8/180): 302,589 tokens spent
+b02-cycle (9/180): 341,534 tokens spent
+b03-consistent (10/180): 373,078 tokens spent
+b03-direct (11/180): 404,698 tokens spent
+b03-cycle (12/180): 451,853 tokens spent
+b04-consistent (13/180): 483,838 tokens spent
+b04-direct (14/180): 532,468 tokens spent
+b04-cycle (15/180): 566,590 tokens spent
+b05-consistent (16/180): 604,851 tokens spent
+b05-direct (17/180): 638,567 tokens spent
+b05-cycle (18/180): 677,659 tokens spent
+b06-consistent (19/180): 719,125 tokens spent
+b06-direct (20/180): 761,148 tokens spent
+b06-cycle (21/180): 800,106 tokens spent
+b07-consistent (22/180): 842,979 tokens spent
+b07-direct (23/180): 885,538 tokens spent
+b07-cycle (24/180): 928,244 tokens spent
+b08-consistent (25/180): 950,784 tokens spent
+b08-direct (26/180): 978,109 tokens spent
+b08-cycle (27/180): 1,010,820 tokens spent
+b09-consistent (28/180): 1,046,592 tokens spent
+b09-direct (29/180): 1,088,402 tokens spent
+b09-cycle (30/180): 1,129,272 tokens spent
+b10-consistent (31/180): 1,161,591 tokens spent
+b10-direct (32/180): 1,194,629 tokens spent
+b10-cycle (33/180): 1,241,745 tokens spent
+b11-consistent (34/180): 1,282,763 tokens spent
+b11-direct (35/180): 1,312,764 tokens spent
+b11-cycle (36/180): 1,354,583 tokens spent
+b12-consistent (37/180): 1,387,708 tokens spent
+b12-direct (38/180): 1,426,494 tokens spent
+b12-cycle (39/180): 1,466,982 tokens spent
+b13-consistent (40/180): 1,514,960 tokens spent
+b13-direct (41/180): 1,555,543 tokens spent
+b13-cycle (42/180): 1,588,875 tokens spent
+b14-consistent (43/180): 1,631,215 tokens spent
+b14-direct (44/180): 1,676,384 tokens spent
+b14-cycle (45/180): 1,724,386 tokens spent
+b15-consistent (46/180): 1,737,072 tokens spent
+b15-direct (47/180): 1,750,606 tokens spent
+b15-cycle (48/180): 1,763,447 tokens spent
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+        self.READ_NUM_BYTES, timeout=timeout
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_backends\sync.py", line 126, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1072, in request
+    response = self._client.send(
+        request,
+        stream=stream or self._should_stream_response_body(request=request),
+        **kwargs,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 103, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 60, in main
+    runs = run_corpus(llm, records)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 156, in run_corpus
+    runs.append(run_document(llm, rec))
+                ~~~~~~~~~~~~^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 142, in run_document
+    a = analyze_text(llm, text, tag=tag, seed=SEEDS[0], label=record["doc_id"])
+  File "%USERPROFILE%\Desktop\XON\xon\llm\engine.py", line 58, in analyze_text
+    claims = extract_claims(llm, text, tag=tag)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\claims.py", line 53, in extract_claims
+    out = llm.parse(system=prompts.EXTRACT_SYSTEM, user=prompts.extract_user(text), schema=ClaimList,
+                    max_tokens=llm.cfg.llm_max_tokens_extract, thinking=False, tag=f"{tag}-extract")
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 178, in parse
+    return self._call(body, schema, tag, thinking, bypass_cache)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 217, in _call
+    resp = self._create(body)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 250, in _create
+    return client.messages.create(**body)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_utils\_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\resources\messages\messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1104, in request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+exit 1 end 2026-09-24T16:25:01.8816286-07:00 elapsed_s 7445
+[launcher 2026-09-24T17:11:53-07:00] SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED): set
+[launcher 2026-09-24T17:11:53-07:00] start resume: --budget 12525099
+b00-consistent (1/180): 0 tokens spent
+b00-direct (2/180): 0 tokens spent
+b00-cycle (3/180): 0 tokens spent
+b01-consistent (4/180): 0 tokens spent
+b01-direct (5/180): 0 tokens spent
+b01-cycle (6/180): 0 tokens spent
+b02-consistent (7/180): 0 tokens spent
+b02-direct (8/180): 0 tokens spent
+b02-cycle (9/180): 0 tokens spent
+b03-consistent (10/180): 0 tokens spent
+b03-direct (11/180): 0 tokens spent
+b03-cycle (12/180): 0 tokens spent
+b04-consistent (13/180): 0 tokens spent
+b04-direct (14/180): 0 tokens spent
+b04-cycle (15/180): 0 tokens spent
+b05-consistent (16/180): 0 tokens spent
+b05-direct (17/180): 0 tokens spent
+b05-cycle (18/180): 0 tokens spent
+b06-consistent (19/180): 0 tokens spent
+b06-direct (20/180): 0 tokens spent
+b06-cycle (21/180): 0 tokens spent
+b07-consistent (22/180): 0 tokens spent
+b07-direct (23/180): 0 tokens spent
+b07-cycle (24/180): 0 tokens spent
+b08-consistent (25/180): 0 tokens spent
+b08-direct (26/180): 0 tokens spent
+b08-cycle (27/180): 0 tokens spent
+b09-consistent (28/180): 0 tokens spent
+b09-direct (29/180): 0 tokens spent
+b09-cycle (30/180): 0 tokens spent
+b10-consistent (31/180): 0 tokens spent
+b10-direct (32/180): 0 tokens spent
+b10-cycle (33/180): 0 tokens spent
+b11-consistent (34/180): 0 tokens spent
+b11-direct (35/180): 0 tokens spent
+b11-cycle (36/180): 0 tokens spent
+b12-consistent (37/180): 0 tokens spent
+b12-direct (38/180): 0 tokens spent
+b12-cycle (39/180): 0 tokens spent
+b13-consistent (40/180): 0 tokens spent
+b13-direct (41/180): 0 tokens spent
+b13-cycle (42/180): 0 tokens spent
+b14-consistent (43/180): 0 tokens spent
+b14-direct (44/180): 0 tokens spent
+b14-cycle (45/180): 0 tokens spent
+b15-consistent (46/180): 0 tokens spent
+b15-direct (47/180): 0 tokens spent
+b15-cycle (48/180): 0 tokens spent
+b16-consistent (49/180): 30,199 tokens spent
+b16-direct (50/180): 63,240 tokens spent
+b16-cycle (51/180): 94,336 tokens spent
+b17-consistent (52/180): 129,478 tokens spent
+b17-direct (53/180): 167,552 tokens spent
+b17-cycle (54/180): 206,644 tokens spent
+b18-consistent (55/180): 248,857 tokens spent
+b18-direct (56/180): 284,158 tokens spent
+b18-cycle (57/180): 327,066 tokens spent
+b19-consistent (58/180): 369,760 tokens spent
+b19-direct (59/180): 414,169 tokens spent
+b19-cycle (60/180): 458,244 tokens spent
+b20-consistent (61/180): 496,753 tokens spent
+b20-direct (62/180): 536,181 tokens spent
+b20-cycle (63/180): 576,457 tokens spent
+b21-consistent (64/180): 603,415 tokens spent
+b21-direct (65/180): 643,328 tokens spent
+b21-cycle (66/180): 670,717 tokens spent
+b22-consistent (67/180): 715,696 tokens spent
+b22-direct (68/180): 763,503 tokens spent
+b22-cycle (69/180): 808,183 tokens spent
+b23-consistent (70/180): 848,947 tokens spent
+b23-direct (71/180): 889,747 tokens spent
+b23-cycle (72/180): 930,831 tokens spent
+b24-consistent (73/180): 968,644 tokens spent
+b24-direct (74/180): 999,380 tokens spent
+b24-cycle (75/180): 1,031,938 tokens spent
+b25-consistent (76/180): 1,076,512 tokens spent
+b25-direct (77/180): 1,120,614 tokens spent
+b25-cycle (78/180): 1,165,044 tokens spent
+b26-consistent (79/180): 1,206,884 tokens spent
+b26-direct (80/180): 1,238,551 tokens spent
+b26-cycle (81/180): 1,284,213 tokens spent
+b27-consistent (82/180): 1,292,301 tokens spent
+b27-direct (83/180): 1,311,294 tokens spent
+b27-cycle (84/180): 1,328,070 tokens spent
+b28-consistent (85/180): 1,369,060 tokens spent
+b28-direct (86/180): 1,386,129 tokens spent
+b28-cycle (87/180): 1,419,440 tokens spent
+b29-consistent (88/180): 1,463,457 tokens spent
+b29-direct (89/180): 1,511,233 tokens spent
+b29-cycle (90/180): 1,547,822 tokens spent
+b30-consistent (91/180): 1,590,861 tokens spent
+b30-direct (92/180): 1,622,412 tokens spent
+b30-cycle (93/180): 1,666,187 tokens spent
+b31-consistent (94/180): 1,707,337 tokens spent
+b31-direct (95/180): 1,746,783 tokens spent
+b31-cycle (96/180): 1,787,356 tokens spent
+b32-consistent (97/180): 1,834,679 tokens spent
+b32-direct (98/180): 1,878,724 tokens spent
+b32-cycle (99/180): 1,910,503 tokens spent
+b33-consistent (100/180): 1,950,274 tokens spent
+b33-direct (101/180): 1,990,983 tokens spent
+b33-cycle (102/180): 2,032,719 tokens spent
+b34-consistent (103/180): 2,076,659 tokens spent
+b34-direct (104/180): 2,121,957 tokens spent
+b34-cycle (105/180): 2,162,757 tokens spent
+b35-consistent (106/180): 2,207,562 tokens spent
+b35-direct (107/180): 2,241,297 tokens spent
+b35-cycle (108/180): 2,283,284 tokens spent
+b36-consistent (109/180): 2,325,452 tokens spent
+b36-direct (110/180): 2,370,567 tokens spent
+b36-cycle (111/180): 2,410,501 tokens spent
+b37-consistent (112/180): 2,446,873 tokens spent
+b37-direct (113/180): 2,491,591 tokens spent
+b37-cycle (114/180): 2,532,924 tokens spent
+b38-consistent (115/180): 2,560,511 tokens spent
+b38-direct (116/180): 2,600,721 tokens spent
+b38-cycle (117/180): 2,627,520 tokens spent
+b39-consistent (118/180): 2,659,761 tokens spent
+b39-direct (119/180): 2,698,001 tokens spent
+b39-cycle (120/180): 2,731,648 tokens spent
+b40-consistent (121/180): 2,772,076 tokens spent
+b40-direct (122/180): 2,813,721 tokens spent
+b40-cycle (123/180): 2,853,009 tokens spent
+b41-consistent (124/180): 2,892,500 tokens spent
+b41-direct (125/180): 2,925,440 tokens spent
+b41-cycle (126/180): 2,966,628 tokens spent
+b42-consistent (127/180): 3,005,469 tokens spent
+b42-direct (128/180): 3,047,600 tokens spent
+b42-cycle (129/180): 3,095,705 tokens spent
+b43-consistent (130/180): 3,137,633 tokens spent
+b43-direct (131/180): 3,171,124 tokens spent
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+        self.READ_NUM_BYTES, timeout=timeout
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_backends\sync.py", line 126, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1072, in request
+    response = self._client.send(
+        request,
+        stream=stream or self._should_stream_response_body(request=request),
+        **kwargs,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 103, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 60, in main
+    runs = run_corpus(llm, records)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 156, in run_corpus
+    runs.append(run_document(llm, rec))
+                ~~~~~~~~~~~~^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 146, in run_document
+    analyses[s] = rescored(llm, a, a.world_knowledge, label=f"{record['doc_id']} seed {s}", seed=s,
+                  ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                           tag=f"{tag}-seed{s}")
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\engine.py", line 84, in rescored
+    relations, ignored, rescores = _score_batches(llm, a.claims, pairs, tag=tag, world_knowledge=world_knowledge)
+                                   ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\claims.py", line 118, in _score_batches
+    got.update(take(_relate(llm, claims, batch, tag=f"{stem}-{k // PAIRS_PER_CALL:03d}",
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            world_knowledge=world_knowledge, bypass_cache=bypass_cache), set(batch)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\claims.py", line 86, in _relate
+    return llm.parse(system=prompts.relate_system(world_knowledge), user=prompts.relate_user(claims, pairs),
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                     schema=RelationList, max_tokens=llm.cfg.llm_max_tokens_relate, thinking=False, tag=tag,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                     bypass_cache=bypass_cache)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 178, in parse
+    return self._call(body, schema, tag, thinking, bypass_cache)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 217, in _call
+    resp = self._create(body)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 250, in _create
+    return client.messages.create(**body)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_utils\_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\resources\messages\messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1104, in request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+[launcher 2026-09-24T20:34:17-07:00] exit 1 after 12144 s, stopped after b43-direct (131/180)
+[launcher 2026-09-24T20:34:17-07:00] anthropic.APIConnectionError: Connection error.: no response arrived; rerunning in 60 s
+[launcher 2026-09-24T20:35:17-07:00] start automatic rerun 1 of 5: --budget 9320789
+b00-consistent (1/180): 0 tokens spent
+b00-direct (2/180): 0 tokens spent
+b00-cycle (3/180): 0 tokens spent
+b01-consistent (4/180): 0 tokens spent
+b01-direct (5/180): 0 tokens spent
+b01-cycle (6/180): 0 tokens spent
+b02-consistent (7/180): 0 tokens spent
+b02-direct (8/180): 0 tokens spent
+b02-cycle (9/180): 0 tokens spent
+b03-consistent (10/180): 0 tokens spent
+b03-direct (11/180): 0 tokens spent
+b03-cycle (12/180): 0 tokens spent
+b04-consistent (13/180): 0 tokens spent
+b04-direct (14/180): 0 tokens spent
+b04-cycle (15/180): 0 tokens spent
+b05-consistent (16/180): 0 tokens spent
+b05-direct (17/180): 0 tokens spent
+b05-cycle (18/180): 0 tokens spent
+b06-consistent (19/180): 0 tokens spent
+b06-direct (20/180): 0 tokens spent
+b06-cycle (21/180): 0 tokens spent
+b07-consistent (22/180): 0 tokens spent
+b07-direct (23/180): 0 tokens spent
+b07-cycle (24/180): 0 tokens spent
+b08-consistent (25/180): 0 tokens spent
+b08-direct (26/180): 0 tokens spent
+b08-cycle (27/180): 0 tokens spent
+b09-consistent (28/180): 0 tokens spent
+b09-direct (29/180): 0 tokens spent
+b09-cycle (30/180): 0 tokens spent
+b10-consistent (31/180): 0 tokens spent
+b10-direct (32/180): 0 tokens spent
+b10-cycle (33/180): 0 tokens spent
+b11-consistent (34/180): 0 tokens spent
+b11-direct (35/180): 0 tokens spent
+b11-cycle (36/180): 0 tokens spent
+b12-consistent (37/180): 0 tokens spent
+b12-direct (38/180): 0 tokens spent
+b12-cycle (39/180): 0 tokens spent
+b13-consistent (40/180): 0 tokens spent
+b13-direct (41/180): 0 tokens spent
+b13-cycle (42/180): 0 tokens spent
+b14-consistent (43/180): 0 tokens spent
+b14-direct (44/180): 0 tokens spent
+b14-cycle (45/180): 0 tokens spent
+b15-consistent (46/180): 0 tokens spent
+b15-direct (47/180): 0 tokens spent
+b15-cycle (48/180): 0 tokens spent
+b16-consistent (49/180): 0 tokens spent
+b16-direct (50/180): 0 tokens spent
+b16-cycle (51/180): 0 tokens spent
+b17-consistent (52/180): 0 tokens spent
+b17-direct (53/180): 0 tokens spent
+b17-cycle (54/180): 0 tokens spent
+b18-consistent (55/180): 0 tokens spent
+b18-direct (56/180): 0 tokens spent
+b18-cycle (57/180): 0 tokens spent
+b19-consistent (58/180): 0 tokens spent
+b19-direct (59/180): 0 tokens spent
+b19-cycle (60/180): 0 tokens spent
+b20-consistent (61/180): 0 tokens spent
+b20-direct (62/180): 0 tokens spent
+b20-cycle (63/180): 0 tokens spent
+b21-consistent (64/180): 0 tokens spent
+b21-direct (65/180): 0 tokens spent
+b21-cycle (66/180): 0 tokens spent
+b22-consistent (67/180): 0 tokens spent
+b22-direct (68/180): 0 tokens spent
+b22-cycle (69/180): 0 tokens spent
+b23-consistent (70/180): 0 tokens spent
+b23-direct (71/180): 0 tokens spent
+b23-cycle (72/180): 0 tokens spent
+b24-consistent (73/180): 0 tokens spent
+b24-direct (74/180): 0 tokens spent
+b24-cycle (75/180): 0 tokens spent
+b25-consistent (76/180): 0 tokens spent
+b25-direct (77/180): 0 tokens spent
+b25-cycle (78/180): 0 tokens spent
+b26-consistent (79/180): 0 tokens spent
+b26-direct (80/180): 0 tokens spent
+b26-cycle (81/180): 0 tokens spent
+b27-consistent (82/180): 0 tokens spent
+b27-direct (83/180): 0 tokens spent
+b27-cycle (84/180): 0 tokens spent
+b28-consistent (85/180): 0 tokens spent
+b28-direct (86/180): 0 tokens spent
+b28-cycle (87/180): 0 tokens spent
+b29-consistent (88/180): 0 tokens spent
+b29-direct (89/180): 0 tokens spent
+b29-cycle (90/180): 0 tokens spent
+b30-consistent (91/180): 0 tokens spent
+b30-direct (92/180): 0 tokens spent
+b30-cycle (93/180): 0 tokens spent
+b31-consistent (94/180): 0 tokens spent
+b31-direct (95/180): 0 tokens spent
+b31-cycle (96/180): 0 tokens spent
+b32-consistent (97/180): 0 tokens spent
+b32-direct (98/180): 0 tokens spent
+b32-cycle (99/180): 0 tokens spent
+b33-consistent (100/180): 0 tokens spent
+b33-direct (101/180): 0 tokens spent
+b33-cycle (102/180): 0 tokens spent
+b34-consistent (103/180): 0 tokens spent
+b34-direct (104/180): 0 tokens spent
+b34-cycle (105/180): 0 tokens spent
+b35-consistent (106/180): 0 tokens spent
+b35-direct (107/180): 0 tokens spent
+b35-cycle (108/180): 0 tokens spent
+b36-consistent (109/180): 0 tokens spent
+b36-direct (110/180): 0 tokens spent
+b36-cycle (111/180): 0 tokens spent
+b37-consistent (112/180): 0 tokens spent
+b37-direct (113/180): 0 tokens spent
+b37-cycle (114/180): 0 tokens spent
+b38-consistent (115/180): 0 tokens spent
+b38-direct (116/180): 0 tokens spent
+b38-cycle (117/180): 0 tokens spent
+b39-consistent (118/180): 0 tokens spent
+b39-direct (119/180): 0 tokens spent
+b39-cycle (120/180): 0 tokens spent
+b40-consistent (121/180): 0 tokens spent
+b40-direct (122/180): 0 tokens spent
+b40-cycle (123/180): 0 tokens spent
+b41-consistent (124/180): 0 tokens spent
+b41-direct (125/180): 0 tokens spent
+b41-cycle (126/180): 0 tokens spent
+b42-consistent (127/180): 0 tokens spent
+b42-direct (128/180): 0 tokens spent
+b42-cycle (129/180): 0 tokens spent
+b43-consistent (130/180): 0 tokens spent
+b43-direct (131/180): 0 tokens spent
+b43-cycle (132/180): 15,120 tokens spent
+b44-consistent (133/180): 45,702 tokens spent
+b44-direct (134/180): 81,223 tokens spent
+b44-cycle (135/180): 113,246 tokens spent
+b45-consistent (136/180): 151,792 tokens spent
+b45-direct (137/180): 196,520 tokens spent
+b45-cycle (138/180): 238,540 tokens spent
+b46-consistent (139/180): 276,394 tokens spent
+b46-direct (140/180): 315,418 tokens spent
+b46-cycle (141/180): 354,893 tokens spent
+b47-consistent (142/180): 395,844 tokens spent
+b47-direct (143/180): 434,094 tokens spent
+b47-cycle (144/180): 482,500 tokens spent
+b48-consistent (145/180): 527,304 tokens spent
+b48-direct (146/180): 535,256 tokens spent
+b48-cycle (147/180): 560,382 tokens spent
+b49-consistent (148/180): 598,218 tokens spent
+b49-direct (149/180): 639,856 tokens spent
+b49-cycle (150/180): 674,424 tokens spent
+b50-consistent (151/180): 699,180 tokens spent
+b50-direct (152/180): 740,055 tokens spent
+b50-cycle (153/180): 767,319 tokens spent
+b51-consistent (154/180): 808,453 tokens spent
+b51-direct (155/180): 853,338 tokens spent
+b51-cycle (156/180): 894,198 tokens spent
+b52-consistent (157/180): 933,330 tokens spent
+b52-direct (158/180): 973,613 tokens spent
+b52-cycle (159/180): 1,014,162 tokens spent
+b53-consistent (160/180): 1,049,196 tokens spent
+b53-direct (161/180): 1,086,378 tokens spent
+b53-cycle (162/180): 1,124,561 tokens spent
+b54-consistent (163/180): 1,160,697 tokens spent
+b54-direct (164/180): 1,198,228 tokens spent
+b54-cycle (165/180): 1,237,422 tokens spent
+b55-consistent (166/180): 1,288,788 tokens spent
+b55-direct (167/180): 1,335,331 tokens spent
+b55-cycle (168/180): 1,383,845 tokens spent
+b56-consistent (169/180): 1,430,924 tokens spent
+b56-direct (170/180): 1,464,027 tokens spent
+b56-cycle (171/180): 1,508,368 tokens spent
+b57-consistent (172/180): 1,556,561 tokens spent
+b57-direct (173/180): 1,594,662 tokens spent
+b57-cycle (174/180): 1,641,793 tokens spent
+b58-consistent (175/180): 1,666,721 tokens spent
+b58-direct (176/180): 1,706,195 tokens spent
+b58-cycle (177/180): 1,735,394 tokens spent
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+        self.READ_NUM_BYTES, timeout=timeout
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_backends\sync.py", line 126, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1072, in request
+    response = self._client.send(
+        request,
+        stream=stream or self._should_stream_response_body(request=request),
+        **kwargs,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 103, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 60, in main
+    runs = run_corpus(llm, records)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 156, in run_corpus
+    runs.append(run_document(llm, rec))
+                ~~~~~~~~~~~~^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 148, in run_document
+    return DocRun(record, analyses, {t: llm_direct(llm, text, tag=tag, thinking=t) for t in (True, False)})
+                                        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\baselines.py", line 32, in llm_direct
+    out = llm.parse(system=prompts.DIRECT_SYSTEM, user=prompts.direct_user(text), schema=ContradictionList,
+                    max_tokens=cfg.llm_max_tokens_direct if thinking else cfg.llm_max_tokens_direct_no_thinking,
+                    thinking=thinking, tag=f"{tag}-direct-{'thinking' if thinking else 'no-thinking'}",
+                    bypass_cache=bypass_cache)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 178, in parse
+    return self._call(body, schema, tag, thinking, bypass_cache)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 217, in _call
+    resp = self._create(body)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 250, in _create
+    return client.messages.create(**body)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_utils\_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\resources\messages\messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1104, in request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+[launcher 2026-09-24T22:27:53-07:00] exit 1 after 6756 s, stopped after b58-cycle (177/180)
+[launcher 2026-09-24T22:27:53-07:00] anthropic.APIConnectionError: Connection error.: no response arrived; rerunning in 60 s
+[launcher 2026-09-24T22:28:53-07:00] start automatic rerun 2 of 5: --budget 7548523
+b00-consistent (1/180): 0 tokens spent
+b00-direct (2/180): 0 tokens spent
+b00-cycle (3/180): 0 tokens spent
+b01-consistent (4/180): 0 tokens spent
+b01-direct (5/180): 0 tokens spent
+b01-cycle (6/180): 0 tokens spent
+b02-consistent (7/180): 0 tokens spent
+b02-direct (8/180): 0 tokens spent
+b02-cycle (9/180): 0 tokens spent
+b03-consistent (10/180): 0 tokens spent
+b03-direct (11/180): 0 tokens spent
+b03-cycle (12/180): 0 tokens spent
+b04-consistent (13/180): 0 tokens spent
+b04-direct (14/180): 0 tokens spent
+b04-cycle (15/180): 0 tokens spent
+b05-consistent (16/180): 0 tokens spent
+b05-direct (17/180): 0 tokens spent
+b05-cycle (18/180): 0 tokens spent
+b06-consistent (19/180): 0 tokens spent
+b06-direct (20/180): 0 tokens spent
+b06-cycle (21/180): 0 tokens spent
+b07-consistent (22/180): 0 tokens spent
+b07-direct (23/180): 0 tokens spent
+b07-cycle (24/180): 0 tokens spent
+b08-consistent (25/180): 0 tokens spent
+b08-direct (26/180): 0 tokens spent
+b08-cycle (27/180): 0 tokens spent
+b09-consistent (28/180): 0 tokens spent
+b09-direct (29/180): 0 tokens spent
+b09-cycle (30/180): 0 tokens spent
+b10-consistent (31/180): 0 tokens spent
+b10-direct (32/180): 0 tokens spent
+b10-cycle (33/180): 0 tokens spent
+b11-consistent (34/180): 0 tokens spent
+b11-direct (35/180): 0 tokens spent
+b11-cycle (36/180): 0 tokens spent
+b12-consistent (37/180): 0 tokens spent
+b12-direct (38/180): 0 tokens spent
+b12-cycle (39/180): 0 tokens spent
+b13-consistent (40/180): 0 tokens spent
+b13-direct (41/180): 0 tokens spent
+b13-cycle (42/180): 0 tokens spent
+b14-consistent (43/180): 0 tokens spent
+b14-direct (44/180): 0 tokens spent
+b14-cycle (45/180): 0 tokens spent
+b15-consistent (46/180): 0 tokens spent
+b15-direct (47/180): 0 tokens spent
+b15-cycle (48/180): 0 tokens spent
+b16-consistent (49/180): 0 tokens spent
+b16-direct (50/180): 0 tokens spent
+b16-cycle (51/180): 0 tokens spent
+b17-consistent (52/180): 0 tokens spent
+b17-direct (53/180): 0 tokens spent
+b17-cycle (54/180): 0 tokens spent
+b18-consistent (55/180): 0 tokens spent
+b18-direct (56/180): 0 tokens spent
+b18-cycle (57/180): 0 tokens spent
+b19-consistent (58/180): 0 tokens spent
+b19-direct (59/180): 0 tokens spent
+b19-cycle (60/180): 0 tokens spent
+b20-consistent (61/180): 0 tokens spent
+b20-direct (62/180): 0 tokens spent
+b20-cycle (63/180): 0 tokens spent
+b21-consistent (64/180): 0 tokens spent
+b21-direct (65/180): 0 tokens spent
+b21-cycle (66/180): 0 tokens spent
+b22-consistent (67/180): 0 tokens spent
+b22-direct (68/180): 0 tokens spent
+b22-cycle (69/180): 0 tokens spent
+b23-consistent (70/180): 0 tokens spent
+b23-direct (71/180): 0 tokens spent
+b23-cycle (72/180): 0 tokens spent
+b24-consistent (73/180): 0 tokens spent
+b24-direct (74/180): 0 tokens spent
+b24-cycle (75/180): 0 tokens spent
+b25-consistent (76/180): 0 tokens spent
+b25-direct (77/180): 0 tokens spent
+b25-cycle (78/180): 0 tokens spent
+b26-consistent (79/180): 0 tokens spent
+b26-direct (80/180): 0 tokens spent
+b26-cycle (81/180): 0 tokens spent
+b27-consistent (82/180): 0 tokens spent
+b27-direct (83/180): 0 tokens spent
+b27-cycle (84/180): 0 tokens spent
+b28-consistent (85/180): 0 tokens spent
+b28-direct (86/180): 0 tokens spent
+b28-cycle (87/180): 0 tokens spent
+b29-consistent (88/180): 0 tokens spent
+b29-direct (89/180): 0 tokens spent
+b29-cycle (90/180): 0 tokens spent
+b30-consistent (91/180): 0 tokens spent
+b30-direct (92/180): 0 tokens spent
+b30-cycle (93/180): 0 tokens spent
+b31-consistent (94/180): 0 tokens spent
+b31-direct (95/180): 0 tokens spent
+b31-cycle (96/180): 0 tokens spent
+b32-consistent (97/180): 0 tokens spent
+b32-direct (98/180): 0 tokens spent
+b32-cycle (99/180): 0 tokens spent
+b33-consistent (100/180): 0 tokens spent
+b33-direct (101/180): 0 tokens spent
+b33-cycle (102/180): 0 tokens spent
+b34-consistent (103/180): 0 tokens spent
+b34-direct (104/180): 0 tokens spent
+b34-cycle (105/180): 0 tokens spent
+b35-consistent (106/180): 0 tokens spent
+b35-direct (107/180): 0 tokens spent
+b35-cycle (108/180): 0 tokens spent
+b36-consistent (109/180): 0 tokens spent
+b36-direct (110/180): 0 tokens spent
+b36-cycle (111/180): 0 tokens spent
+b37-consistent (112/180): 0 tokens spent
+b37-direct (113/180): 0 tokens spent
+b37-cycle (114/180): 0 tokens spent
+b38-consistent (115/180): 0 tokens spent
+b38-direct (116/180): 0 tokens spent
+b38-cycle (117/180): 0 tokens spent
+b39-consistent (118/180): 0 tokens spent
+b39-direct (119/180): 0 tokens spent
+b39-cycle (120/180): 0 tokens spent
+b40-consistent (121/180): 0 tokens spent
+b40-direct (122/180): 0 tokens spent
+b40-cycle (123/180): 0 tokens spent
+b41-consistent (124/180): 0 tokens spent
+b41-direct (125/180): 0 tokens spent
+b41-cycle (126/180): 0 tokens spent
+b42-consistent (127/180): 0 tokens spent
+b42-direct (128/180): 0 tokens spent
+b42-cycle (129/180): 0 tokens spent
+b43-consistent (130/180): 0 tokens spent
+b43-direct (131/180): 0 tokens spent
+b43-cycle (132/180): 0 tokens spent
+b44-consistent (133/180): 0 tokens spent
+b44-direct (134/180): 0 tokens spent
+b44-cycle (135/180): 0 tokens spent
+b45-consistent (136/180): 0 tokens spent
+b45-direct (137/180): 0 tokens spent
+b45-cycle (138/180): 0 tokens spent
+b46-consistent (139/180): 0 tokens spent
+b46-direct (140/180): 0 tokens spent
+b46-cycle (141/180): 0 tokens spent
+b47-consistent (142/180): 0 tokens spent
+b47-direct (143/180): 0 tokens spent
+b47-cycle (144/180): 0 tokens spent
+b48-consistent (145/180): 0 tokens spent
+b48-direct (146/180): 0 tokens spent
+b48-cycle (147/180): 0 tokens spent
+b49-consistent (148/180): 0 tokens spent
+b49-direct (149/180): 0 tokens spent
+b49-cycle (150/180): 0 tokens spent
+b50-consistent (151/180): 0 tokens spent
+b50-direct (152/180): 0 tokens spent
+b50-cycle (153/180): 0 tokens spent
+b51-consistent (154/180): 0 tokens spent
+b51-direct (155/180): 0 tokens spent
+b51-cycle (156/180): 0 tokens spent
+b52-consistent (157/180): 0 tokens spent
+b52-direct (158/180): 0 tokens spent
+b52-cycle (159/180): 0 tokens spent
+b53-consistent (160/180): 0 tokens spent
+b53-direct (161/180): 0 tokens spent
+b53-cycle (162/180): 0 tokens spent
+b54-consistent (163/180): 0 tokens spent
+b54-direct (164/180): 0 tokens spent
+b54-cycle (165/180): 0 tokens spent
+b55-consistent (166/180): 0 tokens spent
+b55-direct (167/180): 0 tokens spent
+b55-cycle (168/180): 0 tokens spent
+b56-consistent (169/180): 0 tokens spent
+b56-direct (170/180): 0 tokens spent
+b56-cycle (171/180): 0 tokens spent
+b57-consistent (172/180): 0 tokens spent
+b57-direct (173/180): 0 tokens spent
+b57-cycle (174/180): 0 tokens spent
+b58-consistent (175/180): 0 tokens spent
+b58-direct (176/180): 0 tokens spent
+b58-cycle (177/180): 0 tokens spent
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1072, in request
+    response = self._client.send(
+        request,
+        stream=stream or self._should_stream_response_body(request=request),
+        **kwargs,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 103, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 60, in main
+    runs = run_corpus(llm, records)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 156, in run_corpus
+    runs.append(run_document(llm, rec))
+                ~~~~~~~~~~~~^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 148, in run_document
+    return DocRun(record, analyses, {t: llm_direct(llm, text, tag=tag, thinking=t) for t in (True, False)})
+                                        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\baselines.py", line 32, in llm_direct
+    out = llm.parse(system=prompts.DIRECT_SYSTEM, user=prompts.direct_user(text), schema=ContradictionList,
+                    max_tokens=cfg.llm_max_tokens_direct if thinking else cfg.llm_max_tokens_direct_no_thinking,
+                    thinking=thinking, tag=f"{tag}-direct-{'thinking' if thinking else 'no-thinking'}",
+                    bypass_cache=bypass_cache)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 178, in parse
+    return self._call(body, schema, tag, thinking, bypass_cache)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 217, in _call
+    resp = self._create(body)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 250, in _create
+    return client.messages.create(**body)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_utils\_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\resources\messages\messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1104, in request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+[launcher 2026-09-24T22:29:34-07:00] exit 1 after 40 s, stopped after b58-cycle (177/180)
+[launcher 2026-09-24T22:29:34-07:00] anthropic.APIConnectionError: Connection error.: no response arrived; rerunning in 60 s
+[launcher 2026-09-24T22:30:34-07:00] start automatic rerun 3 of 5: --budget 7548523
+b00-consistent (1/180): 0 tokens spent
+b00-direct (2/180): 0 tokens spent
+b00-cycle (3/180): 0 tokens spent
+b01-consistent (4/180): 0 tokens spent
+b01-direct (5/180): 0 tokens spent
+b01-cycle (6/180): 0 tokens spent
+b02-consistent (7/180): 0 tokens spent
+b02-direct (8/180): 0 tokens spent
+b02-cycle (9/180): 0 tokens spent
+b03-consistent (10/180): 0 tokens spent
+b03-direct (11/180): 0 tokens spent
+b03-cycle (12/180): 0 tokens spent
+b04-consistent (13/180): 0 tokens spent
+b04-direct (14/180): 0 tokens spent
+b04-cycle (15/180): 0 tokens spent
+b05-consistent (16/180): 0 tokens spent
+b05-direct (17/180): 0 tokens spent
+b05-cycle (18/180): 0 tokens spent
+b06-consistent (19/180): 0 tokens spent
+b06-direct (20/180): 0 tokens spent
+b06-cycle (21/180): 0 tokens spent
+b07-consistent (22/180): 0 tokens spent
+b07-direct (23/180): 0 tokens spent
+b07-cycle (24/180): 0 tokens spent
+b08-consistent (25/180): 0 tokens spent
+b08-direct (26/180): 0 tokens spent
+b08-cycle (27/180): 0 tokens spent
+b09-consistent (28/180): 0 tokens spent
+b09-direct (29/180): 0 tokens spent
+b09-cycle (30/180): 0 tokens spent
+b10-consistent (31/180): 0 tokens spent
+b10-direct (32/180): 0 tokens spent
+b10-cycle (33/180): 0 tokens spent
+b11-consistent (34/180): 0 tokens spent
+b11-direct (35/180): 0 tokens spent
+b11-cycle (36/180): 0 tokens spent
+b12-consistent (37/180): 0 tokens spent
+b12-direct (38/180): 0 tokens spent
+b12-cycle (39/180): 0 tokens spent
+b13-consistent (40/180): 0 tokens spent
+b13-direct (41/180): 0 tokens spent
+b13-cycle (42/180): 0 tokens spent
+b14-consistent (43/180): 0 tokens spent
+b14-direct (44/180): 0 tokens spent
+b14-cycle (45/180): 0 tokens spent
+b15-consistent (46/180): 0 tokens spent
+b15-direct (47/180): 0 tokens spent
+b15-cycle (48/180): 0 tokens spent
+b16-consistent (49/180): 0 tokens spent
+b16-direct (50/180): 0 tokens spent
+b16-cycle (51/180): 0 tokens spent
+b17-consistent (52/180): 0 tokens spent
+b17-direct (53/180): 0 tokens spent
+b17-cycle (54/180): 0 tokens spent
+b18-consistent (55/180): 0 tokens spent
+b18-direct (56/180): 0 tokens spent
+b18-cycle (57/180): 0 tokens spent
+b19-consistent (58/180): 0 tokens spent
+b19-direct (59/180): 0 tokens spent
+b19-cycle (60/180): 0 tokens spent
+b20-consistent (61/180): 0 tokens spent
+b20-direct (62/180): 0 tokens spent
+b20-cycle (63/180): 0 tokens spent
+b21-consistent (64/180): 0 tokens spent
+b21-direct (65/180): 0 tokens spent
+b21-cycle (66/180): 0 tokens spent
+b22-consistent (67/180): 0 tokens spent
+b22-direct (68/180): 0 tokens spent
+b22-cycle (69/180): 0 tokens spent
+b23-consistent (70/180): 0 tokens spent
+b23-direct (71/180): 0 tokens spent
+b23-cycle (72/180): 0 tokens spent
+b24-consistent (73/180): 0 tokens spent
+b24-direct (74/180): 0 tokens spent
+b24-cycle (75/180): 0 tokens spent
+b25-consistent (76/180): 0 tokens spent
+b25-direct (77/180): 0 tokens spent
+b25-cycle (78/180): 0 tokens spent
+b26-consistent (79/180): 0 tokens spent
+b26-direct (80/180): 0 tokens spent
+b26-cycle (81/180): 0 tokens spent
+b27-consistent (82/180): 0 tokens spent
+b27-direct (83/180): 0 tokens spent
+b27-cycle (84/180): 0 tokens spent
+b28-consistent (85/180): 0 tokens spent
+b28-direct (86/180): 0 tokens spent
+b28-cycle (87/180): 0 tokens spent
+b29-consistent (88/180): 0 tokens spent
+b29-direct (89/180): 0 tokens spent
+b29-cycle (90/180): 0 tokens spent
+b30-consistent (91/180): 0 tokens spent
+b30-direct (92/180): 0 tokens spent
+b30-cycle (93/180): 0 tokens spent
+b31-consistent (94/180): 0 tokens spent
+b31-direct (95/180): 0 tokens spent
+b31-cycle (96/180): 0 tokens spent
+b32-consistent (97/180): 0 tokens spent
+b32-direct (98/180): 0 tokens spent
+b32-cycle (99/180): 0 tokens spent
+b33-consistent (100/180): 0 tokens spent
+b33-direct (101/180): 0 tokens spent
+b33-cycle (102/180): 0 tokens spent
+b34-consistent (103/180): 0 tokens spent
+b34-direct (104/180): 0 tokens spent
+b34-cycle (105/180): 0 tokens spent
+b35-consistent (106/180): 0 tokens spent
+b35-direct (107/180): 0 tokens spent
+b35-cycle (108/180): 0 tokens spent
+b36-consistent (109/180): 0 tokens spent
+b36-direct (110/180): 0 tokens spent
+b36-cycle (111/180): 0 tokens spent
+b37-consistent (112/180): 0 tokens spent
+b37-direct (113/180): 0 tokens spent
+b37-cycle (114/180): 0 tokens spent
+b38-consistent (115/180): 0 tokens spent
+b38-direct (116/180): 0 tokens spent
+b38-cycle (117/180): 0 tokens spent
+b39-consistent (118/180): 0 tokens spent
+b39-direct (119/180): 0 tokens spent
+b39-cycle (120/180): 0 tokens spent
+b40-consistent (121/180): 0 tokens spent
+b40-direct (122/180): 0 tokens spent
+b40-cycle (123/180): 0 tokens spent
+b41-consistent (124/180): 0 tokens spent
+b41-direct (125/180): 0 tokens spent
+b41-cycle (126/180): 0 tokens spent
+b42-consistent (127/180): 0 tokens spent
+b42-direct (128/180): 0 tokens spent
+b42-cycle (129/180): 0 tokens spent
+b43-consistent (130/180): 0 tokens spent
+b43-direct (131/180): 0 tokens spent
+b43-cycle (132/180): 0 tokens spent
+b44-consistent (133/180): 0 tokens spent
+b44-direct (134/180): 0 tokens spent
+b44-cycle (135/180): 0 tokens spent
+b45-consistent (136/180): 0 tokens spent
+b45-direct (137/180): 0 tokens spent
+b45-cycle (138/180): 0 tokens spent
+b46-consistent (139/180): 0 tokens spent
+b46-direct (140/180): 0 tokens spent
+b46-cycle (141/180): 0 tokens spent
+b47-consistent (142/180): 0 tokens spent
+b47-direct (143/180): 0 tokens spent
+b47-cycle (144/180): 0 tokens spent
+b48-consistent (145/180): 0 tokens spent
+b48-direct (146/180): 0 tokens spent
+b48-cycle (147/180): 0 tokens spent
+b49-consistent (148/180): 0 tokens spent
+b49-direct (149/180): 0 tokens spent
+b49-cycle (150/180): 0 tokens spent
+b50-consistent (151/180): 0 tokens spent
+b50-direct (152/180): 0 tokens spent
+b50-cycle (153/180): 0 tokens spent
+b51-consistent (154/180): 0 tokens spent
+b51-direct (155/180): 0 tokens spent
+b51-cycle (156/180): 0 tokens spent
+b52-consistent (157/180): 0 tokens spent
+b52-direct (158/180): 0 tokens spent
+b52-cycle (159/180): 0 tokens spent
+b53-consistent (160/180): 0 tokens spent
+b53-direct (161/180): 0 tokens spent
+b53-cycle (162/180): 0 tokens spent
+b54-consistent (163/180): 0 tokens spent
+b54-direct (164/180): 0 tokens spent
+b54-cycle (165/180): 0 tokens spent
+b55-consistent (166/180): 0 tokens spent
+b55-direct (167/180): 0 tokens spent
+b55-cycle (168/180): 0 tokens spent
+b56-consistent (169/180): 0 tokens spent
+b56-direct (170/180): 0 tokens spent
+b56-cycle (171/180): 0 tokens spent
+b57-consistent (172/180): 0 tokens spent
+b57-direct (173/180): 0 tokens spent
+b57-cycle (174/180): 0 tokens spent
+b58-consistent (175/180): 0 tokens spent
+b58-direct (176/180): 0 tokens spent
+b58-cycle (177/180): 0 tokens spent
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1072, in request
+    response = self._client.send(
+        request,
+        stream=stream or self._should_stream_response_body(request=request),
+        **kwargs,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 103, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 60, in main
+    runs = run_corpus(llm, records)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 156, in run_corpus
+    runs.append(run_document(llm, rec))
+                ~~~~~~~~~~~~^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 148, in run_document
+    return DocRun(record, analyses, {t: llm_direct(llm, text, tag=tag, thinking=t) for t in (True, False)})
+                                        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\baselines.py", line 32, in llm_direct
+    out = llm.parse(system=prompts.DIRECT_SYSTEM, user=prompts.direct_user(text), schema=ContradictionList,
+                    max_tokens=cfg.llm_max_tokens_direct if thinking else cfg.llm_max_tokens_direct_no_thinking,
+                    thinking=thinking, tag=f"{tag}-direct-{'thinking' if thinking else 'no-thinking'}",
+                    bypass_cache=bypass_cache)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 178, in parse
+    return self._call(body, schema, tag, thinking, bypass_cache)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 217, in _call
+    resp = self._create(body)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 250, in _create
+    return client.messages.create(**body)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_utils\_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\resources\messages\messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1104, in request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+[launcher 2026-09-24T22:30:45-07:00] exit 1 after 12 s, stopped after b58-cycle (177/180)
+[launcher 2026-09-24T22:30:45-07:00] anthropic.APIConnectionError: Connection error.: no response arrived; rerunning in 60 s
+[launcher 2026-09-24T22:31:46-07:00] start automatic rerun 4 of 5: --budget 7548523
+b00-consistent (1/180): 0 tokens spent
+b00-direct (2/180): 0 tokens spent
+b00-cycle (3/180): 0 tokens spent
+b01-consistent (4/180): 0 tokens spent
+b01-direct (5/180): 0 tokens spent
+b01-cycle (6/180): 0 tokens spent
+b02-consistent (7/180): 0 tokens spent
+b02-direct (8/180): 0 tokens spent
+b02-cycle (9/180): 0 tokens spent
+b03-consistent (10/180): 0 tokens spent
+b03-direct (11/180): 0 tokens spent
+b03-cycle (12/180): 0 tokens spent
+b04-consistent (13/180): 0 tokens spent
+b04-direct (14/180): 0 tokens spent
+b04-cycle (15/180): 0 tokens spent
+b05-consistent (16/180): 0 tokens spent
+b05-direct (17/180): 0 tokens spent
+b05-cycle (18/180): 0 tokens spent
+b06-consistent (19/180): 0 tokens spent
+b06-direct (20/180): 0 tokens spent
+b06-cycle (21/180): 0 tokens spent
+b07-consistent (22/180): 0 tokens spent
+b07-direct (23/180): 0 tokens spent
+b07-cycle (24/180): 0 tokens spent
+b08-consistent (25/180): 0 tokens spent
+b08-direct (26/180): 0 tokens spent
+b08-cycle (27/180): 0 tokens spent
+b09-consistent (28/180): 0 tokens spent
+b09-direct (29/180): 0 tokens spent
+b09-cycle (30/180): 0 tokens spent
+b10-consistent (31/180): 0 tokens spent
+b10-direct (32/180): 0 tokens spent
+b10-cycle (33/180): 0 tokens spent
+b11-consistent (34/180): 0 tokens spent
+b11-direct (35/180): 0 tokens spent
+b11-cycle (36/180): 0 tokens spent
+b12-consistent (37/180): 0 tokens spent
+b12-direct (38/180): 0 tokens spent
+b12-cycle (39/180): 0 tokens spent
+b13-consistent (40/180): 0 tokens spent
+b13-direct (41/180): 0 tokens spent
+b13-cycle (42/180): 0 tokens spent
+b14-consistent (43/180): 0 tokens spent
+b14-direct (44/180): 0 tokens spent
+b14-cycle (45/180): 0 tokens spent
+b15-consistent (46/180): 0 tokens spent
+b15-direct (47/180): 0 tokens spent
+b15-cycle (48/180): 0 tokens spent
+b16-consistent (49/180): 0 tokens spent
+b16-direct (50/180): 0 tokens spent
+b16-cycle (51/180): 0 tokens spent
+b17-consistent (52/180): 0 tokens spent
+b17-direct (53/180): 0 tokens spent
+b17-cycle (54/180): 0 tokens spent
+b18-consistent (55/180): 0 tokens spent
+b18-direct (56/180): 0 tokens spent
+b18-cycle (57/180): 0 tokens spent
+b19-consistent (58/180): 0 tokens spent
+b19-direct (59/180): 0 tokens spent
+b19-cycle (60/180): 0 tokens spent
+b20-consistent (61/180): 0 tokens spent
+b20-direct (62/180): 0 tokens spent
+b20-cycle (63/180): 0 tokens spent
+b21-consistent (64/180): 0 tokens spent
+b21-direct (65/180): 0 tokens spent
+b21-cycle (66/180): 0 tokens spent
+b22-consistent (67/180): 0 tokens spent
+b22-direct (68/180): 0 tokens spent
+b22-cycle (69/180): 0 tokens spent
+b23-consistent (70/180): 0 tokens spent
+b23-direct (71/180): 0 tokens spent
+b23-cycle (72/180): 0 tokens spent
+b24-consistent (73/180): 0 tokens spent
+b24-direct (74/180): 0 tokens spent
+b24-cycle (75/180): 0 tokens spent
+b25-consistent (76/180): 0 tokens spent
+b25-direct (77/180): 0 tokens spent
+b25-cycle (78/180): 0 tokens spent
+b26-consistent (79/180): 0 tokens spent
+b26-direct (80/180): 0 tokens spent
+b26-cycle (81/180): 0 tokens spent
+b27-consistent (82/180): 0 tokens spent
+b27-direct (83/180): 0 tokens spent
+b27-cycle (84/180): 0 tokens spent
+b28-consistent (85/180): 0 tokens spent
+b28-direct (86/180): 0 tokens spent
+b28-cycle (87/180): 0 tokens spent
+b29-consistent (88/180): 0 tokens spent
+b29-direct (89/180): 0 tokens spent
+b29-cycle (90/180): 0 tokens spent
+b30-consistent (91/180): 0 tokens spent
+b30-direct (92/180): 0 tokens spent
+b30-cycle (93/180): 0 tokens spent
+b31-consistent (94/180): 0 tokens spent
+b31-direct (95/180): 0 tokens spent
+b31-cycle (96/180): 0 tokens spent
+b32-consistent (97/180): 0 tokens spent
+b32-direct (98/180): 0 tokens spent
+b32-cycle (99/180): 0 tokens spent
+b33-consistent (100/180): 0 tokens spent
+b33-direct (101/180): 0 tokens spent
+b33-cycle (102/180): 0 tokens spent
+b34-consistent (103/180): 0 tokens spent
+b34-direct (104/180): 0 tokens spent
+b34-cycle (105/180): 0 tokens spent
+b35-consistent (106/180): 0 tokens spent
+b35-direct (107/180): 0 tokens spent
+b35-cycle (108/180): 0 tokens spent
+b36-consistent (109/180): 0 tokens spent
+b36-direct (110/180): 0 tokens spent
+b36-cycle (111/180): 0 tokens spent
+b37-consistent (112/180): 0 tokens spent
+b37-direct (113/180): 0 tokens spent
+b37-cycle (114/180): 0 tokens spent
+b38-consistent (115/180): 0 tokens spent
+b38-direct (116/180): 0 tokens spent
+b38-cycle (117/180): 0 tokens spent
+b39-consistent (118/180): 0 tokens spent
+b39-direct (119/180): 0 tokens spent
+b39-cycle (120/180): 0 tokens spent
+b40-consistent (121/180): 0 tokens spent
+b40-direct (122/180): 0 tokens spent
+b40-cycle (123/180): 0 tokens spent
+b41-consistent (124/180): 0 tokens spent
+b41-direct (125/180): 0 tokens spent
+b41-cycle (126/180): 0 tokens spent
+b42-consistent (127/180): 0 tokens spent
+b42-direct (128/180): 0 tokens spent
+b42-cycle (129/180): 0 tokens spent
+b43-consistent (130/180): 0 tokens spent
+b43-direct (131/180): 0 tokens spent
+b43-cycle (132/180): 0 tokens spent
+b44-consistent (133/180): 0 tokens spent
+b44-direct (134/180): 0 tokens spent
+b44-cycle (135/180): 0 tokens spent
+b45-consistent (136/180): 0 tokens spent
+b45-direct (137/180): 0 tokens spent
+b45-cycle (138/180): 0 tokens spent
+b46-consistent (139/180): 0 tokens spent
+b46-direct (140/180): 0 tokens spent
+b46-cycle (141/180): 0 tokens spent
+b47-consistent (142/180): 0 tokens spent
+b47-direct (143/180): 0 tokens spent
+b47-cycle (144/180): 0 tokens spent
+b48-consistent (145/180): 0 tokens spent
+b48-direct (146/180): 0 tokens spent
+b48-cycle (147/180): 0 tokens spent
+b49-consistent (148/180): 0 tokens spent
+b49-direct (149/180): 0 tokens spent
+b49-cycle (150/180): 0 tokens spent
+b50-consistent (151/180): 0 tokens spent
+b50-direct (152/180): 0 tokens spent
+b50-cycle (153/180): 0 tokens spent
+b51-consistent (154/180): 0 tokens spent
+b51-direct (155/180): 0 tokens spent
+b51-cycle (156/180): 0 tokens spent
+b52-consistent (157/180): 0 tokens spent
+b52-direct (158/180): 0 tokens spent
+b52-cycle (159/180): 0 tokens spent
+b53-consistent (160/180): 0 tokens spent
+b53-direct (161/180): 0 tokens spent
+b53-cycle (162/180): 0 tokens spent
+b54-consistent (163/180): 0 tokens spent
+b54-direct (164/180): 0 tokens spent
+b54-cycle (165/180): 0 tokens spent
+b55-consistent (166/180): 0 tokens spent
+b55-direct (167/180): 0 tokens spent
+b55-cycle (168/180): 0 tokens spent
+b56-consistent (169/180): 0 tokens spent
+b56-direct (170/180): 0 tokens spent
+b56-cycle (171/180): 0 tokens spent
+b57-consistent (172/180): 0 tokens spent
+b57-direct (173/180): 0 tokens spent
+b57-cycle (174/180): 0 tokens spent
+b58-consistent (175/180): 0 tokens spent
+b58-direct (176/180): 0 tokens spent
+b58-cycle (177/180): 0 tokens spent
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1072, in request
+    response = self._client.send(
+        request,
+        stream=stream or self._should_stream_response_body(request=request),
+        **kwargs,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 103, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 60, in main
+    runs = run_corpus(llm, records)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 156, in run_corpus
+    runs.append(run_document(llm, rec))
+                ~~~~~~~~~~~~^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 148, in run_document
+    return DocRun(record, analyses, {t: llm_direct(llm, text, tag=tag, thinking=t) for t in (True, False)})
+                                        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\baselines.py", line 32, in llm_direct
+    out = llm.parse(system=prompts.DIRECT_SYSTEM, user=prompts.direct_user(text), schema=ContradictionList,
+                    max_tokens=cfg.llm_max_tokens_direct if thinking else cfg.llm_max_tokens_direct_no_thinking,
+                    thinking=thinking, tag=f"{tag}-direct-{'thinking' if thinking else 'no-thinking'}",
+                    bypass_cache=bypass_cache)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 178, in parse
+    return self._call(body, schema, tag, thinking, bypass_cache)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 217, in _call
+    resp = self._create(body)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 250, in _create
+    return client.messages.create(**body)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_utils\_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\resources\messages\messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1104, in request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+[launcher 2026-09-24T22:31:57-07:00] exit 1 after 12 s, stopped after b58-cycle (177/180)
+[launcher 2026-09-24T22:31:57-07:00] anthropic.APIConnectionError: Connection error.: no response arrived; rerunning in 60 s
+[launcher 2026-09-24T22:32:58-07:00] start automatic rerun 5 of 5: --budget 7548523
+b00-consistent (1/180): 0 tokens spent
+b00-direct (2/180): 0 tokens spent
+b00-cycle (3/180): 0 tokens spent
+b01-consistent (4/180): 0 tokens spent
+b01-direct (5/180): 0 tokens spent
+b01-cycle (6/180): 0 tokens spent
+b02-consistent (7/180): 0 tokens spent
+b02-direct (8/180): 0 tokens spent
+b02-cycle (9/180): 0 tokens spent
+b03-consistent (10/180): 0 tokens spent
+b03-direct (11/180): 0 tokens spent
+b03-cycle (12/180): 0 tokens spent
+b04-consistent (13/180): 0 tokens spent
+b04-direct (14/180): 0 tokens spent
+b04-cycle (15/180): 0 tokens spent
+b05-consistent (16/180): 0 tokens spent
+b05-direct (17/180): 0 tokens spent
+b05-cycle (18/180): 0 tokens spent
+b06-consistent (19/180): 0 tokens spent
+b06-direct (20/180): 0 tokens spent
+b06-cycle (21/180): 0 tokens spent
+b07-consistent (22/180): 0 tokens spent
+b07-direct (23/180): 0 tokens spent
+b07-cycle (24/180): 0 tokens spent
+b08-consistent (25/180): 0 tokens spent
+b08-direct (26/180): 0 tokens spent
+b08-cycle (27/180): 0 tokens spent
+b09-consistent (28/180): 0 tokens spent
+b09-direct (29/180): 0 tokens spent
+b09-cycle (30/180): 0 tokens spent
+b10-consistent (31/180): 0 tokens spent
+b10-direct (32/180): 0 tokens spent
+b10-cycle (33/180): 0 tokens spent
+b11-consistent (34/180): 0 tokens spent
+b11-direct (35/180): 0 tokens spent
+b11-cycle (36/180): 0 tokens spent
+b12-consistent (37/180): 0 tokens spent
+b12-direct (38/180): 0 tokens spent
+b12-cycle (39/180): 0 tokens spent
+b13-consistent (40/180): 0 tokens spent
+b13-direct (41/180): 0 tokens spent
+b13-cycle (42/180): 0 tokens spent
+b14-consistent (43/180): 0 tokens spent
+b14-direct (44/180): 0 tokens spent
+b14-cycle (45/180): 0 tokens spent
+b15-consistent (46/180): 0 tokens spent
+b15-direct (47/180): 0 tokens spent
+b15-cycle (48/180): 0 tokens spent
+b16-consistent (49/180): 0 tokens spent
+b16-direct (50/180): 0 tokens spent
+b16-cycle (51/180): 0 tokens spent
+b17-consistent (52/180): 0 tokens spent
+b17-direct (53/180): 0 tokens spent
+b17-cycle (54/180): 0 tokens spent
+b18-consistent (55/180): 0 tokens spent
+b18-direct (56/180): 0 tokens spent
+b18-cycle (57/180): 0 tokens spent
+b19-consistent (58/180): 0 tokens spent
+b19-direct (59/180): 0 tokens spent
+b19-cycle (60/180): 0 tokens spent
+b20-consistent (61/180): 0 tokens spent
+b20-direct (62/180): 0 tokens spent
+b20-cycle (63/180): 0 tokens spent
+b21-consistent (64/180): 0 tokens spent
+b21-direct (65/180): 0 tokens spent
+b21-cycle (66/180): 0 tokens spent
+b22-consistent (67/180): 0 tokens spent
+b22-direct (68/180): 0 tokens spent
+b22-cycle (69/180): 0 tokens spent
+b23-consistent (70/180): 0 tokens spent
+b23-direct (71/180): 0 tokens spent
+b23-cycle (72/180): 0 tokens spent
+b24-consistent (73/180): 0 tokens spent
+b24-direct (74/180): 0 tokens spent
+b24-cycle (75/180): 0 tokens spent
+b25-consistent (76/180): 0 tokens spent
+b25-direct (77/180): 0 tokens spent
+b25-cycle (78/180): 0 tokens spent
+b26-consistent (79/180): 0 tokens spent
+b26-direct (80/180): 0 tokens spent
+b26-cycle (81/180): 0 tokens spent
+b27-consistent (82/180): 0 tokens spent
+b27-direct (83/180): 0 tokens spent
+b27-cycle (84/180): 0 tokens spent
+b28-consistent (85/180): 0 tokens spent
+b28-direct (86/180): 0 tokens spent
+b28-cycle (87/180): 0 tokens spent
+b29-consistent (88/180): 0 tokens spent
+b29-direct (89/180): 0 tokens spent
+b29-cycle (90/180): 0 tokens spent
+b30-consistent (91/180): 0 tokens spent
+b30-direct (92/180): 0 tokens spent
+b30-cycle (93/180): 0 tokens spent
+b31-consistent (94/180): 0 tokens spent
+b31-direct (95/180): 0 tokens spent
+b31-cycle (96/180): 0 tokens spent
+b32-consistent (97/180): 0 tokens spent
+b32-direct (98/180): 0 tokens spent
+b32-cycle (99/180): 0 tokens spent
+b33-consistent (100/180): 0 tokens spent
+b33-direct (101/180): 0 tokens spent
+b33-cycle (102/180): 0 tokens spent
+b34-consistent (103/180): 0 tokens spent
+b34-direct (104/180): 0 tokens spent
+b34-cycle (105/180): 0 tokens spent
+b35-consistent (106/180): 0 tokens spent
+b35-direct (107/180): 0 tokens spent
+b35-cycle (108/180): 0 tokens spent
+b36-consistent (109/180): 0 tokens spent
+b36-direct (110/180): 0 tokens spent
+b36-cycle (111/180): 0 tokens spent
+b37-consistent (112/180): 0 tokens spent
+b37-direct (113/180): 0 tokens spent
+b37-cycle (114/180): 0 tokens spent
+b38-consistent (115/180): 0 tokens spent
+b38-direct (116/180): 0 tokens spent
+b38-cycle (117/180): 0 tokens spent
+b39-consistent (118/180): 0 tokens spent
+b39-direct (119/180): 0 tokens spent
+b39-cycle (120/180): 0 tokens spent
+b40-consistent (121/180): 0 tokens spent
+b40-direct (122/180): 0 tokens spent
+b40-cycle (123/180): 0 tokens spent
+b41-consistent (124/180): 0 tokens spent
+b41-direct (125/180): 0 tokens spent
+b41-cycle (126/180): 0 tokens spent
+b42-consistent (127/180): 0 tokens spent
+b42-direct (128/180): 0 tokens spent
+b42-cycle (129/180): 0 tokens spent
+b43-consistent (130/180): 0 tokens spent
+b43-direct (131/180): 0 tokens spent
+b43-cycle (132/180): 0 tokens spent
+b44-consistent (133/180): 0 tokens spent
+b44-direct (134/180): 0 tokens spent
+b44-cycle (135/180): 0 tokens spent
+b45-consistent (136/180): 0 tokens spent
+b45-direct (137/180): 0 tokens spent
+b45-cycle (138/180): 0 tokens spent
+b46-consistent (139/180): 0 tokens spent
+b46-direct (140/180): 0 tokens spent
+b46-cycle (141/180): 0 tokens spent
+b47-consistent (142/180): 0 tokens spent
+b47-direct (143/180): 0 tokens spent
+b47-cycle (144/180): 0 tokens spent
+b48-consistent (145/180): 0 tokens spent
+b48-direct (146/180): 0 tokens spent
+b48-cycle (147/180): 0 tokens spent
+b49-consistent (148/180): 0 tokens spent
+b49-direct (149/180): 0 tokens spent
+b49-cycle (150/180): 0 tokens spent
+b50-consistent (151/180): 0 tokens spent
+b50-direct (152/180): 0 tokens spent
+b50-cycle (153/180): 0 tokens spent
+b51-consistent (154/180): 0 tokens spent
+b51-direct (155/180): 0 tokens spent
+b51-cycle (156/180): 0 tokens spent
+b52-consistent (157/180): 0 tokens spent
+b52-direct (158/180): 0 tokens spent
+b52-cycle (159/180): 0 tokens spent
+b53-consistent (160/180): 0 tokens spent
+b53-direct (161/180): 0 tokens spent
+b53-cycle (162/180): 0 tokens spent
+b54-consistent (163/180): 0 tokens spent
+b54-direct (164/180): 0 tokens spent
+b54-cycle (165/180): 0 tokens spent
+b55-consistent (166/180): 0 tokens spent
+b55-direct (167/180): 0 tokens spent
+b55-cycle (168/180): 0 tokens spent
+b56-consistent (169/180): 0 tokens spent
+b56-direct (170/180): 0 tokens spent
+b56-cycle (171/180): 0 tokens spent
+b57-consistent (172/180): 0 tokens spent
+b57-direct (173/180): 0 tokens spent
+b57-cycle (174/180): 0 tokens spent
+b58-consistent (175/180): 0 tokens spent
+b58-direct (176/180): 0 tokens spent
+b58-cycle (177/180): 0 tokens spent
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1072, in request
+    response = self._client.send(
+        request,
+        stream=stream or self._should_stream_response_body(request=request),
+        **kwargs,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 103, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 60, in main
+    runs = run_corpus(llm, records)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 156, in run_corpus
+    runs.append(run_document(llm, rec))
+                ~~~~~~~~~~~~^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\evaluation.py", line 148, in run_document
+    return DocRun(record, analyses, {t: llm_direct(llm, text, tag=tag, thinking=t) for t in (True, False)})
+                                        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\baselines.py", line 32, in llm_direct
+    out = llm.parse(system=prompts.DIRECT_SYSTEM, user=prompts.direct_user(text), schema=ContradictionList,
+                    max_tokens=cfg.llm_max_tokens_direct if thinking else cfg.llm_max_tokens_direct_no_thinking,
+                    thinking=thinking, tag=f"{tag}-direct-{'thinking' if thinking else 'no-thinking'}",
+                    bypass_cache=bypass_cache)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 178, in parse
+    return self._call(body, schema, tag, thinking, bypass_cache)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 217, in _call
+    resp = self._create(body)
+  File "%USERPROFILE%\Desktop\XON\xon\llm\client.py", line 250, in _create
+    return client.messages.create(**body)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_utils\_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\resources\messages\messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1364, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "%USERPROFILE%\AppData\Roaming\Python\Python314\site-packages\anthropic\_base_client.py", line 1104, in request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+[launcher 2026-09-24T22:33:10-07:00] exit 1 after 13 s, stopped after b58-cycle (177/180)
+[launcher 2026-09-24T22:33:10-07:00] anthropic.APIConnectionError: Connection error.: a sixth failure, stopping for a report
+[launcher 2026-09-24T22:33:10-07:00] SetThreadExecutionState cleared
+[launcher 2026-09-24T22:39:29-07:00] SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED): set
+[launcher 2026-09-24T22:39:29-07:00] start resume: --budget 7548523
+b00-consistent (1/180): 0 tokens spent
+b00-direct (2/180): 0 tokens spent
+b00-cycle (3/180): 0 tokens spent
+b01-consistent (4/180): 0 tokens spent
+b01-direct (5/180): 0 tokens spent
+b01-cycle (6/180): 0 tokens spent
+b02-consistent (7/180): 0 tokens spent
+b02-direct (8/180): 0 tokens spent
+b02-cycle (9/180): 0 tokens spent
+b03-consistent (10/180): 0 tokens spent
+b03-direct (11/180): 0 tokens spent
+b03-cycle (12/180): 0 tokens spent
+b04-consistent (13/180): 0 tokens spent
+b04-direct (14/180): 0 tokens spent
+b04-cycle (15/180): 0 tokens spent
+b05-consistent (16/180): 0 tokens spent
+b05-direct (17/180): 0 tokens spent
+b05-cycle (18/180): 0 tokens spent
+b06-consistent (19/180): 0 tokens spent
+b06-direct (20/180): 0 tokens spent
+b06-cycle (21/180): 0 tokens spent
+b07-consistent (22/180): 0 tokens spent
+b07-direct (23/180): 0 tokens spent
+b07-cycle (24/180): 0 tokens spent
+b08-consistent (25/180): 0 tokens spent
+b08-direct (26/180): 0 tokens spent
+b08-cycle (27/180): 0 tokens spent
+b09-consistent (28/180): 0 tokens spent
+b09-direct (29/180): 0 tokens spent
+b09-cycle (30/180): 0 tokens spent
+b10-consistent (31/180): 0 tokens spent
+b10-direct (32/180): 0 tokens spent
+b10-cycle (33/180): 0 tokens spent
+b11-consistent (34/180): 0 tokens spent
+b11-direct (35/180): 0 tokens spent
+b11-cycle (36/180): 0 tokens spent
+b12-consistent (37/180): 0 tokens spent
+b12-direct (38/180): 0 tokens spent
+b12-cycle (39/180): 0 tokens spent
+b13-consistent (40/180): 0 tokens spent
+b13-direct (41/180): 0 tokens spent
+b13-cycle (42/180): 0 tokens spent
+b14-consistent (43/180): 0 tokens spent
+b14-direct (44/180): 0 tokens spent
+b14-cycle (45/180): 0 tokens spent
+b15-consistent (46/180): 0 tokens spent
+b15-direct (47/180): 0 tokens spent
+b15-cycle (48/180): 0 tokens spent
+b16-consistent (49/180): 0 tokens spent
+b16-direct (50/180): 0 tokens spent
+b16-cycle (51/180): 0 tokens spent
+b17-consistent (52/180): 0 tokens spent
+b17-direct (53/180): 0 tokens spent
+b17-cycle (54/180): 0 tokens spent
+b18-consistent (55/180): 0 tokens spent
+b18-direct (56/180): 0 tokens spent
+b18-cycle (57/180): 0 tokens spent
+b19-consistent (58/180): 0 tokens spent
+b19-direct (59/180): 0 tokens spent
+b19-cycle (60/180): 0 tokens spent
+b20-consistent (61/180): 0 tokens spent
+b20-direct (62/180): 0 tokens spent
+b20-cycle (63/180): 0 tokens spent
+b21-consistent (64/180): 0 tokens spent
+b21-direct (65/180): 0 tokens spent
+b21-cycle (66/180): 0 tokens spent
+b22-consistent (67/180): 0 tokens spent
+b22-direct (68/180): 0 tokens spent
+b22-cycle (69/180): 0 tokens spent
+b23-consistent (70/180): 0 tokens spent
+b23-direct (71/180): 0 tokens spent
+b23-cycle (72/180): 0 tokens spent
+b24-consistent (73/180): 0 tokens spent
+b24-direct (74/180): 0 tokens spent
+b24-cycle (75/180): 0 tokens spent
+b25-consistent (76/180): 0 tokens spent
+b25-direct (77/180): 0 tokens spent
+b25-cycle (78/180): 0 tokens spent
+b26-consistent (79/180): 0 tokens spent
+b26-direct (80/180): 0 tokens spent
+b26-cycle (81/180): 0 tokens spent
+b27-consistent (82/180): 0 tokens spent
+b27-direct (83/180): 0 tokens spent
+b27-cycle (84/180): 0 tokens spent
+b28-consistent (85/180): 0 tokens spent
+b28-direct (86/180): 0 tokens spent
+b28-cycle (87/180): 0 tokens spent
+b29-consistent (88/180): 0 tokens spent
+b29-direct (89/180): 0 tokens spent
+b29-cycle (90/180): 0 tokens spent
+b30-consistent (91/180): 0 tokens spent
+b30-direct (92/180): 0 tokens spent
+b30-cycle (93/180): 0 tokens spent
+b31-consistent (94/180): 0 tokens spent
+b31-direct (95/180): 0 tokens spent
+b31-cycle (96/180): 0 tokens spent
+b32-consistent (97/180): 0 tokens spent
+b32-direct (98/180): 0 tokens spent
+b32-cycle (99/180): 0 tokens spent
+b33-consistent (100/180): 0 tokens spent
+b33-direct (101/180): 0 tokens spent
+b33-cycle (102/180): 0 tokens spent
+b34-consistent (103/180): 0 tokens spent
+b34-direct (104/180): 0 tokens spent
+b34-cycle (105/180): 0 tokens spent
+b35-consistent (106/180): 0 tokens spent
+b35-direct (107/180): 0 tokens spent
+b35-cycle (108/180): 0 tokens spent
+b36-consistent (109/180): 0 tokens spent
+b36-direct (110/180): 0 tokens spent
+b36-cycle (111/180): 0 tokens spent
+b37-consistent (112/180): 0 tokens spent
+b37-direct (113/180): 0 tokens spent
+b37-cycle (114/180): 0 tokens spent
+b38-consistent (115/180): 0 tokens spent
+b38-direct (116/180): 0 tokens spent
+b38-cycle (117/180): 0 tokens spent
+b39-consistent (118/180): 0 tokens spent
+b39-direct (119/180): 0 tokens spent
+b39-cycle (120/180): 0 tokens spent
+b40-consistent (121/180): 0 tokens spent
+b40-direct (122/180): 0 tokens spent
+b40-cycle (123/180): 0 tokens spent
+b41-consistent (124/180): 0 tokens spent
+b41-direct (125/180): 0 tokens spent
+b41-cycle (126/180): 0 tokens spent
+b42-consistent (127/180): 0 tokens spent
+b42-direct (128/180): 0 tokens spent
+b42-cycle (129/180): 0 tokens spent
+b43-consistent (130/180): 0 tokens spent
+b43-direct (131/180): 0 tokens spent
+b43-cycle (132/180): 0 tokens spent
+b44-consistent (133/180): 0 tokens spent
+b44-direct (134/180): 0 tokens spent
+b44-cycle (135/180): 0 tokens spent
+b45-consistent (136/180): 0 tokens spent
+b45-direct (137/180): 0 tokens spent
+b45-cycle (138/180): 0 tokens spent
+b46-consistent (139/180): 0 tokens spent
+b46-direct (140/180): 0 tokens spent
+b46-cycle (141/180): 0 tokens spent
+b47-consistent (142/180): 0 tokens spent
+b47-direct (143/180): 0 tokens spent
+b47-cycle (144/180): 0 tokens spent
+b48-consistent (145/180): 0 tokens spent
+b48-direct (146/180): 0 tokens spent
+b48-cycle (147/180): 0 tokens spent
+b49-consistent (148/180): 0 tokens spent
+b49-direct (149/180): 0 tokens spent
+b49-cycle (150/180): 0 tokens spent
+b50-consistent (151/180): 0 tokens spent
+b50-direct (152/180): 0 tokens spent
+b50-cycle (153/180): 0 tokens spent
+b51-consistent (154/180): 0 tokens spent
+b51-direct (155/180): 0 tokens spent
+b51-cycle (156/180): 0 tokens spent
+b52-consistent (157/180): 0 tokens spent
+b52-direct (158/180): 0 tokens spent
+b52-cycle (159/180): 0 tokens spent
+b53-consistent (160/180): 0 tokens spent
+b53-direct (161/180): 0 tokens spent
+b53-cycle (162/180): 0 tokens spent
+b54-consistent (163/180): 0 tokens spent
+b54-direct (164/180): 0 tokens spent
+b54-cycle (165/180): 0 tokens spent
+b55-consistent (166/180): 0 tokens spent
+b55-direct (167/180): 0 tokens spent
+b55-cycle (168/180): 0 tokens spent
+b56-consistent (169/180): 0 tokens spent
+b56-direct (170/180): 0 tokens spent
+b56-cycle (171/180): 0 tokens spent
+b57-consistent (172/180): 0 tokens spent
+b57-direct (173/180): 0 tokens spent
+b57-cycle (174/180): 0 tokens spent
+b58-consistent (175/180): 0 tokens spent
+b58-direct (176/180): 0 tokens spent
+b58-cycle (177/180): 0 tokens spent
+b59-consistent (178/180): 4,091 tokens spent
+b59-direct (179/180): 46,480 tokens spent
+b59-cycle (180/180): 87,275 tokens spent
+Traceback (most recent call last):
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 103, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "%USERPROFILE%\Desktop\XON\scripts\run_consistency_eval.py", line 94, in main
+    (out / f"{name}.json").write_text(json.dumps(value, indent=1), "utf-8")
+                                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Python314\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python314\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python314\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable
+when serializing dict item 'auc'
+when serializing dict item 'checks'
+[launcher 2026-09-24T22:45:25-07:00] exit 1 after 356 s, stopped after b59-cycle (180/180)
+[launcher 2026-09-24T22:45:25-07:00] not a failure the rerun rule covers: stopping for a report
+[launcher 2026-09-24T22:45:25-07:00] SetThreadExecutionState cleared

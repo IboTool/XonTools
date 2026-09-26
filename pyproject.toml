@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xon-sim"
+dynamic = ["version"]
+description = "XON SIM: a testing platform for the internal coherence of the Xon model (growing self-similar graphs, Laplacian spectra, driven-dissipative wave dynamics, cellular sheaves)."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "networkx>=3.0",
+    "pandas>=2.0",
+    "plotly>=5.20",
+    # fragments that redraw into containers created outside them (the live Sandbox view)
+    "streamlit>=1.64",
+    # A1 consistency engine: structured-output schemas; the API client (imported only by xon/llm/client.py, and
+    # only for live calls: dry-run needs no SDK)
+    "pydantic>=2.7",
+    "anthropic>=0.84",
+]
+
+[project.optional-dependencies]
+png = ["kaleido>=0.2.1"]
+dev = ["pytest>=7"]
+# XonForge (xonforge/): its configuration files (PyYAML, MIT) and the sealed split's encryption at rest (cryptography,
+# Apache-2.0 OR BSD-3-Clause); the minimum versions are the ones it was tested with
+xonforge = ["PyYAML>=6.0.2", "cryptography>=46.0.5"]
+
+[project.scripts]
+xon-run-tests = "xon.run_tests:main"
+
+[tool.setuptools]
+packages = ["xon", "xon.llm"]
+
+[tool.setuptools.dynamic]
+version = { attr = "xon.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["slow: left out of the default run; run with pytest -m slow"]
+addopts = ["-m", "not slow"]

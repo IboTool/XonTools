@@ -1,0 +1,142 @@
+{
+ "request": "49c8c05546053d36bb6db504a2a41bb49d7253493e1b6930d9ec8163c8ae6597",
+ "tag": "text-a3075660074e-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma",
+     "her",
+     "she"
+    ]
+   },
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben",
+     "his"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay"
+    ]
+   },
+   {
+    "id": "delia",
+    "mentions": [
+     "Delia",
+     "a soft spoken woman"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "speed_of_completion",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "distance_to_studio",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 9,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "fay",
+    "b": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "ben",
+    "b": "fay",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "ben",
+    "b": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "noor",
+    "b": "ben",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "noor",
+    "b": "ben",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 17,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "noor",
+    "b": "ben",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 20,
+    "attribute": "speed_of_completion",
+    "kind": "greater",
+    "a": "milo",
+    "b": "ben",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2263,
+  "output_tokens": 599,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

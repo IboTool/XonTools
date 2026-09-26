@@ -1,0 +1,120 @@
+{
+ "request": "87c656500c89401f4563d1d0f0b6b4209fd5338b02dcec36edd73dc6cc4df31a",
+ "tag": "text-c4fc03cb1484-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus",
+     "his",
+     "Gus's"
+    ]
+   },
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "her"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "booking",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "sami",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "sami",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "xavi",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 8,
+    "attribute": "booking",
+    "kind": "different",
+    "a": "esme",
+    "b": "esme",
+    "confidence": 0.1
+   },
+   {
+    "claim_id": 12,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "xavi",
+    "b": "sami",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "xavi",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 20,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "sami",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2194,
+  "output_tokens": 514,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

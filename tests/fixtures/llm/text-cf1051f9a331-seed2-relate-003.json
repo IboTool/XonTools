@@ -1,0 +1,52 @@
+{
+ "request": "f8b223bfb9f9ae6b595d06895e5c2d38684707ca2f20ec6923c1d6c7320fcaaf",
+ "tag": "text-cf1051f9a331-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 19,
+    "b": 21,
+    "rationale": "Checking her watch suggests Rosa is concerned about time, which supports the idea that time was limited.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "The theater closing early on weekdays implies less time is available, supporting that they had limited time left.",
+    "relation": "supports",
+    "confidence": 0.8
+   },
+   {
+    "a": 21,
+    "b": 26,
+    "rationale": "Having limited time left could prompt the cast to gather their things to leave, supporting that action.",
+    "relation": "supports",
+    "confidence": 0.55
+   },
+   {
+    "a": 22,
+    "b": 25,
+    "rationale": "Hugo's height has no logical connection to the timing of the stage lights dimming.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "The stage lights dimming as the run-through ended naturally precedes and supports the cast gathering their things to leave.",
+    "relation": "supports",
+    "confidence": 0.75
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 954,
+  "output_tokens": 327,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

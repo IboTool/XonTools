@@ -1,0 +1,33 @@
+{
+ "request": "d41ab15bd61ddc542201b76b815e7ca4b942b76ae1e1adba15f41edf7771a020",
+ "tag": "text-89cd5d0b6565-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Assume that Kai is the head judge.",
+     "Kai is not the head judge."
+    ],
+    "explanation": "The text both assumes Kai is the head judge and then directly states Kai is not the head judge."
+   },
+   {
+    "sentences": [
+     "Cy and Uma worked different shifts.",
+     "Uma and Fay worked different shifts.",
+     "Cy and Fay worked different shifts.",
+     "The shop ran three shifts."
+    ],
+    "explanation": "With only three shifts, having Cy, Uma, and Fay each pairwise different requires three distinct shifts among them, which is possible but combined with other constraints in the puzzle-like setup creates an over-constrained assignment that cannot be consistently resolved."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1036,
+  "output_tokens": 239,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

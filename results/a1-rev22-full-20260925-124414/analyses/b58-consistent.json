@@ -1,0 +1,1641 @@
+{
+ "label": "b58-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-e2c10f2253de",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Finn is the lead volunteer.",
+   "span": "Finn is the lead volunteer",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Ana arrived first at the shoreline.",
+   "span": "Ana arrived first, carrying a stack of recycling bins she had borrowed from the community center",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Ana was carrying a stack of recycling bins she had borrowed from the community center.",
+   "span": "Ana arrived first, carrying a stack of recycling bins she had borrowed from the community center",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Vik drove the minibus.",
+   "span": "Vik drove the minibus",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Esme showed up a few minutes after Ana.",
+   "span": "Esme showed up a few minutes later, stretching after the short walk from the parking lot, and waved to the others as she set down her water bottle",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Esme stretched after the short walk from the parking lot.",
+   "span": "stretching after the short walk from the parking lot",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Esme waved to the others as she set down her water bottle.",
+   "span": "waved to the others as she set down her water bottle",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Lena arrived last.",
+   "span": "Lena arrived last, slightly out of breath, having biked the entire way from the north side of town",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Lena was slightly out of breath.",
+   "span": "slightly out of breath",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Lena biked the entire way from the north side of town.",
+   "span": "having biked the entire way from the north side of town",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Ana is in the same class as Esme.",
+   "span": "Ana is in the same class as Esme",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Finn is taller than Vik.",
+   "span": "Finn is taller than Vik",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Vik is a faster walker than Finn.",
+   "span": "Vik is a faster walker",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Esme is not in the same class as Lena.",
+   "span": "Esme is not in the same class as Lena",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Ana is not in the same class as Lena.",
+   "span": "Ana is not in the same class as Lena",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Vik was two years older than Esme.",
+   "span": "Vik mentioned that he was two years older than Esme",
+   "kind": "quoted"
+  },
+  {
+   "id": 16,
+   "text": "Lena was still the youngest of the group.",
+   "span": "Lena joked that she was still the youngest of the group",
+   "kind": "quoted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Being the lead volunteer says nothing about who arrived first at the shoreline; the two facts address different matters.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "The claims describe unrelated facts about different people with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Finn being the lead volunteer says nothing about who drove the minibus; the two roles are independent and no information about one implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A concerns Finn's role as lead volunteer, while claim B concerns the timing of Esme's arrival relative to Ana. These involve different people and different subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Claim A concerns Finn's role as lead volunteer, while claim B describes an unrelated action by Esme after a walk; the two share no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A concerns Finn's role as lead volunteer, while claim B describes an unrelated action by Esme involving a water bottle; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "The two claims concern different people and different attributes (a role vs. arrival order); one does not affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A states Finn's role as lead volunteer, which has no logical or contextual connection to Lena's physical state of being out of breath.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Claim A concerns Finn's role as lead volunteer, while claim B concerns Lena's mode of transportation on a route. The two involve different people and unrelated facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A concerns Finn's volunteer role, while claim B concerns Ana and Esme's class membership; they share no common subject or context that would connect them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Being the lead volunteer is a role or position, which has no bearing on physical height compared to another person.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Being the lead volunteer says nothing about relative walking speed, so this claim provides no information about whether Vik walks faster than Finn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Claim A is about Finn's volunteer role and claim B concerns class membership relations between Esme and Lena; the two statements share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "The claim about Finn being lead volunteer has no bearing on the class assignments of Ana and Lena; they involve unrelated people and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "The claim about Finn's volunteer role has no bearing on the relative ages of Vik and Esme; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "The claim about Finn's role as lead volunteer has no bearing on Lena's age relative to the group.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Arriving first at the shoreline says nothing about what Ana was carrying or where it came from; the two claims describe unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A concerns arrival order at the shoreline, while claim B concerns who drove the minibus. Neither piece of information affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "If Ana arrived first at the shoreline, it is plausible that Esme arrived shortly after her, consistent with Ana being first.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A concerns Ana's arrival order at the shoreline, while claim B concerns Esme's stretching after a walk from the parking lot; they involve different people and actions with no logical connection given.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A concerns who arrived first at the shoreline, while B describes an unrelated action by a different person (Esme waving and setting down a water bottle). Neither claim's truth affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "If Ana arrived first, that leaves open who arrived last among the others; Ana being first is compatible with Lena being last, and does not directly imply or preclude it.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Ana arriving first at the shoreline says nothing about Lena's breathing condition; there is no logical connection between the order of arrival and someone being out of breath.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A concerns arrival order among people at the shoreline, while claim B concerns Lena's mode and route of travel. Neither statement provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Arriving first at a shoreline has no bearing on whether Ana shares a class with Esme; these describe unrelated aspects of Ana's life.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A concerns the order of arrival at a shoreline, while claim B concerns relative heights of two people. There is no logical or contextual link between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A concerns Ana's arrival order at the shoreline, while claim B compares walking speeds between Vik and Finn, neither of whom is mentioned in A. There's no logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns arrival order at a shoreline, while claim B concerns class membership of different people; they share no common subject matter or entities.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Arrival order at a shoreline has no bearing on class enrollment; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns the order of arrival at a shoreline, while claim B concerns a relative age difference between two unrelated individuals. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Ana arriving first at the shoreline concerns arrival order, which has no bearing on Lena's relative age within the group.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "The two claims describe unrelated actions by different people with no logical connection between carrying recycling bins and driving a minibus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "A describes what Ana was carrying; B describes a timing relationship between Esme's and Ana's arrival. The two claims concern different aspects and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "A describes Ana carrying bins while B describes Esme stretching after a walk; these involve different people and unrelated actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A concerns Ana carrying recycling bins, while claim B concerns Esme waving and setting down a water bottle. They involve different people and actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Claim A describes what Ana was doing, while claim B is about the arrival order of Lena; there is no logical or causal link between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "A describes Ana carrying bins, which has no clear bearing on Lena's physical state; the claims involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "These claims describe two different people doing unrelated activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Carrying recycling bins is unrelated to Ana's classmates or academic enrollment; the two claims concern different, independent aspects of Ana's life.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Claim A concerns Ana carrying borrowed recycling bins, while claim B concerns a height comparison between Finn and Vik. The two statements share no common subjects or context and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A concerns Ana carrying recycling bins, which has no logical or contextual connection to a comparison of walking speeds between Vik and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A concerns Ana carrying recycling bins, which has no logical or topical connection to whether Esme and Lena share a class.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Carrying recycling bins has no bearing on class membership or schooling relationships between Ana and Lena.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A concerns Ana carrying recycling bins, while claim B concerns the age difference between Vik and Esme; they share no entities or topics that would let one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A concerns Ana carrying recycling bins, which has no logical or contextual bearing on Lena's relative age within the group.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A concerns who drove the minibus, while claim B concerns the arrival order of Esme and Ana. These describe different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "A states Vik drove a minibus, while B describes Esme stretching after a short walk; these involve different people and unrelated activities with no apparent logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A concerns who drove the minibus, while claim B describes Esme's actions with a water bottle and waving; the two describe unrelated events with no logical or contextual connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Who drove the minibus has no stated bearing on the order in which people arrived; no causal or logical link is given between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "There is no stated connection between who drove the minibus and Lena's physical state; nothing in A implies or affects B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "These describe different people using different modes of transport, likely at different times or contexts; nothing about Vik driving a minibus bears on whether Lena biked from the north side of town.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "There is no logical or causal connection between who drove the minibus and Ana's classmates; the two statements involve unrelated subjects and facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Driving a minibus has no bearing on relative height between two people; the claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Driving a minibus has no logical bearing on relative walking speed compared to Finn; these describe unrelated activities and attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns who drove a minibus, which has no logical or contextual connection to claim B about class assignments of Esme and Lena.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "The claim about who drove the minibus has no logical or topical connection to whether Ana and Lena share a class.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Driving a minibus has no bearing on relative ages between Vik and Esme; these are independent facts about the same person.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A concerns who drove the minibus, which has no logical or causal bearing on the relative ages of group members mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A states Esme arrived shortly after Ana, while B describes Esme stretching after a walk from the parking lot; these are compatible everyday details about her arrival and could both be true without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "A describes when Esme arrived relative to Ana, while B describes an action Esme performed involving a wave and a water bottle; these events are compatible and neither implies nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A only orders Esme relative to Ana and says nothing about Lena's arrival time, so it neither confirms nor rules out Lena arriving last.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Claim A is about Esme's arrival time relative to Ana and says nothing about Lena's physical state, so there is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Claim A concerns Esme's and Ana's arrival times, while claim B concerns Lena's mode of travel from a different location; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "A implies both were present at the same event around the same time, which is consistent with and mildly suggestive of them sharing a class, but does not establish it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Claim A concerns arrival timing of Esme and Ana, while claim B concerns relative height of Finn and Vik. They involve entirely different people and attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A concerns the arrival times of Esme and Ana, while claim B concerns the relative walking speeds of Vik and Finn. There is no overlap in subjects or content between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A concerns the timing of Esme's arrival relative to Ana, while claim B concerns class membership relative to Lena. These involve different people and different subject matter, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Claim A concerns Esme's arrival time relative to Ana, while claim B concerns class enrollment between Ana and Lena; these involve different people and different topics with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Claim A concerns the timing of Esme's arrival relative to Ana, while claim B concerns an age comparison between Vik and Esme. These describe unrelated aspects of Esme and have no bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "A concerns arrival order of Esme and Ana, while B concerns Lena's relative age within the group; the two claims share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Both describe minor plausible actions Esme could do around the same time (after a walk, near a water bottle), but there's no direct causal or logical connection between stretching and waving/setting down a bottle.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A describes Esme's action after a walk, while claim B describes Lena's arrival order; they involve different people and no shared context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A concerns Esme stretching after a short walk, while claim B concerns Lena being out of breath; they involve different people and no stated connection between the events, so one does not bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "These describe different people using different modes of transport with no stated connection between them; one does not affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "A describes Esme's physical action after a walk, while B states a relationship between Ana and Esme's class membership; these concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Esme's stretching after a short walk has no logical or topical connection to a height comparison between Finn and Vik.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A concerns Esme stretching after a walk and has no connection to Vik and Finn's relative walking speeds.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "These claims concern unrelated topics: one is about a physical action after a walk, the other about class membership. No logical connection exists between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A concerns Esme stretching after a walk, while claim B concerns Ana and Lena's class assignments; the two share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Claim A describes a physical action Esme took after a walk, while claim B states an age relationship between Vik and Esme. These are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A describes Esme's physical action after a walk, while claim B concerns Lena's relative age within a group; the two share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Claim A describes Esme greeting others and setting down her water bottle, which doesn't indicate anything about arrival order or who came last among the group, including Lena.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "A describes Esme's action and does not mention Lena's physical state at all, so it provides no information about whether Lena was out of breath.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Claim A describes Esme's actions and does not mention Lena or her mode of transportation, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Esme waving to others gives no information about who Ana is or whether she shares a class with Esme; the claims are about different, unconnected matters.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A describes an unrelated action by Esme involving a water bottle, while claim B is a height comparison between two different people (Finn and Vik). There's no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A describes Esme's actions and greeting during what seems like a walk or activity, while claim B compares walking speeds between two different people (Vik and Finn) not mentioned in A. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A describes Esme's actions and gives no information about class membership or relationships to Lena, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A describes an unrelated action involving Esme waving and setting down a water bottle, while claim B discusses a class relationship between Ana and Lena. There is no shared subject or context linking these statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A describes a social gesture and an action with a water bottle, which has no bearing on relative ages of Esme and Vik.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A describes a friendly gesture and setting down a water bottle, which has no bearing on relative ages within the group described in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Arriving last could plausibly be due to hurrying, which would make being slightly out of breath more likely, but it's not a strong or necessary connection since arriving last could also be due to sauntering slowly.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Arriving last is consistent with having biked a long distance, and could even help explain why she was slower than others; the two claims describe different aspects (order of arrival vs. mode/route of travel) and don't conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Lena's arrival order has no bearing on which class Ana or Esme belong to; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Lena's arrival order and Finn's relative height are about entirely different domains with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Lena arriving last says nothing about the relative walking speeds of Vik and Finn, and the two claims involve different people/comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Arriving last relates to timing of arrival, while being in the same class concerns academic grouping; the two facts are independent of each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Lena's arrival order and her class assignment relative to Ana are unrelated pieces of information; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "The order in which Lena arrived has no bearing on the relative ages of Vik and Esme; the claims concern entirely different subjects and facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Arriving last relates to order of arrival, while being youngest relates to age; these are independent attributes with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Being slightly out of breath is consistent with and plausibly caused by having biked a long distance, so A supports the plausibility of B, though it's not strong evidence for the specific route or distance.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Lena being out of breath has no bearing on whether Ana and Esme share a class; the claims involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "There is no logical or contextual connection between Lena's physical state and the relative heights of Finn and Vik; these involve different people and unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Lena being slightly out of breath says nothing about a comparison between Vik's and Finn's walking speeds; the claims involve different, unconnected subjects.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Lena being out of breath is a physical state unrelated to whether Esme shares a class with her; the two claims have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Lena's being out of breath is a physical state unrelated to whether Ana shares her class; the claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Claim A concerns Lena's physical state, while claim B concerns an age difference between two different, unrelated people (Vik and Esme). There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Being out of breath (perhaps from exertion) has no logical bearing on Lena's relative age within the group; these are independent facts about her.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A concerns Lena's mode of transport and route, while claim B concerns Ana and Esme's class enrollment. They share no common subject, people, or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Claim A concerns Lena's mode of travel and route, while claim B concerns a height comparison between two unrelated individuals. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Claim A concerns Lena's mode of transport across town, while claim B compares walking speeds between two unrelated people, Vik and Finn. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns Lena's mode of transportation and origin, which has no bearing on classroom or class assignments involving Esme and Lena.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Claim A describes Lena's mode of transportation and route, which has no bearing on classroom assignments or relationships between Ana and Lena.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Claim A concerns Lena's mode and route of travel, while claim B concerns the relative ages of Vik and Esme. Neither claim shares any subject, entity, or logical connection with the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Biking across town has no bearing on relative age within a group; the two claims concern unrelated facts about Lena.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A concerns class membership of Ana and Esme, while claim B concerns relative height of Finn and Vik. They share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "The two claims involve entirely different people and topics (class membership vs. walking speed), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Knowing Ana shares a class with Esme says nothing about whether Esme shares a class with Lena; these involve different people and no shared constraint is given.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Knowing Ana's class relationship with Esme says nothing about whether Lena shares that class or not; these involve different people with no stated connection between Esme and Lena.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Ana being in the same class as Esme says nothing about Vik's age relative to Esme, so the claims are unrelated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Claim A concerns Ana and Esme being in the same class, while claim B concerns Lena's age ranking within a group; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Height and walking speed are largely independent attributes; being taller does not directly imply anything about relative walking speed, so the claims neither support nor contradict each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "The two claims concern entirely different people and different types of facts (relative height vs. class membership), with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "The two claims concern entirely different people and different types of facts (relative height vs. class membership), with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns relative heights of Finn and Vik, while claim B concerns relative ages of Vik and Esme. These involve different people, different attributes, and no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A concerns relative height between Finn and Vik, while claim B concerns relative age of Lena within a group. There is no shared subject or property linking the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "The two claims concern entirely different people and topics (walking speed vs. class membership) with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "The two claims concern entirely different people and different domains (walking speed vs. class membership), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Walking speed comparisons between Vik and Finn have no bearing on age comparisons between Vik and Esme; these involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A concerns relative walking speed between Vik and Finn, while claim B concerns Lena's age rank in a group; they share no common subject or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Both claims independently state that a different person is not in Lena's class; knowing Esme isn't in Lena's class gives no information about Ana's class placement.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A concerns class placement of Esme relative to Lena, while claim B concerns age difference between Vik and Esme. These involve different people and different attributes, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "A concerns class membership between Esme and Lena, while B concerns Lena's relative age within a group; the two claims address unrelated aspects of Lena.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "The two claims involve entirely different people and different types of facts (class placement vs. age difference), with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "A concerns class membership between Ana and Lena, while B concerns Lena's relative age within some group; these deal with different attributes and have no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "A only establishes a relative age relation between Vik and Esme, with no mention of Lena or the rest of the group, so it does not bear on whether Lena is the youngest overall.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana",
+     "she"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme",
+     "she"
+    ]
+   },
+   {
+    "id": "lena",
+    "mentions": [
+     "Lena"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "role",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "walking_speed",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 10,
+    "attribute": "class",
+    "kind": "same",
+    "a": "ana",
+    "b": "esme",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "class",
+    "kind": "different",
+    "a": "esme",
+    "b": "lena",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "class",
+    "kind": "different",
+    "a": "ana",
+    "b": "lena",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 4,
+    "attribute": "arrival_order",
+    "subject": "esme",
+    "comparative": "after",
+    "object": "ana",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "subject": "finn",
+    "comparative": "taller than",
+    "object": "vik",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "walking_speed",
+    "subject": "vik",
+    "comparative": "faster walker than",
+    "object": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "subject": "vik",
+    "comparative": "older than",
+    "object": "esme",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_order",
+    "entity": "ana",
+    "comparative": "first",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 7,
+    "attribute": "arrival_order",
+    "entity": "lena",
+    "comparative": "last",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "age",
+    "entity": "lena",
+    "comparative": "youngest",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "last",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "walking_speed",
+    "comparative": "faster walker than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "youngest",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 17,
+  "pairs_requested": 136,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 13,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [],
+  "entity_derivation": {
+   "order_kind": {
+    "role": null,
+    "arrival_order": "sequence",
+    "class": null,
+    "height": "magnitude",
+    "walking_speed": "magnitude",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 1,
+     "attribute": "arrival_order",
+     "entity": "ana",
+     "extreme": "min",
+     "edges": 2
+    },
+    {
+     "claim_id": 7,
+     "attribute": "arrival_order",
+     "entity": "lena",
+     "extreme": "max",
+     "edges": 2
+    },
+    {
+     "claim_id": 16,
+     "attribute": "age",
+     "entity": "lena",
+     "extreme": "min",
+     "edges": 2
+    }
+   ],
+   "extreme_edges": 6,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 17,
+  "n_edges": 3,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    15
+   ],
+   [
+    16
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   7.642090019328552e-32,
+   2.7117093616972283e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 4,
+    "residual": 0.0
+   },
+   {
+    "a": 7,
+    "b": 8,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 2.7117093616972283e-32
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 9661716,
+   "output_tokens": 892091,
+   "thinking_tokens": 0,
+   "calls": 23739,
+   "api_calls": 9153,
+   "cache_hits": 14586,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 27.78686899999997,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 255060,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 10553807,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7,
+    8,
+    9
+   ],
+   [
+    10
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    15
+   ],
+   [
+    16
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": []
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 10,
+   "attribute": "class",
+   "kind": "same",
+   "a": "ana",
+   "b": "esme",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "class",
+   "kind": "different",
+   "a": "esme",
+   "b": "lena",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "class",
+   "kind": "different",
+   "a": "ana",
+   "b": "lena",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 4,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "ana",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "finn",
+   "b": "vik",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 12,
+   "attribute": "walking_speed",
+   "kind": "greater",
+   "a": "vik",
+   "b": "finn",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "vik",
+   "b": "esme",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "ana",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 1,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "lena",
+   "b": "ana",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 7,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "lena",
+   "b": "ana",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 7,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "lena",
+   "b": "esme",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 16,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "esme",
+   "b": "lena",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 16,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "vik",
+   "b": "lena",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  }
+ ]
+}

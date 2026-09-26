@@ -1,0 +1,140 @@
+{
+ "request": "df779daa16a47f2cc79d854fef3118ecd1eb8ca3ab67b9858a002d531be1b250",
+ "tag": "text-be2015c73a39-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "her"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno",
+     "his"
+    ]
+   },
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma",
+     "her"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "shift",
+    "arity": "multi",
+    "arity_span": "The shop ran three shifts."
+   },
+   {
+    "key": "first_aid_kit_bringer",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "nervousness",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "shift_duration",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 9,
+    "attribute": "first_aid_kit_bringer",
+    "kind": "different",
+    "a": "ivo",
+    "b": "first-aid kit",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 10,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "nell",
+    "b": "zeno",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "zeno",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "nell",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 20,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "alma",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 21,
+    "attribute": "nervousness",
+    "kind": "same",
+    "a": "alma",
+    "b": "zeno",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "dev",
+    "b": "nell",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2228,
+  "output_tokens": 622,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

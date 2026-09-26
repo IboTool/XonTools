@@ -1,0 +1,101 @@
+{
+ "request": "c7c1e0f8a082fe331caa465b66f628089af2d567c1ab94908377c49221d72a35",
+ "tag": "text-da31378d4955-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   },
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla",
+     "she"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo",
+     "he"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "librarian",
+    "mentions": [
+     "The librarian"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "milo",
+    "b": "isla",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "milo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "milo",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "isla",
+    "b": "nell",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2119,
+  "output_tokens": 370,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

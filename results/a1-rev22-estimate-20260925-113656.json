@@ -1,0 +1,2965 @@
+{
+ "model": "claude-sonnet-5",
+ "fits": {
+  "relate_input_per_char": 0.3922223395030629,
+  "relate_input_intercept": 219.18156281881159,
+  "entity_input_per_char": 0.34653355131554286,
+  "entity_input_intercept": 487.34866785881525,
+  "relate_output_per_pair": 62.7654917202217,
+  "relate_output_intercept": 66.99642490274275,
+  "relate_calls_fitted": 1256,
+  "entity_calls_fitted": 180
+ },
+ "rev21_seed0": {
+  "calls": 2080,
+  "tokens": 4843798,
+  "usd": 26.403276,
+  "tokens_per_document": {
+   "extract": 2872.1666666666665,
+   "pairs": 884.0722222222222,
+   "relate": 17699.016666666666,
+   "entities": 2827.288888888889,
+   "direct": 2627.4444444444443
+  }
+ },
+ "d0": {
+  "documents": 12,
+  "calls": 1480,
+  "pairs": 1468,
+  "input_tokens": 1722270,
+  "output_tokens": 196805,
+  "tokens": 1919076,
+  "usd": 5.412595819052168,
+  "usd_batch": 2.706297909526084
+ },
+ "full": {
+  "documents": 180,
+  "calls": 23934,
+  "pairs": 23754,
+  "input_tokens": 27674052,
+  "output_tokens": 3202270,
+  "tokens": 30876322,
+  "usd": 87.3707999809682,
+  "usd_batch": 43.6853999904841
+ },
+ "full_entity_output_x1_5": {
+  "documents": 180,
+  "calls": 23934,
+  "pairs": 23754,
+  "input_tokens": 27674052,
+  "output_tokens": 3262222,
+  "tokens": 30936274,
+  "usd": 87.9703249809682,
+  "usd_batch": 43.9851624904841
+ },
+ "l1var_v22": {
+  "documents": 12,
+  "calls": 4440,
+  "pairs": 4404,
+  "input_tokens": 5166810,
+  "output_tokens": 590415,
+  "tokens": 5757228,
+  "usd": 16.237787457156504,
+  "usd_batch": 8.118893728578252
+ },
+ "prompt_cache": {
+  "relate_system_chars": 1456,
+  "relate_system_tokens_estimated": 571.0757263164596,
+  "minimum_cacheable_tokens": 1024,
+  "applies": false
+ },
+ "a1": {
+  "cap": 15000000,
+  "spent": 8369585,
+  "remaining": 6630415
+ },
+ "gate": {
+  "pass_limit": 4000000,
+  "full_tokens": 30876322,
+  "exceeds_pass_limit": true,
+  "exceeds_remaining_cap": true,
+  "stop": true
+ },
+ "documents": [
+  {
+   "doc_id": "b00-consistent",
+   "base": 0,
+   "pairs": 210,
+   "relate_input": 241692.16447644838,
+   "relate_output": 27250.00249082254,
+   "entity_input": 3424.5670488093565,
+   "entity_output": 441.0,
+   "rev21": {
+    "extract": 2849,
+    "pairs": 0,
+    "relate": 28430,
+    "entities": 2621,
+    "direct": 2479
+   }
+  },
+  {
+   "doc_id": "b00-direct",
+   "base": 0,
+   "pairs": 231,
+   "relate_input": 266069.25876402983,
+   "relate_output": 29975.00273990479,
+   "entity_input": 3458.180803286964,
+   "entity_output": 383.0,
+   "rev21": {
+    "extract": 2958,
+    "pairs": 0,
+    "relate": 31673,
+    "entities": 2596,
+    "direct": 2470
+   }
+  },
+  {
+   "doc_id": "b00-cycle",
+   "base": 0,
+   "pairs": 231,
+   "relate_input": 266135.1521170664,
+   "relate_output": 29975.00273990479,
+   "entity_input": 3460.9530716974887,
+   "entity_output": 271.0,
+   "rev21": {
+    "extract": 2938,
+    "pairs": 0,
+    "relate": 31462,
+    "entities": 2484,
+    "direct": 2457
+   }
+  },
+  {
+   "doc_id": "b01-consistent",
+   "base": 1,
+   "pairs": 63,
+   "relate_input": 71411.38790402346,
+   "relate_output": 8175.000747246761,
+   "entity_input": 3414.8641093725214,
+   "entity_output": 722.0,
+   "rev21": {
+    "extract": 2980,
+    "pairs": 1450,
+    "relate": 9044,
+    "entities": 2906,
+    "direct": 2767
+   }
+  },
+  {
+   "doc_id": "b01-direct",
+   "base": 1,
+   "pairs": 60,
+   "relate_input": 68320.10359895052,
+   "relate_output": 7785.714997377868,
+   "entity_input": 3404.468102833055,
+   "entity_output": 767.0,
+   "rev21": {
+    "extract": 2960,
+    "pairs": 1429,
+    "relate": 7932,
+    "entities": 2941,
+    "direct": 2688
+   }
+  },
+  {
+   "doc_id": "b01-cycle",
+   "base": 1,
+   "pairs": 63,
+   "relate_input": 71542.78238775698,
+   "relate_output": 8175.000747246761,
+   "entity_input": 3424.220515258041,
+   "entity_output": 604.0,
+   "rev21": {
+    "extract": 2977,
+    "pairs": 1470,
+    "relate": 9255,
+    "entities": 2797,
+    "direct": 2598
+   }
+  },
+  {
+   "doc_id": "b02-consistent",
+   "base": 2,
+   "pairs": 68,
+   "relate_input": 77547.35278073188,
+   "relate_output": 8823.810330361583,
+   "entity_input": 3450.9035987093375,
+   "entity_output": 487.0,
+   "rev21": {
+    "extract": 2957,
+    "pairs": 1557,
+    "relate": 9842,
+    "entities": 2690,
+    "direct": 3266
+   }
+  },
+  {
+   "doc_id": "b02-direct",
+   "base": 2,
+   "pairs": 66,
+   "relate_input": 75264.36799241134,
+   "relate_output": 8564.286497115654,
+   "entity_input": 3450.5570651580224,
+   "entity_output": 578.0,
+   "rev21": {
+    "extract": 2962,
+    "pairs": 1532,
+    "relate": 9304,
+    "entities": 2778,
+    "direct": 2536
+   }
+  },
+  {
+   "doc_id": "b02-cycle",
+   "base": 2,
+   "pairs": 69,
+   "relate_input": 78543.52679810625,
+   "relate_output": 8953.572246984548,
+   "entity_input": 3454.7154677738085,
+   "entity_output": 583.0,
+   "rev21": {
+    "extract": 2994,
+    "pairs": 1541,
+    "relate": 9720,
+    "entities": 2792,
+    "direct": 2684
+   }
+  },
+  {
+   "doc_id": "b03-consistent",
+   "base": 3,
+   "pairs": 54,
+   "relate_input": 61569.5970412042,
+   "relate_output": 7007.1434976400815,
+   "entity_input": 3424.913582360672,
+   "entity_output": 474.0,
+   "rev21": {
+    "extract": 2835,
+    "pairs": 1402,
+    "relate": 7394,
+    "entities": 2643,
+    "direct": 2301
+   }
+  },
+  {
+   "doc_id": "b03-direct",
+   "base": 3,
+   "pairs": 53,
+   "relate_input": 60476.93632831207,
+   "relate_output": 6877.381581017116,
+   "entity_input": 3439.8145250672405,
+   "entity_output": 529.0,
+   "rev21": {
+    "extract": 2896,
+    "pairs": 1352,
+    "relate": 7577,
+    "entities": 2714,
+    "direct": 2412
+   }
+  },
+  {
+   "doc_id": "b03-cycle",
+   "base": 3,
+   "pairs": 300,
+   "relate_input": 342468.89825441234,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3420.7551797448855,
+   "entity_output": 476.0,
+   "rev21": {
+    "extract": 2806,
+    "pairs": 0,
+    "relate": 39329,
+    "entities": 2637,
+    "direct": 2383
+   }
+  },
+  {
+   "doc_id": "b04-consistent",
+   "base": 4,
+   "pairs": 46,
+   "relate_input": 52596.900157760334,
+   "relate_output": 5969.048164656366,
+   "entity_input": 3461.6461388001194,
+   "entity_output": 724.0,
+   "rev21": {
+    "extract": 2987,
+    "pairs": 1355,
+    "relate": 6879,
+    "entities": 2967,
+    "direct": 3593
+   }
+  },
+  {
+   "doc_id": "b04-direct",
+   "base": 4,
+   "pairs": 300,
+   "relate_input": 343589.0852560331,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3461.992672351435,
+   "entity_output": 920.0,
+   "rev21": {
+    "extract": 2995,
+    "pairs": 0,
+    "relate": 39684,
+    "entities": 3153,
+    "direct": 2798
+   }
+  },
+  {
+   "doc_id": "b04-cycle",
+   "base": 4,
+   "pairs": 56,
+   "relate_input": 63900.4329549441,
+   "relate_output": 7266.66733088601,
+   "entity_input": 3475.507480852741,
+   "entity_output": 849.0,
+   "rev21": {
+    "extract": 3056,
+    "pairs": 1443,
+    "relate": 7720,
+    "entities": 3114,
+    "direct": 2611
+   }
+  },
+  {
+   "doc_id": "b05-consistent",
+   "base": 5,
+   "pairs": 64,
+   "relate_input": 73258.68439811948,
+   "relate_output": 8304.762663869726,
+   "entity_input": 3469.616410480377,
+   "entity_output": 730.0,
+   "rev21": {
+    "extract": 2922,
+    "pairs": 1543,
+    "relate": 9474,
+    "entities": 2930,
+    "direct": 2953
+   }
+  },
+  {
+   "doc_id": "b05-direct",
+   "base": 5,
+   "pairs": 57,
+   "relate_input": 65242.15485342068,
+   "relate_output": 7396.429247508974,
+   "entity_input": 3476.8936150580034,
+   "entity_output": 969.0,
+   "rev21": {
+    "extract": 2955,
+    "pairs": 1464,
+    "relate": 7781,
+    "entities": 3178,
+    "direct": 2510
+   }
+  },
+  {
+   "doc_id": "b05-cycle",
+   "base": 5,
+   "pairs": 69,
+   "relate_input": 78652.1723861486,
+   "relate_output": 8953.572246984548,
+   "entity_input": 3465.804541415906,
+   "entity_output": 782.0,
+   "rev21": {
+    "extract": 2950,
+    "pairs": 1542,
+    "relate": 9848,
+    "entities": 2992,
+    "direct": 2495
+   }
+  },
+  {
+   "doc_id": "b06-consistent",
+   "base": 6,
+   "pairs": 78,
+   "relate_input": 88797.54333974322,
+   "relate_output": 10121.429496591229,
+   "entity_input": 3498.7252287908827,
+   "entity_output": 374.0,
+   "rev21": {
+    "extract": 3189,
+    "pairs": 1606,
+    "relate": 10684,
+    "entities": 2648,
+    "direct": 2439
+   }
+  },
+  {
+   "doc_id": "b06-direct",
+   "base": 6,
+   "pairs": 79,
+   "relate_input": 89783.51957629052,
+   "relate_output": 10251.191413214192,
+   "entity_input": 3512.240037292189,
+   "entity_output": 447.0,
+   "rev21": {
+    "extract": 3247,
+    "pairs": 1599,
+    "relate": 10621,
+    "entities": 2736,
+    "direct": 2543
+   }
+  },
+  {
+   "doc_id": "b06-cycle",
+   "base": 6,
+   "pairs": 66,
+   "relate_input": 75470.67694298996,
+   "relate_output": 8564.286497115654,
+   "entity_input": 3483.131218981683,
+   "entity_output": 475.0,
+   "rev21": {
+    "extract": 3108,
+    "pairs": 1552,
+    "relate": 9559,
+    "entities": 2728,
+    "direct": 2474
+   }
+  },
+  {
+   "doc_id": "b07-consistent",
+   "base": 7,
+   "pairs": 78,
+   "relate_input": 88772.04888767553,
+   "relate_output": 10121.429496591229,
+   "entity_input": 3471.349078236955,
+   "entity_output": 1136.0,
+   "rev21": {
+    "extract": 3127,
+    "pairs": 1676,
+    "relate": 10466,
+    "entities": 3392,
+    "direct": 2953
+   }
+  },
+  {
+   "doc_id": "b07-direct",
+   "base": 7,
+   "pairs": 75,
+   "relate_input": 85473.67118734497,
+   "relate_output": 9732.143746722335,
+   "entity_input": 3490.4084235593095,
+   "entity_output": 1193.0,
+   "rev21": {
+    "extract": 3198,
+    "pairs": 1609,
+    "relate": 10499,
+    "entities": 3470,
+    "direct": 3010
+   }
+  },
+  {
+   "doc_id": "b07-cycle",
+   "base": 7,
+   "pairs": 76,
+   "relate_input": 86627.91080753908,
+   "relate_output": 9861.9056633453,
+   "entity_input": 3471.0025446856394,
+   "entity_output": 1136.0,
+   "rev21": {
+    "extract": 3239,
+    "pairs": 1642,
+    "relate": 10550,
+    "entities": 3391,
+    "direct": 2741
+   }
+  },
+  {
+   "doc_id": "b08-consistent",
+   "base": 8,
+   "pairs": 120,
+   "relate_input": 135820.07028600012,
+   "relate_output": 15571.429994755736,
+   "entity_input": 3165.3599524253304,
+   "entity_output": 550.0,
+   "rev21": {
+    "extract": 2218,
+    "pairs": 0,
+    "relate": 14744,
+    "entities": 2478,
+    "direct": 3100
+   }
+  },
+  {
+   "doc_id": "b08-direct",
+   "base": 8,
+   "pairs": 153,
+   "relate_input": 173284.775343238,
+   "relate_output": 19853.573243313564,
+   "entity_input": 3204.1717101726713,
+   "entity_output": 621.0,
+   "rev21": {
+    "extract": 2340,
+    "pairs": 0,
+    "relate": 19611,
+    "entities": 2592,
+    "direct": 2782
+   }
+  },
+  {
+   "doc_id": "b08-cycle",
+   "base": 8,
+   "pairs": 54,
+   "relate_input": 61525.66813917986,
+   "relate_output": 7007.1434976400815,
+   "entity_input": 3412.784908064628,
+   "entity_output": 576.0,
+   "rev21": {
+    "extract": 3044,
+    "pairs": 1394,
+    "relate": 7638,
+    "entities": 2759,
+    "direct": 2697
+   }
+  },
+  {
+   "doc_id": "b09-consistent",
+   "base": 9,
+   "pairs": 61,
+   "relate_input": 69408.44986610812,
+   "relate_output": 7915.476914000832,
+   "entity_input": 3453.3293335685466,
+   "entity_output": 899.0,
+   "rev21": {
+    "extract": 3038,
+    "pairs": 1473,
+    "relate": 8691,
+    "entities": 3117,
+    "direct": 3677
+   }
+  },
+  {
+   "doc_id": "b09-direct",
+   "base": 9,
+   "pairs": 79,
+   "relate_input": 90110.63300743607,
+   "relate_output": 10251.191413214192,
+   "entity_input": 3533.0320503711214,
+   "entity_output": 745.0,
+   "rev21": {
+    "extract": 3220,
+    "pairs": 1643,
+    "relate": 10479,
+    "entities": 3034,
+    "direct": 2355
+   }
+  },
+  {
+   "doc_id": "b09-cycle",
+   "base": 9,
+   "pairs": 72,
+   "relate_input": 82049.39011603393,
+   "relate_output": 9342.857996853441,
+   "entity_input": 3536.150852332961,
+   "entity_output": 924.0,
+   "rev21": {
+    "extract": 3191,
+    "pairs": 1559,
+    "relate": 10252,
+    "entities": 3217,
+    "direct": 2515
+   }
+  },
+  {
+   "doc_id": "b10-consistent",
+   "base": 10,
+   "pairs": 54,
+   "relate_input": 61704.52152599326,
+   "relate_output": 7007.1434976400815,
+   "entity_input": 3454.368934222493,
+   "entity_output": 585.0,
+   "rev21": {
+    "extract": 2900,
+    "pairs": 1415,
+    "relate": 7600,
+    "entities": 2789,
+    "direct": 2288
+   }
+  },
+  {
+   "doc_id": "b10-direct",
+   "base": 10,
+   "pairs": 56,
+   "relate_input": 63980.054089863224,
+   "relate_output": 7266.66733088601,
+   "entity_input": 3433.5769211435604,
+   "entity_output": 719.0,
+   "rev21": {
+    "extract": 2909,
+    "pairs": 1406,
+    "relate": 7864,
+    "entities": 2914,
+    "direct": 2388
+   }
+  },
+  {
+   "doc_id": "b10-cycle",
+   "base": 10,
+   "pairs": 300,
+   "relate_input": 342421.831573672,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3419.022511988308,
+   "entity_output": 575.0,
+   "rev21": {
+    "extract": 2818,
+    "pairs": 0,
+    "relate": 39150,
+    "entities": 2749,
+    "direct": 2399
+   }
+  },
+  {
+   "doc_id": "b11-consistent",
+   "base": 11,
+   "pairs": 72,
+   "relate_input": 82024.28788630574,
+   "relate_output": 9342.857996853441,
+   "entity_input": 3458.873870389595,
+   "entity_output": 559.0,
+   "rev21": {
+    "extract": 3077,
+    "pairs": 1609,
+    "relate": 9939,
+    "entities": 2792,
+    "direct": 3058
+   }
+  },
+  {
+   "doc_id": "b11-direct",
+   "base": 11,
+   "pairs": 171,
+   "relate_input": 193866.15400399902,
+   "relate_output": 22189.28774252692,
+   "entity_input": 3230.5082600726523,
+   "entity_output": 681.0,
+   "rev21": {
+    "extract": 2473,
+    "pairs": 0,
+    "relate": 22196,
+    "entities": 2688,
+    "direct": 2644
+   }
+  },
+  {
+   "doc_id": "b11-cycle",
+   "base": 11,
+   "pairs": 75,
+   "relate_input": 85451.31451399329,
+   "relate_output": 9732.143746722335,
+   "entity_input": 3458.180803286964,
+   "entity_output": 562.0,
+   "rev21": {
+    "extract": 3077,
+    "pairs": 1642,
+    "relate": 10375,
+    "entities": 2795,
+    "direct": 2907
+   }
+  },
+  {
+   "doc_id": "b12-consistent",
+   "base": 12,
+   "pairs": 190,
+   "relate_input": 218597.56651407856,
+   "relate_output": 24654.764158363247,
+   "entity_input": 3396.151297601482,
+   "entity_output": 492.0,
+   "rev21": {
+    "extract": 2726,
+    "pairs": 0,
+    "relate": 25516,
+    "entities": 2613,
+    "direct": 2270
+   }
+  },
+  {
+   "doc_id": "b12-direct",
+   "base": 12,
+   "pairs": 231,
+   "relate_input": 264891.41507850215,
+   "relate_output": 29975.00273990479,
+   "entity_input": 3408.6265054488413,
+   "entity_output": 547.0,
+   "rev21": {
+    "extract": 2805,
+    "pairs": 0,
+    "relate": 30956,
+    "entities": 2686,
+    "direct": 2339
+   }
+  },
+  {
+   "doc_id": "b12-cycle",
+   "base": 12,
+   "pairs": 76,
+   "relate_input": 86297.6595976775,
+   "relate_output": 9861.9056633453,
+   "entity_input": 3465.4580078645904,
+   "entity_output": 500.0,
+   "rev21": {
+    "extract": 3051,
+    "pairs": 1573,
+    "relate": 10225,
+    "entities": 2719,
+    "direct": 2421
+   }
+  },
+  {
+   "doc_id": "b13-consistent",
+   "base": 13,
+   "pairs": 300,
+   "relate_input": 342101.7781446375,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3407.2403712435794,
+   "entity_output": 520.0,
+   "rev21": {
+    "extract": 2871,
+    "pairs": 0,
+    "relate": 39982,
+    "entities": 2698,
+    "direct": 2427
+   }
+  },
+  {
+   "doc_id": "b13-direct",
+   "base": 13,
+   "pairs": 77,
+   "relate_input": 87244.021377935,
+   "relate_output": 9991.667579968263,
+   "entity_input": 3420.40864619357,
+   "entity_output": 647.0,
+   "rev21": {
+    "extract": 3019,
+    "pairs": 1600,
+    "relate": 10038,
+    "entities": 2849,
+    "direct": 2349
+   }
+  },
+  {
+   "doc_id": "b13-cycle",
+   "base": 13,
+   "pairs": 56,
+   "relate_input": 63807.86848282138,
+   "relate_output": 7266.66733088601,
+   "entity_input": 3411.0522403080504,
+   "entity_output": 740.0,
+   "rev21": {
+    "extract": 2921,
+    "pairs": 1425,
+    "relate": 7807,
+    "entities": 2921,
+    "direct": 2563
+   }
+  },
+  {
+   "doc_id": "b14-consistent",
+   "base": 14,
+   "pairs": 78,
+   "relate_input": 88702.62553358349,
+   "relate_output": 10121.429496591229,
+   "entity_input": 3464.0718736593285,
+   "entity_output": 354.0,
+   "rev21": {
+    "extract": 3057,
+    "pairs": 1605,
+    "relate": 10391,
+    "entities": 2583,
+    "direct": 4163
+   }
+  },
+  {
+   "doc_id": "b14-direct",
+   "base": 14,
+   "pairs": 276,
+   "relate_input": 314997.77410538145,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3397.1908982554287,
+   "entity_output": 560.0,
+   "rev21": {
+    "extract": 2846,
+    "pairs": 0,
+    "relate": 36977,
+    "entities": 2711,
+    "direct": 2635
+   }
+  },
+  {
+   "doc_id": "b14-cycle",
+   "base": 14,
+   "pairs": 300,
+   "relate_input": 342854.84503648337,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3434.9630553488228,
+   "entity_output": 468.0,
+   "rev21": {
+    "extract": 2909,
+    "pairs": 0,
+    "relate": 39916,
+    "entities": 2651,
+    "direct": 2526
+   }
+  },
+  {
+   "doc_id": "b15-consistent",
+   "base": 15,
+   "pairs": 45,
+   "relate_input": 50948.852612131865,
+   "relate_output": 5839.286248033401,
+   "entity_input": 3068.3305580569786,
+   "entity_output": 489.0,
+   "rev21": {
+    "extract": 1889,
+    "pairs": 0,
+    "relate": 6176,
+    "entities": 2309,
+    "direct": 2312
+   }
+  },
+  {
+   "doc_id": "b15-direct",
+   "base": 15,
+   "pairs": 55,
+   "relate_input": 62247.678741241594,
+   "relate_output": 7136.905414263046,
+   "entity_input": 3082.884967212231,
+   "entity_output": 583.0,
+   "rev21": {
+    "extract": 1953,
+    "pairs": 0,
+    "relate": 6891,
+    "entities": 2421,
+    "direct": 2269
+   }
+  },
+  {
+   "doc_id": "b15-cycle",
+   "base": 15,
+   "pairs": 45,
+   "relate_input": 50945.322611076335,
+   "relate_output": 5839.286248033401,
+   "entity_input": 3067.984024505663,
+   "entity_output": 487.0,
+   "rev21": {
+    "extract": 1888,
+    "pairs": 0,
+    "relate": 6221,
+    "entities": 2306,
+    "direct": 2426
+   }
+  },
+  {
+   "doc_id": "b16-consistent",
+   "base": 16,
+   "pairs": 171,
+   "relate_input": 195249.91441776583,
+   "relate_output": 22189.28774252692,
+   "entity_input": 3298.428836130499,
+   "entity_output": 493.0,
+   "rev21": {
+    "extract": 2466,
+    "pairs": 0,
+    "relate": 22879,
+    "entities": 2542,
+    "direct": 2312
+   }
+  },
+  {
+   "doc_id": "b16-direct",
+   "base": 16,
+   "pairs": 190,
+   "relate_input": 216786.6759725929,
+   "relate_output": 24654.764158363247,
+   "entity_input": 3311.943644631805,
+   "entity_output": 668.0,
+   "rev21": {
+    "extract": 2537,
+    "pairs": 0,
+    "relate": 25399,
+    "entities": 2734,
+    "direct": 2371
+   }
+  },
+  {
+   "doc_id": "b16-cycle",
+   "base": 16,
+   "pairs": 190,
+   "relate_input": 216853.74599264792,
+   "relate_output": 24654.764158363247,
+   "entity_input": 3315.062446593645,
+   "entity_output": 548.0,
+   "rev21": {
+    "extract": 2535,
+    "pairs": 0,
+    "relate": 25243,
+    "entities": 2619,
+    "direct": 2418
+   }
+  },
+  {
+   "doc_id": "b17-consistent",
+   "base": 17,
+   "pairs": 60,
+   "relate_input": 68544.06255480676,
+   "relate_output": 7785.714997377868,
+   "entity_input": 3449.5174645040756,
+   "entity_output": 574.0,
+   "rev21": {
+    "extract": 2983,
+    "pairs": 1496,
+    "relate": 8236,
+    "entities": 2782,
+    "direct": 3107
+   }
+  },
+  {
+   "doc_id": "b17-direct",
+   "base": 17,
+   "pairs": 63,
+   "relate_input": 72080.51921521568,
+   "relate_output": 8175.000747246761,
+   "entity_input": 3463.725340108013,
+   "entity_output": 622.0,
+   "rev21": {
+    "extract": 3065,
+    "pairs": 1527,
+    "relate": 9339,
+    "entities": 2850,
+    "direct": 2431
+   }
+  },
+  {
+   "doc_id": "b17-cycle",
+   "base": 17,
+   "pairs": 67,
+   "relate_input": 76452.73095614223,
+   "relate_output": 8694.04841373862,
+   "entity_input": 3452.982800017231,
+   "entity_output": 577.0,
+   "rev21": {
+    "extract": 3027,
+    "pairs": 1558,
+    "relate": 9734,
+    "entities": 2792,
+    "direct": 2657
+   }
+  },
+  {
+   "doc_id": "b18-consistent",
+   "base": 18,
+   "pairs": 82,
+   "relate_input": 93156.81174346617,
+   "relate_output": 10640.477163083086,
+   "entity_input": 3489.0222893540476,
+   "entity_output": 425.0,
+   "rev21": {
+    "extract": 3182,
+    "pairs": 1596,
+    "relate": 11312,
+    "entities": 2678,
+    "direct": 2346
+   }
+  },
+  {
+   "doc_id": "b18-direct",
+   "base": 18,
+   "pairs": 64,
+   "relate_input": 72909.21429362225,
+   "relate_output": 8304.762663869726,
+   "entity_input": 3451.9431993632843,
+   "entity_output": 642.0,
+   "rev21": {
+    "extract": 3065,
+    "pairs": 1457,
+    "relate": 9157,
+    "entities": 2855,
+    "direct": 2492
+   }
+  },
+  {
+   "doc_id": "b18-cycle",
+   "base": 18,
+   "pairs": 82,
+   "relate_input": 93441.1729396059,
+   "relate_output": 10640.477163083086,
+   "entity_input": 3493.5272255211494,
+   "entity_output": 473.0,
+   "rev21": {
+    "extract": 3141,
+    "pairs": 1672,
+    "relate": 11542,
+    "entities": 2725,
+    "direct": 2477
+   }
+  },
+  {
+   "doc_id": "b19-consistent",
+   "base": 19,
+   "pairs": 75,
+   "relate_input": 85195.5855486373,
+   "relate_output": 9732.143746722335,
+   "entity_input": 3485.9034873922074,
+   "entity_output": 971.0,
+   "rev21": {
+    "extract": 3242,
+    "pairs": 1568,
+    "relate": 10001,
+    "entities": 3240,
+    "direct": 3724
+   }
+  },
+  {
+   "doc_id": "b19-direct",
+   "base": 19,
+   "pairs": 84,
+   "relate_input": 95596.68546758791,
+   "relate_output": 10900.000996329014,
+   "entity_input": 3515.7053728053443,
+   "entity_output": 974.0,
+   "rev21": {
+    "extract": 3507,
+    "pairs": 1638,
+    "relate": 11619,
+    "entities": 3280,
+    "direct": 2472
+   }
+  },
+  {
+   "doc_id": "b19-cycle",
+   "base": 19,
+   "pairs": 82,
+   "relate_input": 93163.47952323772,
+   "relate_output": 10640.477163083086,
+   "entity_input": 3504.616299163247,
+   "entity_output": 1293.0,
+   "rev21": {
+    "extract": 3191,
+    "pairs": 1640,
+    "relate": 11821,
+    "entities": 3579,
+    "direct": 2528
+   }
+  },
+  {
+   "doc_id": "b20-consistent",
+   "base": 20,
+   "pairs": 67,
+   "relate_input": 76323.29758410621,
+   "relate_output": 8694.04841373862,
+   "entity_input": 3501.1509636500914,
+   "entity_output": 642.0,
+   "rev21": {
+    "extract": 3091,
+    "pairs": 1524,
+    "relate": 9517,
+    "entities": 2889,
+    "direct": 2765
+   }
+  },
+  {
+   "doc_id": "b20-direct",
+   "base": 20,
+   "pairs": 69,
+   "relate_input": 78610.98904050078,
+   "relate_output": 8953.572246984548,
+   "entity_input": 3506.002433368509,
+   "entity_output": 684.0,
+   "rev21": {
+    "extract": 3119,
+    "pairs": 1553,
+    "relate": 9753,
+    "entities": 2938,
+    "direct": 2774
+   }
+  },
+  {
+   "doc_id": "b20-cycle",
+   "base": 20,
+   "pairs": 73,
+   "relate_input": 83133.02971511749,
+   "relate_output": 9472.619913476407,
+   "entity_input": 3504.9628327145624,
+   "entity_output": 644.0,
+   "rev21": {
+    "extract": 3094,
+    "pairs": 1604,
+    "relate": 9775,
+    "entities": 2894,
+    "direct": 2736
+   }
+  },
+  {
+   "doc_id": "b21-consistent",
+   "base": 21,
+   "pairs": 153,
+   "relate_input": 174044.90223719494,
+   "relate_output": 19853.573243313564,
+   "entity_input": 3243.6765350226433,
+   "entity_output": 370.0,
+   "rev21": {
+    "extract": 2423,
+    "pairs": 0,
+    "relate": 19781,
+    "entities": 2378,
+    "direct": 2376
+   }
+  },
+  {
+   "doc_id": "b21-direct",
+   "base": 21,
+   "pairs": 72,
+   "relate_input": 81825.43116017769,
+   "relate_output": 9342.857996853441,
+   "entity_input": 3433.923454694876,
+   "entity_output": 514.0,
+   "rev21": {
+    "extract": 2915,
+    "pairs": 1592,
+    "relate": 9985,
+    "entities": 2708,
+    "direct": 2470
+   }
+  },
+  {
+   "doc_id": "b21-cycle",
+   "base": 21,
+   "pairs": 153,
+   "relate_input": 173944.88554062165,
+   "relate_output": 19853.573243313564,
+   "entity_input": 3238.47853175291,
+   "entity_output": 517.0,
+   "rev21": {
+    "extract": 2539,
+    "pairs": 0,
+    "relate": 19902,
+    "entities": 2519,
+    "direct": 2429
+   }
+  },
+  {
+   "doc_id": "b22-consistent",
+   "base": 22,
+   "pairs": 276,
+   "relate_input": 313319.84693698736,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3332.7356577107375,
+   "entity_output": 802.0,
+   "rev21": {
+    "extract": 2924,
+    "pairs": 0,
+    "relate": 36674,
+    "entities": 2924,
+    "direct": 2457
+   }
+  },
+  {
+   "doc_id": "b22-direct",
+   "base": 22,
+   "pairs": 300,
+   "relate_input": 340416.79097413237,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3345.2108655580973,
+   "entity_output": 932.0,
+   "rev21": {
+    "extract": 2789,
+    "pairs": 0,
+    "relate": 39438,
+    "entities": 3070,
+    "direct": 2510
+   }
+  },
+  {
+   "doc_id": "b22-cycle",
+   "base": 22,
+   "pairs": 276,
+   "relate_input": 313058.2346365388,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3322.686184722587,
+   "entity_output": 850.0,
+   "rev21": {
+    "extract": 2693,
+    "pairs": 0,
+    "relate": 36480,
+    "entities": 2947,
+    "direct": 2560
+   }
+  },
+  {
+   "doc_id": "b23-consistent",
+   "base": 23,
+   "pairs": 77,
+   "relate_input": 87320.1125117986,
+   "relate_output": 9991.667579968263,
+   "entity_input": 3460.2600045948575,
+   "entity_output": 411.0,
+   "rev21": {
+    "extract": 3062,
+    "pairs": 1552,
+    "relate": 10253,
+    "entities": 2642,
+    "direct": 2578
+   }
+  },
+  {
+   "doc_id": "b23-direct",
+   "base": 23,
+   "pairs": 76,
+   "relate_input": 86294.52181896148,
+   "relate_output": 9861.9056633453,
+   "entity_input": 3469.9629440316926,
+   "entity_output": 517.0,
+   "rev21": {
+    "extract": 3083,
+    "pairs": 1549,
+    "relate": 10029,
+    "entities": 2756,
+    "direct": 2616
+   }
+  },
+  {
+   "doc_id": "b23-cycle",
+   "base": 23,
+   "pairs": 76,
+   "relate_input": 86642.8152564402,
+   "relate_output": 9861.9056633453,
+   "entity_input": 3475.1609473014255,
+   "entity_output": 409.0,
+   "rev21": {
+    "extract": 3038,
+    "pairs": 1592,
+    "relate": 10567,
+    "entities": 2647,
+    "direct": 2446
+   }
+  },
+  {
+   "doc_id": "b24-consistent",
+   "base": 24,
+   "pairs": 64,
+   "relate_input": 73058.25878263342,
+   "relate_output": 8304.762663869726,
+   "entity_input": 3499.764829444829,
+   "entity_output": 599.0,
+   "rev21": {
+    "extract": 3104,
+    "pairs": 1507,
+    "relate": 9350,
+    "entities": 2862,
+    "direct": 2333
+   }
+  },
+  {
+   "doc_id": "b24-direct",
+   "base": 24,
+   "pairs": 50,
+   "relate_input": 56966.36634231036,
+   "relate_output": 6488.095831148223,
+   "entity_input": 3436.0026560027695,
+   "entity_output": 505.0,
+   "rev21": {
+    "extract": 2985,
+    "pairs": 1367,
+    "relate": 7140,
+    "entities": 2705,
+    "direct": 2460
+   }
+  },
+  {
+   "doc_id": "b24-cycle",
+   "base": 24,
+   "pairs": 54,
+   "relate_input": 61515.86258069228,
+   "relate_output": 7007.1434976400815,
+   "entity_input": 3467.537209172484,
+   "entity_output": 875.0,
+   "rev21": {
+    "extract": 3029,
+    "pairs": 1385,
+    "relate": 7618,
+    "entities": 3104,
+    "direct": 2466
+   }
+  },
+  {
+   "doc_id": "b25-consistent",
+   "base": 25,
+   "pairs": 276,
+   "relate_input": 314014.47270024725,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3359.4187411620346,
+   "entity_output": 758.0,
+   "rev21": {
+    "extract": 2754,
+    "pairs": 0,
+    "relate": 36293,
+    "entities": 2885,
+    "direct": 2642
+   }
+  },
+  {
+   "doc_id": "b25-direct",
+   "base": 25,
+   "pairs": 276,
+   "relate_input": 314185.8738626101,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3366.00287863703,
+   "entity_output": 642.0,
+   "rev21": {
+    "extract": 2791,
+    "pairs": 0,
+    "relate": 36024,
+    "entities": 2776,
+    "direct": 2511
+   }
+  },
+  {
+   "doc_id": "b25-cycle",
+   "base": 25,
+   "pairs": 276,
+   "relate_input": 314618.8873254215,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3382.636489100176,
+   "entity_output": 672.0,
+   "rev21": {
+    "extract": 2784,
+    "pairs": 0,
+    "relate": 36274,
+    "entities": 2817,
+    "direct": 2555
+   }
+  },
+  {
+   "doc_id": "b26-consistent",
+   "base": 26,
+   "pairs": 253,
+   "relate_input": 288467.52062385494,
+   "relate_output": 32829.76490561001,
+   "entity_input": 3365.3098115343987,
+   "entity_output": 448.0,
+   "rev21": {
+    "extract": 2744,
+    "pairs": 0,
+    "relate": 33824,
+    "entities": 2582,
+    "direct": 2690
+   }
+  },
+  {
+   "doc_id": "b26-direct",
+   "base": 26,
+   "pairs": 52,
+   "relate_input": 59252.48890934691,
+   "relate_output": 6747.619664394152,
+   "entity_input": 3423.8739817067253,
+   "entity_output": 450.0,
+   "rev21": {
+    "extract": 2924,
+    "pairs": 1379,
+    "relate": 7283,
+    "entities": 2640,
+    "direct": 2722
+   }
+  },
+  {
+   "doc_id": "b26-cycle",
+   "base": 26,
+   "pairs": 276,
+   "relate_input": 315511.97759246995,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3416.9433106804145,
+   "entity_output": 911.0,
+   "rev21": {
+    "extract": 2881,
+    "pairs": 0,
+    "relate": 36945,
+    "entities": 3090,
+    "direct": 2746
+   }
+  },
+  {
+   "doc_id": "b27-consistent",
+   "base": 27,
+   "pairs": 15,
+   "relate_input": 16944.905303778825,
+   "relate_output": 1946.428749344467,
+   "entity_input": 2995.2119787293987,
+   "entity_output": 339.0,
+   "rev21": {
+    "extract": 1678,
+    "pairs": 0,
+    "relate": 2073,
+    "entities": 2074,
+    "direct": 2263
+   }
+  },
+  {
+   "doc_id": "b27-direct",
+   "base": 27,
+   "pairs": 91,
+   "relate_input": 103817.17062882832,
+   "relate_output": 11808.334412689766,
+   "entity_input": 3188.231166812156,
+   "entity_output": 418.0,
+   "rev21": {
+    "extract": 2278,
+    "pairs": 0,
+    "relate": 12066,
+    "entities": 2350,
+    "direct": 2299
+   }
+  },
+  {
+   "doc_id": "b27-cycle",
+   "base": 27,
+   "pairs": 78,
+   "relate_input": 88966.98339040855,
+   "relate_output": 10121.429496591229,
+   "entity_input": 3166.399553079277,
+   "entity_output": 343.0,
+   "rev21": {
+    "extract": 2150,
+    "pairs": 0,
+    "relate": 9956,
+    "entities": 2254,
+    "direct": 2416
+   }
+  },
+  {
+   "doc_id": "b28-consistent",
+   "base": 28,
+   "pairs": 253,
+   "relate_input": 288286.3139030046,
+   "relate_output": 32829.76490561001,
+   "entity_input": 3358.0326069567723,
+   "entity_output": 501.0,
+   "rev21": {
+    "extract": 2871,
+    "pairs": 0,
+    "relate": 33127,
+    "entities": 2624,
+    "direct": 2368
+   }
+  },
+  {
+   "doc_id": "b28-direct",
+   "base": 28,
+   "pairs": 78,
+   "relate_input": 88510.43658722698,
+   "relate_output": 10121.429496591229,
+   "entity_input": 3132.7857986016693,
+   "entity_output": 672.0,
+   "rev21": {
+    "extract": 2197,
+    "pairs": 0,
+    "relate": 9862,
+    "entities": 2566,
+    "direct": 2444
+   }
+  },
+  {
+   "doc_id": "b28-cycle",
+   "base": 28,
+   "pairs": 190,
+   "relate_input": 217658.58623330822,
+   "relate_output": 24654.764158363247,
+   "entity_input": 3352.4880701357233,
+   "entity_output": 546.0,
+   "rev21": {
+    "extract": 2664,
+    "pairs": 0,
+    "relate": 25544,
+    "entities": 2654,
+    "direct": 2449
+   }
+  },
+  {
+   "doc_id": "b29-consistent",
+   "base": 29,
+   "pairs": 276,
+   "relate_input": 313906.21933454444,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3355.260338546248,
+   "entity_output": 674.0,
+   "rev21": {
+    "extract": 2662,
+    "pairs": 0,
+    "relate": 35983,
+    "entities": 2800,
+    "direct": 2572
+   }
+  },
+  {
+   "doc_id": "b29-direct",
+   "base": 29,
+   "pairs": 300,
+   "relate_input": 341056.8978322013,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3368.775147047554,
+   "entity_output": 790.0,
+   "rev21": {
+    "extract": 2725,
+    "pairs": 0,
+    "relate": 39677,
+    "entities": 2930,
+    "direct": 2444
+   }
+  },
+  {
+   "doc_id": "b29-cycle",
+   "base": 29,
+   "pairs": 64,
+   "relate_input": 72530.3275136623,
+   "relate_output": 8304.762663869726,
+   "entity_input": 3361.4979424699277,
+   "entity_output": 674.0,
+   "rev21": {
+    "extract": 2711,
+    "pairs": 1478,
+    "relate": 9148,
+    "entities": 2809,
+    "direct": 2313
+   }
+  },
+  {
+   "doc_id": "b30-consistent",
+   "base": 30,
+   "pairs": 276,
+   "relate_input": 314627.90843923006,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3382.9830226514914,
+   "entity_output": 370.0,
+   "rev21": {
+    "extract": 2688,
+    "pairs": 0,
+    "relate": 35644,
+    "entities": 2489,
+    "direct": 2218
+   }
+  },
+  {
+   "doc_id": "b30-direct",
+   "base": 30,
+   "pairs": 56,
+   "relate_input": 63727.07068088375,
+   "relate_output": 7266.66733088601,
+   "entity_input": 3403.081968627793,
+   "entity_output": 480.0,
+   "rev21": {
+    "extract": 2783,
+    "pairs": 1388,
+    "relate": 7542,
+    "entities": 2624,
+    "direct": 2212
+   }
+  },
+  {
+   "doc_id": "b30-cycle",
+   "base": 30,
+   "pairs": 276,
+   "relate_input": 314654.9717806558,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3384.0226233054377,
+   "entity_output": 397.0,
+   "rev21": {
+    "extract": 2698,
+    "pairs": 0,
+    "relate": 36235,
+    "entities": 2519,
+    "direct": 2323
+   }
+  },
+  {
+   "doc_id": "b31-consistent",
+   "base": 31,
+   "pairs": 69,
+   "relate_input": 78011.6733057401,
+   "relate_output": 8953.572246984548,
+   "entity_input": 3408.973039000157,
+   "entity_output": 859.0,
+   "rev21": {
+    "extract": 2926,
+    "pairs": 1462,
+    "relate": 9612,
+    "entities": 3055,
+    "direct": 5093
+   }
+  },
+  {
+   "doc_id": "b31-direct",
+   "base": 31,
+   "pairs": 71,
+   "relate_input": 80366.43478218968,
+   "relate_output": 9213.096080230476,
+   "entity_input": 3403.775035730424,
+   "entity_output": 1084.0,
+   "rev21": {
+    "extract": 2930,
+    "pairs": 1474,
+    "relate": 9842,
+    "entities": 3270,
+    "direct": 2388
+   }
+  },
+  {
+   "doc_id": "b31-cycle",
+   "base": 31,
+   "pairs": 73,
+   "relate_input": 82825.9196232866,
+   "relate_output": 9472.619913476407,
+   "entity_input": 3409.666106102788,
+   "entity_output": 967.0,
+   "rev21": {
+    "extract": 2898,
+    "pairs": 1540,
+    "relate": 10153,
+    "entities": 3153,
+    "direct": 2550
+   }
+  },
+  {
+   "doc_id": "b32-consistent",
+   "base": 32,
+   "pairs": 300,
+   "relate_input": 341499.3246311608,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3385.0622239593845,
+   "entity_output": 489.0,
+   "rev21": {
+    "extract": 2941,
+    "pairs": 0,
+    "relate": 38928,
+    "entities": 2620,
+    "direct": 2834
+   }
+  },
+  {
+   "doc_id": "b32-direct",
+   "base": 32,
+   "pairs": 276,
+   "relate_input": 314663.99289446435,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3384.3691568567533,
+   "entity_output": 553.0,
+   "rev21": {
+    "extract": 2803,
+    "pairs": 0,
+    "relate": 35926,
+    "entities": 2678,
+    "direct": 2638
+   }
+  },
+  {
+   "doc_id": "b32-cycle",
+   "base": 32,
+   "pairs": 56,
+   "relate_input": 63713.735121340644,
+   "relate_output": 7266.66733088601,
+   "entity_input": 3394.7651633962196,
+   "entity_output": 495.0,
+   "rev21": {
+    "extract": 2778,
+    "pairs": 1387,
+    "relate": 7405,
+    "entities": 2638,
+    "direct": 2558
+   }
+  },
+  {
+   "doc_id": "b33-consistent",
+   "base": 33,
+   "pairs": 73,
+   "relate_input": 82625.88623014004,
+   "relate_output": 9472.619913476407,
+   "entity_input": 3449.17093095276,
+   "entity_output": 725.0,
+   "rev21": {
+    "extract": 3053,
+    "pairs": 1524,
+    "relate": 10006,
+    "entities": 2961,
+    "direct": 2366
+   }
+  },
+  {
+   "doc_id": "b33-direct",
+   "base": 33,
+   "pairs": 253,
+   "relate_input": 285783.935376975,
+   "relate_output": 32829.76490561001,
+   "entity_input": 3257.537877075265,
+   "entity_output": 823.0,
+   "rev21": {
+    "extract": 2610,
+    "pairs": 0,
+    "relate": 32769,
+    "entities": 2878,
+    "direct": 2452
+   }
+  },
+  {
+   "doc_id": "b33-cycle",
+   "base": 33,
+   "pairs": 77,
+   "relate_input": 87256.9647151386,
+   "relate_output": 9991.667579968263,
+   "entity_input": 3437.3887902080314,
+   "entity_output": 727.0,
+   "rev21": {
+    "extract": 2995,
+    "pairs": 1593,
+    "relate": 10601,
+    "entities": 2944,
+    "direct": 2437
+   }
+  },
+  {
+   "doc_id": "b34-consistent",
+   "base": 34,
+   "pairs": 79,
+   "relate_input": 89894.1262760304,
+   "relate_output": 10251.191413214192,
+   "entity_input": 3532.685516819806,
+   "entity_output": 818.0,
+   "rev21": {
+    "extract": 3213,
+    "pairs": 1580,
+    "relate": 10965,
+    "entities": 3121,
+    "direct": 3394
+   }
+  },
+  {
+   "doc_id": "b34-direct",
+   "base": 34,
+   "pairs": 84,
+   "relate_input": 95450.38653495329,
+   "relate_output": 10900.000996329014,
+   "entity_input": 3522.9825773829707,
+   "entity_output": 796.0,
+   "rev21": {
+    "extract": 3212,
+    "pairs": 1640,
+    "relate": 11954,
+    "entities": 3093,
+    "direct": 2615
+   }
+  },
+  {
+   "doc_id": "b34-cycle",
+   "base": 34,
+   "pairs": 72,
+   "relate_input": 81981.9278736394,
+   "relate_output": 9342.857996853441,
+   "entity_input": 3518.4776412158685,
+   "entity_output": 727.0,
+   "rev21": {
+    "extract": 3153,
+    "pairs": 1548,
+    "relate": 10181,
+    "entities": 3009,
+    "direct": 2582
+   }
+  },
+  {
+   "doc_id": "b35-consistent",
+   "base": 35,
+   "pairs": 276,
+   "relate_input": 315331.55531629856,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3410.0126396541036,
+   "entity_output": 632.0,
+   "rev21": {
+    "extract": 2788,
+    "pairs": 0,
+    "relate": 36358,
+    "entities": 2784,
+    "direct": 2875
+   }
+  },
+  {
+   "doc_id": "b35-direct",
+   "base": 35,
+   "pairs": 59,
+   "relate_input": 67424.33850048891,
+   "relate_output": 7655.953080754904,
+   "entity_input": 3461.299605248804,
+   "entity_output": 722.0,
+   "rev21": {
+    "extract": 2995,
+    "pairs": 1481,
+    "relate": 8098,
+    "entities": 2926,
+    "direct": 2457
+   }
+  },
+  {
+   "doc_id": "b35-cycle",
+   "base": 35,
+   "pairs": 276,
+   "relate_input": 315313.5130886814,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3409.3195725514724,
+   "entity_output": 632.0,
+   "rev21": {
+    "extract": 2820,
+    "pairs": 0,
+    "relate": 36619,
+    "entities": 2784,
+    "direct": 2453
+   }
+  },
+  {
+   "doc_id": "b36-consistent",
+   "base": 36,
+   "pairs": 253,
+   "relate_input": 290633.3723825909,
+   "relate_output": 32829.76490561001,
+   "entity_input": 3452.2897329146,
+   "entity_output": 275.0,
+   "rev21": {
+    "extract": 2898,
+    "pairs": 0,
+    "relate": 34337,
+    "entities": 2470,
+    "direct": 2463
+   }
+  },
+  {
+   "doc_id": "b36-direct",
+   "base": 36,
+   "pairs": 276,
+   "relate_input": 316432.13120094413,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3452.2897329146,
+   "entity_output": 411.0,
+   "rev21": {
+    "extract": 2936,
+    "pairs": 0,
+    "relate": 37216,
+    "entities": 2610,
+    "direct": 2353
+   }
+  },
+  {
+   "doc_id": "b36-cycle",
+   "base": 36,
+   "pairs": 253,
+   "relate_input": 290633.3723825909,
+   "relate_output": 32829.76490561001,
+   "entity_input": 3452.2897329146,
+   "entity_output": 275.0,
+   "rev21": {
+    "extract": 2898,
+    "pairs": 0,
+    "relate": 34053,
+    "entities": 2470,
+    "direct": 2530
+   }
+  },
+  {
+   "doc_id": "b37-consistent",
+   "base": 37,
+   "pairs": 210,
+   "relate_input": 240593.9419258398,
+   "relate_output": 27250.00249082254,
+   "entity_input": 3376.0523516251806,
+   "entity_output": 523.0,
+   "rev21": {
+    "extract": 2736,
+    "pairs": 0,
+    "relate": 28379,
+    "entities": 2667,
+    "direct": 2590
+   }
+  },
+  {
+   "doc_id": "b37-direct",
+   "base": 37,
+   "pairs": 276,
+   "relate_input": 314916.5840811043,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3394.072096293589,
+   "entity_output": 613.0,
+   "rev21": {
+    "extract": 2863,
+    "pairs": 0,
+    "relate": 36764,
+    "entities": 2786,
+    "direct": 2305
+   }
+  },
+  {
+   "doc_id": "b37-cycle",
+   "base": 37,
+   "pairs": 253,
+   "relate_input": 288829.9340655558,
+   "relate_output": 32829.76490561001,
+   "entity_input": 3379.8642206896516,
+   "entity_output": 545.0,
+   "rev21": {
+    "extract": 2780,
+    "pairs": 0,
+    "relate": 33409,
+    "entities": 2697,
+    "direct": 2447
+   }
+  },
+  {
+   "doc_id": "b38-consistent",
+   "base": 38,
+   "pairs": 153,
+   "relate_input": 173438.13427798369,
+   "relate_output": 19853.573243313564,
+   "entity_input": 3212.141981852929,
+   "entity_output": 921.0,
+   "rev21": {
+    "extract": 2522,
+    "pairs": 0,
+    "relate": 19285,
+    "entities": 2902,
+    "direct": 2878
+   }
+  },
+  {
+   "doc_id": "b38-direct",
+   "base": 38,
+   "pairs": 72,
+   "relate_input": 82105.47791058286,
+   "relate_output": 9342.857996853441,
+   "entity_input": 3498.7252287908827,
+   "entity_output": 667.0,
+   "rev21": {
+    "extract": 3191,
+    "pairs": 1565,
+    "relate": 9798,
+    "entities": 2933,
+    "direct": 2551
+   }
+  },
+  {
+   "doc_id": "b38-cycle",
+   "base": 38,
+   "pairs": 153,
+   "relate_input": 173318.11424209576,
+   "relate_output": 19853.573243313564,
+   "entity_input": 3205.9043779292488,
+   "entity_output": 505.0,
+   "rev21": {
+    "extract": 2418,
+    "pairs": 0,
+    "relate": 19177,
+    "entities": 2480,
+    "direct": 2724
+   }
+  },
+  {
+   "doc_id": "b39-consistent",
+   "base": 39,
+   "pairs": 52,
+   "relate_input": 59470.56453011061,
+   "relate_output": 6747.619664394152,
+   "entity_input": 3482.7846854303675,
+   "entity_output": 758.0,
+   "rev21": {
+    "extract": 2995,
+    "pairs": 1419,
+    "relate": 7377,
+    "entities": 2988,
+    "direct": 2414
+   }
+  },
+  {
+   "doc_id": "b39-direct",
+   "base": 39,
+   "pairs": 63,
+   "relate_input": 72104.05255558586,
+   "relate_output": 8175.000747246761,
+   "entity_input": 3523.675644485602,
+   "entity_output": 956.0,
+   "rev21": {
+    "extract": 3134,
+    "pairs": 1501,
+    "relate": 9498,
+    "entities": 3235,
+    "direct": 2321
+   }
+  },
+  {
+   "doc_id": "b39-cycle",
+   "base": 39,
+   "pairs": 57,
+   "relate_input": 65145.275935563426,
+   "relate_output": 7396.429247508974,
+   "entity_input": 3480.0124170198433,
+   "entity_output": 750.0,
+   "rev21": {
+    "extract": 2987,
+    "pairs": 1497,
+    "relate": 7933,
+    "entities": 2981,
+    "direct": 2417
+   }
+  },
+  {
+   "doc_id": "b40-consistent",
+   "base": 40,
+   "pairs": 68,
+   "relate_input": 77617.95280184243,
+   "relate_output": 8823.810330361583,
+   "entity_input": 3548.626060180321,
+   "entity_output": 601.0,
+   "rev21": {
+    "extract": 3214,
+    "pairs": 1561,
+    "relate": 9931,
+    "entities": 2907,
+    "direct": 3112
+   }
+  },
+  {
+   "doc_id": "b40-direct",
+   "base": 40,
+   "pairs": 75,
+   "relate_input": 85745.4812686206,
+   "relate_output": 9732.143746722335,
+   "entity_input": 3518.4776412158685,
+   "entity_output": 743.0,
+   "rev21": {
+    "extract": 3231,
+    "pairs": 1621,
+    "relate": 10681,
+    "entities": 3021,
+    "direct": 2656
+   }
+  },
+  {
+   "doc_id": "b40-cycle",
+   "base": 40,
+   "pairs": 67,
+   "relate_input": 76502.54319325912,
+   "relate_output": 8694.04841373862,
+   "entity_input": 3540.309254948748,
+   "entity_output": 597.0,
+   "rev21": {
+    "extract": 3218,
+    "pairs": 1555,
+    "relate": 9806,
+    "entities": 2897,
+    "direct": 2676
+   }
+  },
+  {
+   "doc_id": "b41-consistent",
+   "base": 41,
+   "pairs": 69,
+   "relate_input": 78365.45785597186,
+   "relate_output": 8953.572246984548,
+   "entity_input": 3467.537209172484,
+   "entity_output": 886.0,
+   "rev21": {
+    "extract": 3037,
+    "pairs": 1498,
+    "relate": 9582,
+    "entities": 3107,
+    "direct": 2975
+   }
+  },
+  {
+   "doc_id": "b41-direct",
+   "base": 41,
+   "pairs": 54,
+   "relate_input": 61618.232611302585,
+   "relate_output": 7007.1434976400815,
+   "entity_input": 3435.3095889001384,
+   "entity_output": 995.0,
+   "rev21": {
+    "extract": 2910,
+    "pairs": 1388,
+    "relate": 7434,
+    "entities": 3172,
+    "direct": 2778
+   }
+  },
+  {
+   "doc_id": "b41-cycle",
+   "base": 41,
+   "pairs": 73,
+   "relate_input": 83163.23083525922,
+   "relate_output": 9472.619913476407,
+   "entity_input": 3480.0124170198433,
+   "entity_output": 1215.0,
+   "rev21": {
+    "extract": 3002,
+    "pairs": 1573,
+    "relate": 10191,
+    "entities": 3445,
+    "direct": 2784
+   }
+  },
+  {
+   "doc_id": "b42-consistent",
+   "base": 42,
+   "pairs": 65,
+   "relate_input": 74250.15174741982,
+   "relate_output": 8434.52458049269,
+   "entity_input": 3475.8540144040567,
+   "entity_output": 537.0,
+   "rev21": {
+    "extract": 3206,
+    "pairs": 1565,
+    "relate": 9770,
+    "entities": 2748,
+    "direct": 2528
+   }
+  },
+  {
+   "doc_id": "b42-direct",
+   "base": 42,
+   "pairs": 253,
+   "relate_input": 290460.7945532095,
+   "relate_output": 32829.76490561001,
+   "entity_input": 3445.359061888289,
+   "entity_output": 412.0,
+   "rev21": {
+    "extract": 2859,
+    "pairs": 0,
+    "relate": 34193,
+    "entities": 2589,
+    "direct": 2490
+   }
+  },
+  {
+   "doc_id": "b42-cycle",
+   "base": 42,
+   "pairs": 300,
+   "relate_input": 343899.7253489195,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3473.428279544848,
+   "entity_output": 539.0,
+   "rev21": {
+    "extract": 3035,
+    "pairs": 0,
+    "relate": 39930,
+    "entities": 2743,
+    "direct": 2397
+   }
+  },
+  {
+   "doc_id": "b43-consistent",
+   "base": 43,
+   "pairs": 78,
+   "relate_input": 89021.11007325997,
+   "relate_output": 10121.429496591229,
+   "entity_input": 3434.2699882461916,
+   "entity_output": 1347.0,
+   "rev21": {
+    "extract": 2918,
+    "pairs": 1660,
+    "relate": 10518,
+    "entities": 3532,
+    "direct": 2692
+   }
+  },
+  {
+   "doc_id": "b43-direct",
+   "base": 43,
+   "pairs": 190,
+   "relate_input": 215467.6322448441,
+   "relate_output": 24654.764158363247,
+   "entity_input": 3250.607206048954,
+   "entity_output": 1792.0,
+   "rev21": {
+    "extract": 2505,
+    "pairs": 0,
+    "relate": 24684,
+    "entities": 3822,
+    "direct": 2480
+   }
+  },
+  {
+   "doc_id": "b43-cycle",
+   "base": 43,
+   "pairs": 90,
+   "relate_input": 102068.32194194756,
+   "relate_output": 11678.572496066801,
+   "entity_input": 3459.5669374922263,
+   "entity_output": 1456.0,
+   "rev21": {
+    "extract": 3129,
+    "pairs": 1673,
+    "relate": 12233,
+    "entities": 3687,
+    "direct": 2593
+   }
+  },
+  {
+   "doc_id": "b44-consistent",
+   "base": 44,
+   "pairs": 171,
+   "relate_input": 192920.11372111764,
+   "relate_output": 22189.28774252692,
+   "entity_input": 3184.07276419637,
+   "entity_output": 927.0,
+   "rev21": {
+    "extract": 2308,
+    "pairs": 0,
+    "relate": 21597,
+    "entities": 2894,
+    "direct": 3783
+   }
+  },
+  {
+   "doc_id": "b44-direct",
+   "base": 44,
+   "pairs": 210,
+   "relate_input": 236985.49640241163,
+   "relate_output": 27250.00249082254,
+   "entity_input": 3216.6469180200306,
+   "entity_output": 1048.0,
+   "rev21": {
+    "extract": 2421,
+    "pairs": 0,
+    "relate": 27366,
+    "entities": 3051,
+    "direct": 2683
+   }
+  },
+  {
+   "doc_id": "b44-cycle",
+   "base": 44,
+   "pairs": 190,
+   "relate_input": 214469.0341684693,
+   "relate_output": 24654.764158363247,
+   "entity_input": 3204.1717101726713,
+   "entity_output": 876.0,
+   "rev21": {
+    "extract": 2382,
+    "pairs": 0,
+    "relate": 24110,
+    "entities": 2865,
+    "direct": 2666
+   }
+  },
+  {
+   "doc_id": "b45-consistent",
+   "base": 45,
+   "pairs": 231,
+   "relate_input": 263828.88476078835,
+   "relate_output": 29975.00273990479,
+   "entity_input": 3363.9236773291364,
+   "entity_output": 305.0,
+   "rev21": {
+    "extract": 2742,
+    "pairs": 0,
+    "relate": 30928,
+    "entities": 2440,
+    "direct": 2436
+   }
+  },
+  {
+   "doc_id": "b45-direct",
+   "base": 45,
+   "pairs": 276,
+   "relate_input": 314258.04277307866,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3368.775147047554,
+   "entity_output": 463.0,
+   "rev21": {
+    "extract": 2841,
+    "pairs": 0,
+    "relate": 36799,
+    "entities": 2612,
+    "direct": 2476
+   }
+  },
+  {
+   "doc_id": "b45-cycle",
+   "base": 45,
+   "pairs": 253,
+   "relate_input": 288502.0361897312,
+   "relate_output": 32829.76490561001,
+   "entity_input": 3366.6959457396606,
+   "entity_output": 283.0,
+   "rev21": {
+    "extract": 2768,
+    "pairs": 0,
+    "relate": 34317,
+    "entities": 2423,
+    "direct": 2512
+   }
+  },
+  {
+   "doc_id": "b46-consistent",
+   "base": 46,
+   "pairs": 67,
+   "relate_input": 75809.48631935721,
+   "relate_output": 8694.04841373862,
+   "entity_input": 3377.4384858304425,
+   "entity_output": 1024.0,
+   "rev21": {
+    "extract": 2888,
+    "pairs": 1453,
+    "relate": 9347,
+    "entities": 3200,
+    "direct": 2113
+   }
+  },
+  {
+   "doc_id": "b46-direct",
+   "base": 46,
+   "pairs": 70,
+   "relate_input": 79101.5884622557,
+   "relate_output": 9083.334163607513,
+   "entity_input": 3384.3691568567533,
+   "entity_output": 1143.0,
+   "rev21": {
+    "extract": 2955,
+    "pairs": 1474,
+    "relate": 9636,
+    "entities": 3329,
+    "direct": 2287
+   }
+  },
+  {
+   "doc_id": "b46-cycle",
+   "base": 46,
+   "pairs": 71,
+   "relate_input": 80383.69256512783,
+   "relate_output": 9213.096080230476,
+   "entity_input": 3377.785019381758,
+   "entity_output": 1022.0,
+   "rev21": {
+    "extract": 2881,
+    "pairs": 1496,
+    "relate": 9841,
+    "entities": 3197,
+    "direct": 2402
+   }
+  },
+  {
+   "doc_id": "b47-consistent",
+   "base": 47,
+   "pairs": 70,
+   "relate_input": 79195.72182373644,
+   "relate_output": 9083.334163607513,
+   "entity_input": 3405.5077034870014,
+   "entity_output": 1089.0,
+   "rev21": {
+    "extract": 2990,
+    "pairs": 1512,
+    "relate": 9688,
+    "entities": 3291,
+    "direct": 4136
+   }
+  },
+  {
+   "doc_id": "b47-direct",
+   "base": 47,
+   "pairs": 63,
+   "relate_input": 71631.81685882418,
+   "relate_output": 8175.000747246761,
+   "entity_input": 3397.88396535806,
+   "entity_output": 1222.0,
+   "rev21": {
+    "extract": 2951,
+    "pairs": 1507,
+    "relate": 8911,
+    "entities": 3408,
+    "direct": 3359
+   }
+  },
+  {
+   "doc_id": "b47-cycle",
+   "base": 47,
+   "pairs": 300,
+   "relate_input": 341122.7911852379,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3371.200881906763,
+   "entity_output": 1042.0,
+   "rev21": {
+    "extract": 2869,
+    "pairs": 0,
+    "relate": 39359,
+    "entities": 3192,
+    "direct": 2986
+   }
+  },
+  {
+   "doc_id": "b48-consistent",
+   "base": 48,
+   "pairs": 276,
+   "relate_input": 315214.28083678713,
+   "relate_output": 35814.28898793819,
+   "entity_input": 3405.5077034870014,
+   "entity_output": 395.0,
+   "rev21": {
+    "extract": 2759,
+    "pairs": 0,
+    "relate": 37258,
+    "entities": 2546,
+    "direct": 2241
+   }
+  },
+  {
+   "doc_id": "b48-direct",
+   "base": 48,
+   "pairs": 15,
+   "relate_input": 16729.18301705214,
+   "relate_output": 1946.428749344467,
+   "entity_input": 2957.093288084689,
+   "entity_output": 319.0,
+   "rev21": {
+    "extract": 1638,
+    "pairs": 0,
+    "relate": 1948,
+    "entities": 2032,
+    "direct": 2334
+   }
+  },
+  {
+   "doc_id": "b48-cycle",
+   "base": 48,
+   "pairs": 136,
+   "relate_input": 155859.53912349473,
+   "relate_output": 17647.620660723165,
+   "entity_input": 3288.379363142348,
+   "entity_output": 443.0,
+   "rev21": {
+    "extract": 2448,
+    "pairs": 0,
+    "relate": 17827,
+    "entities": 2475,
+    "direct": 2376
+   }
+  },
+  {
+   "doc_id": "b49-consistent",
+   "base": 49,
+   "pairs": 65,
+   "relate_input": 73437.46705996948,
+   "relate_output": 8434.52458049269,
+   "entity_input": 3326.498053787058,
+   "entity_output": 745.0,
+   "rev21": {
+    "extract": 3306,
+    "pairs": 1429,
+    "relate": 9121,
+    "entities": 2853,
+    "direct": 2849
+   }
+  },
+  {
+   "doc_id": "b49-direct",
+   "base": 49,
+   "pairs": 80,
+   "relate_input": 90462.38572100693,
+   "relate_output": 10380.953329837157,
+   "entity_input": 3458.180803286964,
+   "entity_output": 683.0,
+   "rev21": {
+    "extract": 3101,
+    "pairs": 1529,
+    "relate": 10664,
+    "entities": 2924,
+    "direct": 2422
+   }
+  },
+  {
+   "doc_id": "b49-cycle",
+   "base": 49,
+   "pairs": 61,
+   "relate_input": 68895.42304603811,
+   "relate_output": 7915.476914000832,
+   "entity_input": 3328.577255094951,
+   "entity_output": 726.0,
+   "rev21": {
+    "extract": 3216,
+    "pairs": 1378,
+    "relate": 8781,
+    "entities": 2838,
+    "direct": 2459
+   }
+  },
+  {
+   "doc_id": "b50-consistent",
+   "base": 50,
+   "pairs": 136,
+   "relate_input": 154183.96528913765,
+   "relate_output": 17647.620660723165,
+   "entity_input": 3195.854904941098,
+   "entity_output": 634.0,
+   "rev21": {
+    "extract": 2364,
+    "pairs": 0,
+    "relate": 17060,
+    "entities": 2590,
+    "direct": 2742
+   }
+  },
+  {
+   "doc_id": "b50-direct",
+   "base": 50,
+   "pairs": 72,
+   "relate_input": 81929.37008014599,
+   "relate_output": 9342.857996853441,
+   "entity_input": 3495.9529603803585,
+   "entity_output": 837.0,
+   "rev21": {
+    "extract": 3124,
+    "pairs": 1513,
+    "relate": 10103,
+    "entities": 3084,
+    "direct": 2842
+   }
+  },
+  {
+   "doc_id": "b50-cycle",
+   "base": 50,
+   "pairs": 153,
+   "relate_input": 173591.4932127294,
+   "relate_output": 19853.573243313564,
+   "entity_input": 3220.112253533186,
+   "entity_output": 586.0,
+   "rev21": {
+    "extract": 2400,
+    "pairs": 0,
+    "relate": 19812,
+    "entities": 2568,
+    "direct": 2484
+   }
+  },
+  {
+   "doc_id": "b51-consistent",
+   "base": 51,
+   "pairs": 80,
+   "relate_input": 90743.21691609111,
+   "relate_output": 10380.953329837157,
+   "entity_input": 3428.725451425143,
+   "entity_output": 540.0,
+   "rev21": {
+    "extract": 2958,
+    "pairs": 1609,
+    "relate": 10661,
+    "entities": 2740,
+    "direct": 2264
+   }
+  },
+  {
+   "doc_id": "b51-direct",
+   "base": 51,
+   "pairs": 84,
+   "relate_input": 95268.39536942386,
+   "relate_output": 10900.000996329014,
+   "entity_input": 3444.665994785658,
+   "entity_output": 558.0,
+   "rev21": {
+    "extract": 3055,
+    "pairs": 1610,
+    "relate": 11799,
+    "entities": 2781,
+    "direct": 2257
+   }
+  },
+  {
+   "doc_id": "b51-cycle",
+   "base": 51,
+   "pairs": 77,
+   "relate_input": 87313.05250968754,
+   "relate_output": 9991.667579968263,
+   "entity_input": 3430.804652733036,
+   "entity_output": 451.0,
+   "rev21": {
+    "extract": 2973,
+    "pairs": 1579,
+    "relate": 10319,
+    "entities": 2654,
+    "direct": 2470
+   }
+  },
+  {
+   "doc_id": "b52-consistent",
+   "base": 52,
+   "pairs": 68,
+   "relate_input": 77417.91940869586,
+   "relate_output": 8823.810330361583,
+   "entity_input": 3463.725340108013,
+   "entity_output": 478.0,
+   "rev21": {
+    "extract": 2999,
+    "pairs": 1538,
+    "relate": 9795,
+    "entities": 2695,
+    "direct": 2572
+   }
+  },
+  {
+   "doc_id": "b52-direct",
+   "base": 52,
+   "pairs": 73,
+   "relate_input": 82953.3918836251,
+   "relate_output": 9472.619913476407,
+   "entity_input": 3503.9232320606156,
+   "entity_output": 559.0,
+   "rev21": {
+    "extract": 3167,
+    "pairs": 1517,
+    "relate": 9905,
+    "entities": 2821,
+    "direct": 2539
+   }
+  },
+  {
+   "doc_id": "b52-cycle",
+   "base": 52,
+   "pairs": 73,
+   "relate_input": 83028.69857280968,
+   "relate_output": 9472.619913476407,
+   "entity_input": 3468.2302762751146,
+   "entity_output": 527.0,
+   "rev21": {
+    "extract": 3025,
+    "pairs": 1568,
+    "relate": 10053,
+    "entities": 2752,
+    "direct": 2716
+   }
+  },
+  {
+   "doc_id": "b53-consistent",
+   "base": 53,
+   "pairs": 61,
+   "relate_input": 69260.18982177596,
+   "relate_output": 7915.476914000832,
+   "entity_input": 3385.7552910620157,
+   "entity_output": 487.0,
+   "rev21": {
+    "extract": 2826,
+    "pairs": 1445,
+    "relate": 9072,
+    "entities": 2633,
+    "direct": 2876
+   }
+  },
+  {
+   "doc_id": "b53-direct",
+   "base": 53,
+   "pairs": 63,
+   "relate_input": 71572.98350789872,
+   "relate_output": 8175.000747246761,
+   "entity_input": 3391.299827883064,
+   "entity_output": 581.0,
+   "rev21": {
+    "extract": 2880,
+    "pairs": 1454,
+    "relate": 9161,
+    "entities": 2736,
+    "direct": 2695
+   }
+  },
+  {
+   "doc_id": "b53-cycle",
+   "base": 53,
+   "pairs": 66,
+   "relate_input": 74998.04902388877,
+   "relate_output": 8564.286497115654,
+   "entity_input": 3385.0622239593845,
+   "entity_output": 487.0,
+   "rev21": {
+    "extract": 2826,
+    "pairs": 1511,
+    "relate": 9526,
+    "entities": 2633,
+    "direct": 2479
+   }
+  },
+  {
+   "doc_id": "b54-consistent",
+   "base": 54,
+   "pairs": 210,
+   "relate_input": 241362.69771126582,
+   "relate_output": 27250.00249082254,
+   "entity_input": 3410.0126396541036,
+   "entity_output": 399.0,
+   "rev21": {
+    "extract": 2777,
+    "pairs": 0,
+    "relate": 27849,
+    "entities": 2546,
+    "direct": 2964
+   }
+  },
+  {
+   "doc_id": "b54-direct",
+   "base": 54,
+   "pairs": 66,
+   "relate_input": 74994.12680049373,
+   "relate_output": 8564.286497115654,
+   "entity_input": 3420.0621126422543,
+   "entity_output": 574.0,
+   "rev21": {
+    "extract": 2927,
+    "pairs": 1479,
+    "relate": 9305,
+    "entities": 2754,
+    "direct": 2402
+   }
+  },
+  {
+   "doc_id": "b54-cycle",
+   "base": 54,
+   "pairs": 71,
+   "relate_input": 80526.46149670694,
+   "relate_output": 9213.096080230476,
+   "entity_input": 3413.477975167259,
+   "entity_output": 397.0,
+   "rev21": {
+    "extract": 2956,
+    "pairs": 1472,
+    "relate": 9894,
+    "entities": 2581,
+    "direct": 2518
+   }
+  },
+  {
+   "doc_id": "b55-consistent",
+   "base": 55,
+   "pairs": 101,
+   "relate_input": 114608.46105062109,
+   "relate_output": 13105.95357891941,
+   "entity_input": 3491.1014906619407,
+   "entity_output": 696.0,
+   "rev21": {
+    "extract": 3401,
+    "pairs": 1869,
+    "relate": 14090,
+    "entities": 2980,
+    "direct": 2396
+   }
+  },
+  {
+   "doc_id": "b55-direct",
+   "base": 55,
+   "pairs": 86,
+   "relate_input": 97820.05246030398,
+   "relate_output": 11159.524829574944,
+   "entity_input": 3511.8935037408733,
+   "entity_output": 646.0,
+   "rev21": {
+    "extract": 3477,
+    "pairs": 1697,
+    "relate": 11909,
+    "entities": 2945,
+    "direct": 2399
+   }
+  },
+  {
+   "doc_id": "b55-cycle",
+   "base": 55,
+   "pairs": 91,
+   "relate_input": 103368.46827243682,
+   "relate_output": 11808.334412689766,
+   "entity_input": 3494.9133597264117,
+   "entity_output": 552.0,
+   "rev21": {
+    "extract": 3207,
+    "pairs": 1761,
+    "relate": 12619,
+    "entities": 2838,
+    "direct": 2533
+   }
+  },
+  {
+   "doc_id": "b56-consistent",
+   "base": 56,
+   "pairs": 300,
+   "relate_input": 341414.6046058281,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3381.9434219975446,
+   "entity_output": 534.0,
+   "rev21": {
+    "extract": 2817,
+    "pairs": 0,
+    "relate": 38919,
+    "entities": 2667,
+    "direct": 2676
+   }
+  },
+  {
+   "doc_id": "b56-direct",
+   "base": 56,
+   "pairs": 190,
+   "relate_input": 217829.98739567105,
+   "relate_output": 24654.764158363247,
+   "entity_input": 3360.458341815981,
+   "entity_output": 722.0,
+   "rev21": {
+    "extract": 2705,
+    "pairs": 0,
+    "relate": 24857,
+    "entities": 2817,
+    "direct": 2724
+   }
+  },
+  {
+   "doc_id": "b56-cycle",
+   "base": 56,
+   "pairs": 300,
+   "relate_input": 341395.77793353196,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3381.2503548949135,
+   "entity_output": 628.0,
+   "rev21": {
+    "extract": 2809,
+    "pairs": 0,
+    "relate": 38902,
+    "entities": 2761,
+    "direct": 2603
+   }
+  },
+  {
+   "doc_id": "b57-consistent",
+   "base": 57,
+   "pairs": 300,
+   "relate_input": 341019.244487609,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3367.389012842292,
+   "entity_output": 831.0,
+   "rev21": {
+    "extract": 3113,
+    "pairs": 0,
+    "relate": 39236,
+    "entities": 2973,
+    "direct": 2871
+   }
+  },
+  {
+   "doc_id": "b57-direct",
+   "base": 57,
+   "pairs": 64,
+   "relate_input": 72743.30424401246,
+   "relate_output": 8304.762663869726,
+   "entity_input": 3435.656122451454,
+   "entity_output": 918.0,
+   "rev21": {
+    "extract": 3020,
+    "pairs": 1493,
+    "relate": 9248,
+    "entities": 3134,
+    "direct": 2665
+   }
+  },
+  {
+   "doc_id": "b57-cycle",
+   "base": 57,
+   "pairs": 300,
+   "relate_input": 341094.55117679364,
+   "relate_output": 38928.57498688934,
+   "entity_input": 3370.161281252816,
+   "entity_output": 493.0,
+   "rev21": {
+    "extract": 2845,
+    "pairs": 0,
+    "relate": 39141,
+    "entities": 2635,
+    "direct": 2510
+   }
+  },
+  {
+   "doc_id": "b58-consistent",
+   "base": 58,
+   "pairs": 136,
+   "relate_input": 153531.30731620453,
+   "relate_output": 17647.620660723165,
+   "entity_input": 3159.8154156042815,
+   "entity_output": 824.0,
+   "rev21": {
+    "extract": 2323,
+    "pairs": 0,
+    "relate": 16932,
+    "entities": 2751,
+    "direct": 2922
+   }
+  },
+  {
+   "doc_id": "b58-direct",
+   "base": 58,
+   "pairs": 71,
+   "relate_input": 80716.29710902642,
+   "relate_output": 9213.096080230476,
+   "entity_input": 3428.032384322512,
+   "entity_output": 728.0,
+   "rev21": {
+    "extract": 3245,
+    "pairs": 1511,
+    "relate": 9677,
+    "entities": 2918,
+    "direct": 2538
+   }
+  },
+  {
+   "doc_id": "b58-cycle",
+   "base": 58,
+   "pairs": 171,
+   "relate_input": 192793.03368311864,
+   "relate_output": 22189.28774252692,
+   "entity_input": 3177.83516027269,
+   "entity_output": 824.0,
+   "rev21": {
+    "extract": 2330,
+    "pairs": 0,
+    "relate": 21634,
+    "entities": 2770,
+    "direct": 2465
+   }
+  },
+  {
+   "doc_id": "b59-consistent",
+   "base": 59,
+   "pairs": 70,
+   "relate_input": 79515.77525277094,
+   "relate_output": 9083.334163607513,
+   "entity_input": 3442.9333270290804,
+   "entity_output": 713.0,
+   "rev21": {
+    "extract": 2993,
+    "pairs": 1535,
+    "relate": 9812,
+    "entities": 2938,
+    "direct": 4091
+   }
+  },
+  {
+   "doc_id": "b59-direct",
+   "base": 59,
+   "pairs": 78,
+   "relate_input": 88529.26325952313,
+   "relate_output": 10121.429496591229,
+   "entity_input": 3474.8144137501104,
+   "entity_output": 817.0,
+   "rev21": {
+    "extract": 3113,
+    "pairs": 1561,
+    "relate": 10674,
+    "entities": 3079,
+    "direct": 2706
+   }
+  },
+  {
+   "doc_id": "b59-cycle",
+   "base": 59,
+   "pairs": 75,
+   "relate_input": 85075.17329040986,
+   "relate_output": 9732.143746722335,
+   "entity_input": 3437.3887902080314,
+   "entity_output": 712.0,
+   "rev21": {
+    "extract": 2997,
+    "pairs": 1598,
+    "relate": 10359,
+    "entities": 2934,
+    "direct": 2486
+   }
+  }
+ ]
+}

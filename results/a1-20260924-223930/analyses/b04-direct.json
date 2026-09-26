@@ -1,0 +1,2748 @@
+{
+ "label": "b04-direct",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-67d8981061a3",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The school chess club met on Thursday afternoon in the library annex.",
+   "span": "The school chess club met on Thursday afternoon in the library annex",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Five members gathered around two long tables covered in boards.",
+   "span": "five members gathered around two long tables covered in boards",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Gia is the event organizer.",
+   "span": "Assume that Gia is the event organizer",
+   "kind": "premise"
+  },
+  {
+   "id": 3,
+   "text": "Jun arrived first, carrying a thermos of tea and a battered notebook full of opening lines he wanted to try.",
+   "span": "Jun arrived first, carrying a thermos of tea and a battered notebook full of opening lines he wanted to try",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Rosa is in the same class as Finn.",
+   "span": "Rosa is in the same class as Finn",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Finn had brought a new set of wooden pieces that Hugo admired for their weight and polish.",
+   "span": "Finn had brought a new set of wooden pieces that Hugo admired for their weight and polish",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Hugo took the photographs.",
+   "span": "Hugo took the photographs",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Gia is a year older than Jun.",
+   "span": "Gia is a year older than Jun",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Gia and Jun often forget the age difference between them when arguing about endgame theory.",
+   "span": "they often forget the difference when arguing about endgame theory",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Finn is not in the same class as Jun.",
+   "span": "Finn is not in the same class as Jun",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Rosa arrived a few minutes after Jun, apologizing for the delay caused by a late bus.",
+   "span": "Rosa arrived a few minutes after Jun, apologizing for the delay caused by a late bus",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Rosa is not in the same class as Jun.",
+   "span": "Rosa is not in the same class as Jun",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Hugo is the tallest of the group.",
+   "span": "Hugo is the tallest of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "This becomes obvious whenever they line up for the yearly club photo.",
+   "span": "a fact that becomes obvious whenever they line up for the yearly club photo",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Gia is not the event organizer.",
+   "span": "Gia is not the event organizer",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Gia and Finn practiced a quick blitz match while waiting for the others to settle in.",
+   "span": "Gia and Finn practiced a quick blitz match while waiting for the others to settle in",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Gia won two out of three games.",
+   "span": "Gia won two out of three games",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Jun ranked highest among them in the regional under-sixteen tournament last spring.",
+   "span": "Jun ranked highest among them in the regional under-sixteen tournament last spring",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "This result still makes Rosa tease Jun during breaks.",
+   "span": "a result that still makes Rosa tease him during breaks",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Hugo is the newest member.",
+   "span": "despite being the newest member",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Hugo quickly picked up the rules for the Sicilian Defense from Finn.",
+   "span": "Hugo, despite being the newest member, quickly picked up the rules for the Sicilian Defense from Finn",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Finn explained the rules for the Sicilian Defense patiently over hot chocolate.",
+   "span": "who explained it patiently over hot chocolate",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "By the end of the session, the club had set a date for their next meeting.",
+   "span": "By the end of the session, the club had set a date for their next meeting",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Everyone agreed the room smelled pleasantly of chalk and old wood.",
+   "span": "everyone agreed the room smelled pleasantly of chalk and old wood",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Gia noted the smell of chalk and old wood fondly as she locked up the cabinet of chess sets for the night.",
+   "span": "a detail Gia noted fondly as she locked up the cabinet of chess sets for the night",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "The meeting setting is consistent with members gathering, but doesn't establish who or how many.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "The meeting location and time doesn't imply who organizes the event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "The meeting occurring doesn't specify who arrived first or what they carried.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "The location of the club meeting has no bearing on class assignments of members.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "The meeting setting doesn't indicate what pieces were brought.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "The meeting occurring doesn't indicate who took photographs.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "The meeting time/place has no bearing on relative ages of members.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "The meeting setting doesn't relate to how Gia and Jun perceive their age gap.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "The meeting location doesn't determine class assignments.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "The meeting happening is consistent with Rosa's arrival but doesn't establish the specific detail.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "The meeting setting doesn't determine class relationships.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "The meeting location doesn't indicate anyone's height.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "The meeting setting doesn't relate to photo lineup observations.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "The meeting location doesn't determine who organizes the event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "The meeting occurring is consistent with but doesn't imply a specific blitz match between Gia and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "The meeting setting doesn't indicate the outcome of any games played.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "The meeting location/time has no bearing on tournament rankings from the past.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "The meeting setting doesn't relate to teasing behavior about tournament results.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "The meeting location doesn't indicate membership tenure.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "The meeting setting doesn't relate to learning chess openings.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "The meeting time/place setting is compatible with but doesn't establish the Sicilian Defense explanation happening.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "The meeting occurring is a precondition for setting a next date, but doesn't specifically indicate it.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "Meeting in a library annex doesn't specifically imply anything about the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "The location detail doesn't bear on Gia's later action of locking up and noting the smell.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Five members gathering doesn't indicate who the organizer is.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "The group gathering is consistent with Jun arriving first, mildly supporting the scenario.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Number of members gathered has no bearing on class assignments.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "The gathering detail doesn't specify anything about Finn's chess set or Hugo's admiration.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Gathering around tables doesn't indicate who took photographs.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Group size has no bearing on relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Group size doesn't relate to forgetting age differences during arguments.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Number of members has no bearing on class assignments.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Five members gathering is broadly consistent with Rosa arriving after Jun as part of the group.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Group size doesn't bear on class assignments.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Number of members says nothing about relative height.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Group gathering detail doesn't relate to height becoming obvious in photos.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Group size doesn't indicate who is or isn't the organizer.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Members gathering is consistent with some playing blitz while waiting, a mild supportive context.",
+   "relation": "supports",
+   "confidence": 0.45
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Group size has no bearing on the outcome of a specific match.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Number of members present doesn't relate to tournament rankings.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "The gathering description has no bearing on whether Rosa teases Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Number of members gathered doesn't indicate who is newest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "The gathering scene doesn't relate to Hugo learning Sicilian Defense rules.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "The gathering scene doesn't relate to Finn explaining rules.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Gathering around tables doesn't imply setting a future meeting date.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "The gathering setup is consistent with but doesn't confirm the room's smell being noticed.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 24,
+   "rationale": "The gathering scene doesn't relate to Gia's later locking-up action.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Gia being the organizer has no bearing on Jun's arrival details.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Gia's role as organizer doesn't relate to Rosa and Finn's class.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Gia's organizer role doesn't relate to Finn's wooden pieces.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Gia being organizer doesn't relate to who took photographs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Gia's organizer role doesn't relate to her age relative to Jun.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Gia's organizer status doesn't relate to arguments about endgame theory.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Gia's organizer role doesn't relate to Finn's and Jun's classes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Gia's organizer status doesn't relate to Rosa's arrival details.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Gia's organizer role doesn't relate to Rosa's and Jun's classes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Gia's organizer status doesn't relate to Hugo's height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Gia's organizer role doesn't relate to the yearly photo observation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim 2 directly asserts Gia is the organizer, while claim 14 asserts the opposite.",
+   "relation": "contradicts",
+   "confidence": 0.99
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Gia's organizer role doesn't preclude or relate to her playing a blitz match with Finn.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Being the event organizer says nothing about how many games Gia won.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Organizing the event is unrelated to Jun's tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Being the organizer doesn't relate to Rosa teasing Jun about a tournament result.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Gia being organizer has no bearing on whether Hugo is the newest member.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Organizing the event doesn't affect Hugo learning chess rules from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Gia's organizer role is unrelated to Finn explaining rules.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "As organizer, Gia plausibly facilitated setting the next meeting date, giving mild support.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Being the organizer has no logical connection to the room's smell being noticed by everyone.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 24,
+   "rationale": "As organizer, Gia would plausibly be the one locking up the cabinet, supporting this claim.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Jun's arrival order and belongings have no bearing on Rosa's class assignment with Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Jun's arrival details are unrelated to Finn's wooden chess pieces and Hugo's admiration.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Jun arriving first with a notebook has no connection to who took photographs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Jun's arrival order is unrelated to the age difference between Gia and Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Jun's arrival details don't relate to Gia and Jun forgetting their age gap while arguing.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Jun's arrival order has no bearing on class assignments between Finn and Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Jun arriving first is consistent with and supports Rosa arriving a few minutes after Jun.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Jun's arrival order is unrelated to class assignments between Rosa and Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Jun's arrival details have no bearing on Hugo's height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Jun's arrival order is unrelated to height differences being obvious in photos.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Jun's arrival details are unrelated to whether Gia is the event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Jun's arrival with tea and notebook is unrelated to Gia and Finn's blitz match content.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "No connection between Jun's arrival items and Gia winning games.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Jun's arrival details do not bear on his tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Jun's arrival items are unrelated to Rosa teasing him about a tournament result.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Jun's arrival has no bearing on Hugo's membership status.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Jun's arrival is unrelated to Hugo learning chess rules from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Jun's arrival is unrelated to Finn explaining chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Jun's arrival details do not affect whether a meeting date was set.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Jun's arrival items are unrelated to the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 24,
+   "rationale": "Jun's arrival is unrelated to Gia's later observation about the smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Rosa being in Finn's class is unrelated to Finn bringing wooden pieces.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Rosa's class assignment is unrelated to Hugo taking photographs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Rosa's class with Finn is unrelated to Gia's age relative to Jun.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Rosa and Finn's class relationship is unrelated to Gia and Jun's arguing habits.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "If Rosa is in the same class as Finn, and separately Finn is not in Jun's class, these are compatible but A doesn't establish B directly; however A being true makes it plausible that Rosa, being with Finn, is also not with Jun, giving mild support.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Rosa's classmate status with Finn is unrelated to her arrival time relative to Jun.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "If Rosa shares a class with Finn, and Finn is separately not in Jun's class, this supports the idea Rosa is also not in Jun's class, but this claim alone doesn't confirm it fully.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Rosa's class assignment is unrelated to Hugo's height.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Rosa's classmate status is unrelated to height being obvious in photos.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Rosa being in Finn's class is unrelated to Gia's role as event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Rosa's classmate status with Finn has no bearing on a practice match between Gia and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "No connection between class membership and Gia's game wins.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Class membership of Rosa and Finn has no bearing on Jun's tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Rosa's class relationship with Finn is unrelated to her teasing Jun about a tournament result.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Rosa/Finn class membership has nothing to do with Hugo's membership status.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "No logical link between class placement and Hugo learning chess rules from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Class membership is unrelated to Finn explaining chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Class membership of Rosa and Finn has no bearing on scheduling a future meeting.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "No connection between class membership and opinions about room smell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 24,
+   "rationale": "Class membership of Rosa and Finn is unrelated to Gia's locking up habits.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Finn bringing wooden pieces that Hugo admired is unrelated to who took the photographs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "No connection between wooden pieces and the age difference between Gia and Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Finn's wooden pieces have no bearing on Gia and Jun's arguing about endgame theory.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Wooden pieces admired by Hugo have no bearing on Finn's class relationship with Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Finn's wooden set has no bearing on Rosa's late arrival.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "No logical connection between the wooden pieces and Rosa's class relationship with Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Hugo admiring wooden pieces doesn't relate to his height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "The wooden pieces detail is unrelated to height being obvious in photo lineups.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Finn's wooden pieces have no bearing on whether Gia is the event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Finn bringing wooden pieces is consistent with and could set the scene for a match with Gia, but doesn't specifically imply it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "New chess pieces being admired has no bearing on who won a blitz match.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "The new set of pieces is unrelated to a past tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Admiring pieces has no connection to Rosa teasing Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Bringing new pieces doesn't relate to Hugo's membership tenure.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "The new pieces are unrelated to Hugo learning Sicilian Defense rules.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "The new pieces are unrelated to Finn explaining chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Bringing pieces has no bearing on scheduling the next meeting.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Admiring pieces is unrelated to the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 24,
+   "rationale": "The new pieces are unrelated to Gia noting the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Hugo taking photographs has no bearing on Gia and Jun's age difference.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Taking photographs is unrelated to arguments about endgame theory.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Photography is unrelated to class assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Hugo taking photos has no connection to Rosa's late arrival.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Photography is unrelated to Rosa's class assignment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "If Hugo is taking photographs, he cannot be lining up in the photo himself, which slightly undercuts the basis for observing his height in that context, but the height claim itself is independent.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Hugo taking photographs suggests he's behind the camera, not lining up, which somewhat contradicts the idea that his height is obvious when they line up for the photo.",
+   "relation": "contradicts",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Hugo taking photos has no bearing on whether Gia is the event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Hugo taking photographs is unrelated to Gia and Finn's blitz match.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Hugo photographing events has no bearing on who won the blitz games.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Hugo taking photographs is unrelated to Jun's tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Hugo taking photographs has no bearing on Rosa teasing Jun about a tournament result.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Taking photographs is unrelated to whether Hugo is the newest club member.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Hugo taking photographs doesn't relate to him learning Sicilian Defense rules from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Hugo taking photographs has no connection to Finn explaining chess rules over hot chocolate.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Hugo taking photographs is unrelated to the club scheduling its next meeting.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Taking photographs has no logical connection to the room's smell being pleasant.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 24,
+   "rationale": "Hugo taking photographs is unrelated to Gia noting the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Gia being a year older than Jun establishes an age difference, supporting the claim that they forget this difference exists.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Gia's age relative to Jun has no bearing on which class Finn is in.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Gia's age relative to Jun is unrelated to Rosa's late arrival.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Gia's age relative to Jun has no bearing on Rosa's class assignment.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Gia's age relative to Jun is unrelated to Hugo's height ranking.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Gia's age difference from Jun is unrelated to the visibility of height differences at photo lineups.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Gia's age compared to Jun has no bearing on whether she is the event organizer.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Gia's age relative to Jun is unrelated to her playing a blitz match with Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Gia's age difference from Jun has no bearing on her winning games against Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Gia's age relative to Jun is unrelated to Jun's tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Gia's age relative to Jun doesn't relate to Rosa teasing Jun about a tournament result.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Gia's age relative to Jun is unrelated to Hugo being the newest member.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Gia's age relative to Jun has no bearing on Hugo learning chess rules from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Gia's age difference with Jun has no bearing on Finn's explanation of chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "Age difference between Gia and Jun is unrelated to setting a meeting date.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Age difference is unrelated to the smell of the room.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 24,
+   "rationale": "Age difference is unrelated to Gia noting the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Forgetting age difference during arguments has nothing to do with class assignments.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Forgetting age difference is unrelated to Rosa's late arrival.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Forgetting age difference is unrelated to class placement of Rosa and Jun.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Forgetting age difference is unrelated to Hugo's height.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Forgetting age difference is unrelated to height differences becoming obvious in photos.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Forgetting age difference is unrelated to whether Gia organizes the event.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Forgetting age difference is unrelated to a blitz match between Gia and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Forgetting age difference is unrelated to the outcome of the blitz games.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Forgetting age difference is unrelated to tournament rankings.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Forgetting age difference is unrelated to Rosa teasing Jun about the tournament result.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Forgetting age difference is unrelated to Hugo being the newest member.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Forgetting age difference is unrelated to Hugo learning chess rules from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Forgetting age difference is unrelated to Finn explaining chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Forgetting age difference is unrelated to setting a future meeting date.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Forgetting age difference is unrelated to the smell of the room.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 24,
+   "rationale": "Forgetting age difference is unrelated to Gia noting the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Finn's class relation to Jun is unrelated to Rosa's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Both concern class membership relative to Jun but about different people, so no logical link.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Class membership is unrelated to height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Class membership is unrelated to observations at photo lineups.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Finn's class status has no bearing on whether Gia organizes events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Class membership is unrelated to a chess match between Gia and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Class membership is unrelated to game outcomes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Class membership is unrelated to tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Class membership is unrelated to teasing behavior.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Class membership is unrelated to membership tenure.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Class membership is unrelated to learning chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Class membership is unrelated to explaining chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Class membership is unrelated to scheduling a meeting.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Class membership is unrelated to opinions about room smell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 24,
+   "rationale": "Class membership is unrelated to locking up chess sets.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Rosa's arrival time relative to Jun does not indicate anything about their class assignment.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Rosa's arrival time is unrelated to Hugo's height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Rosa's arrival is unrelated to photo lineup observations.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Rosa's arrival time is unrelated to Gia's organizer status.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Rosa's late arrival could explain why Gia and Finn played while waiting, providing mild contextual support.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Rosa's late arrival is unrelated to Gia's game results.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Rosa's tardiness has no bearing on Jun's tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Rosa's late arrival does not connect to her teasing Jun about a tournament result.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Rosa's delay is unrelated to Hugo's membership status.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Rosa's lateness has no connection to Hugo learning chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Rosa's arrival timing is unrelated to Finn explaining chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Rosa's late arrival does not affect whether a meeting date was set later.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Rosa's lateness is unrelated to the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 24,
+   "rationale": "Rosa's arrival delay is unrelated to Gia noting the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Being in different classes from Jun has no bearing on who is tallest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Class enrollment is unrelated to height being obvious in a photo lineup.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Rosa's class relationship with Jun is unrelated to whether Gia organizes events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Rosa's class status is unrelated to a chess match between Gia and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Rosa not sharing a class with Jun has no bearing on Gia's game wins.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Class enrollment is unrelated to tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Not being in the same class doesn't affect whether Rosa teases Jun about tournament results.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Rosa's class status is unrelated to Hugo's membership tenure.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Rosa's class enrollment is unrelated to Hugo learning chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Rosa's class status is unrelated to Finn teaching chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Rosa's class enrollment is unrelated to setting a future meeting date.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "Class assignment is unrelated to the smell of the room.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 24,
+   "rationale": "Class assignment is unrelated to Gia locking up the cabinet.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Hugo being tallest explains why it becomes obvious at the photo lineup.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Height has no bearing on who organizes the event.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Height has no bearing on a blitz match between Gia and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Height has no bearing on the outcome of games Gia won.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Height has no bearing on tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Height has no bearing on Rosa teasing Jun.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Being tallest does not indicate membership tenure.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Height has no bearing on learning chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Height has no bearing on Finn's teaching style.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Height has no bearing on scheduling a future meeting.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Height has no bearing on the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 24,
+   "rationale": "Height has no bearing on Gia's locking up the cabinet.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "The photo lineup observation is unrelated to who organizes the event.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "The photo lineup observation is unrelated to a blitz match.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "The photo lineup observation is unrelated to game outcomes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "The photo lineup observation is unrelated to tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "The photo lineup observation is unrelated to Rosa teasing Jun.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "The photo lineup observation is unrelated to Hugo's membership tenure.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "The club photo detail is unrelated to Hugo learning the Sicilian Defense.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "The club photo detail is unrelated to Finn explaining chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "The club photo detail is unrelated to scheduling the next meeting.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "The club photo detail is unrelated to the smell of the room.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 24,
+   "rationale": "The club photo detail is unrelated to Gia locking up the cabinet.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Gia not being the organizer has no bearing on her practicing a blitz match with Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Gia's organizer status is unrelated to her game results against Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Gia's role has no connection to Jun's tournament ranking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Gia's organizer status is unrelated to Rosa teasing Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Gia not being organizer is unrelated to Hugo being the newest member.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Gia's role as organizer or not is unrelated to Hugo learning chess rules from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Gia's organizer status is unrelated to Finn explaining rules over hot chocolate.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Gia not organizing has no bearing on whether a next meeting date was set.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Gia's role is unrelated to the room's smell being agreeable.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 24,
+   "rationale": "Gia not being the organizer doesn't preclude her locking the cabinet, so it's unrelated to that specific act.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Gia and Finn's blitz match sets up the context in which Gia could have won two of three games.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Gia and Finn's blitz practice is unrelated to Jun's ranking in a separate tournament.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "The blitz match between Gia and Finn is unrelated to Rosa teasing Jun.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "The blitz match is unrelated to Hugo being the newest member.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Gia and Finn practicing together doesn't relate to Hugo learning rules from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "A blitz match between Gia and Finn is separate from Finn explaining Sicilian Defense rules, though both occurred during the same gathering.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Playing a blitz match doesn't bear on whether a future meeting date was set.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "The blitz match has no bearing on the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "The blitz match has no connection to Gia noting the smell while locking the cabinet.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Gia winning games against Finn is unrelated to Jun's ranking in a past tournament.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Gia's win over Finn has no bearing on Rosa teasing Jun.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Gia's blitz win is unrelated to Hugo's membership status.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Gia winning against Finn is unrelated to Hugo learning the Sicilian Defense from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Gia's game result is unrelated to Finn explaining chess rules to someone else.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Gia's win count has no bearing on scheduling a future meeting.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Gia's win count is unrelated to the smell of the room.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 24,
+   "rationale": "Gia's win count is unrelated to her later noting the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Jun's high ranking gives a plausible reason for Rosa's ongoing teasing, supporting that this result causes the teasing.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Jun's tournament ranking has no bearing on Hugo's membership status.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Jun's ranking is unrelated to Hugo learning rules from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Jun's tournament ranking is unrelated to Finn explaining chess rules.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Jun's ranking is unrelated to scheduling the next meeting.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Jun's ranking has no bearing on the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 24,
+   "rationale": "Jun's ranking is unrelated to Gia noting the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Rosa teasing Jun is unrelated to Hugo's status as newest member.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Rosa teasing Jun about a result is unrelated to Hugo learning chess rules from Finn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Rosa's teasing of Jun has no bearing on Finn explaining rules over hot chocolate.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Teasing during breaks is unrelated to setting a date for the next meeting.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Teasing Jun has no connection to the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 24,
+   "rationale": "Rosa teasing Jun is unrelated to Gia noting the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Hugo being the newest member is consistent with and supports the idea he needed to learn rules from Finn.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Hugo being newest supports the plausibility that Finn needed to explain rules patiently to him.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Hugo's status as newest member has no bearing on the club scheduling its next meeting.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Hugo being newest is unrelated to everyone's agreement about the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 24,
+   "rationale": "Hugo's newness is unrelated to Gia noting the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Hugo picking up rules from Finn directly matches and supports the description of Finn explaining those rules.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Hugo learning chess rules is unrelated to the club setting a meeting date.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Hugo learning rules is unrelated to the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 24,
+   "rationale": "Hugo's learning is unrelated to Gia's fondness for the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Finn explaining rules over hot chocolate is unrelated to setting a meeting date.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "Finn's explanation of rules is unrelated to the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "Finn's patient explanation is unrelated to Gia's noting of the smell while locking up.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Setting a meeting date is unrelated to the room's smell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "Setting a next meeting date is unrelated to Gia's action of locking up while noting the smell.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 23,
+   "b": 24,
+   "rationale": "Everyone agreeing the room smelled pleasantly of chalk and old wood supports Gia's fond noting of that same smell.",
+   "relation": "supports",
+   "confidence": 0.85
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia",
+     "she"
+    ]
+   },
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun",
+     "he"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "event_organizer",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "tournament_rank",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 4,
+    "attribute": "class",
+    "kind": "same",
+    "a": "rosa",
+    "b": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 7,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "gia",
+    "b": "jun",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "class",
+    "kind": "different",
+    "a": "finn",
+    "b": "jun",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "jun",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "class",
+    "kind": "different",
+    "a": "rosa",
+    "b": "jun",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "hugo",
+    "b": "gia",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "hugo",
+    "b": "jun",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "hugo",
+    "b": "rosa",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "hugo",
+    "b": "finn",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 14,
+    "attribute": "event_organizer",
+    "kind": "different",
+    "a": "gia",
+    "b": "jun",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 17,
+    "attribute": "tournament_rank",
+    "kind": "greater",
+    "a": "jun",
+    "b": "gia",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 17,
+    "attribute": "tournament_rank",
+    "kind": "greater",
+    "a": "jun",
+    "b": "rosa",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 17,
+    "attribute": "tournament_rank",
+    "kind": "greater",
+    "a": "jun",
+    "b": "finn",
+    "confidence": 0.5
+   },
+   {
+    "claim_id": 17,
+    "attribute": "tournament_rank",
+    "kind": "greater",
+    "a": "jun",
+    "b": "hugo",
+    "confidence": 0.5
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 25,
+  "pairs_requested": 300,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 14,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 25,
+  "n_edges": 19,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   2
+  ],
+  "harmony": 0.9774632374887311,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   0.42912061508889954,
+   0.9999999999999999,
+   0.9999999999999999,
+   1.0000000000000002,
+   0.9999999999999998,
+   1.0000000000000002,
+   0.8202787121576166,
+   0.608841902931283,
+   0.005025125628140708,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000004,
+   1.0000000000000004,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   2.465190328815662e-32,
+   0.9999747481124212,
+   4.190823558986625e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.9184546759646153,
+   1.232595164407831e-32,
+   1.232595164407831e-32,
+   4.930380657631324e-32,
+   1.4544622940012406e-31,
+   4.930380657631324e-32,
+   0.07029943695516586,
+   0.7835557564019997,
+   1.9899497487437183,
+   2.958228394578794e-32,
+   0.0,
+   0.0,
+   0.0,
+   1.1832913578315177e-31,
+   2.3172789090867223e-31,
+   2.3172789090867223e-31,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 10,
+    "residual": 2.465190328815662e-32
+   },
+   {
+    "a": 1,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 14,
+    "residual": 0.9999747481124212
+   },
+   {
+    "a": 2,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 10,
+    "residual": 4.190823558986625e-32
+   },
+   {
+    "a": 4,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 13,
+    "residual": 0.5925514038481389
+   },
+   {
+    "a": 7,
+    "b": 8,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 15,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 12,
+    "b": 13,
+    "residual": 0.037999695651441026
+   },
+   {
+    "a": 15,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 19,
+    "b": 21,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 23,
+    "b": 24,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [
+   14,
+   2,
+   6,
+   13,
+   12
+  ],
+  "culprits": [
+   {
+    "claim": 14,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.013821046711099405
+   },
+   {
+    "claim": 2,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.013269240028945806
+   },
+   {
+    "claim": 6,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.007547686368276185
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 242,
+   "api_calls": 0,
+   "cache_hits": 242,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 7548523
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    3,
+    10,
+    15,
+    16
+   ],
+   [
+    2,
+    14,
+    22,
+    23,
+    24
+   ],
+   [
+    4,
+    9,
+    11
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    12,
+    13
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    19,
+    20,
+    21
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    2,
+    14
+   ],
+   [
+    6,
+    13
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": []
+ }
+}

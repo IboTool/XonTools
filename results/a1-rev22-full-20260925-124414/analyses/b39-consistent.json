@@ -1,0 +1,1196 @@
+{
+ "label": "b39-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-e2dbc58bd492",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The model railway club met on Saturday morning to prepare the layout for the upcoming exhibition.",
+   "span": "The model railway club met on Saturday morning to prepare the layout for the upcoming exhibition.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Eli is the team captain.",
+   "span": "Assume that Eli is the team captain.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Fay is younger than Kai.",
+   "span": "Fay is younger than Kai",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Fay and Kai have both been members for several years.",
+   "span": "though both have been members for several years and know the wiring diagrams well",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Fay and Kai know the wiring diagrams well.",
+   "span": "know the wiring diagrams well",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Kira took the photographs.",
+   "span": "Kira took the photographs.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Cleo is taller than Kai.",
+   "span": "Cleo is taller than Kai",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Cleo's height made it easier for her to reach the overhead gantry crane used for the scenery backdrop.",
+   "span": "which made it easier for her to reach the overhead gantry crane used for the scenery backdrop",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Fay arrived before Kai.",
+   "span": "Fay arrived before Kai.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Everyone agreed the new tunnel section looked impressive under the fresh lighting rig that had just been installed.",
+   "span": "Everyone agreed the new tunnel section looked impressive under the fresh lighting rig that had just been installed.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Kai arrived before Cleo.",
+   "span": "Kai arrived before Cleo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Eli brought a box of spare rail joiners for the afternoon session.",
+   "span": "Eli brought a box of spare rail joiners and a set of small screwdrivers for the afternoon session.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Eli brought a set of small screwdrivers for the afternoon session.",
+   "span": "Eli brought a box of spare rail joiners and a set of small screwdrivers for the afternoon session.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Fay arrived before Cleo.",
+   "span": "Fay arrived before Cleo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Kira is shorter than Fay.",
+   "span": "Kira is shorter than Fay",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Kira and Fay often work together on the signal boxes near the station platform.",
+   "span": "the two of them often work together on the signal boxes near the station platform",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "The layout stretches across three long tables joined at the corners.",
+   "span": "The layout itself stretches across three long tables joined at the corners",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "The layout has a river running through a papier-mache valley.",
+   "span": "with a river running through a papier-mache valley",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Cleo ranked highest in last year's scenery competition.",
+   "span": "Cleo ranked highest in last years scenery competition",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Kai came in just behind Cleo in last year's scenery competition.",
+   "span": "Kai came in just behind her in the same event",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Eli spent the afternoon checking the transformer connections to make sure the trains would run smoothly during the show.",
+   "span": "Eli spent the afternoon checking the transformer connections to make sure the trains would run smoothly during the show.",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "The weather forecast looked promising for the weekend.",
+   "span": "the weather forecast looked promising for the weekend",
+   "kind": "quoted"
+  },
+  {
+   "id": 22,
+   "text": "More visitors might attend because the weather forecast looked promising for the weekend.",
+   "span": "which meant more visitors might attend",
+   "kind": "quoted"
+  },
+  {
+   "id": 23,
+   "text": "Fay tested the points on the branch line twice before declaring them fit for the exhibition.",
+   "span": "Fay tested the points on the branch line twice before declaring them fit for the exhibition.",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "The club secretary reminded everyone about the raffle tickets for the charity fund.",
+   "span": "The club secretary reminded everyone about the raffle tickets for the charity fund",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "Kai volunteered to sell the raffle tickets at the door.",
+   "span": "Kai volunteered to sell them at the door",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "The claim about the model railway club meeting has no connection to the relative ages of Fay and Kai; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "The claim about the model railway club meeting has no topical or logical connection to a comparison of Kira's and Fay's heights.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Claim A concerns team captaincy while claim B concerns relative age between two different people; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A is about Eli being team captain, while claim B concerns a tunnel section and lighting rig; the two describe unrelated situations with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A concerns Eli's role as team captain, while claim B concerns the arrival order of Kai and Cleo. There is no logical or contextual link between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Being team captain does not inherently relate to bringing spare rail joiners for a session; the two describe different, independent aspects of Eli's role and actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns Eli's role as team captain, while claim B describes Kira and Fay's collaboration on signal boxes. There is no shared subject or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 24,
+   "rationale": "Claim A concerns team captaincy while claim B concerns a club secretary reminding people about raffle tickets; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Being younger than Kai says nothing about how long Fay or Kai have been members; age and membership duration are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A concerns relative age between Fay and Kai, while claim B concerns relative height between Cleo and Kai. These are different attributes and involve different comparisons, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Age comparison and arrival order are independent facts; being younger doesn't inherently determine who arrived first.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A concerns relative ages of Fay and Kai, while claim B concerns arrival order of Kai and Cleo; these involve different people and different attributes (age vs. arrival time) with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "The relative ages of Fay and Kai have no logical or causal connection to Eli bringing rail joiners to a session.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Long membership plausibly correlates with familiarity with technical details like wiring diagrams, making B more likely if A is true, though it's not guaranteed.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Claim A concerns membership duration for Fay and Kai, while claim B concerns arrival order between Kai and Cleo; these deal with unrelated aspects of the individuals involved.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "A states facts about Fay and Kai's membership duration, which is unrelated to B's claim about Kira and Fay working together on signal boxes. Different people (Kai vs Kira) and different topics (membership vs work activity) mean no logical bearing between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Knowledge of wiring diagrams has no bearing on weekend weather forecasts; the two claims concern unrelated domains.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Knowing the wiring diagrams well suggests Fay has relevant competence and diligence, which makes it somewhat more plausible she would carefully test points twice, but the claims concern different tasks (wiring knowledge vs. physical testing of points) so the support is indirect.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A is about who took the photographs and does not mention Cleo's height or the gantry crane; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "There is no stated connection between who took the photographs and Cleo's ranking in a scenery competition; nothing in A bears on B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "A establishes Cleo is relatively tall (at least compared to Kai), which supports the idea that her height would help her reach something overhead, though the comparison to Kai alone doesn't fully establish absolute tallness.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "The two claims involve entirely different people (Cleo/Kai vs Kira/Fay) with no stated connection between the groups, so knowing one height comparison gives no information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Height and past competition ranking are independent attributes with no logical or causal connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Being taller is a physical attribute unrelated to competitive ranking in a scenery competition; there's no logical connection between height and contest placement.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Claim A concerns Cleo's height and reaching a crane for scenery, while claim B describes a specific feature of the layout (a river in a valley). Neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Cleo's height and reaching the crane is a physical trait unrelated to how she ranked in a past scenery competition, which likely depends on design or artistic skill.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 25,
+   "rationale": "Claim A concerns Cleo's height and reaching a crane, while claim B concerns Kai volunteering to sell raffle tickets; the two describe unrelated people and activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "A only establishes the order between Fay and Kai; it says nothing about Cleo's arrival time relative to Kai, so B is neither made more nor less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Knowing Fay arrived before Kai says nothing about Fay's arrival relative to Cleo, since Kai and Cleo are different people with no stated relation between their arrival times.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "The order of Fay and Kai's arrival has no bearing on the physical layout of a papier-mache valley or river feature.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Claim A describes general agreement about a tunnel section's appearance under new lighting, while claim B concerns Cleo's past competition ranking. There is no shared subject, context, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Both claims describe activities around what seems to be a model railway or exhibit preparation, but A's statement about the lighting rig and general approval doesn't directly bear on B's claim about Eli checking transformer connections; they describe different, independent aspects of preparation.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Both claims state different people arriving before Cleo; Kai arriving before Cleo says nothing about Fay's arrival time relative to Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A concerns the order of arrival of two people, while claim B describes a physical layout feature; neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Both describe items Eli brought to the same session; carrying spare rail joiners does not preclude also bringing screwdrivers, and the two claims are about different objects with no inherent conflict.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "The two claims concern different people and unrelated events (bringing rail joiners vs. a past scenery competition ranking); neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Bringing spare rail joiners suggests preparation for track-related maintenance, which is loosely consistent with ensuring smooth train operation, but the specific activity described in B (checking transformer connections) is a different task than what the joiners would be used for. The claims can both be true as Eli could have done both, or the joiners could be unused backup supplies.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 25,
+   "rationale": "Claim A concerns Eli bringing rail joiners for a session, while claim B concerns Kai volunteering to sell raffle tickets; these describe unrelated actions by different people with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Bringing small screwdrivers suggests Eli intended to do fine mechanical work, which fits well with checking transformer connections for model trains, making B more plausible.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Both describe activities that could occur at a related event, but there is no direct logical or causal link between Eli bringing screwdrivers and Fay testing points on the branch line.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "A is about the order in which Fay and Cleo arrived, while B describes a general working relationship between Kira and Fay on unrelated tasks; neither statement bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "A is a statement about relative height and B is about their working relationship; neither height nor collaboration bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "The claims concern unrelated topics: relative height of Kira and Fay has no bearing on Fay's testing activities regarding branch line points.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "The layout of tables is unrelated in content to a past scenery competition ranking between Kai and Cleo; no logical connection exists between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "A describes a physical table layout while B discusses visitor attendance based on weather forecasts; these concern unrelated aspects of an event with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "A establishes Cleo as the top-ranked competitor; B states Kai finished right after Cleo, which is consistent with and reinforces the idea of a ranked competition where Cleo led. Both claims fit naturally together as complementary parts of the same ranking result.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 18,
+   "b": 24,
+   "rationale": "Claim A concerns Cleo's past competition ranking, while claim B concerns a secretary's reminder about raffle tickets; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "A concerns Eli's preparation of model train equipment, while B concerns visitor attendance driven by weather forecasts; the two describe unrelated aspects of the event with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Both describe different people independently preparing parts of a model railway exhibition for smooth operation; they are consistent but describe unrelated tasks by different people, with no direct logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "A states the favorable forecast, which is the direct cause cited in B for a possible increase in visitors; A being true directly supports the plausibility of B.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "A concerns visitor turnout due to weather, while B concerns Fay's inspection of railway points for the exhibition; the two describe unrelated aspects of the event with no causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 24,
+   "b": 25,
+   "rationale": "A establishes that raffle tickets exist and are being organized for a charity fund; B describes a related but distinct action (Kai volunteering to sell them), which is consistent with and plausibly follows from A but not directly implied by it.",
+   "relation": "supports",
+   "confidence": 0.6
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "eli",
+    "mentions": [
+     "Eli"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo",
+     "her"
+    ]
+   },
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "scenery_competition_rank",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 2,
+    "attribute": "age",
+    "subject": "fay",
+    "comparative": "younger",
+    "object": "kai",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "subject": "cleo",
+    "comparative": "taller",
+    "object": "kai",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "subject": "fay",
+    "comparative": "before",
+    "object": "kai",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 10,
+    "attribute": "arrival_time",
+    "subject": "kai",
+    "comparative": "before",
+    "object": "cleo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 13,
+    "attribute": "arrival_time",
+    "subject": "fay",
+    "comparative": "before",
+    "object": "cleo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 14,
+    "attribute": "height",
+    "subject": "kira",
+    "comparative": "shorter",
+    "object": "fay",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 19,
+    "attribute": "scenery_competition_rank",
+    "subject": "kai",
+    "comparative": "came in just behind",
+    "object": "cleo",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 18,
+    "attribute": "scenery_competition_rank",
+    "entity": "cleo",
+    "comparative": "ranked highest",
+    "confidence": 0.95
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "age",
+    "comparative": "younger",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "before",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "height",
+    "comparative": "shorter",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "scenery_competition_rank",
+    "comparative": "came in just behind",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "scenery_competition_rank",
+    "comparative": "ranked highest",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 21,
+  "blind": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    14
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    1,
+    11
+   ],
+   [
+    1,
+    15
+   ],
+   [
+    1,
+    24
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    15
+   ],
+   [
+    4,
+    21
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    18
+   ],
+   [
+    7,
+    17
+   ],
+   [
+    7,
+    25
+   ],
+   [
+    8,
+    17
+   ],
+   [
+    9,
+    18
+   ],
+   [
+    10,
+    17
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    11,
+    25
+   ],
+   [
+    12,
+    23
+   ],
+   [
+    13,
+    15
+   ],
+   [
+    14,
+    23
+   ],
+   [
+    16,
+    19
+   ],
+   [
+    16,
+    22
+   ],
+   [
+    18,
+    24
+   ],
+   [
+    20,
+    22
+   ],
+   [
+    20,
+    23
+   ],
+   [
+    22,
+    23
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 26,
+  "pairs_requested": 52,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 31,
+  "blind_pairs_related": 0,
+  "entity_relations": 8,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [],
+  "entity_derivation": {
+   "order_kind": {
+    "age": "magnitude",
+    "height": "magnitude",
+    "arrival_time": "sequence",
+    "scenery_competition_rank": "sequence"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 18,
+     "attribute": "scenery_competition_rank",
+     "entity": "cleo",
+     "extreme": "max",
+     "edges": 1
+    }
+   ],
+   "extreme_edges": 1,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 26,
+  "n_edges": 7,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    21,
+    22
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0,
+   "17": 0.0,
+   "18": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.7071067811865475,
+   0.7071067811865475,
+   1.0000000000000002,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   2.958228394578794e-32,
+   7.888609052210118e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 3,
+    "b": 4,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 4,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 2961255,
+   "output_tokens": 268686,
+   "thinking_tokens": 0,
+   "calls": 16262,
+   "api_calls": 2808,
+   "cache_hits": 13454,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 8.48739900000001,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 68670,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 3229941,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3,
+    4,
+    23
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    10
+   ],
+   [
+    11
+   ],
+   [
+    12,
+    20
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    15
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ],
+   [
+    18,
+    19
+   ],
+   [
+    21,
+    22
+   ],
+   [
+    24,
+    25
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false,
+   "15": false,
+   "16": false,
+   "17": false,
+   "18": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": []
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 2,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "kai",
+   "b": "fay",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 6,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "kai",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 8,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "kai",
+   "b": "fay",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 10,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "kai",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "fay",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "fay",
+   "b": "kira",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 19,
+   "attribute": "scenery_competition_rank",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "kai",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 18,
+   "attribute": "scenery_competition_rank",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "kai",
+   "confidence": 0.95,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

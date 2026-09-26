@@ -1,0 +1,136 @@
+{
+ "request": "48442b627182a789a59388a2ae4ba935d1f14246f287966dd139eb4a01f13ab8",
+ "tag": "text-478caecbafac-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo",
+     "he"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana",
+     "she"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev",
+     "his"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "school",
+    "mentions": [
+     "The school"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "head_judge",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "head_judge",
+    "kind": "same",
+    "a": "noor",
+    "b": "head_judge",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 2,
+    "attribute": "head_judge",
+    "kind": "different",
+    "a": "noor",
+    "b": "head_judge",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "dev",
+    "b": "milo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "house",
+    "kind": "different",
+    "a": "milo",
+    "b": "hana",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "house",
+    "kind": "different",
+    "a": "hana",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "house",
+    "kind": "different",
+    "a": "milo",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dev",
+    "b": "quinn",
+    "confidence": 0.95
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2125,
+  "output_tokens": 553,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,80 @@
+{
+ "request": "75ac9eb741da887a51312d06ffd0bae86dc3ea7c73cf5332a417b389ec624eb0",
+ "tag": "text-8aeaa0de66da-seed2-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "Esme and Eli being on different teams has no bearing on the group's midday lunch stop, an unrelated event.",
+    "relation": "unrelated",
+    "confidence": 0.92
+   },
+   {
+    "a": 20,
+    "b": 22,
+    "rationale": "Esme and Eli being on different teams implies at least two teams exist, making the existence of three teams more plausible but not confirmed.",
+    "relation": "supports",
+    "confidence": 0.55
+   },
+   {
+    "a": 21,
+    "b": 27,
+    "rationale": "The midday lunch stop describes an earlier stage of the same journey that leads to the evening camp settling, supporting the continuity of the day's progress.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 23,
+    "b": 26,
+    "rationale": "Yara being the youngest has no logical connection to the group quickening its pace due to clouds.",
+    "relation": "unrelated",
+    "confidence": 0.93
+   },
+   {
+    "a": 23,
+    "b": 28,
+    "rationale": "Yara's age has no bearing on whether the group is ready to rest.",
+    "relation": "unrelated",
+    "confidence": 0.93
+   },
+   {
+    "a": 24,
+    "b": 26,
+    "rationale": "Yara's tracking of time to reach camp before sunset aligns with and supports the group's urgency to quicken pace when clouds gathered.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "Clouds gathering over the peaks directly caused the group to quicken its pace, as stated in claim 26.",
+    "relation": "supports",
+    "confidence": 0.9
+   },
+   {
+    "a": 26,
+    "b": 27,
+    "rationale": "Quickening pace toward the campsite due to clouds supports the group successfully reaching and settling into camp by evening.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "rationale": "The group settling into tents tired but satisfied directly supports that they were ready to rest.",
+    "relation": "supports",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1094,
+  "output_tokens": 631,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,38 @@
+{
+ "request": "d704d98506dd31bfe8ccc8b89241c9cb18a784f33dcc93459b3be51e4d2e8c28",
+ "tag": "text-9b7e89ffc173-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "A promising weather forecast directly supports the claim that more visitors might attend because of it.",
+    "relation": "supports",
+    "confidence": 0.97
+   },
+   {
+    "a": 25,
+    "b": 27,
+    "rationale": "Visitor turnout expectations due to weather have no logical bearing on the secretary's reminder about raffle tickets.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 27,
+    "b": 28,
+    "rationale": "The secretary's reminder about raffle tickets creates context that could prompt someone to volunteer to sell them, but does not guarantee it.",
+    "relation": "supports",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 936,
+  "output_tokens": 219,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

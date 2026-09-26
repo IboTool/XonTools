@@ -1,0 +1,26 @@
+{
+ "request": "5c4122301aa2b72e62b3f41f7f30fc8a2e20a86aed2938fbfc4cc03c8df833ca",
+ "tag": "text-0b5115e9efcc-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Ivo and Uma were on different teams.",
+     "Uma and Dara were on different teams.",
+     "Ivo and Dara were on different teams.",
+     "There were two teams."
+    ],
+    "explanation": "With only two teams, three people (Ivo, Uma, Dara) cannot all be pairwise on different teams, since at least two of them must share one of the two teams."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1091,
+  "output_tokens": 533,
+  "thinking_tokens": 405
+ },
+ "stop_reason": "end_turn"
+}

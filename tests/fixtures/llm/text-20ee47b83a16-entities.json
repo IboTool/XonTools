@@ -1,0 +1,155 @@
+{
+ "request": "aec7bdf14c4244034156c1cfc16ac285234452f8f71bd940aeb0bd465b2d926e",
+ "tag": "text-20ee47b83a16-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "role",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "hall_booking",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "multi",
+    "arity_span": "There were three teams."
+   },
+   {
+    "key": "distance_traveled",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "kai",
+    "b": "ben",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "same",
+    "a": "ben",
+    "b": "kai",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 4,
+    "attribute": "team",
+    "kind": "different",
+    "a": "leo",
+    "b": "ivo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 8,
+    "attribute": "team",
+    "kind": "different",
+    "a": "ivo",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "kai",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "team",
+    "kind": "different",
+    "a": "leo",
+    "b": "rosa",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "ben",
+    "b": "ivo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "hall_booking",
+    "kind": "different",
+    "a": "kai",
+    "b": "kai",
+    "confidence": 0.3
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2007,
+  "output_tokens": 681,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

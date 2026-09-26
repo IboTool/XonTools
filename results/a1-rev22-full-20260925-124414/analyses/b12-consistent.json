@@ -1,0 +1,1978 @@
+{
+ "label": "b12-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-2c9cc19c0103",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Otto arrived first and began arranging the sheet music into neat stacks by voice part.",
+   "span": "Otto arrived first and began arranging the sheet music into neat stacks by voice part.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Hana is the treasurer.",
+   "span": "Assume that Hana is the treasurer.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Kai came in a few minutes later, greeting everyone with a nod before settling into the tenor section.",
+   "span": "Kai came in a few minutes later, greeting everyone with a nod before settling into the tenor section.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Xavi trailed in shortly after, still tying his shoelace as he found a seat near the back.",
+   "span": "Xavi trailed in shortly after, still tying his shoelace as he found a seat near the back.",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Ana brought the first-aid kit.",
+   "span": "Ana brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "The director tapped her baton twice to signal the start of warmups.",
+   "span": "The director tapped her baton twice to signal the start of warmups",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "The room quieted as scales began to rise and fall.",
+   "span": "the room quieted as scales began to rise and fall",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Otto is older than Kai.",
+   "span": "Otto is older than Kai.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Hana stood near the window, humming softly along with the sopranos while flipping through her folder of music.",
+   "span": "Hana stood near the window, humming softly along with the sopranos while flipping through her folder of music.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Kai is older than Xavi.",
+   "span": "Kai is older than Xavi.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "The rehearsal moved into a new piece with tricky harmonies that required several run-throughs before the parts blended smoothly.",
+   "span": "The rehearsal moved into a new piece, one with tricky harmonies that required several run-throughs before the parts blended smoothly.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Xavi struggled at first to find his note but eventually locked in with the basses around him.",
+   "span": "Xavi struggled at first to find his note but eventually locked in with the basses around him.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Otto is older than Xavi.",
+   "span": "Otto is older than Xavi.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Ana passed around cups of water while others stretched and chatted about the upcoming concert.",
+   "span": "Ana passed around cups of water while others stretched and chatted about the upcoming concert.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Kai's part had gotten easier since the last rehearsal.",
+   "span": "Kai mentioned that his part had gotten easier since the last rehearsal",
+   "kind": "quoted"
+  },
+  {
+   "id": 15,
+   "text": "Xavi still needed more practice.",
+   "span": "Xavi laughed, saying he still needed more practice",
+   "kind": "quoted"
+  },
+  {
+   "id": 16,
+   "text": "Hana suggested they run through the closing number one more time before wrapping up.",
+   "span": "Hana suggested they run through the closing number one more time before wrapping up.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Otto nodded in agreement, and the group returned to their places as the director raised her hands for the final pass of the evening.",
+   "span": "Otto nodded in agreement, and the group returned to their places as the director raised her hands for the final pass of the evening.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "The song ended cleanly.",
+   "span": "The song ended cleanly",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Everyone applauded their own progress before packing up for the night.",
+   "span": "everyone applauded their own progress before packing up for the night",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Claim A describes Otto organizing sheet music, which has no bearing on whether Hana holds the treasurer position.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "A establishes Otto arrived first, which is consistent with Kai arriving later and being greeted as part of the group Otto joined; both events fit an ordinary sequential timeline.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "A establishes Otto arrived first, which is consistent with someone else (Xavi) arriving shortly after; the two events fit together as a natural sequence with no conflict.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Otto arranging sheet music has no bearing on Ana bringing a first-aid kit; they concern different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Otto arriving first and organizing sheet music is a preparatory action that could naturally precede the director starting warmups, but neither claim directly implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "A describes Otto arriving early and organizing music, presumably before others arrive; B describes the room quieting as vocal warm-up scales begin, suggesting a group rehearsal has started. These could be sequential parts of the same event, with A being preparation and B being the start of rehearsal, but they aren't directly causally linked.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Arriving first and organizing sheet music says nothing about relative ages of Otto and Kai; no logical or causal link exists between these claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "A establishes Otto arrived first and organized music; B describes Hana's separate activity near a window. These can both occur without conflict, as multiple people can be present in a room doing different things, and there's no explicit sopranos rehearsal mentioned in A that would clarify timing overlap.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Claim A concerns Otto arranging sheet music, while claim B is about the relative ages of Kai and Xavi. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "A describes preparation before rehearsal by arranging sheet music, while B describes an event during the rehearsal itself; A neither confirms nor contradicts details about difficulty of a new piece.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Both describe activities that could occur during the same choir rehearsal setup without any factual conflict; A concerns Otto organizing music, B concerns Xavi finding his pitch among the basses, and they can easily coexist.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "A describes Otto's arrival order and actions at an event, which has no bearing on a relative age comparison between Otto and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Both describe different people doing different preparatory activities before a concert; these can easily happen simultaneously without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A describes Otto arranging sheet music, while claim B concerns whether Kai's part difficulty changed since the last rehearsal; these involve different subjects and facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Otto's arrival and sheet music arranging has no bearing on whether Xavi needed more practice; the claims involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Otto arriving first and organizing sheet music is unrelated to Hana's suggestion about rehearsing the closing number; they involve different actions by different people with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "A shows Otto arriving early to prepare sheet music, while B shows a later scene of Otto agreeing and rehearsal resuming; these depict different moments in a plausible sequence of the same event without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Otto arranging sheet music before a performance has no direct bearing on whether a song later ended cleanly; the claims concern different stages and aspects of the event with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "A describes Otto starting a task early in what seems a rehearsal setup, while B describes a later moment of applause and packing up. They could both belong to the same event timeline but there's no direct causal or logical link established between arranging sheet music and applauding progress before leaving.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Claim A states Hana's role as treasurer, while claim B describes Kai's arrival and seating in a choir context; they involve different people and unrelated details with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "The claims describe different, unconnected facts about different people with no logical or causal link between Hana's role as treasurer and Xavi's arrival and seating.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "The claims concern different people and different topics (a role versus an action), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "The two claims concern unrelated subjects and contexts; there is no logical or causal connection between Hana's role as treasurer and the director's baton signal.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A concerns Hana's role as treasurer, while claim B describes a scene of a room quieting as scales rise and fall; these have no apparent connection in content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A concerns Hana's organizational role as treasurer, while claim B concerns a relative age comparison between Otto and Kai. They share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A describes Hana's role as treasurer, while claim B describes her physical actions and involvement with music/singing; these describe different aspects of her life and are not logically connected.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A concerns Hana's role as treasurer, while claim B concerns the relative ages of Kai and Xavi. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A concerns Hana's organizational role as treasurer, while claim B describes a rehearsal detail about music difficulty and practice. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A concerns Hana's organizational role as treasurer, while claim B describes Xavi's experience singing bass in a choir context; the two describe unrelated people and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "The claim about Hana's role as treasurer has no connection to relative ages of Otto and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "The claim about Hana being treasurer has no logical or topical connection to Ana distributing water and people discussing a concert; they involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Claim A concerns Hana's role as treasurer, which has no logical or thematic connection to Kai's musical or performance part becoming easier since a rehearsal.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns Hana's role as treasurer, while claim B concerns Xavi's need for practice; these involve different people and unrelated topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Being the treasurer relates to financial responsibilities, while suggesting a rehearsal run-through relates to a performance context; the two roles/activities are largely independent and neither makes the other more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Claim A states Hana's role as treasurer, while claim B describes an unrelated scene involving Otto and a director in what seems to be a rehearsal or performance context; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A concerns Hana's organizational role and claim B concerns a song's ending; they share no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A identifies Hana's role as treasurer, which has no bearing on the described event of people applauding their own progress and packing up.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Both claims describe different people arriving late and settling in around the same general timeframe; they are compatible and simply describe parallel events without one affecting the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A describes Kai arriving and joining the tenor section, which has no bearing on whether Ana brought a first-aid kit; the two events are independent.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Kai arriving and settling into the tenor section suggests rehearsal is about to begin or in progress, which is consistent with the director then starting warmups, but neither event directly causes or guarantees the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "A describes Kai arriving and joining the tenor section, which plausibly sets up group rehearsal activity like scales; the two events fit a natural sequence but neither entails the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Claim A describes Kai's arrival and behavior at some event but gives no information about age relative to Otto, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Both describe different people engaged in plausible, compatible activities during what appears to be the same choir rehearsal setting, with no direct interaction or conflict implied.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A describes Kai's entrance and behavior at a rehearsal but gives no information about age relative to Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "A describes Kai arriving late and joining the tenor section during rehearsal, while B describes a later phase of the rehearsal working on a difficult new piece; both can occur in the same session without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Both describe different people joining or settling into a choir/ensemble, but they concern different individuals and sections (Kai in tenors, Xavi in basses) with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A describes Kai arriving and joining a choir section, which has no bearing on the relative ages of Otto and Xavi, two different individuals not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Both describe plausible concurrent activities during a choir rehearsal setting; Kai arriving and settling in doesn't preclude Ana passing water while others chat, they can occur around the same time without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim A describes Kai arriving late and joining the tenor section, which has no bearing on whether Kai's vocal part has become easier since the last rehearsal.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A describes Kai arriving and joining the tenor section, which has no bearing on Xavi's need for practice; the two claims involve different people and unrelated content.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Both claims appear to describe events in the same rehearsal setting but concern different, independent actions by different people; A's occurrence neither confirms nor undermines B's suggestion.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Both describe a rehearsal setting with nods and settling into places, but they involve different people (Kai vs Otto) and different moments (Kai arriving vs the group returning for a final pass), so they can coexist without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Kai's arrival in the tenor section is a setup detail about the choir with no direct bearing on how a particular song later ended; the claims concern different aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "A describes Kai arriving and joining the tenor section, presumably early in a rehearsal, while B describes the group applauding and packing up at the end. These are simply different points in the same event timeline and are not directly related in content.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Xavi's late arrival and shoelace-tying is unrelated to whether Ana brought a first-aid kit; the two events involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Both describe near-simultaneous events plausibly occurring in the same setting (e.g., a rehearsal room), with Xavi arriving late and the director beginning warmups; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "A describes Xavi arriving late and settling in, while B describes an unrelated shift in the room's mood or activity involving scales; neither statement implies or opposes the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A describes Xavi arriving and finding a seat, while claim B is an unrelated statement about relative ages of Otto and Kai. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Both describe people arriving or present in what seems to be the same scene, but there's no direct logical connection between Xavi tying his shoelace and finding a seat versus Hana humming by the window; they can both simply be true occurring simultaneously in the same setting.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A describes Xavi arriving late and tying his shoelace, which has no bearing on the relative ages of Kai and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "A describes Xavi arriving late and sitting down, while B describes a separate event about the rehearsal's musical content; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "A shows Xavi arriving late and hurried, distracted with his shoelace, which plausibly explains why he initially struggled to find his note in B; the claims fit together as cause and effect rather than conflicting.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A describes Xavi arriving late and tying his shoelace, which has no bearing on relative ages of Otto and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Both describe casual, incidental activities that could plausibly occur around the same gathering, but neither claim implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A describes Xavi arriving late and finding a seat, while claim B concerns Kai's part becoming easier since a prior rehearsal; the two involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Arriving disheveled and tying his shoelace while entering suggests a lack of preparedness or timeliness, which loosely supports the idea that he needed more practice or discipline, though the connection is indirect and about a different kind of 'practice'.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "A describes Xavi arriving late and settling in, while B describes Hana making an unrelated suggestion about rehearsal logistics; neither statement bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "A describes Xavi arriving late and finding a seat near the back, while B describes the group already returning to their places for a final pass; these could be sequential events in the same rehearsal, with Xavi joining before the group settles, so they are not mutually exclusive but touch on the same scene setup.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Xavi arriving late and tying his shoelace has no bearing on whether a song ended cleanly; they appear to be unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "A describes Xavi arriving late and settling into a seat, while B describes an ending scene of applause and packing up; both could occur in the same event's timeline without conflict, but they are largely independent details.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "These two claims describe unrelated events with no shared subject or logical connection; one does not affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Ana bringing a first-aid kit has no bearing on a room quieting as scales rise and fall; they describe unrelated events with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "The two claims describe unrelated facts: one about who brought a first-aid kit, the other about relative ages of two people. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "The two claims describe unrelated actions by different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "The two claims concern entirely different subjects (who brought a first-aid kit versus relative ages of two people) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Bringing a first-aid kit has no logical bearing on how a musical rehearsal's harmonies were practiced; the two claims concern unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Claim A concerns Ana bringing a first-aid kit, while claim B concerns Xavi finding a musical note among basses; these describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "These claims concern unrelated matters: one is about who brought an item, the other about relative age of two people. No logical or causal connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Both describe Ana engaging in helpful, social activities around some group event, but bringing a first-aid kit doesn't particularly imply or preclude passing around water; they are largely independent actions.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "There is no logical or causal link between Ana bringing a first-aid kit and Kai's part becoming easier since the last rehearsal; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Bringing a first-aid kit has no logical or causal bearing on whether Xavi needed more practice; the two claims concern unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "The two claims describe unrelated events involving different people and activities (first-aid kit vs. rehearsal suggestion), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Claim A describes Ana bringing a first-aid kit, which has no logical or causal connection to Otto nodding, the group returning to places, or the director raising her hands for a final pass. These appear to be unrelated events or details from different parts of a scene.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Bringing a first-aid kit is unrelated in content to whether a song ended cleanly; no logical or causal connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Ana bringing a first-aid kit is not clearly connected to the group applauding their own progress before packing up; the two describe unrelated events with no logical dependency.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "A describes the director signaling the start of warmups, which plausibly causes the room to quiet and scales to begin, as described in B; these are consistent and naturally sequential events.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "The director's baton tap for warmups has no bearing on the relative ages of Otto and Kai; these are unrelated facts about different people and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "A describes warmups being signaled to start, and B shows Hana humming along with sopranos and handling music during what could plausibly be that same warmup session; the claims are compatible and mildly supportive but not strictly dependent.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A describes a director signaling warmups with a baton, which has no connection to a comparison of ages between Kai and Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "A describes the start of warmups, and B describes a later stage of rehearsal moving into a new piece; these could be sequential events in the same rehearsal session, so A mildly supports the plausibility of B occurring afterward.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "A describes the start of warmups being signaled, which plausibly sets up the scenario in B where Xavi begins vocal warmups and struggles then adjusts; A creates the context for B but doesn't strongly determine it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A concerns a director signaling warmups with a baton, while claim B is an unrelated statement about relative ages of two people. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Both describe plausible activities in a pre-rehearsal setting, but if warmups had just been signaled to start, it's somewhat surprising that others are still stretching and chatting rather than beginning warmups; the scenarios sit slightly awkwardly together though both could be true at overlapping moments.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A describes the director signaling warmups at a rehearsal, while claim B refers to a change in difficulty of Kai's part over time; the two describe unrelated aspects of the rehearsal with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Claim A describes the start of a warmup session led by a director, while claim B states someone named Xavi needed more practice. There is no stated connection between the director's signal and Xavi's need for practice, and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "A describes the start of a rehearsal session (warmups), while B describes a suggestion to run the closing number before ending, which would logically happen after warmups. These are plausibly sequential parts of the same session and do not conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "A describes the director signaling the start of warmups, while B describes a later moment where the group returns for the final pass of the evening, implying warmups and rehearsal already occurred. Both can be true as parts of a sequence over the same session, with B occurring after A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "A describes the start of warmups, while B describes a song ending; these could be unrelated events or even the same session at different times, with no logical connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "A describes the start of warmups (beginning of a session), while B describes applause and packing up at the end of a night's activities; they refer to different, non-overlapping stages of an event and have no clear logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Claim A describes an ambient scene about a room quieting during scale-playing, while claim B is a statement about relative ages of two people; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "A describes vocal scales (warm-up exercises) filling a quieting room, which fits well with B's depiction of Hana humming along with sopranos while looking through music - both suggest a choir or music rehearsal setting happening concurrently.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "The room quieting during scales practice has no bearing on the relative ages of Kai and Xavi; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "A describes the room quieting as warm-up scales begin, which naturally precedes moving into rehearsing a new piece; A sets up a plausible prior stage before B's events, making B a reasonable continuation rather than something A confirms or denies.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "A describes a shared moment of scales rising and falling (likely a group vocal warm-up), which fits the context of B where Xavi is trying to find his note among basses; the two describe complementary parts of the same rehearsal scene.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A describes a scene of a room quieting as musical scales rise and fall, while claim B is a factual assertion about relative ages of two individuals. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "A depicts the room going quiet with focused practice (scales), while B depicts people chatting and stretching, an incompatible atmosphere unless these occur at different moments in a sequence.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "A describes a rehearsal moment with scales being played, which is unrelated to whether Kai's specific part has become easier over time; the two claims concern different aspects with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "A describes scales being played, which suggests practice is occurring, but does not indicate the skill level or whether more practice is still needed; the two claims address different aspects with no direct logical link.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "A describes warm-up scales starting, which plausibly precedes running through a closing number; the scenes are compatible as a natural sequence in a rehearsal.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "A describes scales being played as the room quiets, suggesting warm-up practice; B describes the group returning to places for a final pass, a plausible later stage in the same rehearsal sequence, so A lends mild support to the scenario in B rather than conflicting with it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "A describes scales (practice/warm-up exercises) beginning, which suggests preparation before a song rather than a song already in progress; it doesn't clearly connect to a specific song ending cleanly, though there's mild tension if the scales imply the song hasn't started or ended yet.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "A describes a room quieting as musical scales begin, suggesting a practice or performance session starting; B describes applause and packing up, suggesting an ending. These could both be true as part of the same session's start and end, but B's 'applauded their own progress' framing sits a bit awkwardly with A's quiet, focused scale-practice image, creating mild tension rather than direct support or contradiction.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A concerns the relative ages of Otto and Kai, while claim B describes Hana's actions near a window with sheet music; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "A establishes a relative age relation between Otto and Kai, but says nothing about Xavi, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "The claims concern entirely different subjects (relative ages of two people vs. a rehearsal's progress on a piece of music) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A concerns relative ages of Otto and Kai, while claim B concerns Xavi's experience finding a note among basses; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "A states Otto's age relative to Kai, which says nothing about Otto's age relative to Xavi. No shared reference point exists between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A concerns the relative ages of Otto and Kai, while claim B describes an unrelated social scene involving Ana and others discussing a concert. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "A is about relative ages of Otto and Kai, while B is about how Kai's part changed since a rehearsal; these concern entirely different subjects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A concerns relative ages of Otto and Kai, while claim B concerns Xavi's practice needs; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A concerns the relative ages of Otto and Kai, while claim B concerns Hana suggesting a rehearsal of a closing number. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Claim B describes an unrelated scene involving Otto and a director/group activity, with no connection to relative ages of Otto and Kai.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "There is no logical or contextual connection between an age comparison of two people and how a song ended.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A concerns relative ages of two individuals, while claim B describes a generic group action about applauding progress and packing up. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Claim A describes Hana's actions near a window while humming with sopranos, and claim B is an unrelated statement about relative ages of Kai and Xavi; there is no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "A shows Hana casually humming and flipping through music near the window, suggesting a relaxed moment, while B describes an intensive rehearsal segment requiring multiple run-throughs for difficult harmonies; these could be different moments in the same rehearsal, but the casual tone of A sits oddly with the effortful focus implied by B.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Both describe different choir members finding their parts during what seems to be the same rehearsal scene, but neither claim's truth affects the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Claim A describes Hana's actions near a window with music, while claim B compares ages of Otto and Xavi. There is no shared subject, context, or logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Both describe different people doing different activities that could plausibly occur simultaneously during a choir rehearsal break; nothing in A bears on the truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "A describes Hana's actions during what appears to be a rehearsal context, while B makes a claim about Kai's part difficulty over time; the two involve different people and different subjects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Claim A describes Hana humming and flipping through music, which has no bearing on Xavi's practice needs; the two claims involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "A shows Hana relaxed and casually engaged with the music, which is broadly consistent with her actively participating enough to suggest another run-through, but the two actions aren't directly tied together.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "A shows Hana in an informal, standing moment near a window, while B depicts the whole group returning to formal positions for a rehearsal pass; A could plausibly be a moment just before the group reassembles, so they are compatible but not directly supportive or contradictory.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Hana humming along with the sopranos suggests a song is being sung, which is loosely consistent with a song eventually ending cleanly, but the connection is weak and indirect since A describes an ongoing moment while B describes an ending.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "A shows Hana humming during what seems like an ongoing rehearsal, while B describes a later moment of applause and packing up; these could be sequential parts of the same session, so both can be true.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A concerns relative ages of Kai and Xavi, while claim B describes a rehearsal working through a new piece with difficult harmonies. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Kai's relative age compared to Xavi has no bearing on Xavi's experience finding his note among the basses; these are unrelated facts about different domains.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Both claims state someone is older than Xavi, but they concern different people (Kai vs Otto) and are independent claims about age. Kai being older than Xavi has no bearing on whether Otto is older than Xavi.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "The claims describe entirely different, unconnected subjects with no logical or causal link between age comparison and the water-passing scene.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Claim A concerns relative age between Kai and Xavi, while claim B concerns changes to the difficulty of Kai's part over time. These topics have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Being older than someone has no logical bearing on whether that person needs more practice at some skill; these concern unrelated dimensions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A concerns relative ages of Kai and Xavi, while claim B concerns Hana suggesting a rehearsal action; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Claim A concerns relative ages of Kai and Xavi, while claim B describes a scene about Otto, a group, and a director; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "The relative ages of Kai and Xavi have no bearing on how a song ended; these describe entirely unrelated situations.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Claim A is about relative ages of two individuals, while claim B is about a group applauding their own progress before packing up. There is no logical or contextual connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "A describes a rehearsal of a harmonically tricky piece requiring multiple run-throughs to blend, which fits with B's depiction of Xavi initially struggling to find his note before locking in with the basses.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A describes a rehearsal and musical difficulties, while claim B is an unrelated statement about relative ages of two people not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Both describe plausible activities during a rehearsal break or session, but A implies intense focused practice while B describes a relaxed break with chatting and stretching; they can coexist at different moments of the same rehearsal without contradiction.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "A describes a new piece with tricky harmonies requiring multiple attempts, which is somewhat at odds with B's claim that Kai's part had become easier, though they could refer to different pieces or parts.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "A describes a piece requiring several run-throughs before parts blended, implying ongoing practice was needed; this supports the idea that Xavi (presumably a participant) still needed more practice.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Both describe rehearsal activity involving repeated run-throughs, but A concerns a new piece with tricky harmonies while B concerns a closing number; they may be the same or different pieces, so B is plausible but not strongly implied by A.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "B describes a subsequent event, the final pass after presumably the run-throughs mentioned in A; both can coexist as sequential parts of the same rehearsal.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Claim A describes a difficult piece needing many run-throughs to blend, while claim B describes a song ending cleanly; these could refer to different songs or the clean ending could come after the run-throughs succeeded, so they are not strictly contradictory but sit awkwardly together given the described difficulty.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A describes the rehearsal reaching smooth blending of parts after several run-throughs, which plausibly sets up a satisfying end where participants feel progress was made and celebrate it before packing up.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A concerns Xavi's vocal performance and pitch-finding ability, while claim B concerns a relative age comparison between Otto and Xavi. These pertain to entirely different attributes with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Both describe simultaneous but independent activities during what seems to be a rehearsal break or warm-up; Xavi finding his note doesn't affect Ana's water distribution or others' chatting.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A concerns Xavi's difficulty and eventual success finding his note among the basses, while claim B concerns Kai's part becoming easier over time; they involve different people and different aspects of rehearsal with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "A shows Xavi had initial difficulty finding his note, which suggests he may still benefit from more practice, though he did eventually succeed in this instance.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "A describes an in-rehearsal vocal issue being resolved, while B describes a separate suggestion about scheduling another run-through; neither statement's truth bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "A describes Xavi finding his note and locking in with the basses, which fits as part of the rehearsal process leading up to the group settling into a final pass; both events plausibly occur in sequence during the same rehearsal.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "A describes an early struggle that was resolved through eventually locking in with the basses, which supports a coherent ending being achieved rather than hindering it; the initial difficulty was overcome before the piece concluded.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Xavi's eventual success locking in with the basses is consistent with a general sense of progress that the group applauds, though B refers to a broader collective moment not explicitly tied to A.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A concerns the relative ages of Otto and Xavi, while claim B describes an unrelated social scene involving Ana and others discussing a concert. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A concerns relative ages of Otto and Xavi, while claim B concerns Kai's part becoming easier since a rehearsal. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Otto's relative age compared to Xavi has no logical bearing on whether Xavi needed more practice; these are unrelated facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "The two claims concern entirely different people and topics (relative age vs. a rehearsal suggestion), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Claim A states an age comparison between Otto and Xavi, while claim B describes an unrelated scene involving Otto nodding and a group resuming activity under a director's direction. There is no logical or contextual connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "The two claims discuss entirely unrelated topics: relative ages of two people versus how a song ended. There is no logical or content connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A is about relative ages of two individuals, while claim B describes a group behavior involving applause and ending an activity; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Both claims seem to describe elements of the same rehearsal scene, but A's content about passing water and chatting doesn't logically bear on whether Kai's part became easier over time.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A describes a casual scene of people stretching and chatting about a concert, while claim B makes a specific statement about Xavi's practice needs. There's no direct logical connection between passing out water/chatting and Xavi's practice status.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "A depicts a relaxed break during a rehearsal (stretching, chatting) while B has someone proposing to resume practicing the closing number before finishing up; both fit within the same rehearsal scene, with B plausibly following A as the break ends.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "A describes a casual break where people stretched and chatted, and B describes that break ending as the group returns to formal positions for another run-through; these fit together as sequential parts of a rehearsal scene.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "A describes a casual break-time scene with water and chatting about an upcoming concert, while B refers to a song ending, likely from a different phase such as rehearsal or performance; the two describe different moments with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "A depicts a casual break with water and chatting, likely during or before an activity session, while B describes a closing moment of self-applause and packing up; both could occur at different points in the same gathering without conflict, and A mildly supports the idea of a structured group session that would end as B describes.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "A is about Kai's part becoming easier, while B is about Xavi's need for practice; these concern different people and different aspects of the performance, so A neither confirms nor undermines B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Kai's part becoming easier is a personal observation unrelated to Hana's suggestion to rehearse the closing number again; neither statement bears on the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "A describes Kai's part becoming easier, while B describes an unrelated scene of Otto nodding and the group resuming rehearsal; there is no direct logical connection between the two beyond a shared rehearsal context.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "If Kai's part became easier, Kai is less likely to cause a mistake, which mildly supports the song ending cleanly, though the two are only loosely connected.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "A suggests improvement in one person's part, which could plausibly contribute to a general sense of progress being celebrated by the group, but the connection is loose and indirect since B refers to everyone's collective progress, not specifically Kai's.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "If Xavi still needed more practice, that gives reason for Hana to suggest an extra run-through of the closing number before finishing, making B a plausible response to A.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "A states Xavi needed more practice, and B describes Otto agreeing (presumably with that assessment) and the group resuming rehearsal, which is a plausible consequence but not something A directly entails.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "A suggests Xavi (perhaps a musician or performer) is not yet proficient, which could make a clean ending of the song less likely, but the two are only loosely connected without more context tying Xavi to the song's performance.",
+   "relation": "tension",
+   "confidence": 0.35
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "A states Xavi still needed more practice, which is compatible with everyone (including Xavi) applauding their own progress, since acknowledging progress doesn't preclude still needing improvement; the two claims address different aspects and could both hold.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "B describes Otto agreeing to Hana's suggestion and the group acting on it, directly continuing and reinforcing the scenario set up in A.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "A shows Hana proposing another run-through of the closing number, which implies rehearsal was continuing; B describes a song ending cleanly, plausibly the outcome of that run-through, so A mildly supports the scenario in B without strongly determining it.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Hana's suggestion to rehearse once more is a distinct event from applauding progress before packing up; both could plausibly occur in the same session, with the run-through happening and then applause before wrapping up, so B is neither strongly supported nor contradicted by A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "A sets up the director beginning a final rehearsal pass, which naturally leads into and makes plausible a clean ending of the song being practiced.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "A describes the group returning to places for a final pass before the evening ends, which sets up a natural lead-in to a closing moment like applause and packing up; A makes B more plausible as the next event in the same rehearsal's conclusion.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "A clean ending suggests a natural stopping point for a session, which fits with people applauding their progress and packing up, but the connection is loose and not causally strong.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "xavi",
+    "mentions": [
+     "Xavi",
+     "his"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana",
+     "her"
+    ]
+   },
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana"
+    ]
+   },
+   {
+    "id": "director",
+    "mentions": [
+     "The director",
+     "her"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 7,
+    "attribute": "age",
+    "subject": "otto",
+    "comparative": "older than",
+    "object": "kai",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 9,
+    "attribute": "age",
+    "subject": "kai",
+    "comparative": "older than",
+    "object": "xavi",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 12,
+    "attribute": "age",
+    "subject": "otto",
+    "comparative": "older than",
+    "object": "xavi",
+    "confidence": 0.98
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 0,
+    "attribute": "arrival_time",
+    "entity": "otto",
+    "comparative": "first",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "first",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 20,
+  "pairs_requested": 190,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 3,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    5,
+    13
+   ],
+   [
+    6,
+    13
+   ],
+   [
+    6,
+    19
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    10,
+    14
+   ],
+   [
+    10,
+    18
+   ],
+   [
+    15,
+    18
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 0,
+     "attribute": "arrival_time",
+     "entity": "otto",
+     "extreme": "min",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 20,
+  "n_edges": 25,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000004,
+   1.0000000000000004,
+   1.0,
+   1.0000000000000004,
+   1.0,
+   1.0000000000000004,
+   1.0000000000000004,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000004,
+   1.0000000000000002,
+   1.0000000000000002
+  ],
+  "claim_residuals": [
+   3.2047474274603606e-32,
+   0.0,
+   0.0,
+   1.1339875512552044e-31,
+   0.0,
+   1.9721522630525295e-31,
+   2.2433231992222522e-31,
+   0.0,
+   1.9721522630525295e-31,
+   0.0,
+   2.5391460386801315e-31,
+   3.106139814307734e-31,
+   0.0,
+   8.135128085091684e-32,
+   0.0,
+   5.423418723394457e-32,
+   1.2079432611196744e-31,
+   3.3280069439011436e-31,
+   1.0600318413907346e-31,
+   1.3558546808486143e-31
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 2,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 3,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 3,
+    "b": 11,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 8,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 8,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 16,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 6,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 15,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 10,
+    "b": 19,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 11,
+    "b": 15,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 11,
+    "b": 17,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 18,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 11,
+    "b": 19,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 13,
+    "b": 17,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 14,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 16,
+    "b": 17,
+    "residual": 4.4373425918681915e-32
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 17,
+    "b": 19,
+    "residual": 2.958228394578794e-32
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 4070,
+   "api_calls": 0,
+   "cache_hits": 4070,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    2,
+    3,
+    5,
+    6,
+    8,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   [
+    1
+   ],
+   [
+    4
+   ],
+   [
+    7
+   ],
+   [
+    9
+   ],
+   [
+    12
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 5,
+    "b": 13,
+    "rationale": "Both describe plausible activities in a pre-rehearsal setting, but if warmups had just been signaled to start, it's somewhat surprising that others are still stretching and chatting rather than beginning warmups; the scenarios sit slightly awkwardly together though both could be true at overlapping moments.",
+    "confidence": 0.55
+   },
+   {
+    "a": 6,
+    "b": 13,
+    "rationale": "A depicts the room going quiet with focused practice (scales), while B depicts people chatting and stretching, an incompatible atmosphere unless these occur at different moments in a sequence.",
+    "confidence": 0.6
+   },
+   {
+    "a": 6,
+    "b": 19,
+    "rationale": "A describes a room quieting as musical scales begin, suggesting a practice or performance session starting; B describes applause and packing up, suggesting an ending. These could both be true as part of the same session's start and end, but B's 'applauded their own progress' framing sits a bit awkwardly with A's quiet, focused scale-practice image, creating mild tension rather than direct support or contradiction.",
+    "confidence": 0.45
+   },
+   {
+    "a": 8,
+    "b": 10,
+    "rationale": "A shows Hana casually humming and flipping through music near the window, suggesting a relaxed moment, while B describes an intensive rehearsal segment requiring multiple run-throughs for difficult harmonies; these could be different moments in the same rehearsal, but the casual tone of A sits oddly with the effortful focus implied by B.",
+    "confidence": 0.55
+   },
+   {
+    "a": 10,
+    "b": 14,
+    "rationale": "A describes a new piece with tricky harmonies requiring multiple attempts, which is somewhat at odds with B's claim that Kai's part had become easier, though they could refer to different pieces or parts.",
+    "confidence": 0.55
+   },
+   {
+    "a": 10,
+    "b": 18,
+    "rationale": "Claim A describes a difficult piece needing many run-throughs to blend, while claim B describes a song ending cleanly; these could refer to different songs or the clean ending could come after the run-throughs succeeded, so they are not strictly contradictory but sit awkwardly together given the described difficulty.",
+    "confidence": 0.55
+   },
+   {
+    "a": 15,
+    "b": 18,
+    "rationale": "A suggests Xavi (perhaps a musician or performer) is not yet proficient, which could make a clean ending of the song less likely, but the two are only loosely connected without more context tying Xavi to the song's performance.",
+    "confidence": 0.35
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 7,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "otto",
+   "b": "kai",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 9,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "kai",
+   "b": "xavi",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 12,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "otto",
+   "b": "xavi",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

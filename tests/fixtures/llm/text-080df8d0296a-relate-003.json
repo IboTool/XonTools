@@ -1,0 +1,94 @@
+{
+ "request": "fc0542585101d5b6d846a79d218767e569e8869dc8b6e1c98e2e2490c9c9e658",
+ "tag": "text-080df8d0296a-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 19,
+    "b": 22,
+    "rationale": "Isla sitting beside Nell has no bearing on Cy asking Ivo about the schedule.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 19,
+    "b": 25,
+    "rationale": "Isla settling into a chair beside Nell could contribute to the group of five friends being together, but doesn't directly imply an exchange of glances.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   },
+   {
+    "a": 20,
+    "b": 26,
+    "rationale": "Isla and Nell discussing which entries might win supports the idea that each friend hopes their favorite entry is recognized.",
+    "relation": "supports",
+    "confidence": 0.75
+   },
+   {
+    "a": 21,
+    "b": 28,
+    "rationale": "Nell being taller than Isla has no logical connection to Quinn scanning for a vantage point.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 21,
+    "b": 29,
+    "rationale": "A height comparison between Nell and Isla is unrelated to the evening's general mood.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 22,
+    "b": 23,
+    "rationale": "Cy asking Ivo about the schedule directly prompts Ivo's promise of an announcement soon.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 22,
+    "b": 25,
+    "rationale": "Cy asking Ivo about the schedule doesn't specifically imply the five friends exchanging glances.",
+    "relation": "unrelated",
+    "confidence": 0.7
+   },
+   {
+    "a": 22,
+    "b": 29,
+    "rationale": "Cy's inquiry about the schedule doesn't directly relate to the evening's general atmosphere of anticipation.",
+    "relation": "unrelated",
+    "confidence": 0.6
+   },
+   {
+    "a": 24,
+    "b": 28,
+    "rationale": "The lights dimming for the presentation would motivate Quinn to seek a good vantage point before the show starts, supporting that action.",
+    "relation": "supports",
+    "confidence": 0.6
+   },
+   {
+    "a": 24,
+    "b": 29,
+    "rationale": "The lights dimming for the presentation supports the sense of anticipation described in the evening's continuation.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 25,
+    "b": 26,
+    "rationale": "The five friends exchanging glances suggests shared anticipation, supporting that each hopes their favorite entry wins.",
+    "relation": "supports",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1096,
+  "output_tokens": 771,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

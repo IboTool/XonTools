@@ -1,0 +1,1584 @@
+{
+ "label": "b50-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-75e2bcfe9b0d",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Pia arrived first, carrying a worn script covered in notes from the previous week.",
+   "span": "Pia arrived first, carrying a worn script covered in notes from the previous week.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Lena is the team captain.",
+   "span": "Assume that Lena is the team captain.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Vik came in a few minutes later, stretching after a long walk from the bus stop.",
+   "span": "Vik came in a few minutes later, stretching after a long walk from the bus stop",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Vik greeted Finn near the folding chairs.",
+   "span": "he greeted Finn near the folding chairs",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Dev brought the first-aid kit.",
+   "span": "Dev brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Lena was slightly taller than Pia.",
+   "span": "Lena was slightly taller than Pia, though shorter than Finn",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Lena was shorter than Finn.",
+   "span": "though shorter than Finn",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Finn stood near the back adjusting the curtain ropes.",
+   "span": "who stood near the back adjusting the curtain ropes",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Pia and Vik were in different houses.",
+   "span": "Pia and Vik were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Dev had arrived exactly on time.",
+   "span": "Someone mentioned that Dev had arrived exactly on time, which was unusual given the traffic outside.",
+   "kind": "quoted"
+  },
+  {
+   "id": 10,
+   "text": "Vik and Finn were in different houses.",
+   "span": "Vik and Finn were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Lena checked her watch and reminded the group that the full run-through needed to start soon.",
+   "span": "Lena checked her watch and reminded the group that the full run-through needed to start soon",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "The theatre closed early on weekdays.",
+   "span": "since the theatre closed early on weekdays",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Pia and Finn were in different houses.",
+   "span": "Pia and Finn were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Finn was ranked highest among the ensemble members for stage presence.",
+   "span": "Finn was ranked highest among the ensemble members for stage presence, according to last term's evaluations",
+   "kind": "quoted"
+  },
+  {
+   "id": 15,
+   "text": "Vik ranked just below Finn.",
+   "span": "while Vik ranked just below him",
+   "kind": "quoted"
+  },
+  {
+   "id": 16,
+   "text": "The school had three houses.",
+   "span": "The school had three houses.",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Claim A describes Pia's arrival and script, which has no bearing on who holds the team captain role described in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "A describes Pia arriving first, which is consistent with Vik arriving later; the claims describe different people arriving at different times without conflict.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "A describes Pia's arrival and script; B describes Vik greeting Finn elsewhere. Neither statement bears on the other, no shared claim about causation or timing that connects them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "A describes Pia arriving first with a script; B describes Dev bringing a first-aid kit. These involve different people and objects with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Claim A describes Pia's arrival and script; it gives no information about heights of Pia or Lena, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A concerns Pia's arrival and script, while claim B concerns relative heights of Lena and Finn; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "A describes Pia arriving first with a script, while B describes Finn's separate action near the curtain ropes; these can easily occur together in the same scene without one affecting the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A describes Pia arriving with a script but says nothing about which house she or Vik belong to, so it provides no information about their house assignments.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "A states Pia arrived first, implying no one else, including Dev, arrived before or at the same time as her. If Dev arrived exactly on time and Pia arrived first (i.e., earlier than everyone else), this can still be consistent if 'first' just means earliest, and Dev's on-time arrival was after Pia's. There's no direct contradiction, but claiming Pia was first sits awkwardly with emphasizing Dev's precise on-time arrival, as it raises the question of relative timing.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A concerns Pia's arrival and script, and has no bearing on the housing arrangement of Vik and Finn mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Both describe plausible actions in a group rehearsal setting, but Pia arriving first with a marked-up script doesn't directly affect whether Lena checks her watch or urges the run-through to start; they can both be true independently.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "A describes Pia arriving with a marked-up script, which has no logical bearing on the theatre's weekday closing hours; the two claims concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Claim A describes Pia arriving with a script but says nothing about houses or living arrangements, so it has no bearing on whether Pia and Finn were in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Pia arriving first with a marked-up script says nothing about how Finn ranked for stage presence; the two claims concern different people and different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Claim A describes Pia's arrival and script, while claim B concerns a ranking between Vik and Finn; they share no common subject or context that would connect them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Claim A describes Pia arriving with a script, while claim B states a fact about the school's house system. These deal with entirely unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Claim A concerns Lena's role as team captain, while claim B describes Vik's arrival and stretching after a walk. There is no logical or contextual connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A concerns Lena's role as team captain, while claim B describes an unrelated interaction between Vik and Finn near folding chairs. There is no logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Lena's role as team captain has no bearing on who brought the first-aid kit; the two claims concern different people and unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Being team captain has no bearing on relative height; these describe unrelated attributes of Lena.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Being team captain has no logical bearing on relative height; these describe unrelated attributes of Lena.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A concerns Lena's role as team captain, while claim B describes Finn's actions with curtain ropes. There is no logical or contextual connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A is about Lena's team role, while claim B concerns Pia and Vik's living arrangements; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "The claim about Lena being team captain has no logical or contextual connection to Dev's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A concerns Lena's role as team captain, while claim B concerns Vik and Finn's house assignments. There is no logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Being team captain plausibly involves organizing the group and keeping track of schedules, so A makes B's leadership-like behavior more likely, though not certain.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "These claims concern unrelated topics: one is about a team leadership role, the other about a theatre's weekday hours. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A about Lena being team captain has no logical connection to claim B about Pia and Finn's housing arrangement; they involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Lena being team captain concerns a leadership role, while Finn's ranking for stage presence concerns a different attribute among ensemble members; these facts are independent and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns Lena's team role, while claim B concerns a ranking relationship between Vik and Finn. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Lena's role as team captain has no logical or contextual bearing on how many houses the school had; they concern unrelated aspects of the school setup.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "A establishes Vik's arrival and activity but doesn't specify location or subsequent actions like greeting Finn; B adds a plausible follow-on event that could naturally occur after arrival, but nothing in A confirms or denies it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A describes Vik's arrival and activity, while claim B describes a separate action by Dev; neither provides information bearing on the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A describes Vik arriving after a walk, while claim B is an unrelated statement about relative heights of two different people. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A describes Vik's arrival and activity, while claim B compares the heights of Lena and Finn. The two claims involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Both describe different people doing unrelated actions at possibly the same event; A's content about Vik's arrival has no bearing on Finn's activity with curtain ropes.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Vik arriving after a walk from the bus stop suggests he was outside/traveling, not necessarily in a different house than Pia; the claims don't clearly establish or preclude both being in different houses at some point, so there's no direct logical link.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "A states Vik arrived a few minutes late (implying a reference time), while B states Dev arrived exactly on time; these concern different people and are not mutually exclusive, though they are loosely related as arrival-time comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Vik coming in from a walk suggests arriving home, giving no direct information about Finn's location or whether they live in different houses; the claims concern different aspects.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Vik arriving later and stretching from a walk is a separate event from Lena checking the time and urging the group to start the run-through; they could co-occur but neither makes the other more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A describes Vik arriving after walking from the bus stop, with no mention of a theatre or timing tied to weekday closures; the two statements concern unrelated events with no shared context established.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Vik's arrival by bus and a stretch after a walk has no bearing on whether Pia and Finn were in different houses; the claims involve different people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim A describes Vik's arrival and activity, while claim B is about Finn's ranking for stage presence; they involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A describes Vik's arrival and physical state, which has no bearing on any ranking or comparison with Finn described in claim B; the two describe unrelated aspects of Vik.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A describes Vik arriving after a walk from the bus stop, which has no bearing on the number of houses at the school mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "The claims describe unrelated events involving different people and actions with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A describes an interaction between Vik and Finn near folding chairs, while claim B describes a height comparison between Lena and Pia. They involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A describes a greeting event involving Vik and Finn near folding chairs, while claim B compares heights between Lena and Finn. These claims involve different people and different types of facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "If Vik greeted Finn near the folding chairs, this suggests Finn was at that location, which is in some tension with Finn also standing near the back adjusting curtain ropes, unless the folding chairs are near the back or the events occur at different times. Both could be true under an ordinary reading (different moments), so it's not a strict contradiction, but the locations described create mild awkwardness.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "A places Vik near folding chairs greeting Finn, implying he is at some location or gathering, but says nothing about which house Vik or Pia are in, so the claims don't directly bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A describes a greeting between Vik and Finn near folding chairs, while claim B concerns Dev's arrival timing. There is no shared subject or logical connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "If Vik greeted Finn near the folding chairs, they were in the same physical location at that time, which contradicts them being in different houses at that time. However, they could have been in different houses at other times, so this is not a strict contradiction as written, but does create strong tension.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "These describe different people and actions occurring in what seems to be the same general setting, but neither event implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "There is no shared context linking a greeting near folding chairs to a theatre's weekday closing hours; the claims describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A places Finn near folding chairs where Vik greeted him, but says nothing about where Pia was or house assignments, so it doesn't bear on B.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Being greeted near folding chairs by Vik has no logical bearing on Finn's ranking for stage presence; the two describe unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "A places Vik and Finn at the same location interacting, but says nothing about any ranking or hierarchy between them, so B's claim about relative rank is neither supported nor contradicted by A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A describes a localized social interaction near folding chairs, while claim B states a general fact about the school's organizational structure. Neither has any bearing on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "The claim about Dev bringing a first-aid kit has no logical or thematic connection to a claim about relative heights of Lena and Pia.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "There is no logical or causal connection between who brought the first-aid kit and the relative heights of Lena and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "The two claims describe unrelated actions by different people with no logical or causal connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Dev bringing the first-aid kit has no logical bearing on where Pia and Vik were located; these involve different people and facts entirely unrelated to each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Bringing a first-aid kit says nothing about whether Dev arrived on time; the two facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Dev bringing a first-aid kit has no bearing on whether Vik and Finn were in different houses; the claims concern unrelated facts about different people/objects.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "These describe two separate, unrelated actions by different people with no logical connection between bringing a first-aid kit and checking a watch about a schedule.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Bringing a first-aid kit has no logical or topical connection to a theatre's early closing on weekdays.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "The two claims concern unrelated matters: who brought a first-aid kit has no bearing on where Pia and Finn were located.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Bringing a first-aid kit has no logical or thematic connection to a ranking of ensemble members' stage presence.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "The two claims describe unrelated events involving different people and topics; nothing about who brought a first-aid kit bears on a ranking between Vik and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "There is no logical or topical connection between someone bringing a first-aid kit and the number of houses at a school.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Claim A only establishes a height comparison between Lena and Pia; it says nothing about Finn, so it neither confirms nor rules out Lena being shorter than Finn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "The two claims describe unrelated people and actions with no logical or thematic connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "A is about relative heights of Lena and Pia, while B concerns which houses Pia and Vik belong to. Neither claim gives information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A concerns relative heights of Lena and Pia, while claim B concerns Dev's arrival time; these topics have no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A concerns the relative heights of Lena and Pia, while claim B concerns which houses Vik and Finn belonged to. These involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Height has no bearing on whether Lena checked her watch or made a scheduling reminder; these are unrelated facts about a person.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "A is about relative heights of two people, while B concerns theatre closing times on weekdays; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A concerns relative heights of Lena and Pia, while claim B concerns which houses Pia and Finn belong to. These deal with entirely different attributes and people, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A concerns relative height between Lena and Pia, while claim B concerns stage presence rankings involving Finn. These are unrelated attributes and people with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "The two claims describe height/ranking relationships between entirely different, unrelated pairs of people, with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "The claims concern unrelated topics: one is about relative heights of two people, the other about a school's organizational structure. Neither bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Lena's relative height to Finn has no bearing on Finn's location or activity with the curtain ropes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "The two claims concern entirely different subjects (relative height of Lena and Finn vs. house placement of Pia and Vik) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "The two claims concern entirely different subjects (relative height of Lena and Finn vs. Dev's arrival time) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A concerns relative heights of Lena and Finn, while claim B concerns house assignments of Vik and Finn. Neither claim shares enough context to bear on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Height has no bearing on whether Lena checked her watch or made an announcement about scheduling; the two claims concern unrelated aspects of Lena.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "The two claims concern entirely different subjects (relative heights of two people vs. a theatre's weekday hours) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A concerns relative heights of Lena and Finn, while claim B concerns house assignments of Pia and Finn; neither provides information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Height and stage presence ranking are unrelated attributes; being taller than Lena has no bearing on Finn's ranking for stage presence.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Both claims describe relative rankings involving Finn, but they concern different people (Lena vs. Vik) and don't establish enough shared context to determine if they interact meaningfully or conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Lena's height relative to Finn has no bearing on the number of houses at the school; these concern entirely different topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A describes Finn's location near stage curtains, which has no bearing on whether Pia and Vik were in different houses; the claims involve different people and unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A describes Finn's location and activity, while claim B describes Dev's arrival time; the two involve different people and unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "If Finn was near the back adjusting curtain ropes, he was presumably in the same location as the scene described, which suggests he and Vik (if part of the same scene) could be in the same place, making claim B less likely; however, without knowing Vik's location or whether the curtain ropes are in a house, this is only weakly connected.",
+   "relation": "tension",
+   "confidence": 0.4
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Both claims describe different people doing separate activities that could plausibly occur simultaneously during preparation for a performance; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "A describes Finn's location and activity, presumably at the theatre, but gives no information about weekday closing times or schedules, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A places Finn at a curtain, implying a stage or theater setting, while claim B asserts Finn was in a different house from Pia. If 'houses' refers to physical dwellings, Finn being near curtain ropes doesn't clearly conflict with being in a different house than Pia, but the scenario suggests a shared location rather than separate houses. These are not directly about the same fact, so no clear contradiction or support arises.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Standing at the back adjusting curtain ropes suggests a backstage/technical role rather than a performing role, which sits awkwardly with being ranked highest for stage presence among the ensemble, though both could technically be true if he also performs.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A describes Finn's physical position and activity backstage, while claim B refers to a ranking or hierarchy between Vik and Finn. These concern different domains (spatial location vs. ranking) and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Finn's action backstage with curtain ropes has no logical connection to the number of houses at the school; they concern entirely different matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "The claim about Pia and Vik being in different houses has no logical or contextual connection to Dev's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Knowing Pia and Vik are in different houses tells us nothing about the relationship between Vik and Finn, since Finn's house placement is independent of Pia's.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Claim A concerns the location of Pia and Vik in different houses, while claim B describes Lena's action regarding timing a rehearsal. There is no shared subject, context, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "The claims concern entirely different subjects (people's living arrangements versus a theatre's operating hours) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Claim A states Pia and Vik were in different houses, which says nothing about Finn's house assignment relative to Pia's. Without information linking Vik and Finn's houses, A neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Claim A concerns Pia and Vik's living arrangements, while claim B concerns Finn's ranking for stage presence among ensemble members; the two describe unrelated facts about different people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Claim A states Pia and Vik are in different houses, which says nothing about Vik's relative rank compared to Finn. There's no shared content connecting house assignment to ranking position.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Claim A states Pia and Vik belong to different houses, which is consistent with a school having three houses; there is no direct logical connection determining the number of houses from A, but they fit together plausibly without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A concerns Dev's arrival time, while claim B concerns the residences of Vik and Finn. These involve entirely different subjects and facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Dev's punctual arrival and Lena's reminder about the upcoming run-through are largely independent events; the reminder could occur regardless of whether Dev was on time.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Dev arriving exactly on time doesn't bear on whether the theatre closed early on weekdays; these describe unrelated facts about different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns Dev's arrival timing, while claim B concerns Pia and Finn's locations in different houses; these involve different people and topics with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Claim A concerns Dev's arrival time, while claim B concerns Finn's ranking for stage presence among ensemble members; these describe unrelated facts about different people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Claim A concerns Dev's arrival time, while claim B concerns a ranking between Vik and Finn. There is no shared subject, context, or logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A concerns Dev's arrival time, while claim B concerns the number of houses at a school; these topics are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A concerns Vik and Finn being in different houses, while claim B concerns Lena checking her watch about a run-through. These describe unrelated facts with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A concerns Vik and Finn's living arrangements, while claim B concerns a theatre's weekday operating hours. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Knowing Vik and Finn are in different houses tells us nothing about which house Pia is in relative to Finn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Being in different houses from Vik gives no information about Finn's ranking for stage presence among ensemble members.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Ranking just below Finn implies some ranked relationship exists between Vik and Finn, which is possible regardless of whether they're in the same or different houses; being in different houses doesn't preclude a shared ranking system.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "A mentions two houses existing among possibly more, which is consistent with the school having three houses; A doesn't specify the total number of houses, so it neither strongly supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "A describes a group planning a run-through, with no clear connection to whether the theatre closes early on weekdays; there's no indication this is even happening in the theatre or on a weekday.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A concerns Lena timing a group rehearsal, while claim B concerns Pia and Finn's locations; there is no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A concerns scheduling a rehearsal and has no bearing on rankings of stage presence among ensemble members.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns Lena's reminder about scheduling a run-through, while claim B concerns a ranking between Vik and Finn. These describe unrelated events with no shared subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A concerns Lena's reminder about a run-through timing, while claim B states a fact about the school's house system. They share no common subject matter and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "The two claims concern unrelated subjects (theatre operating hours vs. living arrangements of two people); knowing one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "The theatre's weekday closing hours have no bearing on how Finn was ranked for stage presence among ensemble members; these are unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "The two claims describe unrelated situations with no shared subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "These two claims concern entirely different subjects (a theatre's closing hours versus a school's house system) with no logical or factual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A states Pia and Finn were in different houses, which has no bearing on how Finn's stage presence was ranked among the ensemble members.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A concerns Pia and Finn being in different houses, which has no bearing on the ranking relationship between Vik and Finn described in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A states Pia and Finn belonged to different houses, which is consistent with the school having three houses (or any number two or more); the claims address different aspects and neither confirms nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "A establishes Finn as the top-ranked member for stage presence, leaving room for another member to rank immediately below him; B simply specifies Vik as that next-ranked member, which is consistent with and supported by A's ranking claim.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "The two claims concern entirely different subjects (an individual's ranking for stage presence versus the number of houses at a school) with no logical or factual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "The two claims concern unrelated matters: A is about a ranking relationship between Vik and Finn, while B is about the number of houses in a school. Neither provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "lena",
+    "mentions": [
+     "Lena"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "stage_presence_rank",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "other",
+    "other_greater_means": "higher stage presence ranking"
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 8,
+    "attribute": "house",
+    "kind": "different",
+    "a": "pia",
+    "b": "vik",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "house",
+    "kind": "different",
+    "a": "vik",
+    "b": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "house",
+    "kind": "different",
+    "a": "pia",
+    "b": "finn",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 5,
+    "attribute": "height",
+    "subject": "lena",
+    "comparative": "taller than",
+    "object": "pia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "subject": "lena",
+    "comparative": "shorter than",
+    "object": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "stage_presence_rank",
+    "subject": "vik",
+    "comparative": "ranked just below",
+    "object": "finn",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 0,
+    "attribute": "arrival_time",
+    "entity": "pia",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "stage_presence_rank",
+    "entity": "finn",
+    "comparative": "ranked highest",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "shorter than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "stage_presence_rank",
+    "comparative": "ranked just below",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "stage_presence_rank",
+    "comparative": "ranked highest",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 17,
+  "pairs_requested": 136,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 7,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    0,
+    9
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    7,
+    14
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "house": null,
+    "height": "magnitude",
+    "stage_presence_rank": "other"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 0,
+     "attribute": "arrival_time",
+     "entity": "pia",
+     "extreme": "min",
+     "edges": 0
+    },
+    {
+     "claim_id": 14,
+     "attribute": "stage_presence_rank",
+     "entity": "finn",
+     "extreme": "max",
+     "edges": 1
+    }
+   ],
+   "extreme_edges": 1,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 17,
+  "n_edges": 3,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    9
+   ],
+   [
+    14,
+    15
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.7071067811865475,
+   0.7071067811865475,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 2,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 15,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 7083457,
+   "output_tokens": 653870,
+   "thinking_tokens": 0,
+   "calls": 20590,
+   "api_calls": 6716,
+   "cache_hits": 13874,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 20.38940500000004,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 176580,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 7737327,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    11
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ],
+   [
+    10
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    16
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 0,
+    "b": 9,
+    "rationale": "A states Pia arrived first, implying no one else, including Dev, arrived before or at the same time as her. If Dev arrived exactly on time and Pia arrived first (i.e., earlier than everyone else), this can still be consistent if 'first' just means earliest, and Dev's on-time arrival was after Pia's. There's no direct contradiction, but claiming Pia was first sits awkwardly with emphasizing Dev's precise on-time arrival, as it raises the question of relative timing.",
+    "confidence": 0.55
+   },
+   {
+    "a": 3,
+    "b": 7,
+    "rationale": "If Vik greeted Finn near the folding chairs, this suggests Finn was at that location, which is in some tension with Finn also standing near the back adjusting curtain ropes, unless the folding chairs are near the back or the events occur at different times. Both could be true under an ordinary reading (different moments), so it's not a strict contradiction, but the locations described create mild awkwardness.",
+    "confidence": 0.55
+   },
+   {
+    "a": 3,
+    "b": 10,
+    "rationale": "If Vik greeted Finn near the folding chairs, they were in the same physical location at that time, which contradicts them being in different houses at that time. However, they could have been in different houses at other times, so this is not a strict contradiction as written, but does create strong tension.",
+    "confidence": 0.65
+   },
+   {
+    "a": 7,
+    "b": 10,
+    "rationale": "If Finn was near the back adjusting curtain ropes, he was presumably in the same location as the scene described, which suggests he and Vik (if part of the same scene) could be in the same place, making claim B less likely; however, without knowing Vik's location or whether the curtain ropes are in a house, this is only weakly connected.",
+    "confidence": 0.4
+   },
+   {
+    "a": 7,
+    "b": 14,
+    "rationale": "Standing at the back adjusting curtain ropes suggests a backstage/technical role rather than a performing role, which sits awkwardly with being ranked highest for stage presence among the ensemble, though both could technically be true if he also performs.",
+    "confidence": 0.65
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 8,
+   "attribute": "house",
+   "kind": "different",
+   "a": "pia",
+   "b": "vik",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 10,
+   "attribute": "house",
+   "kind": "different",
+   "a": "vik",
+   "b": "finn",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "house",
+   "kind": "different",
+   "a": "pia",
+   "b": "finn",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 5,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "lena",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 6,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "finn",
+   "b": "lena",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "stage_presence_rank",
+   "kind": "greater",
+   "a": "finn",
+   "b": "vik",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "stage_presence_rank",
+   "kind": "greater",
+   "a": "finn",
+   "b": "vik",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

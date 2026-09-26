@@ -1,0 +1,25 @@
+{
+ "request": "df0386bf9e47ff1a9da18c3f94da31208cde0498d8fbe9e497026d20df721807",
+ "tag": "text-0060a8b0038d-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Milo is taller than Ana.",
+     "Ana is taller than Wren.",
+     "Wren is taller than Milo."
+    ],
+    "explanation": "These three height comparisons form a cycle (Milo > Ana > Wren > Milo), which is logically impossible."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1073,
+  "output_tokens": 101,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

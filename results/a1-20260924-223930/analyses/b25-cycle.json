@@ -1,0 +1,2562 @@
+{
+ "label": "b25-cycle",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-a73c20dfe861",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Milo was the first to walk in.",
+   "span": "Milo was the first to walk in",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Milo was carrying a small bag of tools he had used before.",
+   "span": "carrying a small bag of tools he had used before",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Mina is the treasurer.",
+   "span": "Assume that Mina is the treasurer.",
+   "kind": "premise"
+  },
+  {
+   "id": 3,
+   "text": "Fay arrived shortly after Milo.",
+   "span": "Fay arrived shortly after Milo",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Fay greeted Milo with a wave before setting down her apron near the wheel.",
+   "span": "greeting him with a wave before setting down her apron near the wheel",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Nell came in a little later than Fay.",
+   "span": "Nell came in a little later",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Nell was humming quietly as she found a seat near the window.",
+   "span": "humming quietly as she found a seat near the window",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Esme brought the first-aid kit.",
+   "span": "Esme brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Mina was already seated at the far table, sorting through glazes she had picked out the week before.",
+   "span": "Mina was already seated at the far table, sorting through glazes she had picked out the week before",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Milo is in the same study group as Fay.",
+   "span": "Milo is in the same study group as Fay.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "The instructor walked around the room, checking that everyone had enough clay to start shaping their bowls.",
+   "span": "The instructor walked around the room, checking that everyone had enough clay to start shaping their bowls",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Nell said that she was taller than Mina.",
+   "span": "Nell mentioned that she was taller than Mina",
+   "kind": "quoted"
+  },
+  {
+   "id": 12,
+   "text": "Everyone laughed because Nell had to duck under the shelf to grab a towel.",
+   "span": "which made everyone laugh since she had to duck under the shelf to grab a towel",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Fay is in the same study group as Nell.",
+   "span": "Fay is in the same study group as Nell.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Esme was quietly organizing the glazing station.",
+   "span": "Esme, meanwhile, was quietly organizing the glazing station",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Esme was humming a tune under her breath.",
+   "span": "humming a tune under her breath",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Milo is not in the same study group as Nell.",
+   "span": "Milo is not in the same study group as Nell.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Mina asked Fay if she wanted to trade seats so she could be closer to the kiln.",
+   "span": "Mina asked Fay if she wanted to trade seats so she could be closer to the kiln",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Fay agreed happily to trade seats.",
+   "span": "Fay agreed happily",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Nell showed off a vase she had been working on for weeks.",
+   "span": "Nell showed off a vase she had been working on for weeks",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Esme complimented the vase's smooth curves.",
+   "span": "Esme complimented its smooth curves",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Milo said that he was the oldest person in the room.",
+   "span": "Milo joked that he was the oldest person in the room",
+   "kind": "quoted"
+  },
+  {
+   "id": 22,
+   "text": "Mina reminded Milo that age had nothing to do with pottery skill.",
+   "span": "Mina reminded him that age had nothing to do with pottery skill",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "By the end of the session, everyone had a piece drying on the shelves.",
+   "span": "By the end of the session, everyone had a piece drying on the shelves",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Milo being first to walk in is unrelated to what he was carrying.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "No connection between Milo's arrival order and Mina's role as treasurer.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Milo arriving first supports the idea that Fay arrived after him.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Milo being first supports Fay greeting him upon her later arrival.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Milo arriving first is consistent with others arriving later, but doesn't specifically address Nell relative to Fay.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Milo's arrival order has no bearing on Nell's humming behavior.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Milo's arrival order is unrelated to Esme bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Milo being first to walk in contradicts Mina already being seated, since if Milo was first no one else should be seated yet.",
+   "relation": "contradicts",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Arrival order has no bearing on study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Milo's arrival order is unrelated to the instructor's actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Milo's arrival order has no bearing on Nell's height claim.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Milo's arrival order is unrelated to the towel incident.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Arrival order is unrelated to study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Milo's arrival order is unrelated to Esme's organizing activity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Milo's arrival order is unrelated to Esme's humming.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Arrival order does not determine study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Milo's arrival order is unrelated to Mina's seat-trading offer.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Milo's arrival order is unrelated to Fay's decision to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Milo's arrival order is unrelated to Nell showing off her vase.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Milo's arrival order is unrelated to Esme's compliment.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Being first to walk in is unrelated to whether Milo is the oldest person in the room.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Milo entering first has no bearing on Mina's comment about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "Milo being first to enter does not affect whether everyone finished a piece by session's end.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Milo carrying tools has no bearing on who is treasurer.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Carrying tools is unrelated to the timing of Fay's arrival.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Milo's tools have no connection to Fay's greeting behavior.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Milo's tool bag is unrelated to when Nell arrived.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Milo carrying tools does not relate to Nell humming and finding a seat.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Milo's tools are unrelated to Esme bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Milo's tools have no bearing on Mina's seating or glaze sorting.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Carrying tools does not indicate anything about study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Milo's tools are unrelated to the instructor checking clay supplies.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Milo's tool bag has no connection to Nell's claim about height.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Milo's tools are unrelated to Nell ducking under a shelf.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Milo carrying tools does not relate to Fay and Nell's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Milo's tools are unrelated to Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Milo's tool bag has no bearing on Esme humming.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Carrying tools does not indicate anything about Milo and Nell's study group relationship.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Milo's tools are unrelated to Mina asking Fay to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Milo's tool bag has no connection to Fay agreeing to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Milo carrying tools has no bearing on Nell's vase.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Milo's tools are unrelated to Esme's compliment about the vase.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Carrying tools he's used before doesn't relate to Milo's claim about being oldest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Milo's tools have no connection to Mina's remark about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Milo carrying tools he's used before doesn't specifically bear on everyone having a piece drying by session's end.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Mina being treasurer is unrelated to Fay's arrival time relative to Milo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Mina's treasurer role is unrelated to Fay greeting Milo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Mina being treasurer has no bearing on Nell's arrival time.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Mina's role as treasurer is unrelated to Nell humming near the window.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Mina being treasurer doesn't relate to Esme bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Mina's treasurer status doesn't bear on her being seated sorting glazes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Mina being treasurer is unrelated to Milo's study group membership with Fay.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Mina's treasurer role is unrelated to the instructor checking clay supplies.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Mina being treasurer has no bearing on Nell's claim about height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Mina's treasurer role is unrelated to Nell ducking under a shelf.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Mina being treasurer doesn't relate to Fay and Nell's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Mina's treasurer status is unrelated to Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Mina being treasurer has no bearing on Esme humming.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Mina's treasurer role is unrelated to Milo and Nell's study group difference.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Mina being treasurer doesn't directly relate to her asking Fay about trading seats, as the treasurer role doesn't explain seating preferences.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Mina's role as treasurer has no bearing on Fay's agreement to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Mina being treasurer is unrelated to Nell showing off a vase.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Mina's treasurer role has no connection to Esme complimenting a vase.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Mina being treasurer does not relate to Milo's claim about age.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Mina's treasurer status is unrelated to her comment about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Mina being treasurer has no bearing on everyone having a drying piece by session's end.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Fay arriving shortly after Milo supports the idea that she then greeted him upon arrival.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Fay's arrival timing relative to Milo is unrelated to Nell's arrival timing relative to Fay.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Fay's arrival after Milo has no bearing on Nell humming near the window.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Fay's arrival time is unrelated to Esme bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Fay arriving after Milo doesn't affect whether Mina was already seated at the far table.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Fay's arrival timing is unrelated to study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Fay's arrival time is unrelated to the instructor checking clay supplies.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Fay's arrival timing is unrelated to Nell's claim about height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Fay's arrival timing is unrelated to Nell ducking under a shelf.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Fay's arrival timing is unrelated to her study group membership with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Fay's arrival time is unrelated to Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Fay's arrival timing is unrelated to Esme humming.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Fay's arrival time is unrelated to Milo's study group relation with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Fay's arrival shortly after Milo is unrelated to Mina asking her to trade seats later.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Fay's arrival time has no bearing on whether she later agreed to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Fay's arrival timing is unrelated to Nell showing off a vase.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Fay's arrival timing is unrelated to Esme complimenting a vase.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Fay's arrival timing is unrelated to Milo's claim about being oldest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Fay's arrival timing is unrelated to Mina's remark about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Fay's arrival timing is unrelated to the end-of-session outcome for everyone.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Fay greeting Milo before setting down her apron doesn't inform when Nell arrived.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Fay's greeting action is unrelated to Nell humming near the window.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Fay's greeting has no connection to Esme bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Fay's greeting of Milo is unrelated to Mina's seating and glaze sorting.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Fay greeting Milo doesn't establish or refute their study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Fay's greeting is unrelated to the instructor checking clay supplies.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Fay's greeting of Milo has no bearing on Nell's height claim.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Fay's greeting is unrelated to Nell ducking under a shelf later.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Fay's greeting of Milo doesn't inform her study group with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Fay's greeting is unrelated to Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Fay's greeting is unrelated to Esme humming a tune.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Fay's greeting of Milo doesn't determine Milo and Nell's study group status.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Fay's greeting of Milo is unrelated to Mina asking Fay to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Fay's greeting action doesn't bear on her later agreeing to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Fay's greeting is unrelated to Nell's vase progress.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Fay's greeting has no bearing on Esme's compliment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Fay's greeting does not relate to Milo's claim about his age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Fay's greeting is unrelated to Mina's comment about skill and age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Fay's greeting doesn't affect whether everyone eventually had a drying piece.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Nell arriving late is consistent with her then humming and finding a seat, but doesn't necessarily cause it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Nell's arrival time has no bearing on Esme bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Nell's late arrival is unrelated to Mina's seating and sorting glazes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Nell's arrival time has no connection to Milo and Fay's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Nell's arrival time is unrelated to the instructor's actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Nell's arrival time has no bearing on her claim about height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Nell's late arrival is unrelated to the towel-ducking incident causing laughter.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Nell's arrival time is unrelated to study group membership facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Nell's arrival time has no bearing on Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Nell's arrival time is unrelated to Esme humming.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Nell's arrival time has no bearing on study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Nell's arrival time is unrelated to Mina asking Fay to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Nell's arrival time has no bearing on Fay's agreement to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Nell's late arrival is unrelated to her showing off a vase, since the vase was worked on prior weeks.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Nell's arrival time has no bearing on Esme's compliment about the vase.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Nell's arrival time has no bearing on Milo's claim about being oldest.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Nell's arrival time is unrelated to Mina's comment about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Nell arriving later than Fay doesn't affect whether everyone finished a piece by session's end.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Nell humming while finding a seat has no connection to Esme bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Nell's humming is unrelated to Mina's seating and glaze sorting.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Nell humming while finding a seat has no bearing on Milo's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Nell's humming is unrelated to the instructor checking clay supplies.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Nell humming while seating herself doesn't relate to her claim about height.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Nell humming quietly while finding a seat is a separate event from her ducking under a shelf later.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Nell's humming has no bearing on Fay's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Nell humming near the window is unrelated to Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Nell's humming is a separate action from Esme's humming; one doesn't imply the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Nell's humming while seating herself is unrelated to Milo's study group status.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Nell humming near the window has no connection to Mina asking Fay to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Nell's humming is unrelated to Fay agreeing to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Nell humming while finding a seat doesn't relate to her later showing off a vase.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Nell's humming is unrelated to Esme's compliment about a vase.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Nell humming is unrelated to Milo's claim about being oldest.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Nell's humming has no bearing on Mina's statement about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Nell humming while finding a seat doesn't affect whether everyone had a piece drying by the end.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Bringing a first-aid kit has no bearing on Mina's seating or glazes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Unrelated topics: first-aid kit vs study groups.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "No connection between bringing a first-aid kit and the instructor checking clay supplies.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "No logical connection between the first-aid kit and height comparison.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Bringing a first-aid kit doesn't relate to Nell ducking under a shelf.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "No connection between the first-aid kit and study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Bringing a first-aid kit doesn't imply anything about organizing the glazing station, though both involve Esme's actions independently.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "No causal or logical link between bringing a kit and humming a tune.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "No connection between the first-aid kit and study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "No connection between the first-aid kit and seat trading.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "No connection between the first-aid kit and Fay's agreement to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "No connection between the first-aid kit and Nell's vase.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "No connection between the first-aid kit and complimenting the vase.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "No connection between the first-aid kit and Milo's age claim.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "No connection between the first-aid kit and Mina's remark about skill.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "No connection between the first-aid kit and pieces drying at session's end.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Mina's seating and glaze sorting is unrelated to Milo's study group.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Mina being seated sorting glazes doesn't relate to instructor checking clay supplies, though both are scene-setting details.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Mina sorting glazes has no bearing on height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Mina sorting glazes at a table is unrelated to Nell ducking under a shelf.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Mina's seating location has no bearing on which study group Fay and Nell belong to.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Mina sorting glazes at a table is unrelated to Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Mina's activity has no connection to Esme humming a tune.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Mina's seating and glaze sorting has no bearing on Milo and Nell's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Mina being already seated at the far table sorting glazes suggests she is not necessarily near the kiln, making it plausible she'd want to trade seats to be closer to it.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Mina's seating position doesn't directly determine whether Fay would agree to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Mina sorting glazes is unrelated to Nell showing off a vase.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Mina's activity at the far table has no connection to Esme's compliment about the vase.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Mina's seating arrangement is unrelated to Milo's claim about being the oldest.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Mina sorting glazes has no bearing on her later reminding Milo about skill versus age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Mina's initial seating and sorting is consistent with but doesn't specifically influence the outcome that everyone had a piece drying by the end.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Milo's study group membership is unrelated to the instructor checking on clay supplies.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Milo being in Fay's study group has no bearing on Nell's claim about height relative to Mina.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Milo's study group membership is unrelated to Nell ducking under a shelf.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "If Milo is in the same study group as Fay, and Fay is in the same study group as Nell, this supports the idea they're all in one group together, consistent with claim 13.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Milo and Fay's study group has no bearing on Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Milo's study group membership is unrelated to Esme humming.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "If Milo is in the same study group as Fay, and Fay is in the same group as Nell (per other claims), this would imply Milo is in the same group as Nell, contradicting claim 16 that Milo is not in the same group as Nell.",
+   "relation": "contradicts",
+   "confidence": 0.4
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Milo's study group membership with Fay is unrelated to Mina asking Fay to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Milo's study group membership is unrelated to Fay's decision to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Study group membership is unrelated to whether Nell showed off a vase.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Study group membership is unrelated to Esme's compliment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Study group membership is unrelated to Milo's age claim.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Study group membership is unrelated to Mina's reminder about skill.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Study group membership is unrelated to whether everyone had a piece drying.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "The instructor checking clay supplies is unrelated to Nell's height claim.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Checking clay supplies is unrelated to the towel-ducking incident.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Checking clay supplies is unrelated to study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "The instructor's action is unrelated to Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "The instructor's action is unrelated to Esme humming.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Checking clay supplies is unrelated to study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Checking clay supplies is unrelated to Mina asking Fay to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Checking clay supplies is unrelated to Fay agreeing to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "The instructor checking supplies at the start is somewhat supportive context for later showing off a finished vase, but not causally linked, so it's essentially unrelated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Checking clay supplies is unrelated to Esme's compliment about the vase.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Checking clay supplies is unrelated to Milo's age claim.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Checking clay supplies is unrelated to Mina's comment about skill.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "The instructor ensuring everyone had clay to start supports the eventual outcome that everyone had a piece drying by the end.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Nell's claim of being taller than Mina is consistent with and supports the idea that she needed to duck under a shelf.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Nell's height claim is unrelated to study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Nell's height claim has no bearing on Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Nell's height claim has no bearing on Esme humming a tune.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Nell's claim about height is unrelated to study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Nell's height claim has no bearing on Mina asking Fay about trading seats.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Nell's height claim has no bearing on Fay agreeing to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Nell's height claim has no bearing on her showing off a vase.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Nell's height claim has no bearing on Esme complimenting the vase.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Nell's height claim is unrelated to Milo's claim about being oldest.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Nell's height claim has no bearing on Mina's reminder about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "Nell's height claim has no bearing on everyone having a piece drying by session's end.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Nell ducking under a shelf is unrelated to Fay's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Nell ducking under a shelf while everyone laughed is unrelated to Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Nell ducking under a shelf is unrelated to Esme humming a tune, though both could occur simultaneously without connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Nell's height-related incident is unrelated to Milo's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Nell ducking under a shelf is unrelated to Mina asking Fay to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Nell's shelf incident is unrelated to Fay agreeing to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Nell ducking under a shelf is unrelated to her showing off a vase.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Nell's shelf incident is unrelated to Esme complimenting the vase.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Nell's height-related incident is unrelated to Milo's claim about being oldest.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Nell's shelf incident is unrelated to Mina's reminder about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Nell ducking to grab a towel doesn't affect whether everyone eventually has a piece drying on shelves.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Fay's study group membership has no bearing on Esme organizing the glazing station.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Fay's study group membership has no bearing on Esme humming.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Fay being in the same group as Nell doesn't determine whether Milo is or isn't in that group.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Fay's study group membership with Nell has no logical connection to Mina asking Fay about trading seats near the kiln.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Fay's study group membership doesn't relate to her agreeing to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Fay's study group membership has no bearing on Nell showing off a vase.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Fay's study group membership has no bearing on Esme's compliment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Fay's study group membership has no bearing on Milo's claim about his age.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Fay's study group membership has no bearing on Mina's reminder to Milo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Fay's study group membership has no bearing on everyone having a piece drying by the end.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Esme quietly organizing the glazing station is consistent with and supports the idea she was humming quietly to herself at the same time.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Esme organizing the glazing station has no bearing on Milo's study group membership relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Esme's activity at the glazing station has no bearing on Mina asking Fay about trading seats.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Esme's activity doesn't influence Fay's decision to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Esme organizing the glazing station has no bearing on Nell showing off her vase.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Esme organizing the glazing station doesn't imply anything about her complimenting the vase's curves specifically.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Esme's activity has no bearing on Milo's claim about being oldest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Esme's activity has no bearing on Mina's reminder to Milo.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Esme organizing the glazing station suggests activity consistent with pieces eventually drying, supporting the general session progress.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Humming a tune has no bearing on study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Esme humming is unrelated to Mina asking Fay to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Esme humming has no connection to Fay's agreement to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Humming a tune is unrelated to Nell showing off a vase.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Esme humming doesn't relate to her complimenting the vase, a separate action.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Humming a tune has nothing to do with Milo's claim about age.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Esme's humming is unrelated to Mina's remark about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Humming under her breath doesn't affect whether everyone has a drying piece.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Milo's study group has no bearing on Mina asking Fay to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Milo's study group membership is unrelated to Fay agreeing to trade seats.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Study group composition has no connection to Nell showing off a vase.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Milo's study group status is unrelated to Esme's compliment on the vase.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Not sharing a study group with Nell is unrelated to Milo's claim of being oldest.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Study group membership is unrelated to Mina's comment about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Milo's study group status has no bearing on everyone having a drying piece.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Mina asking Fay to trade seats directly sets up Fay's agreement to the trade.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Mina's seat trade request is unrelated to Nell showing off her vase.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "The seat trade request doesn't relate to Esme complimenting the vase.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Mina's request to trade seats is unrelated to Milo's claim about age.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "The seat trade request has no bearing on Mina's remark about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Requesting a seat trade to be closer to the kiln does not indicate anything about whether all pieces ended up drying on shelves.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Fay agreeing to trade seats has no bearing on Nell showing off her vase.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Fay's agreement to trade seats is unrelated to Esme's compliment on the vase.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Fay trading seats has nothing to do with Milo's claim about his age.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Fay's seat trade is unrelated to Mina's remark about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Fay agreeing to trade seats does not imply anything about everyone's pieces drying by session's end.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Nell showing off her vase provides an opportunity for Esme to comment, supporting that a compliment could follow.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Nell showing her vase has no logical connection to Milo's claim about being the oldest.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Nell showing her vase is unrelated to Mina's comment about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Nell having a vase she worked on supports the idea that by the end everyone had a piece drying, since hers would count as one.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Esme's compliment on the vase is unrelated to Milo's statement about his age.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Esme complimenting the vase is unrelated to Mina's remark about age and skill.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Esme's compliment doesn't indicate anything about all pieces drying on shelves by the end.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Milo's claim about being oldest sets up a direct contrast to Mina's assertion that age doesn't matter for skill, but these are different claims not necessarily conflicting since Mina's statement is a response, not a contradiction of the age fact itself.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "Milo being the oldest person has no bearing on whether everyone ended up with a piece drying on shelves.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Mina's comment about age and skill is unrelated to the outcome of everyone having a piece drying by the end.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo",
+     "he"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina",
+     "she"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay",
+     "her",
+     "she"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "she"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "fay",
+    "b": "milo",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "fay",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "milo",
+    "b": "fay",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "nell",
+    "b": "mina",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "fay",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "milo",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "milo",
+    "b": "mina",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "milo",
+    "b": "fay",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "milo",
+    "b": "nell",
+    "confidence": 0.4
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "milo",
+    "b": "esme",
+    "confidence": 0.4
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 10,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 14,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct",
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   2
+  ],
+  "harmony": 0.9764797304227539,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    21
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "study_group",
+    "entities": [
+     "milo",
+     "fay",
+     "nell"
+    ],
+    "relations": [
+     2,
+     4,
+     5
+    ],
+    "claim_ids": [
+     9,
+     13,
+     16
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "truth_assignment": [
+   0.6269820323275812,
+   1.0,
+   1.0,
+   0.8397299226350443,
+   0.8539131153222086,
+   1.0,
+   1.0,
+   1.0,
+   0.5053095171976949,
+   0.6559139784946235,
+   1.0,
+   1.0,
+   1.0,
+   0.8709677419354838,
+   0.9999999999999999,
+   0.9999999999999999,
+   0.5268817204301076,
+   0.874678411023416,
+   0.9406371420637236,
+   0.9999999999999998,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.9755008578039619,
+   0.0,
+   0.0,
+   0.06203664363115083,
+   0.05238082180069187,
+   0.0,
+   0.0,
+   0.0,
+   1.0821858555140067,
+   0.7057463290553821,
+   0.0,
+   0.0,
+   0.0,
+   0.0443981963232744,
+   1.7256332301709632e-32,
+   1.232595164407831e-32,
+   0.7834431726211122,
+   0.08783768930703716,
+   0.007439447682765404,
+   8.135128085091684e-32,
+   1.9721522630525296e-32,
+   0.0,
+   0.0,
+   2.958228394578794e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 3,
+    "residual": 0.03620933186422109
+   },
+   {
+    "a": 0,
+    "b": 4,
+    "residual": 0.030898629857468676
+   },
+   {
+    "a": 0,
+    "b": 8,
+    "residual": 0.7692504918758104
+   },
+   {
+    "a": 3,
+    "b": 4,
+    "residual": 0.00014081406836086123
+   },
+   {
+    "a": 8,
+    "b": 17,
+    "residual": 0.06821668986301843
+   },
+   {
+    "a": 9,
+    "b": 13,
+    "residual": 0.027748872702046484
+   },
+   {
+    "a": 9,
+    "b": 16,
+    "residual": 0.5596022661579373
+   },
+   {
+    "a": 10,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 23,
+    "residual": 4.930380657631324e-33
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "residual": 0.003915498780402872
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 19,
+    "b": 23,
+    "residual": 2.465190328815662e-32
+   }
+  ],
+  "residual_ranking": [
+   8,
+   0,
+   16,
+   9,
+   17,
+   3,
+   4,
+   13,
+   18
+  ],
+  "culprits": [
+   {
+    "claim": 8,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.01295959369398958
+   },
+   {
+    "claim": 0,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.012517518889574197
+   },
+   {
+    "claim": 16,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.008815184518476293
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 1341,
+   "api_calls": 0,
+   "cache_hits": 1341,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 7548523
+  },
+  "components": [
+   [
+    0,
+    3,
+    4,
+    8,
+    17,
+    18
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    9,
+    13,
+    16
+   ],
+   [
+    10,
+    14,
+    15,
+    19,
+    20,
+    23
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    21
+   ],
+   [
+    22
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    0,
+    8
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "study_group",
+    "entities": [
+     "milo",
+     "fay",
+     "nell"
+    ],
+    "relations": [
+     2,
+     4,
+     5
+    ],
+    "claim_ids": [
+     9,
+     13,
+     16
+    ],
+    "min_confidence": 0.95
+   }
+  ]
+ }
+}

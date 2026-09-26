@@ -1,0 +1,2477 @@
+{
+ "label": "b37-cycle",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-74188b76c888",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Alma is the treasurer.",
+   "span": "Assume that Alma is the treasurer.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Hana arrived early to help set up the canopy tents before the first customers wandered in.",
+   "span": "Hana arrived early to help set up the canopy tents before the first customers wandered in.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Rosa unloaded baskets of peaches while chatting with a neighboring vendor about the price of honey.",
+   "span": "Rosa unloaded baskets of peaches while chatting with a neighboring vendor about the price of honey.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Yara brought the first-aid kit.",
+   "span": "Yara brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Finn carried a stack of folding chairs toward the shaded corner where the market coordinator usually sat.",
+   "span": "Finn carried a stack of folding chairs toward the shaded corner where the market coordinator usually sat.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Alma is younger than Hana.",
+   "span": "Alma is younger than Hana",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Both Alma and Hana had been coming to the market for several seasons.",
+   "span": "though both had been coming to the market for several seasons",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Finn is on the same team as Rosa.",
+   "span": "Finn is on the same team as Rosa.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "The bakery stand smelled of fresh cinnamon rolls.",
+   "span": "The bakery stand smelled of fresh cinnamon rolls",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "The bakery stand drew a small crowd even before the official opening bell rang.",
+   "span": "drawing a small crowd even before the official opening bell rang",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Yara arrived a little later than Finn.",
+   "span": "Yara arrived a little later than Finn",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Yara stopped to help a friend carry crates of tomatoes.",
+   "span": "having stopped to help a friend carry crates of tomatoes",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Rosa is on the same team as Hana.",
+   "span": "Rosa is on the same team as Hana.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Alma stood taller than Yara.",
+   "span": "Alma stood taller than Yara",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "It was easy to spot Alma near the flower stand from across the lot.",
+   "span": "which made it easy to spot her near the flower stand from across the lot",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "The apple harvest this year had been especially plentiful.",
+   "span": "the apple harvest this year had been especially plentiful",
+   "kind": "quoted"
+  },
+  {
+   "id": 16,
+   "text": "Finn is not on the same team as Hana.",
+   "span": "Finn is not on the same team as Hana.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Hana is taller than Rosa.",
+   "span": "Hana is taller than Rosa",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Hana often teased Rosa about needing a step stool to reach the top shelf of jars.",
+   "span": "and often teased her about needing a step stool to reach the top shelf of jars",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "More shoppers arrived as the afternoon wore on.",
+   "span": "As the afternoon wore on, more shoppers arrived",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "The narrow aisles between stalls were filled with the sound of laughter and haggling.",
+   "span": "filling the narrow aisles between stalls with the sound of laughter and haggling",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Yara eventually found a quiet bench to rest.",
+   "span": "Yara eventually found a quiet bench to rest",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Yara watched the last of the golden light fall across the market square.",
+   "span": "watching the last of the golden light fall across the market square",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "The two claims describe different people and unrelated activities; being treasurer has no bearing on whether Hana arrived early to set up tents.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "The claim about Alma being treasurer has no logical or contextual bearing on Rosa's unloading peaches and chatting with a vendor; they involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "These claims concern different people and unrelated facts (one about a role, the other about bringing an item); knowing one is true gives no information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "The claim about Alma being treasurer has no logical connection to Finn's actions with chairs or the market coordinator's location.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Being treasurer is unrelated to relative age; the two claims describe different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "A states Alma's role as treasurer, which does not bear on how long Alma or Hana have been attending the market; the claims concern unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Claim A concerns Alma's role as treasurer, while claim B concerns team membership of Finn and Rosa; the two describe unrelated aspects of an organization with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Alma's role as treasurer has no logical or thematic connection to the smell of a bakery stand.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Claim A describes Alma's role as treasurer, which has no logical or topical connection to the bakery stand drawing a crowd before opening.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A concerns Alma's role as treasurer, while claim B concerns the relative arrival times of Yara and Finn. These describe entirely different people and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "The two claims concern unrelated people and events with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "The claim about Alma's role as treasurer has no logical or topical connection to the claim about Rosa and Hana being on the same team; they concern different people and different facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Being treasurer is an organizational role and has no bearing on physical height, so there's no logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Being treasurer has no bearing on physical visibility or location near a flower stand; these describe unrelated aspects of Alma.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Being treasurer has no bearing on apple harvest yields; these describe unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Claim A concerns Alma's role as treasurer, while claim B concerns team membership between Finn and Hana. These involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "The claim about Alma's role as treasurer has no bearing on the relative heights of Hana and Rosa; they concern entirely different people and different domains.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "The claim about Alma being treasurer concerns club roles or finances, while the claim about Hana teasing Rosa concerns an unrelated social interaction about height and reaching shelves. There is no logical or topical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Alma's role as treasurer has no bearing on shopper traffic patterns during the afternoon; these describe unrelated domains.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "The claims describe unrelated subjects (a person's role vs. a marketplace scene) with no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Claim A concerns Alma's role as treasurer, while claim B concerns Yara finding a bench to rest; they involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "The two claims describe unrelated situations involving different people with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Both describe plausible simultaneous market-setup activities by different people; neither confirms nor denies the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A describes Hana's early arrival to set up tents, which has no logical or causal connection to Yara bringing a first-aid kit. These are independent actions by different people.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Both describe setup activity before a market opens, but they involve different people and actions with no direct logical connection; A's occurrence doesn't necessarily make B more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A concerns Hana's actions setting up tents and has no bearing on relative ages of Alma and Hana.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "A shows Hana taking an active, invested role in setting up the market, which is consistent with and mildly supports the idea that she is an experienced, longstanding participant as stated in B.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A concerns Hana's early arrival to set up tents, while claim B is about Finn and Rosa's team membership. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Hana's early arrival to set up tents is part of preparing a market or fair, which plausibly includes a bakery stand nearby, but the claims don't directly connect since B doesn't mention Hana or the setup process.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "A establishes an early setup scene before the market opened, and B describes early crowd activity before official opening; both fit the same pre-opening timeframe and are mutually consistent, with A's early arrival plausibly linked to preparations for such crowds.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A concerns Hana's early arrival to set up tents, while claim B compares the arrival times of Yara and Finn, two different people. There is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Both describe helping actions that could occur at the same market setup event, but they involve different people and tasks with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A describes Hana's actions but says nothing about her team membership or Rosa, so there's no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns Hana's early arrival and setup activities, while claim B concerns a height comparison between two unrelated individuals, Alma and Yara. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Claim A describes Hana's early arrival to set up tents at what appears to be a market or event, while claim B describes spotting Alma near a flower stand. These involve different people and no shared detail connects them directly.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Setting up canopy tents for customers is likely part of a market or stand event, which could plausibly involve selling apples, but nothing in A directly implies anything about the size of the apple harvest.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "A describes Hana's actions setting up a market or event; it says nothing about team assignments or Finn's relation to her, so it has no bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Claim A concerns Hana's arrival time and activity setting up tents, while claim B concerns a physical height comparison between Hana and Rosa. Neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A describes Hana's early arrival to help set up tents, while claim B describes an unrelated habitual behavior of teasing Rosa about shelf height; neither bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "A describes Hana arriving early before the market opened, while B describes an increase in shoppers later in the afternoon; these describe different times of the same event and are compatible, though only loosely related.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "A describes early preparation before opening, while B describes the market atmosphere once customers are present; these depict different times but are consistent with the same event unfolding, with B being a natural continuation.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Claim A describes Hana's early arrival to help set up tents, while claim B describes Yara finding a bench to rest. These involve different people and unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "A describes early morning setup activity while B describes golden light (likely evening/sunset), suggesting different times of day; they could both be true if referring to different points in the same day at a market, but there's no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A describes Rosa's actions and conversation, which has no logical or causal bearing on whether Yara brought a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Both describe simultaneous but independent market activities involving different people and tasks; nothing about Rosa's actions bears on Finn's.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A describes Rosa unloading peaches and chatting about honey prices, which has no bearing on the relative ages of Alma and Hana.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A describes a specific market scene involving Rosa and a neighboring vendor, while claim B is about Alma and Hana's history attending the market. The two involve different people and no shared content connects them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Claim A describes Rosa's activity at a market but gives no information about team memberships or relationships with Finn, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Claim A describes Rosa at a produce stall talking about honey prices, while claim B describes a separate bakery stand's smell; these are independent scenes at a market with no direct bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "A describes Rosa's unrelated activity of unloading peaches and chatting; B concerns a bakery stand drawing a crowd before opening. There is no direct connection between these two scenes as described.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A describes Rosa's activity and conversation, while claim B is about the relative arrival times of Yara and Finn. The two claims involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Both claims describe different people performing separate market-related actions with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A describes Rosa unloading peaches and chatting with a neighboring vendor, which has no bearing on whether Rosa is on the same team as Hana. There's no shared content connecting these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A describes Rosa unloading peaches and chatting with a vendor, which has no bearing on the relative heights of Alma and Yara mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim A describes Rosa's activity and conversation, while claim B concerns Alma's visibility near a flower stand; they involve different people and settings with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "A is about Rosa unloading peaches and chatting about honey prices; B concerns apple harvest yield. These involve different fruits and topics with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A describes Rosa's activity at a market and has no connection to Finn or Hana's team membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Claim A describes Rosa's activity and conversation, which has no bearing on relative heights of Hana and Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Both claims describe Rosa in plausibly related market-vendor settings, but neither entails or conflicts with the other; they concern different, independent activities.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "A describes Rosa's morning-market activity but gives no information about how shopper traffic changed later in the day, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Rosa chatting at a market stall with a neighboring vendor fits naturally within a bustling market scene of laughter and haggling in narrow aisles; A is consistent with and mildly supports the general atmosphere described in B.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Claim A describes Rosa's activity at a market and claim B describes Yara resting on a bench; they involve different people and unrelated situations with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Both scenes could plausibly occur at the same market at a similar time (evening light), but nothing in A entails or precludes B; they involve different characters and actions with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "These describe two different people performing unrelated actions during what appears to be the same event setup; knowing Yara brought a first-aid kit has no bearing on Finn carrying chairs.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "The two claims concern unrelated matters\"\"who brought a supply item versus a relative age comparison between two other people\"\"with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A is about Yara bringing a first-aid kit, while claim B concerns Alma and Hana's history of attending the market. These involve different people and topics with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A concerns who brought the first-aid kit, while claim B concerns team membership; neither piece of information bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "The two claims describe unrelated events with no logical or causal connection between someone bringing a first-aid kit and a bakery stand's smell.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "These claims describe unrelated events with no logical or causal connection between Yara bringing a first-aid kit and a bakery stand drawing a crowd.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Bringing the first-aid kit says nothing about arrival order relative to Finn; the two claims describe different, independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Bringing a first-aid kit suggests Yara anticipated needing to help with injuries or was prepared to assist others, which is loosely consistent with being helpful and stopping to assist a friend carrying crates, but the two events are not directly connected.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "There is no logical or contextual connection between who brought the first-aid kit and team membership arrangements between different people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Bringing a first-aid kit has no bearing on relative height between Alma and Yara; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A concerns Yara bringing a first-aid kit, while claim B concerns spotting Alma near a flower stand; they involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Bringing a first-aid kit has no logical or causal connection to the size of this year's apple harvest.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "The two claims concern unrelated matters: one is about who brought a piece of equipment, the other about team membership. Knowing A is true gives no information about B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "The two claims describe unrelated facts about different people and topics; knowing who brought a first-aid kit has no bearing on relative heights of Hana and Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Claim A concerns Yara bringing a first-aid kit, while claim B concerns Hana teasing Rosa about a step stool; they involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Yara bringing a first-aid kit has no logical bearing on shopper traffic patterns during the afternoon; these describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Yara bringing a first-aid kit has no bearing on the ambient sounds of a market's aisles; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Bringing a first-aid kit is unrelated to whether Yara later found a quiet bench to rest; the two events concern different actions with no logical or causal link stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Bringing a first-aid kit says nothing about watching light in a market square; the two describe unrelated actions/observations with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Claim A describes Finn's actions at a market, while claim B is an unrelated statement about the relative ages of Alma and Hana. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A describes an unrelated action of Finn carrying chairs, while claim B is about Alma and Hana's tenure at the market; neither statement bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Finn's action of carrying chairs toward the coordinator gives no information about his team membership or relationship with Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Both claims describe elements plausibly present at the same market scene, but neither the chairs nor the coordinator's location has any bearing on the bakery stand's smell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Both claims describe activity at a market before or during setup, but Finn's chair-carrying has no direct bearing on the bakery stand's crowd; they are independent details of the same scene.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "A describes Finn's action but says nothing about Yara's arrival time, so there's no logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Both describe unrelated actions by different people in what may be the same market setting, but neither implies anything about the other's occurrence.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A describes Finn carrying chairs at a market, while claim B is about Rosa and Hana being on the same team; there is no shared subject, context, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A concerns Finn carrying chairs toward a market coordinator, while claim B is an unrelated statement about relative heights of Alma and Yara. There is no shared subject, event, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Both describe activity at what may be the same market setting, but neither claim gives information about the other's subject, location relation, or outcome; they can both be true independently without connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Carrying chairs to a market coordinator's spot has no logical bearing on how plentiful the apple harvest was; these describe unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A describes Finn's physical action at a market, while claim B concerns team membership relative to Hana; the two describe unrelated aspects of Finn's situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Claim A describes Finn carrying chairs at a market, while claim B is an unrelated statement about relative heights of two different people. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "The two claims involve different people, actions, and settings with no shared content connecting them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Finn's action of setting up chairs near the coordinator's spot doesn't directly bear on how many shoppers arrive later in the day; the two describe unrelated aspects of the market scene.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "B describes ambient market atmosphere while A describes Finn's specific action; both can coexist as the setting for a busy market scene without one affecting the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "A describes Finn carrying chairs to a market coordinator's shaded corner, while B describes Yara finding a bench to rest; these involve different people and unrelated actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Both claims describe scene elements potentially occurring at the same market at similar time, but neither confirms or denies the other; they are independent observations that could coexist without one affecting the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "A states a relative age difference between Alma and Hana, which has no bearing on how long either has been attending the market. Both facts can independently be true regardless of their age gap.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "The two claims concern entirely different subjects (age comparison between Alma and Hana vs. team membership of Finn and Rosa) with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A concerns a relative age comparison between two people, while claim B describes an unrelated sensory detail about a bakery stand. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns a bakery stand drawing a crowd before opening; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A concerns relative ages of Alma and Hana, while claim B concerns arrival times of Yara and Finn. These involve entirely different people and different types of comparison, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A concerns relative ages of Alma and Hana, while claim B describes Yara helping a friend carry crates of tomatoes. These involve different people and unrelated subject matter, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "A is about relative ages of Alma and Hana, while B is about team membership involving Rosa and Hana. Neither statement provides information relevant to the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Claim A concerns relative age between Alma and Hana, while claim B concerns relative height between Alma and Yara. These involve different people and different attributes, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "A's relative age claim about Alma and Hana has no bearing on whether Alma was easy to spot near a flower stand; these concern unrelated attributes and situations.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "The relative ages of Alma and Hana have no bearing on the size of this year's apple harvest; the two claims concern entirely unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A concerns relative ages of Alma and Hana, while claim B concerns team membership of Finn and Hana. These involve different attributes and no logical connection is stated between age and team assignment.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A concerns relative age between Alma and Hana, while claim B concerns relative height between Hana and Rosa. Age and height comparisons involving different pairs are not logically connected.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Claim A concerns the relative age of Alma and Hana, while claim B describes an unrelated interaction between Hana and Rosa about height and reaching shelves. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Claim A concerns relative ages of two people, while claim B concerns shopper traffic during an afternoon; there is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "The claims describe entirely different subjects (relative ages of two people vs. the atmosphere of a marketplace) with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "The two claims involve entirely different subjects and topics with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Claim A concerns the relative ages of Alma and Hana, while claim B describes Yara observing light in a market square. There is no shared subject, entity, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Claim A concerns Alma and Hana's history at a market, while claim B concerns Finn and Rosa's team membership; they share no common subject or topic.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "A discusses the history of Alma and Hana coming to the market, while B describes a sensory detail about the bakery stand; neither statement implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "A establishes background about two vendors' tenure at the market, while B describes crowd behavior at a bakery stand; neither implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A concerns Alma and Hana's history at the market, while claim B concerns the relative arrival times of Yara and Finn. They involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A concerns Alma and Hana's history at the market, while claim B describes an unrelated action by Yara. There is no logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A discusses Alma and Hana's history at a market, while claim B discusses team membership involving Rosa and Hana. These concern different, unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "A's claim about how long Alma and Hana have attended the market has no bearing on Alma's height relative to Yara; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "A establishes that Alma is a regular market visitor but says nothing about her visibility or location near a flower stand, so it neither supports nor conflicts with B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A concerns the duration of Alma and Hana's presence at the market, while claim B concerns the apple harvest's abundance this year; neither bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A discusses Alma and Hana's history at the market, which has no bearing on team membership involving Finn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A concerns how long Alma and Hana have attended the market, while claim B concerns a physical height comparison between Hana and Rosa. These facts are independent and neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "A establishes Hana's long-standing presence at the market, which is compatible with her having a familiar teasing relationship with Rosa there, but the claims concern different aspects and don't directly bear on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Claim A concerns the tenure of two individuals as market attendees, while claim B concerns overall shopper volume changing over an afternoon; these describe unrelated aspects of the market scene.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "A establishes that Alma and Hana are longtime regulars at the market, but says nothing about the atmosphere or sounds within it on a given occasion; B describes a general sensory detail of the market's aisles. These are largely independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Claim A concerns Alma and Hana's history at the market, while claim B concerns Yara finding a bench; they involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Claim A establishes background about two regular market visitors, while claim B describes a scene involving Yara and lighting at the market; the two claims concern different subjects and details with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "The two claims concern entirely different subjects (team membership vs. a bakery's smell) with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A concerns team membership of Finn and Rosa, while claim B concerns a bakery stand's crowd before opening; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A concerns team membership while claim B concerns relative arrival times; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A concerns team membership of Finn and Rosa, while claim B describes Yara's unrelated action helping carry tomatoes. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "A places Finn on Rosa's team, but says nothing about whether Hana is also on that team, so B could independently be true or false.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "The two claims concern entirely different subjects (team membership vs. relative height) with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Claim A concerns team membership of Finn and Rosa, while claim B concerns spotting Alma near a flower stand; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "The two claims concern entirely different subjects—team membership versus an apple harvest—with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Knowing Finn is on Rosa's team says nothing directly about whether Finn shares a team with Hana; Hana could be on either team.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Team membership between Finn and Rosa has no bearing on relative heights between Hana and Rosa; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Claim A concerns team membership involving Finn and Rosa, while claim B describes an unrelated social interaction between Hana and Rosa about height/reach. There's no logical connection between team assignment and being teased about reaching shelves.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A concerns team membership of Finn and Rosa, while claim B concerns shopper traffic in the afternoon; they share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "The claims describe unrelated situations: team membership versus market atmosphere, with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Claim A concerns team membership of Finn and Rosa, while claim B concerns Yara finding a bench to rest; the two share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "Claim A is about team membership between Finn and Rosa, while claim B describes Yara observing sunlight in a market square. The two claims share no common subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "The enticing smell of fresh cinnamon rolls plausibly explains or accompanies people being drawn to the stand early, making B more likely if A is true.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "The bakery smell is a sensory detail unrelated to the relative arrival times of Yara and Finn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "The smell of the bakery stand has no bearing on whether Yara stopped to help carry tomato crates; these are independent events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "The bakery stand's smell has no bearing on team membership between Rosa and Hana; these describe entirely unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Claim A describes a sensory detail about a bakery stand, while claim B describes a height comparison between two people. These have no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Claim A describes the bakery stand's smell, while claim B is about spotting Alma near a different stand (flower stand); the two describe separate locations and details with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "The smell of cinnamon rolls at a bakery stand has no logical connection to how plentiful this year's apple harvest was; these are unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "The bakery stand's smell has no logical or contextual connection to team assignments between Finn and Hana.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "The bakery scent claim has no logical or thematic connection to a comparison of Hana's and Rosa's heights.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "The two claims describe unrelated scenes: one is about a bakery stand's smell, the other about a teasing relationship regarding shelf height. Neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "The smell of fresh cinnamon rolls has no clear bearing on shopper foot traffic patterns over the afternoon; these describe different, independent aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Both claims describe a lively market scene from different sensory angles (smell vs. sound), and neither statement implies anything about the truth of the other beyond a shared plausible setting.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "The bakery smell has no bearing on whether Yara found a quiet bench to rest; the two describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Claim A describes a bakery smell while claim B describes fading light in the market square; both could occur simultaneously in the same scene without conflict or reinforcement.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A describes crowd activity at a bakery stand before opening, while claim B compares arrival times of Yara and Finn; there is no stated connection between the two events or people.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "The bakery drawing a crowd before opening is about a different scene and set of people than Yara helping a friend with tomato crates; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Claim A concerns crowd behavior at a bakery stand's opening, while claim B concerns team membership of two people; there is no logical or contextual link between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns a bakery stand and crowd timing, while claim B concerns relative heights of two individuals; nothing in A bears on B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "A describes a crowd at the bakery stand before opening, while B is about visibility of Alma near a different stand (flower). The two events involve different locations and subjects with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "A describes crowd behavior at a bakery stand's opening, while B describes an apple harvest's yield; the two events involve different subjects and have no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "The bakery stand crowd and team assignments involving Finn and Hana are unrelated topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "The bakery crowd claim has no logical or thematic connection to a claim about relative heights of two people.",
+   "relation": "unrelated",
+   "confidence": 0.99
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Claim A concerns crowd activity at a bakery stand before opening, while claim B is about a personal joke between Hana and Rosa regarding shelf height; they share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "A shows early popularity of the bakery stand, which could plausibly continue into the afternoon, but A does not directly speak to whether shoppers increased later in the day.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "A crowd drawn early to the bakery stand is consistent with and mildly supports a lively, busy market atmosphere with laughter and haggling in the aisles.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "The bakery crowd and Yara finding a quiet bench are unrelated events with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Claim A describes an early morning bakery scene before opening, while claim B describes golden light fading, suggesting evening or dusk; these describe different times of day and are otherwise unconnected in content.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "B offers a plausible reason for A (Yara being later than Finn), so it makes B more plausible as an explanation, though it is not strictly required by A alone.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A concerns the relative arrival times of Yara and Finn, while claim B concerns team membership of Rosa and Hana. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Claim A concerns arrival timing between Yara and Finn, while claim B concerns relative height between Alma and Yara. These are unrelated attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A concerns the relative arrival times of Yara and Finn, while claim B concerns the visibility of Alma near a flower stand. They involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Claim A concerns the relative arrival times of Yara and Finn, while claim B concerns the apple harvest; there is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "A discusses arrival times of Yara and Finn, while B discusses team membership of Finn and Hana; these concern different attributes and people, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A concerns arrival timing between Yara and Finn, while claim B concerns relative height between Hana and Rosa; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Claim A concerns arrival times of Yara and Finn, while claim B concerns Hana teasing Rosa about height; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A describes a specific relative arrival time between two individuals, while B describes a general trend of increasing shopper arrivals over the afternoon. These are largely independent statements with no direct logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Claim A concerns relative arrival times of two people, while claim B describes ambient sounds in a marketplace setting. Neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "A's arrival timing has no bearing on whether Yara later found a place to rest; the claims concern unrelated aspects of Yara's activities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Arriving a little later than Finn does not specify the time of day or lighting conditions, so it neither supports nor contradicts Yara witnessing golden light at the market square.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A describes Yara helping a friend with tomato crates, while claim B is about team membership between Rosa and Hana. There is no shared subject or context connecting the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A describes an action Yara performed, while claim B describes a relative height comparison between Alma and Yara; these concern unrelated attributes and have no bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A describes Yara helping a friend with tomato crates, while claim B describes spotting Alma near a flower stand; these involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns tomatoes and a friend, while claim B concerns an apple harvest; the two describe unrelated events with no logical or thematic connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A concerns Yara helping a friend with tomato crates, while claim B concerns team membership of Finn and Hana; they share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A describes Yara helping a friend carry tomato crates, while claim B compares the heights of Hana and Rosa. There is no shared subject, event, or logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A involves Yara helping a friend with tomatoes, while claim B describes Hana teasing Rosa about a step stool and jars; they share no common subject, event, or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Yara helping a friend carry crates is a specific event unrelated to the general pattern of shopper arrivals over the afternoon; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Yara stopping to help a friend suggests a market scene, which is consistent with and mildly supported by bustling narrow aisles full of laughter and haggling, though the connection is indirect.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Helping a friend carry crates is unrelated in content to later resting on a bench; neither statement bears directly on the other's truth, though a loose narrative connection (tiredness leading to rest) could be imagined, it isn't stated.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Both describe plausible moments during a visit to a market and can easily occur in sequence or overlap; there's no inherent conflict, though stopping to help suggests activity while watching light suggests pause, a mild contrast at most.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "The two claims describe entirely different subjects and contexts (team membership vs. relative height) with no overlapping individuals or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A concerns team membership of Rosa and Hana, while claim B concerns visibility of Alma near a flower stand; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "The two claims concern entirely unrelated topics: team membership versus an apple harvest. There is no logical or evidential connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "A places Rosa on Hana's team, but says nothing about Finn's team membership, so B could independently be true or false.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Being on the same team says nothing about relative height, so A has no bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Both claims can hold simultaneously: teammates can also tease each other about height-related things. Being on the same team doesn't preclude or particularly imply light teasing, so there's little bearing between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A concerns team membership while claim B concerns shopper traffic during the afternoon; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Claim A is about team membership of two people, while claim B describes ambient sound in a marketplace setting. Neither claim provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Claim A concerns team membership of Rosa and Hana, while claim B concerns Yara finding a bench to rest. There is no shared subject, context, or logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Claim A is about team membership of Rosa and Hana, while claim B describes Yara observing sunset light in a market square; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "If Alma is notably taller than Yara, her height would make her easier to spot from a distance, so A supports B.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "A is about relative heights of two people, while B concerns the size of an apple harvest; the two claims share no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "These claims involve different sets of people (Alma/Yara vs Finn/Hana) and different subject matters (height comparison vs team membership), so there is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns the relative heights of Alma and Yara, while claim B concerns different individuals, Hana and Rosa. There is no shared entity or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Claim A concerns the relative heights of Alma and Yara, while claim B concerns Hana teasing Rosa about her height needing a step stool. Different people are involved with no overlap, so A has no bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A concerns relative height of two people, while claim B concerns the number of shoppers over time. They share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "A is about a height comparison between two people, while B describes ambient sounds in a marketplace setting; these have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "A is about relative height between Alma and Yara, while B describes Yara resting on a bench; these concern unrelated aspects of the situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Claim A concerns relative height between Alma and Yara, while claim B describes Yara observing sunset light in a market square. These involve unrelated aspects of Yara with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Claim A describes spotting Alma near a flower stand, while claim B discusses apple harvest yield; these topics share no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Claim A concerns spotting Alma near a flower stand, while claim B concerns team membership of Finn and Hana; the two share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Claim A concerns Alma's visibility near a flower stand, while claim B concerns a height comparison between Hana and Rosa; neither shares any subject or context with the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A concerns Alma's visibility near a flower stand, while claim B concerns Hana teasing Rosa about height and shelf access; they involve different people and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "A describes the ease of spotting Alma near a flower stand at some moment, while B describes a general trend of increasing shoppers over the afternoon; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Both describe a market-like scene; A implies clear visibility from a distance while B implies a crowded, lively environment with noise. These details are plausibly compatible but not directly connected in content, and neither strongly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Claim A concerns spotting Alma near a flower stand, while claim B concerns Yara finding a bench; they involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Both describe visibility conditions in what could be the same outdoor market scene at dusk, but neither directly implies or excludes the other since they involve different subjects and details.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "The apple harvest has no logical or causal connection to team membership between Finn and Hana.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "The apple harvest has no logical or causal connection to the relative heights of Hana and Rosa; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "A refers to the size of the apple harvest, while B describes a teasing relationship about Rosa's height relative to shelves; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "A plentiful apple harvest has no logical bearing on the number of shoppers arriving during an afternoon; the two describe unrelated phenomena with no causal or evidential link stated.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "A plentiful apple harvest could contribute to a busy, lively market atmosphere, but the connection is indirect and not clearly implied; B could occur regardless of harvest conditions.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "A plentiful apple harvest has no clear bearing on whether Yara found a quiet bench to rest; the two describe unrelated situations with no shared context.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "A concerns the size of the apple harvest, while B describes an unrelated visual scene of light in a market square; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Team membership between Finn and Hana has no bearing on Hana's height relative to Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Claim A is about team membership involving Finn and Hana, while claim B describes a social interaction between Hana and Rosa unrelated to team assignments.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "The two claims concern entirely different domains (team membership vs. shopper traffic) with no shared entities or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Claim A concerns team membership of two individuals, while claim B describes ambient sounds in a marketplace setting; there is no shared context or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "The claims concern entirely different subjects (team membership vs. someone resting on a bench) with no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "The two claims concern entirely different subjects (team membership of Finn and Hana versus Yara observing sunlight in a market square) with no logical or factual overlap.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "If Hana is taller than Rosa, it is plausible Rosa has trouble reaching high shelves and gets teased about it, making B more likely though not certain.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Claim A concerns relative heights of two people, while claim B concerns shopper traffic over time; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "The claim about Hana's height relative to Rosa has no connection to the description of aisles filled with laughter and haggling; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "The two claims describe entirely different subjects and events with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Claim A concerns relative height between Hana and Rosa, while claim B describes Yara observing sunset light in a market square. The two statements share no common subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "The claims describe unrelated situations: one is about Hana teasing Rosa regarding height, the other about shopper traffic increasing in the afternoon. Neither has bearing on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "A describes a specific personal joke about Rosa's height, while B describes general ambient market atmosphere; the teasing could plausibly happen within such a setting, but neither claim strongly implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Claim A discusses Hana teasing Rosa about height and reaching shelves, while claim B describes Yara finding a bench to rest, involving entirely different people and unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Claim A concerns Hana and Rosa's interactions about a step stool, while claim B describes Yara observing light in a market square; they share no common subject, setting, or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "More shoppers arriving over the afternoon makes it plausible that the aisles would be filled with bustling sounds like laughter and haggling, as increased foot traffic naturally leads to more social interaction and noise.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "An increasingly crowded, busy afternoon makes finding a quiet resting spot somewhat less likely or more surprising, though both can still be true if the bench was in a secluded area.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "A suggests it is still afternoon with increasing activity, while B describes 'the last of the golden light,' implying late day/dusk fading light. These are in mild tension: more shoppers arriving suggests still-active midday/afternoon, whereas fading golden light suggests day's end and typically less shopper activity.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "A describes the market's aisles as loud and crowded, while B has Yara seeking a quiet resting spot; these can both be true if she left the crowded aisles to find a quiet bench elsewhere, but the contrast between the noisy setting and her seeking quiet creates mild tension.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Both describe a lively market scene at a time of golden (likely sunset) light; A's sensory detail about laughter and haggling is consistent with and complements B's visual scene of the market square, but neither directly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Finding a quiet bench to rest sets up a plausible scene where Yara could then sit and watch the light fall across the square; the two events fit together as a natural sequence rather than conflicting.",
+   "relation": "supports",
+   "confidence": 0.55
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 7,
+    "attribute": "team",
+    "kind": "same",
+    "a": "finn",
+    "b": "rosa",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 12,
+    "attribute": "team",
+    "kind": "same",
+    "a": "rosa",
+    "b": "hana",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 16,
+    "attribute": "team",
+    "kind": "different",
+    "a": "finn",
+    "b": "hana",
+    "confidence": 0.98
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 5,
+    "attribute": "age",
+    "subject": "alma",
+    "comparative": "younger",
+    "object": "hana",
+    "confidence": 0.97
+   },
+   {
+    "claim_id": 10,
+    "attribute": "arrival_time",
+    "subject": "yara",
+    "comparative": "later than",
+    "object": "finn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "subject": "alma",
+    "comparative": "taller",
+    "object": "yara",
+    "confidence": 0.97
+   },
+   {
+    "claim_id": 17,
+    "attribute": "height",
+    "subject": "hana",
+    "comparative": "taller",
+    "object": "rosa",
+    "confidence": 0.97
+   }
+  ],
+  "extremes": [],
+  "senses": [
+   {
+    "attribute": "age",
+    "comparative": "younger",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "later than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller",
+    "greater_side": "subject"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 23,
+  "pairs_requested": 253,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 7,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    19,
+    21
+   ],
+   [
+    19,
+    22
+   ],
+   [
+    20,
+    21
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "age": "magnitude",
+    "team": null,
+    "arrival_time": "sequence",
+    "height": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 23,
+  "n_edges": 11,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    15
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "team",
+    "entities": [
+     "finn",
+     "rosa",
+     "hana"
+    ],
+    "relations": [
+     0,
+     1,
+     2
+    ],
+    "claim_ids": [
+     7,
+     12,
+     16
+    ],
+    "min_confidence": 0.98
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   0.9999999999999998,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999998,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   5.608307998055631e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   1.910522504832138e-32,
+   0.0,
+   1.9721522630525296e-32,
+   1.6516775203064935e-31,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   1.5777218104420237e-31,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 1,
+    "b": 6,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 1,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 9,
+    "b": 20,
+    "residual": 1.0846837446788913e-31
+   },
+   {
+    "a": 10,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 2626945,
+   "output_tokens": 237819,
+   "thinking_tokens": 0,
+   "calls": 15822,
+   "api_calls": 2494,
+   "cache_hits": 13328,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 7.533653000000016,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 55590,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 2864764,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1,
+    2,
+    6,
+    8,
+    9,
+    10,
+    11,
+    19,
+    20
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    7
+   ],
+   [
+    12
+   ],
+   [
+    13,
+    14
+   ],
+   [
+    15
+   ],
+   [
+    16
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    21,
+    22
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "team",
+    "entities": [
+     "finn",
+     "rosa",
+     "hana"
+    ],
+    "relations": [
+     0,
+     1,
+     2
+    ],
+    "claim_ids": [
+     7,
+     12,
+     16
+    ],
+    "min_confidence": 0.98
+   }
+  ],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 19,
+    "b": 21,
+    "rationale": "An increasingly crowded, busy afternoon makes finding a quiet resting spot somewhat less likely or more surprising, though both can still be true if the bench was in a secluded area.",
+    "confidence": 0.6
+   },
+   {
+    "a": 19,
+    "b": 22,
+    "rationale": "A suggests it is still afternoon with increasing activity, while B describes 'the last of the golden light,' implying late day/dusk fading light. These are in mild tension: more shoppers arriving suggests still-active midday/afternoon, whereas fading golden light suggests day's end and typically less shopper activity.",
+    "confidence": 0.55
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "rationale": "A describes the market's aisles as loud and crowded, while B has Yara seeking a quiet resting spot; these can both be true if she left the crowded aisles to find a quiet bench elsewhere, but the contrast between the noisy setting and her seeking quiet creates mild tension.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 7,
+   "attribute": "team",
+   "kind": "same",
+   "a": "finn",
+   "b": "rosa",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 12,
+   "attribute": "team",
+   "kind": "same",
+   "a": "rosa",
+   "b": "hana",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "team",
+   "kind": "different",
+   "a": "finn",
+   "b": "hana",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 5,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "hana",
+   "b": "alma",
+   "confidence": 0.97,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 10,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "yara",
+   "b": "finn",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "alma",
+   "b": "yara",
+   "confidence": 0.97,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 17,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "hana",
+   "b": "rosa",
+   "confidence": 0.97,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

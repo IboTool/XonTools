@@ -1,0 +1,2874 @@
+{
+ "label": "b32-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-317113bb5957",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The library book club met on a rainy Thursday evening in the community room near the periodicals.",
+   "span": "The library book club met on a rainy Thursday evening in the community room near the periodicals.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Noor is the head judge.",
+   "span": "Assume that Noor is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Milo arrived first.",
+   "span": "Milo arrived first, carrying a stack of paperbacks he had finished over the weekend.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Milo was carrying a stack of paperbacks he had finished over the weekend.",
+   "span": "carrying a stack of paperbacks he had finished over the weekend",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Hana came in shortly after Milo arrived.",
+   "span": "Hana came in shortly after, greeting everyone with a plate of cookies she had baked.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Hana greeted everyone with a plate of cookies she had baked.",
+   "span": "greeting everyone with a plate of cookies she had baked",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Quinn won the raffle.",
+   "span": "Quinn won the raffle.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Dev is taller than Milo.",
+   "span": "Dev, who is taller than Milo, settled into the corner chair with his notebook ready for discussion.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Dev settled into the corner chair with his notebook ready for discussion.",
+   "span": "settled into the corner chair with his notebook ready for discussion",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Noor had read the assigned novel twice, once for pleasure and once for notes.",
+   "span": "Noor mentioned that she had read the assigned novel twice, once for pleasure and once for notes.",
+   "kind": "quoted"
+  },
+  {
+   "id": 10,
+   "text": "Milo and Hana were in different houses.",
+   "span": "Milo and Hana were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "The group spent a while debating the ending of the book.",
+   "span": "The group spent a while debating the ending of the book, with Quinn arguing passionately for a different interpretation than everyone else.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Quinn argued passionately for a different interpretation of the ending than everyone else.",
+   "span": "with Quinn arguing passionately for a different interpretation than everyone else",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Hana and Dev were in different houses.",
+   "span": "Hana and Dev were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Snacks were passed around.",
+   "span": "Snacks were passed around, and Noor asked everyone to quiet down so the discussion could continue.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Noor asked everyone to quiet down so the discussion could continue.",
+   "span": "Noor asked everyone to quiet down so the discussion could continue",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Milo and Dev were in different houses.",
+   "span": "Milo and Dev were in different houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Quinn is younger than Dev.",
+   "span": "Quinn, who is younger than Dev, took detailed notes throughout the meeting for the next session.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Quinn took detailed notes throughout the meeting for the next session.",
+   "span": "took detailed notes throughout the meeting for the next session",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "The school had three houses.",
+   "span": "The school had three houses.",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Hana suggested a new book for next month.",
+   "span": "Toward the end of the evening, Hana suggested a new book for next month, and everyone seemed excited about the choice.",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Milo checked his watch and realized it was later than he had expected.",
+   "span": "Milo checked his watch and realized it was later than he had expected, so he began gathering his things.",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Milo began gathering his things.",
+   "span": "so he began gathering his things",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Dev offered to return the extra copies to the shelves before the room closed for the night.",
+   "span": "Dev offered to return the extra copies to the shelves before the room closed for the night, and Noor thanked everyone for coming as the meeting wrapped up.",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "Noor thanked everyone for coming as the meeting wrapped up.",
+   "span": "Noor thanked everyone for coming as the meeting wrapped up",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "The claim about the book club meeting location and weather has no logical or thematic connection to Noor being a head judge; they describe entirely unrelated situations.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Claim A sets a scene for a book club meeting but says nothing about who attended or arrival order, so it has no bearing on whether Milo arrived first.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "The two claims describe different, unconnected details (a meeting's setting versus what Milo was carrying); nothing in A implies or conflicts with B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A sets a general scene for the book club meeting but says nothing about Hana or Milo's arrival order, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "The book club meeting described in A provides a plausible setting in which Hana's greeting with cookies in B could occur, but A contains no information about Hana or refreshments, so it neither confirms nor conflicts with B.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Claim A describes a book club meeting and its setting, while claim B describes an unrelated event about a raffle winner; there is no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "The claim about the book club meeting location and weather has no logical or thematic connection to a claim about relative heights of two individuals.",
+   "relation": "unrelated",
+   "confidence": 0.99
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A establishes a book club meeting setting; claim B describes someone preparing for that discussion, which fits naturally as part of the same scene, making it more plausible.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "A sets the scene of a book club meeting but says nothing about any individual member's reading habits or preparation, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Claim A describes a setting for a book club meeting and does not mention Milo, Hana, or their locations, so it has no bearing on whether they were in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "A establishes a book club meeting occurred; B describes an activity plausible during such a meeting, though not guaranteed by A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A sets the scene of a book club meeting, which is a plausible context for a discussion about a book's ending, but it doesn't establish anything about Quinn's participation or opinions, so it neither confirms nor denies B.",
+   "relation": "unrelated",
+   "confidence": 0.72
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "The location and weather of the book club meeting has no bearing on whether Hana and Dev were in different houses; these claims involve unrelated subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "The claim about the book club meeting sets a scene but says nothing about snacks; snacks being passed around is plausible but not implied or precluded by the meeting details.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "The book club meeting provides a plausible setting where a discussion could occur and someone might ask for quiet, but B introduces a specific person and action not mentioned or implied by A.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "The claim about the book club meeting has no mention of Milo, Dev, or any houses, so it provides no basis to assess their relationship.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "The claim about the library book club meeting on a rainy Thursday has no connection to the relative ages of Quinn and Dev.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "A establishes the setting of a meeting; B describes an action taken during a meeting. They are consistent but A provides no information about Quinn's note-taking, so B is neither made more nor less likely.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "The claims describe unrelated topics: a library book club meeting versus a school's house system. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Claim A establishes the setting of a book club meeting, which is the plausible context for someone suggesting a book for next month, but it doesn't specifically imply or require that Hana made such a suggestion.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "The claims describe unrelated events with no shared subject or causal link; nothing about the book club meeting implies anything about Milo's watch-checking.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "A sets a scene for a book club meeting but gives no information about a person named Milo or any action he might take; the claims share no clear connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "A establishes a book club meeting in a community room; B describes Dev offering to return extra copies (presumably book club copies) to shelves before that room closes, consistent with the same event.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "A establishes a book club meeting occurred; B describes the meeting concluding with thanks, which is a plausible continuation but not entailed or contradicted by A since it introduces a new person and specific detail.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "The two claims describe unrelated facts about different people and events; knowing who the head judge is has no bearing on who arrived first.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A concerns Noor's role as head judge, while claim B describes Milo carrying paperbacks he finished reading. These involve different people and unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A concerns Noor's role as head judge, while claim B concerns the timing of Hana's arrival relative to Milo's. These describe unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Noor's role as head judge has no bearing on Hana baking cookies and greeting people; these describe unrelated people and events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Noor being the head judge has no bearing on who won a raffle; these are independent facts about different people and events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "The claims concern unrelated topics: one is about a judging role, the other about relative height of two people, with no apparent connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A concerns Noor's role as head judge, while claim B describes Dev's unrelated action of sitting with a notebook. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Being head judge could plausibly explain diligent preparation like reading the novel twice, but the claims are largely independent facts about role versus personal reading habits.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A about Noor being head judge has no bearing on whether Milo and Hana were in different houses; they concern unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A about Noor being head judge has no apparent connection to a group discussing a book's ending; different contexts and subjects.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A states Noor's role as head judge, which is unrelated to Quinn's behavior or opinion about an ending's interpretation; no shared context ties them together.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns Noor's role as head judge and gives no information about Hana's or Dev's house assignments, so it has no bearing on whether they were in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Being the head judge has no logical bearing on whether snacks were passed around; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Being the head judge plausibly gives Noor authority to ask people to quiet down, making B more likely if A is true, though it's not strictly required.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Claim A states a fact about Noor's role as head judge, which has no bearing on whether Milo and Dev were in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "The two claims concern different, unrelated matters: one is about a judging role, the other about relative ages of two people. No logical or contextual connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A states Noor's role as head judge, which has no logical or contextual connection to Quinn taking notes at a meeting. There is no shared subject, cause, or implication between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Being head judge has no bearing on how many houses the school has; the two claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "The two claims describe unrelated facts about different people and contexts, with no logical connection between Noor's role as head judge and Hana's book suggestion.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "These claims describe unrelated facts about different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "There is no stated connection between Noor's role as head judge and Milo's action of gathering his things; nothing links these two claims causally or contextually.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Noor being the head judge has no bearing on Dev's offer to return copies to shelves; these describe unrelated people and actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 24,
+   "rationale": "Being head judge is compatible with also acting as a meeting facilitator or closing speaker; nothing about being head judge precludes thanking attendees at a meeting's end.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Arriving first says nothing about what Milo was carrying; the two facts are independent details about Milo that don't influence each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "If Milo arrived first, then someone arriving shortly after Milo's arrival is a natural continuation of the sequence; this is consistent with and slightly supports the ordering implied in B.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Milo arriving first has no bearing on whether Hana greeted everyone with baked cookies; these describe unrelated events that can coexist without one affecting the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Milo arriving first and Quinn winning a raffle involve unrelated events with no logical connection between order of arrival and raffle outcome.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Arrival order and relative height are independent attributes with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Milo arriving first says nothing about Dev's actions or position; there's no logical connection between who arrived first and Dev settling into a corner chair with a notebook.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Milo's arrival order has no bearing on Noor's reading habits regarding the assigned novel; these describe unrelated events and people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Milo arriving first implies a temporal comparison, likely relative to others including Hana, but says nothing about whether they were in the same or different houses.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Milo arriving first says nothing about whether or how the group discussed the book's ending; the two claims concern unrelated aspects of the event.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Milo arriving first says nothing about Quinn's views or the discussion of an ending's interpretation; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Milo's arrival order has no bearing on where Hana and Dev were located; these are independent facts about different people/events.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Milo arriving first has no clear bearing on whether snacks were passed around; these events are independent as described.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Milo arriving first says nothing about a later discussion or who asked for quiet; the two events are independent as stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Milo arriving first implies a shared context or race with others, but says nothing about whether Milo and Dev were in different houses; these facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "The claim about who arrived first has no bearing on relative ages of Quinn and Dev; these are independent facts about different topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Milo's arrival order has no bearing on whether Quinn took notes during the meeting; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Milo arriving first pertains to the order of arrival in some event, while the number of houses in a school is an unrelated institutional fact; neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Milo arriving first has no bearing on whether Hana suggested a new book for next month; these describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Arriving first is unrelated to whether Milo perceived himself as late; the two facts don't logically bear on each other, though one might loosely imagine a scenario connecting them, the claims as stated don't entail or conflict with each other.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Arriving first says nothing directly about later gathering belongings; there's no inherent logical connection between being first to arrive and the later action of packing up.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Milo's arrival order and Dev's offer to return copies before closing are about different events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 24,
+   "rationale": "Milo arriving first at some event is unrelated to Noor thanking attendees at the end of a meeting; there's no logical or causal connection stated between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A describes what Milo was doing/carrying, which has no bearing on when Hana arrived; the two claims concern different people and events without logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "These describe two different people doing unrelated actions with no logical connection between carrying books and baking cookies.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "The claims describe unrelated events involving different people and activities with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Carrying a stack of finished paperbacks says nothing about Milo's height relative to Dev; the claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Both claims describe separate people preparing for what seems like a shared meeting or book discussion, but neither statement implies or precludes the other's action.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "A describes Milo's reading activity and unrelated to Noor's separate reading of the assigned novel; no logical connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Carrying paperbacks he finished over the weekend says nothing about Milo's location relative to Hana, so the two claims are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "A shows Milo had finished several paperbacks, which is consistent with a group having read and discussing a book's ending, but it doesn't specifically establish or confirm the discussion happened, only makes it plausible.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Milo carrying finished paperbacks has no logical or contextual bearing on Quinn's argument about a book's ending interpretation; they involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A describes Milo's activity and carries no information about Hana's or Dev's locations, so it neither supports nor contradicts the claim about them being in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Carrying paperbacks and passing around snacks describe unrelated activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Milo carrying finished paperbacks has no logical or causal connection to Noor asking people to quiet down for a discussion; they appear to be independent events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Carrying a stack of paperbacks says nothing about which house Milo was in or where Dev was, so the two claims don't bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Claim A concerns Milo carrying paperbacks he finished reading, while claim B concerns a relative age comparison between Quinn and Dev. The two claims share no common subject or content that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "The two claims describe unrelated people, activities, and contexts with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "The two claims describe unrelated facts; one concerns Milo's activity with books, the other concerns a school's organizational structure, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Both claims involve books, but they describe separate, unconnected events with no logical or causal link between Milo carrying finished paperbacks and Hana suggesting a new book.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Carrying paperbacks and checking one's watch about the time are independent actions; nothing about finishing books over the weekend implies anything about being surprised at the current time.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Carrying a stack of finished paperbacks suggests Milo has already collected his belongings, which is consistent with or a result of the action described in B, though they could also describe separate moments.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "A establishes Milo had finished paperbacks he was carrying, which could plausibly be the 'extra copies' Dev offers to return, but the claims involve different people and don't explicitly connect, so at most A provides mild context for B without confirming or denying it.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 24,
+   "rationale": "The claims describe unrelated events involving different people and contexts with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Claim A establishes Hana's arrival timing but says nothing about what she brought or did upon arrival; both can easily be true together as separate facts about the same event.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "The two claims concern unrelated events: Hana's arrival timing relative to Milo has no bearing on who won a raffle.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A describes arrival timing between Hana and Milo, while claim B is about relative height between Dev and Milo. Neither piece of information bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Claim A describes Hana and Milo's arrival timing, while claim B describes Dev's separate action of settling into a chair; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Claim A concerns the timing of Hana's and Milo's arrival, while claim B concerns Noor's reading habits regarding a novel. These involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "If Hana came in shortly after Milo arrived, both were entering the same place, implying they were in or entering the same house at that time, which contradicts the claim that they were in different houses.",
+   "relation": "contradicts",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "A describes an arrival sequence with no information about a book discussion, while B describes an unrelated group activity; neither statement bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A concerns the timing of Hana's and Milo's arrival, while claim B concerns Quinn's opinion about an ending's interpretation. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A establishes when Hana arrived relative to Milo but says nothing about Dev's location or whether Hana and Dev were in the same or different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Claim A describes an arrival sequence while claim B describes an unrelated event about snacks; nothing in A implies or bears on whether snacks were passed around.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "A describes Hana's arrival after Milo, while B describes Noor requesting quiet for a discussion; these events are independent and neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A states Milo arrived somewhere and Hana came shortly after, but it says nothing about Dev's location, so it does not confirm or deny whether Milo and Dev were in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Claim A concerns the timing of Hana's and Milo's arrivals, while claim B concerns the relative ages of Quinn and Dev. Neither claim shares any subject, object, or logical connection with the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Claim A describes arrival order of Hana and Milo, while claim B concerns Quinn's note-taking during a meeting; they involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Claim A describes the timing of Hana's arrival relative to Milo, while claim B is a factual statement about the school's organizational structure. These claims share no common subject matter and neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Claim A only describes the timing of Hana's arrival relative to Milo, which has no bearing on whether she later suggested a book for next month.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "A places Hana's arrival shortly after Milo's, but says nothing about Milo's perception of time or his checking a watch; the two events are independent and neither confirms nor conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "A merely states that Hana arrived shortly after Milo; it gives no information about Milo starting to gather his belongings, so there is no logical or causal connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Claim A describes Hana and Milo's arrival timing, while claim B concerns Dev's offer regarding shelving copies; they involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 24,
+   "rationale": "Claim A describes people arriving near the start of a gathering, while claim B describes closing remarks at the end; both could easily occur within the same event timeline without conflict, but they don't directly bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Hana baking and serving cookies has no logical or causal bearing on whether Quinn won a raffle; they describe unrelated events with no shared subject or dependency.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A concerns Hana baking and greeting others with cookies, while claim B concerns a height comparison between Dev and Milo. The two claims share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Both describe scene-setting actions plausibly at the same gathering, but neither implies or precludes the other; they are independent details.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "These two claims describe unrelated events involving different people and activities, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "If Hana greeted everyone in person with cookies, she was likely present at a shared location, which sits awkwardly with her being in a different house from Milo specifically, though it's not a strict logical contradiction since 'everyone' may not include Milo or greetings could occur across houses.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "A describes Hana greeting people with cookies she baked; B describes the group discussing a book's ending. These events are compatible (perhaps a book club meeting) but neither implies or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A describes Hana baking and greeting guests, while claim B describes Quinn arguing about an ending; the two involve different people and unrelated actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "A implies Hana was greeting people at some gathering, likely with others present in the same location, which creates mild tension with the idea that Hana and Dev were in different houses, though A doesn't mention Dev at all so this isn't a direct contradiction.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Hana offering cookies to everyone is a specific instance of snacks being passed around, so A makes B more likely (nearly entails it).",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Both describe social actions that could occur at the same gathering, but greeting with cookies suggests an early, informal moment while asking for quiet implies an ongoing discussion; they are not logically connected.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Claim A describes Hana baking cookies and greeting people, while claim B concerns Milo and Dev's locations; neither statement provides information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A describes Hana baking and greeting people with cookies, while claim B compares the ages of Quinn and Dev. There is no shared subject or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "The two claims describe different, independent actions by different people with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Claim A concerns Hana baking cookies and greeting people, while claim B concerns the structure of a school into houses; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Both describe friendly, hospitable actions Hana might take, likely at a gathering such as a book club, but neither entails or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "The two claims describe unrelated actions by different people with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Hana's greeting with cookies and Milo starting to gather his things describe unrelated actions by different people with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "These claims describe unrelated actions by different people (Hana baking cookies vs. Dev returning copies) with no logical or causal connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 24,
+   "rationale": "Both describe social gestures at what seems like a gathering, but they involve different people and actions with no stated causal or logical link between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "The two claims concern entirely different subjects (raffle outcome vs. relative height) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Winning a raffle and settling into a chair for a discussion involve different people and unrelated activities with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Winning a raffle has no logical or causal connection to whether someone else read a novel; the two claims concern entirely unrelated events and people.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "The raffle outcome for Quinn has no logical or causal bearing on whether Milo and Hana lived in different houses; the claims concern unrelated people and events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Winning a raffle has no logical or thematic connection to a group discussing a book's ending; the two events appear unrelated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Winning a raffle is unrelated to arguing about an interpretation of a story's ending; the two events concern different, independent activities with no logical or causal link stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Quinn winning a raffle has no bearing on where Hana and Dev were located; these are unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Winning a raffle has no logical bearing on whether snacks were passed around at the event; these are independent occurrences that could both happen at a gathering but neither implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Winning a raffle and someone asking for quiet during a discussion describe unrelated events with no logical connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Quinn winning a raffle has no bearing on which houses Milo and Dev lived in; these describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Winning a raffle has no bearing on relative age; these facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Winning a raffle has no logical bearing on whether Quinn took notes during a meeting; these are unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Winning a raffle has no logical bearing on how many houses a school is organized into; these describe unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Quinn winning a raffle has no logical or causal connection to Hana suggesting a book for next month; the two events involve unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Quinn winning a raffle has no logical or causal connection to Milo checking his watch and noticing the time; these are unrelated events involving different people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Quinn winning the raffle could plausibly prompt Milo, perhaps a losing participant, to leave, but there is no explicit connection stated between the two claims and no shared context given.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Quinn winning a raffle has no logical or causal connection to Dev offering to return extra copies to shelves before closing; these appear to be unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 24,
+   "rationale": "The two claims describe unrelated events involving different people and contexts; winning a raffle has no bearing on someone thanking attendees at a meeting's end.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "A is about relative height between Dev and Milo, while B describes Dev's action of sitting with a notebook. Neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A concerns relative heights of Dev and Milo, while claim B concerns Noor's reading habits regarding a novel. There is no logical or contextual connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Claim A concerns relative height between Dev and Milo, while claim B concerns house assignments for Milo and Hana. These deal with entirely different attributes and people, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A is about relative heights of two people, while claim B is about a group discussing a book's ending. These topics share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Claim A concerns relative height between Dev and Milo, while claim B concerns Quinn's opinion about a story's ending. They share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A concerns relative height between Dev and Milo, while claim B concerns which houses Hana and Dev were in. These involve different attributes and no shared logical connection is stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "There is no logical or causal connection between relative heights of Dev and Milo and snacks being passed around.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "The height comparison between Dev and Milo has no logical bearing on Noor's request for quiet during a discussion; they concern entirely different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Height comparison between Dev and Milo says nothing about whether they were in the same or different houses; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Claim A concerns relative height between Dev and Milo, while claim B concerns relative age between Quinn and Dev. Height and age comparisons involving different attribute and different people pairs have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Claim A concerns relative heights of two people, while claim B concerns note-taking during a meeting; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A concerns the relative heights of two individuals, while claim B concerns the number of houses at a school; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Claim A concerns relative height between Dev and Milo, while claim B concerns Hana suggesting a book. There is no logical, causal, or topical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Height comparison between Dev and Milo has no bearing on Milo's perception of time or checking his watch.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "A statement about relative height has no logical bearing on whether Milo started gathering his belongings; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Height has no bearing on whether Dev offered to return copies to shelves before closing; the two claims concern unrelated aspects of Dev.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 24,
+   "rationale": "The claims involve entirely different subjects and contexts with no logical connection between relative height comparisons and meeting conclusions.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Both describe separate people preparing for what seems like a book discussion, but A does not provide evidence about B's reading habits or actions.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A describes Dev settling in for a discussion, which has no clear bearing on the location of Milo and Hana, who are not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Dev preparing for a discussion with a notebook sets up the context for a group discussion, making it more plausible that a debate about the book's ending occurs.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "A establishes Dev is settling in for what appears to be a group discussion, which is consistent with and mildly supports a scene where Quinn later argues about interpretation, but they describe different people and actions with no direct causal link.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "A implies Dev was in a chair, presumably in some shared setting for discussion, which suggests he could be in the same place as others including Hana. B claims Dev and Hana were in different houses, which is not directly addressed by A but sits awkwardly with the implication of a shared discussion setting.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Both describe plausible details of the same gathering; settling in with a notebook neither causes nor precludes snacks being passed around, so there's no direct logical bearing between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Both claims describe elements of the same discussion setting; Dev preparing for discussion is consistent with Noor managing the group to keep it going, but neither directly causes or implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "A implies Dev is present in a room ready for a discussion, suggesting he is with others in a shared setting, which is in tension with B's claim that he and Milo were in different houses, though A alone doesn't strictly rule it out.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Claim A describes Dev's actions and setting, while claim B is an age comparison between Quinn and Dev; neither bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Both claims describe people preparing to take notes during what seems to be the same meeting, but A is about Dev with his own notebook while B is about Quinn taking notes; these can easily coexist as two attendees both note-taking, so there's no real conflict or strong support, just a loose contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Claim A describes Dev preparing for a discussion, while claim B states an unrelated fact about the school's house structure. Neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "A places Dev in a book-discussion setting, which makes it more plausible that a member like Hana would suggest a new book for next month during or after that meeting, but it doesn't directly imply it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Both describe scene-setting actions that could occur around the same meeting, but neither statement implies or affects the truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "A shows Dev settling in for a discussion while B shows Milo preparing to leave; these suggest conflicting intentions for the scene, creating an awkward mismatch though both could technically occur simultaneously.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "A shows Dev settling in to stay and discuss, while B has him offering to leave and put copies away before closing; both could occur if the offer came at the end of the session, so they are not strictly incompatible, but the initial settling-in creates mild tension with an early departure-oriented offer.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 24,
+   "rationale": "A depicts the start or early part of a meeting with Dev preparing for discussion, while B describes the meeting concluding. Both could be true within the same event timeline (A before B), so there's no contradiction, and A doesn't particularly support or oppose B's content.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Claim A concerns Noor's reading habits and claim B concerns Milo and Hana's living arrangements; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "A shows Noor engaged deeply with the novel's content, which makes it plausible she or the group would have material to discuss, including the ending; this mildly supports B but is not a strong logical link.",
+   "relation": "supports",
+   "confidence": 0.45
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "A describes Noor's reading habits, while B describes Quinn's argument about the novel's interpretation; the two claims concern different people and have no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Claim A concerns Noor's reading habits and claim B concerns the housing arrangement of Hana and Dev; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "A concerns Noor's reading history and B concerns snacks being passed around; neither statement bears on the other in any way.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "A describes Noor's prior preparation with the novel, while B describes an action during a discussion; these concern different aspects of Noor's behavior with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A concerns Noor's reading habits regarding a novel, while claim B concerns the household arrangement of Milo and Dev. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Claim A concerns Noor's reading habits regarding a novel, while claim B concerns a relative age comparison between Quinn and Dev. There is no shared subject, entity, or logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Claim A concerns Noor's reading of a novel and note-taking for that purpose, while claim B concerns Quinn taking notes during a meeting. Different people, different contexts, and no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Claim A concerns Noor's reading habits for a novel, while claim B concerns the structure of the school's house system. These topics are unrelated and neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Claim A concerns Noor's reading of an already assigned novel, while B concerns Hana suggesting a different book for a future month. These involve different people and different books with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Claim A concerns Noor's reading habits regarding a novel, while claim B concerns Milo noticing the time. These involve different people and unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Claim A concerns Noor's reading history and claim B describes an unrelated action by a different person; there is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Claim A concerns Noor's reading history of a novel, while claim B concerns Dev offering to return copies to shelves; they involve different people and unrelated actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 24,
+   "rationale": "Reading a novel twice for a class assignment has no logical bearing on thanking attendees at the close of a meeting; these describe unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Being in different houses (perhaps different book clubs or households) has no clear bearing on whether a group debated a book's ending; the claims involve unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A concerns Milo and Hana's locations, while claim B concerns Quinn's argument about a story's ending; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Knowing Milo and Hana are in different houses tells us nothing about Hana and Dev's house assignment, since Dev's placement is independent of Milo's.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A concerns the physical location of two people, while claim B concerns snacks being distributed; the two describe unrelated aspects of a scene with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Claim A concerns the location of Milo and Hana, while claim B concerns Noor asking people to quiet down for a discussion; these describe unrelated situations with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Claim A concerns the house relationship between Milo and Hana, while claim B concerns the house relationship between Milo and Dev. Knowing Milo and Hana are in different houses tells us nothing about whether Milo and Dev are in different houses.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A concerns Milo and Hana's living arrangements, while claim B concerns the relative ages of Quinn and Dev. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Claim A concerns Milo and Hana's locations, while claim B concerns Quinn's note-taking activity; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A states Milo and Hana belong to different houses, which is compatible with any number of houses (as long as there are at least two). B specifies the total number of houses at the school, which is neither confirmed nor denied by A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Being in different houses from Milo has no bearing on whether Hana suggested a book for next month; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Being in different houses from Hana has no bearing on Milo checking his watch or perceiving the time as later than expected.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Being in a different house from Hana doesn't logically bear on whether Milo started gathering his belongings; there's no stated causal or evidential link between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Claim A concerns Milo and Hana's locations in different houses, while claim B concerns Dev offering to return copies to shelves before a room closed. These involve different people, objects, and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 24,
+   "rationale": "There is no stated connection between Milo and Hana's housing arrangement and Noor's actions at a meeting's conclusion; these appear to be entirely separate events involving different subjects.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "A extended debate over the ending is consistent with, and plausibly explained by, one member (Quinn) passionately arguing a different interpretation; B provides a concrete detail supporting A's general claim.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "A implies the group was gathered together discussing the book, which sits awkwardly with Hana and Dev being in different houses if they are part of that group; but there's no explicit indication they were both in the group or that discussion required physical proximity (could be a call or chat), so it's not a strict contradiction, though it does create some mild tension.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "A describes discussion focus while B describes an incidental social activity; neither implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "If the group was actively debating (implying a lively, possibly loud discussion), it's plausible that at some point someone would ask for quiet so the discussion could proceed more orderly; A provides a plausible context for B.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Debating the ending of a book together implies the debaters were in the same place, while B states Milo and Dev were in different houses; but A doesn't specify who was in the group, so it's unclear if Milo and Dev were even part of this discussion. There's no direct logical conflict since the claims could refer to different times or groups.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "The group's discussion about a book's ending has no logical or thematic connection to a claim about relative ages of two people.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "A describes a lengthy discussion about the book's ending, which is a plausible occasion for Quinn to take notes for future reference; the claims are consistent and mildly complementary but neither strictly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "The two claims describe unrelated topics: a group's discussion about a book's ending has no logical or causal connection to the number of houses in a school.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Debating the ending of a current book is a natural precursor to moving on to suggest a new book for next time, though A doesn't necessarily entail B happened.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "A long debate about the book's ending suggests time passed unnoticed, which plausibly leads to Milo being surprised at how late it had gotten; this is a loose causal/temporal connection but not guaranteed.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "A prolonged debate could prompt some members to grow restless and start packing up, but the claims are independent enough that A neither strongly implies nor conflicts with B; they could easily co-occur or occur separately.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "A describes a book club discussing the ending at length, while B is about Dev handling logistics of returning extra copies; these are largely independent events that could both occur during the same meeting.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 24,
+   "rationale": "A describes an extended discussion during a meeting (likely a book club), while B describes the meeting wrapping up with thanks; these can both be true as sequential parts of the same or related meeting, with no direct bearing on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "The claims involve unrelated subjects and contexts; Quinn's argument about an interpretation has no bearing on Hana and Dev's locations.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "The two claims describe unrelated events in what may be the same gathering; Quinn's argument about the ending has no bearing on whether snacks were passed around.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Quinn arguing passionately might raise noise or disorder, making it plausible Noor would ask for quiet, but this is a loose inferential link rather than a direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A concerns Quinn's interpretation of a story's ending, while claim B concerns the physical location of two different people, Milo and Dev. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Claim A concerns Quinn's opinion about an ending; claim B concerns Quinn's relative age to Dev. These topics have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Both claims describe Quinn's behavior in what could be the same meeting, but arguing passionately and taking detailed notes are compatible activities that don't inherently support or conflict with each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A concerns a personal disagreement about interpreting an ending, while claim B is an unrelated factual statement about a school's structure. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "These claims describe unrelated events involving different people (Quinn arguing about a book ending vs Hana suggesting a new book), likely in a book club setting, with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "The two claims describe unrelated events involving different people and topics; there is no logical or causal connection between Quinn's argument and Milo checking his watch.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Quinn's argument about the ending's interpretation has no clear bearing on whether Milo starts packing up his belongings; these are independent actions unless additional context links them (e.g., a meeting ending), which is not stated.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "The claims describe unrelated events with different subjects and no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 24,
+   "rationale": "The two claims describe different people and unrelated events with no logical connection between Quinn's argument about an ending's interpretation and Noor's closing remarks at a meeting.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A concerns Hana and Dev's locations, while claim B concerns snacks being passed around; these describe unrelated aspects of a situation with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A describes locations of two people, while claim B describes an unrelated action by a third person asking for quiet. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Knowing Hana and Dev are in different houses tells us nothing about whether Milo and Dev are in different or the same house.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A concerns house assignments of Hana and Dev, while claim B concerns a relative age comparison between Quinn and Dev; neither provides information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Claim A concerns Hana and Dev's locations in different houses, while claim B concerns Quinn's note-taking during a meeting; the two statements share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Knowing Hana and Dev were in different houses doesn't indicate how many houses the school had in total; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Being in different houses from Dev has no bearing on whether Hana suggested a book for next month; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Claim A concerns Hana and Dev's locations, while claim B concerns Milo's perception of time; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Claim A concerns Hana and Dev's location in different houses, while claim B concerns Milo's action of gathering his things. There is no logical or causal connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Claim A concerns Hana and Dev being in different houses, while claim B concerns Dev's offer regarding books and a room's closing; these details do not clearly bear on one another.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 24,
+   "rationale": "Claim A concerns Hana and Dev's locations while claim B concerns Noor's actions at a meeting; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Passing snacks around could create noise or distraction, making a request to quiet down for discussion plausible or even prompted by it, but neither claim entails the other.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Passing snacks around implies people were together in the same location, which sits awkwardly with Milo and Dev being in different houses, though both could be true if the snack-passing didn't involve both of them or happened separately.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Snacks being passed around has no logical or causal bearing on the relative ages of Quinn and Dev.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Passing around snacks and taking detailed notes are independent activities that can both occur during a meeting without one influencing the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Snacks being passed around has no logical or contextual connection to the number of houses a school has.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Both could occur during the same gathering, such as a book club meeting, but neither event implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Passing around snacks has no logical bearing on Milo checking his watch or perceiving the time as later than expected; these are independent events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "There is no inherent logical connection between snacks being passed around and someone starting to gather their belongings; these could occur independently or in sequence without one affecting the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Snacks being passed around is a social/informal activity that has no logical bearing on Dev's offer to return extra copies to shelves before closing; the two events are independent.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 24,
+   "rationale": "Both describe plausible parts of the same gathering (snacks during, thanks at the end), but neither implies or excludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Claim A describes a discussion involving people together needing quiet, while claim B states Milo and Dev were in different houses; these do not clearly reference the same event or people, so no logical bearing exists between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Claim A concerns Noor requesting quiet during a discussion, while claim B concerns a relative age comparison between Quinn and Dev. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Noor's request to quiet down for the discussion to continue is a plausible backdrop for a meeting, and Quinn taking notes throughout is consistent with such a meeting continuing, but the two events don't directly influence each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Claim A describes a discussion being quieted while claim B states a fact about school organization; these have no logical or topical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "A shows Noor trying to restore order so discussion can proceed, which plausibly sets the stage for Hana making a suggestion afterward; but the claims are largely independent events with no direct causal or contradictory link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Noor asking for quiet during a discussion has no direct bearing on Milo checking his watch and being surprised by the time; these are independent events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Noor's request implies the discussion was to continue, whereas Milo gathering his things suggests he intended to leave, which sits awkwardly with continuing the discussion but is not impossible (he could be packing up while staying, or leaving briefly).",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Both claims describe plausible independent actions in what seems like a shared setting (a meeting or study room), but A's request to quiet down for discussion has no direct bearing on B's offer to return copies to shelves before closing.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "A suggests the discussion was still ongoing and needed order, while B implies the meeting is concluding; these could both occur at different points in time (mid-meeting request, then closing thanks), so not strictly contradictory, but they sit awkwardly close together in sequence, creating mild tension.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Claim A concerns which houses Milo and Dev belong to, while claim B concerns a relative age comparison between Quinn and Dev. These deal with entirely different attributes and have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Claim A concerns the housing arrangement of Milo and Dev, while claim B concerns Quinn's note-taking during a meeting. There is no logical or contextual connection between them as stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Milo and Dev being in different houses is consistent with there being any number of houses (two or more), so a school with three houses neither confirms nor is confirmed by this fact.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "The claims concern unrelated people and topics; there is no logical or causal connection between Milo and Dev being in different houses and Hana suggesting a book.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "There is no stated connection between the two people being in different houses and Milo's reaction to the time on his watch; they concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Claim A states a fact about living arrangements while claim B describes an unrelated action Milo takes; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Claim A concerns Milo and Dev's house affiliations, while claim B concerns Dev's offer regarding books and a room's closing time; neither bears logically on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 24,
+   "rationale": "The claim about Milo and Dev being in different houses has no bearing on Noor thanking people at a meeting's end; they concern unrelated subjects and contexts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Relative age of Quinn compared to Dev has no bearing on whether Quinn took notes during a meeting; these are unrelated facts about different domains.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "The two claims discuss unrelated topics: relative ages of two individuals versus the number of houses at a school, with no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "The claims involve entirely different subjects (relative ages of Quinn and Dev vs. Hana's book suggestion) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Claim A concerns a relative age comparison between Quinn and Dev, while claim B concerns Milo's perception of time. The two claims share no common subject, entities, or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "The two claims concern unrelated subjects: a relative age comparison between Quinn and Dev, and an action performed by Milo. Neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Claim A concerns relative ages of Quinn and Dev, while claim B concerns Dev's offer to return copies to shelves before closing; these describe unrelated aspects of Dev with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 24,
+   "rationale": "The two claims concern entirely different subjects (relative ages of Quinn and Dev vs. Noor's meeting behavior) with no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Claim A is about Quinn taking notes at a meeting, while claim B is an unrelated fact about a school's house system; neither bears on the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Claim A describes Quinn's note-taking during a meeting, while claim B describes Hana suggesting a book for the following month; these involve different people and actions with no apparent causal or logical link between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Claim A concerns Quinn's note-taking during a meeting, while claim B concerns Milo's realization about the time. They involve different people and unrelated actions with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Quinn taking notes for a future session is largely independent of Milo starting to pack up his belongings; both could occur simultaneously or at different points without one implying the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Claim A concerns Quinn's note-taking during a meeting, while claim B concerns Dev returning extra copies to shelves before closing; they involve different people and unrelated activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 24,
+   "rationale": "Both claims describe different actions by different people during the same general event (a meeting), and neither implies anything about the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "The claim about the school having three houses has no logical or thematic connection to Hana suggesting a book for a book club or similar activity.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "The number of houses at the school has no bearing on Milo checking his watch or his perception of time.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "The number of houses at the school has no bearing on whether Milo started gathering his belongings.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Claim A concerns the school's house structure, while claim B concerns Dev returning copies to shelves; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 19,
+   "b": 24,
+   "rationale": "These claims describe unrelated facts—one about a school's house system, the other about the end of a meeting—with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "These describe two unrelated events with no logical or causal connection between suggesting a book and checking a watch.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Hana's suggestion of a book for next month and Milo beginning to gather his things do not directly bear on each other; Milo's action could indicate the meeting ending, but this is not implied by A itself.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "These describe different, independent actions by different people (suggesting a book vs. returning copies) with no stated causal or logical link between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 24,
+   "rationale": "These describe two different plausible parts of a meeting or club gathering, but they involve different people and events with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Realizing it's later than expected commonly prompts someone to hurry up and prepare to leave, making it more plausible that Milo would start gathering his things.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "A implies time is running short, which could motivate or complicate Dev's offer to return copies before closing, but they concern different people and actions without direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "A shows Milo perceiving time has passed later than expected, which loosely fits a meeting concluding, but there is no strong causal or evidential link between the two specific claims; they could easily occur in unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Milo preparing to leave is consistent with Dev offering to handle cleanup tasks like returning books before closing; they plausibly occur in the same winding-down scene, but neither directly causes or evidences the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "Milo gathering his things is consistent with a meeting ending, which fits Noor's closing remarks; the two events plausibly occur around the same time but neither entails the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 23,
+   "b": 24,
+   "rationale": "Both suggest a meeting or gathering is ending, but they describe different people doing unrelated actions with no direct bearing on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo",
+     "he"
+    ]
+   },
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana",
+     "she"
+    ]
+   },
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev",
+     "his"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "house",
+    "arity": "multi",
+    "arity_span": "The school had three houses.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 10,
+    "attribute": "house",
+    "kind": "different",
+    "a": "milo",
+    "b": "hana",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "house",
+    "kind": "different",
+    "a": "hana",
+    "b": "dev",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "house",
+    "kind": "different",
+    "a": "milo",
+    "b": "dev",
+    "confidence": 0.95
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 4,
+    "attribute": "arrival_order",
+    "subject": "hana",
+    "comparative": "after",
+    "object": "milo",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 7,
+    "attribute": "height",
+    "subject": "dev",
+    "comparative": "taller than",
+    "object": "milo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "subject": "quinn",
+    "comparative": "younger than",
+    "object": "dev",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_order",
+    "entity": "milo",
+    "comparative": "first",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 25,
+  "pairs_requested": 300,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 7,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    5,
+    10
+   ],
+   [
+    8,
+    13
+   ],
+   [
+    8,
+    16
+   ],
+   [
+    8,
+    22
+   ],
+   [
+    11,
+    13
+   ],
+   [
+    15,
+    22
+   ],
+   [
+    15,
+    24
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence",
+    "height": "magnitude",
+    "house": null,
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 2,
+     "attribute": "arrival_order",
+     "entity": "milo",
+     "extreme": "min",
+     "edges": 1
+    }
+   ],
+   "extreme_edges": 1,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 25,
+  "n_edges": 14,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 0.9860421526988494,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   0.9999999999999998,
+   1.0,
+   0.8082191780821918,
+   1.0,
+   0.5525114155251141,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   0.360730593607306,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   0.9999999999999997,
+   1.0
+  ],
+  "claim_residuals": [
+   8.628166150854817e-32,
+   2.7117093616972283e-32,
+   0.08581972852943019,
+   0.0,
+   0.8330935551802507,
+   1.232595164407831e-32,
+   0.0,
+   0.0,
+   8.628166150854817e-32,
+   2.7117093616972283e-32,
+   0.9924730510206208,
+   1.4544622940012406e-31,
+   3.697785493223493e-32,
+   0.0,
+   1.232595164407831e-32,
+   2.958228394578794e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   7.642090019328552e-32,
+   8.628166150854817e-32,
+   3.697785493223493e-32,
+   1.1832913578315177e-31,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 8,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 0,
+    "b": 23,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 1,
+    "b": 9,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 1,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 4,
+    "residual": 0.049039844873960126
+   },
+   {
+    "a": 4,
+    "b": 10,
+    "residual": 0.5838076770709534
+   },
+   {
+    "a": 5,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 11,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 8,
+    "b": 20,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 9,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 12,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 11,
+    "b": 15,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 11,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 3.697785493223493e-32
+   }
+  ],
+  "residual_ranking": [
+   10,
+   4,
+   2
+  ],
+  "culprits": [
+   {
+    "claim": 10,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.013957847301150572
+   },
+   {
+    "claim": 4,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.013957847301150572
+   },
+   {
+    "claim": 2,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.00016746117033894503
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 38747,
+   "output_tokens": 3684,
+   "thinking_tokens": 0,
+   "calls": 12679,
+   "api_calls": 35,
+   "cache_hits": 12644,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.115969,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 42431,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    1,
+    8,
+    9,
+    11,
+    12,
+    15,
+    20,
+    21,
+    22,
+    23
+   ],
+   [
+    2,
+    4,
+    10
+   ],
+   [
+    3
+   ],
+   [
+    5,
+    14
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    13
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ],
+   [
+    18
+   ],
+   [
+    19
+   ],
+   [
+    24
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    4,
+    10
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 5,
+    "b": 10,
+    "rationale": "If Hana greeted everyone in person with cookies, she was likely present at a shared location, which sits awkwardly with her being in a different house from Milo specifically, though it's not a strict logical contradiction since 'everyone' may not include Milo or greetings could occur across houses.",
+    "confidence": 0.55
+   },
+   {
+    "a": 8,
+    "b": 13,
+    "rationale": "A implies Dev was in a chair, presumably in some shared setting for discussion, which suggests he could be in the same place as others including Hana. B claims Dev and Hana were in different houses, which is not directly addressed by A but sits awkwardly with the implication of a shared discussion setting.",
+    "confidence": 0.55
+   },
+   {
+    "a": 8,
+    "b": 16,
+    "rationale": "A implies Dev is present in a room ready for a discussion, suggesting he is with others in a shared setting, which is in tension with B's claim that he and Milo were in different houses, though A alone doesn't strictly rule it out.",
+    "confidence": 0.55
+   },
+   {
+    "a": 8,
+    "b": 22,
+    "rationale": "A shows Dev settling in for a discussion while B shows Milo preparing to leave; these suggest conflicting intentions for the scene, creating an awkward mismatch though both could technically occur simultaneously.",
+    "confidence": 0.6
+   },
+   {
+    "a": 11,
+    "b": 13,
+    "rationale": "A implies the group was gathered together discussing the book, which sits awkwardly with Hana and Dev being in different houses if they are part of that group; but there's no explicit indication they were both in the group or that discussion required physical proximity (could be a call or chat), so it's not a strict contradiction, though it does create some mild tension.",
+    "confidence": 0.45
+   },
+   {
+    "a": 15,
+    "b": 22,
+    "rationale": "Noor's request implies the discussion was to continue, whereas Milo gathering his things suggests he intended to leave, which sits awkwardly with continuing the discussion but is not impossible (he could be packing up while staying, or leaving briefly).",
+    "confidence": 0.55
+   },
+   {
+    "a": 15,
+    "b": 24,
+    "rationale": "A suggests the discussion was still ongoing and needed order, while B implies the meeting is concluding; these could both occur at different points in time (mid-meeting request, then closing thanks), so not strictly contradictory, but they sit awkwardly close together in sequence, creating mild tension.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 10,
+   "attribute": "house",
+   "kind": "different",
+   "a": "milo",
+   "b": "hana",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "house",
+   "kind": "different",
+   "a": "hana",
+   "b": "dev",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "house",
+   "kind": "different",
+   "a": "milo",
+   "b": "dev",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 4,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "hana",
+   "b": "milo",
+   "confidence": 0.85,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 7,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "dev",
+   "b": "milo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 17,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "dev",
+   "b": "quinn",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "hana",
+   "b": "milo",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "request": "b646455c02beec595188c21f3a801eb4cb0c81b78b3e77ab0d4f62bdf7feefc9",
+ "tag": "text-5b01ecbfe746-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Mina and Fay were in different houses.",
+     "Fay and Jude were in different houses.",
+     "Mina and Jude were in different houses.",
+     "The school had two houses."
+    ],
+    "explanation": "With only two houses, three people cannot each be pairwise in different houses, since by pigeonhole at least two of them must share a house."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1053,
+  "output_tokens": 277,
+  "thinking_tokens": 160
+ },
+ "stop_reason": "end_turn"
+}

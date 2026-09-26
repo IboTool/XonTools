@@ -1,0 +1,38 @@
+{
+ "request": "f6b95247d21aa03ac8eb4690bf13e27e8c5c9d6d424a44ed381cc13d967b6296",
+ "tag": "text-bfd3938234d1-seed1-relate-003",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 23,
+    "b": 26,
+    "rationale": "A predicted dry spell would suggest less favorable conditions for a garden, making agreement that it's in good shape less likely",
+    "relation": "contradicts",
+    "confidence": 0.55
+   },
+   {
+    "a": 24,
+    "b": 25,
+    "rationale": "Leo's preference for mornings and Dev's preference for evenings are independent personal preferences with no bearing on each other",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 26,
+    "b": 27,
+    "rationale": "Agreement about the garden's good shape has no logical connection to packing up chairs under a clearing sky",
+    "relation": "unrelated",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 933,
+  "output_tokens": 221,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

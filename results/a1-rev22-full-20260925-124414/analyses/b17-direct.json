@@ -1,0 +1,1359 @@
+{
+ "label": "b17-direct",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-be2015c73a39",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The science fair filled the gymnasium with tables of volcanoes, circuit boards, and plant experiments.",
+   "span": "The science fair filled the gymnasium with tables of volcanoes, circuit boards, and plant experiments.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Dev is the event organizer.",
+   "span": "Assume that Dev is the event organizer.",
+   "kind": "premise"
+  },
+  {
+   "id": 2,
+   "text": "Nell arrived early to set up her poster board near the entrance.",
+   "span": "Nell arrived early to set up her poster board near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Ivo came in a bit later carrying a large box of supplies.",
+   "span": "Ivo came in a bit later carrying a large box of supplies",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Judges wandered the aisles taking notes.",
+   "span": "Judges wandered the aisles taking notes",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Parents crowded around the robotics display.",
+   "span": "parents crowded around the robotics display",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Ivo brought the first-aid kit.",
+   "span": "Ivo brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Zeno had spent the morning rehearsing his presentation on solar panels.",
+   "span": "Zeno had spent the morning rehearsing his presentation on solar panels",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Alma was busy calibrating her chemistry demonstration before the doors opened.",
+   "span": "Alma was busy calibrating her chemistry demonstration before the doors opened",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Ivo did not bring the first-aid kit.",
+   "span": "Ivo did not bring the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Nell and Zeno worked different shifts.",
+   "span": "Nell and Zeno worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Dev checked in with volunteers throughout the day.",
+   "span": "Dev checked in with volunteers throughout the day",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Dev made sure every table had enough space.",
+   "span": "making sure every table had enough space",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Dev made sure the extension cords were taped down safely.",
+   "span": "that the extension cords were taped down safely",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Zeno and Alma worked different shifts.",
+   "span": "Zeno and Alma worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Several students compared their rankings from last year's regional competition.",
+   "span": "Several students compared their rankings from last year's regional competition",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Nell and Alma worked different shifts.",
+   "span": "Nell and Alma worked different shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Ivo was a head taller than most of the younger students.",
+   "span": "Ivo, who was a head taller than most of the younger students",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Ivo helped move a heavy table without any trouble.",
+   "span": "helped move a heavy table without any trouble",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "The shop ran three shifts.",
+   "span": "The shop ran three shifts.",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Alma was younger than Zeno by almost a year.",
+   "span": "Alma was younger than Zeno by almost a year",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Both Alma and Zeno seemed equally nervous before their turns to present.",
+   "span": "though both seemed equally nervous before their turns to present",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Nell finished setting up before Dev arrived.",
+   "span": "Nell finished setting up before Dev arrived",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Nell and Dev exchanged a quick wave across the room.",
+   "span": "the two exchanged a quick wave across the room",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "By early afternoon, the gymnasium buzzed with excitement as visitors moved from table to table, admiring the creativity of each project.",
+   "span": "By early afternoon, the gymnasium buzzed with excitement as visitors moved from table to table, admiring the creativity of each project.",
+   "kind": "asserted"
+  },
+  {
+   "id": 25,
+   "text": "Zeno's shift felt shorter than expected.",
+   "span": "his shift felt shorter than expected",
+   "kind": "quoted"
+  },
+  {
+   "id": 26,
+   "text": "Everyone helped fold up tables and pack away display boards as the fair wound down.",
+   "span": "As the fair wound down, everyone helped fold up tables and pack away display boards",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "A establishes that the gymnasium was set up with science fair project tables (volcanoes, circuit boards, plants), which supports B's depiction of visitors moving between tables and admiring projects later that day.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 26,
+   "rationale": "A establishes that the science fair had many tables and display boards set up in the gymnasium; B describes the natural follow-up of packing these same items away as the event ends, which is consistent with and supported by A.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Dev being the event organizer has no bearing on what Alma was doing before doors opened; they concern different people and roles with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Being the event organizer makes it plausible and consistent that Dev would check in with volunteers throughout the day, as that's a typical organizer responsibility.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "As event organizer, Dev would plausibly be responsible for arranging tables and seating, so knowing Dev organized the event makes it more likely Dev handled such logistical details.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Being the event organizer plausibly gives Dev responsibility for safety tasks like taping down cords, making B more plausible given A.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "A states a fact about Dev's role as event organizer, which has no logical connection to whether Zeno and Alma worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Claim A identifies Dev's role as event organizer, which has no bearing on the described nervousness of Alma and Zeno before presenting.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Both describe different people arriving at different times to the same event; A does not affect the likelihood of B, they simply describe separate but compatible occurrences.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "A describes Nell's early arrival and poster setup near the entrance, while B describes Ivo bringing a first-aid kit; these events involve different people and actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Both describe setup activities before an event, but A is about Nell positioning her own poster and B is about Dev checking table spacing; neither implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Both describe event-setup activities that could occur at the same occasion, but one arriving early with a poster board has no logical bearing on someone else taping down extension cords.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Arriving early to set up suggests Nell had ample time to complete setup, making it plausible she finished before others like Dev arrived; this supports B without guaranteeing it.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Arriving early and setting up near the entrance is compatible with later exchanging a wave with Dev across the room; the claims describe different moments and don't conflict.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 2,
+   "b": 26,
+   "rationale": "A establishes Nell set up a poster board at an event; B describes general cleanup at the end involving everyone. These are compatible and B's 'everyone' would plausibly include Nell, but there's no strong logical link between arriving early to set up and later group cleanup.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Ivo arriving with supplies could plausibly relate to a robotics event setup, but the claims don't clearly connect and could describe unrelated scenes or moments.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "The box of supplies Ivo carried could plausibly contain or be the source of the first-aid kit, so A makes B more plausible without confirming it, but they are not strictly synonymous.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "A shows Ivo carrying a large box, indicating physical capability and willingness to help with manual tasks, which makes it plausible he could also help move a heavy table without trouble.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "A describes judges walking the aisles taking notes, which typically happens after doors open, while B places Alma's calibration before doors opened; these describe different time periods and can both be true without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Both describe plausible simultaneous events at what seems to be a judged event or exhibition, but neither statement implies or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 24,
+   "rationale": "Both describe a science-fair-like event with people moving through aisles/tables during judging or viewing; judges wandering and taking notes fits naturally within a busy gymnasium scene of visitors admiring projects, though A specifies judges while B mentions visitors generally.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 25,
+   "rationale": "Judges taking notes during an event is a background detail about the setting; it doesn't bear on whether Zeno's shift felt shorter than expected, unless Zeno is otherwise connected to these events, which isn't stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 24,
+   "rationale": "Parents crowding around a robotics display fits naturally within a bustling gymnasium scene where visitors move table to table admiring projects; the robotics display is plausibly one of the tables drawing attention, so A supports the general atmosphere described in B.",
+   "relation": "supports",
+   "confidence": 0.72
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "B is the direct negation of A; if Ivo brought the first-aid kit, it cannot also be true that he did not bring it.",
+   "relation": "contradicts",
+   "confidence": 0.99
+  },
+  {
+   "a": 6,
+   "b": 26,
+   "rationale": "Ivo bringing the first-aid kit is a separate fact about event preparation and does not bear on whether everyone helped with post-event cleanup; if Ivo is included in 'everyone,' the two claims are simply compatible but unconnected.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "The two claims describe unrelated activities by different people with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Zeno rehearsing a presentation about solar panels has no logical bearing on Dev securing extension cords; they involve different people and unrelated activities with no causal or evidential connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "A describes Zeno's morning activity while B compares Zeno's and Alma's ages; the two claims concern unrelated topics with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Zeno rehearsing his presentation suggests preparation, which could plausibly reduce nervousness, in mild tension with him being equally nervous as Alma before presenting; but both can be true since rehearsing doesn't guarantee calm.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "The two claims describe unrelated events involving different people with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 26,
+   "rationale": "A places Zeno preparing his presentation earlier in the day, which is consistent with there being a fair (implied by B) that later winds down; the two describe different phases of the same event without conflicting.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Both describe different people doing unrelated preparation tasks before some event; neither claim's content affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Being busy calibrating equipment could be consistent with nervousness, but 'busy calibrating' suggests focused, task-oriented activity rather than visible nervousness, creating mild tension with the claim that she seemed equally nervous alongside Zeno.",
+   "relation": "tension",
+   "confidence": 0.45
+  },
+  {
+   "a": 8,
+   "b": 25,
+   "rationale": "Claim A concerns Alma's activity before doors opened, while claim B concerns Zeno's subjective experience of his shift's duration. There is no stated connection between the two people or events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 26,
+   "rationale": "A describes Alma's activity before the fair opened, while B describes a general activity by everyone as the fair ended. These occur at different times and are not mutually exclusive, but A's specific focus doesn't particularly support or bear on B's claim about the closing cleanup.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "There is no logical or contextual connection between Ivo not bringing the first-aid kit and the shop running three shifts; they concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "A states Nell and Zeno have different shifts, which says nothing about Alma's shift relative to Zeno's; these involve different people and provide no logical constraint on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Claim A concerns Nell and Zeno's work shifts, while claim B concerns students comparing competition rankings; there is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "A tells us about Nell's shift relative to Zeno, but says nothing about Nell's relationship to Alma's shift, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A implies there are at least two distinct shifts, which is consistent with the shop running three shifts overall; A does not confirm the total number of shifts but is compatible with it.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 25,
+   "rationale": "Working different shifts from Nell has no bearing on whether Zeno's own shift felt short or long; these are independent facts about Zeno's schedule versus his subjective experience of time.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Claim A describes Dev's ongoing behavior during the day, while claim B concerns a specific timing relationship between Nell's setup and Dev's arrival; neither statement bears on the truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 26,
+   "rationale": "A is about Dev arranging tables with adequate spacing, likely before or during an event, while B describes packing up tables at the end of a fair. These describe different phases of an event and neither implies the other, though both involve tables at what seems to be the same event.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Taping down extension cords is a workplace safety action unrelated to whether the shop operated three shifts; the claims concern different aspects of the shop's operations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Taping down extension cords and exchanging a wave are unrelated actions with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 24,
+   "rationale": "A describes a safety precaution taken with extension cords, likely for an event setup; B describes a bustling event with visitors viewing projects, consistent with a science fair or exhibition where such cords might be used. They are set in a plausibly related context but neither entails or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "A tells us Zeno and Alma work different shifts, but says nothing about Nell's schedule relative to Alma's, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "If the shop ran three shifts, it's plausible that Zeno and Alma were assigned to different ones, so B provides a context that makes A plausible, but B doesn't necessarily follow from A since 'different shifts' could exist even with only two shifts.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 24,
+   "rationale": "Claim A concerns Zeno and Alma's work shift arrangement, while claim B describes a gymnasium event with visitors and projects; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 25,
+   "rationale": "A states a fact about scheduling relative to Alma, which has no bearing on how Zeno subjectively perceived the duration of his own shift.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "The comparison of past competition rankings among students has no logical bearing on the relative ages of Alma and Zeno.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "Claim A describes students discussing past competition rankings, which could plausibly occur within a science-fair-like event described in B, but neither claim entails or conflicts with the other's specific details about time, setting, or activity.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "That Nell and Alma worked different shifts is consistent with a shop running three shifts, since there could be room for multiple distinct shifts; it doesn't strongly confirm or deny the exact number of shifts.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "A concerns Nell and Alma's work shifts, while B concerns Alma and Zeno's nervousness before presentations; these are unrelated topics with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 24,
+   "rationale": "Claim A concerns Nell and Alma's work shifts, while claim B describes a gymnasium scene with visitors viewing projects; there is no shared context or entity linking the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Being noticeably taller than peers suggests larger stature and likely greater strength, making it plausible that Ivo could move a heavy table with ease.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Claim A concerns Ivo's height relative to younger students, while claim B concerns a shop's shift schedule; the two share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Claim A concerns Ivo moving a table without difficulty, while claim B concerns Alma and Zeno's nervousness before presentations. These involve different people and unrelated events, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 19,
+   "b": 24,
+   "rationale": "Claim A describes a shop's work shifts, while claim B describes a gymnasium event with visitors and projects; they concern different settings and activities with no evident connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 19,
+   "b": 26,
+   "rationale": "The shop's shift structure is about internal work scheduling, while B describes a general communal cleanup at the end of a fair, likely a different event or context; the two have no clear logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Claim A concerns a relative age gap between Alma and Zeno, while claim B concerns their emotional state before presenting; these are independent facts with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Nell finishing setup before Dev arrived doesn't preclude a later friendly exchange like a wave when they see each other; the claims describe different, compatible moments in time.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 24,
+   "b": 26,
+   "rationale": "A describes the fair in full swing at early afternoon, while B describes the fair winding down and being packed away; these depict different, sequential phases of the same event and are not mutually exclusive since the fair could wind down later in the day.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "dev",
+    "mentions": [
+     "Dev"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell",
+     "her"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno",
+     "his"
+    ]
+   },
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma",
+     "her"
+    ]
+   },
+   {
+    "id": "judges",
+    "mentions": [
+     "Judges"
+    ]
+   },
+   {
+    "id": "parents",
+    "mentions": [
+     "Parents"
+    ]
+   },
+   {
+    "id": "students",
+    "mentions": [
+     "Several students"
+    ]
+   },
+   {
+    "id": "gymnasium",
+    "mentions": [
+     "The science fair",
+     "the gymnasium"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "shift",
+    "arity": "multi",
+    "arity_span": "The shop ran three shifts.",
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "nervousness",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "shift_duration",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "first_aid_kit_bringer",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 10,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "nell",
+    "b": "zeno",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 14,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "zeno",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "nell",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 21,
+    "attribute": "nervousness",
+    "kind": "same",
+    "a": "alma",
+    "b": "zeno",
+    "confidence": 0.85
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 22,
+    "attribute": "arrival_time",
+    "subject": "nell",
+    "comparative": "before",
+    "object": "dev",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 20,
+    "attribute": "age",
+    "subject": "alma",
+    "comparative": "younger than",
+    "object": "zeno",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 25,
+    "attribute": "shift_duration",
+    "entity": "zeno",
+    "comparative": "shorter than expected",
+    "confidence": 0.5
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "before",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "shift_duration",
+    "comparative": "shorter than expected",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": [
+   9
+  ]
+ },
+ "pair_selection": {
+  "mode": "proposed + blind check",
+  "proposed": 31,
+  "blind": [
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    14
+   ],
+   [
+    1,
+    21
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    2,
+    12
+   ],
+   [
+    2,
+    13
+   ],
+   [
+    2,
+    23
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    4,
+    23
+   ],
+   [
+    4,
+    25
+   ],
+   [
+    6,
+    26
+   ],
+   [
+    7,
+    12
+   ],
+   [
+    7,
+    13
+   ],
+   [
+    7,
+    20
+   ],
+   [
+    7,
+    23
+   ],
+   [
+    8,
+    13
+   ],
+   [
+    8,
+    25
+   ],
+   [
+    9,
+    19
+   ],
+   [
+    10,
+    15
+   ],
+   [
+    12,
+    26
+   ],
+   [
+    13,
+    19
+   ],
+   [
+    13,
+    23
+   ],
+   [
+    13,
+    24
+   ],
+   [
+    14,
+    24
+   ],
+   [
+    15,
+    20
+   ],
+   [
+    16,
+    21
+   ],
+   [
+    16,
+    24
+   ],
+   [
+    17,
+    19
+   ],
+   [
+    18,
+    21
+   ],
+   [
+    19,
+    24
+   ],
+   [
+    19,
+    26
+   ]
+  ],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 27,
+  "pairs_requested": 63,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 32,
+  "blind_pairs_related": 0,
+  "entity_relations": 6,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    7,
+    21
+   ],
+   [
+    8,
+    21
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "shift": null,
+    "height": "magnitude",
+    "age": "magnitude",
+    "nervousness": null,
+    "shift_duration": "magnitude",
+    "first_aid_kit_bringer": null
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 25,
+     "attribute": "shift_duration",
+     "entity": "zeno",
+     "extreme": "min",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 0,
+   "unsupported_order_claims": [
+    9
+   ]
+  }
+ },
+ "report": {
+  "n_claims": 27,
+  "n_edges": 13,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "direct"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   1
+  ],
+  "harmony": 0.9857613369960736,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    25
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   0.8529937148527954,
+   1.0,
+   1.0,
+   0.4745616936817732,
+   1.0,
+   1.0,
+   0.2664240820377108,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9839894144889183,
+   0.9548792590142245,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.1066051833943953,
+   0.0,
+   0.0,
+   0.898420671423158,
+   0.0,
+   0.0,
+   1.0817029480346347,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0007224094818761228,
+   0.008730350366016219,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 26,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 2,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 6,
+    "residual": 0.07876593705617176
+   },
+   {
+    "a": 3,
+    "b": 18,
+    "residual": 0.006228398465442317
+   },
+   {
+    "a": 4,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 6,
+    "b": 9,
+    "residual": 0.5435693206204194
+   },
+   {
+    "a": 14,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 17,
+    "b": 18,
+    "residual": 0.00046607063346846357
+   }
+  ],
+  "residual_ranking": [
+   9,
+   6,
+   3,
+   18,
+   17
+  ],
+  "culprits": [
+   {
+    "claim": 9,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.0142386630039264
+   },
+   {
+    "claim": 6,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.0142386630039264
+   },
+   {
+    "claim": 3,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.00016772843803603
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 6321,
+   "api_calls": 0,
+   "cache_hits": 6321,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    4,
+    5,
+    24,
+    26
+   ],
+   [
+    1,
+    11,
+    12,
+    13
+   ],
+   [
+    2,
+    22
+   ],
+   [
+    3,
+    6,
+    9,
+    17,
+    18
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    10
+   ],
+   [
+    14,
+    19
+   ],
+   [
+    15
+   ],
+   [
+    16
+   ],
+   [
+    20
+   ],
+   [
+    21
+   ],
+   [
+    23
+   ],
+   [
+    25
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [
+   [
+    6,
+    9
+   ]
+  ],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 7,
+    "b": 21,
+    "rationale": "Zeno rehearsing his presentation suggests preparation, which could plausibly reduce nervousness, in mild tension with him being equally nervous as Alma before presenting; but both can be true since rehearsing doesn't guarantee calm.",
+    "confidence": 0.55
+   },
+   {
+    "a": 8,
+    "b": 21,
+    "rationale": "Being busy calibrating equipment could be consistent with nervousness, but 'busy calibrating' suggests focused, task-oriented activity rather than visible nervousness, creating mild tension with the claim that she seemed equally nervous alongside Zeno.",
+    "confidence": 0.45
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 10,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "nell",
+   "b": "zeno",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "zeno",
+   "b": "alma",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "shift",
+   "kind": "different",
+   "a": "nell",
+   "b": "alma",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 21,
+   "attribute": "nervousness",
+   "kind": "same",
+   "a": "alma",
+   "b": "zeno",
+   "confidence": 0.85,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 22,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "dev",
+   "b": "nell",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 20,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "zeno",
+   "b": "alma",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "request": "5cf42c4d35ede310d523d56fe7507d5a654bc9b123c2994119e43814350a4486",
+ "tag": "text-50c1226318c8-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Bo is on the same team as Uma.",
+     "Uma is on the same team as Jude.",
+     "Bo is not on the same team as Jude."
+    ],
+    "explanation": "If Bo is on the same team as Uma, and Uma is on the same team as Jude, then Bo must be on the same team as Jude, contradicting the statement that he is not."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1045,
+  "output_tokens": 126,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,24 @@
+{
+ "request": "108eb4ce6d9a654f3e2f84e73b9cfb1950204342adcd1a18f5de9c3c901f1827",
+ "tag": "text-d74ec1d98e51-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Rosa is not the team captain.",
+     "Assume that Rosa is the team captain."
+    ],
+    "explanation": "The text directly states both that Rosa is not the team captain and that she is, which cannot both be true."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1094,
+  "output_tokens": 250,
+  "thinking_tokens": 168
+ },
+ "stop_reason": "end_turn"
+}

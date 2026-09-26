@@ -1,0 +1,162 @@
+{
+ "request": "618ab85f309e5f65404a0542ab4f5aee6a03fe3c95d7f9eb61ace3722b6c604e",
+ "tag": "text-8c7edd23c013-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa",
+     "her"
+    ]
+   },
+   {
+    "id": "kai",
+    "mentions": [
+     "Kai"
+    ]
+   },
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor",
+     "her"
+    ]
+   },
+   {
+    "id": "hugo",
+    "mentions": [
+     "Hugo",
+     "his"
+    ]
+   },
+   {
+    "id": "ana",
+    "mentions": [
+     "Ana"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "role",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 0,
+    "attribute": "role",
+    "kind": "same",
+    "a": "rosa",
+    "b": "treasurer",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "kai",
+    "b": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "class",
+    "kind": "same",
+    "a": "kai",
+    "b": "noor",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "noor",
+    "b": "hugo",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "hugo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "ana",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "class",
+    "kind": "same",
+    "a": "noor",
+    "b": "hugo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "hugo",
+    "b": "ana",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "ana",
+    "b": "kai",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 18,
+    "attribute": "class",
+    "kind": "different",
+    "a": "kai",
+    "b": "hugo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 22,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "noor",
+    "b": "hugo",
+    "confidence": 0.3
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2112,
+  "output_tokens": 726,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

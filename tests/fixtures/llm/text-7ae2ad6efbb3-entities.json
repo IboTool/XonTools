@@ -1,0 +1,127 @@
+{
+ "request": "97b634864161f664d20bb6e3f7346860f9fb79d66190e75a51d948f9f34a211c",
+ "tag": "text-7ae2ad6efbb3-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno"
+    ]
+   },
+   {
+    "id": "cy",
+    "mentions": [
+     "Cy"
+    ]
+   },
+   {
+    "id": "wren",
+    "mentions": [
+     "Wren"
+    ]
+   },
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira"
+    ]
+   },
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "multi",
+    "arity_span": "There were three teams."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "cy",
+    "b": "cy",
+    "confidence": 0.3
+   },
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "kira",
+    "b": "cy",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "isla",
+    "b": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 9,
+    "attribute": "team",
+    "kind": "different",
+    "a": "cy",
+    "b": "isla",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 12,
+    "attribute": "team",
+    "kind": "different",
+    "a": "isla",
+    "b": "kira",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "team",
+    "kind": "different",
+    "a": "cy",
+    "b": "kira",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "isla",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2133,
+  "output_tokens": 534,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

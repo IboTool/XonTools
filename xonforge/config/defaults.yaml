@@ -1,0 +1,81 @@
+# XonForge's defaults (XONFORGE_SPEC.md §4, §11).
+
+# Transport retries: A1's policy and values (xon/config.py, llm_retries and llm_backoff_s), which the user chose over
+# §4.2's rate-limit and overload errors only, a logged deviation (CHANGELOG_EXPERIMENTS.md, 2026-09-25): rate
+# limits, overloads, other 5xx errors, timeouts and lost connections, retried with the identical request. They never
+# count toward the renderer's cap on rendering attempts (§6).
+transport_retries: 3        # retries after the first send
+transport_backoff_s: 2.0    # the first retry's wait, doubling each time, never shorter than the server's retry-after
+
+# Budget caps (§4.2), per run and per provider entry (keyed by its name in providers.yaml), in tokens and in USD.
+# None is set yet: the user sets them before any live call, and a call that needs a cap which is not set is not sent.
+caps:
+  run_tokens: null
+  run_usd: null
+  provider_tokens: {}
+  provider_usd: {}
+
+# The budget's estimate of a request's input tokens: characters per token (A1's llm_chars_per_token). The request is
+# measured as sent, JSON syntax included, so the estimate errs high.
+chars_per_token: 2.5
+
+# Seconds before a request times out (the SDKs' own default).
+request_timeout_s: 600
+
+# The spend and call log, relative to the repository root. It holds no prompt, response or document text and no key,
+# so it may be committed; the response cache is outside the repository (XONFORGE_CACHE_DIR).
+call_log: cache/xonforge/log.jsonl
+
+# Skeletons (§5; the user's step 2 decisions, CHANGELOG_EXPERIMENTS.md). The share of direct_negation documents whose
+# negated claim is a premise. Each document records its own status, and its consistent twin keeps it.
+skeletons:
+  negation_premise_share: 0.5
+
+# Rendering (§6). The renderers are registry entry names the user chooses; none is chosen yet, so nothing is rendered
+# live. The constants below are §5.4's, with the values of the user's decisions of 2026-09-25 (items 1 and 4,
+# xonforge/docs/decisions.md); xonforge/render/schema.py and xonforge/verify/structural.py hold them.
+render:
+  renderers: []
+  retry_cap: 5              # §5.4's constant: renderings per document
+  min_spacing: 1            # sentences not planted between any two planted sentences
+  length_tolerance: {share: 0.15, words: 25}   # a text's words within 15% of its target, and at least 25
+  max_tokens: 16384         # per rendering, reasoning included (the implementing agent's choice)
+  params: {}                # sampling parameters; none set, so each provider's defaults
+
+# Blind review (§7.3). The reviewers are registry entries with the review role that the user chooses; none is chosen
+# yet. Each document is reviewed by the first k listed whose provider is not its renderer's.
+review:
+  k: 2                      # §7.3's default
+  reviewers: []
+
+# The cost estimate (xonforge/estimate.py). Tokens per English word, and each model's tokenizer factor on top: Claude
+# 4.7 and later models produce about 30% more tokens for the same text (the user's item 11 of 2026-09-25); others are
+# 1 until measured. The thinking tokens per call are the implementing agent's assumptions, not measurements, since
+# thinking is billed as output and no call has measured it yet; the estimate also shows the cost without thinking.
+estimate:
+  tokens_per_word: 1.3
+  tokenizer_factor: {claude-sonnet-5: 1.3, claude-opus-5-5: 1.3, claude-fable-5-1: 1.3}
+  thinking_per_call: {render: 4000, derive: 2000, review: 2000}
+
+# Run configurations (xonforge/runs.py; the user's decisions of 2026-09-25, xonforge/docs/decisions.md). A run started
+# with one uses its mode, renderers, reviewers and caps, and starts only if its check passes. The mode is always named:
+# record, for a corpus of record, whose reviewers are never of its renderer's provider and which needs three
+# configured providers; or pipeline_test, whose renderer and reviewers may be different models of one provider, and
+# whose documents never enter a sealed or judged split or a corpus of record.
+runs:
+  sample:                   # the 20-document sample (§14, step 7); it waits for the user's go-ahead
+    mode: pipeline_test
+    renderers: [claude-sonnet]
+    reviewers: [claude-opus, claude-fable]
+    caps:
+      run_tokens: null      # not given yet
+      run_usd: 20
+      provider_usd_each: 20
+  first_corpus:             # the first corpus of record; it waits for three providers and a cost estimate
+    mode: record
+    renderers: []
+    reviewers: []
+    caps:
+      run_tokens: null
+      run_usd: 250          # initial caps, to be adjusted from the sample's measured costs
+      provider_usd_each: 100

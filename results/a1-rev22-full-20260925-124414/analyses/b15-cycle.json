@@ -1,0 +1,792 @@
+{
+ "label": "b15-cycle",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-facecbd12ce8",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Uma is the team captain.",
+   "span": "Assume that Uma is the team captain.",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Milo arrived before Mina.",
+   "span": "Milo arrived before Mina.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Mina arrived before Gia.",
+   "span": "Mina arrived before Gia.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Gia is younger than Uma by almost a full year.",
+   "span": "Gia is younger than Uma by almost a full year",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Gia and Uma worked on a shared display about renewable energy sources for part of the semester.",
+   "span": "the two of them worked on a shared display about renewable energy sources for part of the semester",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Wren brought the first-aid kit.",
+   "span": "Wren brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Uma stands slightly taller than Milo.",
+   "span": "Uma stands slightly taller than Milo",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Uma hung the banner above their group table without needing a stool.",
+   "span": "which made it easier for her to hang the banner above their group table without needing a stool",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Gia arrived before Milo.",
+   "span": "Gia arrived before Milo.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Mina ranked higher than Wren in last years regional competition.",
+   "span": "Mina ranked higher than Wren in last years regional competition",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "The claims involve different people and different subject matter (team leadership vs. arrival order), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Claim A concerns team captaincy of Uma, while claim B concerns the arrival order of Mina and Gia; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Being team captain has no bearing on relative age between Gia and Uma; these facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Uma being team captain doesn't directly bear on whether she and Gia worked together on a renewable energy display; these describe different, independent facts about Uma.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Uma being team captain has no bearing on whether Wren brought the first-aid kit; these describe unrelated facts about different people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Being team captain has no bearing on relative height compared to Milo; these are independent facts about Uma.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Being team captain has no bearing on someone's height or ability to reach a banner without a stool; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Claim A concerns team leadership while claim B concerns arrival order of two people; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Claim A concerns Uma's role as team captain, while claim B concerns a ranking between Mina and Wren in a past competition. The two statements involve different people and different events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "A states Milo arrived before Mina, while B concerns the order of Mina and Gia's arrivals; these involve different pairs of people and neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A concerns the order of arrival of Milo and Mina, while claim B concerns the age difference between Gia and Uma. These involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A concerns the order of arrival between Milo and Mina, while claim B concerns Gia and Uma working on a shared display; they involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A concerns the order of arrival between Milo and Mina, while claim B concerns who brought a first-aid kit. These involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A concerns the order of arrival between Milo and Mina, while claim B concerns a height comparison between Uma and Milo. These involve different people and different attributes, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A concerns arrival order of Milo and Mina, while B concerns Uma hanging a banner without a stool; these involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Claim A only orders Milo before Mina and says nothing about Gia, so it neither supports nor contradicts a claim about Gia's arrival relative to Milo.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Claim A concerns arrival order between Milo and Mina, while claim B concerns competition ranking between Mina and Wren from last year. These involve different events, different people pairings, and no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A concerns arrival order between Mina and Gia, while claim B concerns relative ages between Gia and Uma. These involve different people and different attributes (arrival time vs. age), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A concerns the arrival order of Mina and Gia, while claim B concerns Gia and Uma's collaborative work on a display. These claims involve different events and people with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "The order in which Mina and Gia arrived has no bearing on who brought the first-aid kit; the two claims involve different people and different facts with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A concerns the order of arrival between Mina and Gia, while claim B concerns relative height between Uma and Milo. The two involve entirely different people and attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Claim A concerns the arrival order of Mina and Gia, while claim B concerns Uma hanging a banner without a stool. There is no logical or contextual connection between the two events as described.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "The claims describe different arrival-order relationships involving Gia relative to different people (Mina and Milo). Knowing Mina arrived before Gia gives no information about how Gia's arrival compares to Milo's.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Claim A concerns arrival order between Mina and Gia, while claim B concerns competition ranking between Mina and Wren in a past event; they involve different people, contexts, and timeframes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "The age difference between Gia and Uma has no bearing on whether they collaborated on a renewable energy display project; these are independent facts about the two people.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A concerns the age difference between Gia and Uma, while claim B concerns Wren bringing a first-aid kit. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A concerns relative ages of Gia and Uma, while claim B concerns relative heights of Uma and Milo; these involve different attributes and different people, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Age difference between Gia and Uma has no bearing on whether Uma could reach to hang a banner without a stool; these are unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Claim A concerns relative age between Gia and Uma, while claim B concerns order of arrival between Gia and Milo. These involve different people and different dimensions (age vs. arrival order), so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A concerns the relative ages of Gia and Uma, while claim B concerns competition rankings between different people, Mina and Wren. There is no logical or contextual connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "The two claims describe unrelated events involving different people and no shared context connecting a renewable energy display to a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A concerns Gia and Uma's collaborative work on a display, while claim B is about a height comparison between Uma and Milo. These deal with entirely different aspects of the situation with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "A establishes a joint project between Gia and Uma, but says nothing about their physical stature or ability to reach heights, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Claim A describes a collaborative project between Gia and Uma, while claim B describes an arrival order involving Gia and Milo. These involve different people and different contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Claim A concerns Gia and Uma's collaboration on a renewable energy display, while claim B concerns a ranking between Mina and Wren in a past competition. They involve different people and different events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "The claims concern unrelated subjects: one is about who brought a first-aid kit, the other about relative height of two different people. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Claim A is about Wren bringing a first-aid kit, which has no logical or causal connection to Uma hanging a banner without a stool.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Claim A concerns Wren bringing a first-aid kit, while claim B concerns the arrival order of Gia and Milo. These involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Bringing a first-aid kit has no logical bearing on a past competition ranking; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Uma being taller than Milo makes it more plausible she could reach to hang a banner without a stool, though it doesn't guarantee it depending on the banner's height.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Claim A concerns relative height between Uma and Milo, while claim B concerns arrival order between Gia and Milo; these are independent facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Claim A concerns relative height between Uma and Milo, while claim B concerns competition rankings between Mina and Wren; they involve entirely different people and attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "A concerns Uma's height/task and B concerns arrival order of Gia and Milo; the two events share no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A concerns Uma hanging a banner without a stool, while claim B concerns a past ranking between Mina and Wren in a competition. These involve entirely different people, events, and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Claim A concerns arrival order between Gia and Milo, while claim B concerns competition rankings between different people (Mina and Wren) in a past event. There is no shared subject or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo"
+    ]
+   },
+   {
+    "id": "mina",
+    "mentions": [
+     "Mina"
+    ]
+   },
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia"
+    ]
+   },
+   {
+    "id": "wren",
+    "mentions": [
+     "Wren"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "other",
+    "other_greater_means": "placed higher in competition"
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "subject": "milo",
+    "comparative": "before",
+    "object": "mina",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "subject": "mina",
+    "comparative": "before",
+    "object": "gia",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 3,
+    "attribute": "age",
+    "subject": "gia",
+    "comparative": "younger than",
+    "object": "uma",
+    "confidence": 0.97
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "subject": "uma",
+    "comparative": "taller than",
+    "object": "milo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "subject": "gia",
+    "comparative": "before",
+    "object": "milo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 9,
+    "attribute": "rank",
+    "subject": "mina",
+    "comparative": "ranked higher than",
+    "object": "wren",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "before",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "age",
+    "comparative": "younger than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "rank",
+    "comparative": "ranked higher than",
+    "greater_side": "subject"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 10,
+  "pairs_requested": 45,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 6,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "age": "magnitude",
+    "height": "magnitude",
+    "rank": "other"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 10,
+  "n_edges": 1,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "arrival_time",
+    "entities": [
+     "mina",
+     "milo",
+     "gia"
+    ],
+    "relations": [
+     0,
+     4,
+     1
+    ],
+    "claim_ids": [
+     1,
+     2,
+     8
+    ],
+    "min_confidence": 0.98
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 5635,
+   "api_calls": 0,
+   "cache_hits": 5635,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8
+   ],
+   [
+    9
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "arrival_time",
+    "entities": [
+     "mina",
+     "milo",
+     "gia"
+    ],
+    "relations": [
+     0,
+     4,
+     1
+    ],
+    "claim_ids": [
+     1,
+     2,
+     8
+    ],
+    "min_confidence": 0.98
+   }
+  ],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": []
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 1,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "mina",
+   "b": "milo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 2,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "gia",
+   "b": "mina",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 3,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "uma",
+   "b": "gia",
+   "confidence": 0.97,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 6,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "uma",
+   "b": "milo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 8,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "milo",
+   "b": "gia",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 9,
+   "attribute": "rank",
+   "kind": "greater",
+   "a": "mina",
+   "b": "wren",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

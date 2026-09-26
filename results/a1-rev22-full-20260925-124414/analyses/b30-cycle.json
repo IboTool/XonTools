@@ -1,0 +1,2686 @@
+{
+ "label": "b30-cycle",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-c20c8f84ae31",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "The library book club met on a rainy Thursday evening.",
+   "span": "The library book club met on a rainy Thursday evening",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Everyone arrived within a few minutes of each other.",
+   "span": "everyone arrived within a few minutes of each other",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Hana is the club secretary.",
+   "span": "Assume that Hana is the club secretary",
+   "kind": "premise"
+  },
+  {
+   "id": 3,
+   "text": "Isla arrived first, carrying a stack of novels she wanted to discuss.",
+   "span": "Isla arrived first, carrying a stack of novels she wanted to discuss",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Isla greeted Milo warmly as he came in shaking the rain from his coat.",
+   "span": "she greeted Milo warmly as he came in shaking the rain from his coat",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Nell arrived a little later.",
+   "span": "Nell arrived a little later",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Nell apologized for the delay caused by traffic near the station.",
+   "span": "apologizing for the delay caused by traffic near the station",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Finn brought the first-aid kit.",
+   "span": "Finn brought the first-aid kit",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "The group settled into their usual corner near the window.",
+   "span": "The group settled into their usual corner near the window",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "The librarian had set out extra chairs for the growing number of members.",
+   "span": "the librarian had set out extra chairs for the growing number of members",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Isla is taller than Milo.",
+   "span": "Isla is taller than Milo",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "They spent a few minutes catching up before opening their books.",
+   "span": "They spent a few minutes catching up before opening their books",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "They laughed about a mix-up with last month's reading list.",
+   "span": "laughing about a mix-up with last months reading list",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Milo is taller than Nell.",
+   "span": "Milo is taller than Nell",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Hana suggested they start with a short recap of the previous chapters.",
+   "span": "Hana suggested they start with a short recap of the previous chapters",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Everyone nodded in agreement.",
+   "span": "everyone nodded in agreement",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Nell is taller than Isla.",
+   "span": "Nell is taller than Isla",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Finn mentioned that he had picked up snacks on his way over.",
+   "span": "Finn mentioned that he had picked up snacks on his way over",
+   "kind": "quoted"
+  },
+  {
+   "id": 18,
+   "text": "Nell offered to pour tea for the group.",
+   "span": "Nell offered to pour tea for the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Milo shared his thoughts on the protagonist's motivations.",
+   "span": "Milo shared his thoughts on the protagonists motivations",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Isla countered with a different interpretation.",
+   "span": "Isla countered with a different interpretation",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "The evening continued with lively debate, occasional laughter, and the comfortable rustle of pages turning.",
+   "span": "The evening continued with lively debate, occasional laughter, and the comfortable rustle of pages turning",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "By the time they finished, the rain had stopped.",
+   "span": "By the time they finished, the rain had stopped",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "The group agreed to meet again the following week to continue their conversation about the novel.",
+   "span": "the group agreed to meet again the following week to continue their conversation about the novel",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Rain could plausibly delay or stagger arrivals, but the claims are not directly logically connected; A neither confirms nor rules out synchronized arrival times.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "The claim about the club meeting on a rainy Thursday evening has no bearing on who holds the secretary role in the club.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "A establishes the setting of the book club meeting; B describes Isla's arrival at what is plausibly this same meeting, consistent with attending a book club discussion.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "A rainy Thursday evening meeting sets up the plausible scene where Milo arrives shaking rain off his coat, consistent with A's weather detail.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Claim A sets a scene (rainy Thursday library book club meeting) but says nothing about Nell or arrival times, so B's statement about Nell arriving later is neither confirmed nor undermined by A, though B plausibly refers to that same meeting context.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "The rainy Thursday evening setting could plausibly cause traffic delays near a station, but the claims describe different events and people with no explicit connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "The weather and setting of the book club meeting has no logical bearing on whether Finn brought a first-aid kit; these are independent facts about unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "A rainy Thursday evening meeting is consistent with the group settling into their usual meeting spot; A sets a scene that neither confirms nor conflicts with B, though it doesn't strongly imply it either.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Both describe circumstances of the same book club meeting; the rainy Thursday setting doesn't directly cause or prevent the librarian setting out extra chairs, but they can easily coexist as details of the same event.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "The claim about the book club meeting on a rainy Thursday has no bearing on a comparison of heights between Isla and Milo; they concern entirely unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "B describes a plausible activity during the book club meeting mentioned in A; it's a natural continuation but not strictly implied.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "A sets the scene of a book club meeting but says nothing about the content or mood of the meeting, so it neither supports nor contradicts a claim about laughing over a reading list mix-up.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Claim A concerns a book club meeting on a rainy evening, while claim B concerns a height comparison between two people; they share no content or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "The claims describe different aspects of the same event; A sets the scene while B describes an action during the meeting, but neither implies or affects the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "A describes the setting of the book club meeting but gives no information about any discussion or agreement occurring, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "The claim about the rainy Thursday library book club meeting has no logical or thematic connection to a claim about relative heights of Nell and Isla.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "A describes the setting of a book club meeting; B describes an unrelated detail about a person bringing snacks, which is plausible for such a gathering but not directly implied or affected by the rain or day.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "A rainy evening gathering plausibly sets a cozy scene where someone might offer tea, but the claims are largely independent events with no direct causal or logical link stated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Claim A sets a book club meeting scene; claim B describes a plausible activity during such a meeting, but neither entails the other since Milo and his participation aren't mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Claim A sets a time and weather context for a book club meeting, while claim B describes an unspecified person making an argumentative move; there's no stated connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "B describes the continuation of the same book club evening introduced in A, elaborating on its atmosphere without conflicting with the rainy Thursday setting.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "A establishes rain during the meeting; B claims the rain stopped by the end, which is a plausible continuation rather than a conflict, and even mildly expected as weather changes over time.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "A establishes a book club meeting occurred; B describes an outcome of that meeting (agreeing to meet again to discuss a novel). This is plausible and consistent, but A alone doesn't strongly imply B would happen.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Claim A describes the timing of people's arrivals, while claim B states an unrelated fact about Hana's role in the club. Neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "A says all arrivals were clustered within a few minutes of each other, which is consistent with Isla still being the first to arrive; the claims can both hold true simultaneously with no conflict.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A establishes that all attendees arrived close together in time, and claim B describes one specific arrival (Milo's) with a detail about rain, which is consistent with but not directly implied by A.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A says all arrivals were clustered within a few minutes, while B says Nell arrived 'a little later' which could still fall within that same short window, so both can plausibly be true under an ordinary reading. However, the phrasing 'a little later' hints Nell might be an exception worth noting, creating mild tension without outright contradiction.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "If everyone arrived within a few minutes of each other, that suggests a smooth, roughly on-time gathering, which sits awkwardly with Nell needing to apologize for a traffic-caused delay. Both could still be true if Nell was slightly late while others clustered together shortly after, but the two claims create some tension.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A concerns the timing of people's arrivals, while claim B concerns who brought an item; these describe unrelated aspects of the situation with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "A describes the group arriving close together in time, which plausibly sets up their subsequent action of settling into a spot together; the claims are compatible and loosely connected but neither entails nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "A describes near-simultaneous arrival of attendees, which is unrelated to whether the librarian had prepared extra chairs beforehand due to membership growth; the two claims concern different events and timeframes.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Arrival timing has no bearing on relative height; the two claims concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "A establishes that all people arrived close together in time, which naturally sets up a brief period afterward for catching up before starting their books, as B describes; the two fit a common everyday sequence.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "A describes the timing of arrivals while B describes a topic of conversation about a past event; neither bears on the other in terms of likelihood or contradiction.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Arrival timing has no bearing on relative heights; the two claims concern unrelated attributes of the people involved.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "A describes the timing of arrivals, while B describes a suggestion Hana made about how to start an activity; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns the timing of people's arrival, while claim B concerns a later reaction of agreement; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Claim A concerns arrival timing while claim B concerns relative height; the two describe unrelated aspects of the situation with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Both can be true independently: people arriving close together in time doesn't preclude Finn having picked up snacks en route. There's no clear support, contradiction, or tension between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "A describes the timing of arrivals, while B describes an unrelated social gesture by Nell; A does not make B more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A describes the timing of people's arrival, while claim B describes Milo giving his opinion on a literary or narrative topic. These concern unrelated aspects of the situation with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Claim A concerns the timing of arrivals, while claim B concerns Isla presenting an alternative interpretation in some discussion; neither event bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "A describes the timing of guests' arrival, while B describes the atmosphere and activities later in the evening; they concern different aspects of the event and neither implies or undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "A describes the timing of people's arrival, while B describes the weather at the end of an event; these concern unrelated aspects of the situation with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Claim A describes the timing of arrivals, while claim B describes a decision made about a future meeting for a book discussion; neither fact bears on the other in any logical or causal way.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A concerns Hana's role as club secretary, while claim B concerns Isla's arrival and belongings. Neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "The two claims describe unrelated facts about different people and situations with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Claim A describes Hana's club role, while claim B describes Nell's arrival time; the two statements concern different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "The claim about Hana's club role has no bearing on Nell apologizing for a traffic-related delay; they involve different people and unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Hana's role as club secretary has no logical or causal connection to who brought the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "A states Hana's role in the club, while B describes the group's seating habit; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "A states Hana's club role while B describes an unrelated action by a librarian about club chairs; no logical connection between them is stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Hana's role as club secretary has no bearing on the relative heights of Isla and Milo; the claims involve different people and unrelated subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Claim A identifies Hana's role but says nothing about a meeting or catching-up event; there's no stated connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Hana being club secretary has no clear bearing on whether they laughed about a mix-up with last month's reading list; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A is about club roles and claim B is about relative heights of unrelated individuals; neither has bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Being the club secretary plausibly aligns with a role that would involve organizing meeting structure, such as suggesting recaps of previous chapters, though this is not strictly required by the secretary role.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Hana being the club secretary has no bearing on whether everyone nodded in agreement; the claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A concerns Hana's club role, while claim B concerns a height comparison between Nell and Isla. There is no logical or factual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "These two claims describe unrelated facts about different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A is about Hana's role as club secretary, while claim B concerns Nell offering to pour tea; the two describe unrelated people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Claim A concerns Hana's club role, while claim B concerns Milo's opinion on a story's protagonist; the two describe unrelated people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Hana's role as club secretary has no evident connection to Isla countering with a different interpretation; they involve different people and unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Claim A identifies Hana's role as club secretary, while claim B describes an atmospheric scene of an evening event with no mention of Hana or club roles.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Claim A concerns Hana's club role, while claim B describes weather conditions after some activity concluded; the two share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Hana's role as club secretary has no logical bearing on whether the group agreed to meet again to discuss a novel; these are unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "A states Isla arrived first, which is consistent with her already being present to greet Milo when he arrives later, shaking off rain. The two claims fit together naturally in a sequence of events.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "If Isla arrived first, it follows naturally that others, such as Nell, could arrive later; the claims are consistent and A supports the temporal ordering stated in B.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Isla arriving first and carrying novels does not directly address whether Nell was late or apologized for traffic delays; the two describe different people's independent actions at possibly the same gathering.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "A states Isla arrived first, but says nothing about who brought or didn't bring a first-aid kit; the two claims describe different, non-conflicting facts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Isla arriving first with books to discuss is consistent with the group later settling into their usual spot; A sets up an early moment while B describes a subsequent group action, with no conflict between them.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Isla arriving first with novels for discussion suggests a book club meeting, which makes it plausible that the librarian anticipated attendance and set out extra chairs; the claims are consistent and mildly supportive of each other's context but not directly linked in content.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Claim A describes Isla's arrival and what she carried, while claim B compares her height to Milo's. These concern entirely different attributes with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Isla arriving first with books to discuss sets up a plausible gathering (likely a book club), which makes a subsequent catch-up before opening books quite consistent and expected.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Isla arriving early with novels to discuss is plausibly part of a book club or reading group gathering, which is consistent with a later shared laugh about a mix-up in the reading list, but the two claims don't directly entail each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns Isla's arrival and books, while claim B concerns relative heights of Milo and Nell; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Both claims are consistent scene details from what appears to be a book club meeting, but Isla arriving first with novels doesn't directly cause or prevent Hana's suggestion; they are independent actions by different people.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Isla arriving first with novels does not indicate anything about a group agreement or nodding event; the claims describe unrelated situations without a clear causal or contextual link.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A concerns Isla's arrival and activity, which has no bearing on relative heights of Nell and Isla mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Both claims describe different people arriving with different items; there's no logical connection between Isla arriving first with novels and Finn's mention of bringing snacks.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Isla arriving first with novels doesn't preclude or particularly relate to Nell offering to pour tea for the group; these are independent events that could both occur at a gathering.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "A establishes Isla arrived first with books to discuss, but says nothing about Milo or his views on a protagonist, so there's no direct logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "A establishes Isla arrived early with novels to discuss, which is consistent with and mildly supports the idea that she later engaged in a discussion offering interpretations, though it doesn't directly imply the specific act of countering.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Isla arriving with novels to discuss sets up a book-discussion gathering, which naturally leads to the kind of lively debate and page-turning described in B.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Claim A establishes Isla arrived early to discuss books, while claim B refers to rain stopping by the time 'they' finished an unspecified activity. There's no clear logical connection between Isla's arrival with novels and weather conditions ending.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "A establishes Isla arrived early with novels for discussion, suggesting a book club type meeting, which is consistent with the group later agreeing to continue discussing the novel next week. There's no conflict, just mild thematic support.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "A describes Milo arriving and being greeted; B describes Nell arriving later. These involve different people and are simply sequential events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A describes Isla greeting Milo as he arrives, while claim B describes Nell apologizing for a delay from traffic; the two involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Claim A describes Isla greeting Milo entering from rain, while claim B describes Finn bringing a first-aid kit; these involve different people and actions with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "A describes Milo arriving and being greeted; B describes the group settling into their usual spot, which could plausibly happen after Milo's arrival as they all sit together. The events are compatible and B may follow naturally from A, but A doesn't strongly increase the likelihood of B's specific detail.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Both claims could describe the same scene (a meeting where Isla, perhaps the librarian, welcomed Milo and had prepared extra seating), but nothing in A directly implies or requires the details in B about chairs or membership growth.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Claim A describes a social interaction between Isla and Milo but gives no information about their relative heights, so it neither supports nor contradicts a height comparison.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "A establishes a warm greeting upon arrival, which naturally sets up a brief social exchange before getting down to work, as described in B.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "A establishes a friendly, warm interaction between Isla and Milo, which makes a shared laugh about a mix-up plausible and consistent, though B introduces a specific new detail not implied by A.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Claim A describes a greeting scene involving Milo and Isla, while claim B is an unrelated comparison of Milo's height to Nell's. Nothing in A bears on the truth of B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "A describes a warm greeting upon arrival while B describes a suggestion about content structure; they could occur in the same scene but neither implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "A describes a warm greeting between Isla and Milo, while B describes a group of people nodding in agreement about something unspecified; there's no clear connection between the two events or their content.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Claim A describes a social interaction between Isla and Milo, while claim B is an unrelated statement about relative heights involving Nell and Isla. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Both describe people arriving or being present at what seems like a gathering, but neither claim provides information that affects the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "A describes Isla greeting Milo indoors while raining; B describes Nell offering tea to a group. These involve different people and actions with no stated connection, though both could occur in the same scene.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "A establishes Milo arriving and being greeted, which is consistent with a later scene where he discusses a protagonist's motivations, but the claims describe different, unconnected moments with no direct causal or logical link.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "A describes a friendly greeting scene, while B describes an intellectual disagreement or debate moment; both could occur in the same conversation but neither implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "A describes a warm arrival during rainy weather, which plausibly sets the stage for a subsequent social evening described in B; the two are compatible and loosely connected as sequential events, but B doesn't follow strongly from A's specific content.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "A establishes it was raining when Milo arrived; B says the rain had stopped by the time they finished some later activity. These are compatible under an ordinary reading of events progressing over time, with no contradiction.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "A describes a warm greeting during rainy arrival, while B describes a group's plan to reconvene about a novel discussion; there is no direct logical or causal link between them, though both could plausibly occur in the same broader scene.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "A establishes that Nell arrived late, which fits naturally with B where she apologizes for a delay; the two are consistent and B elaborates on the cause of the lateness mentioned in A.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Nell's arrival time and Finn bringing the first-aid kit describe unrelated actions by different people with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "A states Nell arrived somewhat later than others, which is consistent with the group having already settled into their usual spot before her arrival; the two events can coexist without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Nell's slightly later arrival is unrelated to the librarian's preparation of extra chairs for a growing membership; the two events concern different actors and causes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A concerns Nell's arrival time, while claim B concerns relative heights of Isla and Milo. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Nell arriving a little later is consistent with the group then spending a few minutes catching up before starting their books; the timing doesn't conflict and even provides a natural setup for such a catch-up.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "A states Nell arrived somewhat late, while B describes a separate social event (laughing about a mix-up with a reading list). Neither claim provides information that makes the other more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Nell's arrival time has no bearing on a comparison of Milo's and Nell's heights.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Nell's late arrival and Hana's suggestion about starting with a recap are not clearly connected; the suggestion could occur independently of when Nell arrived, and neither statement implies anything about the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "A's arrival timing and B's collective agreement describe unrelated events with no direct bearing on each other based solely on their content.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Arrival timing has no bearing on relative height; these describe unrelated aspects of Nell.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "These claims describe unrelated events involving different people (Nell's arrival timing and Finn's comment about snacks), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Arriving a little later doesn't preclude Nell subsequently offering to pour tea for the group; the claims are compatible and largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Claim A describes Nell's arrival timing while claim B describes Milo sharing thoughts on a literary topic; there's no stated connection between these events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Claim A describes Nell's arrival time while claim B describes Isla making a counter-argument; there is no stated connection between these two events or people.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Nell arriving later is a specific event that neither strongly supports nor contradicts the general description of how the evening continued; they could coexist without notable connection or tension.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Nell's slightly later arrival is a separate detail about timing of her arrival and has no direct bearing on whether the rain stopped by the time some activity finished; there's no stated connection between the two events.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Nell arriving a little later is a minor timing detail about one gathering, while B concerns a group decision to meet again in the future; neither implies or affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "The two claims describe unrelated events involving different people and actions with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Claim A concerns Nell apologizing for a traffic-related delay, while claim B describes the group settling into a usual spot; these could occur in sequence in the same scene but have no logical dependency.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Claim A concerns Nell's apology about traffic delays, while claim B concerns a librarian preparing chairs for members; they involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Claim A concerns Nell apologizing for a traffic delay, while claim B concerns a height comparison between Isla and Milo. The two claims share no common subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "A explains a delay and apology near the station, while B describes them catching up before studying; both could easily occur in sequence during the same meeting, but they aren't directly linked in content.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Both describe conversational events but concern different topics (a traffic delay apology vs. a reading list mix-up) with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A concerns Nell apologizing for a traffic delay, while claim B concerns a height comparison between Milo and Nell. These topics are independent and neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A concerns Nell apologizing for a traffic delay, while claim B concerns Hana suggesting a recap of previous chapters; they involve different people and unrelated topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "A describes Nell's apology for a delay; B describes a general reaction of agreement, which could plausibly follow such an apology (e.g., agreeing it's understandable) but is not strongly implied by A itself.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "The two claims concern entirely different topics—one about an apology for traffic delay, the other about relative height—with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Both claims describe unrelated actions by different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Both describe Nell's polite/considerate behavior in a social setting, but apologizing for traffic delay has no direct bearing on whether she offers to pour tea; they are independent actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "The two claims describe unrelated events involving different people with no shared context or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Claim A concerns Nell apologizing about traffic delay, while claim B concerns Isla countering with a different interpretation; these involve different people and unrelated content with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Claim A concerns an apology for a traffic-related delay near a station, while claim B describes the general atmosphere of an evening event; they involve different subjects and moments with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Claim A concerns an apology for traffic delay near a station, while claim B concerns rain stopping by the time some activity finished; they involve unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Claim A describes an apology for a traffic delay near a station, while claim B describes a group's agreement to meet again to discuss a novel; there is no stated connection between these events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Finn bringing a first-aid kit has no logical bearing on where the group chose to sit; these are independent events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Claim A concerns Finn bringing a first-aid kit while claim B concerns a librarian setting out chairs for members; they involve different people, actions, and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "There is no logical or contextual link between who brought a first-aid kit and a comparison of two other people's heights.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Bringing a first-aid kit has no bearing on whether the group chatted briefly before studying; the two claims concern unrelated activities and topics.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "The two claims describe unrelated events with no logical or causal connection between Finn bringing a first-aid kit and a group laughing about a past reading-list mix-up.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Finn bringing a first-aid kit has no bearing on relative heights of Milo and Nell; the claims concern entirely unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Finn bringing a first-aid kit and Hana suggesting a recap of previous chapters describe unrelated actions by different people with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Bringing a first-aid kit says nothing about whether others nodded in agreement about some matter; no logical or causal link is stated between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Finn bringing a first-aid kit has no bearing on the relative heights of Nell and Isla; these are entirely unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Both describe items Finn brought or acquired, but bringing a first-aid kit and mentioning snacks are independent actions that don't affect each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Finn bringing a first-aid kit has no bearing on whether Nell offered to pour tea; these are independent actions by different people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "These two claims describe unrelated actions by different people with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Claim A concerns Finn bringing a first-aid kit, while claim B concerns Isla countering an interpretation in what appears to be a discussion or debate. These describe unrelated events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Bringing a first-aid kit is unrelated in content to a description of an evening's ambiance with debate, laughter, and page-turning; neither implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "Finn bringing a first-aid kit has no logical or causal bearing on whether the rain stopped by the time an unspecified activity finished; these are unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Bringing a first-aid kit is not connected to a group agreeing to meet again for a book discussion; the two claims describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "The group having a usual corner suggests an established, ongoing gathering, which fits with the librarian preparing for a growing membership needing extra seating; the claims are complementary but not directly entailing.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A describes a group's seating location and has no bearing on relative heights of individuals mentioned elsewhere; there is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "After settling into their usual spot, it's natural and consistent for the group to spend time chatting before starting their study session; A sets the scene that B follows in.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Settling into their usual spot suggests a familiar, regular gathering, which is consistent with a group that shares history like a mix-up from a prior meeting, but the claims don't directly cause or entail each other.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "The claim about the group settling into their usual corner has no bearing on a comparison of Milo and Nell's heights; there's no shared subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Settling into their usual spot is a neutral scene-setting action that doesn't inform whether Hana proposed a recap; the two describe different, independent aspects of the gathering.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "A describes the group settling into a location, which doesn't inherently imply anything about them agreeing on a topic; B involves a separate social action of nodding in agreement, likely to some statement not mentioned in A.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Claim A describes a group's seating location and has no bearing on the relative heights of Nell and Isla mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Both describe a casual social gathering setting, but settling into a corner has no direct bearing on someone mentioning snacks they brought.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Settling into a usual corner sets a plausible scene where someone might then offer to pour tea, but the two claims describe different, only loosely connected actions.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Settling into a usual corner suggests a routine gathering, possibly a book club or discussion group, which sets a plausible scene for Milo discussing a protagonist's motivations, but the connection is only contextual and not a logical consequence.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Claim A describes a spatial/settling detail about the group's location, while claim B describes Isla making an intellectual counterargument; neither implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Settling into a usual corner sets up a comfortable, familiar setting that plausibly leads into the described evening activities, but A does not directly imply the specific content of B.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Claim A establishes a setting where the group is seated, while claim B refers to weather changing over the course of their time there; the two describe unrelated aspects of the scene with no logical dependency.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Settling into their usual spot is neutral background context and doesn't inform whether they agreed to meet again next week; these describe different aspects of the gathering without logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "The claims describe unrelated situations: one about a librarian preparing seating, the other about relative heights of two people. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "A describes preparation for a group meeting with growing attendance, which is consistent with a scenario where members gather and chat before starting to read, but the two claims are not directly connected.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "A describes preparation for a well-attended meeting while B describes a lighthearted moment about a scheduling mix-up; both could easily occur at the same gathering without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "The claim about the librarian setting out chairs for a growing club membership has no logical or thematic connection to a comparison of Milo's and Nell's heights.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "A describes preparations for a growing group's meeting, while B describes a suggestion someone made during a meeting; both could occur at the same event but neither implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Setting out chairs for a club meeting has no logical bearing on whether everyone nodded in agreement about some unspecified matter; these describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A concerns a librarian preparing seating for a group, while claim B is an unrelated statement comparing the heights of two individuals. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Both claims describe preparations for what appears to be the same gathering, but they concern independent details (chairs vs snacks) that neither implies nor conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "A establishes that a growing group of members gathered, which creates a plausible setting for Nell to offer to pour tea for that group, but neither claim entails or contradicts the other directly.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "A describes preparation for a growing group (likely a book club meeting), while B describes an individual sharing literary analysis; the settings are plausibly the same event but the claims don't directly entail or conflict with each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "These describe unrelated events with no shared subject or logical connection; setting out chairs has no bearing on Isla offering a differing interpretation.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "A suggests a well-attended, prepared gathering, which is consistent with and mildly supports the described lively, comfortable atmosphere of B, though they describe different aspects of the event.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Setting out chairs for a club meeting has no bearing on whether rain stopped by the time an activity concluded; the two events are unconnected in content.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "A suggests the group is growing and active, which makes it plausible they'd want to continue meeting, but there's no direct logical link between extra chairs being set out and the group's agreement to reconvene.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "A is about relative height between Isla and Milo, while B describes an unrelated social activity of catching up before studying. Neither claim affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Claim A describes a height comparison between Isla and Milo, while claim B describes an unrelated social event about a reading list mix-up. Neither claim bears on the truth or likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "A tells us about Isla vs Milo but says nothing about Milo's height relative to Nell, so it neither confirms nor denies B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "The claim about relative heights of Isla and Milo has no logical or thematic connection to Hana's suggestion about recapping previous chapters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Height comparison between Isla and Milo has no bearing on whether everyone nodded in agreement; the two claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Isla being taller than Milo says nothing about the height relation between Nell and Isla, as they involve different comparison pairs with no shared constraint.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A concerns relative heights of Isla and Milo, while claim B concerns Finn bringing snacks; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "The height comparison between Isla and Milo has no bearing on Nell's offer to pour tea; they involve unrelated subjects and events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Height comparison between Isla and Milo has no bearing on whether Milo shared his thoughts on a book's protagonist.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Height comparison between Isla and Milo has no bearing on whether Isla countered with a different interpretation in some discussion; these are unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Claim A concerns relative heights of two individuals, while claim B describes the ambiance of an evening gathering; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "These claims concern entirely different subjects (relative height vs. weather timing) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "The two claims concern entirely unrelated topics: one is about relative height between two people, the other about a group's plan to meet again to discuss a novel. Neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Laughing about a past mix-up is a natural example of the kind of catching-up conversation A describes, so B fits well as a specific instance of A's general claim.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A describes a social interaction before studying, while claim B is a statement about relative height; the two topics have no logical or factual bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "After catching up, suggesting a recap before diving into the books is a natural, coherent continuation of the study session and fits the sequence of events.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "A describes casual catching up before studying, while B describes a group agreement on some unspecified matter; nothing in A implies any discussion requiring nodded agreement, so they are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Claim A describes a social interaction before studying, while claim B is an unrelated statement about relative heights of two people; the content of A has no bearing on B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Mentioning picked-up snacks fits naturally within a casual catching-up conversation before studying begins; A sets a plausible context for B without strictly implying it.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Catching up before studying suggests an informal, social gathering where offering tea fits naturally, though the claims describe different specific actions.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "A describes a brief catch-up before studying begins, and B describes a study-related discussion likely occurring after the books are opened; the two are compatible and B plausibly follows from the sequence in A.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "A describes an initial casual catch-up before study began, while B describes a later intellectual disagreement during study; the two occur at different times and are compatible without directly bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "A describes the start of a study/book gathering with casual catch-up before books are opened, which naturally leads into B's description of the evening continuing with debate, laughter, and page-turning, suggesting the same session.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Claim A describes the start of a study session while claim B describes a later ending condition; they are compatible parts of the same timeline but A doesn't make B more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "A describes a casual catch-up before a study/book session, suggesting an ongoing group activity around books; B describes the group planning to continue discussing a novel next week. These are consistent and plausibly part of the same recurring book club scenario, though A doesn't directly imply B.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Claim A concerns a social interaction about a reading list mix-up, while claim B is an unrelated statement about relative heights of two people; there is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "A describes a lighthearted moment about a past mix-up, while B describes a forward-looking suggestion to recap prior chapters; both could easily occur in the same meeting without conflict, but they don't directly influence each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "A describes laughter about a mix-up, which is a social reaction distinct from nodding in agreement about some claim or statement; nothing in A implies people would nod in agreement afterward, though both could occur in the same conversation.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "The claims describe unrelated topics: a social anecdote about a reading list mix-up versus a comparison of two people's heights. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "These describe unrelated events in what appears to be a casual gathering; there's no logical connection between laughing about a reading list mix-up and Finn bringing snacks.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Both claims describe plausible social activities that could occur in the same gathering, but neither event implies or precludes the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Both describe plausible activities that could occur during the same book-club-like gathering, but discussing a mix-up about a reading list doesn't directly imply or affect whether Milo discussed the protagonist's motivations.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Claim A describes a lighthearted moment about a scheduling mix-up, while claim B describes Isla offering a differing interpretation, likely in a discussion. These involve different subjects and contexts with no clear logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Claim A describes a moment of laughter over a mix-up, which fits naturally within the general atmosphere of laughter and lively engagement described in claim B, suggesting both are part of the same evening's events.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "The two claims describe unrelated events (a conversation about a reading list mix-up versus rain stopping) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "A describes a lighthearted moment about a reading list mix-up, while B describes a plan to meet again; both could easily occur in the same gathering without conflict, but they don't directly influence each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A is about relative height between Milo and Nell, while claim B concerns Hana's suggestion about recapping previous chapters. These topics are entirely unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "The claims describe unrelated matters (relative height versus a group's reaction), with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "A tells us about the relative height of Milo and Nell, but says nothing about Isla, so it neither supports nor contradicts a claim comparing Nell and Isla.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "The claim about Milo's height relative to Nell has no logical or contextual connection to Finn mentioning snacks he picked up.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Milo's height relative to Nell has no bearing on whether Nell offered to pour tea; the claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Height comparison between Milo and Nell has no bearing on whether Milo shared his thoughts on a protagonist's motivations; the claims concern unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Claim A concerns relative heights of Milo and Nell, while claim B concerns Isla presenting an alternative interpretation in some discussion. These have no shared subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Claim A concerns a height comparison between two individuals, while claim B describes the atmosphere of an evening event; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "The two claims concern entirely unrelated subjects: relative height of two people versus weather conditions ending after some activity. Knowing one is true gives no information about the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "The height comparison between Milo and Nell has no logical or topical connection to the group's decision to meet again to discuss a novel.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "A proposes a suggestion, and B describes a positive group response, which plausibly follows as a reaction to the suggestion.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Claim A concerns a suggestion about recapping previous chapters, while claim B is an unrelated statement about relative heights of two different people. There is no logical or thematic connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Both describe minor, independent actions during what seems like a book club or study meeting; one does not affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Both describe different actions by different people during what seems to be a group meeting; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "A suggesting a recap doesn't directly cause or prevent Milo sharing his thoughts on motivations; they could occur in the same discussion but are independent actions.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Hana's suggestion is about structuring a discussion (starting with a recap), while Isla countering with a different interpretation seems to relate to a separate discussion point; no direct logical connection between suggesting a recap and countering an interpretation.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "A suggests the meeting opened with a recap, which is plausibly consistent with and could plausibly lead into a lively, engaged discussion described in B; the two are compatible but not strongly linked.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "A describes a suggestion at the start of an activity, while B describes weather conditions at the end of some unspecified activity; there is no direct logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "A shows Hana proposing a discussion approach for a book conversation, which is consistent with an ongoing book discussion group; B describes the group planning to continue meeting, which fits naturally alongside A without directly causing or preventing it.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Claim A describes a social reaction of a group, while claim B states a relative height comparison between two individuals. Neither has any bearing on the other; they concern entirely unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "A general nod of agreement among a group has no logical bearing on whether Finn mentioned bringing snacks; these describe unrelated moments or topics.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Everyone nodding suggests a moment of collective agreement or accord, which plausibly sets a friendly context where someone might offer to pour tea, but the claims describe distinct events without a strong logical link.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "If everyone nodded in agreement, it suggests someone had made a statement or shared an opinion that others agreed with; this is consistent with Milo having shared his thoughts on the protagonist's motivations, which could be the trigger for the agreement.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "If everyone nodded in agreement, that suggests unanimous consent, making it surprising that Isla would then counter with a different interpretation, though it is possible she nodded first then reconsidered or the 'everyone' didn't strictly include her.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Universal agreement suggests consensus, which sits awkwardly with 'lively debate' implying disagreement or discussion of differing views; both can technically be true if debate is amicable, but there's mild tension.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "These two claims describe unrelated aspects of a scene (a social reaction versus weather conditions) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "If everyone nodded in agreement, this suggests consensus and positive group dynamics, which makes it plausible they would agree to continue their discussion later, though the nodding could be about a different topic than scheduling a follow-up.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "The claim about Nell and Isla's relative height has no logical or topical connection to Finn mentioning snacks; they involve different people and unrelated subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Nell's height has no bearing on whether she offered to pour tea; these describe unrelated attributes and actions.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Claim A concerns relative heights of Nell and Isla, while claim B concerns Milo's opinion about a story's protagonist. There is no logical or factual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Claim A concerns relative heights of Nell and Isla, while claim B concerns Isla offering a differing interpretation in some discussion; these are about unrelated topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Claim A concerns relative heights of two people, while claim B describes the atmosphere of an evening event; they share no connection in content.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "The two claims concern entirely different subjects (relative height of two people vs. weather conditions during some activity) with no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Height comparison between Nell and Isla has no bearing on whether a group agreed to meet again to discuss a novel; the two claims share no relevant content.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Both describe casual social hosting behaviors that could easily occur at the same gathering, but neither statement provides evidence for or against the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Claim A describes Finn bringing snacks, while claim B describes Milo discussing a character's motivations; these events involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Claim A describes Finn making a neutral factual statement about snacks, while claim B describes Isla countering an interpretation, which implies a prior claim of some contested or interpretive nature. These two claims do not clearly connect in content.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "A describes Finn bringing snacks, which is unrelated to the general description of the evening's atmosphere in B; neither confirms nor undermines the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Claim A is about Finn bringing snacks and claim B is about the rain stopping later; neither has any bearing on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "These claims describe unrelated aspects of a gathering (snacks brought vs. a future meeting plan) with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "These describe two different, independent actions by different people at what appears to be a social or discussion gathering; one does not affect the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Offering to pour tea is unrelated in content to countering with a different interpretation of something; no logical or causal link is stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "A describes a small social gesture at a gathering, while B describes the general atmosphere of the evening continuing; both could easily occur in the same scene without conflict, but A doesn't specifically make B more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Claim A concerns Nell offering to pour tea, while claim B concerns the weather clearing after some activity finished; neither statement implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Nell offering to pour tea is a minor social gesture during a gathering, and it neither implies nor conflicts with the group's decision to schedule a future meeting; the two events belong to different aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "A establishes that Milo offered an interpretation of the protagonist's motivations, which naturally sets up the possibility of someone else, Isla, responding with an alternative view; this is a discussion context that makes B plausible as a follow-up.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Milo sharing his thoughts on the protagonist's motivations fits naturally as part of a book-discussion evening, making the described lively debate and page-turning atmosphere more plausible and consistent.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Claim A describes Milo discussing a character's motivations, while claim B describes weather conditions ending at some point; neither statement bears logically or causally on the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Milo sharing his thoughts suggests a book discussion is occurring, which makes it more plausible the group would want to continue such a conversation later, but it doesn't directly imply the specific agreement to meet again.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Isla countering with a different interpretation is consistent with, and provides an example contributing to, an evening characterized by lively debate; the two describe compatible parts of the same scene.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Claim A describes a discussion moment while claim B describes weather conditions after they finished; there is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Isla offering a different interpretation is consistent with an ongoing discussion that ends with the group agreeing to meet again to continue talking about the novel; the two events can easily belong to the same discussion timeline.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "A describes the activities during the evening but says nothing about weather, so it neither supports nor contradicts a claim about rain stopping by the end.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "A describes an enjoyable, engaging evening of discussion, which makes it more plausible that the group would want to reconvene to continue their conversation, as stated in B.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "The rain stopping is a background weather detail with no logical bearing on whether the group decides to meet again to discuss the novel.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "hana",
+    "mentions": [
+     "Hana"
+    ]
+   },
+   {
+    "id": "isla",
+    "mentions": [
+     "Isla",
+     "she"
+    ]
+   },
+   {
+    "id": "milo",
+    "mentions": [
+     "Milo",
+     "he"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 10,
+    "attribute": "height",
+    "subject": "isla",
+    "comparative": "taller than",
+    "object": "milo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "height",
+    "subject": "milo",
+    "comparative": "taller than",
+    "object": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 16,
+    "attribute": "height",
+    "subject": "nell",
+    "comparative": "taller than",
+    "object": "isla",
+    "confidence": 0.95
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_order",
+    "entity": "isla",
+    "comparative": "first",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 3,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    15,
+    20
+   ],
+   [
+    15,
+    21
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence",
+    "height": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 3,
+     "attribute": "arrival_order",
+     "entity": "isla",
+     "extreme": "min",
+     "edges": 0
+    }
+   ],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 36,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   2
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    17
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "height",
+    "entities": [
+     "isla",
+     "milo",
+     "nell"
+    ],
+    "relations": [
+     0,
+     1,
+     2
+    ],
+    "claim_ids": [
+     10,
+     13,
+     16
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "truth_assignment": [
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   1.0000000000000002
+  ],
+  "claim_residuals": [
+   4.930380657631324e-32,
+   6.162975822039155e-32,
+   2.7117093616972283e-32,
+   1.4544622940012404e-31,
+   4.930380657631324e-32,
+   3.697785493223493e-32,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   4.930380657631324e-32,
+   0.0,
+   7.888609052210118e-32,
+   4.930380657631324e-32,
+   0.0,
+   7.642090019328552e-32,
+   4.930380657631324e-32,
+   0.0,
+   0.0,
+   4.930380657631324e-32,
+   8.135128085091684e-32,
+   8.874685183736382e-32,
+   7.888609052210118e-32,
+   0.0,
+   4.930380657631324e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 4,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 1,
+    "b": 11,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 2,
+    "b": 14,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 3,
+    "b": 4,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 5,
+    "residual": 3.697785493223493e-32
+   },
+   {
+    "a": 3,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 20,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 3,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 3,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 6,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 11,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 12,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 14,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 14,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 19,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 19,
+    "b": 20,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 19,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 19,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 12155,
+   "api_calls": 0,
+   "cache_hits": 12155,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    11,
+    12,
+    14,
+    15,
+    18,
+    19,
+    20,
+    21,
+    23
+   ],
+   [
+    7
+   ],
+   [
+    10
+   ],
+   [
+    13
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ],
+   [
+    22
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "order_cycle",
+    "attribute": "height",
+    "entities": [
+     "isla",
+     "milo",
+     "nell"
+    ],
+    "relations": [
+     0,
+     1,
+     2
+    ],
+    "claim_ids": [
+     10,
+     13,
+     16
+    ],
+    "min_confidence": 0.95
+   }
+  ],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 1,
+    "b": 5,
+    "rationale": "Claim A says all arrivals were clustered within a few minutes, while B says Nell arrived 'a little later' which could still fall within that same short window, so both can plausibly be true under an ordinary reading. However, the phrasing 'a little later' hints Nell might be an exception worth noting, creating mild tension without outright contradiction.",
+    "confidence": 0.55
+   },
+   {
+    "a": 1,
+    "b": 6,
+    "rationale": "If everyone arrived within a few minutes of each other, that suggests a smooth, roughly on-time gathering, which sits awkwardly with Nell needing to apologize for a traffic-caused delay. Both could still be true if Nell was slightly late while others clustered together shortly after, but the two claims create some tension.",
+    "confidence": 0.6
+   },
+   {
+    "a": 15,
+    "b": 20,
+    "rationale": "If everyone nodded in agreement, that suggests unanimous consent, making it surprising that Isla would then counter with a different interpretation, though it is possible she nodded first then reconsidered or the 'everyone' didn't strictly include her.",
+    "confidence": 0.65
+   },
+   {
+    "a": 15,
+    "b": 21,
+    "rationale": "Universal agreement suggests consensus, which sits awkwardly with 'lively debate' implying disagreement or discussion of differing views; both can technically be true if debate is amicable, but there's mild tension.",
+    "confidence": 0.55
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 10,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "isla",
+   "b": "milo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 13,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "milo",
+   "b": "nell",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "nell",
+   "b": "isla",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

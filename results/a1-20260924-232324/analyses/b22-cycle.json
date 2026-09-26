@@ -1,0 +1,2604 @@
+{
+ "label": "b22-cycle",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-1a6d3879e265",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Kira is the lead volunteer",
+   "span": "Assume that Kira is the lead volunteer",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Kira arrived earliest, well before the others",
+   "span": "Kira arrived earliest, well before the others",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Kira was carrying a stack of scoresheets under one arm",
+   "span": "carrying a stack of scoresheets under one arm",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Eli showed up next after Kira",
+   "span": "Eli showed up next",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Eli was chatting cheerfully with the organizers about the difficulty of last month's rounds",
+   "span": "chatting cheerfully with the organizers about the difficulty of last month's rounds",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Noor brought the first-aid kit",
+   "span": "Noor brought the first-aid kit",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Nell strolled in shortly after Eli",
+   "span": "Nell strolled in shortly after",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Nell was laughing at a joke someone made near the entrance",
+   "span": "laughing at a joke someone made near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Nell set her bag down at the long table by the window",
+   "span": "set her bag down at the long table by the window",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Yara arrived last of the group",
+   "span": "Yara arrived last of the group",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Yara was slightly out of breath from parking her bike",
+   "span": "slightly out of breath from parking her bike",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Yara was grinning at the prospect of a good contest",
+   "span": "grinning at the prospect of a good contest",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Yara is in the same class as Eli",
+   "span": "Yara is in the same class as Eli",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Yara and Eli exchanged a quick fist bump before settling into their seats",
+   "span": "The two of them exchanged a quick fist bump before settling into their seats",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Yara and Eli are clearly comfortable working together",
+   "span": "clearly comfortable working together",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Kira is taller than both Nell and Noor",
+   "span": "Kira, taller than both Nell and Noor",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Kira helped rearrange chairs so everyone could see the quiz board clearly",
+   "span": "helped rearrange chairs so everyone could see the quiz board clearly",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Eli is in the same class as Nell",
+   "span": "Eli is in the same class as Nell",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Nell sat quietly reviewing trivia cards",
+   "span": "Nell, meanwhile, sat quietly reviewing trivia cards",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Nell occasionally glanced at Kira for guidance on the evening's schedule",
+   "span": "occasionally glancing at Kira for guidance on the evening's schedule",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "Noor is younger than Eli",
+   "span": "Noor, who is younger than Eli",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "Noor is older than Yara",
+   "span": "but older than Yara",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Noor chatted with Nell about favorite quiz categories",
+   "span": "chatted with Nell about favorite quiz categories",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Yara is not in the same class as Nell",
+   "span": "Yara is not in the same class as Nell",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Being lead volunteer doesn't imply arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Lead volunteer role could plausibly involve carrying scoresheets, slightly supporting this detail.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Leadership role doesn't determine when Eli arrived.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "No connection between Kira's role and Eli's conversation topic.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Kira's leadership role is unrelated to Noor bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Kira's role has no bearing on Nell's arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "No logical link between Kira's status and Nell's laughing.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Kira's role doesn't affect where Nell sets her bag.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Kira's leadership role doesn't determine Yara's arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "No connection between Kira's role and Yara's breathlessness.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "No connection between Kira's role and Yara's excitement.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Kira's leadership role is unrelated to Yara and Eli's class assignment.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "No link between Kira's role and Yara/Eli's fist bump.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "No connection between Kira's role and Yara/Eli's comfort working together.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Being lead volunteer has no bearing on physical height.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "As lead volunteer, Kira would plausibly take charge of organizing the venue, supporting this action.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Kira's role is unrelated to Eli and Nell's class assignment.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Kira's leadership role doesn't affect Nell's quiet reviewing.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Kira being lead volunteer supports the idea that others would look to her for guidance on the schedule.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Kira's role has no bearing on Noor's age relative to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Kira's role as lead volunteer has no bearing on Noor's age relative to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Kira being lead volunteer doesn't affect whether Noor chatted with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "Kira's leadership role has no connection to Yara's and Nell's class assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Arriving earliest doesn't imply anything about what Kira was carrying.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Kira arriving earliest is consistent with and supports the idea that Eli arrived next.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Kira's early arrival doesn't determine what Eli was talking about.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Kira's arrival time has no bearing on who brought the first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Kira arriving earliest supports the timeline that Nell came after Eli, consistent with Kira being first.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Kira's early arrival doesn't relate to Nell's laughing near the entrance.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Kira's arrival time has no bearing on where Nell set her bag.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Kira arriving earliest is consistent with and supports Yara arriving last.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Kira's arrival time doesn't affect whether Yara was out of breath.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Kira's early arrival has no bearing on Yara's emotional state.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Arrival order has no bearing on class enrollment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Kira's arrival timing doesn't relate to Yara and Eli's fist bump.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Kira's early arrival doesn't bear on Yara and Eli's rapport.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Arrival order has no bearing on height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Kira arriving earliest could plausibly support having time to help rearrange chairs before others came.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Arrival order has no bearing on class enrollment of Eli and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Kira's early arrival doesn't determine what Nell was doing with trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Kira arriving earliest is consistent with Nell later looking to her for guidance, but doesn't establish it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Arrival order has no bearing on relative ages of Noor and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Arrival order has no bearing on relative ages of Noor and Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Kira's early arrival is unrelated to whether Noor and Nell chatted about quiz categories.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Arrival timing has no bearing on class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Kira carrying scoresheets doesn't determine when Eli arrived.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Carrying scoresheets is unrelated to Eli's conversation topic.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Kira's scoresheets have no bearing on Noor bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Kira's item has no bearing on Nell's arrival timing.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Kira's scoresheets are unrelated to Nell laughing at a joke.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Kira carrying scoresheets doesn't affect where Nell set her bag.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Kira's item has no bearing on Yara's arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Kira's scoresheets are unrelated to Yara being out of breath.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Kira's item is unrelated to Yara's excitement.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Kira's scoresheets have no bearing on Yara and Eli's class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Kira's item is unrelated to the fist bump between Yara and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Kira's scoresheets don't relate to Yara and Eli's comfort working together.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Carrying scoresheets is unrelated to height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Kira carrying scoresheets suggests she has an organizing role, weakly supporting her later helping rearrange chairs.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Kira's scoresheets have no bearing on Eli and Nell's class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Kira carrying scoresheets is unrelated to Nell reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Kira carrying scoresheets does not establish her as a schedule authority, though it is loosely thematically related, it doesn't support or contradict Nell glancing at her for guidance.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Kira's scoresheets have no bearing on Noor's age relative to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Kira's scoresheets have no bearing on Noor's age relative to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Kira carrying scoresheets is unrelated to Noor chatting with Nell about categories.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Kira's scoresheets have no bearing on class membership of Yara and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Eli arriving next after Kira supports the idea that Eli then engaged in chatting with organizers, as it establishes his presence.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Eli's arrival order has no bearing on Noor bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Eli arriving next after Kira is consistent with and supports Nell arriving shortly after Eli, establishing sequential order.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Eli's arrival order has no bearing on Nell laughing at a joke.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Eli's arrival order has no bearing on where Nell sets her bag.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Eli arriving next after Kira is consistent with Yara arriving last, supporting the overall sequence.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Eli's arrival order has no bearing on Yara being out of breath.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Eli's arrival order has no bearing on Yara's excitement.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Eli's arrival order has no bearing on class membership with Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Eli's arrival order has no bearing on the fist bump exchange with Yara.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Eli's arrival order has no bearing on his comfort working with Yara.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Eli's arrival order has no bearing on Kira's height compared to others.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Eli's arrival order has no bearing on Kira rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Eli's arrival order has no bearing on his class membership with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Eli's arrival order relative to Kira has no bearing on whether Nell reviewed trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "The order in which Eli showed up has no logical connection to Nell glancing at Kira for guidance.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Eli's arrival order does not relate to Noor's age relative to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Eli's arrival order does not relate to Noor's age relative to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Eli's arrival timing has no bearing on Noor's conversation with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Eli's arrival order is unrelated to whether Yara and Nell share a class.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Eli chatting with organizers has no connection to Noor bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Eli's conversation topic doesn't affect when Nell strolled in.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Eli's chat with organizers is unrelated to Nell laughing at a joke.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Eli's conversation has no bearing on where Nell sets her bag.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Eli chatting with organizers doesn't affect Yara's arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Eli's conversation is unrelated to Yara's breathlessness from biking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Eli's chat topic has no connection to Yara's excitement for the contest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Eli discussing quiz difficulty doesn't establish or affect class membership with Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Eli's conversation with organizers is unrelated to a fist bump with Yara later.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Chatting about quiz difficulty doesn't directly indicate comfort working with Yara specifically.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Eli's conversation topic has no bearing on Kira's height compared to others.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Eli chatting with organizers doesn't relate to Kira rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Eli's conversation topic has no bearing on class membership with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Eli's chatting with organizers is unrelated to Nell reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Eli chatting with organizers has no bearing on Nell glancing at Kira for guidance.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Eli's conversation topic doesn't affect relative ages of Noor and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Eli's chatting has no bearing on Noor's age relative to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Eli talking to organizers is independent of Noor chatting with Nell about quiz categories.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Eli's conversation with organizers doesn't relate to Yara's class assignment relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Noor bringing a first-aid kit has no bearing on when Nell arrived.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Noor's first-aid kit is unrelated to Nell laughing at a joke.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Noor's first-aid kit has no connection to where Nell set her bag.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Noor bringing a first-aid kit doesn't determine who arrived last.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Noor's first-aid kit is unrelated to Yara being out of breath from biking.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Noor's first-aid kit has no bearing on Yara's excitement about the contest.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Noor bringing a first-aid kit doesn't relate to Yara and Eli's class assignment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Noor's first-aid kit is unrelated to Yara and Eli's fist bump.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Noor's first-aid kit doesn't affect whether Yara and Eli work well together.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Noor bringing a first-aid kit has no bearing on Kira's height.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Noor's first-aid kit is unrelated to Kira rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Noor bringing a first-aid kit doesn't relate to Eli and Nell's class assignment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Noor's first-aid kit has no connection to Nell reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Noor's first-aid kit doesn't relate to Nell glancing at Kira for guidance.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Noor bringing a first-aid kit has no bearing on her age relative to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Bringing a first-aid kit has no bearing on relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Bringing a first-aid kit is unrelated to a chat about quiz categories.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Bringing a first-aid kit has no bearing on class membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Nell arriving shortly after Eli is consistent with her laughing near the entrance shortly after arrival.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Arriving after Eli could plausibly lead to her setting her bag down, but the timing detail doesn't directly establish this action.",
+   "relation": "unrelated",
+   "confidence": 0.5
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "If Nell arrived shortly after Eli, she did not arrive last, but this doesn't determine whether Yara arrived last.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Nell's arrival timing relative to Eli has no bearing on Yara's breathlessness.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Nell's arrival timing is unrelated to Yara's emotional state.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Nell's arrival order has no bearing on Yara and Eli's class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Nell's arrival timing is unrelated to Yara and Eli's fist bump.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Nell's arrival timing doesn't affect Yara and Eli's comfort working together.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Nell's arrival order is unrelated to height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Nell's arrival timing has no bearing on Kira rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Nell's arrival timing relative to Eli doesn't establish shared class membership.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Arriving shortly after Eli doesn't determine what Nell did once seated, like reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Nell's arrival timing has no bearing on her glancing at Kira for guidance.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Nell's arrival order relative to Eli is unrelated to Noor's age compared to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Nell's arrival timing has no bearing on Noor's age relative to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Arriving shortly after Eli doesn't determine whether Nell later chatted with Noor.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Nell's arrival timing relative to Eli has no bearing on whether Yara shares her class.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Both describe Nell's actions but are independent events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Nell laughing near the entrance has no bearing on Yara's arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Nell's laughing is unrelated to Yara's breathlessness from biking.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Nell's laughing at a joke has no logical connection to Yara's grinning about a contest.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Nell's laughing near the entrance says nothing about Yara and Eli's class.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Nell's action is unrelated to Yara and Eli's fist bump.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "No connection between Nell laughing and Yara/Eli's comfort working together.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Nell's laughing has nothing to do with Kira's height.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Nell's laughing near entrance doesn't relate to Kira rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Nell's laughing has no bearing on her class assignment with Eli.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Laughing at a joke near the entrance suggests Nell is not sitting quietly reviewing cards at that moment, though these could be sequential.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "No logical connection between laughing at a joke and glancing at Kira for guidance.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Nell's laughing is unrelated to Noor's age relative to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Nell's laughing is unrelated to Noor's age relative to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "No connection between Nell laughing at the entrance and Noor chatting with Nell about categories.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "Nell's laughing has no bearing on whether Yara shares her class.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Nell setting her bag down is unrelated to Yara's arrival order.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Nell's bag placement has no bearing on Yara's breathlessness.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "No connection between Nell setting her bag down and Yara's grin about the contest.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Nell's bag placement doesn't relate to Yara and Eli's class membership.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Nell setting her bag down at a table is unrelated to Yara and Eli's fist bump.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "No connection between Nell's seating action and Yara/Eli's comfort working together.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Nell's seating location has no bearing on relative heights.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Nell setting her bag down doesn't relate to Kira rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Nell's seating action doesn't establish class relationships.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Setting a bag down could plausibly precede sitting quietly, but doesn't confirm reviewing trivia cards specifically.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "No logical link between placing a bag and glancing at Kira for guidance.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Nell's action has no bearing on ages of Noor and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "No connection between Nell's seating and Noor/Yara ages.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Nell setting her bag down could allow for later chatting with Noor, but doesn't directly support it.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "No relation between Nell's seating location and class membership of Yara and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Arriving last after biking could explain being out of breath from parking a bike.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Arriving last doesn't imply anything about her emotional state or grinning.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Arrival order has no bearing on class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Arriving last could set up the moment of greeting Eli, but doesn't necessarily cause it.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Arrival timing doesn't indicate comfort level working with Eli.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "No connection between arrival order and height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Yara's late arrival is unrelated to Kira rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Arrival order doesn't establish class relationships between Eli and Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Yara arriving last has no bearing on Nell's quiet reviewing behavior.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Yara's arrival order has no bearing on Nell glancing at Kira for guidance.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Arrival order is unrelated to relative ages of Noor and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Arrival order is unrelated to relative ages of Noor and Yara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Yara's arrival order has no connection to Noor and Nell chatting about categories.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Arrival timing is unrelated to class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Being out of breath from biking is unrelated to grinning about a contest.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Being out of breath from parking a bike has no bearing on class membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Being winded from biking doesn't relate to a fist bump with Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Physical state from biking is unrelated to comfort working with Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Yara's breathlessness has no connection to Kira's height compared to others.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Yara's biking has no bearing on Kira rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Yara's physical state is unrelated to Eli and Nell's class membership.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Yara being out of breath has no relation to Nell reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Yara's breathlessness is unrelated to Nell glancing at Kira.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Yara's physical state has no bearing on relative ages of Noor and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Yara's breathlessness is unrelated to age comparison between Noor and Yara.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Yara's physical state has no connection to Noor and Nell's conversation.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Being out of breath is unrelated to class membership facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Yara's excitement about the contest is unrelated to her class assignment.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Grinning about the contest could align with a friendly fist bump but doesn't establish or imply it directly.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Yara's excitement about a contest doesn't establish comfort working with Eli specifically",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Yara's mood has no bearing on Kira's height relative to Nell and Noor",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Yara's excitement is unrelated to Kira rearranging chairs",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Yara's grinning has no bearing on Eli and Nell's class membership",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Yara's excitement about a contest is unrelated to Nell's quiet review of trivia cards",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Yara's mood does not relate to Nell glancing at Kira",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Yara's grinning has no bearing on relative ages of Noor and Eli",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Yara's excitement is unrelated to age comparisons involving Noor",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Yara's mood is unrelated to Noor and Nell chatting about categories",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "Yara's grinning has no bearing on her class membership relative to Nell",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Being in the same class as Eli is consistent with and supports the idea they'd interact like exchanging a fist bump",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Being classmates supports the likelihood that Yara and Eli are comfortable working together",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Yara and Eli's class relationship has no bearing on Kira's height",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Yara and Eli being classmates is unrelated to Kira rearranging chairs",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Yara being in the same class as Eli doesn't determine whether Eli and Nell share a class",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Yara and Eli's classmate status is unrelated to Nell's quiet card review",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Yara and Eli being classmates has no bearing on Nell glancing at Kira",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Class membership of Yara and Eli is unrelated to Noor's age relative to Eli",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Yara and Eli's classmate status is unrelated to Noor's age relative to Yara",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Yara and Eli being classmates has no bearing on Noor and Nell chatting",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "If Yara is in the same class as Eli, and 17 states Eli is in the same class as Nell, then Yara and Nell would share a class, contradicting claim 23; but taken alone with just 12, claim 12 only concerns Yara-Eli class membership and doesn't directly state anything about Nell.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "A friendly fist bump before settling in suggests familiarity and ease working together, supporting the claim they are comfortable working together.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "The fist bump between Yara and Eli has no bearing on Kira's height relative to Nell and Noor.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Yara and Eli's fist bump is unrelated to Kira rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "A fist bump between Yara and Eli says nothing about Eli's class relationship with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Yara and Eli's fist bump has no connection to Nell reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "The fist bump between Yara and Eli is unrelated to Nell glancing at Kira for guidance.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Yara and Eli's fist bump does not relate to Noor's age relative to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "The fist bump between Yara and Eli has no bearing on Noor's age relative to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Yara and Eli's fist bump is unrelated to Noor chatting with Nell about quiz categories.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "The fist bump between Yara and Eli does not indicate anything about whether Yara and Nell share a class.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Yara and Eli being comfortable working together has no bearing on Kira's height compared to Nell and Noor.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Yara and Eli's comfort working together is unrelated to Kira rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Yara and Eli being comfortable together does not imply anything about Eli's class relationship with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Yara and Eli's comfort working together is unrelated to Nell reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Yara and Eli's comfort working together has no connection to Nell glancing at Kira.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Yara and Eli's comfort together does not relate to Noor's age compared to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Yara and Eli's comfort together has no bearing on Noor's age relative to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Yara and Eli's comfort working together is unrelated to Noor chatting with Nell about categories.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Yara and Eli being comfortable together does not indicate anything about whether Yara shares a class with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Kira's height compared to Nell and Noor has no bearing on her rearranging chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Kira's height relative to Nell and Noor doesn't relate to Eli's class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Kira's height has no connection to Nell reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Kira being taller doesn't imply anything about Nell glancing at her for guidance, though it could be a loose plausibility link, it's not causally supportive.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Kira's height compared to Nell and Noor is unrelated to Noor's age relative to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Kira's height comparison doesn't relate to Noor's age compared to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Kira's height has no bearing on Noor chatting with Nell about quiz categories.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Kira's height comparison is unrelated to whether Yara is in the same class as Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Kira rearranging chairs has no bearing on Eli's class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Kira rearranging chairs is unrelated to Nell reviewing trivia cards, though both occur at the same event they aren't causally linked.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Kira's helpfulness in rearranging chairs could suggest she's a leader figure, slightly supporting Nell looking to her for guidance.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Kira rearranging chairs has no relevance to Noor's age relative to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Kira's chair rearranging is unrelated to Noor's age relative to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Kira rearranging chairs doesn't relate to Noor chatting with Nell about categories.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Kira's chair rearranging has no bearing on Yara's class membership relative to Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Eli being in the same class as Nell doesn't relate to Nell reviewing trivia cards.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Eli's class membership with Nell has no bearing on Nell glancing at Kira for guidance.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Eli being in the same class as Nell doesn't relate to Noor's age relative to Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Eli's class membership with Nell is unrelated to Noor's age relative to Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Eli being in the same class as Nell doesn't bear on Noor chatting with Nell about quiz categories.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Eli being in the same class as Nell says nothing directly about whether Yara is in that class, but combined with typical class exclusivity it's weakly relevant; taken alone it's unrelated to Yara's class status.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Both describe Nell's simultaneous behavior (reviewing cards and glancing at Kira), which are compatible activities that could support each other as part of the same scene.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Nell's quiet reviewing activity has no bearing on the relative ages of Noor and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Nell's quiet reviewing activity has no bearing on the relative ages of Noor and Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "If Nell was quietly reviewing cards alone, this could contradict her simultaneously chatting with Noor, though the two could occur at different times.",
+   "relation": "contradicts",
+   "confidence": 0.4
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Nell's quiet activity has no bearing on class membership of Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Nell glancing at Kira for schedule guidance has no bearing on the ages of Noor and Eli.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Nell glancing at Kira has no bearing on the ages of Noor and Yara.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Nell glancing at Kira occasionally is compatible with her also chatting with Noor at another point, so it neither strongly supports nor contradicts.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Nell's glancing behavior has no bearing on Yara's class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Noor being younger than Eli says nothing about the relative ages of Noor and Yara.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Noor's age relative to Eli has no bearing on whether Noor chatted with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Noor's age relative to Eli has no bearing on Yara's class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Noor being older than Yara has no bearing on whether Noor chatted with Nell.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "Noor's age relative to Yara has no bearing on Yara's class membership.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Noor chatting with Nell about quiz categories has no bearing on whether Yara shares Nell's class.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira"
+    ]
+   },
+   {
+    "id": "eli",
+    "mentions": [
+     "Eli"
+    ]
+   },
+   {
+    "id": "noor",
+    "mentions": [
+     "Noor"
+    ]
+   },
+   {
+    "id": "nell",
+    "mentions": [
+     "Nell"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "class",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "eli",
+    "b": "kira",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "eli",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "eli",
+    "b": "kira",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 6,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "nell",
+    "b": "eli",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "kira",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "eli",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 9,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "nell",
+    "confidence": 0.7
+   },
+   {
+    "claim_id": 12,
+    "attribute": "class",
+    "kind": "same",
+    "a": "yara",
+    "b": "eli",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "kira",
+    "b": "nell",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 15,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "kira",
+    "b": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "class",
+    "kind": "same",
+    "a": "eli",
+    "b": "nell",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 20,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "eli",
+    "b": "noor",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 21,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "noor",
+    "b": "yara",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 23,
+    "attribute": "class",
+    "kind": "different",
+    "a": "yara",
+    "b": "nell",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 14,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 19,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 0.9909567129717113,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "class",
+    "entities": [
+     "yara",
+     "eli",
+     "nell"
+    ],
+    "relations": [
+     7,
+     10,
+     13
+    ],
+    "claim_ids": [
+     12,
+     17,
+     23
+    ],
+    "min_confidence": 0.9
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   0.9977180971067046,
+   0.9972971699776648,
+   0.9991936239761786,
+   0.999697608991067,
+   1.0,
+   0.9992716676363037,
+   0.9997415594838498,
+   1.0,
+   0.9992219971440749,
+   0.9997082489290281,
+   1.0,
+   1.0,
+   1.0,
+   1.0000000000000002,
+   1.0,
+   0.9868237036411164,
+   1.0,
+   0.6680342923678526,
+   0.9309715992017937,
+   1.0,
+   1.0,
+   0.523418773609185,
+   1.0
+  ],
+  "claim_residuals": [
+   0.00320538485690615,
+   6.932407849993237e-05,
+   5.520059854206177e-05,
+   2.5491330539790047e-06,
+   2.438408594227462e-07,
+   0.0,
+   2.1043195269054704e-06,
+   1.8823059200263643e-07,
+   0.0,
+   2.330836670525354e-06,
+   2.269831664353594e-07,
+   0.0,
+   2.958228394578794e-32,
+   3.944304526105059e-32,
+   1.1832913578315179e-31,
+   0.0,
+   0.002096706624177611,
+   0.0,
+   0.7160502094429431,
+   0.047602634885113286,
+   0.0,
+   0.0,
+   0.7949538287186066,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 2,
+    "residual": 4.017909571300011e-06
+   },
+   {
+    "a": 0,
+    "b": 16,
+    "residual": 0.00010416887144227787
+   },
+   {
+    "a": 0,
+    "b": 19,
+    "residual": 0.0030971980758925724
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 1.7417436340319197e-06
+   },
+   {
+    "a": 1,
+    "b": 6,
+    "residual": 1.4481488342633835e-06
+   },
+   {
+    "a": 1,
+    "b": 9,
+    "residual": 1.583200725681739e-06
+   },
+   {
+    "a": 1,
+    "b": 16,
+    "residual": 5.9343904491525234e-05
+   },
+   {
+    "a": 2,
+    "b": 16,
+    "residual": 4.387739884112538e-05
+   },
+   {
+    "a": 3,
+    "b": 4,
+    "residual": 1.5240053713920796e-07
+   },
+   {
+    "a": 3,
+    "b": 6,
+    "residual": 4.2635690200047585e-09
+   },
+   {
+    "a": 3,
+    "b": 9,
+    "residual": 4.830219938822426e-10
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "residual": 1.2143909161465228e-07
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 1.4186447902210771e-07
+   },
+   {
+    "a": 12,
+    "b": 13,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 14,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 13,
+    "b": 14,
+    "residual": 3.944304526105059e-32
+   },
+   {
+    "a": 16,
+    "b": 19,
+    "residual": 0.0017157016636655527
+   },
+   {
+    "a": 18,
+    "b": 19,
+    "residual": 0.03802481502879736
+   },
+   {
+    "a": 18,
+    "b": 22,
+    "residual": 0.5678241633704334
+   }
+  ],
+  "residual_ranking": [
+   22,
+   18,
+   19,
+   0,
+   16,
+   1,
+   2,
+   3,
+   9,
+   6,
+   4,
+   10,
+   7
+  ],
+  "culprits": [
+   {
+    "claim": 22,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.009043287028288716
+   },
+   {
+    "claim": 18,
+    "conflict_drop": 0.0,
+    "harmony_change": 0.009043287028288716
+   },
+   {
+    "claim": 19,
+    "conflict_drop": 0.0,
+    "harmony_change": -0.00037290882858509455
+   }
+  ],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 1179,
+   "api_calls": 0,
+   "cache_hits": 1179,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    10,
+    16,
+    18,
+    19,
+    22
+   ],
+   [
+    5
+   ],
+   [
+    8
+   ],
+   [
+    11
+   ],
+   [
+    12,
+    13,
+    14
+   ],
+   [
+    15
+   ],
+   [
+    17
+   ],
+   [
+    20
+   ],
+   [
+    21
+   ],
+   [
+    23
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "class",
+    "entities": [
+     "yara",
+     "eli",
+     "nell"
+    ],
+    "relations": [
+     7,
+     10,
+     13
+    ],
+    "claim_ids": [
+     12,
+     17,
+     23
+    ],
+    "min_confidence": 0.9
+   }
+  ]
+ }
+}

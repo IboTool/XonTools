@@ -1,0 +1,2512 @@
+{
+ "label": "b35-cycle",
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-fcf4e013f291",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Gus is the lead volunteer.",
+   "span": "Gus is the lead volunteer",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Gus arrived early to help set up the registration table near the entrance.",
+   "span": "Gus arrived early to help set up the registration table near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Ben came in wearing a bright green jacket.",
+   "span": "Ben came in wearing a bright green jacket",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Ben immediately found a seat near the soldering station.",
+   "span": "immediately found a seat near the soldering station",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Rosa arrived a few minutes after Ben.",
+   "span": "Rosa arrived a few minutes after Ben",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Rosa was chatting with one of the younger students about her favorite robot design.",
+   "span": "chatting with one of the younger students about her favorite robot design",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Quinn showed up carrying a backpack full of spare parts collected from a previous competition.",
+   "span": "Quinn showed up carrying a backpack full of spare parts collected from a previous competition",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Uma brought the first-aid kit.",
+   "span": "Uma brought the first-aid kit",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Gus is taller than Quinn.",
+   "span": "Gus is taller than Quinn",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Rosa is taller than both Gus and Quinn.",
+   "span": "Rosa is taller than both of them",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Ben and Rosa worked different shifts.",
+   "span": "Ben and Rosa worked different shifts",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Throughout the morning, the students rotated between stations to test their circuits and calibrate their sensors.",
+   "span": "Throughout the morning, the students rotated between stations to test their circuits and calibrate their sensors",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Rosa and Quinn worked different shifts.",
+   "span": "Rosa and Quinn worked different shifts",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Uma is younger than Gus.",
+   "span": "Uma is younger than Gus but older than Ben, according to the sign-in sheet",
+   "kind": "quoted"
+  },
+  {
+   "id": 14,
+   "text": "Uma is older than Ben.",
+   "span": "Uma is younger than Gus but older than Ben, according to the sign-in sheet",
+   "kind": "quoted"
+  },
+  {
+   "id": 15,
+   "text": "The mentors circulated the room, offering tips on wiring and balance for the walking robots.",
+   "span": "The mentors circulated the room, offering tips on wiring and balance for the walking robots",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Ben and Quinn worked different shifts.",
+   "span": "Ben and Quinn worked different shifts",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Someone had labeled every worktable with a number so that materials would not get mixed up.",
+   "span": "Someone had labeled every worktable with a number so that materials would not get mixed up",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "The shop ran two shifts.",
+   "span": "The shop ran two shifts",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "By the end of the day, most of the robots could move across the floor without tipping over.",
+   "span": "most of the robots could move across the floor without tipping over",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "A few robots avoided obstacles using simple sensors.",
+   "span": "a few even avoided obstacles using simple sensors",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "The students compared notes about which battery packs lasted longest.",
+   "span": "The students compared notes about which battery packs lasted longest",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Several teams promised to bring improved designs to the next session.",
+   "span": "several teams promised to bring improved designs to the next session",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Everyone helped stack the folding chairs before the doors were locked for the evening.",
+   "span": "Everyone helped stack the folding chairs before the doors were locked for the evening",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Being lead volunteer plausibly aligns with arriving early to help set up, though not guaranteed.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Gus's role has no bearing on Ben's jacket color.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Gus's leadership role does not relate to where Ben sat.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Gus's role as lead volunteer has no bearing on when Rosa arrived.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Gus's role does not affect Rosa's conversation with a student.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Gus's leadership status has no connection to Quinn's backpack.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Gus's role as lead volunteer does not relate to Uma bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Being lead volunteer has no bearing on physical height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Leadership role is unrelated to height comparisons among people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Gus's role doesn't determine whether Ben and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Gus's leadership role doesn't directly imply details about student rotation activities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Gus's role has no bearing on Rosa and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Being lead volunteer is unrelated to age comparisons between Uma and Gus.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Gus's leadership role has no bearing on Uma's age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Gus being lead volunteer doesn't specifically imply mentors circulated offering tips, though it's plausible in context.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Gus's role doesn't determine Ben and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Gus's leadership role doesn't directly imply table labeling was done by someone else.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Gus's role as lead volunteer doesn't specifically imply the shop ran two shifts.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Gus's leadership role doesn't directly relate to robot performance outcomes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Gus's role doesn't bear on robots' sensor capabilities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Gus being lead volunteer has no bearing on students comparing battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Gus's role as lead volunteer doesn't affect whether teams promise improved designs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "Gus being lead volunteer doesn't determine whether everyone helps stack chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "Gus's early arrival to set up tables has no bearing on Ben's jacket color.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Gus setting up tables doesn't relate to where Ben chose to sit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Gus's early arrival is unrelated to when Rosa arrived relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Gus setting up the registration table has no connection to Rosa chatting with a student.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Gus's setup activity is unrelated to Quinn bringing spare parts.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Gus's task has no bearing on Uma bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Gus's early arrival doesn't affect relative height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Gus's arrival time is unrelated to height comparisons among Rosa, Gus, and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Gus setting up early doesn't determine whether Ben and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.94
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Gus's setup task is unrelated to students rotating stations later.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Gus's arrival has no bearing on Rosa and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Gus's task setup is unrelated to age comparisons between Uma and Gus.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Gus's early arrival doesn't relate to Uma's age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Gus setting up tables is unrelated to mentors circulating for tips.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Gus's arrival time doesn't determine Ben and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Gus helping set up registration is unrelated to worktables being labeled.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Gus's early setup task doesn't relate to the shop running two shifts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Gus arriving early to help set up is unrelated to whether robots could move without tipping by day's end.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Setting up a registration table has no bearing on robots' obstacle-avoidance sensors.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Helping set up registration is unrelated to students comparing battery pack notes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Gus's early arrival for setup doesn't relate to teams' promises about future designs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Arriving early to set up is a separate event from helping stack chairs at day's end.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Wearing a green jacket has no bearing on where Ben chose to sit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Ben's jacket color doesn't affect the timing of Rosa's arrival.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "Ben's clothing is unrelated to Rosa's conversation with a student.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Ben's jacket color has nothing to do with Quinn's backpack of parts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Ben's attire is unrelated to Uma bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Ben's jacket color has no connection to relative heights of Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Ben's clothing is unrelated to Rosa's height compared to others.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Ben's jacket color doesn't determine or relate to shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Ben's outfit is unrelated to the general rotation of students between stations.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Ben wearing a green jacket has no bearing on Rosa and Quinn's shifts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Ben's jacket color is unrelated to Uma's age relative to Gus.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Ben's clothing choice has no bearing on Uma's age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Ben's jacket is unrelated to mentors' general circulation and tips.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Ben's jacket color doesn't relate to whether Ben and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Ben's attire is unrelated to worktables being labeled with numbers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Ben's jacket color has no bearing on the number of shifts the shop ran.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Ben's jacket color is unrelated to the robots' ability to move without tipping.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Ben's jacket color has no connection to robots avoiding obstacles.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Ben's jacket color is unrelated to discussions about battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Ben's jacket color has nothing to do with teams promising improved designs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "Ben's jacket color is unrelated to stacking chairs at the end of the day.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Ben finding a seat near the soldering station has no bearing on when Rosa arrived.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Ben's seating choice is unrelated to Rosa's conversation with a younger student.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Ben's seat location has no connection to Quinn carrying a backpack of spare parts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Ben's seat location is unrelated to Uma bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Ben's seating has no bearing on relative heights of Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Ben's seating choice is unrelated to Rosa's height compared to Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Ben's seat location has no bearing on whether Ben and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Ben finding a seat near the soldering station is a minor detail unrelated to the general rotation of students between stations.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Ben's seating is unrelated to whether Rosa and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Ben's seat location has no bearing on Uma's age relative to Gus.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Ben's seating choice has no bearing on Uma's age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Ben's seat location is unrelated to mentors circulating to give tips.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Ben's seating has no bearing on whether Ben and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Ben's seat location is unrelated to worktables being labeled with numbers.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Ben finding a seat has no bearing on how many shifts the shop ran.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "Ben's seating choice is unrelated to whether robots could move without tipping.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Ben's seating location does not affect whether robots used sensors to avoid obstacles.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "Ben's seat choice is unrelated to students comparing battery notes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Ben's seating has no connection to teams promising improved designs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Ben finding a seat earlier in the day is unrelated to everyone stacking chairs later.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Rosa's arrival time supports the possibility of her later chatting with a student, but doesn't directly confirm the content of that chat.",
+   "relation": "unrelated",
+   "confidence": 0.5
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Rosa's arrival time has nothing to do with Quinn bringing a backpack of parts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Rosa's arrival time is unrelated to Uma bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "Rosa's arrival timing has no bearing on relative heights of Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Rosa's arrival timing is unrelated to her height compared to others.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Rosa arriving after Ben suggests they may not have been working the same shift, supporting the idea they worked different shifts.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Rosa's arrival time doesn't determine the general rotation of students between stations.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Rosa's arrival time relative to Ben doesn't inform her shift relative to Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Rosa's arrival timing is unrelated to Uma's age relative to Gus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Rosa's arrival timing is unrelated to Uma's age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Rosa's arrival time doesn't affect whether mentors circulated offering tips.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "Rosa arriving after Ben doesn't establish anything about Ben and Quinn's shifts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Rosa's arrival time is unrelated to worktables being labeled.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Rosa's arrival timing doesn't determine how many shifts the shop ran.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Rosa's arrival time is unrelated to the eventual performance of the robots.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Rosa's arrival timing has no bearing on whether robots used sensors to avoid obstacles.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Rosa arriving after Ben has no bearing on students comparing battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Rosa's arrival time has no connection to teams promising improved designs later.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Rosa's arrival time has no bearing on end-of-day chair stacking.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "Rosa chatting about robot design is unrelated to Quinn's backpack of spare parts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Rosa's conversation topic has no bearing on Uma bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Rosa's chat topic is unrelated to relative heights of Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Rosa's conversation has no bearing on her height relative to Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Rosa's chatting topic is unrelated to shift scheduling between Ben and Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Rosa chatting about robot design is plausibly part of the general rotation activity, but doesn't directly establish it.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Rosa's conversation topic has no bearing on shift assignments with Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Rosa's chat topic is unrelated to Uma's age relative to Gus.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Rosa's conversation is unrelated to Uma's age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "Rosa chatting with a student is a separate event from mentors circulating, not directly connected.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Rosa's conversation topic has no bearing on Ben and Quinn's shifts.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Rosa's chat about robots is unrelated to worktables being labeled.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Rosa's conversation topic has no bearing on how many shifts the shop ran.",
+   "relation": "unrelated",
+   "confidence": 0.96
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Rosa discussing her favorite design mildly suggests engagement with robot design but doesn't establish robot performance outcomes.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Rosa's chat about robot design doesn't establish whether robots used sensors to avoid obstacles.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "Rosa chatting about a favorite design is unrelated to students comparing battery pack notes.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Rosa's conversation topic doesn't bear on whether teams promised improved designs later.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "Chatting about robot design has no bearing on stacking chairs at day's end.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Quinn bringing spare parts is unrelated to Uma bringing a first-aid kit.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "Carrying a backpack of spare parts has no bearing on relative height between Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Quinn's backpack contents are unrelated to Rosa's height compared to others.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Quinn's backpack has no bearing on whether Ben and Rosa worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Quinn showing up with parts doesn't inform whether students rotated stations later.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Quinn's spare parts collection is unrelated to shift scheduling between Rosa and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Quinn's backpack contents have no bearing on relative ages of Uma and Gus.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Quinn's backpack has no bearing on Uma's age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Quinn arriving with parts doesn't affect whether mentors circulated giving tips.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Quinn's backpack contents are unrelated to shift assignments of Ben and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Quinn's spare parts have no bearing on whether worktables were labeled.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Quinn bringing parts from a prior competition doesn't determine whether the shop ran two shifts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Quinn's backpack contents don't affect whether robots could move without tipping by day's end.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Quinn's spare parts are unrelated to whether robots used sensors to avoid obstacles.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "Quinn's backpack contents are unrelated to students comparing battery pack performance.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Quinn bringing spare parts doesn't relate to teams promising improved designs later.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Quinn's backpack has no bearing on everyone stacking chairs at the end.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Uma bringing the first-aid kit has no bearing on relative heights of Gus and Quinn.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "No connection between who brought the first-aid kit and height comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "First-aid kit possession is unrelated to shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Bringing a first-aid kit has no logical connection to rotating between stations.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "No relation between first-aid kit ownership and shift differences.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "First-aid kit possession has no bearing on relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "No logical link between bringing a first-aid kit and age comparisons.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Uma's first-aid kit is unrelated to mentors circulating with tips.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "No connection between first-aid kit and shift differences.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "First-aid kit possession is unrelated to worktable labeling.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Bringing a first-aid kit doesn't inform whether the shop ran two shifts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "No relation between first-aid kit and robot performance outcomes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "First-aid kit possession is unrelated to sensor-based obstacle avoidance.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "No logical link between first-aid kit and battery pack discussions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "Bringing a first-aid kit has no bearing on future design promises.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "No connection between first-aid kit and stacking chairs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "If Gus is taller than Quinn, this is consistent with and supports the claim that Rosa is taller than both of them.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Height comparison between Gus and Quinn has no bearing on Ben and Rosa's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "No logical connection between height comparison and station rotation activity.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Height comparison between Gus and Quinn has no bearing on Rosa and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Height comparisons between Gus and Quinn are unrelated to Uma's age relative to Gus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Gus's height relative to Quinn has no bearing on Uma's age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Height comparison is unrelated to mentors offering tips.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Height comparison is unrelated to shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Height comparison is unrelated to worktable labeling.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Height comparison is unrelated to the number of shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Height comparison is unrelated to robot movement performance.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "Height comparison is unrelated to robots avoiding obstacles.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Height comparison is unrelated to comparing battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Height comparison is unrelated to teams promising improved designs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "Height comparison is unrelated to stacking chairs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Rosa being taller than Gus and Quinn has no bearing on shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Height comparison is unrelated to the rotation of stations during the morning.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Rosa's height relative to Quinn does not affect whether Rosa and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Height comparison of Rosa, Gus, Quinn is unrelated to Uma's age relative to Gus.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Height comparison is unrelated to Uma's age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Height comparison is unrelated to mentors giving tips.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Height comparison is unrelated to Ben and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Height comparison is unrelated to labeling of worktables.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Height comparison is unrelated to the number of shifts the shop ran.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Rosa's height relative to Gus and Quinn has no bearing on whether robots could move without tipping.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Height comparisons among people are unrelated to robots avoiding obstacles with sensors.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Rosa's height has no logical connection to students comparing battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Height comparisons are unrelated to teams' promises about future designs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Rosa's height is unrelated to everyone stacking chairs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Shift assignments of Ben and Rosa have no bearing on students rotating between stations.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "Ben and Rosa working different shifts, combined with a two-shift system implied elsewhere, doesn't directly determine Rosa and Quinn's shift relationship from this pair alone.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Shift assignments of Ben and Rosa are unrelated to relative ages of Uma and Gus.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Shift assignments of Ben and Rosa have no connection to Uma being older than Ben.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Ben and Rosa's shift difference is unrelated to mentors circulating and giving tips.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Ben and Rosa working different shifts doesn't determine whether Ben and Quinn worked different shifts, since Rosa and Quinn could be on the same or different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Shift assignments are unrelated to worktables being labeled with numbers.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Ben and Rosa working different shifts supports the idea that the shop ran multiple (at least two) shifts.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "Shift assignments are unrelated to robots' ability to move without tipping.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Ben and Rosa's shifts are unrelated to robots avoiding obstacles with sensors.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Shift assignments have no bearing on students comparing battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Ben and Rosa's shift difference is unrelated to teams promising improved designs.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Shift assignments are unrelated to helping stack chairs at day's end.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Students rotating between stations to test circuits has no bearing on Rosa and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Rotating between stations is unrelated to the relative ages of Uma and Gus.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Circuit testing schedule has no bearing on relative ages of Uma and Ben.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Both describe morning activities but neither implies the other; they are independent activities happening concurrently.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "Rotating stations to test circuits doesn't indicate anything about Ben and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Rotating between stations is consistent with tables being labeled, but doesn't establish or negate it.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Rotating stations in the morning doesn't specify the total number of shifts the shop runs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Testing circuits in the morning doesn't determine the end-of-day outcome of robot performance.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "Testing circuits and calibrating sensors could relate to some robots later avoiding obstacles via sensors, giving mild support.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "Testing circuits is a different activity from comparing notes on battery packs, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Rotating stations to test circuits doesn't imply anything about promises for future sessions.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "Morning circuit testing is unrelated to end-of-day chair stacking.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Rosa and Quinn's shift difference has no bearing on Uma and Gus's relative ages.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Rosa and Quinn's shifts are unrelated to Uma and Ben's ages.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Shift assignment of Rosa and Quinn doesn't relate to mentors giving tips.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Rosa and Quinn working different shifts doesn't determine whether Ben and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Shift assignments are unrelated to worktable labeling.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "If Rosa and Quinn worked different shifts, this implies at least two shifts exist, supporting the claim of two shifts.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Shift scheduling of Rosa and Quinn has no bearing on robot performance outcomes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Shift assignments don't relate to robots avoiding obstacles with sensors.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "Rosa and Quinn's shifts don't bear on discussions about battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "Shift scheduling is unrelated to promises about future improved designs.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "Different shifts does not affect whether everyone helped stack chairs at the end.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Uma's age relative to Gus does not determine her age relative to Ben.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Uma's age relative to Gus has no bearing on mentors circulating with tips.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Uma's age relative to Gus is unrelated to Ben and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Uma's age relative to Gus has nothing to do with worktable labeling.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Uma's age relative to Gus does not relate to the number of shop shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Uma's age relative to Gus has no bearing on robot performance outcomes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "Uma's age relative to Gus is unrelated to robots using sensors.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "Uma's age relative to Gus has no connection to students discussing battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Uma's age relative to Gus is unrelated to teams promising improved designs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "Uma's age relative to Gus has no bearing on chair-stacking activity.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Uma's age relative to Ben has no bearing on mentors circulating with tips.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Uma's age relative to Ben is unrelated to Ben and Quinn's shift assignments.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Uma's age relative to Ben has nothing to do with worktable labeling.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Uma's age relative to Ben does not relate to the number of shop shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Uma's age relative to Ben has no bearing on robot performance outcomes.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "Uma's age relative to Ben is unrelated to robots using sensors.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Uma's age relative to Ben has no connection to students discussing battery packs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "Uma's age relative to Ben is unrelated to teams promising improved designs.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "Uma's age relative to Ben has no bearing on chair-stacking activity.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Mentors offering tips is unrelated to whether Ben and Quinn worked different shifts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Mentor tips and worktable labeling are independent facts about the shop.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Mentors circulating does not indicate anything about the number of shifts run.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Mentors giving tips on wiring and balance plausibly contributed to robots being able to walk without tipping, supporting the outcome.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "Mentor tips on wiring/balance are somewhat related to robot function but not specifically to sensor-based obstacle avoidance.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "Mentors' tips are unrelated to students comparing battery notes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Mentor assistance could plausibly encourage teams to want to improve designs, but this is a weak inferential link.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "Mentors offering tips has no bearing on stacking chairs at day's end.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Working different shifts is unrelated to worktables being labeled.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "If Ben and Quinn worked different shifts, this supports the existence of multiple (at least two) shifts.",
+   "relation": "supports",
+   "confidence": 0.8
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Shift scheduling of two individuals is unrelated to overall robot performance results.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Different shifts for Ben and Quinn has no bearing on robots' sensor capabilities.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "Working different shifts does not relate to comparing battery pack notes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Shift arrangement is unrelated to teams' promises about future designs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Different shifts do not bear on the chair-stacking event.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Labeling worktables with numbers is unrelated to whether the shop ran two shifts.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Labeling worktables to prevent mixed materials is unrelated to robots' walking performance.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Worktable labeling is unrelated to robots using sensors to avoid obstacles.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Labeling worktables is unrelated to students comparing battery life notes.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "Worktable labeling does not bear on teams' promises to bring improved designs.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Labeling worktables is unrelated to stacking chairs before locking doors.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Running two shifts does not inform whether robots could move without tipping over.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "The shift schedule has no bearing on robots' sensor-based obstacle avoidance.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "Two shifts running does not relate to students comparing battery pack notes.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "The shop's shift structure is unrelated to teams promising improved designs.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "Running two shifts does not directly imply or contradict everyone helping stack chairs at closing.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Robots moving without tipping over is a related but distinct capability from obstacle avoidance via sensors, and both could plausibly co-occur, but one does not establish the other.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Robots' mobility success has no bearing on students discussing battery life.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "Improved robot mobility by day's end could encourage teams to want to bring further improved designs next time, suggesting momentum.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Robots' mobility success has no logical connection to stacking chairs before closing.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "Robots using sensors to avoid obstacles is unrelated to students discussing battery longevity.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "Some robots successfully using sensors doesn't directly imply teams will promise improved designs, though it could be loosely encouraging.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "Sensor-based obstacle avoidance in robots is unrelated to stacking chairs at day's end.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "Comparing notes on battery performance could inform teams' plans to bring improved designs, suggesting a supportive link.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "Comparing battery notes is unrelated to the act of stacking chairs before closing.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Teams promising improved designs for next session is unrelated to the act of stacking chairs before closing today.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "ben",
+    "mentions": [
+     "Ben"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   },
+   {
+    "id": "quinn",
+    "mentions": [
+     "Quinn"
+    ]
+   },
+   {
+    "id": "uma",
+    "mentions": [
+     "Uma"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "shift",
+    "arity": "binary",
+    "arity_span": "The shop ran two shifts."
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 4,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 8,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "gus",
+    "b": "quinn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "gus",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "rosa",
+    "b": "quinn",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 10,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "ben",
+    "b": "rosa",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "rosa",
+    "b": "quinn",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 13,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "gus",
+    "b": "uma",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "uma",
+    "b": "ben",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "shift",
+    "kind": "different",
+    "a": "ben",
+    "b": "quinn",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 24,
+  "pairs_requested": 276,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 9,
+  "entity_relations_dropped": 0
+ },
+ "report": {
+  "n_claims": 24,
+  "n_edges": 10,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [
+   [
+    13
+   ],
+   [
+    14
+   ]
+  ],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "shift",
+    "entities": [
+     "ben",
+     "quinn",
+     "rosa"
+    ],
+    "relations": [
+     8,
+     5,
+     4
+    ],
+    "claim_ids": [
+     10,
+     12,
+     16
+    ],
+    "min_confidence": 0.9
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   2.0954117794933126e-32,
+   0.0,
+   0.0,
+   0.0,
+   7.765349535769335e-32,
+   0.0,
+   0.0,
+   1.9721522630525296e-32,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 1,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 10,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 11,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 12,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 19,
+    "residual": 8.628166150854816e-33
+   },
+   {
+    "a": 16,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 19,
+    "b": 22,
+    "residual": 1.9721522630525296e-32
+   },
+   {
+    "a": 21,
+    "b": 22,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 1838,
+   "api_calls": 0,
+   "cache_hits": 1838,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "spent_tokens": 0,
+   "budget_tokens": 0
+  },
+  "components": [
+   [
+    0,
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ],
+   [
+    4,
+    10,
+    12,
+    16,
+    18
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    11,
+    20
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    15,
+    19,
+    21,
+    22
+   ],
+   [
+    17
+   ],
+   [
+    23
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "binary_parity",
+    "attribute": "shift",
+    "entities": [
+     "ben",
+     "quinn",
+     "rosa"
+    ],
+    "relations": [
+     8,
+     5,
+     4
+    ],
+    "claim_ids": [
+     10,
+     12,
+     16
+    ],
+    "min_confidence": 0.9
+   }
+  ]
+ }
+}

@@ -1,0 +1,3042 @@
+{
+ "label": "b57-consistent",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-7bc867ef4850",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Otto arrived first at the beach clean-up.",
+   "span": "Otto arrived first, stretching his arms and greeting everyone with a wide grin.",
+   "kind": "asserted"
+  },
+  {
+   "id": 1,
+   "text": "Kira showed up a few minutes after Otto.",
+   "span": "Kira showed up a few minutes later, carrying a stack of mesh bags for collecting debris.",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Kira was carrying a stack of mesh bags for collecting debris.",
+   "span": "Kira showed up a few minutes later, carrying a stack of mesh bags for collecting debris.",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Cleo is the head judge.",
+   "span": "Assume that Cleo is the head judge.",
+   "kind": "premise"
+  },
+  {
+   "id": 4,
+   "text": "Esme trailed in last.",
+   "span": "Esme trailed in last, still tying her shoelaces as she jogged across the sand.",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Esme was still tying her shoelaces as she jogged across the sand.",
+   "span": "Esme trailed in last, still tying her shoelaces as she jogged across the sand.",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Leo waved from the boardwalk.",
+   "span": "Leo waved from the boardwalk, balancing a cooler and a clipboard in his arms.",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Leo was balancing a cooler and a clipboard in his arms.",
+   "span": "Leo waved from the boardwalk, balancing a cooler and a clipboard in his arms.",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "The five of them split into small groups to cover different sections of the shoreline.",
+   "span": "The five of them split into small groups to cover different sections of the shoreline, each armed with gloves and buckets.",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Each of them was armed with gloves and buckets.",
+   "span": "each armed with gloves and buckets",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Leo brought the first-aid kit.",
+   "span": "Leo brought the first-aid kit.",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Cleo was slightly taller than Kira.",
+   "span": "Cleo, who was slightly taller than Kira but shorter than Otto, wandered along the tide line noting how much trash had washed up overnight.",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Cleo was shorter than Otto.",
+   "span": "Cleo, who was slightly taller than Kira but shorter than Otto, wandered along the tide line noting how much trash had washed up overnight.",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Cleo wandered along the tide line noting how much trash had washed up overnight.",
+   "span": "Cleo, who was slightly taller than Kira but shorter than Otto, wandered along the tide line noting how much trash had washed up overnight.",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Otto finished ahead of Kira.",
+   "span": "Otto finished ahead of Kira.",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "The group began sorting their collected items into recycling bins and trash bags as the sun rose higher.",
+   "span": "As the sun rose higher, the group began sorting their collected items into recycling bins and trash bags.",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Kira finished ahead of Esme.",
+   "span": "Kira finished ahead of Esme.",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Esme is the youngest of the group.",
+   "span": "Esme, the youngest of the group, laughed as she found an old flip-flop buried in the sand.",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Esme laughed as she found an old flip-flop buried in the sand.",
+   "span": "Esme, the youngest of the group, laughed as she found an old flip-flop buried in the sand.",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Otto finished ahead of Esme.",
+   "span": "Otto finished ahead of Esme.",
+   "kind": "asserted"
+  },
+  {
+   "id": 20,
+   "text": "By midday, the beach looked remarkably cleaner.",
+   "span": "By midday, the beach looked remarkably cleaner, with neat piles of sorted waste lined along the boardwalk.",
+   "kind": "asserted"
+  },
+  {
+   "id": 21,
+   "text": "There were neat piles of sorted waste lined along the boardwalk.",
+   "span": "By midday, the beach looked remarkably cleaner, with neat piles of sorted waste lined along the boardwalk.",
+   "kind": "asserted"
+  },
+  {
+   "id": 22,
+   "text": "Leo was the oldest among them.",
+   "span": "Leo, who was the oldest among them, took a moment to photograph the results for the community newsletter.",
+   "kind": "asserted"
+  },
+  {
+   "id": 23,
+   "text": "Leo took a moment to photograph the results for the community newsletter.",
+   "span": "Leo, who was the oldest among them, took a moment to photograph the results for the community newsletter.",
+   "kind": "asserted"
+  },
+  {
+   "id": 24,
+   "text": "They made plans to return the following month to continue their work along the coastline.",
+   "span": "they made plans to return the following month to continue their work along the coastline",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "If Otto arrived first at the beach clean-up, it is consistent and plausible that Kira arrived shortly after him, supporting the sequence described in B.",
+   "relation": "supports",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "Otto arriving first at the beach clean-up says nothing about Kira's actions or equipment; the two claims concern different people and unrelated details.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Arriving first at a beach clean-up has no bearing on who holds the position of head judge; the two claims concern unrelated events and roles.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Otto arriving first is compatible with Esme arriving last; they describe different ends of the same arrival order and do not conflict, though they are somewhat thematically related as parts of the same event ordering.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Otto arriving first at the beach clean-up says nothing directly about Esme's actions or timing while jogging and tying shoelaces; there's no logical connection established between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Otto arriving first at a beach clean-up has no logical bearing on whether Leo waved from the boardwalk; they involve different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "A states Otto arrived first at the beach clean-up, which says nothing about Leo's actions or what he was carrying at any point; the claims concern different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "Otto arriving first is about the order of arrival, while B describes how the group organized itself into sections afterward; these details are compatible but not directly connected.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Otto arriving first at the beach clean-up is a claim about order of arrival, while B describes participants' equipment; neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Otto being the first to arrive at the beach clean-up says nothing about who brought the first-aid kit; the two claims describe unrelated facts about different people and events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "Claim A concerns arrival order at a beach clean-up, while claim B concerns relative heights of two different people; these topics share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Arrival order at a beach clean-up has no bearing on relative height between the two people.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Both describe activities that could occur at the same beach clean-up event without conflicting; Otto arriving first doesn't preclude Cleo also being there observing trash. There's no strong logical connection either way.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Arriving first at the event suggests Otto was earlier than others, including Kira, but 'arrived first' is about starting time while 'finished ahead' concerns completion order, which are not necessarily linked.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "Otto arriving first at the beach clean-up is a separate event from the group later sorting collected items; A doesn't establish or preclude B, they simply describe different stages of the same broader activity.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Claim A concerns Otto's arrival order at a beach clean-up event, while claim B concerns a finishing order between Kira and Esme in an apparently different context. There's no stated connection between the two events or people.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Arriving first at a beach clean-up has no logical or evidential bearing on who is youngest in the group.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "Otto being first to arrive at the beach clean-up has no bearing on whether Esme later laughed upon finding a flip-flop; the two events are independent occurrences.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Arriving first at the event suggests Otto was ahead of others generally, which is loosely consistent with finishing ahead of Esme in a related sense, but 'arriving first' and 'finishing ahead' refer to different stages (start vs end) of the event, so it only weakly supports it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 20,
+   "rationale": "Otto arriving first suggests he participated in the beach clean-up, and clean-ups generally lead to visibly cleaner results by later in the day, making B somewhat more plausible though not guaranteed.",
+   "relation": "supports",
+   "confidence": 0.4
+  },
+  {
+   "a": 0,
+   "b": 21,
+   "rationale": "Otto arriving first doesn't directly explain or preclude organized waste piles later on; the sorting could result from group effort throughout the event, unrelated to who arrived first.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 0,
+   "b": 22,
+   "rationale": "Arriving first at the beach clean-up has no logical bearing on who is oldest among the group; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 23,
+   "rationale": "Otto arriving first at the beach clean-up says nothing about Leo photographing the results afterward; the two events are independent.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 24,
+   "rationale": "Otto arriving first at the beach clean-up is a minor detail unrelated to whether the group later decided to return the following month; neither claim affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "A concerns the timing of Kira's arrival relative to Otto, while B describes what Kira was carrying. These are independent facts with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "Claim A concerns the timing of Kira's and Otto's arrival, while claim B concerns Cleo's role as head judge. These involve different people and different subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Claim A only establishes the relative arrival order between Kira and Otto, saying nothing about Esme's timing relative to the others, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A concerns the relative arrival times of Kira and Otto, while claim B describes Esme's actions with her shoelaces on sand. There is no shared subject or context linking the two events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A concerns the timing of Kira's arrival relative to Otto, while claim B describes an unrelated action by a different person, Leo, waving from the boardwalk. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "Claim A describes the relative arrival times of Kira and Otto, while claim B describes an unrelated fact about Leo carrying items. There is no logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "Kira arriving shortly after Otto is a timing detail about two individuals, while B describes a group of five splitting up for a search; the claims don't directly bear on each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "A merely establishes the order of arrival of Kira and Otto; it says nothing about what equipment either of them carried, so it neither supports nor contradicts B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Claim A concerns the arrival timing of Kira relative to Otto, while claim B concerns Leo bringing a first-aid kit. The two describe unrelated facts about different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A concerns arrival timing of Kira relative to Otto, while claim B concerns relative height of Cleo and Kira. These involve different attributes and share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A concerns the timing of Kira's arrival relative to Otto, while claim B concerns relative heights of Cleo and Otto. These deal with entirely different subjects and properties, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Claim A concerns Kira and Otto's arrival times, while claim B concerns Cleo's activity on a beach; they share no common subject or context that would let one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "A implies Otto arrived before Kira, which aligns with Otto finishing ahead of Kira, assuming 'showed up' and 'finished' refer to the same event or race context.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A describes arrival order of two individuals, while claim B describes a group activity happening later; there's no stated connection between Kira/Otto's arrival and the sorting activity, though both could be part of the same event timeline.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Claim A concerns arrival order relative to Otto, while claim B concerns finishing order relative to Esme; these involve different people and different events (arriving vs finishing), so one does not bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Claim A concerns arrival order between Kira and Otto, while claim B concerns relative age of Esme within the group; neither has bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Claim A concerns the timing of Kira's and Otto's arrival, while claim B describes Esme finding a flip-flop in the sand; the two events involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "Claim A describes Kira arriving after Otto in some event, while claim B describes Otto finishing ahead of Esme in what may be a different context (a race vs. an arrival). They involve different people relationships and don't share enough context to directly inform each other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 20,
+   "rationale": "Claim A concerns Kira arriving shortly after Otto, which has no logical or thematic connection to the beach's cleanliness by midday.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 21,
+   "rationale": "Claim A describes the timing of Kira's arrival relative to Otto, while claim B describes the physical state of waste piles on a boardwalk. Neither statement implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 22,
+   "rationale": "Claim A concerns the order and timing of arrivals, while claim B concerns relative ages among the group; neither has bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 23,
+   "rationale": "Claim A concerns the relative arrival timing of Kira and Otto, while claim B concerns Leo photographing results for a newsletter; they share no common subject or context that would connect them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 24,
+   "rationale": "Claim A concerns arrival timing of Kira relative to Otto on some occasion, while claim B concerns future plans to return to a coastline for ongoing work; the two describe unrelated aspects of the situation with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "Claim A describes Kira carrying mesh bags for debris collection, which has no logical or topical connection to claim B stating Cleo's role as head judge. The two claims involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Claim A describes Kira carrying mesh bags, which has no bearing on when Esme arrived relative to others.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "The two claims describe different people engaged in unrelated activities with no evident causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "The two claims describe different people engaged in unrelated actions with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Both describe different people carrying different items at what appears to be the same event; there is no logical connection between Kira carrying mesh bags and Leo balancing a cooler and clipboard.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "Carrying mesh bags for debris collection is consistent with a cleanup effort where a group splits up to cover more ground; the two claims fit a common scenario but neither directly implies the other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Both describe equipment carried by a group for a cleanup-type activity; carrying mesh bags is consistent with also being equipped with gloves and buckets, and slightly supports the idea that people were geared up for debris collection.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "A concerns Kira carrying mesh bags for debris collection, while B concerns Leo bringing a first-aid kit; these describe different people and items with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "Claim A describes what Kira was carrying, which has no bearing on relative heights of Cleo and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A describes Kira carrying mesh bags for debris collection, while claim B compares heights of Cleo and Otto. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Kira carrying debris-collection bags suggests a cleanup context involving trash, which is consistent with Cleo observing washed-up trash, but the claims involve different people and actions without direct connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Carrying bags for debris collection says nothing about relative finishing order in a race or task; the claims concern different aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Kira carrying mesh bags for debris collection suggests a cleanup effort is underway, which supports the later scene of the group sorting collected items into bins and bags; the two events fit naturally as part of the same sequence.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Carrying mesh bags for debris collection tells us nothing about Kira's relative finishing time compared to Esme in whatever event or task is being ranked.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Claim A describes Kira's task and equipment, while claim B is about Esme's relative age within the group; these concern unrelated aspects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "A describes Kira preparing to collect debris in mesh bags, which is thematically consistent with a beach cleanup where Esme might find items like an old flip-flop, but the two claims involve different people and actions without a direct logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "Claim A concerns Kira carrying mesh bags for debris collection, while claim B concerns a finishing order between Otto and Esme in some race or task. These involve different people and no shared context linking them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 20,
+   "rationale": "Kira carrying mesh bags for debris collection suggests a cleanup activity was underway, which makes it more plausible that the beach ended up looking cleaner by midday.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 2,
+   "b": 21,
+   "rationale": "Kira carrying mesh bags for collecting debris suggests an organized collection effort, which makes it more plausible that sorted waste would be arranged in neat piles along the boardwalk, though it doesn't guarantee it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 2,
+   "b": 22,
+   "rationale": "Kira carrying mesh bags has no bearing on Leo's relative age among the group; the two claims concern unrelated matters.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 23,
+   "rationale": "A describes Kira's equipment for debris collection while B describes Leo photographing results for a newsletter; these involve different people and actions with no direct logical connection, though they could plausibly occur during the same event.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 24,
+   "rationale": "Carrying debris bags suggests an ongoing cleanup effort, which is loosely consistent with plans to continue coastal work later, but the claims describe different moments and are not directly linked.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "Claim A concerns Cleo's role as head judge, while claim B concerns Esme's finishing position in some competition. There is no stated connection between judging role and competitive standing.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A concerns Cleo's role as head judge, while claim B describes Esme's action of tying shoelaces while jogging. There is no logical or contextual connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "The two claims describe unrelated people and actions with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "The claims involve different individuals and unrelated activities; there's no logical connection between Cleo's role as head judge and Leo's physical actions.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Cleo's role as head judge is unrelated to how a group of five people divided up to search shoreline sections; the claims concern different activities and contexts with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A concerns Cleo's role as head judge, while claim B describes an unspecified group being equipped with gloves and buckets; the two statements share no obvious connection in subject matter.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Cleo being the head judge has no bearing on who brought the first-aid kit; the two claims concern unrelated facts about different people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "Being the head judge has no bearing on relative height; these describe unrelated attributes of Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Being the head judge is unrelated to relative height; both claims can independently be true or false without bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Being a head judge does not preclude walking along a tide line observing trash; these describe different roles/activities that can coexist for the same person at different times.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Cleo's role as head judge has no bearing on the relative finishing positions of Otto and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "The claims describe unrelated situations (a judging role versus a group sorting recyclables) with no shared context or logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A concerns who the head judge is, while claim B concerns the relative finishing order of two competitors; neither fact bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Being the head judge and being the youngest group member concern different, independent attributes with no logical connection implied by the wording.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "These claims concern unrelated people and events with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "The claim about Cleo being the head judge has no stated connection to the relative finishing positions of Otto and Esme; nothing links judging role to race outcome.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 20,
+   "rationale": "Claim A concerns Cleo's role as head judge, while claim B describes the beach's cleanliness by midday; there is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "rationale": "There is no stated connection between Cleo's role as head judge and the presence of sorted waste piles on the boardwalk; the two claims describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 22,
+   "rationale": "Claim A concerns Cleo's role as head judge, while claim B concerns Leo's relative age; the two claims involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 23,
+   "rationale": "Claim A establishes Cleo's role as head judge, which has no evident bearing on whether Leo photographed results for a newsletter; the two describe unrelated actors and actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 24,
+   "rationale": "Claim A about Cleo's role as head judge has no logical or contextual connection to claim B about plans to return to a coastline for continued work; they appear to belong to unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "If Esme finished last, it is plausible she was still tying her shoelaces mid-race, as this could explain her poor performance; the two are consistent and mutually reinforcing.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "The two claims describe unrelated events involving different people with no logical or causal connection stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Esme finishing last in some event has no bearing on Leo carrying a cooler and clipboard; the claims describe unrelated situations with no shared subject or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "A describes Esme finishing last in some race or competition, while B describes a group splitting up to search a shoreline; these appear to be unrelated activities or events with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "A describes Esme finishing last in some activity, while B describes a group being equipped with gloves and buckets; the claims concern different aspects of a scenario without direct bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "Esme finishing last in some activity has no bearing on whether Leo brought a first-aid kit; the two claims concern unrelated people and actions.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Claim A concerns Esme's finishing position in some race or competition, while claim B concerns relative heights of Cleo and Kira. These involve different people and different attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A concerns Esme's finishing position in some race or competition, while claim B concerns a height comparison between two unrelated individuals (Cleo and Otto). There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "The two claims involve different subjects and unrelated activities (a race outcome versus a beach observation), with no logical or causal connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Claim A concerns Esme's finishing position (last), while claim B concerns the relative order of Otto and Kira, who are different individuals not mentioned in A. Knowing Esme finished last does not indicate anything about Otto's or Kira's relative positions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Esme's finishing last in some activity (likely a race or walk) has no clear bearing on the group later sorting collected items; the claims describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "If Esme finished last, then every other competitor, including Kira, must have finished ahead of her, which directly supports B.",
+   "relation": "supports",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Coming in last in some competition or race has no logical bearing on being the youngest member of the group; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Trailing in last describes race performance, while finding a flip-flop and laughing is an unrelated activity that could occur before, during, or after the race with no bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "If Esme finished last, then every other competitor, including Otto, must have finished ahead of her, making B a natural consequence of A.",
+   "relation": "supports",
+   "confidence": 0.88
+  },
+  {
+   "a": 4,
+   "b": 20,
+   "rationale": "Esme finishing last in what appears to be a race or contest has no logical connection to the cleanliness of a beach at midday; these describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 21,
+   "rationale": "Esme finishing last in some activity has no logical bearing on whether sorted waste piles were arranged along a boardwalk; the two describe unrelated situations.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 22,
+   "rationale": "Esme's finishing position in a race has no bearing on who is oldest among the group; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 23,
+   "rationale": "Esme finishing last is a race outcome that has no direct bearing on whether Leo chose to photograph the results for a newsletter; the two events are largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 24,
+   "rationale": "Trailing in last in some event or race has no logical bearing on future plans to return to a coastline for work; the two claims involve unrelated contexts.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "A describes Esme's action on the sand while B describes Leo waving from the boardwalk; these are independent events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Both describe simultaneous but independent actions by different people on the beach; neither affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "A shows Esme jogging alone while still tying shoelaces, which is neutral toward whether the group of five later splits into smaller groups; the two events can coexist without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Claim A describes Esme jogging while still tying her shoelaces, which has no clear bearing on whether the group (possibly including her) was equipped with gloves and buckets; the two describe different aspects of the scene without informing each other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Claim A describes Esme's actions while jogging on the sand, which has no logical or causal bearing on whether Leo brought a first-aid kit; the two events involve different people and unrelated activities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Claim A describes Esme jogging on sand, while claim B is about a height comparison between two unrelated people, Cleo and Kira. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Claim A concerns Esme jogging on sand with untied shoelaces, while claim B concerns a height comparison between two unrelated people, Cleo and Otto. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Both claims describe different people doing separate activities on or near a beach, but neither claim's content implies anything about the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "Claim A concerns Esme's shoelaces and running on sand, while claim B concerns a finishing order between Otto and Kira; they involve different people and no shared context is given.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "A describes Esme jogging while still tying shoelaces, a momentary personal action, while B describes a group activity of sorting collected items later as the sun rose; there's no clear causal or logical link between them, though both could occur during the same outing.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "A suggests Esme was delayed or unprepared while running, which makes it more plausible that another runner like Kira finished ahead of her, though this is not certain.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "Claim A describes a specific momentary action while claim B states a general fact about Esme's age relative to the group; neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "A has Esme jogging while still tying her shoelaces, implying she is mid-motion and occupied with her shoes; B has her laughing while finding a flip-flop buried in sand, a different activity. These could occur at different moments during the same beach outing, so both can be true without contradiction, though the timing of doing both nearly simultaneously is a bit awkward.",
+   "relation": "tension",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "A suggests Esme was delayed or slowed by tying her shoelaces while running, which makes it more plausible that someone else, like Otto, finished ahead of her, but it doesn't guarantee it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 5,
+   "b": 20,
+   "rationale": "Esme jogging on the sand and tying her shoelaces has no bearing on the cleanliness of the beach by midday; these are unrelated observations.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "rationale": "A describes Esme's action while jogging on the sand, which has no logical connection to the presence or arrangement of sorted waste piles on the boardwalk.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "rationale": "Claim A describes Esme's actions with shoelaces and jogging, which has no bearing on Leo's relative age among the group.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 23,
+   "rationale": "The two claims describe unrelated actions by different people with no shared context or causal link stated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 24,
+   "rationale": "Claim A describes a momentary detail of Esme jogging with untied laces, while claim B describes a future plan made by an unspecified group; there is no logical connection or dependency between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "If Leo's arms were full with a cooler and a clipboard, it would be awkward or difficult for him to wave, creating tension between the two claims without strictly contradicting each other.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "If the group split up to cover different shoreline sections, Leo being on the boardwalk alone waving is plausible and doesn't conflict; it could even fit as him being in one section, though 'boardwalk' isn't explicitly a shoreline section covered. The two claims are largely independent, describing separate details.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "The two claims describe unrelated actions and details; waving from a boardwalk has no bearing on whether people were equipped with gloves and buckets.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Waving from the boardwalk and bringing a first-aid kit describe different, independent actions with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "Claim A describes Leo waving from a boardwalk, while claim B compares the heights of Cleo and Kira. These involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "The two claims describe unrelated events involving different people and no shared context; A does not affect the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Both scenes could occur at the same beach setting simultaneously, but neither claim implies or excludes the other's action or existence.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Claim A describes Leo waving from a boardwalk, which has no logical or topical connection to claim B about the outcome of a race or competition between Otto and Kira.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Leo waving from the boardwalk is a separate, minor action with no stated connection to the group's sorting activity; neither event implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "Claim A describes Leo waving from a boardwalk, while claim B describes a race or competition outcome between Kira and Esme. The two claims share no common subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Leo waving from the boardwalk has no bearing on who is youngest in the group; the two claims describe unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Leo waving from the boardwalk and Esme laughing at finding a flip-flop in the sand are independent events with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "The two claims describe unrelated events involving different people (Leo waving vs. Otto and Esme finishing a race), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 20,
+   "rationale": "Leo waving from the boardwalk has no logical bearing on whether the beach appeared cleaner by midday; these are unrelated observations about different aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 6,
+   "b": 21,
+   "rationale": "A places Leo on the boardwalk waving, while B describes the boardwalk having neat piles of sorted waste along it. These can both be true simultaneously without conflict, and A doesn't particularly make B more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 6,
+   "b": 22,
+   "rationale": "Waving from the boardwalk says nothing about Leo's age relative to others; the two claims describe unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 23,
+   "rationale": "Waving from the boardwalk and photographing results for a newsletter describe different, unrelated actions with no clear connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 6,
+   "b": 24,
+   "rationale": "Waving from a boardwalk is a minor, unrelated action to making future plans to return for coastal work; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "A describes Leo carrying items, which is largely independent of the group's decision to split up to cover shoreline sections; they can coexist without one affecting the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "A describes Leo carrying a cooler and clipboard, while B describes a group equipped with gloves and buckets; these could describe different people or different moments without conflicting.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "A shows Leo carrying a cooler and clipboard, which doesn't mention a first-aid kit; he could plausibly have brought that too, but it's not directly implied or excluded.",
+   "relation": "unrelated",
+   "confidence": 0.62
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A describes Leo carrying items, while claim B describes a height comparison between two unrelated people, Cleo and Kira. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Claim A describes Leo carrying items, while claim B compares heights between different people (Cleo and Otto). The two claims share no common subject or topic.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Claim A concerns Leo carrying items, while claim B describes a different person, Cleo, doing an unrelated activity. There's no shared subject or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Claim A describes Leo's physical actions with a cooler and clipboard, while claim B describes a race or competition result between Otto and Kira. There is no shared subject or context linking these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Leo carrying a cooler and clipboard doesn't directly imply or prevent the group's sorting activity; they could be part of the same scene but no direct causal or logical link is stated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A describes Leo's physical activity while Claim B concerns a race result between Kira and Esme; there is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Leo balancing a cooler and clipboard has no bearing on who is youngest in the group; these describe unrelated facts about different people/topics.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Leo balancing items and Esme finding a flip-flop in the sand describe unrelated people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Claim A describes Leo's physical activity with unrelated objects, while claim B concerns a race result between two different people, Otto and Esme. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 20,
+   "rationale": "Leo carrying a cooler and clipboard could suggest a beach cleanup effort, which might lead to a cleaner beach, but this is a weak and indirect connection with no explicit causal link stated.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 21,
+   "rationale": "Leo balancing a cooler and clipboard suggests he may be organizing or overseeing an activity, which could plausibly relate to sorted waste along the boardwalk, but neither claim directly implies the other's specific detail.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 7,
+   "b": 22,
+   "rationale": "A describes what Leo was physically carrying, which has no bearing on his relative age compared to others.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 23,
+   "rationale": "If Leo's arms are full with a cooler and clipboard, taking a photograph (which typically requires free hands to operate a camera or phone) becomes awkward or requires first setting items down, making B surprising given A though not impossible.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 7,
+   "b": 24,
+   "rationale": "Balancing a cooler and clipboard suggests fieldwork in progress, which is loosely related to plans about continuing coastal work, but there's no direct logical connection between carrying items and future plans.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Splitting into groups to search the shoreline is a normal setup for a coordinated cleanup or collection activity, which plausibly involves gloves and buckets for each participant.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Splitting into groups to cover the shoreline doesn't inherently relate to who carried the first-aid kit; the two facts can coexist without one affecting the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "Claim A describes a group activity splitting up along a shoreline, while claim B states a relative height comparison between two individuals. These claims have no logical or contextual connection to each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Splitting into groups to search shoreline sections has no bearing on the relative heights of two individuals; these claims address unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Cleo wandering the tide line noting trash is consistent with her being part of one of the small groups covering a shoreline section, so A supports the plausibility of B.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "Splitting into groups to search the shoreline is about a search or coverage task, while finishing ahead of someone implies a race or competitive ordering; the claims describe different types of activities with no clear connection.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "A describes the group splitting up to search different shoreline sections (likely a cleanup effort), while B describes them sorting collected items later. These are compatible sequential stages of the same activity, with B representing a later phase after regrouping.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Splitting into groups to search the shoreline is about a search or exploration effort, while B refers to a race or competitive finish between two people. Nothing in A implies or bears on a finishing order.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Splitting into groups to search shoreline sections has no bearing on relative ages of the group members.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Splitting into groups to search the shoreline is consistent with, and provides a plausible setting for, someone finding an old flip-flop buried in the sand; A makes B more plausible as a natural part of that search.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "Claim A describes a group splitting up to search shoreline sections, while claim B describes a race or competition outcome between two individuals; the two scenarios describe unrelated activities with no shared context provided.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "rationale": "If the group divided up and covered different sections of the shoreline, that increases coverage of cleanup or search efforts, making it more plausible that the beach appeared cleaner by midday.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 8,
+   "b": 21,
+   "rationale": "Splitting into groups to cover different shoreline sections is consistent with efficiently collecting and sorting waste, which could plausibly result in organized piles along the boardwalk, but the connection is indirect and depends on unstated activity.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 8,
+   "b": 22,
+   "rationale": "Splitting into groups to cover shoreline sections has no bearing on relative ages of the group members.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 23,
+   "rationale": "A describes the group splitting up to cover the shoreline, which is consistent with individuals like Leo pausing to document results; the claims can coexist without conflict, though A doesn't directly imply B's action.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 8,
+   "b": 24,
+   "rationale": "A describes their current work strategy of splitting into groups, while B describes future plans to continue work; both can easily be true together as part of an ongoing project.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "A states everyone had gloves and buckets, which neither confirms nor denies whether Leo also brought a first-aid kit; the two claims describe different, compatible pieces of equipment.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Claim A describes equipment carried by a group and claim B describes a relative height comparison between two individuals; neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Claim A concerns equipment each person carried, which has no bearing on relative heights of Cleo and Otto described in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Being armed with gloves and buckets suggests preparation for a cleanup activity, which fits with Cleo noting trash on the tide line, making a beach cleanup context more plausible.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Claim A describes equipment carried by a group of people, while claim B describes a race or competition outcome between two individuals; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "A describes them equipped with gloves and buckets, consistent with a cleanup activity that would plausibly lead to sorting collected items into recycling and trash, as described in B; the equipment supports the plausibility of the subsequent sorting activity.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A describes equipment carried by a group, while claim B describes a race or competition outcome between two individuals; they share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Claim A describes equipment carried by the group, while claim B describes Esme's relative age within the group; these concern unrelated attributes with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "A establishes the group was equipped for a beach cleanup or similar sandy task, which fits naturally with B's scene of finding an old flip-flop while digging in the sand; the claims are complementary rather than conflicting.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Claim A describes equipment carried by a group, while claim B describes a race or competition outcome between two individuals; neither has any bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 20,
+   "rationale": "Being armed with gloves and buckets suggests people preparing to clean up (e.g., a beach cleanup), which makes it more likely that the beach would look cleaner afterward.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 9,
+   "b": 21,
+   "rationale": "Being armed with gloves and buckets suggests preparation for a cleanup activity, which supports the outcome of sorted waste being collected and organized along the boardwalk.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 9,
+   "b": 22,
+   "rationale": "Claim A describes equipment carried by a group, while claim B states a relative age fact about a member of the group; neither bears on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 9,
+   "b": 23,
+   "rationale": "Being equipped with gloves and buckets (suggesting a cleanup or similar task) does not preclude Leo pausing to photograph the results afterward; these are plausibly sequential parts of the same activity.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 9,
+   "b": 24,
+   "rationale": "Being equipped with gloves and buckets suggests they were doing cleanup or collection work, which is consistent with plans to continue similar work along the coastline later; the claims are compatible but not directly evidentially linked.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A concerns Leo bringing a first-aid kit, while claim B concerns a height comparison between Cleo and Kira. They share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "The two claims concern unrelated matters: one is about who brought an item, the other about relative heights of different people. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "The two claims describe unrelated actions by different people with no shared context or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A concerns Leo bringing a first-aid kit, which has no logical or causal connection to the finishing order of Otto and Kira in some race or competition.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "Bringing a first-aid kit is not clearly connected to sorting collected items into recycling and trash; the claims describe separate activities with no logical dependency.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Leo bringing a first-aid kit has no bearing on the relative finishing order of Kira and Esme; the two claims concern unrelated events and people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Leo bringing the first-aid kit has no bearing on Esme's relative age within the group; the two claims concern unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Leo bringing a first-aid kit and Esme finding a flip-flop in the sand are unrelated events with no logical bearing on one another.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "The claims describe unrelated events involving different people and actions with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 20,
+   "rationale": "Bringing a first-aid kit is unrelated to the cleanliness of a beach; the two events do not plausibly influence each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 21,
+   "rationale": "Bringing a first-aid kit has no logical bearing on whether sorted waste piles were lined along a boardwalk; these describe unrelated events or facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 10,
+   "b": 22,
+   "rationale": "Bringing a first-aid kit could be seen as consistent with being the most experienced or oldest, but the claim about the kit provides no direct information about Leo's relative age among the group.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 23,
+   "rationale": "Bringing a first-aid kit does not preclude also photographing results for a newsletter; these are independent actions that could both occur.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 10,
+   "b": 24,
+   "rationale": "Leo bringing a first-aid kit is unrelated to the group's plans to return the following month to continue coastal work; neither implies or affects the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Cleo being taller than Kira says nothing about her height relative to Otto, since Otto isn't compared to Kira in either claim.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Height comparison between Cleo and Kira has no bearing on Cleo's activity of walking the tide line observing trash; the two claims concern unrelated aspects of Cleo.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "Claim A concerns relative height between Cleo and Kira, while claim B concerns finishing order between Otto and Kira; these describe unrelated attributes and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Claim A concerns relative heights of two individuals, while claim B describes a group activity related to sorting items at a certain time of day. There is no logical or contextual connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "A is about relative height between Cleo and Kira, while B is about race finishing order between Kira and Esme; the two involve different attributes and different pairs of people, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A concerns relative height between Cleo and Kira, while claim B concerns relative age of Esme within a group; these attributes are independent and neither informs the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A is about relative heights of Cleo and Kira, while claim B is about Esme finding a flip-flop in the sand; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "The two claims concern entirely different people and topics (relative height vs. finishing order), with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 20,
+   "rationale": "The two claims concern entirely different subjects (relative height of two people vs. cleanliness of a beach) with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 21,
+   "rationale": "The relative height of Cleo and Kira has no bearing on whether waste piles were arranged along the boardwalk; these are unconnected facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "rationale": "Claim A concerns relative height between Cleo and Kira, while claim B concerns relative age involving Leo; these are independent attributes with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 23,
+   "rationale": "Claim A is about relative heights of Cleo and Kira, while claim B concerns Leo photographing some results for a newsletter. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 24,
+   "rationale": "Claim A is about relative height between two people, while claim B is about future plans to return to a coastline for work; they share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "A is about relative height comparison while B describes an unrelated activity of walking along a shoreline observing debris; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "A is about relative height between Cleo and Otto, while B is about race finishing order between Otto and Kira. These involve different attributes and different people, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A concerns relative heights of two individuals, while claim B describes a group sorting activity during a sunrise; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "The two claims concern entirely different people and different attributes (height vs. race/competition finishing order), with no shared subject linking them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Claim A concerns relative height between Cleo and Otto, while claim B concerns Esme's relative age within a group. These involve different attributes (height vs. age) and different comparisons, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "Claim A concerns relative heights of Cleo and Otto, while claim B describes Esme finding a flip-flop in the sand; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A concerns relative height while claim B concerns finishing position in some competition; these are different attributes with no logical connection given.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 20,
+   "rationale": "Claim A concerns relative heights of two people, while claim B concerns beach cleanliness at midday; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 21,
+   "rationale": "The relative heights of Cleo and Otto have no bearing on whether waste piles were sorted and lined along a boardwalk; these describe unrelated aspects of the scene.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 22,
+   "rationale": "A concerns relative height between Cleo and Otto, while B concerns relative age involving Leo. Neither height nor age comparisons imply anything about the other trait.",
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  {
+   "a": 12,
+   "b": 23,
+   "rationale": "The relative heights of Cleo and Otto have no bearing on Leo photographing results for a newsletter; the two claims involve unrelated subjects and events.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 24,
+   "rationale": "A is about relative height between two people, while B describes future plans to return for work along a coastline; there is no logical or thematic connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A describes Cleo observing trash on a beach, while claim B describes an unrelated race or competition result between Otto and Kira. There is no shared subject, context, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "A shows Cleo observing washed-up trash on a beach cleanup-like scene, which plausibly sets up a group later sorting collected items into recycling and trash; the contexts align but are not strictly entailing each other.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A describes Cleo's beach observations, while claim B describes a race or competition result between Kira and Esme. The two claims share no common subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A describes Cleo observing trash on a beach, while claim B states an unrelated fact about Esme's relative age within a group. Neither claim provides information bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Both describe compatible beach scenes involving debris; Esme finding a flip-flop is consistent with Cleo noting washed-up trash, and the flip-flop could plausibly be part of that trash, making B mildly more plausible.",
+   "relation": "supports",
+   "confidence": 0.5
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A concerns Cleo observing trash on a tide line, while claim B concerns Otto and Esme finishing a race or contest; the two describe entirely different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 13,
+   "b": 20,
+   "rationale": "A describes lots of trash washed up overnight, which makes it somewhat surprising that the beach would look remarkably cleaner by midday unless a cleanup occurred; both can be true but sit awkwardly together.",
+   "relation": "tension",
+   "confidence": 0.65
+  },
+  {
+   "a": 13,
+   "b": 21,
+   "rationale": "A describes scattered trash washed up on the tide line overnight, while B describes neatly sorted piles along the boardwalk; these could both be true if someone later sorted the debris, but the loose scattering implied by A sits oddly with the neat organization in B.",
+   "relation": "tension",
+   "confidence": 0.6
+  },
+  {
+   "a": 13,
+   "b": 22,
+   "rationale": "Claim A describes Cleo observing beach debris, while claim B is an unrelated statement about Leo's age relative to others. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 23,
+   "rationale": "A establishes a scene of debris washed up on the tide line that could plausibly be documented; B describes someone photographing 'the results,' likely referring to that same debris, making B a natural continuation but not a logical consequence of A.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 13,
+   "b": 24,
+   "rationale": "A establishes Cleo doing coastal cleanup-related observation, which is consistent with and mildly supportive of plans to continue such work on the coastline later, though it doesn't strongly imply it.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Claim A is about a competitive or sequential finishing order between Otto and Kira, while claim B describes a group's sorting activity as time passes. There is no shared subject matter or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "A states Otto finished ahead of Kira, but says nothing about Kira's position relative to Esme, so B's claim about Kira and Esme is neither confirmed nor denied by A.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Claim A concerns finishing order between Otto and Kira, while claim B concerns relative age of Esme within the group; these deal with entirely different attributes and people/aspects with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A concerns a race result between Otto and Kira, while claim B describes Esme finding a flip-flop in the sand; they share no common subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Knowing Otto beat Kira tells us nothing directly about how Otto and Esme finished relative to each other, since Kira and Esme are different people with no stated relation between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 20,
+   "rationale": "The claims concern unrelated topics: a race or competition result versus the appearance of a beach at midday. There is no logical or contextual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 21,
+   "rationale": "Claim A concerns a race or competition outcome between Otto and Kira, while claim B describes an unrelated scene about waste sorting along a boardwalk. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 22,
+   "rationale": "The finishing order between Otto and Kira has no bearing on who is oldest among the group; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 23,
+   "rationale": "A describes a race outcome between Otto and Kira, while B describes Leo photographing results for a newsletter. There is no logical connection between who finished ahead and someone photographing results, though B could plausibly follow from any race having results.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 24,
+   "rationale": "Claim A concerns a competitive or ranked outcome between Otto and Kira, while claim B concerns future plans to return to a coastline for ongoing work; there is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "Claim A describes a group sorting collected items during a cleanup activity, while claim B refers to a specific competitive outcome between two individuals. There is no shared context linking the sorting activity to a race or ranking between Kira and Esme.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "Claim A describes an activity the group is doing, while claim B states a demographic fact about Esme's relative age within the group. Neither claim provides information that bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "B describes Esme finding an old flip-flop while presumably part of the same cleanup activity described in A; sorting collected items and finding items like a flip-flop while combing the beach are complementary, not conflicting, events.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "Claim A concerns a group sorting collected items during a cleanup, while claim B concerns a race or competition outcome between two individuals. There is no shared subject matter or logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 15,
+   "b": 20,
+   "rationale": "A describes the group actively sorting collected trash into bins and bags as morning progresses, which directly supports the outcome that the beach appears cleaner by midday.",
+   "relation": "supports",
+   "confidence": 0.85
+  },
+  {
+   "a": 15,
+   "b": 21,
+   "rationale": "A describes the group actively sorting items into bins/bags, which plausibly results in organized piles of sorted waste, making B a natural outcome or accompanying state of the sorting activity.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 15,
+   "b": 22,
+   "rationale": "Claim A describes an activity happening at a certain time of day, while claim B states a fact about relative age among group members. Neither has any bearing on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 15,
+   "b": 23,
+   "rationale": "A describes the group starting a cleanup sorting task; B describes Leo photographing 'the results,' which plausibly occurs after or during the sorting activity described in A, suggesting a related sequence but not a strict logical dependency.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 15,
+   "b": 24,
+   "rationale": "A describes completing a cleanup task, and B describes plans to continue similar work later, which is a natural and consistent continuation of the group's ongoing environmental activity rather than a logical dependency.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Finishing order between Kira and Esme has no bearing on Esme's relative age within the group; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "A is about race placement between Kira and Esme, while B describes an unrelated moment of Esme finding a flip-flop and laughing; neither implies anything about the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Both claims independently state someone finished ahead of Esme; they concern different people (Kira and Otto) and are not mutually exclusive or directly reinforcing.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "rationale": "Claim A concerns a race or competition outcome between Kira and Esme, while claim B concerns the cleanliness of a beach at midday. There is no discernible logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 21,
+   "rationale": "The claim about Kira finishing ahead of Esme concerns a race or competition outcome, while the claim about sorted waste piles on a boardwalk describes an unrelated physical scene. There is no logical or contextual connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 22,
+   "rationale": "Claim A concerns finishing order between Kira and Esme, while claim B concerns relative ages including Leo. These are independent facts about different attributes with no logical connection given.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 16,
+   "b": 23,
+   "rationale": "Claim A concerns the relative finishing order of Kira and Esme, while claim B concerns Leo photographing results for a newsletter. Neither statement bears on the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 16,
+   "b": 24,
+   "rationale": "Claim A concerns the relative finishing order of Kira and Esme, while claim B concerns future plans to return to a coastline; they involve unrelated subjects and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "Being the youngest of the group has no bearing on whether Esme found and laughed at an old flip-flop in the sand; the two describe unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Esme being the youngest of the group says nothing about race performance or finishing order relative to Otto, so the two claims are unrelated.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "rationale": "Claim A concerns Esme's relative age within a group, while claim B concerns the cleanliness of a beach over time; they share no common subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 21,
+   "rationale": "Esme's age ranking within a group has no logical bearing on the arrangement of sorted waste piles along a boardwalk; the two claims concern entirely unrelated subjects.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 17,
+   "b": 22,
+   "rationale": "A states Esme is the youngest of the group, while B states Leo was the oldest among them. These describe different extremes of the same age ordering and are fully compatible - a group can simultaneously have a youngest member and a different oldest member.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 17,
+   "b": 23,
+   "rationale": "Claim A concerns Esme's relative age within the group, while claim B describes Leo photographing results for a newsletter. These involve different people and different topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 17,
+   "b": 24,
+   "rationale": "Esme's relative age within the group has no bearing on whether the group plans to return next month to continue coastal work; these are unrelated facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Claim A describes Esme finding a flip-flop while laughing, which has no bearing on any race or competition outcome involving Otto mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "rationale": "Finding trash buried in the sand suggests a beach cleanup activity is underway, which supports the idea that the beach becomes cleaner over time.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 21,
+   "rationale": "A describes Esme finding a discarded flip-flop buried in sand, while B describes organized waste piles on the boardwalk; these are different locations and activities with no direct bearing on each other, though both suggest a beach cleanup context.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  },
+  {
+   "a": 18,
+   "b": 22,
+   "rationale": "Claim A describes Esme's reaction to finding an object in the sand, while claim B states a fact about relative ages among a group. Neither has any bearing on the other's truth.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 18,
+   "b": 23,
+   "rationale": "A describes Esme finding a flip-flop while B describes Leo photographing results, likely from a related activity like a beach cleanup, but no direct logical connection is stated between them.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 18,
+   "b": 24,
+   "rationale": "A describes a lighthearted moment while finding an object in the sand; B describes future plans to continue coastline work. These are largely independent events with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "rationale": "Claim A concerns a competitive finishing order between two people, while claim B describes the appearance of a beach becoming cleaner by midday. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 19,
+   "b": 21,
+   "rationale": "Claim A concerns a competitive finishing order between two people, while claim B describes an unrelated scene of sorted waste along a boardwalk. Neither statement bears on the truth or likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 19,
+   "b": 22,
+   "rationale": "The claim about Otto finishing ahead of Esme concerns race/competition order, while the claim about Leo being oldest concerns age comparison; these are independent dimensions with no logical connection given.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 23,
+   "rationale": "Claim A concerns the relative finishing order of Otto and Esme, while claim B concerns Leo photographing results for a newsletter. Neither statement bears on the other's likelihood or truth.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 19,
+   "b": 24,
+   "rationale": "Claim A concerns a competitive or ranking outcome between two individuals, while claim B concerns future plans to return to a coastal work site; the two describe unrelated situations with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "rationale": "A clean beach by midday is consistent with, and plausibly explained by, waste having been collected and sorted into piles along the boardwalk, suggesting a cleanup effort occurred.",
+   "relation": "supports",
+   "confidence": 0.68
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "rationale": "The beach cleanliness claim has no bearing on the age comparison among the group members; they concern entirely unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "rationale": "A cleaner beach at midday provides a plausible motivating result that Leo would want to document for the newsletter, so A supports the likelihood of B occurring.",
+   "relation": "supports",
+   "confidence": 0.65
+  },
+  {
+   "a": 20,
+   "b": 24,
+   "rationale": "A describes a successful clean-up result, which makes it plausible that the volunteers or workers involved would want to continue their coastal work in the future, but the two claims describe different, only loosely related events.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 21,
+   "b": 22,
+   "rationale": "The claims concern entirely different subjects (waste piles versus a person's relative age) and share no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 21,
+   "b": 23,
+   "rationale": "The neat, organized piles described in A provide a plausible and photogenic subject matching B's described action of photographing results for a newsletter, making B more likely though not certain.",
+   "relation": "supports",
+   "confidence": 0.7
+  },
+  {
+   "a": 21,
+   "b": 24,
+   "rationale": "A describes a result of some cleanup effort (sorted waste piles), which plausibly reflects the same activity B references as ongoing coastline work; this makes B's plan to continue more coherent and likely, but they are not strictly logically connected.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 22,
+   "b": 23,
+   "rationale": "Being the oldest among a group has no logical bearing on whether Leo photographed results for a newsletter; these are unrelated facts about Leo.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 22,
+   "b": 24,
+   "rationale": "Leo's relative age has no bearing on the group's plans to return next month; the two statements concern unrelated aspects of the situation.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 23,
+   "b": 24,
+   "rationale": "A shows Leo documenting current results, while B describes future plans to continue related work; these are compatible activities that could naturally occur together in the same project.",
+   "relation": "unrelated",
+   "confidence": 0.65
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "otto",
+    "mentions": [
+     "Otto"
+    ]
+   },
+   {
+    "id": "kira",
+    "mentions": [
+     "Kira",
+     "she"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   },
+   {
+    "id": "esme",
+    "mentions": [
+     "Esme",
+     "her"
+    ]
+   },
+   {
+    "id": "leo",
+    "mentions": [
+     "Leo",
+     "his"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "finish_order",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [],
+  "orders": [
+   {
+    "claim_id": 1,
+    "attribute": "arrival_order",
+    "subject": "kira",
+    "comparative": "after",
+    "object": "otto",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 11,
+    "attribute": "height",
+    "subject": "cleo",
+    "comparative": "taller than",
+    "object": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 12,
+    "attribute": "height",
+    "subject": "cleo",
+    "comparative": "shorter than",
+    "object": "otto",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 14,
+    "attribute": "finish_order",
+    "subject": "otto",
+    "comparative": "ahead of",
+    "object": "kira",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 16,
+    "attribute": "finish_order",
+    "subject": "kira",
+    "comparative": "ahead of",
+    "object": "esme",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 19,
+    "attribute": "finish_order",
+    "subject": "otto",
+    "comparative": "ahead of",
+    "object": "esme",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [
+   {
+    "claim_id": 0,
+    "attribute": "arrival_order",
+    "entity": "otto",
+    "comparative": "first",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 4,
+    "attribute": "finish_order",
+    "entity": "esme",
+    "comparative": "last",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "entity": "esme",
+    "comparative": "youngest",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "age",
+    "entity": "leo",
+    "comparative": "oldest",
+    "confidence": 0.9
+   }
+  ],
+  "senses": [
+   {
+    "attribute": "arrival_order",
+    "comparative": "after",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_order",
+    "comparative": "first",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "shorter than",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "finish_order",
+    "comparative": "ahead of",
+    "greater_side": "object"
+   },
+   {
+    "attribute": "finish_order",
+    "comparative": "last",
+    "greater_side": "max"
+   },
+   {
+    "attribute": "age",
+    "comparative": "youngest",
+    "greater_side": "min"
+   },
+   {
+    "attribute": "age",
+    "comparative": "oldest",
+    "greater_side": "max"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 25,
+  "pairs_requested": 300,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 11,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [
+   [
+    5,
+    18
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    23
+   ],
+   [
+    13,
+    20
+   ],
+   [
+    13,
+    21
+   ]
+  ],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_order": "sequence",
+    "finish_order": "sequence",
+    "height": "magnitude",
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [
+    {
+     "claim_id": 0,
+     "attribute": "arrival_order",
+     "entity": "otto",
+     "extreme": "min",
+     "edges": 1
+    },
+    {
+     "claim_id": 4,
+     "attribute": "finish_order",
+     "entity": "esme",
+     "extreme": "max",
+     "edges": 2
+    },
+    {
+     "claim_id": 17,
+     "attribute": "age",
+     "entity": "esme",
+     "extreme": "min",
+     "edges": 1
+    },
+    {
+     "claim_id": 22,
+     "attribute": "age",
+     "entity": "leo",
+     "extreme": "max",
+     "edges": 1
+    }
+   ],
+   "extreme_edges": 5,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 25,
+  "n_edges": 40,
+  "verdict_inconsistent": false,
+  "verdict_clauses": [],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   3
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [],
+  "truth_assignment": [
+   0.9999999999999999,
+   1.0,
+   0.9999999999999998,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999997,
+   0.9999999999999994,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999998,
+   1.0000000000000002,
+   0.9999999999999997,
+   1.0,
+   1.0000000000000002,
+   0.9999999999999998,
+   0.9999999999999998,
+   0.9999999999999999,
+   0.9999999999999998,
+   1.0000000000000002,
+   0.9999999999999997,
+   0.9999999999999999
+  ],
+  "claim_residuals": [
+   2.834968878138011e-32,
+   4.129193800766234e-32,
+   1.2634100435180267e-31,
+   0.0,
+   4.338734978715565e-32,
+   2.7117093616972283e-32,
+   0.0,
+   0.0,
+   2.2125083201120565e-31,
+   7.709882753370982e-31,
+   0.0,
+   0.0,
+   0.0,
+   1.3805065841367706e-31,
+   8.135128085091684e-32,
+   2.4467014013495446e-31,
+   0.0,
+   4.930380657631324e-32,
+   1.318876825916379e-31,
+   1.2658752338468423e-31,
+   2.801688808699e-31,
+   1.5937455475793256e-31,
+   4.930380657631324e-32,
+   1.516092052221632e-31,
+   8.011868568650901e-32
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 1,
+    "residual": 9.244463733058732e-33
+   },
+   {
+    "a": 0,
+    "b": 19,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 0,
+    "b": 20,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 14,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 2,
+    "b": 9,
+    "residual": 6.101346063818763e-32
+   },
+   {
+    "a": 2,
+    "b": 15,
+    "residual": 8.011868568650901e-33
+   },
+   {
+    "a": 2,
+    "b": 20,
+    "residual": 8.011868568650901e-33
+   },
+   {
+    "a": 2,
+    "b": 21,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 5,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 4,
+    "b": 19,
+    "residual": 4.338734978715565e-32
+   },
+   {
+    "a": 5,
+    "b": 16,
+    "residual": 0.0
+   },
+   {
+    "a": 5,
+    "b": 19,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 8,
+    "b": 9,
+    "residual": 2.958228394578794e-32
+   },
+   {
+    "a": 8,
+    "b": 13,
+    "residual": 8.011868568650901e-33
+   },
+   {
+    "a": 8,
+    "b": 15,
+    "residual": 0.0
+   },
+   {
+    "a": 8,
+    "b": 18,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 8,
+    "b": 20,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 8,
+    "b": 21,
+    "residual": 6.162975822039155e-33
+   },
+   {
+    "a": 8,
+    "b": 24,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 9,
+    "b": 13,
+    "residual": 6.656013887802286e-32
+   },
+   {
+    "a": 9,
+    "b": 15,
+    "residual": 3.4512664603419264e-32
+   },
+   {
+    "a": 9,
+    "b": 18,
+    "residual": 6.101346063818763e-32
+   },
+   {
+    "a": 9,
+    "b": 20,
+    "residual": 1.3805065841367706e-31
+   },
+   {
+    "a": 9,
+    "b": 21,
+    "residual": 7.210681711785812e-32
+   },
+   {
+    "a": 13,
+    "b": 15,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 13,
+    "b": 18,
+    "residual": 0.0
+   },
+   {
+    "a": 13,
+    "b": 24,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 15,
+    "b": 18,
+    "residual": 6.779273404243071e-33
+   },
+   {
+    "a": 15,
+    "b": 20,
+    "residual": 4.190823558986625e-32
+   },
+   {
+    "a": 15,
+    "b": 21,
+    "residual": 8.011868568650901e-33
+   },
+   {
+    "a": 15,
+    "b": 23,
+    "residual": 0.0
+   },
+   {
+    "a": 15,
+    "b": 24,
+    "residual": 2.7117093616972283e-32
+   },
+   {
+    "a": 17,
+    "b": 22,
+    "residual": 0.0
+   },
+   {
+    "a": 18,
+    "b": 20,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 20,
+    "b": 21,
+    "residual": 8.381647117973251e-33
+   },
+   {
+    "a": 20,
+    "b": 23,
+    "residual": 3.2047474274603606e-32
+   },
+   {
+    "a": 20,
+    "b": 24,
+    "residual": 0.0
+   },
+   {
+    "a": 21,
+    "b": 23,
+    "residual": 8.628166150854816e-33
+   },
+   {
+    "a": 21,
+    "b": 24,
+    "residual": 6.779273404243071e-33
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 9352595,
+   "output_tokens": 862944,
+   "thinking_tokens": 0,
+   "calls": 23232,
+   "api_calls": 8860,
+   "cache_hits": 14372,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 26.894814999999987,
+   "cache_write_tokens": 3270,
+   "cache_read_tokens": 245250,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 10215539,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    1,
+    2,
+    4,
+    5,
+    8,
+    9,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19,
+    20,
+    21,
+    23,
+    24
+   ],
+   [
+    3
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    10
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    17,
+    22
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": [
+   {
+    "a": 5,
+    "b": 18,
+    "rationale": "A has Esme jogging while still tying her shoelaces, implying she is mid-motion and occupied with her shoes; B has her laughing while finding a flip-flop buried in sand, a different activity. These could occur at different moments during the same beach outing, so both can be true without contradiction, though the timing of doing both nearly simultaneously is a bit awkward.",
+    "confidence": 0.55
+   },
+   {
+    "a": 6,
+    "b": 7,
+    "rationale": "If Leo's arms were full with a cooler and a clipboard, it would be awkward or difficult for him to wave, creating tension between the two claims without strictly contradicting each other.",
+    "confidence": 0.65
+   },
+   {
+    "a": 7,
+    "b": 23,
+    "rationale": "If Leo's arms are full with a cooler and clipboard, taking a photograph (which typically requires free hands to operate a camera or phone) becomes awkward or requires first setting items down, making B surprising given A though not impossible.",
+    "confidence": 0.65
+   },
+   {
+    "a": 13,
+    "b": 20,
+    "rationale": "A describes lots of trash washed up overnight, which makes it somewhat surprising that the beach would look remarkably cleaner by midday unless a cleanup occurred; both can be true but sit awkwardly together.",
+    "confidence": 0.65
+   },
+   {
+    "a": 13,
+    "b": 21,
+    "rationale": "A describes scattered trash washed up on the tide line overnight, while B describes neatly sorted piles along the boardwalk; these could both be true if someone later sorted the debris, but the loose scattering implied by A sits oddly with the neat organization in B.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 1,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "kira",
+   "b": "otto",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "cleo",
+   "b": "kira",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 12,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "otto",
+   "b": "cleo",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "kira",
+   "b": "otto",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 16,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "kira",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 19,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "otto",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 0,
+   "attribute": "arrival_order",
+   "kind": "greater",
+   "a": "kira",
+   "b": "otto",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 4,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "kira",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 4,
+   "attribute": "finish_order",
+   "kind": "greater",
+   "a": "esme",
+   "b": "otto",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  },
+  {
+   "claim_id": 17,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "leo",
+   "b": "esme",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "min"
+  },
+  {
+   "claim_id": 22,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "leo",
+   "b": "esme",
+   "confidence": 0.9,
+   "derived_from_extreme": true,
+   "extreme": "max"
+  }
+ ]
+}

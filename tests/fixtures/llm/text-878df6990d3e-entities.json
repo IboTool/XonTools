@@ -1,0 +1,132 @@
+{
+ "request": "59fc5643967df4f8ffb0d4ea48c55d4196bdcd93b44601123bbee8cd2d72aac1",
+ "tag": "text-878df6990d3e-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "jun",
+    "mentions": [
+     "Jun"
+    ]
+   },
+   {
+    "id": "gia",
+    "mentions": [
+     "Gia"
+    ]
+   },
+   {
+    "id": "gus",
+    "mentions": [
+     "Gus"
+    ]
+   },
+   {
+    "id": "zeno",
+    "mentions": [
+     "Zeno"
+    ]
+   },
+   {
+    "id": "alma",
+    "mentions": [
+     "Alma"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "rank",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 2,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "gus",
+    "b": "gia",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 5,
+    "attribute": "height",
+    "kind": "greater",
+    "a": "jun",
+    "b": "rowers",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 7,
+    "attribute": "team",
+    "kind": "same",
+    "a": "gia",
+    "b": "gus",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 9,
+    "attribute": "team",
+    "kind": "same",
+    "a": "gus",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 13,
+    "attribute": "team",
+    "kind": "different",
+    "a": "gia",
+    "b": "alma",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "rank",
+    "kind": "greater",
+    "a": "alma",
+    "b": "jun",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 17,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "zeno",
+    "b": "gus",
+    "confidence": 0.9
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2108,
+  "output_tokens": 546,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

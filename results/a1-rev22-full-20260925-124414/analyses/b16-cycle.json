@@ -1,0 +1,1964 @@
+{
+ "label": "b16-cycle",
+ "engine_version": "2.2",
+ "threshold": 0.5,
+ "model": "claude-sonnet-5",
+ "world_knowledge": false,
+ "tag": "text-5bd0d0e24262",
+ "evidence": [],
+ "claims": [
+  {
+   "id": 0,
+   "text": "Sami is the event organizer.",
+   "span": "Sami is the event organizer",
+   "kind": "premise"
+  },
+  {
+   "id": 1,
+   "text": "Pia arrived early, carrying a large poster board wrapped in plastic.",
+   "span": "Pia arrived early, carrying a large poster board wrapped in plastic to protect it from the morning drizzle",
+   "kind": "asserted"
+  },
+  {
+   "id": 2,
+   "text": "Pia wrapped the poster board in plastic to protect it from the morning drizzle.",
+   "span": "carrying a large poster board wrapped in plastic to protect it from the morning drizzle",
+   "kind": "asserted"
+  },
+  {
+   "id": 3,
+   "text": "Ivo showed up a few minutes later than Pia.",
+   "span": "Ivo showed up a few minutes later",
+   "kind": "asserted"
+  },
+  {
+   "id": 4,
+   "text": "Ivo greeted several classmates as he set up his volcano model near the entrance.",
+   "span": "greeting several classmates as he set up his volcano model near the entrance",
+   "kind": "asserted"
+  },
+  {
+   "id": 5,
+   "text": "Fay booked the hall.",
+   "span": "Fay booked the hall",
+   "kind": "asserted"
+  },
+  {
+   "id": 6,
+   "text": "Rosa is slightly taller than Sami.",
+   "span": "Rosa, who is slightly taller than Sami",
+   "kind": "asserted"
+  },
+  {
+   "id": 7,
+   "text": "Rosa spent the morning arranging her display about renewable energy sources.",
+   "span": "spent the morning arranging her display about renewable energy sources",
+   "kind": "asserted"
+  },
+  {
+   "id": 8,
+   "text": "Pia is in the same study group as Ivo.",
+   "span": "Pia is in the same study group as Ivo",
+   "kind": "asserted"
+  },
+  {
+   "id": 9,
+   "text": "Sami checked in with the judges to confirm the schedule for the afternoon presentations.",
+   "span": "Sami checked in with the judges to confirm the schedule for the afternoon presentations",
+   "kind": "asserted"
+  },
+  {
+   "id": 10,
+   "text": "Sami moved briskly between tables.",
+   "span": "moving briskly between tables",
+   "kind": "asserted"
+  },
+  {
+   "id": 11,
+   "text": "Ivo is in the same study group as Rosa.",
+   "span": "Ivo is in the same study group as Rosa",
+   "kind": "asserted"
+  },
+  {
+   "id": 12,
+   "text": "Fay ranks among the top students in her class.",
+   "span": "Fay, who ranks among the top students in her class",
+   "kind": "asserted"
+  },
+  {
+   "id": 13,
+   "text": "Fay helped several younger participants organize their materials before the judging began.",
+   "span": "helped several younger participants organize their materials before the judging began",
+   "kind": "asserted"
+  },
+  {
+   "id": 14,
+   "text": "Pia is not in the same study group as Rosa.",
+   "span": "Pia is not in the same study group as Rosa",
+   "kind": "asserted"
+  },
+  {
+   "id": 15,
+   "text": "Sami is a year older than Ivo.",
+   "span": "Sami is a year older than Ivo",
+   "kind": "asserted"
+  },
+  {
+   "id": 16,
+   "text": "Sami and Ivo often work together on unrelated class projects.",
+   "span": "they often work together on unrelated class projects",
+   "kind": "asserted"
+  },
+  {
+   "id": 17,
+   "text": "Rosa arrived just after Fay.",
+   "span": "Rosa arrived just after Fay",
+   "kind": "asserted"
+  },
+  {
+   "id": 18,
+   "text": "Rosa and Fay chatted about their weekend plans before the fair officially started.",
+   "span": "both chatting about their weekend plans before the fair officially started",
+   "kind": "asserted"
+  },
+  {
+   "id": 19,
+   "text": "Pia and Sami compared notes on judging criteria while waiting for the results to be announced.",
+   "span": "Pia and Sami compared notes on judging criteria while waiting for the results to be announced",
+   "kind": "asserted"
+  }
+ ],
+ "relations": [
+  {
+   "a": 0,
+   "b": 1,
+   "rationale": "Sami's role as event organizer has no bearing on whether Pia arrived early with a poster board; these describe unrelated people and actions.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "rationale": "A identifies Sami's role as event organizer, which has no bearing on whether Pia wrapped a poster board in plastic due to drizzle; the two claims concern different people and unrelated actions.",
+   "relation": "unrelated",
+   "confidence": 0.93
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "rationale": "Claim A establishes Sami's role as event organizer, which has no bearing on the relative arrival times of Ivo and Pia mentioned in claim B.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "rationale": "Claim A concerns Sami's role as event organizer, while claim B describes Ivo's unrelated actions at what appears to be a science fair; neither statement affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "rationale": "Knowing Sami is the event organizer says nothing definitive about who booked the hall; Fay could have booked it as a delegated task or independently. There's no logical connection established between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "rationale": "Being the event organizer says nothing about Sami's height relative to Rosa; these are independent facts about different attributes.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "rationale": "Claim A identifies Sami's role as event organizer, while claim B describes Rosa's unrelated activity of arranging a display; neither statement bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "rationale": "The claim about Sami's role as event organizer has no logical or topical connection to Pia and Ivo's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "rationale": "Being the event organizer makes it plausible and expected that Sami would coordinate with judges about scheduling, so A supports B.",
+   "relation": "supports",
+   "confidence": 0.72
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "rationale": "Being the event organizer plausibly explains why Sami would be moving briskly between tables, e.g. managing the event, but it doesn't necessarily entail it; the two are compatible and mildly supportive.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "rationale": "The claim about Sami being the event organizer has no logical or contextual connection to Ivo's study group membership with Rosa; they involve different people and unrelated domains.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "rationale": "Claim A concerns Sami's role as event organizer, while claim B concerns Fay's academic ranking. There is no logical or causal link between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 0,
+   "b": 13,
+   "rationale": "Sami being the event organizer does not preclude Fay from helping participants with their materials; these are different roles and actions that can coexist without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "rationale": "Claim A is about Sami being an event organizer, which has no logical or thematic connection to whether Pia and Rosa share a study group.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 15,
+   "rationale": "A claim about Sami's professional role as event organizer has no bearing on Sami's age relative to Ivo; the two facts are independent.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 16,
+   "rationale": "Being the event organizer doesn't inherently relate to or preclude collaborating with Ivo on separate class projects; these are independent facts about Sami's activities.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 0,
+   "b": 17,
+   "rationale": "Claim A states Sami's role as event organizer, while claim B describes arrival order between Rosa and Fay. These involve different people and unrelated facts, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 0,
+   "b": 18,
+   "rationale": "A states a role for Sami, which has no bearing on whether Rosa and Fay chatted before the fair started; the claims concern different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 0,
+   "b": 19,
+   "rationale": "Sami being the event organizer doesn't preclude also chatting with Pia about judging criteria while waiting for results; the two roles/activities are compatible and largely independent.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "rationale": "A establishes that Pia arrived early with a poster board wrapped in plastic, which is consistent with and slightly supports B's explanation for why she wrapped it, though it doesn't confirm the specific motive of protecting it from drizzle.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "rationale": "A establishes Pia's arrival as early, and B states Ivo arrived a few minutes after Pia, which is consistent with A and even implies a natural sequence of events without conflict.",
+   "relation": "supports",
+   "confidence": 0.6
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "rationale": "Both describe different people arriving/setting up for what seems like a shared event (e.g., a science fair), but neither claim asserts anything about the other's timing, location relative to the entrance, or interaction, so there's no logical support or conflict.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "rationale": "Claim A describes Pia's arrival and belongings, which has no bearing on whether Fay booked the hall; the two events are unrelated in content.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "rationale": "Claim A describes Pia arriving with a poster board, while claim B is about relative heights of Rosa and Sami. The two claims share no common subject or context that would make one bear on the other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "rationale": "A describes Pia arriving early with a poster, while B describes Rosa's separate activity; these could easily coexist at an event like a science fair without conflict or reinforcement.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "rationale": "A describes Pia's arrival and what she carried, which has no bearing on her group membership with Ivo. The two claims concern unrelated aspects of Pia's activities.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "rationale": "Both claims describe different people doing unrelated preparatory actions, possibly at the same event, but neither implies or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "rationale": "Both describe people in what seems to be the same event setting, but there is no direct logical connection between Pia's early arrival with a poster board and Sami's movement between tables.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "rationale": "Claim A describes Pia's arrival with a poster board, while claim B is about Ivo and Rosa's study group membership; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "rationale": "Claim A describes Pia arriving with a poster board, while claim B describes Fay's academic ranking. The two involve different people and unrelated subject matter, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 13,
+   "rationale": "Both describe activities before judging, but they involve different people (Pia vs Fay) and different actions with no stated connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 14,
+   "rationale": "Claim A describes Pia's arrival and belongings, which has no bearing on group membership with Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 1,
+   "b": 15,
+   "rationale": "Claim A concerns Pia's arrival and belongings, while claim B concerns the relative ages of Sami and Ivo. There is no shared subject or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 1,
+   "b": 16,
+   "rationale": "Claim A describes Pia's arrival with a poster board, while claim B discusses Sami and Ivo's collaboration habits on unrelated projects; these involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 1,
+   "b": 17,
+   "rationale": "Claim A describes Pia's arrival and what she carried, while claim B describes Rosa arriving just after Fay; these involve different people and events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 1,
+   "b": 18,
+   "rationale": "Both events could occur around the same time before the fair starts, with Pia arriving early while Rosa and Fay chat; nothing in A implies or precludes B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 1,
+   "b": 19,
+   "rationale": "A establishes Pia arrived early with a poster board, which is plausible background for a competition or fair; B describes her later waiting for results with Sami, which is consistent with the same event but not directly implied by A.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "rationale": "A describes Pia's actions with a poster board in drizzle, while B describes Ivo's arrival time relative to Pia; these concern different subjects and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "rationale": "Both claims seem to describe concurrent activity possibly at a science fair, but A's content about Pia protecting a poster from drizzle has no bearing on Ivo greeting classmates while setting up his volcano model.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "rationale": "These two claims describe unrelated events involving different people and actions with no logical or causal connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "rationale": "Claim A concerns Pia protecting poster board from drizzle, while claim B concerns relative heights of Rosa and Sami; they share no common subject, object, or context.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "rationale": "Both describe morning activities involving display materials by different people, but A's protective action doesn't directly imply anything about B's unrelated task of arranging a display.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "rationale": "The claim about wrapping the poster board in plastic has no logical connection to who is in Pia's study group; these describe unrelated facts about Pia.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "rationale": "Both claims describe unrelated preparatory actions by different people at what may be the same event, but neither entails or conflicts with the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "rationale": "Claim A describes Pia protecting a poster board from drizzle, while claim B describes Sami moving between tables; they involve different subjects and actions with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "rationale": "The claim about Pia protecting a poster from drizzle has no connection to Ivo's study group membership with Rosa; they involve different people and topics with no logical link.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "rationale": "Claim A concerns Pia protecting a poster board from drizzle, while claim B concerns Fay's academic ranking. These involve different people and unrelated subject matter with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 13,
+   "rationale": "Claim A concerns Pia protecting a poster board from rain, while claim B concerns Fay assisting other participants with materials; they involve different people and actions with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 14,
+   "rationale": "Claim A concerns Pia protecting a poster from rain, while claim B concerns her study group membership relative to Rosa; these topics have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 15,
+   "rationale": "Claim A concerns Pia protecting a poster board from drizzle, while claim B concerns the relative ages of Sami and Ivo. There is no shared subject, context, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 2,
+   "b": 16,
+   "rationale": "Claim A concerns Pia protecting a poster board from drizzle, while claim B concerns Sami and Ivo working together on class projects. There is no shared subject, context, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 17,
+   "rationale": "Claim A discusses Pia protecting a poster board from drizzle, while claim B discusses Rosa's arrival relative to Fay; they share no common subject or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 2,
+   "b": 18,
+   "rationale": "Claim A concerns Pia protecting a poster board from drizzle, while claim B describes an unrelated conversation between Rosa and Fay before an event. There is no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 2,
+   "b": 19,
+   "rationale": "A describes Pia protecting a poster board from drizzle, while B describes Pia waiting for results with Sami; both could occur at the same event without contradiction, but they don't directly influence each other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "rationale": "A states Ivo arrived a bit later than Pia, which is independent of what he did upon arrival, such as greeting classmates and setting up his volcano model near the entrance.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "rationale": "Claim A concerns the relative arrival times of Ivo and Pia, while claim B concerns Fay booking a hall. There is no logical or contextual connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "rationale": "Claim A concerns arrival times of Ivo and Pia, while claim B concerns heights of Rosa and Sami. They involve different people and different attributes, with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "rationale": "Claim A concerns Ivo and Pia's arrival times, while claim B concerns Rosa's activity setting up a display. They share no common subject, time reference, or causal link.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "rationale": "Ivo arriving later than Pia relates to their arrival times but says nothing about their group membership; both claims can independently be true or false without conflict.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "rationale": "Claim A concerns the relative arrival times of Ivo and Pia, while claim B concerns Sami confirming a presentation schedule with judges. Neither statement bears on the other's truth or likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "rationale": "Claim A concerns Ivo's arrival time relative to Pia, while claim B concerns Sami's movement between tables; they involve different people and different circumstances with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "rationale": "A is about relative arrival time between Ivo and Pia, while B is about Ivo's study group membership with Rosa; these concern unrelated aspects of Ivo's life with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "rationale": "Claim A concerns the relative arrival times of Ivo and Pia, while claim B concerns Fay's academic standing. There is no shared subject matter or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 3,
+   "b": 13,
+   "rationale": "Claim A concerns the relative arrival times of Ivo and Pia, while claim B concerns Fay helping other participants with materials before judging. They involve different people and different events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "rationale": "Claim A concerns the relative arrival time of Ivo and Pia, while claim B concerns Pia's study group membership relative to Rosa. These involve entirely different subjects and facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 15,
+   "rationale": "Claim A concerns relative arrival time between Ivo and Pia, while claim B concerns relative age between Sami and Ivo. These are unrelated facts about different attributes and different people pairs.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 16,
+   "rationale": "Claim A concerns Ivo's arrival time relative to Pia, while claim B concerns Ivo's collaboration habits with Sami on class projects. These describe unrelated aspects of Ivo's life with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 17,
+   "rationale": "Claim A describes the relative arrival order of Ivo and Pia, while claim B describes the relative arrival order of Rosa and Fay. These involve different people and are independent events with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 3,
+   "b": 18,
+   "rationale": "Claim A concerns Ivo and Pia's arrival times, while claim B concerns Rosa and Fay's conversation before the fair started. These involve different people and events with no logical connection given in the claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 3,
+   "b": 19,
+   "rationale": "A tells us about Ivo's arrival time relative to Pia but says nothing about Pia's interactions with Sami or the judging context; the two claims describe unrelated events.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "rationale": "Claim A describes Ivo setting up a volcano model near an entrance and greeting classmates, likely at some event; claim B states Fay booked the hall. There's no direct logical connection between these two actions as stated, though they could plausibly be part of the same event context; no support, contradiction, or tension is established.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "rationale": "Claim A describes Ivo's actions at a volcano model display, while claim B compares the heights of Rosa and Sami. These claims involve entirely different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "rationale": "Both describe unrelated students setting up different science fair projects; A's content has no bearing on B's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "rationale": "A describes Ivo greeting classmates while setting up a volcano model, but says nothing about study groups or Pia specifically, so it neither confirms nor denies B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "rationale": "Both describe different people doing unrelated activities at what may be the same event, but neither claim's content bears on the truth or likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "rationale": "A describes Ivo's actions near the entrance while B describes Sami's separate movement between tables; the two claims involve different people and activities with no stated connection.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "rationale": "Claim A describes Ivo setting up a volcano model and greeting classmates, which has no bearing on his study group membership with Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "rationale": "Claim A describes Ivo setting up a volcano model and greeting classmates, which has no connection to Fay's academic ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 13,
+   "rationale": "Both describe different people doing unrelated actions at what may be the same event (a science fair), but neither claim's truth affects the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 14,
+   "rationale": "Claim A concerns Ivo setting up a volcano model and greeting classmates, which has no connection to Pia and Rosa's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 4,
+   "b": 15,
+   "rationale": "Claim A describes Ivo's actions at a science fair or similar event, while claim B states an age relationship between Sami and Ivo. These are unrelated facts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 4,
+   "b": 16,
+   "rationale": "A describes Ivo working alone on his volcano model near the entrance, giving no indication of Sami's involvement; B's claim about frequent collaboration on other projects is neither confirmed nor denied by A.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 4,
+   "b": 17,
+   "rationale": "Claim A describes Ivo's actions at a science fair or similar event and gives no information about Rosa or Fay's arrival order, so the two claims have no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 4,
+   "b": 18,
+   "rationale": "Both describe separate pre-fair activities by different people; they can easily coexist at the same event without one affecting the other's likelihood.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 4,
+   "b": 19,
+   "rationale": "Both describe activities that could plausibly occur at the same science fair event, but neither claim's truth affects the likelihood of the other; they involve different people and independent actions.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "rationale": "These claims concern entirely different topics: one is about booking a venue, the other about relative heights of two people, with no logical or causal connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "rationale": "Fay booking the hall and Rosa arranging her display are independent activities with no stated causal or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "rationale": "Fay booking a hall has no logical or causal connection to Pia's study group membership with Ivo; these describe unrelated events and people.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "rationale": "Booking a hall and checking in with judges about a schedule are independent actions performed by different people with no stated causal or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "rationale": "Booking a hall and moving briskly between tables describe unrelated actions by different people with no logical connection stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "rationale": "Fay booking a hall has no logical or topical connection to Ivo and Rosa's study group membership.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "rationale": "Booking a hall has no logical or evidential bearing on Fay's academic standing; the two claims concern unrelated domains.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 5,
+   "b": 13,
+   "rationale": "Booking a hall and helping participants organize materials are different actions that can both easily be true of the same person; there's no logical connection between them beyond Fay being involved in some event.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 5,
+   "b": 14,
+   "rationale": "The claim about Fay booking the hall has no bearing on group membership between Pia and Rosa; they involve unrelated people and topics.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 15,
+   "rationale": "The two claims concern unrelated events: booking a hall has no logical or causal connection to the relative ages of two other people.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "rationale": "Fay booking a hall has no bearing on whether Sami and Ivo work together on class projects; the two claims involve different people and unconnected activities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 5,
+   "b": 17,
+   "rationale": "A states Fay booked the hall, which says nothing about the order in which Fay and Rosa arrived somewhere; the two claims concern different events with no logical connection given.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 5,
+   "b": 18,
+   "rationale": "Booking the hall is a logistical task that neither confirms nor rules out Fay chatting with Rosa before the fair began; the two events are independent.",
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  {
+   "a": 5,
+   "b": 19,
+   "rationale": "Booking a hall is unrelated to Pia and Sami's conversation about judging criteria; no content link exists between these claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "rationale": "Rosa's height relative to Sami has no bearing on how she spent her morning or the topic of her display; the two claims concern unrelated aspects of Rosa.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "rationale": "The two claims involve entirely different people and topics (relative height vs. study group membership) with no logical or contextual connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "rationale": "Height comparison between Rosa and Sami has no bearing on Sami's action of confirming a schedule with judges.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "rationale": "Rosa's height relative to Sami has no bearing on how briskly Sami moves between tables; the claims concern unrelated attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "rationale": "A's claim about relative height between Rosa and Sami has no bearing on whether Ivo shares a study group with Rosa; these are independent facts about different domains.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "rationale": "Claim A concerns relative height between Rosa and Sami, while claim B concerns Fay's academic ranking; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "rationale": "Claim A concerns relative heights of Rosa and Sami, while claim B concerns Fay helping other participants before judging. They share no common subject, context, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 6,
+   "b": 14,
+   "rationale": "Height comparison between Rosa and Sami has no bearing on whether Pia shares a study group with Rosa; these are independent facts about different attributes and people.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "rationale": "Claim A concerns relative heights of Rosa and Sami, while claim B concerns relative ages of Sami and Ivo; they share a common person (Sami) but discuss unrelated attributes with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 16,
+   "rationale": "A is about relative height between Rosa and Sami, while B concerns Sami and Ivo working together on projects; the two statements share no common subject matter or implication.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 17,
+   "rationale": "Claim A concerns relative height between Rosa and Sami, while claim B concerns arrival order between Rosa and Fay. These involve different attributes and different people, so one has no bearing on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 18,
+   "rationale": "Claim A concerns relative height between Rosa and Sami, while claim B describes a social interaction between Rosa and Fay at a fair; the two statements share only Rosa as a common element and neither influences the likelihood or truth of the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 6,
+   "b": 19,
+   "rationale": "Claim A concerns relative height between Rosa and Sami, while claim B describes Pia and Sami discussing judging criteria before results. These involve different people/topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "rationale": "Claim A concerns Rosa's morning activity with a display about renewable energy, while claim B concerns Pia and Ivo's study group membership. There is no shared subject, causal link, or thematic overlap between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "rationale": "Both claims describe different people doing separate preparatory tasks, likely at the same event, but neither entails or challenges the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "rationale": "Both claims describe activities that could occur at the same event (e.g., a science fair), but A says nothing about Sami or his movements, so there's no logical bearing between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "rationale": "Claim A describes Rosa's activity with her display, while claim B is about Ivo's group membership relative to Rosa. Neither fact bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "rationale": "Claim A describes Rosa's activity preparing a display, while claim B is an unrelated statement about Fay's academic standing. There is no logical or causal connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 13,
+   "rationale": "Both describe plausible independent activities occurring around the same event (likely a science fair), but A's content about Rosa's own display does not confirm or deny anything about Fay helping others organize their materials.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 7,
+   "b": 14,
+   "rationale": "Claim A describes Rosa's morning activity working on a renewable energy display, which has no bearing on whether Pia shares a study group with her.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 7,
+   "b": 15,
+   "rationale": "Claim A concerns Rosa's activity with a renewable energy display, while claim B concerns an age difference between two unrelated individuals, Sami and Ivo. There is no logical or contentual connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 7,
+   "b": 16,
+   "rationale": "Claim A describes Rosa's individual activity on a specific morning, while claim B describes a general pattern between two other people, Sami and Ivo. There is no shared subject, event, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 7,
+   "b": 17,
+   "rationale": "Claim A describes Rosa's activity during the morning, while claim B concerns her arrival time relative to Fay; neither statement informs the other about timing of arrival or order of events.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 7,
+   "b": 18,
+   "rationale": "Both describe plausible activities Rosa could have done on the same morning before a fair started; arranging a display doesn't preclude also chatting with Fay beforehand, and the claims don't specify conflicting timeframes.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "rationale": "Both claims suggest a science fair or competition setting, but they describe different people and activities without any direct logical connection between Rosa's display arranging and Pia and Sami's conversation about judging criteria.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "rationale": "Claim A concerns study group membership of Pia and Ivo, while claim B concerns Sami confirming a presentation schedule with judges. These involve different people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "rationale": "Claim A concerns Pia and Ivo's study group membership, while claim B concerns Sami's movement between tables. There is no shared subject, context, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "rationale": "A places Pia and Ivo in one study group but says nothing about Rosa; B could be true if Rosa is also in that same group, or if study groups overlap/are shared, so there's no necessary conflict, though it's mildly suggestive rather than directly supportive.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "rationale": "Claim A concerns Pia and Ivo's study group membership, while claim B concerns Fay's academic ranking. There is no shared subject or logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 13,
+   "rationale": "Claim A concerns Pia and Ivo's study group membership, while claim B concerns Fay helping younger participants before judging. There is no shared subject, context, or logical connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 14,
+   "rationale": "A states Pia's study group membership with Ivo but says nothing about Rosa's group, so it doesn't determine whether Rosa is in that same group or not.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 8,
+   "b": 15,
+   "rationale": "Being in the same study group as Ivo has no bearing on the age relationship between Sami and Ivo; these are independent facts about different people and attributes.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "rationale": "Both claims describe Ivo's collaborative relationships but with different people and contexts (study group vs class projects), so they can coexist without conflict or meaningful influence on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 8,
+   "b": 17,
+   "rationale": "Claim A concerns study group membership of Pia and Ivo, while claim B concerns the arrival order of Rosa and Fay. There is no shared subject or logical connection between these two claims.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 18,
+   "rationale": "Claim A concerns Pia and Ivo's study group membership, while claim B concerns Rosa and Fay chatting before a fair; the two involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 8,
+   "b": 19,
+   "rationale": "A says Pia's study group includes Ivo, while B describes Pia interacting with Sami about judging criteria; these involve different people and contexts, so A neither confirms nor makes B more or less likely.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "rationale": "Checking in with judges suggests Sami was active and moving around to gather information, which is consistent with moving briskly between tables, though neither entails the other directly.",
+   "relation": "supports",
+   "confidence": 0.55
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "rationale": "Claim A concerns Sami confirming a presentation schedule with judges, while claim B concerns Ivo and Rosa's study group membership; the two describe unrelated people and situations with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "rationale": "Claim A concerns Sami checking a presentation schedule with judges, while claim B is about Fay's academic ranking. There is no shared subject, context, or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 13,
+   "rationale": "Both describe plausible, independent preparatory activities before judging by different people; neither claim's truth affects the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 14,
+   "rationale": "Claim A concerns Sami confirming a presentation schedule with judges, while claim B concerns study group membership of Pia and Rosa; the two describe unrelated people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 15,
+   "rationale": "Claim A concerns Sami's action of confirming a schedule, while claim B concerns Sami's relative age to Ivo; these are unconnected facts with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 9,
+   "b": 16,
+   "rationale": "Claim A describes a specific action by Sami regarding judges and a schedule, while claim B describes a general pattern of collaboration between Sami and Ivo on unrelated projects. These involve different people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 9,
+   "b": 17,
+   "rationale": "Claim A concerns Sami confirming a schedule with judges, while claim B concerns Rosa's arrival relative to Fay. There is no logical or contextual connection between these two events as stated.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 9,
+   "b": 18,
+   "rationale": "Both describe plausible but separate events involving different people at possibly different times around a fair; A does not affect the likelihood of B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 9,
+   "b": 19,
+   "rationale": "Both claims describe Sami engaging in plausible pre/post-presentation activities that could occur on the same day; confirming a schedule and later comparing notes while awaiting results are compatible and even complementary events in a competition context.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "rationale": "Claim A describes Sami's physical movement between tables, while claim B describes an unrelated social/organizational relationship between Ivo and Rosa. There is no shared subject, context, or logical connection between the two.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "rationale": "The two claims describe unrelated people and situations with no logical or causal connection between Sami's physical movement and Fay's academic ranking.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 13,
+   "rationale": "Both claims describe different people performing plausibly simultaneous but independent actions at what may be an event with tables and participants; there is no logical or causal link between Sami's movement and Fay's assistance.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 10,
+   "b": 14,
+   "rationale": "Claim A concerns Sami's physical movement between tables, while claim B concerns Pia and Rosa's study group membership. There is no logical or factual connection between these two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 10,
+   "b": 15,
+   "rationale": "A describes Sami's physical activity while serving or working, whereas B describes a relative age fact about Sami and Ivo. These concern entirely different aspects and neither bears on the other.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 16,
+   "rationale": "Claim A describes a specific physical action of Sami moving between tables, while claim B describes a general pattern of collaboration between Sami and Ivo on class projects. There is no logical connection between the two claims as they describe different contexts and activities.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 17,
+   "rationale": "Claim A describes Sami's movement between tables, while claim B describes the arrival order of Rosa and Fay. These involve different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 10,
+   "b": 18,
+   "rationale": "Claim A describes Sami's movement while claim B describes a conversation between Rosa and Fay about unrelated topics and timing; neither statement bears on the truth or likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 10,
+   "b": 19,
+   "rationale": "A depicts Sami moving quickly between tables, which is a distinct activity from B's scene of Sami discussing judging criteria with Pia while waiting for results; these could occur at different moments and don't directly bear on each other.",
+   "relation": "unrelated",
+   "confidence": 0.6
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "rationale": "Claim A concerns Ivo and Rosa's study group membership, while claim B concerns Fay's academic ranking; they share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "rationale": "Claim A concerns Ivo and Rosa's study group membership, while claim B concerns Fay helping younger participants before judging. They share no common subject, context, or implication.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 14,
+   "rationale": "A states Ivo shares a study group with Rosa, but says nothing about whether Pia shares that group or not, so it neither confirms nor denies B.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 15,
+   "rationale": "Being in the same study group as Rosa has no bearing on age differences between Sami and Ivo; these are independent facts.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 11,
+   "b": 16,
+   "rationale": "A states Ivo shares a study group with Rosa, while B describes Ivo working with Sami on separate class projects; these can both be true simultaneously without conflict, but they don't provide evidence for one another.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 11,
+   "b": 17,
+   "rationale": "Claim A is about study group membership, while claim B concerns arrival order relative to Fay; the two describe unrelated aspects of the scenario with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 11,
+   "b": 18,
+   "rationale": "Claim A establishes a group relationship between Ivo and Rosa, which has no bearing on whether Rosa chatted with Fay before a fair started.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 11,
+   "b": 19,
+   "rationale": "Claim A concerns Ivo and Rosa's study group membership, while claim B concerns Pia and Sami discussing judging criteria; they share no common people or context.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 13,
+   "rationale": "Being a top student doesn't directly bear on whether Fay helped younger participants organize materials before judging; these describe different, unrelated aspects of her behavior and context.",
+   "relation": "unrelated",
+   "confidence": 0.75
+  },
+  {
+   "a": 12,
+   "b": 14,
+   "rationale": "Claim A concerns Fay's academic ranking, while claim B concerns study group membership between Pia and Rosa. There is no shared subject or logical connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 15,
+   "rationale": "Claim A discusses Fay's academic standing while claim B discusses an age difference between two unrelated individuals, Sami and Ivo. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 12,
+   "b": 16,
+   "rationale": "Claim A concerns Fay's academic standing, while claim B concerns Sami and Ivo's collaboration habits; they involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 17,
+   "rationale": "Claim A is about Fay's academic ranking, while claim B is about arrival order between Rosa and Fay. These concern entirely different domains with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 12,
+   "b": 18,
+   "rationale": "A describes Fay's academic standing while B describes a casual social interaction before an event; neither informs the likelihood of the other.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 12,
+   "b": 19,
+   "rationale": "Claim A concerns Fay's academic standing, while claim B describes an unrelated interaction between Pia and Sami about judging criteria. There is no logical or causal connection between the two statements.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "rationale": "Claim A describes Fay helping participants at a judging event, while claim B is about Pia and Rosa's study group membership. The two claims involve different people and contexts with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 15,
+   "rationale": "Claim A discusses Fay helping younger participants at some event, while claim B is an unrelated statement about the relative ages of two different people, Sami and Ivo, with no shared context or entities.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 16,
+   "rationale": "Claim A concerns Fay helping younger participants before judging, while claim B concerns Sami and Ivo's unrelated class projects. There is no shared subject, context, or logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 13,
+   "b": 17,
+   "rationale": "Claim A describes Fay's actions helping others, while claim B is about Rosa's arrival time relative to Fay. These concern different subjects and events with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 13,
+   "b": 18,
+   "rationale": "Both describe Fay engaged in different activities before the fair/judging began; they can both easily be true as she could have both chatted with Rosa and helped other participants in that same pre-event window.",
+   "relation": "unrelated",
+   "confidence": 0.7
+  },
+  {
+   "a": 13,
+   "b": 19,
+   "rationale": "Claim A describes Fay assisting others before judging, while claim B describes Pia and Sami's separate conversation after judging but before results. These involve different people and different time points, with no logical connection between them.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 14,
+   "b": 15,
+   "rationale": "Claim A concerns study group membership of Pia and Rosa, while claim B concerns the relative ages of Sami and Ivo. They share no common subject or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 14,
+   "b": 16,
+   "rationale": "Claim A concerns study group membership between Pia and Rosa, while claim B concerns Sami and Ivo working on separate class projects; they involve different people and different activities with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.97
+  },
+  {
+   "a": 14,
+   "b": 17,
+   "rationale": "Claim A concerns group membership between Pia and Rosa, while claim B concerns arrival timing between Rosa and Fay; these facts don't inform each other.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 18,
+   "rationale": "Claim A concerns Pia and Rosa's study group membership, while claim B concerns Rosa and Fay's conversation at a fair; they share Rosa but address unrelated aspects of her life.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 14,
+   "b": 19,
+   "rationale": "Claim A only concerns Pia's study group relative to Rosa and says nothing about Pia's interactions with Sami or a judging event; these are unrelated topics.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 16,
+   "rationale": "The age difference between Sami and Ivo has no bearing on whether they collaborate on class projects; these are independent facts about the pair.",
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  {
+   "a": 15,
+   "b": 17,
+   "rationale": "The two claims concern entirely different people and relationships (age difference vs. arrival order), with no shared subject matter or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 18,
+   "rationale": "Claim A concerns the ages of Sami and Ivo, while claim B concerns Rosa and Fay chatting before a fair; they involve entirely different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 15,
+   "b": 19,
+   "rationale": "A concerns the age difference between Sami and Ivo, while B describes an interaction between Pia and Sami about judging criteria; these involve different people and topics with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 16,
+   "b": 17,
+   "rationale": "Claim A concerns Sami and Ivo's collaboration on class projects, while claim B concerns the arrival order of Rosa and Fay. These involve entirely different people and events with no logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 18,
+   "rationale": "Claim A concerns Sami and Ivo's collaboration habits, while claim B concerns an unrelated conversation between Rosa and Fay before a fair; they share no common subjects, events, or logical connection.",
+   "relation": "unrelated",
+   "confidence": 0.98
+  },
+  {
+   "a": 16,
+   "b": 19,
+   "rationale": "Claim A describes Sami's frequent collaboration with Ivo on class projects, which is a separate context and set of people from claim B's mention of Sami and Pia discussing judging criteria while awaiting results. The two claims involve different partners and activities, so neither supports nor contradicts the other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "rationale": "A establishes that Rosa and Fay were both present at nearly the same time, which makes it plausible they had opportunity to chat, but it does not itself confirm they actually conversed or discussed weekend plans specifically before the fair started.",
+   "relation": "unrelated",
+   "confidence": 0.55
+  },
+  {
+   "a": 17,
+   "b": 19,
+   "rationale": "Claim A concerns the arrival order of Rosa and Fay, while claim B concerns an unrelated interaction between Pia and Sami about judging criteria. There is no logical or contextual connection between the two claims.",
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  {
+   "a": 18,
+   "b": 19,
+   "rationale": "Both describe pairs of people chatting during downtime at what seems to be the same fair event, but they concern different people and different moments (before start vs. waiting for results), with no logical bearing on each other.",
+   "relation": "unrelated",
+   "confidence": 0.85
+  }
+ ],
+ "entity_relations": {
+  "entities": [
+   {
+    "id": "sami",
+    "mentions": [
+     "Sami"
+    ]
+   },
+   {
+    "id": "pia",
+    "mentions": [
+     "Pia"
+    ]
+   },
+   {
+    "id": "ivo",
+    "mentions": [
+     "Ivo"
+    ]
+   },
+   {
+    "id": "fay",
+    "mentions": [
+     "Fay"
+    ]
+   },
+   {
+    "id": "rosa",
+    "mentions": [
+     "Rosa"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "sequence",
+    "other_greater_means": null
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   },
+   {
+    "key": "study_group",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": null,
+    "other_greater_means": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null,
+    "order_kind": "magnitude",
+    "other_greater_means": null
+   }
+  ],
+  "same_different": [
+   {
+    "claim_id": 8,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "pia",
+    "b": "ivo",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 11,
+    "attribute": "study_group",
+    "kind": "same",
+    "a": "ivo",
+    "b": "rosa",
+    "confidence": 0.98
+   },
+   {
+    "claim_id": 14,
+    "attribute": "study_group",
+    "kind": "different",
+    "a": "pia",
+    "b": "rosa",
+    "confidence": 0.98
+   }
+  ],
+  "orders": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "subject": "ivo",
+    "comparative": "later than",
+    "object": "pia",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 6,
+    "attribute": "height",
+    "subject": "rosa",
+    "comparative": "taller than",
+    "object": "sami",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 15,
+    "attribute": "age",
+    "subject": "sami",
+    "comparative": "older than",
+    "object": "ivo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "arrival_time",
+    "subject": "rosa",
+    "comparative": "after",
+    "object": "fay",
+    "confidence": 0.9
+   }
+  ],
+  "extremes": [],
+  "senses": [
+   {
+    "attribute": "arrival_time",
+    "comparative": "later than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "height",
+    "comparative": "taller than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "age",
+    "comparative": "older than",
+    "greater_side": "subject"
+   },
+   {
+    "attribute": "arrival_time",
+    "comparative": "after",
+    "greater_side": "subject"
+   }
+  ],
+  "unsupported_order_claims": []
+ },
+ "pair_selection": {
+  "mode": "all",
+  "proposed": 0,
+  "blind": [],
+  "invalid_proposed": 0
+ },
+ "diagnostics": {
+  "claims": 20,
+  "pairs_requested": 190,
+  "pairs_missing": [],
+  "relations_ignored": 0,
+  "relations_rescored": [],
+  "pairs_unscored_malformed": [],
+  "zero_weight_relations": 0,
+  "blind_pairs": 0,
+  "blind_pairs_related": 0,
+  "entity_relations": 7,
+  "entity_relations_dropped": 0,
+  "tension_pairs": [],
+  "entity_derivation": {
+   "order_kind": {
+    "arrival_time": "sequence",
+    "height": "magnitude",
+    "study_group": null,
+    "age": "magnitude"
+   },
+   "sense_overrides": [],
+   "unresolved": [],
+   "duplicate_senses": 0,
+   "superlatives": [],
+   "extreme_edges": 0,
+   "unsupported_order_claims": []
+  }
+ },
+ "report": {
+  "n_claims": 20,
+  "n_edges": 5,
+  "verdict_inconsistent": true,
+  "verdict_clauses": [
+   "entity"
+  ],
+  "balanced": true,
+  "conflict": 0.0,
+  "clamp_set": [
+   0
+  ],
+  "harmony": 1.0,
+  "harmony_reason": null,
+  "unanchored_components": [],
+  "component_conflict": {
+   "0": 0.0,
+   "1": 0.0,
+   "2": 0.0,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0
+  },
+  "frustrated_cycle": null,
+  "entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "study_group",
+    "entities": [
+     "pia",
+     "ivo",
+     "rosa"
+    ],
+    "relations": [
+     0,
+     1,
+     2
+    ],
+    "claim_ids": [
+     8,
+     11,
+     14
+    ],
+    "min_confidence": 0.98
+   }
+  ],
+  "truth_assignment": [
+   1.0,
+   1.0,
+   0.9999999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "claim_residuals": [
+   0.0,
+   7.395570986446985e-33,
+   1.9721522630525296e-32,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "edge_residuals": [
+   {
+    "a": 0,
+    "b": 9,
+    "residual": 0.0
+   },
+   {
+    "a": 0,
+    "b": 10,
+    "residual": 0.0
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "residual": 7.395570986446985e-33
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "residual": 0.0
+   },
+   {
+    "a": 9,
+    "b": 10,
+    "residual": 0.0
+   }
+  ],
+  "residual_ranking": [],
+  "culprits": [],
+  "llm_usage": {
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "thinking_tokens": 0,
+   "calls": 6192,
+   "api_calls": 0,
+   "cache_hits": 6192,
+   "fixture_hits": 0,
+   "stale_fixtures": 0,
+   "estimated_cost_usd": 0.0,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 0,
+   "batch_calls": 0,
+   "transport_retries": 0,
+   "spent_tokens": 0,
+   "budget_tokens": 23786844
+  },
+  "components": [
+   [
+    0,
+    9,
+    10
+   ],
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    4
+   ],
+   [
+    5
+   ],
+   [
+    6
+   ],
+   [
+    7
+   ],
+   [
+    8
+   ],
+   [
+    11
+   ],
+   [
+    12
+   ],
+   [
+    13
+   ],
+   [
+    14
+   ],
+   [
+    15
+   ],
+   [
+    16
+   ],
+   [
+    17
+   ],
+   [
+    18
+   ],
+   [
+    19
+   ]
+  ],
+  "component_degenerate": {
+   "0": false,
+   "1": false,
+   "2": false,
+   "3": false,
+   "4": false,
+   "5": false,
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": false,
+   "10": false,
+   "11": false,
+   "12": false,
+   "13": false,
+   "14": false,
+   "15": false
+  },
+  "degenerate": false,
+  "direct_contradictions": [],
+  "confident_frustrated_cycle": null,
+  "verdict_entity_contradictions": [
+   {
+    "type": "different_within_class",
+    "attribute": "study_group",
+    "entities": [
+     "pia",
+     "ivo",
+     "rosa"
+    ],
+    "relations": [
+     0,
+     1,
+     2
+    ],
+    "claim_ids": [
+     8,
+     11,
+     14
+    ],
+    "min_confidence": 0.98
+   }
+  ],
+  "engine_version": "2.2",
+  "threshold": 0.5,
+  "tension_pairs": []
+ },
+ "derived_entity_relations": [
+  {
+   "claim_id": 8,
+   "attribute": "study_group",
+   "kind": "same",
+   "a": "pia",
+   "b": "ivo",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 11,
+   "attribute": "study_group",
+   "kind": "same",
+   "a": "ivo",
+   "b": "rosa",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 14,
+   "attribute": "study_group",
+   "kind": "different",
+   "a": "pia",
+   "b": "rosa",
+   "confidence": 0.98,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 3,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "ivo",
+   "b": "pia",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 6,
+   "attribute": "height",
+   "kind": "greater",
+   "a": "rosa",
+   "b": "sami",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 15,
+   "attribute": "age",
+   "kind": "greater",
+   "a": "sami",
+   "b": "ivo",
+   "confidence": 0.95,
+   "derived_from_extreme": false,
+   "extreme": null
+  },
+  {
+   "claim_id": 17,
+   "attribute": "arrival_time",
+   "kind": "greater",
+   "a": "rosa",
+   "b": "fay",
+   "confidence": 0.9,
+   "derived_from_extreme": false,
+   "extreme": null
+  }
+ ]
+}

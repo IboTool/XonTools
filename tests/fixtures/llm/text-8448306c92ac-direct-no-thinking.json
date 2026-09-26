@@ -1,0 +1,26 @@
+{
+ "request": "40e15d23dc5ab37112be0cf5d4b80bf283f2f0bc8c84c9f9d9b450f001a1b78f",
+ "tag": "text-8448306c92ac-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Finn and Yara worked different shifts.",
+     "Yara and Bo worked different shifts.",
+     "Finn and Bo worked different shifts.",
+     "The shop ran two shifts."
+    ],
+    "explanation": "With only two shifts, three people cannot all be pairwise on different shifts, since one of them would have to share a shift with another."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1054,
+  "output_tokens": 123,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

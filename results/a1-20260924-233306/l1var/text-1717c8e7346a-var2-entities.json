@@ -1,0 +1,151 @@
+{
+ "request": "81f49835ab60ac8ddd0ae9d780599522a69fd5904fae146439c8a00d40572577",
+ "tag": "text-1717c8e7346a-var2-entities",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "EntityGraphSpec",
+ "output": {
+  "entities": [
+   {
+    "id": "finn",
+    "mentions": [
+     "Finn"
+    ]
+   },
+   {
+    "id": "dara",
+    "mentions": [
+     "Dara"
+    ]
+   },
+   {
+    "id": "vik",
+    "mentions": [
+     "Vik"
+    ]
+   },
+   {
+    "id": "yara",
+    "mentions": [
+     "Yara"
+    ]
+   },
+   {
+    "id": "cleo",
+    "mentions": [
+     "Cleo"
+    ]
+   }
+  ],
+  "attributes": [
+   {
+    "key": "arrival_time",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "team",
+    "arity": "multi",
+    "arity_span": "There were three teams."
+   },
+   {
+    "key": "height",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "age",
+    "arity": "unknown",
+    "arity_span": null
+   },
+   {
+    "key": "captain",
+    "arity": "unknown",
+    "arity_span": null
+   }
+  ],
+  "relations": [
+   {
+    "claim_id": 3,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "dara",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 5,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "vik",
+    "b": "dara",
+    "confidence": 0.85
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "dara",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 8,
+    "attribute": "arrival_time",
+    "kind": "greater",
+    "a": "yara",
+    "b": "vik",
+    "confidence": 0.6
+   },
+   {
+    "claim_id": 12,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "cleo",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 17,
+    "attribute": "team",
+    "kind": "different",
+    "a": "cleo",
+    "b": "yara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 18,
+    "attribute": "age",
+    "kind": "greater",
+    "a": "dara",
+    "b": "vik",
+    "confidence": 0.9
+   },
+   {
+    "claim_id": 22,
+    "attribute": "team",
+    "kind": "different",
+    "a": "dara",
+    "b": "yara",
+    "confidence": 0.95
+   },
+   {
+    "claim_id": 23,
+    "attribute": "captain",
+    "kind": "different",
+    "a": "finn",
+    "b": "finn",
+    "confidence": 0.3
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2200,
+  "output_tokens": 650,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b02-direct",
+ "repetition": 2,
+ "call": 225
+}

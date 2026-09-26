@@ -1,0 +1,26 @@
+{
+ "request": "73e5d978945a101c96216d82765212c84a5e9ec36c7c997aec2b4d5558fb48f1",
+ "tag": "text-c20252601b70-direct-no-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Dev and Hugo were on different teams.",
+     "Hugo and Cleo were on different teams.",
+     "Dev and Cleo were on different teams.",
+     "There were two teams."
+    ],
+    "explanation": "With only two teams, if Dev and Hugo differ, and Hugo and Cleo differ, then Cleo must be on the same team as Dev, contradicting the statement that Dev and Cleo were on different teams."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 992,
+  "output_tokens": 147,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn"
+}

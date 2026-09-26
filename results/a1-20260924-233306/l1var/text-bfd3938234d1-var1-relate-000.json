@@ -1,0 +1,160 @@
+{
+ "request": "930c17b5e60927e12469f88d386d85671e90190c66d40aebe4cdfa6b8b3f6faa",
+ "tag": "text-bfd3938234d1-var1-relate-000",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "RelationList",
+ "output": {
+  "relations": [
+   {
+    "a": 0,
+    "b": 1,
+    "rationale": "Ben's role as treasurer has no bearing on who arrived first.",
+    "relation": "unrelated",
+    "confidence": 0.97
+   },
+   {
+    "a": 0,
+    "b": 4,
+    "rationale": "Ben being treasurer is unrelated to who booked the hall.",
+    "relation": "unrelated",
+    "confidence": 0.96
+   },
+   {
+    "a": 0,
+    "b": 13,
+    "rationale": "Being treasurer doesn't relate to sorting gardening gloves.",
+    "relation": "unrelated",
+    "confidence": 0.93
+   },
+   {
+    "a": 1,
+    "b": 5,
+    "rationale": "Mina arriving first supports Leo arriving shortly after her, consistent with sequential arrivals.",
+    "relation": "supports",
+    "confidence": 0.7
+   },
+   {
+    "a": 1,
+    "b": 11,
+    "rationale": "Mina arriving first supports the claim that Ben arrived a little later than Mina.",
+    "relation": "supports",
+    "confidence": 0.85
+   },
+   {
+    "a": 1,
+    "b": 26,
+    "rationale": "Arrival order has no bearing on the group's later agreement about the garden's condition.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 1,
+    "b": 27,
+    "rationale": "Mina arriving first is unrelated to packing up chairs at the end.",
+    "relation": "unrelated",
+    "confidence": 0.93
+   },
+   {
+    "a": 2,
+    "b": 5,
+    "rationale": "Mina carrying seed packets has no bearing on when Leo arrived.",
+    "relation": "unrelated",
+    "confidence": 0.94
+   },
+   {
+    "a": 2,
+    "b": 15,
+    "rationale": "Mina bringing seed packets could support later discussion of bed layout as related gardening activity, but it's weak.",
+    "relation": "supports",
+    "confidence": 0.4
+   },
+   {
+    "a": 2,
+    "b": 16,
+    "rationale": "Having seed packets slightly supports the idea that planting decisions like tomatoes and beans placement would follow.",
+    "relation": "supports",
+    "confidence": 0.45
+   },
+   {
+    "a": 2,
+    "b": 24,
+    "rationale": "Mina's seed packets have no bearing on Leo's preference for morning work.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 3,
+    "b": 4,
+    "rationale": "Mina chatting about compost schedule is unrelated to who booked the hall.",
+    "relation": "unrelated",
+    "confidence": 0.94
+   },
+   {
+    "a": 3,
+    "b": 14,
+    "rationale": "Mina chatting with Dev doesn't determine team membership relations between Leo and Dev.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 3,
+    "b": 21,
+    "rationale": "Mina and Dev's conversation about compost is unrelated to traffic affecting Gus.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 4,
+    "b": 12,
+    "rationale": "Gus booking the hall is unrelated to the order of Ben's and Gus's arrival.",
+    "relation": "unrelated",
+    "confidence": 0.9
+   },
+   {
+    "a": 4,
+    "b": 19,
+    "rationale": "Gus booking the hall doesn't imply anything about his arrival time relative to others.",
+    "relation": "unrelated",
+    "confidence": 0.88
+   },
+   {
+    "a": 5,
+    "b": 8,
+    "rationale": "Leo's arrival timing has no bearing on Dev's height relative to Ben.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 5,
+    "b": 11,
+    "rationale": "Leo arriving shortly after Mina is unrelated to Ben's arrival time.",
+    "relation": "unrelated",
+    "confidence": 0.85
+   },
+   {
+    "a": 6,
+    "b": 12,
+    "rationale": "Leo's work boots have no bearing on Ben's arrival relative to Gus.",
+    "relation": "unrelated",
+    "confidence": 0.95
+   },
+   {
+    "a": 6,
+    "b": 13,
+    "rationale": "Leo's boots from an earlier job are unrelated to Ben sorting gardening gloves.",
+    "relation": "unrelated",
+    "confidence": 0.94
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1321,
+  "output_tokens": 1250,
+  "thinking_tokens": 0
+ },
+ "stop_reason": "end_turn",
+ "doc_id": "b01-consistent",
+ "repetition": 1,
+ "call": 133
+}

@@ -1,0 +1,25 @@
+{
+ "request": "956221ea852035f5d718ef14749633345fe77a868bafb793ed925e30da80eb22",
+ "tag": "text-b5374bdfb3da-direct-thinking",
+ "model": "claude-sonnet-5",
+ "kind": "parse",
+ "schema": "ContradictionList",
+ "output": {
+  "contradictions": [
+   {
+    "sentences": [
+     "Nell arrived before Milo.",
+     "Milo arrived before Kai.",
+     "Kai arrived before Nell."
+    ],
+    "explanation": "These three arrival orderings form a cycle (Nell before Milo before Kai before Nell), which is impossible."
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 1066,
+  "output_tokens": 168,
+  "thinking_tokens": 69
+ },
+ "stop_reason": "end_turn"
+}
