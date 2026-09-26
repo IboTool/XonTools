@@ -8,6 +8,7 @@ dynamic = ["version"]
 description = "XON SIM: a testing platform for the internal coherence of the Xon model (growing self-similar graphs, Laplacian spectra, driven-dissipative wave dynamics, cellular sheaves)."
 readme = "README.md"
 requires-python = ">=3.11"
+# Lower bounds only, no upper caps: constraints.txt pins the exact versions the tests last passed with
 dependencies = [
     "numpy>=1.26",
     "scipy>=1.11",
@@ -24,7 +25,9 @@ dependencies = [
 
 [project.optional-dependencies]
 png = ["kaleido>=0.2.1"]
-dev = ["pytest>=7"]
+# httpx: the tests build its errors and responses themselves, and anthropic 1.8.0 depends on httpx2 instead; the
+# minimum is the version they were tested with
+dev = ["pytest>=7", "httpx>=0.28.1"]
 # XonForge (xonforge/): its configuration files (PyYAML, MIT) and the sealed split's encryption at rest (cryptography,
 # Apache-2.0 OR BSD-3-Clause); the minimum versions are the ones it was tested with
 xonforge = ["PyYAML>=6.0.2", "cryptography>=46.0.5"]

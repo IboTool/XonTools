@@ -20,6 +20,47 @@ has its own, newer entries.
 
 ---
 
+## 2026-09-26 — Repository — the fresh-clone check: the install fixed, exact versions in `constraints.txt`
+
+After the third reset's push, `main` (`bbf05d9a`) was cloned from GitHub into a temporary folder outside the
+project, installed into a new virtual environment as the README said, and tested offline, with A1's key and every
+`XONFORGE_*` variable unset. No failure came from a file that exists only on this machine, but the documented
+install was incomplete; it is fixed below. No API call was made.
+
+1. **What failed.** The README's `pip install -e ".[dev]"`:
+   - left out the `xonforge` extra, so seven of XonForge's test modules could not import `yaml`, and their
+     collection errors stopped `pytest`, XonForge's tests and `pytest -m slow` before any test ran. Only the
+     dry-run app test, run by name, passed;
+   - did not install `httpx`, which `tests/xonforge/test_xonforge_providers.py` imports and one test in
+     `tests/test_llm_client.py` skips without. It came with anthropic 0.84.0, and anthropic 1.8.0 depends on
+     `httpx2` instead;
+   - took the newest versions the lower bounds allow, newer than this machine's: anthropic 1.8.0 (0.84.0 here),
+     numpy 2.5.3 (2.4.1), scipy 1.18.1 (1.17.0), pandas 3.0.6 (3.0.0), pydantic 2.13.5 (2.12.5), networkx 3.7
+     (3.6.1), pytest 9.1.1 (9.0.2), PyYAML 6.0.3 (6.0.2) and cryptography 50.0.1 (46.0.5). Of the direct
+     dependencies, only streamlit (1.64.0) and plotly (7.1.0) matched.
+2. **With the `xonforge` extra and `httpx` added**, the clone's results were this machine's: `pytest`, 949 passed,
+   1 skipped (the leak test's commit search, on a root commit) and 26 deselected; the dry-run app test passed;
+   XonForge's tests, 501 passed and 1 skipped; the 26 slow tests passed. The newer versions changed no tested
+   result: the rev. 2.1 recompute of the run of record's `l1.json`, `l1b.json` and `documents.jsonl` is byte for
+   byte, and every rev. 2.1 request body is the recorded one. No live call has gone through anthropic 1.x. XonForge
+   has no default locations, so the tests could not reach this machine's sealed, judged or cache data, and the runs
+   left the clone's tracked files unchanged.
+3. **Packaging.** The editable install packages only `xon` and `xon.llm`, so `xon_common` and `xonforge` are found
+   only from the project's root. Nothing failed: every documented command runs from the root, and the engine
+   imports neither.
+4. **The fix.** `pyproject.toml` adds `httpx>=0.28.1` to the `dev` extra and keeps lower bounds only, with no upper
+   caps. `constraints.txt`, new, pins this machine's exact versions of the 66 packages the project and its extras
+   install (Python 3.14.0, Windows 11); a dry-run resolution of every requirement with it gives exactly those 66,
+   and nothing unpinned. The README's install line is now `pip install -e ".[dev,xonforge]" -c constraints.txt`,
+   `run_xon.bat`'s hint adds `png` to the same extras, and `xonforge/README.md` points to the line and says to run
+   its commands from the root.
+5. **From now on** (`rules.md`, rule 7, and `decisions.md`): each run of record records `constraints.txt`'s SHA-256
+   in its `run.json` or its changelog entry, and if the installed versions no longer match the file, it is updated
+   and committed before the run.
+6. **Next.** A fresh clone, installed with the new line, is tested again.
+
+---
+
 ## 2026-09-26 — Repository — the third reset: XonForge merged into `main`, one branch in one folder
 
 XonForge's branch is merged into `main`, and the project lives in one folder, `XON`, with XonForge as its package

@@ -10,6 +10,8 @@ These rules apply to every SPEC implementation.
 4. Stay within the stage's LLM budget cap; stop and report if you'll exceed it.
 5. Before generating any full synthetic corpus, generate a small sample and stop for my review.
 6. "Tests pass" is not "done": run the stage's eval CLI and report the results table.
+7. Each run of record records `constraints.txt`'s SHA-256 in its `run.json` or its changelog entry. If the
+   installed versions no longer match the file, update and commit it before the run.
 
 ## Specs
 

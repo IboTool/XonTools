@@ -24,6 +24,9 @@ live. Nothing is exported until each renderer's terms are checked and logged (`c
 
 ## Quick start
 
+Install from the repository's root, `pip install -e ".[dev,xonforge]" -c constraints.txt` (its README), and run
+these from the root too: the install does not package `xonforge`, so Python finds it only there.
+
 ```
 python -m xonforge providers             # the provider registry and startup check; no call is made
 python -m xonforge run-check sample      # whether the sample's run may start, and why not; no call is made

@@ -10,6 +10,6 @@ echo.
 python -m streamlit run app.py --browser.gatherUsageStats false
 if errorlevel 1 (
   echo.
-  echo Failed to start. Install with:  pip install -e ".[png,dev]"
+  echo Failed to start. Install with:  pip install -e ".[png,dev,xonforge]" -c constraints.txt
   pause
 )

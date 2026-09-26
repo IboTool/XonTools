@@ -97,10 +97,12 @@ Each of these is a self-contained project, and a natural place to collaborate:
 Python 3.11 or newer.
 
 ```bash
-pip install -e ".[dev]"
+pip install -e ".[dev,xonforge]" -c constraints.txt
 streamlit run app.py          # or: python -m streamlit run app.py
 pytest                        # the offline test suite
 ```
+
+`-c constraints.txt` installs the exact versions the tests last passed with (Python 3.14, Windows); without it, pip takes the newest versions that `pyproject.toml`'s lower bounds allow. The `xonforge` extra is needed for XonForge's tests, which `pytest` runs too; add `png` to export figures as PNG rather than HTML.
 
 Without an API key, the app runs in **dry-run** mode: the consistency engine answers only from the response cache and recorded fixtures and makes no network calls. For live analysis, set the key in the terminal that starts the app; it is read only from the environment and never written to disk or logs.
 

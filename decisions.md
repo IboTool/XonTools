@@ -346,3 +346,16 @@ Decision: The leak test's commit search skips when there is no commit or `HEAD` 
 location test checks the project root always and every worktree git lists when there is a repository.
 Why: A copy without `.git`, such as a downloaded one, failed them.
 Changelog: 2026-09-26 — Repository — the third reset: XonForge merged into `main`, one branch in one folder, item 8
+
+## 2026-09-26 — Repository — exact versions in `constraints.txt`, lower bounds in `pyproject.toml`
+
+Decision: `pyproject.toml` gives each dependency a lower bound and no upper cap, and `constraints.txt` pins the
+exact versions of the 66 packages the project and its extras install, as the tests last passed with them (Python
+3.14.0, Windows 11). The documented install uses it: `pip install -e ".[dev,xonforge]" -c constraints.txt`. Each
+run of record records `constraints.txt`'s SHA-256 in its `run.json` or its changelog entry, after updating and
+committing the file if the installed versions no longer match it.
+Why: A fresh install took newer versions than this machine's, anthropic's by a major version (1.8.0 against
+0.84.0), and nothing recorded which versions a run used. The constraints file lets a run's environment be rebuilt
+exactly; upper caps would block upgrades without pinning anything exactly.
+Changelog: 2026-09-26 — Repository — the fresh-clone check: the install fixed, exact versions in `constraints.txt`,
+items 4 and 5
