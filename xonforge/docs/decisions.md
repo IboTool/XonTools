@@ -6,6 +6,14 @@ agent's readings, and records the readings applied where an answer leaves a deta
 entry of the same date logs each section. Decisions made before this file existed are in that file's XonForge entries
 of 2026-09-25 for steps 0, 1 and 2.
 
+## 2026-09-26 — Readings for v1 step 9
+
+The dashboard (`xonforge/app/dashboard.py`, started on Windows by `run_xonforge.bat`) edits a run's configuration in
+the session only. It does not write `xonforge/config/defaults.yaml` and does not set token caps. A key is reported
+present or missing and is never shown. Start, Pause and Resume do not send a call. The pages are Configure,
+Providers, Run, Review queue, Quality, Corpus and Logs, as in spec §10, and they work offline. The dashboard does
+not import the consistency engine.
+
 ## 2026-09-26 — Readings for v1 step 8
 
 The spec's §5.2, §5.3, §5.3b, §5.4 and §7.4b leave the details below open. These are the implementing agent's

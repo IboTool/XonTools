@@ -20,6 +20,21 @@ has its own, newer entries.
 
 ---
 
+## 2026-09-26 — XonForge — v1 step 9: the dashboard
+
+Built offline. No API call was made, and `defaults.yaml` was not written. The reading is in
+`xonforge/docs/decisions.md` (2026-09-26, step 9). `pytest tests/xonforge`: 533 passed, with A1's key and every
+`XONFORGE_*` variable unset.
+
+`xonforge/app/dashboard.py` is the Streamlit app, launched by `run_xonforge.bat` next to `run_xon.bat`. It does not
+import the consistency engine. The seven pages from spec §10 — Configure, Providers, Run, Review queue, Quality,
+Corpus and Logs — read and edit the run configuration in memory. Keys are present or missing, never shown. Estimate
+prices the mix with no call. Start, Pause and Resume do not send a call. The review queue appends Accept, Regenerate
+or Discard, with a reason, to the hash-chained decision log when `XONFORGE_CACHE_DIR` is set outside the repository.
+Corpus previews a datasheet and shows the refusal that keeps a pipeline-test document out of a sealed or judged
+split. `xonforge/docs/user_guide.md` describes the pages. A dry-run app test renders each page and checks that a
+canary key never appears in the output.
+
 ## 2026-09-26 — XonForge — v1 step 8: plants, traps, the fact audit, and `python -m xonforge run`
 
 Built offline. No API call was made, no token cap was set, and `defaults.yaml` was not written. The readings that
