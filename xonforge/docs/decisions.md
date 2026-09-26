@@ -6,6 +6,19 @@ agent's readings, and records the readings applied where an answer leaves a deta
 entry of the same date logs each section. Decisions made before this file existed are in that file's XonForge entries
 of 2026-09-25 for steps 0, 1 and 2.
 
+## 2026-09-26 — Step 7 stopped: the sample's composition and estimate
+
+The recommended composition, for the user to confirm or replace, is 10 v0 bases, each rendered as a twin and a
+planted variant: 20 documents, pipeline-test mode, seed 1, no traps, both review prompts, fact audit off, and no v1
+type. The mix is `order_cycle:1:4`, `equality_break:1:3`, `binary_parity:1:2`, `direct_negation:1:1`.
+
+`python -m xonforge estimate sample` with that mix, offline, prices 20 documents and 27 items per reviewer and
+prompt, canaries included. claude-sonnet: 20 calls, $0.67 on the first attempt and $3.36 if all 5 are used.
+claude-opus: 54 calls, $2.45. claude-fable: 54 calls, $6.13. The total is $1.09 without thinking, $9.25 if every
+rendering and derivation passes on its first attempt, and $11.93 if every one uses all 5, under the $20 run cap and
+the $20 cap on each entry. Token caps are still unset, so `run sample` refuses. The live sample was not started.
+`first_corpus` was not started. This is not a run of record, and there is no tag.
+
 ## 2026-09-26 — Readings for v1 step 9
 
 The dashboard (`xonforge/app/dashboard.py`, started on Windows by `run_xonforge.bat`) edits a run's configuration in

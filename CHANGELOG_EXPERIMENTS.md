@@ -20,6 +20,30 @@ has its own, newer entries.
 
 ---
 
+## 2026-09-26 — XonForge — step 7: the sample estimate, stopped before a live run
+
+No API call was made. Token caps were not set, `defaults.yaml` was not written, and nothing was tagged: this sample
+is not a run of record. The reading is in `xonforge/docs/decisions.md` (2026-09-26, step 7).
+
+Recommended composition, waiting for the user to confirm or replace it: 10 v0 bases, twin plus planted variant, 20
+documents, pipeline-test, seed 1, no traps, both review prompts, fact audit off, no v1 type.
+`order_cycle:1:4`, `equality_break:1:3`, `binary_parity:1:2`, `direct_negation:1:1`.
+
+`python -m xonforge estimate sample` with that mix, offline:
+
+- 20 documents; 27 items per reviewer and prompt, canaries included.
+- claude-sonnet (claude-sonnet-5): 20 calls, 11,129 input, 4,896 output, 60,000 thinking; $0.07 without thinking,
+  $0.67 first attempts, $3.36 all 5. Cap $20.
+- claude-opus (claude-opus-5-5): 54 calls, 22,339 input, 10,045 output, 108,000 thinking; $0.29, $2.45, $2.45.
+  Cap $20.
+- claude-fable (claude-fable-5-1): 54 calls, the same token counts; $0.73, $6.13, $6.13. Cap $20.
+- Total: $1.09 without thinking; $9.25 if every rendering and derivation passes on its first attempt; $11.93 if
+  every one uses all 5. Run cap $20.00.
+
+`run sample` still refuses, because the token caps are unset. The live sample was not started, and `first_corpus`
+was not started. The next step waits for the composition, or a replacement, and for token caps on the run and on
+each of the three entries.
+
 ## 2026-09-26 — XonForge — v1 step 9: the dashboard
 
 Built offline. No API call was made, and `defaults.yaml` was not written. The reading is in
