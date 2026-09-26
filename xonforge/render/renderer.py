@@ -22,6 +22,7 @@ from xonforge import modes
 from xonforge.skeleton.schema import Skeleton
 
 from . import prompt
+from .inferred import inferred_map
 from .schema import Attempt, Document, Renderer, Rendering, RenderRules, ReviewProblem, Revisions, SpanEntry
 
 Check = Callable[[Skeleton, Rendering, RenderRules], list[str]]
@@ -85,6 +86,7 @@ def render(skeleton: Skeleton, rules: RenderRules, caller: Caller, *, check: Che
                                                  prompt_sha256=prompt.RENDER.sha256),
                     rules=rules, status="failed" if problems else "rendered",
                     text=None if last is None else last.text, spans={} if last is None else last.span_map(),
+                    inferred={} if last is None else inferred_map(skeleton, last.span_map()),
                     attempts=tuple(attempts), flags=tuple(_flags(attempts, problems, rules.retry_cap)),
                     review_problems=tuple(review_problems))
 
@@ -180,6 +182,7 @@ def derive(skeleton: Skeleton, source: Skeleton, document: Document, caller: Cal
                                                  prompt_sha256=prompt.DERIVE.sha256),
                     rules=rules, status="failed" if problems else "rendered",
                     text=None if last is None else last.text, spans={} if last is None else last.span_map(),
+                    inferred={} if last is None else inferred_map(skeleton, last.span_map()),
                     attempts=tuple(attempts), flags=tuple(_flags(attempts, problems, rules.retry_cap)),
                     derived_from=document.doc_id, changed=tuple(changed))
 

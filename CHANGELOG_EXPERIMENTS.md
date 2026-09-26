@@ -20,6 +20,95 @@ has its own, newer entries.
 
 ---
 
+## 2026-09-26 — XonForge — the sample's cap is $40, and the run reviews before it queues
+
+The user confirmed the recommended composition (10 v0 bases, twin plus planted variant, seed 1, both review prompts,
+fact audit off, no v1 type) and set the maximum spend at $40. That replaces the sample's $20 run cap and $20 cap on
+each entry. Recorded in `xonforge/docs/decisions.md`. No API call was made: `XONFORGE_ANTHROPIC_KEY` is not set in
+this environment, so `run sample` refuses before a session opens. `first_corpus` was not started. Not a run of record,
+and there is no tag.
+
+1. **Caps.** `runs.sample` caps the run and each entry at $40 and at 20,000,000 tokens. The token count is what $40
+   buys of Sonnet's input at $2 per million tokens, so the dollar cap is what stops a long response. The global caps
+   in `defaults.yaml` stay unset.
+2. **Review in the run.** `python -m xonforge run` reviews each document that has text with both prompts and both
+   reviewers, in batches saved outside the repository, then queues from those results. A call the budget holds back
+   stops the run; documents already stored stay queued. `pytest tests/xonforge`: 533 passed, with the key and every
+   `XONFORGE_*` variable unset.
+
+## 2026-09-26 — XonForge — step 7: the sample estimate, stopped before a live run
+
+No API call was made. Token caps were not set, `defaults.yaml` was not written, and nothing was tagged: this sample
+is not a run of record. The reading is in `xonforge/docs/decisions.md` (2026-09-26, step 7).
+
+Recommended composition, waiting for the user to confirm or replace it: 10 v0 bases, twin plus planted variant, 20
+documents, pipeline-test, seed 1, no traps, both review prompts, fact audit off, no v1 type.
+`order_cycle:1:4`, `equality_break:1:3`, `binary_parity:1:2`, `direct_negation:1:1`.
+
+`python -m xonforge estimate sample` with that mix, offline:
+
+- 20 documents; 27 items per reviewer and prompt, canaries included.
+- claude-sonnet (claude-sonnet-5): 20 calls, 11,129 input, 4,896 output, 60,000 thinking; $0.07 without thinking,
+  $0.67 first attempts, $3.36 all 5. Cap $20.
+- claude-opus (claude-opus-5-5): 54 calls, 22,339 input, 10,045 output, 108,000 thinking; $0.29, $2.45, $2.45.
+  Cap $20.
+- claude-fable (claude-fable-5-1): 54 calls, the same token counts; $0.73, $6.13, $6.13. Cap $20.
+- Total: $1.09 without thinking; $9.25 if every rendering and derivation passes on its first attempt; $11.93 if
+  every one uses all 5. Run cap $20.00.
+
+`run sample` still refuses, because the token caps are unset. The live sample was not started, and `first_corpus`
+was not started. The next step waits for the composition, or a replacement, and for token caps on the run and on
+each of the three entries.
+
+## 2026-09-26 — XonForge — v1 step 9: the dashboard
+
+Built offline. No API call was made, and `defaults.yaml` was not written. The reading is in
+`xonforge/docs/decisions.md` (2026-09-26, step 9). `pytest tests/xonforge`: 533 passed, with A1's key and every
+`XONFORGE_*` variable unset.
+
+`xonforge/app/dashboard.py` is the Streamlit app, launched by `run_xonforge.bat` next to `run_xon.bat`. It does not
+import the consistency engine. The seven pages from spec §10 — Configure, Providers, Run, Review queue, Quality,
+Corpus and Logs — read and edit the run configuration in memory. Keys are present or missing, never shown. Estimate
+prices the mix with no call. Start, Pause and Resume do not send a call. The review queue appends Accept, Regenerate
+or Discard, with a reason, to the hash-chained decision log when `XONFORGE_CACHE_DIR` is set outside the repository.
+Corpus previews a datasheet and shows the refusal that keeps a pipeline-test document out of a sealed or judged
+split. `xonforge/docs/user_guide.md` describes the pages. A dry-run app test renders each page and checks that a
+canary key never appears in the output.
+
+## 2026-09-26 — XonForge — v1 step 8: plants, traps, the fact audit, and `python -m xonforge run`
+
+Built offline. No API call was made, no token cap was set, and `defaults.yaml` was not written. The readings that
+fill gaps in §5.2, §5.3, §5.3b, §5.4 and §7.4b are in `xonforge/docs/decisions.md` (2026-09-26, step 8). With this
+step's tests and the rest of `tests/xonforge`, apart from the dashboard test the next entry commits, 532 tests are
+collected; run together with that test, 533 passed, with A1's key and every `XONFORGE_*` variable unset.
+
+1. **Plants and traps.** v0's four types and `arity_control` stay. Added, each with a consistent twin and a solver
+   test that every generated base passes `check_base`:
+   - plants: `temporal_arithmetic`, `quantity_arithmetic`, `spatial_containment`, `coreference_trap`,
+     `negation_scope`;
+   - traps: `quoted_speech`, `hypothetical`, `conditional`, `legitimate_correction`, `state_change`,
+     `reported_belief`, each satisfiable when read correctly, with the naive reading recorded the way
+     `arity_control` is;
+   - solver plants: `quantifier_violation`, `uniqueness_violation`, `colocation_conflict`, `calendar_age`,
+     `cardinality_mismatch`, `unit_conversion`, `knowledge_perspective`;
+   - judged plants: `causal_inconsistency`, `commonsense_impossibility`, `implicature_tension`, satisfiable either
+     way, labeled for the judged split, and refused in a pipeline test;
+   - resolvable traps: `time_zone`, `unit_equivalence`, `overnight_span`, `same_name`, `role_handover`,
+     `approximation`, `perspective_error`, each storing its resolving fact.
+   `PLANT_TYPES` stays the four. Events, times, and quantity, time and location attributes are judged; a kind still
+   outside that list is refused. The catalog is updated in `xonforge/docs/plant_catalog.md`.
+2. **Inferred facts.** Arithmetic, time and location conclusions carry a derivation and are recorded with
+   `InferredSpan` (`mode: inferred`, support spans, derivation). v0 facts stay stated or paraphrased. Quotation
+   marks stay refused unless the skeleton has a `quoted_speech` trap.
+3. **Scans.** `containment` is a same-attribute pattern, with cues and the synthetic canary `same-containment`.
+   Scans stay fail-closed: an attribute is not accepted until it has a pattern and a canary.
+4. **Fact audit** (`xonforge/verify/audit.py`, prompt `fact-audit-v1`). The reply is stated, implied, absent or
+   contradicted. The auditor is not the renderer. A disagreement with the fact-to-span map is a queue reason. Tests
+   use a fake client. The audit runs only with `--audit`.
+5. **`python -m xonforge run NAME`.** It refuses unless `run-check` passes, supports `--dry-run` (the cache only),
+   and resumes a stored document. It does not split or seal. A path that differs from a sealed or judged path only
+   in letter case is still refused.
+
 ## 2026-09-26 — Repository — the fresh-clone check: the install fixed, exact versions in `constraints.txt`
 
 After the third reset's push, `main` (`bbf05d9a`) was cloned from GitHub into a temporary folder outside the

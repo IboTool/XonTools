@@ -6,6 +6,80 @@ agent's readings, and records the readings applied where an answer leaves a deta
 entry of the same date logs each section. Decisions made before this file existed are in that file's XonForge entries
 of 2026-09-25 for steps 0, 1 and 2.
 
+## 2026-09-26 — The sample may spend at most $40
+
+The user confirmed the recommended composition and set the maximum spend at $40: "That's fine, do it. Max spend $40."
+That replaces the sample's earlier $20 run cap and $20 cap on each entry (`decisions.md`, the pipeline-test sample).
+`runs.sample` in `defaults.yaml` now caps the run and each of its three entries at $40, so the three together cannot
+spend more than $40. `first_corpus` is unchanged.
+
+No token count was given. The budget sends no call without a token cap, so each token cap is 20,000,000. That is what
+$40 buys of Claude Sonnet 5's input at $2 per million tokens, the cheapest uncached rate of the three models. Output
+costs more, so a long response reaches the dollar cap first. The sample does not request prompt caching.
+
+`python -m xonforge run` now reviews every document that has text with both prompts and both reviewers, which is what
+the approved estimate counted, and stops when the budget holds a call back. The fact audit stays off.
+
+## 2026-09-26 — Step 7 stopped: the sample's composition and estimate
+
+The recommended composition, for the user to confirm or replace, is 10 v0 bases, each rendered as a twin and a
+planted variant: 20 documents, pipeline-test mode, seed 1, no traps, both review prompts, fact audit off, and no v1
+type. The mix is `order_cycle:1:4`, `equality_break:1:3`, `binary_parity:1:2`, `direct_negation:1:1`.
+
+`python -m xonforge estimate sample` with that mix, offline, prices 20 documents and 27 items per reviewer and
+prompt, canaries included. claude-sonnet: 20 calls, $0.67 on the first attempt and $3.36 if all 5 are used.
+claude-opus: 54 calls, $2.45. claude-fable: 54 calls, $6.13. The total is $1.09 without thinking, $9.25 if every
+rendering and derivation passes on its first attempt, and $11.93 if every one uses all 5, under the $20 run cap and
+the $20 cap on each entry. Token caps are still unset, so `run sample` refuses. The live sample was not started.
+`first_corpus` was not started. This is not a run of record, and there is no tag.
+
+## 2026-09-26 — Readings for v1 step 9
+
+The dashboard (`xonforge/app/dashboard.py`, started on Windows by `run_xonforge.bat`) edits a run's configuration in
+the session only. It does not write `xonforge/config/defaults.yaml` and does not set token caps. A key is reported
+present or missing and is never shown. Start, Pause and Resume do not send a call. The pages are Configure,
+Providers, Run, Review queue, Quality, Corpus and Logs, as in spec §10, and they work offline. The dashboard does
+not import the consistency engine.
+
+## 2026-09-26 — Readings for v1 step 8
+
+The spec's §5.2, §5.3, §5.3b, §5.4 and §7.4b leave the details below open. These are the implementing agent's
+readings. They do not change a pre-registered threshold. No API call was made, and `defaults.yaml` was not written.
+
+1. **`PLANT_TYPES` stays v0's four** (`order_cycle`, `equality_break`, `binary_parity`, `direct_negation`). The v1
+   types are `V1_PLANT_TYPES`; `ALL_PLANT_TYPES` is both. A run's composition still accepts only the four, so the
+   paid sample cannot name a v1 type. `python -m xonforge skeletons --type all` builds from `ALL_PLANT_TYPES`.
+2. **A subject-less premise with a role is not an arity.** An arity is a subject-less premise with no role and an
+   integer value of at least 2. A universal value, a birth year or a count carries a role, so the solver does not
+   read it as a statement of how many values an attribute has.
+3. **`same_name`.** The naive reading does not merge the two entities. Where they share a name or an alias, it reads
+   `different` as `same`, so the plant's three facts stay the only minimal contradiction. A trap whose naive flags
+   are not exactly the plant's fact ids is refused. `time_zone`, `overnight_span`, `unit_equivalence` and
+   `approximation` store the resolving fact on `naive.resolves`; it is not one of the plant's facts.
+4. **Inferred facts.** A fact with a `derivation` is inferred. After ids are assigned, its support is the other
+   plant facts, and the document records `mode: inferred`, those facts' stated spans, and the derivation. The prompt
+   lists them as inferred and not as sentences of their own. v0 facts have no derivation. Cardinality's listed count
+   has none either; only the disagreeing count does, so a stated span exists to support it.
+5. **Scans stay fail-closed.** `containment` is the only new same-attribute pattern, because only
+   `spatial_containment` plants three entities on one attribute. Other v1 attributes are not scanned that way until
+   a plant puts three entities on them. The pattern has cues (`contains`, `inside`, `within`) and the synthetic
+   canary `same-containment`.
+6. **Judged plants.** `causal_inconsistency`, `commonsense_impossibility` and `implicature_tension` are satisfiable
+   either way. The solver checks that no other contradiction exists and labels `ground_truth: judged`. In record
+   mode `assign_bases` sends them only to the judged split. A pipeline test that draws one is refused, so none
+   enters a sealed test.
+7. **Fact audit is off unless `--audit`.** The auditor's entry is not the renderer's. A mapped fact the auditor
+   calls absent or contradicted, or an unmapped fact it calls stated, is a queue reason. Tests use a fake client.
+   The prompt is `xonforge/prompts/fact_audit.txt`, version `fact-audit-v1`, SHA-256
+   `24b1480ea7676da2072290b851a4c682e608432557761e6067a2f9fe56d862fd`.
+8. **A sealed or judged path is refused even when only the letter case differs.** `engine_plugin._within` compares
+   case-folded paths. The existing test uppercases a sealed path; on a case-sensitive filesystem that path is not
+   inside the directory unless the comparison ignores case.
+9. **`python -m xonforge run NAME`** chains generate, render, the structural checks and scans, blind review, the
+   queue and acceptance. It refuses unless `run-check` passes, and that check runs before a session is opened, so a
+   refused run does not need the cache. `--dry-run` uses the cache only. A document whose skeleton digest is already
+   stored is kept. The command does not split or seal, and a pipeline-test document stays out of those splits.
+
 ## 2026-09-25 — Answers on v0's open questions
 
 Ian's answers to the open questions of steps 3 to 6, which he confirmed as written ("I'm Ian. Those decisions are

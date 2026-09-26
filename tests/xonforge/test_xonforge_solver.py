@@ -135,15 +135,14 @@ def test_a_negated_value_on_an_attribute_whose_number_of_values_is_stated_is_ref
         sat(arity("9", 2, attribute="age"))
 
 
-@pytest.mark.parametrize("attribute, fact, why", [
-    (Attribute(key="team", kind="categorical"), Fact(id="1", kind="event", subject="a", attribute="team"), "v1"),
-    (Attribute(key="team", kind="categorical"), val("1", "a", "red").model_copy(update={"time": "March"}), "v1"),
-    (Attribute(key="team", kind="quantity"), val("1", "a", 3), "ordinal and categorical"),
-    (Attribute(key="team", kind="ordinal"), val("1", "a", "red"), "categorical attributes only"),
-])
-def test_what_v0_cannot_judge_is_refused_not_guessed(attribute, fact, why):
-    with pytest.raises(Unsupported, match=why):
-        satisfiable([fact], {"team": attribute})
+def test_events_times_and_quantities_are_judged_and_an_ordinal_value_is_still_refused():
+    team = Attribute(key="team", kind="categorical")
+    assert satisfiable([Fact(id="1", kind="event", subject="a", attribute="team")], {"team": team})
+    assert satisfiable([val("1", "a", "red").model_copy(update={"time": "March"})], {"team": team})
+    jars = Attribute(key="team", kind="quantity")
+    assert satisfiable([val("1", "a", 3)], {"team": jars})
+    with pytest.raises(Unsupported, match="categorical attributes only"):
+        satisfiable([val("1", "a", "red")], {"team": Attribute(key="team", kind="ordinal")})
 
 
 # ------------------------------------------------------------------------------------------ minimal sets
@@ -280,12 +279,13 @@ def test_a_trap_variant_differs_from_its_planted_variant_only_in_the_arity_fact(
         Base(base_id="b", consistent=twin, planted=(planted,), trap_only=(wider,))
 
 
-def test_the_other_traps_wait_for_v1():
+def test_a_trap_inside_a_planted_variant_is_still_refused():
     trap_only = Skeleton(base_id="b", variant="trap_only", genre="g", entities=ENTITIES,
                          attributes=tuple(ATTRIBUTES.values()), facts=tuple(CYCLE[:2]),
-                         traps=(Trap(type="quoted_speech", facts=("1",)),), seed=1)
-    with pytest.raises(Unsupported, match="v1"):
-        check_skeleton(trap_only)
+                         traps=(Trap(type="quoted_speech", facts=("1",),
+                                     naive={"reading": "a quotation is an assertion", "contradiction": ["1"]}),),
+                         seed=1)
+    assert any("finds no contradiction" in p for p in check_skeleton(trap_only))
     in_planted = skeleton(CYCLE, plant=["1", "2", "3"]).model_copy(
         update={"traps": (Trap(type="arity_control", facts=("1",)),)})
     with pytest.raises(Unsupported, match="v1"):

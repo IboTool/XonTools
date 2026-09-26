@@ -132,6 +132,7 @@ ATTRIBUTE_CUE_EXTENSIONS: dict[str, tuple[str, ...]] = {
                    "not in the same department"),
     "table": ("same table", "different table", "at the same table", "not at the same table"),
     "cabin": ("same cabin", "different cabin", "in the same cabin", "not in the same cabin"),
+    "containment": ("contains", "inside", "within"),
 }
 
 # What the scans read: A1's lists and XonForge's extensions.

@@ -21,8 +21,8 @@ def test_every_prompt_file_is_recorded_with_its_version_and_the_hash_of_its_file
     files = sorted(p.name for p in prompts.FOLDER.iterdir()
                    if p.is_file() and p.name not in ("__init__.py", "versions.json"))
     recorded = prompts.recorded()
-    assert files == sorted(recorded) == ["derive.txt", "render.txt", "render_wording.json", "review_contradiction.txt",
-                                         "review_inventory.txt"]
+    assert files == sorted(recorded) == ["derive.txt", "fact_audit.txt", "render.txt", "render_wording.json",
+                                         "review_contradiction.txt", "review_inventory.txt"]
     for name, entry in recorded.items():
         assert set(entry) == {"version", "sha256"}
         assert entry["sha256"] == hashlib.sha256((prompts.FOLDER / name).read_bytes()).hexdigest()

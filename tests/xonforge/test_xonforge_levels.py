@@ -54,8 +54,8 @@ def test_a_draw_is_the_same_for_the_same_seed_and_stays_within_the_level(level):
     assert len({k for k, _ in draws}) > 1 and len({r.words for _, r in draws}) > 1
 
 
-def test_only_the_three_levels_and_v0_s_plant_types_are_drawn():
+def test_only_the_three_levels_and_known_plant_types_are_drawn():
     with pytest.raises(ValueError, match="levels are 1, 2, 3, not 4"):
         draw(4, "order_cycle", 1)
     with pytest.raises(ValueError, match="not a plant type"):
-        draw(1, "quantity_arithmetic", 1)
+        draw(1, "made_up", 1)

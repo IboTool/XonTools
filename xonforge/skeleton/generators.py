@@ -39,11 +39,32 @@ from dataclasses import asdict, dataclass, field
 
 from ..solver import satisfiable
 from ..solver.solver import NAIVE_READING, naive_contradiction
-from .catalog import CATEGORICAL, NAMES, ORDINAL, PRONOUNS, VALUES
+from .catalog import CATEGORICAL, LOCATION, NAMES, ORDINAL, PRONOUNS, QUANTITY, TIME, VALUES
+from .plants_v1 import BUILDERS, PLANT_FACTS, apply_trap
 from .schema import Attribute, Base, Entity, Fact, Plant, Skeleton, Trap
 
 PLANT_TYPES = ("order_cycle", "equality_break", "binary_parity", "direct_negation")
-TRAP_PLANTS = {"arity_control": ("binary_parity",)}      # v0's one trap, and the plant types it partners
+V1_PLANT_TYPES = ("temporal_arithmetic", "quantity_arithmetic", "spatial_containment", "coreference_trap",
+                  "negation_scope", "quantifier_violation", "uniqueness_violation", "colocation_conflict",
+                  "calendar_age", "cardinality_mismatch", "unit_conversion", "knowledge_perspective",
+                  "causal_inconsistency", "commonsense_impossibility", "implicature_tension")
+ALL_PLANT_TYPES = PLANT_TYPES + V1_PLANT_TYPES
+TRAP_PLANTS = {
+    "arity_control": ("binary_parity",),
+    "quoted_speech": ("direct_negation",),
+    "hypothetical": ("direct_negation",),
+    "conditional": ("direct_negation",),
+    "legitimate_correction": ("direct_negation",),
+    "state_change": ("direct_negation",),
+    "reported_belief": ("direct_negation",),
+    "time_zone": ("temporal_arithmetic",),
+    "overnight_span": ("temporal_arithmetic",),
+    "unit_equivalence": ("unit_conversion",),
+    "approximation": ("unit_conversion",),
+    "same_name": ("coreference_trap",),
+    "role_handover": ("uniqueness_violation",),
+    "perspective_error": ("knowledge_perspective",),
+}
 TRAP_VALUES = 3                                          # the number of values an arity_control trap states
 LEVELS = (1, 2, 3)                                       # the difficulty levels (xonforge/levels.py)
 
@@ -151,14 +172,35 @@ def _direct_negation(rng: random.Random, twin_rng: random.Random, entities: list
                  twin_options=[{**negation, "value": w} for w in others])
 
 
+def _v1(builder):
+    """A v1 builder returns (slots, changed, params); a v0 builder returns a plan."""
+    def build(rng, twin_rng, entities, attribute, premise):
+        slots, changed, params = builder(rng, twin_rng, entities, attribute, premise)
+        return _Plan([_Slot(twin, planted, position) for twin, planted, position in slots], changed, params=params)
+    return build
+
+
+def _kind(key: str) -> str:
+    if key in ORDINAL:
+        return "ordinal"
+    if key in QUANTITY:
+        return "quantity"
+    if key in TIME:
+        return "time"
+    if key in LOCATION:
+        return "location"
+    return "categorical"
+
+
 # Each plant type: the attribute keys it may plant on, the entities its plant needs (None: the cycle length), and its
-# builder.
+# builder. v0's four stay first. v1's builders are in plants_v1.py.
 PLANTS = {
     "order_cycle": (ORDINAL, None, _order_cycle),
     "equality_break": (CATEGORICAL, None, _equality_break),
     "binary_parity": (CATEGORICAL, None, _binary_parity),
     "direct_negation": (tuple(VALUES), 1, _direct_negation),
 }
+PLANTS.update({name: (kinds, size, _v1(fn)) for name, (kinds, size, fn) in BUILDERS.items()})
 
 
 def _distractors(rng: random.Random, entities: list[str], attributes: list[Attribute], count: int,
@@ -213,7 +255,7 @@ def feasible(plant_type: str, knobs: Knobs) -> bool:
     _, size, _ = PLANTS[plant_type]
     k = size or knobs.cycle_length
     n = knobs.entities or k
-    planted = 2 if plant_type == "direct_negation" else k
+    planted = PLANT_FACTS.get(plant_type, 2 if plant_type == "direct_negation" else k)
     outside = n - k
     free = (knobs.attributes - 1) * math.comb(n, 2) + (math.comb(outside, 2) if knobs.same_attribute_distractors
                                                        else 0)
@@ -231,13 +273,13 @@ def generate(plant_type: str, *, seed: int, genre: str, knobs: Knobs = Knobs(), 
     ``premise_share`` (defaults.yaml, skeletons.negation_premise_share). ``traps``: the trap-only variants to add;
     ``level``: the difficulty level the knobs were drawn for, recorded in the difficulty."""
     if plant_type not in PLANTS:
-        raise ValueError(f"v0's plant types are {', '.join(PLANT_TYPES)}, not {plant_type!r}")
+        raise ValueError(f"the plant types are {', '.join(ALL_PLANT_TYPES)}, not {plant_type!r}")
     if not genre:
         raise ValueError("a skeleton records its genre (XONFORGE_SPEC.md §5.1)")
     traps = tuple(traps)
     for t in traps:
         if t not in TRAP_PLANTS:
-            raise ValueError(f"v0's one trap is arity_control, and {t!r} comes with v1")
+            raise ValueError(f"the traps are {', '.join(TRAP_PLANTS)}, not {t!r}")
         if plant_type not in TRAP_PLANTS[t]:
             raise ValueError(f"the {t} trap is {' and '.join(TRAP_PLANTS[t])}'s partner, not {plant_type}'s")
     if len(set(traps)) != len(traps):
@@ -264,10 +306,14 @@ def generate(plant_type: str, *, seed: int, genre: str, knobs: Knobs = Knobs(), 
     others = rng.sample([a for a in ORDINAL + CATEGORICAL if a != planted_key], knobs.attributes - 1)
     ids = [e.id for e in entities]
     in_plant = rng.sample(ids, k)
+    if plant_type == "coreference_trap":
+        named = {e.id: e for e in entities}
+        second = in_plant[1]
+        entities = tuple(e.model_copy(update={"aliases": (named[in_plant[0]].name,)}) if e.id == second else e
+                         for e in entities)
     plan = build(rng, random.Random(twin_seed), in_plant, planted_key, premise)
     in_order = [s for s in plan.slots if s.position is not None]
-    attributes = tuple(Attribute(key=key, kind="ordinal" if key in ORDINAL else "categorical",
-                                 arity=plan.arity if key == planted_key else None)
+    attributes = tuple(Attribute(key=key, kind=_kind(key), arity=plan.arity if key == planted_key else None)
                        for key in sorted([planted_key, *others]))
     planted_attribute = next(a for a in attributes if a.key == planted_key)
     outside = [e for e in ids if e not in in_plant]
@@ -277,6 +323,11 @@ def generate(plant_type: str, *, seed: int, genre: str, knobs: Knobs = Knobs(), 
     rng.shuffle(slots)
     for number, slot in enumerate(slots, 1):
         slot.id = f"f{number}"
+    for slot in in_order:
+        if slot.twin.get("derivation") or slot.planted.get("derivation"):
+            support = tuple(s.id for s in in_order if s is not slot)
+            slot.twin = {**slot.twin, "support": support}
+            slot.planted = {**slot.planted, "support": support}
 
     def facts(variant: str) -> tuple[Fact, ...]:
         return tuple(Fact(id=s.id, **getattr(s, variant)) for s in slots)
@@ -318,6 +369,10 @@ def generate(plant_type: str, *, seed: int, genre: str, knobs: Knobs = Knobs(), 
         naive = {"reading": NAIVE_READING, "contradiction": list(naive_contradiction(draft, trap) or ())}
         trap = Trap(type=trap.type, facts=trap.facts, naive=naive)
         trap_only.append(Skeleton(variant="trap_only", facts=three, traps=(trap,), **{**common, "attributes": wider}))
+    planted_skeleton = Skeleton(variant="planted", facts=facts("planted"), plant=plant, **common)
+    for name in traps:
+        if name != "arity_control":
+            trap_only.append(apply_trap(name, planted_skeleton))
     return Base(base_id=base_id,
                 consistent=Skeleton(variant="consistent", facts=facts("twin"), twin_facts=plant.facts, **common),
                 planted=(Skeleton(variant="planted", facts=facts("planted"), plant=plant, **common),),

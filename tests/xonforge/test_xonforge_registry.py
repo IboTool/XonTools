@@ -252,19 +252,16 @@ def by_name(entries=None) -> dict:
     return {e.name: e for e in (entries or registry.load_entries())}
 
 
-def test_the_sample_is_a_pipeline_test_run_of_the_three_claude_models_with_20_dollar_caps():
+def test_the_sample_is_a_pipeline_test_run_of_the_three_claude_models_within_40_dollars():
     entries = by_name()
     config = runs.load("sample", registry.load_defaults(), entries)
     assert (config.mode, config.renderers, config.reviewers) == ("pipeline_test", ("claude-sonnet",),
                                                                  ("claude-opus", "claude-fable"))
     assert config.entries == tuple(CLAUDE)
-    assert config.caps == Caps(run_tokens=None, run_usd=20, provider_tokens={n: None for n in CLAUDE},
-                               provider_usd={n: 20 for n in CLAUDE})
-    assert runs.problems(config, entries, fake_adapters(entries.values()), k=2) == [
-        "the token caps are not set (the run's, claude-sonnet's, claude-opus's, claude-fable's), and the budget "
-        "sends no call without them"]
-    ready = runs.load("sample", sample_with(run_tokens=10**6, provider_tokens_each=10**5), entries)
-    assert runs.problems(ready, entries, fake_adapters(entries.values()), k=2) == []
+    assert config.caps == Caps(run_tokens=20_000_000, run_usd=40,
+                               provider_tokens={n: 20_000_000 for n in CLAUDE},
+                               provider_usd={n: 40 for n in CLAUDE})
+    assert runs.problems(config, entries, fake_adapters(entries.values()), k=2) == []
 
 
 def test_a_run_needs_its_entries_available_except_for_a_dry_run(monkeypatch):
@@ -280,7 +277,7 @@ def test_a_run_needs_its_entries_available_except_for_a_dry_run(monkeypatch):
 
 def test_an_entry_s_own_cap_overrides_the_cap_for_each():
     config = runs.load("sample", sample_with(provider_usd={"claude-fable": 5}), by_name())
-    assert config.caps.provider_usd == {"claude-sonnet": 20, "claude-opus": 20, "claude-fable": 5}
+    assert config.caps.provider_usd == {"claude-sonnet": 40, "claude-opus": 40, "claude-fable": 5}
 
 
 @pytest.mark.parametrize("change, message", [
@@ -344,15 +341,9 @@ def test_a_session_started_with_a_run_configuration_takes_its_mode_and_caps_or_r
     shutil.copytree(registry.CONFIG_DIR, config)
     log = CallLog(tmp_path / "log.jsonl")
     clients = {n: FakeClient(anthropic_response()) for n in CLAUDE}
-    with pytest.raises(runs.RunRefused, match="the run configuration sample may not start: the token caps are not "
-                                              "set") as refused:
-        registry.Session("run-1", run_config="sample", config_dir=config, log=log, clients=clients)
-    assert len(refused.value.problems) == 1
-    (config / "defaults.yaml").write_text(yaml.safe_dump(sample_with(run_tokens=10**6, provider_tokens_each=10**5)),
-                                          encoding="utf-8")
     session = registry.Session("run-1", run_config="sample", config_dir=config, log=log, clients=clients)
     assert session.mode == "pipeline_test" and session.budget.caps == session.config.caps
-    assert session.budget.caps.provider_usd == {n: 20 for n in CLAUDE} and session.budget.caps.run_usd == 20
+    assert session.budget.caps.provider_usd == {n: 40 for n in CLAUDE} and session.budget.caps.run_usd == 40
     assert registry.Session("run-1", config_dir=config, log=log, clients=clients).mode is None
 
 
@@ -364,13 +355,11 @@ def test_python_dash_m_xonforge_run_check_shows_why_the_sample_may_not_start_yet
     assert "mode pipeline_test: its documents are labelled pipeline_test" in out.stdout
     assert "Renderers: claude-sonnet (claude-sonnet-5). Reviewers: claude-opus (claude-opus-5-5), claude-fable " \
            "(claude-fable-5-1)." in out.stdout
-    assert "Run caps: tokens not set, USD $20.00." in out.stdout
+    assert "Run caps: tokens 20,000,000, USD $40.00." in out.stdout
     assert "- claude-sonnet is unavailable: XONFORGE_ANTHROPIC_KEY is not set" in out.stdout
-    assert "- the token caps are not set" in out.stdout
     dry = subprocess.run([sys.executable, "-m", "xonforge", "run-check", "sample", "--dry-run"], cwd=ROOT, env=env,
                          capture_output=True, text=True)
-    assert dry.returncode == 1 and "unavailable" not in dry.stdout and "It may not start even as a dry run:" in \
-        dry.stdout
+    assert dry.returncode == 0 and "unavailable" not in dry.stdout and "It may start as a dry run." in dry.stdout
     missing = subprocess.run([sys.executable, "-m", "xonforge", "run-check", "nothing"], cwd=ROOT, env=env,
                              capture_output=True, text=True)
     assert missing.returncode == 2 and "no run configuration named 'nothing'" in missing.stdout

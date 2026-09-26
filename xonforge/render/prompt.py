@@ -37,7 +37,9 @@ LEXICAL, EXPLICIT, SPREAD = _TEXTS["lexical_variety"], _TEXTS["explicitness"], _
 
 def _names(ids: Sequence[str], skeleton: Skeleton) -> str:
     name = {e.id: e.name for e in skeleton.entities}
-    names = [name[i] for i in ids]
+    names = [name[i] for i in ids if i in name]
+    if not names:
+        return "anyone"
     return names[0] if len(names) == 1 else "any of " + ", ".join(names[:-1]) + " and " + names[-1]
 
 
@@ -71,7 +73,14 @@ def build(skeleton: Skeleton, rules: RenderRules, *, problems: Sequence[str] = (
     lines = [f"Genre: {skeleton.genre}", f"Length: about {rules.words} words, in paragraphs.",
              f"Wording: {LEXICAL[rules.lexical_variety]}", f"Stating the facts: {EXPLICIT[rules.explicitness]}", "",
              f"People: {_people(skeleton)}", "", "Facts:"]
-    lines += [f"{f.id}. {_fact_line(f, skeleton)}" for f in skeleton.facts]
+    stated = [f for f in skeleton.facts if not f.derivation]
+    lines += [f"{f.id}. {_fact_line(f, skeleton)}" for f in stated]
+    inferred = [f for f in skeleton.facts if f.derivation]
+    if inferred:
+        lines += ["", "Inferred, and not to be written as a sentence of their own. They follow from the facts named:"]
+        for f in inferred:
+            whom = ", ".join(f.support) or "the other planted facts"
+            lines.append(f"{f.id}. Follows from {whom}: {f.derivation}")
     exempt = spaced + ([skeleton.arity_fact] if skeleton.arity_fact else [])
     other = "other sentence" if rules.min_spacing == 1 else "other sentences"
     lines += ["", f"Spacing: put at least {rules.min_spacing} {other} between any two of the sentences for facts "

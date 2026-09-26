@@ -42,9 +42,10 @@ between them, the named values among them. `greater` states a strictly higher va
 taller, later, a higher score, faster). A value fact states that an entity's value is, or is not, the named value. A
 premise otherwise counts as a fact like any other.
 
-Not judged yet, and refused rather than guessed: events, facts with a time, other attribute kinds, and traps (v1,
-§14 step 8); and a negated value on an attribute whose number of values is stated, since whether the negation names
-one of the stated values is not decided (no v0 generator produces it).
+Still refused rather than guessed: an attribute kind other than ordinal, categorical, quantity, time or location; a
+value fact on an ordinal attribute; a trap the solver does not list; and a negated value on an attribute whose number
+of values is stated, since whether the negation names one of the stated values is not decided (no v0 generator
+produces it).
 
 ## Knobs a skeleton sets (§5.4)
 
@@ -59,3 +60,34 @@ number. They relate entities on the other attributes and, with the same-attribut
 plant on the planted attribute; the solver's check confirms that they neither add a contradiction nor remove the
 plant's. The user decided that the setting is off at the lowest difficulty (as in L1) and on at higher levels: off at
 level 1 and on at levels 2 and 3 (`xonforge/levels.py`, the user's item 4 of 2026-09-25).
+
+## v1 plants, traps and hard negatives
+
+v1's types are in `xonforge/skeleton/plants_v1.py`. `PLANT_TYPES` stays v0's four, so a sweep of those four is
+unchanged; `V1_PLANT_TYPES` and `ALL_PLANT_TYPES` name the rest. Each generated base passes `check_base`.
+
+| type | planted | consistent twin | solver |
+|---|---|---|---|
+| `temporal_arithmetic` | departed 15:00, 120 minutes, arrived 16:00 | arrived 17:00, which is 15:00 plus 120 minutes | arrival = departure + duration + offset |
+| `quantity_arithmetic` | opened with 12, gave away 5, closed with 12 | closed with 7 | opening − transfers = closing |
+| `spatial_containment` | A contains B, B contains C, C contains A | A contains C, and no cycle | a containment cycle |
+| `coreference_trap` | the two are the same person, and one is red and the other blue | they are different people | one person, two values |
+| `negation_scope` | everyone shares the attribute, and one person does not | the person does | a negated exception to everyone |
+| `quantifier_violation` | everyone's value is one value, and one person's is another | the person has the universal's value | an exception to a named universal |
+| `uniqueness_violation` | only one person has the value, and another has it too | the other has a different value | a second holder of an "only" |
+| `colocation_conflict` | at the lake 12:00–17:00 and at the library 15:00–16:00 | the library is 18:00–19:00 | overlapping places |
+| `calendar_age` | born 1990, story set in 2026, age 40 | age 36 | age = story year − birth year |
+| `cardinality_mismatch` | the count is 2 and the count is 3 | both counts are 2 | two counts of one attribute |
+| `unit_conversion` | 10 km and 8 miles | 10 km and 6.21371 miles | miles within tolerance, or exactly |
+| `knowledge_perspective` | announced at 09:00, surprised at 10:00 | surprised at 08:00, before the announcement | surprise after one's own announcement |
+| `causal_inconsistency`, `commonsense_impossibility`, `implicature_tension` | a labeled tension | the other value of the same pair | satisfiable either way; `ground_truth: judged`; the judged split only, never a sealed test |
+
+Arithmetic, time and location conclusions carry a `derivation`. A rendered document records them as inferred map
+entries (`mode: inferred`, the support spans, the derivation), not as sentences of their own. v0 facts stay stated
+or paraphrased.
+
+Traps, each on the plant named in `TRAP_PLANTS`, stay satisfiable when read correctly. The solver records what a
+naive reading flags. `arity_control` is unchanged. The others: a quote, a hypothesis or a belief is not an assertion;
+a corrected claim does not still stand; a value at one time is not a value at every time; a shared name is not one
+person. Resolvable traps store the resolving fact (`offset`, `overnight`, `tolerance`) on `naive.resolves`, and the
+naive reading drops it.

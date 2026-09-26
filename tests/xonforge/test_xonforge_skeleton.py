@@ -30,8 +30,8 @@ def _id(case):
 
 def test_v0_builds_all_four_of_its_plant_types():
     assert PLANT_TYPES == ("order_cycle", "equality_break", "binary_parity", "direct_negation")
-    with pytest.raises(ValueError, match="v0's plant types"):
-        generate("quantity_arithmetic", seed=1, genre="g")
+    with pytest.raises(ValueError, match="not 'made_up'"):
+        generate("made_up", seed=1, genre="g")
     with pytest.raises(ValueError, match="genre"):
         generate("order_cycle", seed=1, genre="")
 
@@ -118,7 +118,7 @@ def test_binary_parity_s_arity_control_trap_states_three_values_and_fools_a_naiv
 
 
 def test_v0_s_one_trap_partners_binary_parity_only():
-    with pytest.raises(ValueError, match="'quoted_speech' comes with v1"):
+    with pytest.raises(ValueError, match="quoted_speech trap is direct_negation's partner, not binary_parity's"):
         generate("binary_parity", seed=1, genre="g", traps=("quoted_speech",))
     with pytest.raises(ValueError, match="binary_parity's partner, not order_cycle's"):
         generate("order_cycle", seed=1, genre="g", traps=("arity_control",))

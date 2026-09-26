@@ -7,6 +7,7 @@ matches its recorded hash is refused, so a changed prompt is recorded under a ne
 - render_wording.json: the explicitness, lexical-variety and spread instructions of the rendering prompt, the
   lexical-variety wording a draft for the user's review;
 - review_contradiction.txt and review_inventory.txt: the user's two review prompts, verbatim.
+- fact_audit.txt: the fact auditor's prompt (stated, implied, absent or contradicted), a model other than the renderer.
 """
 from __future__ import annotations
 

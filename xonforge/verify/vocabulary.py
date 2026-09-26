@@ -23,6 +23,23 @@ ATTRIBUTE_WORDS = {
     "department": r"departments?|dept",
     "table": r"tables?",
     "cabin": r"cabins?|cabinmates?",
+    # v1's planted attributes. A pattern check still misses a paraphrase; these keep the check from refusing the
+    # attribute for having no words listed.
+    "schedule": r"depart\w*|arriv\w*|hours?|minutes?|schedules?",
+    "jars": r"jars?",
+    "containment": r"contains|inside|within|containment",
+    "identity": r"same person|different person|identit\w*",
+    "attendance": r"arrived|attendance|everyone",
+    "presence": r"left|stayed|presence",
+    "duty": r"duty|only",
+    "place": r"lake|library|places?",
+    "years": r"born|years?|age",
+    "children": r"children|child",
+    "distance": r"miles?|kilomet(?:er|re)s?|km|distance",
+    "news": r"news|announced|surprised",
+    "cause": r"because|rain|cause",
+    "scene": r"frozen|scene",
+    "wording": r"every|some",
 }
 
 _NEGATION = r"\b(?:not|never|no longer|neither|nor)\b|n['\u2019]t\b"
