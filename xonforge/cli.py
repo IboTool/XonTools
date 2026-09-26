@@ -11,10 +11,15 @@ prints its help.
   python -m xonforge leak-check             sealed documents in any worktree; --commits R: also those commits
   python -m xonforge leak-audit             sealed documents in any worktree or anywhere in the history
   python -m xonforge run sample             the 20-document sample; stops for review, and does not export or seal
+  python -m xonforge dashboard            the dashboard; it shows keys as present or missing and does not start the
+                                          first corpus
 """
 from __future__ import annotations
 
 import argparse
+import subprocess
+import sys
+from pathlib import Path
 
 from . import estimate as estimates
 from . import locations, pipeline, registry, runs
@@ -75,6 +80,8 @@ def build_parser() -> argparse.ArgumentParser:
                            help="also search the commits being pushed, e.g. origin/main..HEAD")
     sub.add_parser("run", help="run the 20-document sample and stop for review; nothing is exported or sealed"
                    ).add_argument("name", help="the run configuration; only sample is run at this gate")
+    sub.add_parser("dashboard", help="open the dashboard (configure, providers, run, review, quality, corpus, logs); "
+                                     "no call is made until the sample is confirmed on the run page")
     return ap
 
 
@@ -308,6 +315,13 @@ def run_sample(args) -> int:
     return 0 if report.status == "stopped for review" else 1
 
 
+def dashboard(_args=None) -> int:
+    """The Streamlit dashboard. It stays in the foreground."""
+    script = Path(__file__).resolve().parent / "app" / "dashboard.py"
+    return subprocess.call([sys.executable, "-m", "streamlit", "run", str(script), "--server.headless", "true",
+                            "--browser.gatherUsageStats", "false"])
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = build_parser()
     args = ap.parse_args(argv)
@@ -323,5 +337,7 @@ def main(argv: list[str] | None = None) -> int:
         return leak_check(args, audit=args.command == "leak-audit")
     if args.command == "run":
         return run_sample(args)
+    if args.command == "dashboard":
+        return dashboard(args)
     ap.print_help()
     return 0

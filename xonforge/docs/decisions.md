@@ -6,6 +6,19 @@ agent's readings, and records the readings applied where an answer leaves a deta
 entry of the same date logs each section. Decisions made before this file existed are in that file's XonForge entries
 of 2026-09-25 for steps 0, 1 and 2.
 
+## 2026-09-26 — Step 9 readings (implementing agent)
+
+The user asked for step 9, the dashboard (`XONFORGE_SPEC.md` §10). These are readings of details the spec leaves open. No threshold was changed. The first corpus (step 10) was not started, and the sample was not re-run.
+
+1. **Streamlit.** The dashboard is a Streamlit application, the UI library this repository already uses, launched with `python -m xonforge dashboard`.
+2. **Drafts.** Saving on Configure writes a YAML file outside the repository. `defaults.yaml` remains what a run loads. The page shows the check constants and does not write them.
+3. **Judged plants in the mix.** The quota preview drops judged plant types. Those bases go to the judged split, as step 8 routes them, and are not given a share of the 50 / 15 / 35.
+4. **Units.** The preview counts quota units. Whether a unit is a document or a base stays open, as `xonforge/corpus/quotas.py` already says.
+5. **Duration.** The run page shows the offline cost estimate and does not invent a duration. No duration model is registered.
+6. **Start, pause, resume.** Start and resume are the sample run, and only after the page is explicitly confirmed. Pause is the existing budget pause. Any other run configuration, including the first corpus, is refused.
+7. **Calibration on the quality page.** Recall lines are read from the review packet and reading stops at the first document heading, so the document text is not part of that page.
+8. **Export and seal.** The corpus page explains why they are refused (a pipeline test, missing documents, or unchecked terms) and does not write a split.
+
 ## 2026-09-26 — Step 8 readings (implementing agent)
 
 The user said to proceed with step 8 only: the v1 plant types, the traps, the v1.1 catalog and the fact audit

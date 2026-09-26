@@ -32,6 +32,7 @@ these from the root too: the install does not package `xonforge`, so Python find
 python -m xonforge providers             # the provider registry and startup check; no call is made
 python -m xonforge run-check sample      # whether the sample's run may start, and why not; no call is made
 python -m xonforge run sample            # the 20-document sample; stops for review; does not export or seal
+python -m xonforge dashboard             # the seven dashboard pages; no call until the sample is confirmed
 python -m xonforge skeletons --genre G   # seeded skeletons checked by the solver; offline, nothing written
 python -m xonforge estimate sample --bases order_cycle:1:5   # a run's cost for a composition; offline
 python -m xonforge leak-check            # sealed documents in any worktree; --commits R also searches commits

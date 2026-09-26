@@ -20,6 +20,17 @@ has its own, newer entries.
 
 ---
 
+## 2026-09-26 — XonForge — step 9: the dashboard
+
+The user asked for step 9 (`XONFORGE_SPEC.md` §10, §14). No threshold was changed. The sample was not re-run, nothing was exported or sealed, and the first corpus was not started. The readings are in `xonforge/docs/decisions.md` (2026-09-26, step 9) and `xonforge/docs/user_guide.md`.
+
+1. **The application.** Streamlit, which this repository already uses, at `xonforge/app/dashboard.py`. `python -m xonforge dashboard` opens it. The pages are Configure, Providers, Run, Review queue, Quality, Corpus and Logs.
+2. **Configure.** A draft can be saved outside the repository. Runs keep loading `defaults.yaml`, so the sample's caps and the check constants are unchanged. Judged plant types are left out of the proportional quota preview. What a quota unit counts, a document or a base, stays open; the preview counts units.
+3. **Run.** The sample's cost is estimated offline. Duration is not estimated: no duration model is registered. Pause is the budget cap. Resume is the sample command, which continues from the cache. Start sends calls only after an explicit confirmation, and only for the sample. `first_corpus` is refused.
+4. **Review, quality, corpus, logs.** The queue shows the text beside the skeleton and the span map, and records accept, regenerate or discard with a reason. Quality shows flag rates, set against measured difficulty, calibration lines from the review packet (stopping before the document text) and solver discards. Export and seal stay closed for a pipeline test and while terms are unchecked. The call log, the newest changelog entry and the decision-log chain are the logs page. No key's value is shown.
+
+---
+
 ## 2026-09-26 — XonForge — step 8: v1 plant types, traps and the fact audit
 
 The user said to proceed with step 8 only (`XONFORGE_SPEC.md` §14). No threshold was changed. The 20-document sample
