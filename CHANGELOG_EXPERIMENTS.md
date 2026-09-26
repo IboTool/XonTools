@@ -20,6 +20,22 @@ has its own, newer entries.
 
 ---
 
+## 2026-09-26 — XonForge — the sample's cap is $40, and the run reviews before it queues
+
+The user confirmed the recommended composition (10 v0 bases, twin plus planted variant, seed 1, both review prompts,
+fact audit off, no v1 type) and set the maximum spend at $40. That replaces the sample's $20 run cap and $20 cap on
+each entry. Recorded in `xonforge/docs/decisions.md`. No API call was made: `XONFORGE_ANTHROPIC_KEY` is not set in
+this environment, so `run sample` refuses before a session opens. `first_corpus` was not started. Not a run of record,
+and there is no tag.
+
+1. **Caps.** `runs.sample` caps the run and each entry at $40 and at 20,000,000 tokens. The token count is what $40
+   buys of Sonnet's input at $2 per million tokens, so the dollar cap is what stops a long response. The global caps
+   in `defaults.yaml` stay unset.
+2. **Review in the run.** `python -m xonforge run` reviews each document that has text with both prompts and both
+   reviewers, in batches saved outside the repository, then queues from those results. A call the budget holds back
+   stops the run; documents already stored stay queued. `pytest tests/xonforge`: 533 passed, with the key and every
+   `XONFORGE_*` variable unset.
+
 ## 2026-09-26 — XonForge — step 7: the sample estimate, stopped before a live run
 
 No API call was made. Token caps were not set, `defaults.yaml` was not written, and nothing was tagged: this sample

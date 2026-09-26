@@ -68,9 +68,14 @@ runs:
     renderers: [claude-sonnet]
     reviewers: [claude-opus, claude-fable]
     caps:
-      run_tokens: null      # not given yet
-      run_usd: 20
-      provider_usd_each: 20
+      # The user's max spend for this sample is $40 (2026-09-26), which replaces the earlier $20 run cap and the
+      # $20 cap on each entry. The run cap bounds the three entries together, so the sample cannot spend more than
+      # $40. Token caps were not given as a count. 20,000,000 is what $40 buys of Sonnet's input at $2 per million
+      # tokens, the cheapest uncached rate of the three models, so a long response hits the dollar cap first.
+      run_tokens: 20000000
+      run_usd: 40
+      provider_tokens_each: 20000000
+      provider_usd_each: 40
   first_corpus:             # the first corpus of record; it waits for three providers and a cost estimate
     mode: record
     renderers: []

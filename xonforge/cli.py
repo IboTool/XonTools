@@ -65,8 +65,9 @@ def build_parser() -> argparse.ArgumentParser:
     e.add_argument("--prompts", nargs="+", choices=list(blind.PROMPTS), default=list(blind.PROMPTS),
                    help="the review prompts each reviewer runs (default: both)")
     e.add_argument("--genre", default="office memo", help="the genre the skeletons record")
-    u = sub.add_parser("run", help="generate, render, check, queue and accept one run; refuses unless run-check "
-                                   "passes. --dry-run replays the response cache and sends no call")
+    u = sub.add_parser("run", help="generate, render, check, review with both prompts, queue and accept one run; "
+                                   "refuses unless run-check passes. --dry-run replays the response cache and sends "
+                                   "no call")
     u.add_argument("name", help="the run configuration's name, e.g. sample")
     u.add_argument("--bases", action="append", required=True, metavar="TYPE:LEVEL:COUNT",
                    help="COUNT bases of plant type TYPE at difficulty level LEVEL; repeat for more")
@@ -273,6 +274,12 @@ def _format_run(report: dict) -> str:
         out += _table(["document", "status", "flags"], rows) + [""]
     out.append(f"{len(report['documents'])} documents, {len(queued)} queued, "
                f"{sum(v.accepted for v in report['verdicts'])} accepted.")
+    for o in report.get("outcomes") or []:
+        s = o.score
+        verdict = "certifiable" if o.certifiable else "not certifiable"
+        out.append(f"{o.reviewer}, {o.prompt}: {s.caught}/{s.defects} defect canaries caught, {verdict}.")
+    if report.get("paused"):
+        out += ["", "Stopped by the budget: " + report["paused"]]
     return "\n".join(out)
 
 
@@ -305,7 +312,7 @@ def run(args) -> int:
         print(f"error: {exc}")
         return 1
     print(_format_run(report))
-    return 0
+    return 1 if report.get("paused") else 0
 
 
 def estimate(args) -> int:

@@ -18,9 +18,9 @@ Status: v0's core, steps 1 to 6 of the spec's implementation order (§14), built
   terms are checked; sealing; the datasheet; the leak test; and the cost estimate.
 
 The 20-document sample's configuration is in place (`docs/providers.md`): a pipeline-test run in which Claude Sonnet 5
-renders and Claude Opus 5.5 and Fable 5.1 review, with at most $20 for the run and for each model. It waits for its
-token caps, its composition and the user's go-ahead after the cost estimate, so nothing has been rendered or reviewed
-live. Nothing is exported until each renderer's terms are checked and logged (`config/terms.yaml`).
+renders and Claude Opus 5.5 and Fable 5.1 review. The user's max spend for it is $40, for the run and for each entry,
+and its token cap is 20,000,000. Nothing is exported until each renderer's terms are checked and logged
+(`config/terms.yaml`).
 
 ## Quick start
 
@@ -55,8 +55,8 @@ The spend and call log, `cache/xonforge/log.jsonl`, holds no text and stays in t
 ## Costs
 
 Budget caps per run and per provider entry, in tokens and in USD, are set in `config/defaults.yaml`: its own caps,
-none of them set, and each run configuration's (`runs`). The sample's dollar caps are $20 for the run and $20 for
-each entry; its token caps are not given yet, and no call is sent without them. In `config/prices.yaml`, the three
+none of them set, and each run configuration's (`runs`). The sample's caps are $40 and 20,000,000 tokens for the
+run and for each entry, and no call is sent that would pass a cap. In `config/prices.yaml`, the three
 Claude models' prices were checked on 2026-09-25, and the others are unverified. `python -m xonforge estimate` prices a
 run before it starts: the prompts each call would send, the thinking tokens assumed per call (`config/defaults.yaml`,
 `estimate`; assumptions until the sample measures them), and the Claude tokenizer's 1.3 factor.

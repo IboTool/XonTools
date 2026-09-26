@@ -40,7 +40,8 @@ mode is always named, and the pipeline-test mode is never a fallback for missing
   record.
 
 `sample` is the 20-document sample: `pipeline_test`, `claude-sonnet` renders, `claude-opus` and `claude-fable`
-review, with at most $20 for the run and $20 for each entry. Its token caps are not given yet, so it may not start.
+review. The user's max spend is $40 for the run and for each entry, and the token cap is 20,000,000, so the dollar
+cap is what stops a long response. A live run still needs `XONFORGE_ANTHROPIC_KEY`.
 `first_corpus` is the first corpus of record, with initial caps of $250 for the run and $100 for each entry; it
 waits for three providers.
 

@@ -15,15 +15,33 @@ from xonforge_fakes import FakeClient, anthropic_response
 ROOT = Path(__file__).resolve().parents[2]
 
 
+def _answers(rendering: dict) -> FakeClient:
+    """A rendering for the renderer, and an empty review reply of the shape each prompt asks for."""
+    client = FakeClient()
+
+    def call(**body):
+        client.bodies.append(body)
+        system = body.get("system") or ""
+        user = body["messages"][0]["content"]
+        if isinstance(user, str) and user.startswith("Document "):
+            text = '{"inventory":[],"conflicts":[]}' if system.startswith("First list") else '{"conflicts":[]}'
+        else:
+            text = json.dumps(rendering)
+        return anthropic_response(text=text)
+
+    client.messages = __import__("types").SimpleNamespace(create=call)
+    return client
+
+
 def test_run_refuses_the_sample_until_its_check_passes(capsys, monkeypatch):
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
     monkeypatch.delenv("XON_LLM_RECORD", raising=False)
     for key in list(os.environ):
         if key.startswith("XONFORGE"):
             monkeypatch.delenv(key, raising=False)
-    assert main(["run", "sample", "--bases", "order_cycle:1:1", "--dry-run"]) == 1
+    assert main(["run", "sample", "--bases", "order_cycle:1:1"]) == 1
     out = capsys.readouterr().out
-    assert "may not start" in out and "token caps are not set" in out
+    assert "may not start" in out and "XONFORGE_ANTHROPIC_KEY is not set" in out
     assert "sk-" not in out
 
 
@@ -42,7 +60,7 @@ def test_a_dry_run_replays_the_cache_and_sends_nothing(tmp_path, monkeypatch):
     skeleton = generate("direct_negation", seed=1, genre="office memo", premise=False).consistent
     body = {"text": " ".join(statement(f, skeleton) + "." for f in skeleton.facts),
             "spans": [{"fact": f.id, "span": statement(f, skeleton) + "."} for f in skeleton.facts]}
-    client = FakeClient(anthropic_response(text=json.dumps(body)))
+    client = _answers(body)
     names = [e.name for e in registry.load_entries(config)]
     clients = {n: client for n in names}
     log = CallLog(tmp_path / "calls.jsonl")
@@ -53,6 +71,8 @@ def test_a_dry_run_replays_the_cache_and_sends_nothing(tmp_path, monkeypatch):
     report = execute(first, specs, genre="office memo", seed=1, premise_share=0.0)
     sent = len(client.bodies)
     assert sent >= 1 and report["documents"] and report["mode"] == "pipeline_test"
+    assert any(b["messages"][0]["content"].startswith("Document ") for b in client.bodies)
+    assert report["paused"] is None and report["outcomes"]
     shutil.rmtree(tmp_path / "documents")
     again = registry.Session("sample", run_config="sample", config_dir=config, clients=clients, log=log, dry_run=True)
     second = execute(again, specs, genre="office memo", seed=1, premise_share=0.0)

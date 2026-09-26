@@ -59,7 +59,7 @@ def test_the_estimate_command_prints_each_entry_against_its_caps_and_calls_nothi
     assert "Offline: no call is made." in out and "Run configuration sample, mode pipeline_test. 6 documents" in out
     for name in ("claude-sonnet", "claude-opus", "claude-fable"):
         assert name in out
-    assert "Thinking assumed per call (not measured)" in out and "Run cap: $20.00." in out
+    assert "Thinking assumed per call (not measured)" in out and "Run cap: $40.00." in out
     for bad in ("order_cycle:4:2", "order_cycle:1", "cycle:1:2"):
         assert cli.main(["estimate", "sample", "--bases", bad]) == 2
         assert capsys.readouterr().out.startswith("error: ")

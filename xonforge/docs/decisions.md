@@ -6,6 +6,20 @@ agent's readings, and records the readings applied where an answer leaves a deta
 entry of the same date logs each section. Decisions made before this file existed are in that file's XonForge entries
 of 2026-09-25 for steps 0, 1 and 2.
 
+## 2026-09-26 — The sample may spend at most $40
+
+The user confirmed the recommended composition and set the maximum spend at $40: "That's fine, do it. Max spend $40."
+That replaces the sample's earlier $20 run cap and $20 cap on each entry (`decisions.md`, the pipeline-test sample).
+`runs.sample` in `defaults.yaml` now caps the run and each of its three entries at $40, so the three together cannot
+spend more than $40. `first_corpus` is unchanged.
+
+No token count was given. The budget sends no call without a token cap, so each token cap is 20,000,000. That is what
+$40 buys of Claude Sonnet 5's input at $2 per million tokens, the cheapest uncached rate of the three models. Output
+costs more, so a long response reaches the dollar cap first. The sample does not request prompt caching.
+
+`python -m xonforge run` now reviews every document that has text with both prompts and both reviewers, which is what
+the approved estimate counted, and stops when the budget holds a call back. The fact audit stays off.
+
 ## 2026-09-26 — Step 7 stopped: the sample's composition and estimate
 
 The recommended composition, for the user to confirm or replace, is 10 v0 bases, each rendered as a twin and a
