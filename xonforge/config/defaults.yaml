@@ -63,13 +63,16 @@ estimate:
 # configured providers; or pipeline_test, whose renderer and reviewers may be different models of one provider, and
 # whose documents never enter a sealed or judged split or a corpus of record.
 runs:
-  sample:                   # the 20-document sample (§14, step 7); it waits for the user's go-ahead
+  sample:                   # the 20-document sample (§14, step 7); the user said to run it (2026-09-26)
     mode: pipeline_test
     renderers: [claude-sonnet]
     reviewers: [claude-opus, claude-fable]
     caps:
-      run_tokens: null      # not given yet
+      # Token caps were not given. These sit above what the $20 cap can buy at Sonnet 5's output rate
+      # ($10 per million tokens buys 2,000,000 tokens), so the dollar cap the user set is what stops the run.
+      run_tokens: 2000000
       run_usd: 20
+      provider_tokens_each: 2000000
       provider_usd_each: 20
   first_corpus:             # the first corpus of record; it waits for three providers and a cost estimate
     mode: record

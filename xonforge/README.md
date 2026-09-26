@@ -17,10 +17,11 @@ Status: v0's core, steps 1 to 6 of the spec's implementation order (§14), built
 - acceptance; quotas and splits; export under CC BY 4.0 with one canary string per split, after each renderer's
   terms are checked; sealing; the datasheet; the leak test; and the cost estimate.
 
-The 20-document sample's configuration is in place (`docs/providers.md`): a pipeline-test run in which Claude Sonnet 5
-renders and Claude Opus 5.5 and Fable 5.1 review, with at most $20 for the run and for each model. It waits for its
-token caps, its composition and the user's go-ahead after the cost estimate, so nothing has been rendered or reviewed
-live. Nothing is exported until each renderer's terms are checked and logged (`config/terms.yaml`).
+The 20-document sample is a pipeline-test run (`docs/providers.md`): Claude Sonnet 5 renders and Claude Opus 5.5 and
+Fable 5.1 review, with at most $20 for the run and for each model, and a token cap of 2,000,000 for the run and for
+each model so that the dollar cap is what stops it. `python -m xonforge run sample` renders it, reviews it and stops
+for review. It does not accept, export, split or seal, and the first corpus waits. Nothing is exported until each
+renderer's terms are checked and logged (`config/terms.yaml`).
 
 ## Quick start
 
@@ -30,6 +31,7 @@ these from the root too: the install does not package `xonforge`, so Python find
 ```
 python -m xonforge providers             # the provider registry and startup check; no call is made
 python -m xonforge run-check sample      # whether the sample's run may start, and why not; no call is made
+python -m xonforge run sample            # the 20-document sample; stops for review; does not export or seal
 python -m xonforge skeletons --genre G   # seeded skeletons checked by the solver; offline, nothing written
 python -m xonforge estimate sample --bases order_cycle:1:5   # a run's cost for a composition; offline
 python -m xonforge leak-check            # sealed documents in any worktree; --commits R also searches commits
@@ -55,8 +57,8 @@ The spend and call log, `cache/xonforge/log.jsonl`, holds no text and stays in t
 ## Costs
 
 Budget caps per run and per provider entry, in tokens and in USD, are set in `config/defaults.yaml`: its own caps,
-none of them set, and each run configuration's (`runs`). The sample's dollar caps are $20 for the run and $20 for
-each entry; its token caps are not given yet, and no call is sent without them. In `config/prices.yaml`, the three
+none of them set, and each run configuration's (`runs`). The sample's caps are $20 and 2,000,000 tokens for the run
+and the same for each entry. In `config/prices.yaml`, the three
 Claude models' prices were checked on 2026-09-25, and the others are unverified. `python -m xonforge estimate` prices a
 run before it starts: the prompts each call would send, the thinking tokens assumed per call (`config/defaults.yaml`,
 `estimate`; assumptions until the sample measures them), and the Claude tokenizer's 1.3 factor.

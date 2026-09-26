@@ -20,6 +20,32 @@ has its own, newer entries.
 
 ---
 
+## 2026-09-26 — XonForge — the 20-document sample run
+
+The user said to run the sample, with the Anthropic key set as a cloud secret. The run orchestrator of step 7 was not
+built, the sample's composition and token caps were open, and the budget sends no call without token caps. No threshold
+in the spec was changed. The choices below are the ones the run uses; the sample then stops for review. It does not
+accept, export, split or seal, and the first corpus is not started.
+
+1. **Token caps.** `runs.sample` in `xonforge/config/defaults.yaml`: 2,000,000 tokens for the run and for each entry,
+   beside the $20 caps already set. At Sonnet 5's output price of $10 per million tokens, $20 buys 2,000,000 tokens, so
+   a larger token bill than that would already have passed the dollar cap. The dollar cap remains what stops the run.
+2. **Composition.** Ten level-1 bases, seeds 1 to 10, dealt in turn across the four v0 plant types: `order_cycle` and
+   `equality_break` three each, `binary_parity` and `direct_negation` two each. Each base is a consistent twin and one
+   planted variant, 20 documents. A twin counts as a document. No trap variant. Genre: office memo. The fact audit does
+   not run. The sample is a pipeline test, so it is not split and not sealed.
+3. **Review.** Each reviewer runs both prompts. Thinking is left at each model's adaptive default (Sonnet 5 is not sent
+   the switch that turns thinking off). A review uses the same `max_tokens` as a rendering, 16,384, so the ceiling
+   covers reasoning plus the reply. The sample seed is 1, the quota seed 2 and the split seed 3, logged before
+   generation. The quota and split seeds are not used to place documents.
+4. **The command.** `python -m xonforge run sample` (`xonforge/pipeline.py`) generates the bases, renders, reviews and
+   queues, and stops. Documents, skeletons, batches and the review packet stay outside the repository. Re-running the
+   same command continues from what was saved and from the response cache.
+
+The result of the live run is recorded below this entry once it has stopped for review.
+
+---
+
 ## 2026-09-26 — Repository — the fresh-clone check: the install fixed, exact versions in `constraints.txt`
 
 After the third reset's push, `main` (`bbf05d9a`) was cloned from GitHub into a temporary folder outside the

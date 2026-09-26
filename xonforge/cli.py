@@ -10,13 +10,14 @@ prints its help.
   python -m xonforge estimate NAME --bases T:L:N   a run's cost estimate for a composition; offline
   python -m xonforge leak-check             sealed documents in any worktree; --commits R: also those commits
   python -m xonforge leak-audit             sealed documents in any worktree or anywhere in the history
+  python -m xonforge run sample             the 20-document sample; stops for review, and does not export or seal
 """
 from __future__ import annotations
 
 import argparse
 
 from . import estimate as estimates
-from . import registry, runs
+from . import locations, pipeline, registry, runs
 from .corpus import leak
 from .review import blind
 from .skeleton.generators import LEVELS, PLANT_TYPES, Knobs, generate
@@ -71,6 +72,8 @@ def build_parser() -> argparse.ArgumentParser:
         if name == "leak-check":
             c.add_argument("--commits", nargs="+", metavar="RANGE",
                            help="also search the commits being pushed, e.g. origin/main..HEAD")
+    sub.add_parser("run", help="run the 20-document sample and stop for review; nothing is exported or sealed"
+                   ).add_argument("name", help="the run configuration; only sample is run at this gate")
     return ap
 
 
@@ -289,6 +292,20 @@ def leak_check(args, *, audit: bool) -> int:
     return 1 if any(r.findings for _, r in reports) else 0
 
 
+def run_sample(args) -> int:
+    if args.name != "sample":
+        print("error: this gate runs only the sample configuration. The first corpus waits until the sample has "
+              "been reviewed.")
+        return 2
+    try:
+        report = pipeline.execute(registry.Session(args.name, run_config=args.name))
+    except (pipeline.Waiting, runs.RunRefused, locations.LocationRefused, ValueError) as exc:
+        print(f"error: {exc}")
+        return 2
+    print(report.text())
+    return 0 if report.status == "stopped for review" else 1
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = build_parser()
     args = ap.parse_args(argv)
@@ -302,5 +319,7 @@ def main(argv: list[str] | None = None) -> int:
         return estimate(args)
     if args.command in ("leak-check", "leak-audit"):
         return leak_check(args, audit=args.command == "leak-audit")
+    if args.command == "run":
+        return run_sample(args)
     ap.print_help()
     return 0

@@ -220,17 +220,24 @@ The implementing agent's readings in building steps 2 to 6 on these answers, eac
 - Item 19: `SEALED.md` and the datasheet record the SHA-256 of a sealed or judged split's canary string, not the
   string, so that the search for it stays clean.
 
+### Decided for the sample run (2026-09-26)
+
+The user said to run the sample. These were open; the run uses the following, logged in CHANGELOG_EXPERIMENTS.md.
+
+- Composition: 10 level-1 bases, seeds 1 to 10, dealt in turn across `order_cycle`, `equality_break`, `binary_parity`
+  and `direct_negation` (3, 3, 2 and 2). Each base is a consistent twin and one planted variant, 20 documents. A twin
+  counts as a document. No trap variant. Genre: office memo. The fact audit does not run. The sample is a pipeline
+  test, so it is not split and not sealed.
+- Token caps: 2,000,000 for the run and for each entry, so the $20 caps remain what stops the run.
+- Each reviewer runs both review prompts.
+- The sample, quota and split seeds are 1, 2 and 3, logged before generation. The quota and split seeds are not used
+  to place documents; the protocol logs them before generation.
+
 ### Still open
 
-- The 20-document sample's composition: what the 20 documents are, whether a consistent twin counts as one of them,
-  whether the sample is split and sealed, and whether the fact audit runs in it.
 - The check of each provider's terms on publishing its outputs as a dataset, before the first export (item 16), which
   needs web access.
 - The providers to add before the first corpus of record.
-- Token caps for the sample: none is given, and XonForge's budget sends no call unless its token caps are set as well
-  as its dollar caps. (Noted by the implementing agent.)
-- Whether each reviewer runs both review prompts, which doubles the review calls; the cost estimate assumes both.
-  (Noted by the implementing agent.)
 - What a quota unit counts, a document or a base. (Noted by the implementing agent.)
 - The lexical-variety wording, drafted for Ian's review (`xonforge/prompts/render_wording.json`).
 

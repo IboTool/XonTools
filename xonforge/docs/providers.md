@@ -40,7 +40,9 @@ mode is always named, and the pipeline-test mode is never a fallback for missing
   record.
 
 `sample` is the 20-document sample: `pipeline_test`, `claude-sonnet` renders, `claude-opus` and `claude-fable`
-review, with at most $20 for the run and $20 for each entry. Its token caps are not given yet, so it may not start.
+review, with at most $20 and 2,000,000 tokens for the run and for each entry. The token cap is above what $20 buys
+at Sonnet 5's output rate, so the dollar cap is what stops the run. `python -m xonforge run sample` runs it and
+stops for review.
 `first_corpus` is the first corpus of record, with initial caps of $250 for the run and $100 for each entry; it
 waits for three providers.
 
