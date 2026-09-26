@@ -42,7 +42,33 @@ accept, export, split or seal, and the first corpus is not started.
    queues, and stops. Documents, skeletons, batches and the review packet stay outside the repository. Re-running the
    same command continues from what was saved and from the response cache.
 
-The result of the live run is recorded below this entry once it has stopped for review.
+5. **The live run, stopped for review.** `python -m xonforge run sample`, with `XONFORGE_ANTHROPIC_KEY` set and the cache,
+   sealed and judged directories outside the repository. `constraints.txt` SHA-256
+   `e9b0e25e3b8f223c5d00c7d94a363611c9e2521b184b7b3c365bebd1b5add2e1` (the pinned versions installed; this machine is
+   Python 3.12, and the file was recorded on Python 3.14). The offline estimate at first attempts, with the assumed
+   thinking, was $9.27. The run spent $2.7326 and 225,220 tokens, inside the $20 cap:
+
+   | Entry | Tokens | USD |
+   | --- | ---: | ---: |
+   | claude-sonnet | 79,650 | 0.5909 |
+   | claude-opus | 68,759 | 0.4967 |
+   | claude-fable | 76,811 | 1.6449 |
+
+   All 20 documents rendered. Three twins needed a second attempt (`order_cycle-5-54821720`, `binary_parity-7-c608ec82`,
+   `direct_negation-8-3a6a9019`); every other rendering and every derivation passed on the first attempt. No document
+   was flagged by the checks or the scans. Word counts were 172 to 268, against level-1 targets of 200 to 260.
+
+   Each reviewer, with each prompt, scored 5/5 on the batch's defect canaries and 0/2 false alarms, so every batch was
+   certifiable. Both reviewers reported the plant on 10/10 planted documents with the relational-inventory prompt, and
+   on 9/10 with the contradiction-only prompt. Both missed `direct_negation-8-3a6a9019-planted` on that prompt. A
+   missed plant is not a flag, so that document was not queued.
+
+   The queue is the sample's two spot checks of unflagged documents, drawn with seed 1:
+   `direct_negation-4-6f274ae4-planted` and `equality_break-10-c4d83c55-planted`.
+
+   The run stopped there. Nothing was accepted, exported, split or sealed, and the first corpus was not started. The
+   call log, which holds no document text, is `cache/xonforge/log.jsonl`. The review packet, which holds the texts,
+   stays outside the repository.
 
 ---
 
