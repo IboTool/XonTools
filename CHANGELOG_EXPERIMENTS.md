@@ -70,6 +70,11 @@ accept, export, split or seal, and the first corpus is not started.
    call log, which holds no document text, is `cache/xonforge/log.jsonl`. The review packet, which holds the texts,
    stays outside the repository.
 
+6. **The spot checks accepted.** The user accepted both queued documents. Each is an `accept` in the decision log,
+   reason "Accepted on the spot check.", with no reviewer named. The chain verifies: 5 entries, head
+   `8a0bf9e3054f8623829ed7e542bd66779bf4e327e9a5107778fb8bc9ce3e429b`. Acceptance, in pipeline-test mode, accepts both.
+   The log stays outside the repository. Nothing was exported or sealed.
+
 ---
 
 ## 2026-09-26 — Repository — the fresh-clone check: the install fixed, exact versions in `constraints.txt`
