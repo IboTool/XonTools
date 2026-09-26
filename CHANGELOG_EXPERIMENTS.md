@@ -20,6 +20,12 @@ has its own, newer entries.
 
 ---
 
+## 2026-09-26 — XonForge — dashboard launcher
+
+`run_xonforge.bat`, beside `run_xon.bat`, starts the dashboard from the repository root and opens the browser. It does not send an API call. No threshold was changed, and no run was started.
+
+---
+
 ## 2026-09-26 — XonForge — step 9: the dashboard
 
 The user asked for step 9 (`XONFORGE_SPEC.md` §10, §14). No threshold was changed. The sample was not re-run, nothing was exported or sealed, and the first corpus was not started. The readings are in `xonforge/docs/decisions.md` (2026-09-26, step 9) and `xonforge/docs/user_guide.md`.

@@ -6,7 +6,7 @@ The dashboard is the seven pages in `XONFORGE_SPEC.md` §10. Open it from the re
 python -m xonforge dashboard
 ```
 
-That runs `streamlit run xonforge/app/dashboard.py`. No API call is made by opening a page. A key is shown as present or missing, never as its value.
+On Windows, `run_xonforge.bat` in the repository root starts the same pages and opens the browser. No API call is made by opening a page. A key is shown as present or missing, never as its value.
 
 The pages read `xonforge/config/defaults.yaml` and, when `XONFORGE_CACHE_DIR` is set, the run files under that directory's parent: documents, skeletons, the review queue, the decision log and the run record. The sealed and judged directories are not opened. The first corpus is not started.
 
